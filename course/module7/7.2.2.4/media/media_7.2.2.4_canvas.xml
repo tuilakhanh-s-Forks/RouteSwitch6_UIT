@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide type="MBAR">
+		<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+		<slide>
+			<element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#FFFFFF"/>
+			<element type="TEXT" compId="ID_s1_txt01" width="104" x="57" y="120" align="left" expand="right" color="#FFFFFF"/>
+			<element type="TEXT" compId="ID_s1_txt02" width="104" x="57" y="168" align="left" expand="right" color="#FFFFFF"/>
+			<element type="TEXT" compId="ID_s1_txt03" width="104" x="57" y="235" align="left" expand="right" color="#FFFFFF"/>
+			<element type="TEXT" compId="ID_s1_txt04" width="104" x="57" y="276" align="left" expand="right" color="#FFFFFF"/>
+			<element type="ROUTER" textId="staticTxt" width="580" height="280" x="50" y="70"/>
+		</slide>
+		<slide>
+			<element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#FFFFFF"/>
+			<element type="ROUTER" textId="staticTxt1" width="580" height="280" x="50" y="70" />
+		</slide>
+	</slide>
+	<text id="staticTxt"><![CDATA[
+		R1# <b>show ip interface s0/0/0</b><br/>
+		Serial0/0/0 is up, line protocol is up<br/>
+  		<span style="padding-left:15px;">Internet address is 10.1.1.1/30</span><br/><br/>
+ 		<div style="color:#F68026;padding-left:15px;width:395px">
+		  <b>Outgoing access list is 1</b></div>
+			<span style="padding-left:15px;">Inbound  access list is not set</span><br/><br/><br/>
+		R1# <b>show ip interface g0/0</b><br/>
+		GigabitEthernet0/0 is up, line protocol is up<br/>
+		  <span style="padding-left:15px;">Internet address is 192.168.10.1/24</span><br/><br/>
+		 <div style="color:#F68026;padding-left:15px;width:395px">		  
+		  <b>Outgoing access list is NO_ACCESS</b></div>
+		  <span style="padding-left:15px;">Inbound  access list is not set</span>	
+	]]></text>
+	
+	<text id="staticTxt1"><![CDATA[
+			R1# <b>show access-lists</b><br/>
+			Standard IP access list 1<br/>
+			<div style="padding-left:15px;">10 deny   192.168.10.10<br/>
+			20 permit 192.168.0.0, wildcard bits 0.0.255.255</div>
+			Standard IP access list NO_ACCESS<br/>
+			<div style="padding-left:15px;">
+			15 deny   192.168.11.11<br/>
+			10 deny   192.168.11.10<br/>
+			20 permit 192.168.11.0, wildcard bits 0.0.0.255<br/>
+			</div>
+		R1#
+
+	]]></text>
+</data>

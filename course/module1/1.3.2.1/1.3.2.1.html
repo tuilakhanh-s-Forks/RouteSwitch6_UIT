@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.3.2.1 Directly Connected Interfaces</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.3.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Directly Connected Interfaces</h1>
+        <div>
+          <p>A newly deployed router, without any configured interfaces, has an empty routing table, as shown in the figure.</p>
+          <p></p>
+          <p>Before the interface state is considered up/up and added to the IPv4 routing table, the interface must:</p>
+          <p>
+            <ul>
+              <li>Be assigned a valid IPv4 or IPv6 address</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Be activated with the<b> no shutdown </b>command</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Receive a carrier signal from another device (router, switch, host, etc.)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>When the interface is up, the network of that interface is added to the routing table as a directly connected network.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the output from the show i.p. route command, and it is an empty routing table.  This is the result of the command being run on a router that doesn’t have any configured interfaces.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.2.3 Calculating the Wildcard Mask</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Calculating the Wildcard Mask</h1>
+        <div>
+          <p>Calculating wildcard masks can be challenging. One shortcut method is to subtract the subnet mask from 255.255.255.255.</p>
+          <p></p>
+          <p>
+            <b>Wildcard Mask Calculation: Example 1</b>
+          </p>
+          <p></p>
+          <p>In the first example in the figure, assume you wanted to permit access to all users in the 192.168.3.0 network. Because the subnet mask is 255.255.255.0, you could take the 255.255.255.255 and subtract the subnet mask 255.255.255.0. The solution produces the wildcard mask 0.0.0.255.</p>
+          <p></p>
+          <p>
+            <b>Wildcard Mask Calculation: Example 2</b>
+          </p>
+          <p></p>
+          <p>In the second example in the figure, assume you wanted to permit network access for the 14 users in the subnet 192.168.3.32/28. The subnet mask for the IPv4 subnet is 255.255.255.240, therefore take 255.255.255.255 and subtract the subnet mask 255.255.255.240. The solution this time produces the wildcard mask 0.0.0.15.</p>
+          <p></p>
+          <p>
+            <b>Wildcard Mask Calculation: Example 3</b>
+          </p>
+          <p></p>
+          <p>In the third example in the figure, assume you wanted to match only networks 192.168.10.0 and 192.168.11.0. Again, you take the 255.255.255.255 and subtract the regular subnet mask which in this case would be 255.255.254.0. The result is 0.0.1.255.</p>
+          <p></p>
+          <p>You could accomplish the same result with statements like the two shown below:</p>
+          <p></p>
+          <p>
+            <span class="cmd">R1(config)# </span>
+            <span class="cmd">
+              <b>access-list 10 permit 192.168.10.0 0.0.1.255</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">R1(config)# </span>
+            <span class="cmd">
+              <b>access-list 10 permit 192.168.11.0 0.0.1.255</b>
+            </span>
+          </p>
+          <p></p>
+          <p>It is far more efficient to configure the wildcard mask in the following way:</p>
+          <p></p>
+          <p>
+            <span class="cmd">R1(config)#</span>
+            <span class="cmd">
+              <b> access-list 10 permit 192.168.10.0 0.0.1.255</b>
+            </span>
+          </p>
+          <p></p>
+          <p>Consider an example in which you need to match networks in the range between 192.168.16.0/24 to 192.168.31.0/24. These networks would summarize to 192.168.16.0/20. In this case, 0.0.15.255 is the correct wildcard mask to configure one efficient ACL statement, as shown below:</p>
+          <p></p>
+          <p>
+            <span class="cmd">R1(config)#</span>
+            <span class="cmd">
+              <b> access-list 10 permit 192.168.16.0 0.0.15.255</b>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows three examples for calculating wildcard masks using the subtraction from all 255s method.  In the first example, there are four sets of 255 and below that the I.P.v.4. subnet mask is listed.  The subnet mask is then subtracted from the four sets of 255, which results in the wildcard mask.  The figure lists 255 dot 255 dot 255 dot 255 minus 255 dot 255 dot 255 dot zero.  This will result in zero dot zero dot zero dot 255 as the wildcard mask.  Example two shows how to calculate a wildcard mask for a slash 28 network.  The figure lists 255 dot 255 dot 255 dot 255 minus 255 dot 255 dot 255 dot 240.  This will result in zero dot zero dot zero dot 15 as the wildcard mask.  Example three shows how to calculate a wildcard mask for a slash 23 subnet mask.  The figure lists 255 dot 255 dot 255 dot 255 minus 255 dot 255 dot 255 dot 254.  This will result in zero dot zero dot 1 dot 255 as the wildcard mask.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

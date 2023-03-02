@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.2.3 Tagging Ethernet Frames for VLAN Identification</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Tagging Ethernet Frames for VLAN Identification</h1>
+        <div>
+          <p>Catalyst 2960 Series switches are Layer 2 devices. They use the Ethernet frame header information to forward packets. They do not have routing tables. The standard Ethernet frame header does not contain information about the VLAN to which the frame belongs; thus, when Ethernet frames are placed on a trunk, information about the VLANs to which they belong must be added. This process, called tagging, is accomplished by using the IEEE 802.1Q header, specified in the IEEE 802.1Q standard. The 802.1Q header includes a 4-byte tag inserted within the original Ethernet frame header, specifying the VLAN to which the frame belongs.</p>
+          <p></p>
+          <p>When the switch receives a frame on a port configured in access mode and assigned a VLAN, the switch inserts a VLAN tag in the frame header, recalculates the Frame Check Sequence (FCS), and sends the tagged frame out of a trunk port.</p>
+          <p></p>
+          <p>
+            <b>VLAN Tag Field Details</b>
+          </p>
+          <p></p>
+          <p>The VLAN tag field consists of a Type field, a Priority field, a Canonical Format Identifier field, and VLAN ID field:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Type</b> - A 2-byte value called the tag protocol ID (TPID) value. For Ethernet, it is set to hexadecimal 0x8100.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>User priority</b> - A 3-bit value that supports level or service implementation.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Canonical Format Identifier (CFI)</b> - A 1-bit identifier that enables Token Ring frames to be carried across Ethernet links.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>VLAN ID (VID)</b> - A 12-bit VLAN identification number that supports up to 4096 VLAN IDs.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>After the switch inserts the Type and tag control information fields, it recalculates the FCS values and inserts the new FCS into the frame.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the difference between an ethernet frame and an eight o. two dot one q. frame.  The second frame has the dot one q. tag added to the frame header.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

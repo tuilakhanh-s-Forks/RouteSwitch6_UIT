@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+<slide>
+
+<element type="IMAGE" x="0" y="0" width="1000" height="490" src="../../../common/images/page_backgrounds/bg_activity.jpg" />
+<element type="IMAGE" x="0" y="0" width="1000" height="490" src="media_8.2.1.8.png" />
+<element type="TEXT" compId="ID_txt02" x="701" y="159" width="88" expand="up+down" align="left" />
+<element type="TEXT" compId="ID_txt03" x="864" y="132" width="102" expand="down" align="center" />
+<element type="TEXT" compId="ID_txt04" x="469" y="226" width="169" expand="up+down" align="right" size="12" />
+<element type="TEXT" compId="ID_txt05" x="461" y="265" width="169" expand="up+down" align="left" size="12" />
+<element type="TEXT" compId="ID_txt06" x="720" y="291" width="179" expand="up" align="center" />
+<element type="TEXT" compId="ID_txt01" x="474" y="201" width="144" expand="up" align="center" />
+<element type="TEXT" subType="TITLE" compId="ID_inst" color="#ffffff"/>
+
+<element type="TEXTBOX" titleId="ID_instr_title" bodyId="ID_instr_body" x="15.5" y="55" width="340" height="170" animated="0" subType="ROLLOVER" />
+
+<element type="ACTIVITY" subType="DRAGDROP" method="NORMAL" replicate="false" compWidth="170" compHeight="30" dragIcon="" dropIcon="" tickPosition="left" dragAlpha="1">
+
+<subelement type="DROP"  x="725" y="314" match="3"/>
+<subelement type="DROP"  x="725" y="353" match="2"/>
+<subelement type="DROP"  x="725" y="393" match="0"/>
+<subelement type="DROP"  x="725" y="433" match="1"/>
+
+<subelement type="DRAG" compId="ID_ip1_DS" x="97" clipName="ip1_ds" y="252" />
+<subelement type="DRAG" compId="ID_ip2_DS" x="97" clipName="ip2_ds" y="297" />
+<subelement type="DRAG" compId="ID_ip3_DS" x="97" clipName="ip3_ds" y="341" />
+<subelement type="DRAG" compId="ID_ip4_DS" x="97" clipName="ip4_ds" y="385" />
+
+
+<subelement type="CHECK" x="46.9" y="452.2" width="140" height="21" compId="ID_CHECK"/>
+<subelement type="RESET" x="203.35" y="452.2" width="140" height="21" compId="ID_RESET"/>
+
+<subelement type="FEEDBACK" x="368" y="150" width="250" height="157" correctTitleId="ID_CORRECT_TITLE" correctBodyId="ID_CORRECT_BODY" wrongTitleId="ID_INCORRECT_TITLE" wrongBodyId="ID_INCORRECT_BODY"/>
+</element>
+</slide>
+</data>

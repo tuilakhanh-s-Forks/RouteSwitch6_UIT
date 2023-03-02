@@ -1,0 +1,12 @@
+
+          <p>By default, when a RIP process is configured on a Cisco router, it is running RIPv1, as shown in Figure 1. However, even though the router only sends RIPv1 messages, it can interpret both RIPv1 and RIPv2 messages. A RIPv1 router ignores the RIPv2 fields in the route entry. </p>
+          <p></p>
+          <p>Use the<b> version 2 </b>router configuration mode command to enable RIPv2, as shown in Figure 2. Notice how the<b> show ip protocols </b>command verifies that R2 is now configured to send and receive version 2 messages only. The RIP process now includes the subnet mask in all updates, making RIPv2 a classless routing protocol.  </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Configuring<b> version 1 </b>enables RIPv1 only, while configuring<b> no version </b>returns the router to the default setting of sending version 1 updates but listening for version 1 and version 2 updates. </p>
+          <p></p>
+          <p>Figure 3 verifies that there are no longer any RIP routes in the routing table. This is because R1 is now only listening for RIPv2 updates. R2 and R3 are still sending RIPv1 updates. Therefore, the<b> version 2 </b>command must be configured on all routers in the routing domain. </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to enable RIPv2 on R2 and R3.</p>
+        

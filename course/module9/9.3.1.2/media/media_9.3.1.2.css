@@ -1,0 +1,14 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_s2_txt08{
+	background-color:#F3F3F3;
+	border:2px solid #918F90; 
+	border-radius: 5px;
+	padding:7px;
+}
+#ID_router_txt1{
+	letter-spacing: -0.3px !important;
+}

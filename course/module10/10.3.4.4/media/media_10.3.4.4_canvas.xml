@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+            <element type="ROUTER" textId="ID_router_txt1" x="40" y="150" width="600" height="120" />
+            <element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#ffffff" />
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_photo.jpg" />
+            <element type="IMAGE" x="83" y="72" width="250" height="188" subType="STD" src="media_10.3.4.4A.jpg" />
+            <element type="IMAGE" x="367" y="146" width="230" height="307" subType="STD" src="media_10.3.4.4B.jpg" />
+            <element type="TEXT" compId="ID_s2_txt01" x="215" y="289" width="116" expand="left+right" align="center" class="orangeCallOut" />
+            <element type="TEXT" compId="ID_s2_txt02" x="193" y="342" width="116" expand="left+right" align="center" class="orangeCallOut" />
+            <element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#ffffff" />
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+            <element type="ACTIVITY" subType="SYNTAX" compId="ID_s3_SC5" x="25" y="55" width="630" height="400" resetId="ID_sc_reset" showMeId="ID_sc_showme" showAllId="ID_sc_showall" />
+            <!-- <slide buttonType="BLUE" buttonX="58" buttonY="359" buttonWidth="160" buttonHeight="21" compId="ID_sc_reset" selected="false">
+            </slide>
+            <slide buttonType="BLUE" buttonX="235" buttonY="359" buttonWidth="160" buttonHeight="21" compId="ID_sc_showme" selected="false">
+            </slide>
+            <slide buttonType="BLUE" buttonX="412" buttonY="359" buttonWidth="160" buttonHeight="21" compId="ID_sc_showall" selected="false">
+            </slide> -->
+            <element type="TEXT" subType="TITLE" compId="ID_s3_title" color="#ffffff" />
+        </slide>
+        <text id="ID_router_txt1">
+            <![CDATA[<pre>R1#  <b>show license udi</b>
+Device#  PID           SN           <span class="align">UDI</span>
+------------------------------------<span class="align">------------------------</span>
+*0       CISCO1941/K9  FTX1636848Z  <span class="align">CISCO1941/K9:FTX1636848Z</span>
+
+R1#</pre>]]></text>
+    </slide>
+</data>

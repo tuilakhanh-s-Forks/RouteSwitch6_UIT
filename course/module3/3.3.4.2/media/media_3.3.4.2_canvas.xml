@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+            <element type="ROUTER" textId="ID_router_txt1" x="40" y="55" width="600" height="400" />
+            
+            <element type="TEXT" compId="ID_s1_txt01" x="51" y="79" width="105" expand="right" align="left" color="#ffffff" />
+            <element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#FFFFFF"/>
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+            <element type="ROUTER" textId="ID_router_txt2" x="40" y="55" width="600" height="400" />
+            
+            <element type="TEXT" compId="ID_s2_txt01" x="51" y="79" width="105" expand="right" align="left" color="#ffffff" />
+            <element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#FFFFFF"/>
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+            <element type="TEXT" compId="ID_s3_txt06" x="52" y="79" width="105" expand="right" align="left" color="#4e4c4d" />
+            <element type="ROUTER" textId="ID_router_txt3" x="40" y="55" width="600" height="400" />
+           
+            <element type="TEXT" compId="ID_s3_txt01" x="47" y="155" width="101" expand="up" align="center" />
+            <element type="TEXT" compId="ID_s3_txt02" x="126" y="107" width="126" expand="left+right" align="center" />
+            <element type="TEXT" compId="ID_s3_txt04" x="216" y="158" width="101" expand="up" align="center" />
+            <element type="TEXT" compId="ID_s3_txt03" x="203" y="278" width="101" expand="down" align="center" />
+            <element type="TEXT" compId="ID_s3_txt05" x="56" y="300" width="101" expand="down" align="center" />
+            <element type="TEXT" subType="TITLE" compId="ID_s3_title" color="#FFFFFF"/>
+        </slide>
+    </slide>
+    <text id="ID_router_txt1"><![CDATA[
+<pre>R1# show ipv6 route 
+
+
+C 2001:DB8:CAFE:1::/64 [0/0] 
+     via GigabitEthernet0/0, directly connected 
+L 2001:DB8:CAFE:1::1/128 [0/0]
+     via GigabitEthernet0/0, receive 
+D 2001:DB8:CAFE:2::/64 [90/2170112] 
+     via FE80::2, Serial0/0/0, receive 
+D 2001:DB8:CAFE:3::/64 [90/2170112] 
+     via FE80::3, Serial0/0/1, receive 
+C 2001:DB8:CAFE:A001::/64 [0/0] 
+     via Serial0/0/0, directly connected 
+L 2001:DB8:CAFE:A001::1/128 [0/0] 
+     via Serial0/0/0, receive 
+D 2001:DB8:CAFE:A002::/64 [90/2681856] 
+     via FE80::2, Serial0/0/0, receive 
+     via FE80::3, Serial0/0/1, receive 
+C 2001:DB8:CAFE:A003::/64 [0/0] 
+     via Serial0/0/1, directly connected 
+L 2001:DB8:CAFE:A003::1/128 [0/0] 
+     via Serial0/0/1, receive 
+L FF00::/8 [0/0] 
+     via Null0, receive 
+R1#</pre>]]></text>
+    
+
+    <text id="ID_router_txt2"><![CDATA[
+<pre>R1# show ipv6 route 
+
+
+<span class="color">C 2001:DB8:CAFE:1::/64 [0/0] 
+     via GigabitEthernet0/0, directly connected 
+L 2001:DB8:CAFE:1::1/128 [0/0] 
+     via GigabitEthernet0/0, receive</span>
+D 2001:DB8:CAFE:2::/64 [90/2170112] 
+     via FE80::2, Serial0/0/0, receive 
+D 2001:DB8:CAFE:3::/64 [90/2170112] 
+     via FE80::3, Serial0/0/1, receive 
+<span class="color">C 2001:DB8:CAFE:A001::/64 [0/0] 
+     via Serial0/0/0, directly connected 
+L 2001:DB8:CAFE:A001::1/128 [0/0] 
+     via Serial0/0/0, receive</span>
+D 2001:DB8:CAFE:A002::/64 [90/2681856] 
+     via FE80::2, Serial0/0/0, receive 
+     via FE80::3, Serial0/0/1, receive 
+<span class="color">C 2001:DB8:CAFE:A003::/64 [0/0] 
+     via Serial0/0/1, directly connected 
+L 2001:DB8:CAFE:A003::1/128 [0/0] 
+     via Serial0/0/1, receive</span> 
+L FF00::/8 [0/0] 
+     via Null0, receive 
+R1#</pre>]]></text>
+    
+
+    <text id="ID_router_txt3">
+        <![CDATA[<pre>R1# show ipv6 route
+
+
+<span class="color1">C    2001:DB8:CAFE:1::/64 [0/0]
+      via GigabitEthernet0/0, directly connected
+L    2001:DB8:CAFE:1::1/128 [0/0]
+      via GigabitEthernet0/0, receive
+D    2001:DB8:CAFE:2::/64 [90/3524096]
+      via FE80::3, Serial0/0/1
+D    2001:DB8:CAFE:3::/64 [90/2170112]
+      via FE80::3, Serial0/0/1</span>
+<span id="bgGreen">C  </span> <span id="bgYellow"> 2001:DB8:CAFE:A001::/64 </span><span id="bgOrange">[0/</span><span id="bgBlue">0]</span>
+     <span id="bgPurple">via Serial0/0/0,</span> directly connected
+L    2001:DB8:CAFE:A001::1/128 [0/0]
+      via Serial0/0/0, receive
+<span class="color1">D    2001:DB8:CAFE:A002::/64 [90/3523840]
+      via FE80::3, Serial0/0/1
+C    2001:DB8:CAFE:A003::/64 [0/0]
+      via Serial0/0/1, directly connected
+L    2001:DB8:CAFE:A003::1/128 [0/0]
+      via Serial0/0/1, receive
+L    FF00::/8 [0/0]
+      via Null0, receive
+R1#</span></pre>
+
+
+<img id="imgArrows" alt="Figure one shows the I.P.V.6. routing table for router R-1 produced from the command, show i.p. route. The table consists of three directly connected routes, three interface I.P. addresses, and three networks learned from E.I.G.R.P. Figure two highlights the three directly connected networks and the three interface I.P. addresses. Figure three lists one of the entries and identifies each piece of the entry. The line reads C for a directly connected route, 2 0 0 1 colon D B 8 colon C A F E colon A 0 0 1 colon colon slash 64 for the network address, 0 slash 0 for the administrative distance and the metric. The line ends with via serial zero slash zero slash zero for the outgoing interface."  src="arrows.png"/> 
+ ]]>
+    </text>
+</data>

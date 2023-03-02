@@ -1,0 +1,13 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_txt01{
+	color:#fff !important;
+}
+
+html, body {
+	margin:0;
+	height:100%;
+}

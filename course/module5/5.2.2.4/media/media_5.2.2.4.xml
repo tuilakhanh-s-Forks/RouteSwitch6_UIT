@@ -1,0 +1,199 @@
+<textcomponents>
+
+<!--Slide 1-->
+<component id="ID_s1_title">
+<text><![CDATA[<b>Port Security Defaults</b>]]></text>
+</component>
+
+<component id="ID_table">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+<tr>
+<td bgcolor='#666263' width='298' valign="top"><font color='#ffffff'><b>Feature</b></font></td>
+<td bgcolor='#666263' width='298' valign="top"><font color='#ffffff'><b>Default Setting</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Port security</td>
+<td bgcolor='#F2F2F2'>Disabled on a port</td>
+</tr>
+<tr>
+<td bgcolor='#E9E7E8'>Maximum number of secure MAC addresses</td>
+<td bgcolor='#E9E7E8'>1</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Violation mode</td>
+<td bgcolor='#F2F2F2'>Shutdown. The port shuts down when the maximum number of secure MAC addresses is exceeded.</td>
+</tr>
+<tr>
+<td bgcolor='#E9E7E8'>Sticky address learning</td>
+<td bgcolor='#E9E7E8'>Disabled</td>
+</tr>
+</table>]]></text>
+</component>
+
+<component id="ID_table_html">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+
+  <caption class="mtable_title" colspan="2" bgcolor='#FFFFFF'><font size="1"></font></caption>
+
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+<tr>
+<th scope="col" bgcolor='#666263' width='298' valign="top"><font color='#ffffff'><b>Feature</b></font></th>
+<th scope="col" bgcolor='#666263' width='298' valign="top"><font color='#ffffff'><b>Default Setting</b></font></th>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Port security</td>
+<td bgcolor='#F2F2F2'>Disabled on a port</td>
+</tr>
+<tr>
+<td bgcolor='#E9E7E8'>Maximum number of secure MAC addresses</td>
+<td bgcolor='#E9E7E8'>1</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Violation mode</td>
+<td bgcolor='#F2F2F2'>Shutdown. The port shuts down when the maximum number of secure MAC addresses is exceeded.</td>
+</tr>
+<tr>
+<td bgcolor='#E9E7E8'>Sticky address learning</td>
+<td bgcolor='#E9E7E8'>Disabled</td>
+</tr>
+</table>]]></text>
+</component>
+
+
+<!--Slide 2-->
+<component id="ID_s2_title">
+<text><![CDATA[<b>Configure Dynamic Port Security</b>]]></text>
+</component> 
+
+<component id="ID_s2_table">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+<td colspan='2' bgcolor='#FFFFFF'><font size='15' class="font11px" color='#393536'><b>Cisco IOS CLI Commands</b></font></td>
+</tr>
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' width='200'>Specify the interface to be configured for port security.</td>
+<td bgcolor='#F2F2F2'><font face="_typewriter" color="#000000">S1(config)# <b>interface fastethernet 0/18</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8'>Set the interface mode to access.</td>
+<td bgcolor='#E9E7E8'><font face="_typewriter" color="#000000">S1(config-if)# <b>switchport mode access</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'>Enable port security on the interface.</td>
+<td bgcolor='#F2F2F2'><font face="_typewriter" color="#000000">S1(config-if)# <b>switchport port-security</b></font></td>
+</tr>
+
+</table>]]></text>
+
+</component>
+
+<component id="ID_s2_table_html">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+
+
+<caption  class="mtable_title" colspan="2" bgcolor='#FFFFFF'>
+               <font size="15"><b>Cisco IOS CLI Commands</b></font>
+           </caption>
+
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' width='200'>Specify the interface to be configured for port security.</td>
+<td bgcolor='#F2F2F2'><font face="_typewriter" color="#000000">S1(config)# <b>interface fastethernet 0/18</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8'>Set the interface mode to access.</td>
+<td bgcolor='#E9E7E8'><font face="_typewriter" color="#000000">S1(config-if)# <b>switchport mode access</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'>Enable port security on the interface.</td>
+<td bgcolor='#F2F2F2'><font face="_typewriter" color="#000000">S1(config-if)# <b>switchport port-security</b></font></td>
+</tr>
+
+</table>]]></text>
+
+</component>
+
+
+
+<!--Slide 3-->
+<component id="ID_s3_title">
+<text><![CDATA[<b>Configure Sticky Port Security</b>]]></text>
+</component>
+
+
+<component id="ID_s3_table">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+<td colspan='2' bgcolor='#FFFFFF'><font size='15' class="font11px" color='#393536'><b>Cisco IOS CLI Commands</b></font></td>
+</tr>
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td></tr>
+<tr>
+<td bgcolor='#F2F2F2' width='200'>Specify the interface to be configured for port security.</td>
+<td bgcolor='#F2F2F2'><font face="_typewriter" color="#000000">S1(config)# <b>interface fastethernet 0/19</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#E9E7E8'>Set the interface mode to access.</td>
+<td bgcolor='#E9E7E8'><font face="_typewriter" color="#000000">S1(config-if)# <b>switchport mode access</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Enable port security on the interface.</td>
+<td bgcolor='#F2F2F2'><font face="_typewriter" color="#000000">S1(config-if)# <b>switchport port-security</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#E9E7E8'>Set the maximum number of secure addresses allowed on the port.</td>
+<td bgcolor='#E9E7E8'><font face="_typewriter">S1(config-if)# <b>switchport port-security maximum 10</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Enable sticky learning.</td>
+<td bgcolor='#F2F2F2'><font face="_typewriter">S1(config-if)# <b>switchport port-security mac-address sticky</b></font></td>
+</tr></table>]]></text>
+</component> 
+
+
+<component id="ID_s3_table_html">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<caption  class="mtable_title" colspan="2" bgcolor='#FFFFFF'>
+               <font size="15"><b>Cisco IOS CLI Commands</b></font>
+           </caption>
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td></tr>
+<tr>
+<td bgcolor='#F2F2F2' width='200'>Specify the interface to be configured for port security.</td>
+<td bgcolor='#F2F2F2'><font face="_typewriter" color="#000000">S1(config)# <b>interface fastethernet 0/19</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#E9E7E8'>Set the interface mode to access.</td>
+<td bgcolor='#E9E7E8'><font face="_typewriter" color="#000000">S1(config-if)# <b>switchport mode access</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Enable port security on the interface.</td>
+<td bgcolor='#F2F2F2'><font face="_typewriter" color="#000000">S1(config-if)# <b>switchport port-security</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#E9E7E8'>Set the maximum number of secure addresses allowed on the port.</td>
+<td bgcolor='#E9E7E8'><font face="_typewriter">S1(config-if)# <b>switchport port-security maximum 10</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Enable sticky learning.</td>
+<td bgcolor='#F2F2F2'><font face="_typewriter">S1(config-if)# <b>switchport port-security mac-address sticky</b></font></td>
+</tr></table>]]></text>
+</component> 
+
+</textcomponents>

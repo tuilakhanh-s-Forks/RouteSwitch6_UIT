@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.3.3.2 Steps to Backup IOS Image to TFTP Server</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.3.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Steps to Backup IOS Image to TFTP Server</h1>
+        <div>
+          <p>To maintain network operations with minimum down time, it is necessary to have procedures in place for backing up Cisco IOS images. This allows the network administrator to quickly copy an image back to a router in case of a corrupted or erased image.</p>
+          <p></p>
+          <p>In Figure 1, the network administrator wants to create a backup of the current image file on the router (c1900-universalk9-mz.SPA.152-4.M3.bin) to the TFTP server at 172.16.1.100.</p>
+          <p></p>
+          <p>To create a backup of the Cisco IOS image to a TFTP server, perform the following three steps:</p>
+          <p></p>
+          <p>
+            <b>Step 1.  </b>Ensure that there is access to the network TFTP server. Ping the TFTP server to test connectivity, as shown in Figure 2.</p>
+          <p></p>
+          <p>
+            <b>Step 2.  </b>Verify that the TFTP server has sufficient disk space to accommodate the Cisco IOS Software image. Use the<b> show flash0: </b>command on the router to determine the size of the Cisco IOS image file. The file in the example is 68831808 bytes long.</p>
+          <p></p>
+          <p>
+            <b>Step 3.  </b>Copy the image to the TFTP server using the<b> copy </b><i>source-url destination-url </i>command, as shown in Figure 3.</p>
+          <p></p>
+          <p>After issuing the command using the specified source and destination URLs, the user is prompted for the source file name, IP address of the remote host, and destination file name. The transfer will then begin.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 on R2 to copy the IOS to a TFTP server.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a router and a server demonstrating that the i. o. s. can be backed up to a t. f. t. p. server. Figure two shows a successful result of the router pinging the server from the router.  It also shows the output from the "show flash colon zero" command on the router. Figure three shows the syntax for copying the i. o. s. from flash to the t. f. t. p. server. Figure four is an interactive activity that allows the learner to practice backing up an i. o. s. file to a t. f. t. p. server.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

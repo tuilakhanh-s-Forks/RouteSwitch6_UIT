@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+<slide type="MBAR">
+        	<slide>
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+        <element type="TEXT" compId="ID_s1_table01_html" x="50" y="60" width="600" height="200" />
+        <element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#ffffff"/>
+        </slide>
+
+
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+<element type="IMAGE" x="0" y="0" width="680" height="490"  src="5_1_2_4.png" />
+<!-- <element type="TEXT" compId="ID_s2_txt01" x="45" y="229" width="146" expand="right" align="left" color="#ffffff" />
+<element type="TEXT" compId="ID_s2_txt02" x="45" y="398" width="146" expand="right" align="left" color="#ffffff" /> -->
+<element type="ROUTER" textId="RouterText" x="40" y="193.85" width="600" height="260" />
+
+<element type="TEXT" id="ID_static_1" text="F0/18" x="309" y="75" align="center" width="30" />
+<element type="TEXT" subType="TITLE" compId="ID_s2_title"/>
+</slide>
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+<element type="IMAGE" x="0" y="0" width="680" height="490"  src="5_1_2_4.png" />
+
+<element type="ROUTER" textId="RouterText1" x="40" y="193.85" width="600" height="260" />
+
+<element type="TEXT" id="ID_static_2" text="F0/18" x="309" y="75" align="center" width="30" />
+<element type="TEXT" subType="TITLE" compId="ID_s3_title"/>
+</slide>
+</slide>
+
+
+
+<text id="RouterText"><![CDATA[<pre><b>S1# show running-config </b>
+Building configuration…
+&lt;output omitted&gt;
+Current configuration : 1664 bytes
+!
+
+!
+interface FastEthernet0/18
+ switchport access vlan 99
+ switchport mode access
+!
+&lt;output omitted&gt;
+!
+interface Vlan99
+ ip address 172.17.99.11  255.255.0.0
+!
+&lt;output omitted&gt;
+!
+ip default-gateway 172.17.99.1
+!
+&lt;output omitted&gt;
+</pre>]]></text>
+
+<text id="RouterText1"><![CDATA[<pre><b>S1# show interfaces fastEthernet 0/18 </b>
+FastEthernet0/18 is up, line protocol is up (connected) 
+  Hardware is Fast Ethernet, address is 0cd9.96e8.8a01 
+(bia 0cd9.96e8.8a01)
+  MTU 1500 bytes, BW 100000 Kbit/sec, DLY 100 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Full-duplex, 100Mb/s, media type is 10/100BaseTX
+  input flow-control is off, output flow-control is 
+unsupported 
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 00:00:01, output 00:00:06, output hang 
+  never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); 
+  Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     25994 packets input, 2013962 bytes, 0 no buffer
+     Received 22213 broadcasts (21934 multicasts)
+     0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 
+	 ignored
+     0 watchdog, 21934 multicast, 0 pause input
+     0 input packets with dribble condition detected
+     7203 packets output, 771291 bytes, 0 underruns
+&lt;output omitted&gt;
+
+</pre>]]></text>	
+
+</data>

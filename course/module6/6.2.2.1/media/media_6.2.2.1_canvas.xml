@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+             <element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#ffffff" />
+            <element type="TEXT" subType="TABLE" compId="ID_s1_table01_html" x="40" y="60" width="600" height="400" />
+           
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+            <element type="TEXT" subType="TITLE" compId="ID_s2_title" />
+             <element type="IMAGE" x="0" y="0" width="680" height="490" src="media_6.2.2.1.png" />
+             <element type="ROUTER" textId="ID_router_txt1" x="40" y="72" width="600" height="100" />
+            <element type="TEXT" compId="ID_s2_txt01" x="129" y="250" width="96" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s2_txt02" x="132" y="324" width="90" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s2_txt03" x="129" y="399" width="96" expand="up+down" align="center" color="#ffffff" />
+            
+            
+            <element type="TEXT" id="ID_static_1" text="F0/1" x="422" y="298" align="center" width="22" />
+            <element type="TEXT" compId="ID_s2_txt04" x="460" y="266" width="95" expand="right" align="left" size="10" />
+            <element type="TEXT" id="ID_static_2" text="F0/1" x="466" y="239" align="center" width="22" />
+            
+        </slide>
+         <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+            <element type="TEXT" subType="TITLE" compId="ID_s3_title" color="#ffffff" />
+            <element type="ROUTER" textId="ID_router_txt2" x="40" y="55" width="600" height="400" />
+            
+            
+        </slide>
+    </slide>
+    <text id="ID_router_txt1">
+        <![CDATA[<table width="294" border="0" cellspacing="0" cellpadding="0"> <tr> <td>VLAN 10 - Faculty/Staff - 172.17.10.0/24</td> </tr> <tr> <td>VLAN 20 - Students - 172.17.20.0/24</td> </tr> <tr> <td>VLAN 30 - Guest - 172.17.30.0/24</td> </tr> <tr> <td>VLAN 99 - Native - 172.17.99.0/24</td> </tr></table>]]>
+    </text>
+    <text id="ID_router_txt2">
+        <![CDATA[<table width="400" border="0" cellspacing="0" cellpadding="0"> <tr> <td>S1(config)#<strong> interface FastEthernet0/1</strong></td> </tr> <tr> <td>S1(config-if)# <strong>switchport mode trunk</strong></td> </tr> <tr> <td>S1(config-if)# <strong>switchport trunk native vlan 99</strong></td> </tr> <tr> <td>S1(config-if)# <strong>switchport trunk allowed vlan 10,20,30,99</strong></td> </tr> <tr> <td>S1(config-if)# <strong>end</strong></td> </tr></table>]]>
+    </text>
+</data>

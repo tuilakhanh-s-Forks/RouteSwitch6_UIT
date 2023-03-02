@@ -1,0 +1,109 @@
+{
+	"title": "Internet of Everything - Course Navigation Tutorial",
+	"lang": "en",
+	"rtl": false,
+	"contents": [
+		{
+			"pageNumber": 1,
+			"img": "client/content/img/help02-page01-bg.jpg",
+			"imgAlt": "Welcome collage background image. It includes photos of a bus, a guitar, a city view and a mountain top",
+			"header": "Course Navigation - Tutorial",
+			"text": "This tutorial will show you how to:",
+			"list": [
+				"Use the course map",
+				"View all figures on a page",
+				"Use navigation features on each page"
+			]
+		},
+		{
+			"pageNumber": 2,
+			"img": "client/content/img/help02-page02-bg.jpg",
+			"imgAlt": "Course map showing chapter list",
+			"text": "From the course dashboard, you can navigate the Chapters, Sections, Topics, and Pages of the course by using the course map."
+		},
+		{
+			"pageNumber": 3,
+			"img": "client/content/img/help02-page03-bg.jpg",
+			"imgAlt": "Course map with sections in Chapter 2 expanded",
+			"text": "Double-click a Chapter to open the first Page of that Chapter. Or, single-click a Chapter to expand the Sections contained within the Chapter."
+		},
+		{
+			"pageNumber": 4,
+			"img": "client/content/img/help02-page04-bg.jpg",
+			"imgAlt": "Course map with topics in section 2.1 expanded",
+			"text": "Click a Section to expand the Topics contained within the Section."
+		},
+		{
+			"pageNumber": 5,
+			"img": "client/content/img/help02-page05-bg.jpg",
+			"imgAlt": "Course map with pages in topic 2.1.2 expanded",
+			"text": "Click a Topic to expand the Pages within the Topic."
+		},
+		{
+			"pageNumber": 6,
+			"img": "client/content/img/help02-page06-bg.jpg",
+			"imgAlt": "Course map with page 2.1.2.1 highlighted",
+			"text": "Click the Page you would like to open."
+		},
+		{
+			"pageNumber": 7,
+			"img": "client/content/img/help02-page07-bg.jpg",
+			"imgAlt": "Course page with text size increased",
+			"text": "You can magnify the text by pressing Ctrl + (+) on a full keyboard or press and hold Ctrl while scrolling up with the mouse wheel."
+		},
+		{
+			"pageNumber": 8,
+			"img": "client/content/img/help02-page08-bg.jpg",
+			"imgAlt": "Course size with text size reduced",
+			"text": "Reduce magnification of the text by pressing Ctrl - (-) on a full keyboard or press and hold Ctrl while scrolling down with the mouse wheel."
+		},
+		{
+			"pageNumber": 9,
+			"img": "client/content/img/help02-page09-bg.jpg",
+			"imgAlt": "Course page with breadcrumbs highlighted",
+			"text": "The breadcrumbs along the top of the page provide links back to the course map."
+		},
+		{
+			"pageNumber": 10,
+			"img": "client/content/img/help02-page10-bg.jpg",
+			"imgAlt": "Course page with Next button highlighted",
+			"text": "Each page contains a button to advance to the next page."
+		},
+		{
+			"pageNumber": 11,
+			"img": "client/content/img/help02-page11-bg.jpg",
+			"imgAlt": "Course page with Previous button highlighted",
+			"text": "And, a button to return to the previous page."
+		},
+		{
+			"pageNumber": 12,
+			"img": "client/content/img/help02-page12-bg.jpg",
+			"imgAlt": "Course text with transcript button highlighted",
+			"text": "Click the plus symbol beside an image to view more information."
+		},
+		{
+			"pageNumber": 13,
+			"img": "client/content/img/help02-page13-bg.jpg",
+			"imgAlt": "Course page with additional information highlighted",
+			"text": "Additional information about SOHO networks is now displayed."
+		},
+		{
+			"pageNumber": 14,
+			"img": "client/content/img/help02-page14-bg.jpg",
+			"imgAlt": "Course page with numbered buttons highlighted",
+			"text": "Some pages contain more than one figure. Click the numbered buttons to view each figure."
+		},
+		{
+			"pageNumber": 15,
+			"img": "client/content/img/help02-page15-bg.jpg",
+			"imgAlt": "Course page with Next button highlighted",
+			"text": "When you are done with the page, click the Next button to advance to the next page."
+		},
+		{
+			"pageNumber": 16,
+			"img": "client/content/img/help02-page16-bg.jpg",
+			"imgAlt": "Course page with Close button highlighted",
+			"text": "Click the Close button to close the page."
+		}
+	]
+}

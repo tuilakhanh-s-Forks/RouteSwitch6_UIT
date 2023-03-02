@@ -1,0 +1,13 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+.orangeColor{
+	color:#F68026 !important;
+}
+.purpleTxt{color:#652C8A;}
+.orangeTxt{color:#F68026;}
+
+#s3_text1{
+	letter-spacing: -1px;
+}

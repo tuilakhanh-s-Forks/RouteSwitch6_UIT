@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide type="MBAR">
+	<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />	
+	<element type="IMAGE" src="media_2.3.2.1.png" x="0" y="0" width="680" height="490"/>
+	
+	<slide>
+	<element type="TEXT" subType="TITLE" compId="ID_s1_title" />
+	<element type="ROUTER" textId="ID_s4_txt01" x="40" y="335.6" width="600" height="144"/>	
+	</slide>	
+	
+	<slide>
+		<element type="TEXT" subType="TITLE" compId="ID_s2_title"/>
+		<element type="ROUTER" textId="ID_s5_txt01" x="40" y="335.6" width="600" height="144"/>	
+	</slide>	
+	
+	<slide>
+		<element type="TEXT" subType="TITLE" compId="ID_s3_title"/>
+		<element type="ROUTER" textId="ID_s6_txt01" x="40" y="335.6" width="600" height="144"/>	
+	</slide>	
+	
+	<slide>
+		<element type="TEXT" subType="TITLE" compId="ID_s4_title" />
+		<element type="ROUTER" textId="ID_s7_txt01" x="40" y="335.6" width="600" height="144"/>	
+	</slide>	
+	
+	<slide>
+		<element type="TEXT" subType="TITLE" compId="ID_s5_title" />
+		<element type="ROUTER" textId="ID_s8_txt01" x="40" y="335.6" width="600" height="144"/>	
+	</slide>
+	
+	<text id="ID_s4_txt01"><![CDATA[
+			<pre>R1# <b>ping 192.168.2.1 source 172.16.3.1</b>
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.2.1, timeout is 2 seconds:
+Packet sent with a source address of 172.16.3.1 
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 28/28/28
+ms
+R1#</pre>
+		]]></text>
+		
+		<text id="ID_s5_txt01"><![CDATA[
+			<pre>R1# <b>traceroute 192.168.2.1</b>
+Type escape sequence to abort.
+Tracing the route to 192.168.2.1
+VRF info: (vrf in name/id, vrf out name/id)
+  1 172.16.2.2 4 msec 4 msec 8 msec
+  2 192.168.1.1 12 msec 12 msec * 
+R1#</pre>
+		]]></text>
+		
+		<text id="ID_s6_txt01"><![CDATA[
+			<pre>R1# <b>show ip route | begin Gateway</b>
+Gateway of last resort is not set
+
+     172.16.0.0/16 is variably subnetted, 5 subnets, 2 masks
+S       172.16.1.0/24 [1/0] via 172.16.2.2
+C       172.16.2.0/24 is directly connected, Serial0/0/0
+L       172.16.2.1/32 is directly connected, Serial0/0/0
+C       172.16.3.0/24 is directly connected, GigabitEthernet0/0
+L       172.16.3.1/32 is directly connected, GigabitEthernet0/0
+S    192.168.1.0/24 [1/0] via 172.16.2.2
+S    192.168.2.0/24 [1/0] via 172.16.2.2
+R1# 
+
+</pre>
+		]]></text>
+		
+		<text id="ID_s7_txt01"><![CDATA[
+<pre>R1# <b>show ip interface brief</b>
+Interface                  IP-Address  OK? Method Status                Protocol 
+Embedded-Service-Engine0/0 unassigned  YES unset  administratively down down    
+GigabitEthernet0/0         172.16.3.1  YES manual up                    up      
+GigabitEthernet0/1         unassigned  YES unset  administratively down down    
+Serial0/0/0                172.16.2.1  YES manual up                    up      
+Serial0/0/1                unassigned  YES unset  administratively down down    
+R1#</pre>]]></text>
+		
+		<text id="ID_s8_txt01"><![CDATA[
+<pre>R1# <b>show cdp neighbors</b>       
+Capability Codes: R - Router, T - Trans Bridge, 
+                  B - Source Route Bridge, S - Switch, H - Host,
+                  I - IGMP, r - Repeater, P - Phone, D - Remote, 
+                  C - CVTA, M - Two-port Mac Relay 
+
+				  
+Device ID   Local Intrfce  Holdtme  Capability  Platform  Port ID
+netlab-cs5  Gig 0/0         156      S I        WS-C2960- Fas 0/1
+R2          Ser 0/0/0       153      R S I      CISCO1941 Ser 0/0/0
+R1#
+
+</pre>
+		]]></text>
+			
+	</slide>
+</data>

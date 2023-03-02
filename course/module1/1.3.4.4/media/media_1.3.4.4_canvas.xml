@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	
+		  <slide>
+		   <element type="TEXT" subType="TITLE" compId="ID_title"/>
+		   
+		   <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+			<element type="IMAGE" src="media_1.3.4.4.png" x="0" y="0" width="680" height="490"/>
+		   <element type="ROUTER"  textId="router_text1"  x="40"    y="264.55"   width="600" height="180"  />
+		   <element type="TEXT" compId="ID_txt01" x="315.2" y="140.75" width="54.1" expand="right" align="center" />
+		   
+
+ 
+		  
+		  
+		  </slide>
+         <text id="router_text1"><![CDATA[<pre>R1(config)# <b>ipv6 router ?</b>
+  eigrp     Enhanced Interior Gateway Routing Protocol (EIGRP)
+  ospf      Open Shortest Path First (OSPF)
+  rip       IPv6 Routing Information Protocol (RIPv6)
+
+R1(config)# <b>router</b> 
+</pre>]]></text>
+		
+
+</data>

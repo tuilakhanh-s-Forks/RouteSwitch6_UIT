@@ -1,0 +1,17 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Syslog Message Destination Options</b>]]></text>
+</component>
+<component id="ID_txt01">
+  <text><![CDATA[Logging Buffer]]></text> 
+  </component>
+<component id="ID_txt02">
+  <text><![CDATA[Console Line]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[Terminal Line]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[Syslog Server]]></text> 
+  </component>
+</textcomponents>

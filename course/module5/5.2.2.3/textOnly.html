@@ -1,0 +1,24 @@
+
+          <p>An interface can be configured for one of three violation modes, specifying the action to be taken if a violation occurs. The figure presents which kinds of data traffic are forwarded when one of the following security violation modes are configured on a port: </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Protect </b>- When the number of secure MAC addresses reaches the limit allowed on the port, packets with unknown source addresses are dropped until a sufficient number of secure MAC addresses are removed, or the number of maximum allowable addresses is increased. There is no notification that a security violation has occurred. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Restrict </b>- When the number of secure MAC addresses reaches the limit allowed on the port, packets with unknown source addresses are dropped until a sufficient number of secure MAC addresses are removed, or the number of maximum allowable addresses is increased. In this mode, there is a notification that a security violation has occurred.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Shutdown </b>- In this (default) mode, a port security violation causes the interface to immediately become error-disabled and turns off the port LED. It increments the violation counter. When a secure port is in the error-disabled state, it can be brought out of this state by entering the<b> shutdown </b>interface configuration mode command followed by the<b> no shutdown </b>command. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>To change the violation mode on a switch port, use the<b> switchport port-security violation </b>{<b>protect </b>|<b> restrict </b>|<b> shutdown</b>} interface configuration mode command.</p>
+        

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.1.2.6 Console Access</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.1.2.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Console Access</h1>
+        <div>
+          <p>In a production environment, infrastructure devices are commonly accessed remotely using Secure Shell (SSH) or HyperText Transfer Protocol Secure (HTTPS). Console access is really only required when initially configuring a device, or if remote access fails.</p>
+          <p></p>
+          <p>Console access requires:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Console cable </b>- RJ-45-to-DB-9 serial cable or a USB serial cable</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Terminal emulation software </b>- Tera Term, PuTTY, HyperTerminal </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The cable is connected between the serial port of the host and the console port on the device. Most computers and notebooks no longer include built-in serial ports. If the host does not have a serial port, the USB port can be used to establish a console connection. A special USB-to-RS-232 compatible serial port adapter is required when using the USB port. </p>
+          <p></p>
+          <p>The Cisco ISR G2 supports a USB serial console connection. To establish connectivity, a USB Type-A to USB Type-B (mini-B USB) is required, as well as an operating system device driver. This device driver is available from <a href="http://www.cisco.com/" target="_blank">www.cisco.com</a>. Although these routers have two console ports, only one console port can be active at a time. When a cable is plugged into the USB console port, the RJ-45 port becomes inactive. When the USB cable is removed from the USB port, the RJ-45 port becomes active.</p>
+          <p></p>
+          <p>The table in Figure 1 summarizes the console connection requirements. Figure 2 displays the various ports and cables required.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one is a table of console connection requirements for Cisco routers.  The column headings are as follows: port on computer, Cable Required, Port on I.S.R., and Terminal Emulation.  For example using a serial port on a computer requires an R.J. dash 45 to D.B. dash 9 console cable, and connects to the R.J. dash 45 console port on the router.  Either terminal emulation program Tera Term or Putty can be used. Figure two is the same table but with pictures of the ports and cables.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

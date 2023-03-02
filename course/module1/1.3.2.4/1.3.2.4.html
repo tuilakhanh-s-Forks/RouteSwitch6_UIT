@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.3.2.4 Directly Connected IPv6 Example</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.3.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Directly Connected IPv6 Example</h1>
+        <div>
+          <p>The example in Figure 1 shows the configuration steps for the directly connected interfaces of R1 with the indicated IPv6 addresses. Notice the Layer 1 and Layer 2 informational messages generated as each interface is configured and activated.</p>
+          <p></p>
+          <p>The <b>show ipv6 route</b> command shown in Figure 2 is used to verify that IPv6 networks and specific IPv6 interface addresses have been installed in the IPv6 routing table. Like IPv4, a ‘<b>C</b>’ next to a route indicates that this is a directly connected network. An ‘<b>L</b>’ indicates the local route. In an IPv6 network, the local route has a /128 prefix. Local routes are used by the routing table to efficiently process packets with a destination address of the interface of the router. </p>
+          <p></p>
+          <p>Notice that there is also a route installed to the FF00::/8 network. This route is required for multicast routing.</p>
+          <p></p>
+          <p>Figure 3 displays how the<b> show ipv6 route </b>command can be combined with a specific network destination to display the details of how that route was learned by the router. </p>
+          <p></p>
+          <p>Figure 4 displays how connectivity to R2 can be verified using the <b>ping</b> command. </p>
+          <p></p>
+          <p>In Figure 5, notice what happens when the G0/0 LAN interface of R2 is the target of the <b>ping</b> command. The pings are unsuccessful. This is because R1 does not have an entry in the routing table to reach the 2001:DB8:ACAD:4::/64 network. </p>
+          <p></p>
+          <p>R1 requires additional information to reach a remote network. Remote network route entries can be added to the routing table using either:</p>
+          <p>
+            <ul>
+              <li>Static routing </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Dynamic routing protocols</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the configuration steps for the directly connected interfaces of a router with I.P.v.6 addresses.  The commands begin in global configuration mode.  The first command moves to the interface, the command is interface gigabit Ethernet zero slash zero.  The next command puts a description in the configuration file for the interface, and the command is description Link to LAN 1.  The next command assigns the i.p. address, and is i.p. v 6 address 2001 colon d b 8 colon a c a d colon one colon colon 1 slash 64.  The interface must now be turned on with the no shutdown command.  The interface is changed to the status of up.  The process is repeated for the next two interfaces on the router. Figure two shows the output of the show i.p.v.6. route command.  This will display the I.P. version 6 routing table and is very similar to the I.P. v 4 routing table. Figure three shows the output of the route specific command show i.p. v 6 route 2001 colon d b 8 colon a c a d colon 1 colon colon slash 64.  This will display only the route table entry for the specified network.  In the figure this is a connected route. Figure four shows the I.P. version 6 ping command.  The syntax is ping 2001 colon d b 8 colon a c a d colon 3 colon colon 2.  In the figure, five 100-byte echo requests were sent and 5 were received.  Figure five shows the I.P. version 6 ping command.  The syntax is ping 2001 colon d b 8 colon a c a d colon 4 colon colon 1.  In the figure five 100-byte echo requests were sent and zero were received because there is no route for the specified network.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

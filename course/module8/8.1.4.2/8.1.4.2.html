@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.4.2 Verify Router DHCPv4 Configuration</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.4.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verify Router DHCPv4 Configuration</h1>
+        <div>
+          <p>When the DHCPv4 server is located on a separate LAN from the client, the router interface facing the client must be configured to relay DHCPv4 requests by configuring the IPv4 helper address. If the IPv4 helper address is not configured properly, client DHCPv4 requests are not forwarded to the DHCPv4 server.</p>
+          <p></p>
+          <p>Follow these steps to verify the router configuration:</p>
+          <p></p>
+          <p>
+            <b>Step 1. </b>Verify that the <b>ip helper-address </b>command is configured on the correct interface. It must be present on the inbound interface of the LAN containing the DHCPv4 client workstations and must be directed to the correct DHCPv4 server. In the figure, the output of the<b> show running-config </b>command verifies that the DHCPv4 relay IPv4 address is referencing the DHCPv4 server address at 192.168.11.6.</p>
+          <p></p>
+          <p>The <b>show ip interface</b> command can also be used to verify the DHCPv4 relay on an interface.</p>
+          <p></p>
+          <p>
+            <b>Step 2. </b>Verify that the global configuration command <b>no service dhcp</b> has not been configured. This command disables all DHCP server and relay functionality on the router. The command <b>service dhcp</b> does not appear in the running-config, because it is the default configuration.</p>
+          <p></p>
+          <p>In the figure, the <b>show running-config | include no service dhcp </b>command verifies that the DHCPv4 service is enabled since there is no match for the <b>show running-config | include no service dhcp </b>command. If the service had been disabled, the<b> no service dhcp </b>command would be displayed in the output.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the output of the command, show running hyphen config pipe section interface gigabit Ethernet zero slash zero.  The output will list the configuration settings for the specified interface, including any d.h.c.p. settings.  In the figure, the output lists an i.p. address and an i.p. helper address.  The figure then shows the output of the command, show running hyphen config pipe include no service d.h.c.p.  In the example the output is blank.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

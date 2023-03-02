@@ -1,0 +1,22 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+#ID_s5_txt01{margin-top:8px;padding-left:4px !important;width:447px !important;height: 37px !important;}
+
+.color1{background: none repeat scroll 0 0 #B5D9B3;
+    width: 18%;
+    display: inline-block;margin: 0 0 0 -3px;
+    padding: 0 0 0 3px;}
+.color2{background:#facca8;}
+.color3{background:#e0d5e6;}
+.color4{background: none repeat scroll 0 0 #F3D0D6;
+    display: inline-block;
+    margin: 0 0 0 -7px;}
+
+#static1{color:#F79951;}
+#static2{color:#90C68C;}
+#static3{color:#C1ABD1;}
+#static4{color:#CDD750;}

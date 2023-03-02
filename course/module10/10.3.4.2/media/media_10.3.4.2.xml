@@ -1,0 +1,29 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Licensing Overview</b>]]></text>
+</component>
+<component id="ID_txt01">
+  <text><![CDATA[Cisco License Manager]]></text> 
+  </component>
+<component id="ID_txt02">
+  <text><![CDATA[Cisco License Portal]]></text> 
+  </component>
+  <component id="ID_txt03">
+  <text><![CDATA[OR]]></text> 
+  </component>
+   <component id="ID_txt04">
+  <text><![CDATA[Purchase a Package or Feature]]></text> 
+  </component>
+  <component id="ID_txt05">
+  <text><![CDATA[Receive a PAK]]></text> 
+  </component>
+    <component id="ID_txt06">
+  <text><![CDATA[Obtain a License<br/>(Associate the PAK with the UDI)]]></text> 
+  </component>
+   <component id="ID_txt07">
+  <text><![CDATA[Receive License File]]></text> 
+  </component>
+   <component id="ID_txt08">
+  <text><![CDATA[Install License]]></text> 
+  </component>
+</textcomponents>

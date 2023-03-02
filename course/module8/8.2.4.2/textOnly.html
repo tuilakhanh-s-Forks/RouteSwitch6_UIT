@@ -1,0 +1,18 @@
+
+          <p>The router configurations for stateless and stateful DHCPv6 services have many similarities but also include significant differences. Figure 1 shows the configuration commands for both types of DHCPv6 services.</p>
+          <p></p>
+          <p>
+            <b>Stateful DHCPv6 </b>
+          </p>
+          <p></p>
+          <p>A router configured for stateful DHCPv6 services has the <b>address prefix</b> command to provide addressing information.</p>
+          <p>For stateful DHCPv6 services the <b>ipv6 nd managed-config-flag</b> interface configuration mode command is used. In this instance, the client ignores the addressing information in the RA message and communicates with a DHCPv6 server for both addressing and other information.</p>
+          <p></p>
+          <p>
+            <b>Stateless DHCPv6</b>
+          </p>
+          <p></p>
+          <p>For stateless DHCPv6 services the <b>ipv6 nd other-config-flag</b> interface configuration mode command is used. This informs the device to use SLAAC for addressing information and a stateless DHCPv6 server for other configuration parameters.</p>
+          <p></p>
+          <p>The <b>show ipv6 interface</b> command can be used to view the current configuration to determine the allocation method. As shown in Figure 2, the last line of the output indicates how clients obtain addresses and other parameters.</p>
+        

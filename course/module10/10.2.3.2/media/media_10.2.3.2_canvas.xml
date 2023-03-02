@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+		<slide>
+			<element type="IMAGE" x="0" y="0" width="1000" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<element type="ROUTER" textId="ID_router_txt1" x="40" y="55" width="600" height="400" />
+
+<text id="ID_router_txt1"><![CDATA[<pre>R1# <b>show logging</b> 
+Syslog logging: enabled (0 messages dropped, 2 messages rate-limited, 0 flushes, 0 
+overruns, xml disabled, filtering disabled) 
+
+No Active Message Discriminator. 
+
+No Inactive Message Discriminator. 
+
+	<font color="#F68026"><b>Console logging: level debugging, 32 messages logged,</b></font> xml disabled, 
+	                 filtering disabled 
+	Monitor logging: level debugging, 0 messages logged, xml disabled, 
+	                 filtering disabled 
+	<font color="#F68026"><b>Buffer logging: level debugging, 32 messages logged,</b></font> xml disabled, 
+	                 filtering disabled 
+	Exception Logging: size (4096 bytes) 
+	Count and timestamp logging messages: disabled 
+	Persistent logging: disabled 
+
+No active filter modules. 
+
+    Trap logging: level informational, 34 message lines logged 
+        Logging Source-Interface:       VRF Name: 
+
+Log Buffer (8192 bytes): 
+
+<font color="#F68026"><b>*Jan 2 00:00:02.527: %LICENSE-6-EULA_ACCEPT_ALL: The Right to Use End User License 
+Agreement is accepted</b></font>
+*Jan 2 00:00:02.631: %IOS_LICENSE_IMAGE_APPLICATION-6-LICENSE_LEVEL: Module name = 
+c1900 Next reboot level = ipbasek9 and License = ipbasek9 
+*Jan 2 00:00:02.851: %IOS_LICENSE_IMAGE_APPLICATION-6-LICENSE_LEVEL: Module name = 
+c1900 Next reboot level = securityk9 and License = securityk9 
+*Jun 12 17:46:01.619: %IFMGR-7-NO_IFINDEX_FILE: Unable to open nvram:/ifIndex-table No 
+such file or directory
+
+&lt;output omitted&gt;
+
+</pre>]]></text>
+
+<element type="TEXT" compId="ID_txt01" x="723" y="489" width="105" expand="right" align="left" color="#ffffff" />
+<element type="TEXT" subType="TITLE" compId="ID_title" color="#FFFFFF"/>
+		</slide>
+</data>

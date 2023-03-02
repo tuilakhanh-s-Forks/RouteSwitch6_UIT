@@ -1,0 +1,134 @@
+<textcomponents>
+    <!-- s1  -->
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>Private IPv4 Addresses</b>]]></text>
+    </component>
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[<b>Private Internet addresses are defined in RFC 1918:</b>]]></text>
+    </component>
+    <component id="ID_table01">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+		
+<tr class="mtable_title">
+					<td colspan="3" bgcolor='#FFFFFF'><font size="14"><b>Private Internet Addresses are Defined in RFC 1918</b></font></td>
+				</tr>
+
+				<tr class="mtable_top">
+					<td colspan='3' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+				</tr>
+
+
+
+<tr>
+
+<td width="80" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Class</b></font></td>
+<td width="280" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>RFC 1918 Internal Address Range</b></font></td>
+<td  width="210" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>CIDR Prefix</b></font></td>
+</tr>
+
+<tr>
+
+
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>A</font></td>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>10.0.0.0 - 10.255.255.255</font></td>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>10.0.0.0/8</font></td>
+
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>B</font></td>
+<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>172.16.0.0 - 172.31.255.255</font></td>
+<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>172.16.0.0/12</font></td>
+
+
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>C</font></td>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>192.168.0.0 - 192.168.255.255</font></td>
+ <td bgcolor='#E9E7E8' valign="top"><font color='#393536'>192.168.0.0/16</font></td>
+
+</tr>
+
+
+</table>]]>
+        </text>
+    </component>
+
+ <component id="ID_table01_html">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+        
+
+                    <caption colspan="3" class="mtable_title" bgcolor='#FFFFFF'><font size="14"><b>Private Internet Addresses are Defined in RFC 1918</b></font></caption>
+               
+
+                <tr class="mtable_top">
+                    <td colspan='3' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+                </tr>
+
+
+
+<tr>
+
+<th scope="col" width="80" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Class</b></font></th>
+<th scope="col" width="280" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>RFC 1918 Internal Address Range</b></font></th>
+<th scope="col" width="210" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>CIDR Prefix</b></font></th>
+</tr>
+
+<tr>
+
+
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>A</font></td>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>10.0.0.0 - 10.255.255.255</font></td>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>10.0.0.0/8</font></td>
+
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>B</font></td>
+<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>172.16.0.0 - 172.31.255.255</font></td>
+<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>172.16.0.0/12</font></td>
+
+
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>C</font></td>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>192.168.0.0 - 192.168.255.255</font></td>
+ <td bgcolor='#E9E7E8' valign="top"><font color='#393536'>192.168.0.0/16</font></td>
+
+</tr>
+
+
+</table>]]>
+        </text>
+    </component>
+
+    <!-- s2  -->
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>Translating Between Private and Public</b>]]></text>
+    </component>
+    <component id="ID_s2_txt02">
+        <text>
+            <![CDATA[<b>Internal Network</b><br/>Private IPv4 Address Space]]></text>
+    </component>
+    <component id="ID_s2_txt03">
+        <text>
+            <![CDATA[<b>Internet</b><br/>Public IPv4 Address Space]]></text>
+    </component>
+    <component id="ID_s2_txt04">
+        <text>
+            <![CDATA[NAT Translations]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt05">
+        <text>
+            <![CDATA[NAT Router]]>
+        </text>
+    </component>
+</textcomponents>

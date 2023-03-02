@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+<slide type="MBAR">
+		<slide>
+			<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+		<element type="ROUTER" textId="ID_router_txt1" x="40" y="55" width="600" height="400" />		
+		<element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#fff"/>
+		</slide>		
+
+		<slide>
+			<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+		<element type="TEXT" subType="TITLE" compId="ID_s3_title"/>
+		<element type="IMAGE" src="10_3_2_2_B.png" x="0" y="0" width="680" height="490"/>
+		<element type="TEXT" textId="s3_text1" x="277" size="15" y="103" align="center" width="288" />
+		<element type="TEXT" compId="ID_s3_txt01" x="122" y="146.65" width="155.75" expand="left" align="right" />
+		<element type="TEXT" compId="ID_s3_txt02" x="122" y="166.65" width="155.75" expand="left" align="right" />
+		<element type="TEXT" compId="ID_s3_txt03" x="122" y="195.65" width="155.75" expand="left" align="right" />
+		<element type="TEXT" compId="ID_s3_txt04" x="122" y="221.65" width="155.75" expand="left" align="right" />
+		<element type="TEXT" compId="ID_s3_txt05" x="122" y="249.65" width="155.75" expand="left" align="right" />
+		<element type="TEXT" compId="ID_s3_txt06" x="122" y="277.65" width="155.75" expand="left" align="right" />
+		<element type="TEXT" compId="ID_s3_txt07" x="122" y="304.65" width="155.75" expand="left" align="right" />
+		<element type="TEXT" compId="ID_s3_txt08" x="122" y="332.65" width="155.75" expand="left" align="right" />
+		<element type="TEXT" compId="ID_s3_txt09" x="122" y="363.65" width="155.75" expand="left" align="right" />
+		<element type="TEXT" compId="ID_s3_txt10" x="122" y="385.65" width="155.75" expand="left" align="right" />
+		<element type="TEXT" compId="ID_s3_txt11" x="122" y="410.65" width="155.75" expand="left" align="right" />
+		</slide>
+</slide>		
+
+<text id="ID_router_txt1"><![CDATA[<pre>R1# <b>show flash0:</b>
+-# - --length-- -----date/time------ path
+
+8   68831808   Apr 2 2013 21:29:58 +00:00 <span class="orangeColor">c1900-universalk9-mz.SPA.152-4.M3.bin         
+                           </span>
+182394880 bytes available (74092544 bytes used)
+
+R1# </pre>]]></text>
+
+		
+
+<text id="s3_text1"><![CDATA[<pre><b><span class="purpleTxt">c1900-</span><span class="orangeTxt">universalk9</span><span class="purpleTxt">-mz.SPA.</span><span class="orangeTxt">152-4.M3</span><span class="purpleTxt">.bin</span></b></pre>]]></text>
+
+</data>

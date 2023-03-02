@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide>
+		
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_7.3.1.1.png" />
+<element type="TEXT" subType="TITLE" compId="ID_title"/>
+<element type="TEXT" id="ID_static_1" text="S0/0/0" x="330" y="68" align="center" width="36" />
+<element type="TEXT" compId="ID_txt03" x="170" y="76" width="95" expand="left" align="right" />
+<element type="TEXT" id="ID_static_3" text="G0/0" x="290" y="116" align="center" width="26" />
+<element type="TEXT" id="ID_static_4" text="192.168.10.0/24" x="180" y="141" align="center" width="86" />
+<element type="TEXT" id="ID_static_6" text="192.168.10.10/24" x="155" y="243" align="center" width="93" />
+<element type="TEXT" compId="ID_txt01" x="43" y="317" width="208" expand="right" align="left" />
+<element type="TEXT" textId="ID_router_txt1" x="49.95" y="341.05" width="405" height="12.55" />
+<text id="ID_router_txt1"><![CDATA[<pre>R1(config)# access-list 1 permit ip 192.168.10.0 0.0.0.255</pre>]]></text>
+<element type="TEXT" compId="ID_txt02" x="45" y="401" width="208" expand="right" align="left" />
+<element type="TEXT" textId="ID_router_txt2" x="49.95" y="425.9" width="405" height="27.05" />
+
+<text id="ID_router_txt2"><![CDATA[<pre>R1(config)# access-list 2 permit ip 192.168.10.0 0.0.0.255</br>R1(config)# access-list 2 deny any </pre>]]></text>
+<element type="TEXT" id="ID_static_2" text="G0/1" x="375" y="116" align="center" width="24" />
+<element type="TEXT" id="ID_static_5" text="192.168.11.0/24" x="399" y="141" align="center" width="86" />
+<element type="TEXT" id="ID_static_7" text="192.168.11.10/24" x="420" y="243" align="center" width="93" />
+	</slide>
+	 <text id="staticTxt"><![CDATA[R1(config)# <b>access-list 1 permit ip 192.168.10.0 0.0.0.255</b>]]></text>
+	 <text id="staticTxt1"><![CDATA[
+			 R1(config)# <b>access-list 2 permit ip 192.168.10.0 0.0.0.255</b>
+			 R1(config)# <b>access-list 2 deny any</b> ]]>
+	 </text> 
+</data>

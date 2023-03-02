@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide >
+		<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+		<element type="IMAGE" src="media_1.1.2.2_topo.png" x="0" y="0" width="680" height="490"/>
+		<element type="TEXT" subType="TITLE" compId="ID_title"/>	
+		<element type="TEXT" compId="ID_table01" x="34" y="72" width="123.55" expand="up+down" align="center" color="#ffffff" />
+		<element type="TEXT" compId="ID_table02" x="163" y="72" width="117.95" expand="up+down" align="center" color="#ffffff" />
+		<element type="TEXT" compId="ID_table03" x="292" y="72" width="126.8" expand="up+down" align="center" color="#ffffff" />
+		<element type="TEXT" compId="ID_table04" x="430" y="72" width="130.8" expand="up+down" align="center" color="#ffffff" />
+		<element type="TEXT" compId="ID_table05" x="570" y="92" width="75.7" expand="up+down" align="center" color="#ffffff" />
+		<element type="TEXT" id="ID_static_1" text="11-11-11-11-11-11" x="39.3" y="115.05" align="center" width="105.15" color="#FFFFFF"/>
+		<element type="TEXT" id="ID_static_4" text="AA-AA-AA-AA-AA-AA" x="165.8" y="112" align="center" width="111.75" color="#FFFFFF"/>
+		<element type="TEXT" id="ID_static_2" text="192.168.1.110" x="316.9" y="115.05" align="center" width="73.9" color="#FFFFFF"/>
+		<element type="TEXT" id="ID_static_3" text="172.16.1.99" x="463.75" y="115.05" align="center" width="60.85" color="#FFFFFF"/>
+		<element type="BUBBLE" compId="ID_t_txt07" x="58" y="187" width="192.15" height="51.9" align="left" tailPosition="7" tailFlip="1" />
+		<element type="BUBBLE" compId="ID_t_txt08" x="257" y="196" width="185.7" height="51.9" align="left" tailPosition="6" tailFlip="1" />
+		<element type="TEXT" compId="ID_t_txt02a" x="473" y="214" width="137.05" expand="up" align="left" size="10" />
+		<element type="TEXT" compId="ID_t_txt01" x="36" y="288" width="151.35" expand="down" align="left" size="10" />
+		<element type="TEXT" compId="ID_t_txt02" x="307" y="302" width="165.75" expand="down" align="left" size="10" />
+		<element type="TEXT" compId="ID_t_txt02b" x="502" y="283" width="143.55" expand="down" align="right" size="10" />
+		<element type="TEXT" compId="ID_t_txt05" x="36" y="364" width="140.95" expand="up+down" align="right" size="10" />
+		<element type="BUBBLE" compId="ID_t_txt09" x="44" y="387" width="188.35" height="51.9" align="left" tailPosition="1" tailFlip="1" />
+		<element type="TEXT" compId="ID_t_txt06" x="246" y="401" width="177.45" expand="right" align="left" size="10" />	
+		<element type="BUBBLE" compId="ID_t_txt10" x="272" y="340" width="225.9" height="55.85" align="left" tailPosition="8" tailFlip="1" />
+	</slide>	
+</data>

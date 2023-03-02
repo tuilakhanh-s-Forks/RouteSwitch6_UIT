@@ -1,0 +1,34 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+#ID_txt05{
+line-height:1;
+}
+/*.greyCallOut{
+border:2px solid #7B797A;
+padding:1px 0 3px 3px;
+background:#E9E7E8;
+letter-spacing:0.8px
+}*/
+@media only screen and (device-width: 768px) {
+.greyCallOut{
+  padding:3px 0 3px 3px;
+}
+}
+@media only screen and (device-width: 1024px) {
+/*.greyCallOut{
+  padding:3px 0 3px 3px;
+  letter-spacing:0.8px
+}*/
+}
+#ID_acl_txt02,#ID_acl_txt04,#ID_acl_txt03,#ID_acl_txt01{
+	background-color:#E9E7E8 !important;
+	border:#7B797A 2px solid;
+	padding:2px;
+}
+#ID_txt03,#ID_txt04{
+	padding:5px;
+}

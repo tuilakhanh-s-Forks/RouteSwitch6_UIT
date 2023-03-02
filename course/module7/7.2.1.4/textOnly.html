@@ -1,0 +1,23 @@
+
+          <p>Naming an ACL makes it easier to understand its function. When you identify your ACL with a name instead of with a number, the configuration mode and command syntax are slightly different.</p>
+          <p></p>
+          <p>Figure 1 shows the steps required to create a standard named ACL.</p>
+          <p></p>
+          <p>
+            <b>Step 1.</b> Starting from the global configuration mode, use the <b>ip access-list</b> command to create a named ACL. ACL names are alphanumeric, case sensitive, and must be unique. The <b>ip access-list standard</b><i> name </i>command is used to create a standard named ACL. After entering the command, the router is in standard (std) named ACL (nacl) configuration mode as indicated by the second prompt in the Figure 1.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Numbered ACLs use the global configuration command <b>access-list</b>, whereas named IPv4 ACLs use the <b>ip access-list</b> command.</p>
+          <p></p>
+          <p>
+            <b>Step 2.</b> From the named ACL configuration mode, use <b>permit</b> or <b>deny</b> statements to specify one or more conditions for determining whether a packet is forwarded or dropped. You can use <b>remark</b> to add a comment to the ACL.</p>
+          <p></p>
+          <p>
+            <b>Step 3.</b> Apply the ACL to an interface using the <b>ip access-group</b><i> name </i>command. Specify whether the ACL should be applied to packets as they enter the interface (<b>in</b>) or applied to packets as they exit the interface (<b>out</b>).</p>
+          <p></p>
+          <p>Figure 2 shows the commands used to configure a standard named ACL on router R1, interface G0/0, that denies host 192.168.11.10 access to the 192.168.10.0 network. The ACL is named NO_ACCESS.</p>
+          <p></p>
+          <p>Capitalizing ACL names is not required, but makes them stand out when viewing the running-config output. It also makes it less likely that you will accidentally create two different ACLs with the same name but with different uses of capitalization.</p>
+          <p></p>
+          <p></p>
+        

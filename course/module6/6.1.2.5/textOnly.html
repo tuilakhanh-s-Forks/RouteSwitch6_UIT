@@ -1,0 +1,47 @@
+
+          <p>A separate voice VLAN is required to support VoIP. </p>
+          <p></p>
+          <p>An access port that is used to connect a Cisco IP phone can be configured to use two separate VLANs: one VLAN for voice traffic and another VLAN for data traffic from a device attached to the phone. The link between the switch and the IP phone acts as a trunk to carry both voice VLAN traffic and data VLAN traffic.</p>
+          <p></p>
+          <p>The Cisco IP Phone contains an integrated three-port 10/100 switch. The ports provide dedicated connections to these devices:</p>
+          <p>
+            <ul>
+              <li>Port 1 connects to the switch or other VoIP device.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Port 2 is an internal 10/100 interface that carries the IP phone traffic.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Port 3 (access port) connects to a PC or other device.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>On the switch, the access is configured to send Cisco Discovery Protocol (CDP) packets that instruct an attached IP phone to send voice traffic to the switch in one of three ways, depending on the type of traffic:</p>
+          <p>
+            <ul>
+              <li>In a voice VLAN tagged with a Layer 2 class of service (CoS) priority value</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>In an access VLAN tagged with a Layer 2 CoS priority value</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>In an access VLAN, untagged (no Layer 2 CoS priority value)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>In Figure 1, the student computer PC5 is attached to a Cisco IP phone, and the phone is attached to switch S3. VLAN 150 is designed to carry voice traffic, while PC5 is in VLAN 20, which is used for student data.</p>
+          <p></p>
+          <p>
+            <b>Sample Configuration</b>
+          </p>
+          <p></p>
+          <p>Figure 2 shows a sample output. A discussion of voice Cisco IOS commands are beyond the scope of this course, but the highlighted areas in the sample output show the F0/18 interface configured with a VLAN configured for data (VLAN 20) and a VLAN configured for voice (VLAN 150).</p>
+        

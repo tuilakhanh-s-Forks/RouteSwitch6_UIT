@@ -1,0 +1,17 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+/*#ID_s2_circ01,#ID_s2_circ02,#ID_s2_circ03,#ID_s2_circ04,#ID_s2_circ05,#ID_s2_circ06,#ID_s2_circ07{
+	pointer-events:none;
+	align:center
+}
+.alignCenter{margin-left:5px;}
+
+#dnd_1_drag_0_0 div,#dnd_1_drag_1_0 div,#dnd_1_drag_2_0 div,#dnd_1_drag_3_0 div{
+margin-left:4px!important;
+}
+#dnd_2_drag_0_0 div,#dnd_2_drag_1_0 div,#dnd_2_drag_2_0 div,#dnd_2_drag_3_0 div,#dnd_2_drag_4_0 div,#dnd_2_drag_5_0 div,#dnd_2_drag_6_0 div{
+margin-left:3px!important;
+}*/

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<slide>
+		<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+<element type="IMAGE" src="media_2.1.2.5.png" x="0" y="0" width="680" height="490"/>
+<element type="BUBBLE" compId="ID_speech01" x="21" y="126" width="157.05" height="102" align="left" tailPosition="5" tailFlip="0" />
+<element type="BUBBLE" compId="ID_speech02" x="21" y="244" width="139.05" height="102" align="left" tailPosition="3" tailFlip="0" />
+<element type="TEXT" subType="TITLE" compId="ID_title"/>		
+	</slide>
+</data>

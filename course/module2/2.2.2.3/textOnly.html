@@ -1,0 +1,5 @@
+
+          <p>In the figure, the<b> show ip route static </b>command output displays the contents of the static routes in the routing table. Note the asterisk (*)<b></b>next to the route with code ‘S’. As displayed in the Codes table in the figure, the asterisk indicates that this static route is a candidate default route, which is why it is selected as the Gateway of Last Resort. </p>
+          <p></p>
+          <p>The key to this configuration is the /0 mask. The subnet mask in a routing table determines how many bits must match between the destination IP address of the packet and the route in the routing table. A binary 1 indicates that the bits must match. A binary 0 indicates that the bits do not have to match. A /0 mask in this route entry indicates that none of the bits are required to match. The default static route matches all packets for which a more specific match does not exist.</p>
+        

@@ -1,0 +1,115 @@
+<textcomponents>
+<!--Slide 1-->
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Components of a Network Capable Device</b>]]></text>
+	</component>
+	<component id="ID_s1_txt01">
+		<text><![CDATA[<b>Network Capable Device</b>]]></text> 
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[CPU]]></text> 
+	</component>
+	<component id="ID_s1_txt03">
+		<text><![CDATA[Operating System]]></text> 
+	</component>
+	<component id="ID_s1_txt04">
+		<text><![CDATA[Memory and <br/> Storage]]></text> 
+	</component>
+	
+<!--Slide 2-->
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>Router Memory</b>]]></text>
+	</component>
+	<component id='ID_s2_table'>
+     <text>
+      <![CDATA[ <table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+        
+        <tr>
+          <td width='200px' bgcolor='#666263' class="mtitle"><font  color='#ffffff'><b>Memory</b></font></td>
+          <td bgcolor='#666263' class="mtitle"><font  color='#ffffff'><b>Description</b></font></td>
+        </tr>
+        <tr>
+          <td  bgcolor='#E9E7E8' valign="top"><font color='#393536'>Random Access Memory (RAM)</font></td>
+          <td bgcolor='#E9E7E8' valign="top" class="col3"><font color='#393536'>Volatile memory that provides temporary storage for various applications and processes including:<textformat blockindent='-14'><ul class="bulletIndent20"><li>Running IOS</li><li>Running configuration file</li><li>IP routing and ARP tables</li><li>Packet buffer</li></ul></textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F2F2F2' valign="top"><font color='#393536'>Read-Only Memory (ROM)</font></td>
+          <td bgcolor='#F2F2F2' valign="top" class="col3"><font color='#393536'>Non-volatile memory that provides permanent storage for:<ul class="bulletIndent20"><li><textformat blockindent='-14'>Bootup instructions</textformat></li><li><textformat blockindent='-14'>Basic diagnostic software</textformat></li><li><textformat blockindent='-14'>Limited IOS in case the router cannot load the full featured IOS</textformat></li></ul></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#E9E7E8' valign="top"><font color='#393536'>Non-Volatile Random Access Memory (NVRAM)</font></td>
+          <td bgcolor='#E9E7E8' valign="top" class="col3"><font  color='#393536'>Non-volatile memory that provides permanent storage for the:<ul class="bulletIndent20"><li><textformat blockindent='-14'>Startup configuration file</textformat></li></ul></font></td>
+        </tr>
+         <tr>
+          <td bgcolor='#F2F2F2' valign="top"><font  color='#393536'>Flash</font></td>
+          <td class="col3" bgcolor='#F2F2F2' valign="top"><font  color='#393536'>Non-volatile memory that provides permament storage for:<ul class="bulletIndent20"><li><textformat blockindent='-14'>IOS</textformat></li><li><textformat blockindent='-14'>Other system-related files</textformat></li></ul></font></td>
+        </tr>         
+      </table>]]>
+    </text>
+  </component>
+
+<!-- accessibility --><component id='ID_s2_table_html'>
+     <text>
+      <![CDATA[ <table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+        
+        <caption class="mtable_title" colspan="2" bgcolor='#FFFFFF'><font size="1"></font></caption>
+
+        <tr class="mtable_top">
+
+<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+
+        <tr>
+          <th scope="col" width='200px' bgcolor='#666263' class="mtitle"><font  color='#ffffff'><b>Memory</b></font></th>
+          <th scope="col" bgcolor='#666263' class="mtitle"><font  color='#ffffff'><b>Description</b></font></th>
+        </tr>
+        <tr>
+          <td  bgcolor='#E9E7E8' valign="top"><font color='#393536'>Random Access Memory (RAM)</font></td>
+          <td bgcolor='#E9E7E8' valign="top" class="col3"><font color='#393536'>Volatile memory that provides temporary storage for various applications and processes including:<textformat blockindent='-14'><ul class="bulletIndent20"><li>Running IOS</li><li>Running configuration file</li><li>IP routing and ARP tables</li><li>Packet buffer</li></ul></textformat></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#F2F2F2' valign="top"><font color='#393536'>Read-Only Memory (ROM)</font></td>
+          <td bgcolor='#F2F2F2' valign="top" class="col3"><font color='#393536'>Non-volatile memory that provides permanent storage for:<ul class="bulletIndent20"><li><textformat blockindent='-14'>Bootup instructions</textformat></li><li><textformat blockindent='-14'>Basic diagnostic software</textformat></li><li><textformat blockindent='-14'>Limited IOS in case the router cannot load the full featured IOS</textformat></li></ul></font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#E9E7E8' valign="top"><font color='#393536'>Non-Volatile Random Access Memory (NVRAM)</font></td>
+          <td bgcolor='#E9E7E8' valign="top" class="col3"><font  color='#393536'>Non-volatile memory that provides permanent storage for the:<ul class="bulletIndent20"><li><textformat blockindent='-14'>Startup configuration file</textformat></li></ul></font></td>
+        </tr>
+         <tr>
+          <td bgcolor='#F2F2F2' valign="top"><font  color='#393536'>Flash</font></td>
+          <td class="col3" bgcolor='#F2F2F2' valign="top"><font  color='#393536'>Non-volatile memory that provides permament storage for:<ul class="bulletIndent20"><li><textformat blockindent='-14'>IOS</textformat></li><li><textformat blockindent='-14'>Other system-related files</textformat></li></ul></font></td>
+        </tr>         
+      </table>]]>
+    </text>
+  </component>
+
+
+<!--Slide 3-->
+	<component id="ID_s3_title">
+		<text><![CDATA[<b>Back Panel of a Router</b>]]></text>
+	</component> 
+	<component id="ID_s3_txt01">
+		<text><![CDATA[Double-Wide eHWIC Slots]]></text>
+	</component>
+	<component id="ID_s3_txt02">
+		<text><![CDATA[eHWIC 0]]></text> 
+	</component> 
+	<component id="ID_s3_txt03">
+		<text><![CDATA[AUX Port]]></text>
+	</component>
+	<component id="ID_s3_txt04">
+		<text><![CDATA[LAN Interfaces]]></text> 
+	</component> 
+	<component id="ID_s3_txt05">
+		<text><![CDATA[Two 4 GB Flash Card Slots]]></text>
+	</component>
+	<component id="ID_s3_txt06">
+		<text><![CDATA[Console USB Mini-B]]></text> 
+	</component> 
+	<component id="ID_s3_txt07">
+		<text><![CDATA[Console<br/>RJ-45]]></text>
+	</component>
+	<component id="ID_s3_txt08">
+		<text><![CDATA[USB Ports]]></text> 
+	</component> 
+</textcomponents>

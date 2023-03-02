@@ -1,0 +1,21 @@
+
+          <p>An advantage to cut-through switching is the ability of the switch to start forwarding a frame earlier than store-and-forward switching. There are two primary characteristics of cut-through switching: rapid frame forwarding and fragment free.</p>
+          <p></p>
+          <p>
+            <b>Rapid Frame Forwarding</b>
+          </p>
+          <p></p>
+          <p>As indicated in the figure, a switch using the cut-through method can make a forwarding decision as soon as it has looked up the destination MAC address of the frame in its MAC address table. The switch does not have to wait for the rest of the frame to enter the ingress port before making its forwarding decision.</p>
+          <p></p>
+          <p>With today’s MAC controllers and ASICs, a switch using the cut-through method can quickly decide whether it needs to examine a larger portion of a frame’s headers for additional filtering purposes. For example, the switch can analyze past the first 14 bytes (the source MAC address, destination MAC, and the EtherType fields), and examine an additional 40 bytes in order to perform more sophisticated functions relative to IPv4 Layers 3 and 4.</p>
+          <p></p>
+          <p>The cut-through switching method does not drop most invalid frames. Frames with errors are forwarded to other segments of the network.  If there is a high error rate (invalid frames) in the network, cut-through switching can have a negative impact on bandwidth; thus, clogging up bandwidth with damaged and invalid frames.</p>
+          <p></p>
+          <p>
+            <b>Fragment Free </b>
+          </p>
+          <p></p>
+          <p>Fragment free switching is a modified form of cut-through switching in which the switch waits for the collision window (64 bytes) to pass before forwarding the frame. This means each frame will be checked into the data field to make sure no fragmentation has occurred. Fragment free switching provides better error checking than cut-through, with practically no increase in latency. </p>
+          <p></p>
+          <p>The lower latency speed of cut-through switching makes it more appropriate for extremely demanding, high-performance computing (HPC) applications that require process-to-process latencies of 10 microseconds or less.</p>
+        

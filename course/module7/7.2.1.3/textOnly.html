@@ -1,0 +1,15 @@
+
+          <p>Figure 1 shows an example of an ACL that permits a specific subnet except for a specific host on that subnet.</p>
+          <p></p>
+          <p>The first command deletes the previous version of ACL 1. The next ACL statement, denies the PC1 host located at 192.168.10.10. Every other host on the 192.168.10.0/24 network is then permitted. Again the implicit deny statement matches every other network.</p>
+          <p></p>
+          <p>The ACL is reapplied to interface S0/0/0 in an outbound direction.</p>
+          <p></p>
+          <p>Figure 2 shows an example of an ACL that denies a specific host. This ACL replaces the previous example. This example still blocks traffic from host PC1 but permits all other traffic.</p>
+          <p></p>
+          <p>The first two commands are the same as the previous example. The first command deletes the previous version of ACL 1 and the next ACL statement denies the PC1 host that is located at 192.168.10.10.</p>
+          <p></p>
+          <p>The third line is new and permits all other hosts. This means that all hosts from the 192.168.10.0/24 network will be permitted except for PC1, which was denied in the previous statement.</p>
+          <p></p>
+          <p>This ACL is applied to interface G0/0 in the inbound direction. Because the filter only affects the 192.168.10.0/24 LAN on G0/0 it is more efficient to apply the ACL to the inbound interface. The ACL could be applied to S0/0/0 in the outbound direction but then R1 would have to examine packets from all networks including 192.168.11.0/24.</p>
+        

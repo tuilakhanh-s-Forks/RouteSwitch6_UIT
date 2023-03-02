@@ -1,0 +1,11 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#static1{letter-spacing: -1.3px !important;}
+#static2{letter-spacing: -1.5px !important;}
+
+#ID_router_txt2,#ID_router_txt1{
+	color:#fff !important;
+}

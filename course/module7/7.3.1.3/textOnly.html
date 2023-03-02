@@ -1,0 +1,19 @@
+
+          <p>The order in which standard ACEs are entered may not be the order that they are stored, displayed, or processed by the router.</p>
+          <p>Figure 1 shows the configuration of a standard access list. Range statements that deny three networks are configured first followed by five host statements. The host statements are all valid statements because their host IPv4 addresses are not part of the previously entered range statements.</p>
+          <p></p>
+          <p>The <b>show running-config</b> command is used to verify the ACL configuration. Notice that the statements are listed in a different order than they were entered. We will use the <b>show access-lists</b> command to understand the logic behind this.</p>
+          <p></p>
+          <p>As shown in Figure 2, the <b>show access-lists</b> command displays ACEs along with their sequence numbers. We might expect the order of the statements in the output to reflect the order in which they were entered. However, the <b>show access-lists</b> output shows that this is not the case.</p>
+          <p></p>
+          <p>The order in which the standard ACEs are listed is the sequence used by the IOS to process the list. Notice that the statements are grouped into two sections, host statements followed by range statements. The sequence number indicates the order that the statement was entered, not the order the statement will be processed.</p>
+          <p></p>
+          <p>The host statements are listed first but not necessarily in the order that they were entered. The IOS puts host statements in an order using a special hashing function. The resulting order optimizes the search for a host ACL entry. The range statements are displayed after the host statements. These statements are listed in the order in which they were entered.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The hashing function is only applied to host statements in an IPv4 standard access list. The details of the hashing function are beyond the scope of this course.</p>
+          <p></p>
+          <p>Recall that standard and numbered ACLs can be edited using sequence numbers. When inserting a new ACL statement, the sequence number will only affect the location of a range statement in the list. Host statements will always be put in order using the hashing function.</p>
+          <p></p>
+          <p>Continuing with the example, after saving the running-configuration, the router is reloaded. As shown in Figure 2, the <b>show access-lists</b> command displays the ACL in the same order, however the statements have been renumbered. The sequence numbers are now in numerical order.</p>
+        

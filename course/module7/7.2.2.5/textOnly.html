@@ -1,0 +1,7 @@
+
+          <p>After an ACL has been applied to an interface and some testing has occurred, the<b> show access-lists </b>command will show statistics for each statement that has been matched. In the output in Figure 1, note that some of the statements have been matched. When traffic is generated that should match an ACL statement, the matches shown in the<b> show access-lists </b>command output should increase. For instance, in this example, if a ping is issued from PC1 to PC3 or PC4, the output will show an increase in the matches for the deny statement of ACL 1. </p>
+          <p></p>
+          <p>Both permit and deny statements will track statistics for matches; however, recall that every ACL has an implied deny any as the last statement. This statement will not appear in the <b>show access-lists</b> command; therefore, statistics for that statement will not appear. To view statistics for the implied deny any statement, the statement can be configured manually and will appear in the output. </p>
+          <p></p>
+          <p>During testing of an ACL, the counters can be cleared using the <b>clear access-list counters</b> command. This command can be used alone or with the number or name of a specific ACL. As shown in Figure 2, this command clears the statistic counters for an ACL.</p>
+        

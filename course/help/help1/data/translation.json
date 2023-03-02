@@ -1,0 +1,151 @@
+{
+	"title": "Internet of Everything - Help Tutorial",
+	"lang": "en",
+	"rtl": false,
+	"contents": [
+		{
+			"pageNumber": 1,
+			"img": "client/content/img/help01-page01-bg.jpg",
+			"imgAlt": "Welcome collage background image. It includes photos of a bus, a guitar, a city view and a mountain top",
+			"header": "Course Introduction - Tutorial",
+			"text": "This tutorial will show you how to:",
+			"list": [
+				"Launch the course",
+				"Navigate the course map",
+				"Use the dashboard buttons"
+			]
+		},
+		{
+			"pageNumber": 2,
+			"img": "client/content/img/help01-page02-bg.jpg",
+			"imgAlt": "Netacad courses image with Launch Course highlighted",
+			"text": "From the course Home page, click ‘Launch Course’."
+		},
+		{
+			"pageNumber": 3,
+			"img": "client/content/img/help01-page03-bg.jpg",
+			"imgAlt": "Course launch page with one of the images highlighted.",
+			"text": "Click any image to begin the course."
+		},
+		{
+			"pageNumber": 4,
+			"img": "client/content/img/help01-page04-bg.jpg",
+			"imgAlt": "Course chapter list",
+			"text": "From the course dashboard, you can navigate the chapters, sections, topics and pages of the course by using the course map."
+		},
+		{
+			"pageNumber": 5,
+			"img": "client/content/img/help01-page05-bg.jpg",
+			"imgAlt": "Course chapter list with Chapter 1 highlighted",
+			"text": "Double-click a chapter to open the first page of that chapter. Or, single click a chapter to expand the sections contained within the chapter."
+		},
+		{
+			"pageNumber": 6,
+			"img": "client/content/img/help01-page06-bg.jpg",
+			"imgAlt": "Chapter 1 sections",
+			"text": "Double-click a section to open the first page of that section. Or, single-click a section to expand the topics contained within the section."
+		},
+		{
+			"pageNumber": 7,
+			"img": "client/content/img/help01-page07-bg.jpg",
+			"imgAlt": "Section 1.1 and topics in that section",
+			"text": "Double-click a topic to open the first page of that topic. Or, single-click a topic to expand the pages contained within the section."
+		},
+		{
+			"pageNumber": 8,
+			"img": "client/content/img/help01-page08-bg.jpg",
+			"imgAlt": "Topic 1.3 and pages in that topic",
+			"text": "Click the page you would like to open."
+		},
+		{
+			"pageNumber": 9,
+			"img": "client/content/img/help01-page09-bg.jpg",
+			"imgAlt": "Page 1.1.3.1 content with bookmark button highlighted",
+			"text": "Click the ‘Bookmark’ button to bookmark the page for future reference."
+		},
+		{
+			"pageNumber": 10,
+			"img": "client/content/img/help01-page10-bg.jpg",
+			"imgAlt": "Page 1.1.3.1 content with close button highlighted",
+			"text": "Click the ‘Close’ button to close the page."
+		},
+		{
+			"pageNumber": 11,
+			"img": "client/content/img/help01-page11-bg.jpg",
+			"imgAlt": "Chapter, section, topic, page view with Recent Pages button highlighted",
+			"text": "Click the 'Recent Pages' button to view pages you have recently seen."
+		},
+		{
+			"pageNumber": 12,
+			"img": "client/content/img/help01-page12-bg.jpg",
+			"imgAlt": "Chapter, section, topic, page view with Bookmarks button highlighted",
+			"text": "Click the 'Bookmarks' button to view pages you have bookmarked."
+		},
+		{
+			"pageNumber": 13,
+			"img": "client/content/img/help01-page13-bg.jpg",
+			"imgAlt": "Chapter, section, topic, page view with Course Index button highlighted",
+			"text": "Click the 'Course Index' button to view the course outline."
+		},
+		{
+			"pageNumber": 14,
+			"img": "client/content/img/help01-page14-bg.jpg",
+			"imgAlt": "Course index",
+			"text": "The course index provides access to individual pages via links."
+		},
+		{
+			"pageNumber": 15,
+			"img": "client/content/img/help01-page15-bg.jpg",
+			"imgAlt": "Packet tracer index",
+			"text": "The Packet Tracer index provides access to Packet Tracer activity pages via links."
+		},
+		{
+			"pageNumber": 16,
+			"img": "client/content/img/help01-page16-bg.jpg",
+			"imgAlt": "Lab index",
+			"text": "The lab index provides access to lab activity pages via links."
+		},
+		{
+			"pageNumber": 17,
+			"img": "client/content/img/help01-page17-bg.jpg",
+			"imgAlt": "Video index",
+			"text": "The video index provides access to video pages via links."
+		},
+		{
+			"pageNumber": 18,
+			"img": "client/content/img/help01-page18-bg.jpg",
+			"imgAlt": "Chapter, section, topic, page view with Search icon highlighted",
+			"text": "Click the 'Search' button to perform a keyword search."
+		},
+		{
+			"pageNumber": 19,
+			"img": "client/content/img/help01-page19-bg.jpg",
+			"imgAlt": "Chapter, section, topic, page view with Languages button highlighted",
+			"text": "If available, click the 'Languages' button to choose your preferred language from available options."
+		},
+		{
+			"pageNumber": 20,
+			"img": "client/content/img/help01-page20-bg.jpg",
+			"imgAlt": "Chapter, section, topic, with Select Background icon highlighted",
+			"text": "Click the 'Select Background' button to change your background image."
+		},
+		{
+			"pageNumber": 21,
+			"img": "client/content/img/help01-page21-bg.jpg",
+			"imgAlt": "Chapter, section, topic, with Help button highlighted",
+			"text": "Click the 'Help' button to access additional tutorials."
+		},
+		{
+			"pageNumber": 22,
+			"img": "client/content/img/help01-page22-bg.jpg",
+			"imgAlt": "Help menu",
+			"text": "Click a menu item on the left, and the corresponding tutorial will load within this window."
+		},
+		{
+			"pageNumber": 23,
+			"img": "client/content/img/help01-page23-bg.jpg",
+			"imgAlt": "Chapter, section, topic, with Return to Classes button highlighted",
+			"text": "Click the ‘Return to Class’ button to return to the course home page."
+		}
+	]
+}

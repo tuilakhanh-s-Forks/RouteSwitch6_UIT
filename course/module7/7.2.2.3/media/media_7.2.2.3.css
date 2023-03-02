@@ -1,0 +1,16 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+font[face="_typewriter"]{ font-family:courier new !important;}
+/*#router_text1{line-height:15px}*/
+span.tb{
+	color: #F68026;
+}
+
+#ID_text01{
+	background-color: #FFFFFF;
+	padding: 5px 0px 5px 5px;
+}

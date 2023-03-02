@@ -1,0 +1,85 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+.color1
+{
+	color: #4E4C4D !important;
+}
+
+.color
+{
+	color: #F68026 !important;
+}
+
+#imgArrows{
+   height: 197px;
+    left: 0px;
+    position: absolute;
+    top: 70px;
+    width: 235px;
+}
+#bgGreen
+{
+	color: #46A040 !important;
+}
+#bgYellow
+{
+	color: #C1CD23 !important;
+	letter-spacing: 1px !important;
+}
+
+#bgOrange
+{
+	color: #F68026 !important;
+}
+
+#bgBlue
+{
+	color: #00918E !important;
+}
+
+#bgPurple
+{
+	color: #652C8A !important;
+}
+#bgPurple
+{
+	color: #652C8A !important;
+}
+#ID_s3_txt01{ background:#B5D9B3!important; border-color: #46A040; display: inline!important;}
+#ID_s3_txt02{ background:#FEED95!important; border-color: #C1CD23; display: inline!important;}
+#ID_s3_txt03{ background: #FAB37D!important; border-color: #F68026; display: inline!important;}
+#ID_s3_txt04{ background:#CCE9E7 !important; border-color: #00918E; display: inline!important;}
+#ID_s3_txt05{ background:#C1ABD1!important; border-color: #652C8A; display: inline!important;}
+
+
+#ID_s3_txt01,#ID_s3_txt02,#ID_s3_txt03,#ID_s3_txt04,#ID_s3_txt05{
+	z-index: 10; 
+	border: 2px solid #4E4C4D; 
+	border-radius: 5px;
+	padding: 5px 0 ;
+} 
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+#imgArrows{
+   height: 197px;
+    left: 1px;
+    position: absolute;
+    top: 70px;
+    width: 225px;
+}
+#bgYellow
+{
+	letter-spacing: 0px !important;
+}
+#ID_s3_txt01{ background:#B5D9B3!important; border-color: #46A040; padding-bottom:8px; display: inline!important;}
+#ID_s3_txt02{ background:#FEED95!important; border-color: #C1CD23; padding-bottom:8px; display: inline!important;}
+
+#ID_s3_txt04{ background:#CCE9E7 !important; border-color: #00918E; padding-bottom:8px; display: inline!important;}
+#ID_s3_txt03{ background: #FAB37D!important; border-color: #F68026; padding-bottom:8px; display: inline!important;}
+
+#ID_s3_txt05{ background:#C1ABD1!important; border-color: #652C8A; padding-bottom:8px;display: inline!important;}
+}

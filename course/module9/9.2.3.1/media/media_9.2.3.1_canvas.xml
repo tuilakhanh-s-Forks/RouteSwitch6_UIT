@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+<slide type="MBAR">
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<element type="TEXT" compId="ID_s1_table_html" x="40" y="65" width="600" height="393" />
+<element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#FFFFFF"/>
+</slide>
+
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+
+<element type="IMAGE" src="9_2_3_1_A.png" x="0" y="0" width="680" height="490" />
+<element type="TEXT" id="ID_static_1" text="S0/0/0" x="313" y="111" align="center" width="36" />
+<element type="TEXT" id="ID_static_2" text="S0/1/0" x="411" y="113" align="center" width="36" />
+<element type="TEXT" id="ID_static_3" text="192.168.11.10" x="76" y="193" align="center" width="75" />
+<element type="TEXT" id="ID_static_4" text="209.165.201.1" x="531" y="57" align="center" width="74" />
+<element type="TEXT" id="ID_static_5" text="209.165.202.129" x="517" y="193" align="center" width="89" />
+<element type="TEXT" id="ID_static_6" text="192.168.10.10" x="76" y="125" align="center" width="75" />
+<element type="TEXT" id="ID_static_7" text=".225" x="411" y="133" align="center" width="23" />
+<element type="TEXT" id="ID_static_8" text="209.165.200.224/27" x="388" y="92" align="center" width="106" />
+<element type="TEXT" compId="ID_s2_txt01" x="263" y="63" width="105" expand="up+down" align="center" />
+<element type="TEXT" compId="ID_s2_txt02" x="398" y="63" width="105" expand="up+down" align="center" />
+<element type="TEXT" compId="ID_s2_txt04" x="487" y="123" width="77" expand="up+down" align="center" />
+<element type="TEXT" compId="ID_s2_txt03" x="609" y="89" width="70" expand="up+down" align="left" />
+<element type="TEXT" compId="ID_s2_txt05" x="606" y="150" width="70" expand="up+down" align="left" />
+<element type="TEXT" subType="TITLE" compId="ID_s2_title"/>
+
+<element type="ROUTER" textId="ID_router_txt1" width="600" height="257" x="40" y="219.4" />
+
+</slide>
+
+
+<slide>
+	<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+<element type="IMAGE" src="9_2_3_1_B.png" x="0" y="0" width="680" height="490" />
+<element type="TEXT" id="ID_static_9" text="209.165.202.129" x="517" y="193" align="center" width="89" />
+<element type="TEXT" id="ID_static_10" text="10.10.10.10" x="76" y="125" align="center" width="62" />
+<element type="TEXT" id="ID_static_11" text="209.165.200.224/27" x="388" y="92" align="center" width="106" />
+<element type="TEXT" id="ID_static_12" text="10.10.10.10" x="154" y="87" align="center" width="62" />
+<element type="TEXT" compId="ID_s3_txt01" x="263" y="63" width="105" expand="up+down" align="center" />
+<element type="TEXT" compId="ID_s3_txt02" x="398" y="63" width="105" expand="up+down" align="center" />
+<element type="TEXT" compId="ID_s3_txt04" x="487" y="123" width="77" expand="up+down" align="center" />
+<element type="TEXT" id="ID_static_13" text="S0/0/0" x="313" y="111" align="center" width="36" />
+<element type="TEXT" id="ID_static_14" text="S0/1/0" x="411" y="113" align="center" width="36" />
+<element type="TEXT" id="ID_static_15" text=".225" x="411" y="133" align="center" width="23" />
+<element type="TEXT" subType="TITLE" compId="ID_s3_title"/>
+<element type="ACTIVITY" subType="SYNTAX" compId="ID_s3_SC5" x="40" y="200" width="600" height="280" resetId="ID_sc_reset" showMeId="ID_sc_showme" showAllId="ID_sc_showall"/>
+
+
+</slide>
+
+</slide>
+
+<text  id="ID_router_txt1"><![CDATA[<pre><b>Define a pool of public IPv4 addresses under the pool name NAT-POOL2.</b>
+R2(config)# <b>ip nat pool NAT-POOL2 209.165.200.226 
+209.165.200.240 netmask 255.255.255.224</b>
+
+<b>Define which addresses are eligible to be translated.</b>
+R2(config)#<b> access-list 1 permit 192.168.0.0 0.0.255.255</b>
+
+<b>Bind NAT-POOL2 with ACL 1.</b>
+R2(config)#<b> ip nat inside source list 1 pool NAT-POOL2 overload</b>
+
+<b>Identify interface serial 0/0/0 as an inside NAT interface.</b>
+R2(config)# <b>interface Serial0/0/0</b>
+R2(config-if)# <b>ip nat inside</b>
+
+<b>Identify interface serial 0/1/0 as the outside NAT interface.</b>
+R2(config)#<b> interface Serial0/1/0</b>
+R2(config-if)#<b> ip nat outside</b></pre>]]></text>
+</data>

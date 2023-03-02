@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.3.6 Incorrect VLAN List</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.3.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Incorrect VLAN List</h1>
+        <div>
+          <p>For traffic from a VLAN to be transmitted across a trunk, it must be allowed on the trunk. To do so, use the<b> switchport trunk allowed vlan</b><b><i></i></b><i>vlan-id</i> command. </p>
+          <p></p>
+          <p>In Figure 1, VLAN 20 (Student) and PC5 have been added to the network. The documentation has been updated to show that the VLANs allowed on the trunk are 10, 20, and 99. In this scenario, PC5 cannot connect to the student email server. </p>
+          <p></p>
+          <p>Check the trunk ports on switch S1 using the<b> show interfaces trunk </b>command as shown in Figure 2. The<b> show interfaces trunk </b>command is an excellent tool for revealing common trunking problems. The command reveals that the interface F0/3 on switch S3 is correctly configured to allow VLANs 10, 20, and 99. An examination of the F0/3 interface on switch S1 reveals that interfaces F0/1 and F0/3 only allow VLANs 10 and 99. Someone updated the documentation but forgot to reconfigure the ports on the S1 switch.</p>
+          <p></p>
+          <p>Reconfigure F0/1 and F0/3 on switch S1 using the<b> switchport trunk allowed vlan 10,20,99 </b>command as shown in Figure 3. The output shows that VLANs 10, 20, and 99 are now added to the F0/1 and F0/3 ports on switch S1. PC5 has regained connectivity to the student email server found at IPv4 address 172.17.20.10.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a lan with two computers connected to switch three, an email server connected to switch one, and a web server connected to switch one.  One of the computers on switch three has a callout stating that it cannot connect to the e. mail server.  It is in a different v. lan, but has an i. p. address in the same subnet as the e. mail server. Figure two shows the output from the "show interfaces trunk" command on switches one and three.  The allowed v. lans on f. zero slash three are highlighted and switch one is missing v. lan twenty. Figure three shows the syntax for adding v. lan twenty to port f. zero slash three on switch one and the output from the "show interfaces trunk" command on switch one.  The output of a successful ping from p. c. five is also displayed.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

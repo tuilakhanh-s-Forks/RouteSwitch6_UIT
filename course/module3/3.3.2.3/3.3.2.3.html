@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.2.3 Level 1 Route</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Level 1 Route</h1>
+        <div>
+          <p>A level 1 route is a route with a subnet mask equal to or less than the classful mask of the network address. Therefore, a level 1 route can be a:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Network route </b>- A network route that has a subnet mask equal to that of the classful mask. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Supernet route </b>- A supernet route is a network address with a mask less than the classful mask, for example, a summary address. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Default route </b>- A default route is a static route with the address 0.0.0.0/0.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The source of the level 1 route can be a directly connected network, static route, or a dynamic routing protocol.</p>
+          <p></p>
+          <p>Figure 1 highlights how level 1 routes are also ultimate routes. </p>
+          <p></p>
+          <p>Figure 2 highlights level 1 routes.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one lists three types of level one routes, and an example of each.  The first listing is 192 dot 168 dot 1 dot 0 slash 24, the second is 192 dot 168 dot 0 dot 0 slash 16, and the third example is the default route of 0 dot 0 dot 0 dot 0 slash 0.  These are all ultimate routes in a routing table when either the next hop I.P. address or the exit interface is listed in the routing table. Figure two shows the output from the command, show i.p. route pipe begin Gateway.  This shows the routing table for router R-1 and highlights two level one routes. One route is the static default route and the other is 192 dot 168 dot 0 dot 0 slash 16 reachable through 209 dot 165 dot 200 dot 226.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

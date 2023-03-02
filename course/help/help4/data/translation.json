@@ -1,0 +1,144 @@
+{
+	"title": "Internet of Everything - Help Tutorial",
+	"lang": "en",
+	"rtl": false,
+	"contents": [
+		{
+			"pageNumber": 1,
+			"img": "client/content/img/help01-page01-bg.jpg",
+			"imgAlt": "Welcome collage background image. It includes photos of a bus, a guitar, a city view and a mountain top",
+			"header": "Packet Tracer - Installation Tutorial",
+			"text": "This tutorial will show you how to:",
+			"list": [
+				"Download the Cisco Packet Tracer installation files",
+				"Install Cisco Packet Tracer"
+			]
+		},
+		{
+			"pageNumber": 2,
+			"img": "client/content/img/help01-page02-bg.jpg",
+			"imgAlt": "Screenshot of The My NetAcad page at netacad.com",
+			"text": "Log in to your Cisco Networking Academy My Netacad page."
+		},
+		{
+			"pageNumber": 3,
+			"img": "client/content/img/help01-page03-bg.jpg",
+			"imgAlt": "Screenshot of The My NetAcad page at netacad.com with the Resources button highlighted.",
+			"text": "Click the Resources button."
+		},
+		{
+			"pageNumber": 4,
+			"img": "client/content/img/help01-page04-bg.jpg",
+			"imgAlt": "Dropdown Resources menu expanded with the Packet Tracer Resources button highlighted.",
+			"text": "Next, click Packet Tracer Resources in the drop down menu."
+		},
+		{
+			"pageNumber": 5,
+			"img": "client/content/img/help01-page05-bg.jpg",
+			"imgAlt": "Screenshot of the Packet Tracer Resources page.",
+			"text": "Scroll to the bottom of the Packet Tracer Resources page to see download options."
+		},
+		{
+			"pageNumber": 6,
+			"img": "client/content/img/help01-page06-bg.jpg",
+			"imgAlt": "Screenshot of the Packet Tracer download links.",
+			"text": "Click on the version of Packet Tracer which is appropriate for your system."
+		},
+		{
+			"pageNumber": 7,
+			"img": "client/content/img/help01-page07-bg.jpg",
+			"imgAlt": "Screenshot of the Open File popup window with the Save File button highlighted.",
+			"text": "In the Open File window, click Save File (or click Run, depending on your browser)."
+		},
+		{
+			"pageNumber": 8,
+			"img": "client/content/img/help01-page08-bg.jpg",
+			"imgAlt": "Screenshot of the download directory with the Packet Tracer .exe file highlighted.",
+			"text": "Locate the file in your download directory, then double-click on the file to run it."
+		},
+		{
+			"pageNumber": 9,
+			"img": "client/content/img/help01-page09-bg.jpg",
+			"imgAlt": "Screenshot of the Security Warning popup window with the Run button highlighted.",
+			"text": "In the Security Warning window, click Run to continue with the installation."
+		},
+		{
+			"pageNumber": 10,
+			"img": "client/content/img/help01-page10-bg.jpg",
+			"imgAlt": "Screenshot of the Setup popup window with the Next button highlighted.",
+			"text": "In the Packet Tracer Setup window, click Next to continue with the installation."
+		},
+		{
+			"pageNumber": 11,
+			"img": "client/content/img/help01-page11-bg.jpg",
+			"imgAlt": "Screenshot of the License Agreement popup window with the acceptance area and Next button highlighted.",
+			"text": "In the License Agreement window, click the radio button to accept the agreement, then click Next to continue."
+		},
+		{
+			"pageNumber": 12,
+			"img": "client/content/img/help01-page12-bg.jpg",
+			"imgAlt": "Screenshot of the Select Destination Location popup window with the Next button highlighted.",
+			"text": "In the Select Destination Location window, verify the installation path then click Next to continue."
+		},
+		{
+			"pageNumber": 13,
+			"img": "client/content/img/help01-page13-bg.jpg",
+			"imgAlt": "Screenshot of the Select Start Menu Folder popup window with the Run button highlighted.",
+			"text": "In the Select Start Menu Folder window, select a different folder or click Next to continue."
+		},
+		{
+			"pageNumber": 14,
+			"img": "client/content/img/help01-page14-bg.jpg",
+			"imgAlt": "Screenshot of the Select Additional Tasks popup window with the Next button highlighted.",
+			"text": "In the Select Additional Tasks window, choose the launch options you prefer, then click Next to continue."
+		},
+		{
+			"pageNumber": 15,
+			"img": "client/content/img/help01-page15-bg.jpg",
+			"imgAlt": "Screenshot of the Ready to Install popup window with the Install button highlighted.",
+			"text": "In the Ready to Install window, review the installation settings then click Install to continue."
+		},
+		{
+			"pageNumber": 16,
+			"img": "client/content/img/help01-page16-bg.jpg",
+			"imgAlt": "Screenshot of the Installing popup window showing a progress bar.",
+			"text": "The Installing window will show installation progress."
+		},
+		{
+			"pageNumber": 17,
+			"img": "client/content/img/help01-page17-bg.jpg",
+			"imgAlt": "Screenshot of the Setup popup window with the OK button highlighted.",
+			"text": "In the Setup window, click OK to acknowledge the requirement to close your browser or restart your computer for Packet Tracer Skills Based Assessment (PTSBA) to work with Packet Tracer."
+		},
+		{
+			"pageNumber": 18,
+			"img": "client/content/img/help01-page18-bg.jpg",
+			"imgAlt": "Screenshot of the Completing the Setup popup window with the Finish button highlighted.",
+			"text": "In the Setup window, click Finish to exit setup and launch Packet Tracer."
+		},
+		{
+			"pageNumber": 19,
+			"img": "client/content/img/help01-page19-bg.jpg",
+			"imgAlt": "Screenshot of the File Directory popup window with the OK button highlighted.",
+			"text": "In the Packet Tracer window, click OK to confirm your user files directory."
+		},
+		{
+			"pageNumber": 20,
+			"img": "client/content/img/help01-page20-bg.jpg",
+			"imgAlt": "Screenshot of the Cisco Packet Tracer launching splash page.",
+			"text": "Installation is complete, Packet Tracer will now begin to launch."
+		},
+		{
+			"pageNumber": 21,
+			"img": "client/content/img/help01-page21-bg.jpg",
+			"imgAlt": "Screenshot of the Cisco Networking Academny Log In window with the Login area highlighted.",
+			"text": "In the Authentication page, enter your Netacad email address or screen name, along with your password, then  click Log In."
+		},
+		{
+			"pageNumber": 22,
+			"img": "client/content/img/help01-page22-bg.jpg",
+			"imgAlt": "Screenshot of the Packet Tracer interface.",
+			"text": "Welcome to Packet Tracer."
+		}
+	]
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.1.2.3 Discover Devices Using LLDP</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Discover Devices Using LLDP</h1>
+        <div>
+          <p>With LLDP enabled, device neighbors can be discovered using the <b>show lldp neighbors</b> command. For example, consider the lack of documentation in the topology shown in Figure 1. The network administrator only knows that S1 is connected to two devices. Using the <b>show lldp neighbors</b> command, the network administrator discovers that S1 has a router and a switch as a neighbors.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The letter B under capability for S2 represents a Bridge. For this output, the word bridge can also mean switch. </p>
+          <p></p>
+          <p>From the results of <b>show lldp neighbors</b>, a topology from switch S1 can be constructed as depicted in Figure 2. When more details about the neighbors are needed, the <b>show lldp neighbors detail</b> command can provide information, such as the neighbors’ IOS version, IP address, and device capability.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a switch S1 connected to two clouds and the command output for the 'show lldp neighbors' command which shows that switch S1 has two neighbors, router R1 and switch S2. Router R1 is connected to the local fastethernet 0/5 interface and that switch S2 is connected to the local fastethernet 0/4 interface. Figure 2 shows a router R1 connected to switch S1, which is connected to another switch S2. Output from the 'show lldp neighbors detail' command highlights that the management IP address for router R1 is 192.168.1.1.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

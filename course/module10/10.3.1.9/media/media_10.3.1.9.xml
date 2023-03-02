@@ -1,0 +1,10 @@
+﻿<textcomponents>
+	
+	<component id="ID_type">
+		<text><![CDATA[Lab]]></text>
+	</component>
+	<component id="ID_title">
+		<text><![CDATA[Managing Router Configuration Files with Tera Term]]></text>
+	</component>
+	
+</textcomponents>

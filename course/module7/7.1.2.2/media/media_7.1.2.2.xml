@@ -1,0 +1,341 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>Wildcard Masks to Match IPv4 Hosts and Subnets</b>]]></text>
+</component>
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[Example 1]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[Example 2]]></text>
+</component>
+
+<component id='ID_s1_txt03'>
+	<text><![CDATA[Example 3]]></text>
+</component>
+
+  <component id="ID_s1_table01">
+  <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+	
+	<tr class="mtable_top">
+			<td colspan='3' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+	<tr class="mtitle">
+		<td bgcolor='#666263'  valign="top" width="190"><font color='#ffffff' ></font></td>
+		<td bgcolor='#666263'  valign="top" width="105"><font color='#ffffff' ><b>Decimal</b></font></td>
+		<td bgcolor='#666263'   valign="top" ><font color='#ffffff' ><b>Binary</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">IP Address</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">192.168.1.1</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">11000000.10101000.00000001.00000001</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">Wildcard Mask</font></td>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">0.0.0.0</font></td>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">00000000.00000000.00000000.00000000</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">Result</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">192.168.1.1</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">11000000.10101000.00000001.00000001</font></td>
+	</tr></table>]]></text>
+  </component>
+  
+  
+  
+   <component id="ID_s1_table02">
+  <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+	
+	<tr class="mtable_top">
+			<td colspan='3' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+	<tr class="mtitle">
+		<td bgcolor='#666263'  valign="top" width="190"><font color='#ffffff' ></font></td>
+		<td bgcolor='#666263'  valign="top" width="105"><font color='#ffffff' ><b>Decimal</b></font></td>
+		<td bgcolor='#666263'  valign="top" ><font color='#ffffff' ><b>Binary</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">IP Address</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">192.168.1.1</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">11000000.10101000.00000001.00000001</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2'  valign='top' ><font color="#393536">Wildcard Mask</font></td>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">255.255.255.255</font></td>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">11111111.11111111.11111111.11111111</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">Result</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">0.0.0.0</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">00000000.00000000.00000000.00000000</font></td>
+	</tr>
+	</table>]]></text>
+  </component>
+  
+  
+  
+  <component id="ID_s1_table03">
+  <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+	<tr class="mtable_top">
+			<td colspan='3' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+	<tr class="mtitle">
+		<td bgcolor='#666263'  valign="top" width="190"><font color='#ffffff' ></font></td>
+		<td bgcolor='#666263'  valign="top" width="105"><font color='#ffffff' ><b>Decimal</b></font></td>
+		<td bgcolor='#666263'  valign="top" ><font color='#ffffff' ><b>Binary</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">IP Address</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">192.168.1.1</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">11000000.10101000.00000001.00000001</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">Wildcard Mask</font></td>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">0.0.0.255</font></td>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">00000000.00000000.00000000.11111111</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">Result</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">192.168.1.0</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">11000000.10101000.00000001.00000000</font></td>
+	</tr>
+	</table>]]></text>
+  </component>
+  
+
+
+  <component id="ID_s1_table01_html">
+  <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+  	<caption class="mtable_title" colspan="3" bgcolor='#FFFFFF'><font size="16"></font></caption>
+	
+	<tr class="mtable_top">
+			<td colspan='3' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+	<tr class="mtitle">
+		<th scope="col" bgcolor='#666263'  valign="top" width="190"><font color='#ffffff' ></font></th>
+		<th scope="col" bgcolor='#666263'  valign="top" width="105"><font color='#ffffff' ><b>Decimal</b></font></th>
+		<th scope="col" bgcolor='#666263'   valign="top" ><font color='#ffffff' ><b>Binary</b></font></th>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">IP Address</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">192.168.1.1</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">11000000.10101000.00000001.00000001</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">Wildcard Mask</font></td>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">0.0.0.0</font></td>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">00000000.00000000.00000000.00000000</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">Result</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">192.168.1.1</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">11000000.10101000.00000001.00000001</font></td>
+	</tr></table>]]></text>
+  </component>
+  
+  
+  
+   <component id="ID_s1_table02_html">
+  <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+	<caption class="mtable_title" colspan="3" bgcolor='#FFFFFF'><font size="16"></font></caption>
+	<tr class="mtable_top">
+			<td colspan='3' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+	<tr class="mtitle">
+		<th scope="col" bgcolor='#666263'  valign="top" width="190"><font color='#ffffff' ></font></th>
+		<th scope="col" bgcolor='#666263'  valign="top" width="105"><font color='#ffffff' ><b>Decimal</b></font></th>
+		<th scope="col" bgcolor='#666263'  valign="top" ><font color='#ffffff' ><b>Binary</b></font></th>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">IP Address</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">192.168.1.1</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">11000000.10101000.00000001.00000001</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2'  valign='top' ><font color="#393536">Wildcard Mask</font></td>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">255.255.255.255</font></td>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">11111111.11111111.11111111.11111111</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">Result</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">0.0.0.0</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">00000000.00000000.00000000.00000000</font></td>
+	</tr>
+	</table>]]></text>
+  </component>
+  
+  
+  
+  <component id="ID_s1_table03_html">
+  <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+  	<caption class="mtable_title" colspan="3" bgcolor='#FFFFFF'><font size="16"></font></caption>
+	<tr class="mtable_top">
+			<td colspan='3' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+	<tr class="mtitle">
+		<th scope="col" bgcolor='#666263'  valign="top" width="190"><font color='#ffffff' ></font></th>
+		<th scope="col" bgcolor='#666263'  valign="top" width="105"><font color='#ffffff' ><b>Decimal</b></font></th>
+		<th scope="col" bgcolor='#666263'  valign="top" ><font color='#ffffff' ><b>Binary</b></font></th>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">IP Address</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">192.168.1.1</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">11000000.10101000.00000001.00000001</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">Wildcard Mask</font></td>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">0.0.0.255</font></td>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">00000000.00000000.00000000.11111111</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">Result</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">192.168.1.0</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">11000000.10101000.00000001.00000000</font></td>
+	</tr>
+	</table>]]></text>
+  </component>
+  
+	
+  <!--slide02-->
+<component id="ID_s2_title">
+<text><![CDATA[<b>Wildcard Masks to Match Ranges</b>]]></text>
+</component>
+
+<component id='ID_s2_txt01'>
+	<text><![CDATA[Example 1]]></text>
+</component>
+
+<component id='ID_s2_txt02'>
+	<text><![CDATA[Example 2]]></text>
+</component>
+
+  <component id="ID_s2_table01">
+  <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+	<tr class="mtable_top">
+			<td colspan='3' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+	<tr class="mtitle">
+		<td bgcolor='#666263'  valign="top" width="190"><font color='#ffffff' ></font></td>
+		<td bgcolor='#666263'  valign="top" width="105"><font color='#ffffff' ><b>Decimal</b></font></td>
+		<td bgcolor='#666263'  valign="top" ><font color='#ffffff' ><b>Binary</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">IP Address</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">192.168.16.0</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">11000000.10101000.00010000.00000000</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">Wildcard Mask</font></td>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">0.0.15.255</font></td>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">00000000.00000000.00001111.11111111</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">Result Range</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">192.168.16.0<br/>to<br/>192.168.31.255</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">11000000.10101000.00010000.00000000<br/>to<br/>11000000.10101000.00011111.11111111</font></td>
+	</tr>
+	</table>]]></text>
+  </component>
+  
+	<component id="ID_s2_table02">
+  <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+	<tr class="mtable_top">
+			<td colspan='3' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+	<tr class="mtitle">
+		<td bgcolor='#666263'  valign="top" width="190"><font color='#ffffff' ></font></td>
+		<td bgcolor='#666263'  valign="top" width="105"><font color='#ffffff' ><b>Decimal</b></font></td>
+		<td bgcolor='#666263'  valign="top" ><font color='#ffffff' ><b>Binary</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">IP Address</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">192.168.1.0</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">11000000.10101000.00000001.00000000</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">Wildcard Mask</font></td>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">0.0.254.255</font></td>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">00000000.00000000.11111110.11111111</font></td>
+	</tr>
+	
+	<tr>
+				<td bgcolor='#E9E7E8' rowspan="2">Result</td>
+				<td bgcolor='#E9E7E8'><font color="#393536">192.168.1.0</font></td>	
+				<td bgcolor='#E9E7E8'>11000000.10101000.00000001.00000000</td>	
+			</tr>
+
+			<tr>
+				<td colspan='2' bgcolor='#E9E7E8'  valign='middle' ><font color="#393536">All odd numbered subnets in the 192.168.0.0 major network</font></td>
+			</tr>
+
+	</table>]]></text>
+  </component>
+  
+  <component id="ID_s2_table01_html">
+  <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+  	<caption class="mtable_title" colspan="3" bgcolor='#FFFFFF'><font size="16"></font></caption>
+	<tr class="mtable_top">
+			<td colspan='3' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+	<tr class="mtitle">
+		<th scope="col" bgcolor='#666263'  valign="top" width="190"><font color='#ffffff' ></font></th>
+		<th scope="col" bgcolor='#666263'  valign="top" width="105"><font color='#ffffff' ><b>Decimal</b></font></th>
+		<th scope="col" bgcolor='#666263'  valign="top" ><font color='#ffffff' ><b>Binary</b></font></th>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">IP Address</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">192.168.16.0</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">11000000.10101000.00010000.00000000</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">Wildcard Mask</font></td>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">0.0.15.255</font></td>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">00000000.00000000.00001111.11111111</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">Result Range</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">192.168.16.0<br/>to<br/>192.168.31.255</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">11000000.10101000.00010000.00000000<br/>to<br/>11000000.10101000.00011111.11111111</font></td>
+	</tr>
+	</table>]]></text>
+  </component>
+  
+	<component id="ID_s2_table02_html">
+  <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+  	<caption class="mtable_title" colspan="3" bgcolor='#FFFFFF'><font size="16"></font></caption>
+	<tr class="mtable_top">
+			<td colspan='3' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+	<tr class="mtitle">
+		<th scope="col" bgcolor='#666263'  valign="top" width="190"><font color='#ffffff' ></font></th>
+		<th scope="col" bgcolor='#666263'  valign="top" width="105"><font color='#ffffff' ><b>Decimal</b></font></th>
+		<th scope="col" bgcolor='#666263'  valign="top" ><font color='#ffffff' ><b>Binary</b></font></th>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">IP Address</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">192.168.1.0</font></td>
+		<td bgcolor='#E9E7E8'  valign='top' > <font color="#393536">11000000.10101000.00000001.00000000</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">Wildcard Mask</font></td>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">0.0.254.255</font></td>
+		<td bgcolor='#F2F2F2'  valign='top' > <font color="#393536">00000000.00000000.11111110.11111111</font></td>
+	</tr>
+	
+	<tr>
+				<td bgcolor='#E9E7E8' rowspan="2">Result</td>
+				<td bgcolor='#E9E7E8'><font color="#393536">192.168.1.0</font></td>	
+				<td bgcolor='#E9E7E8'>11000000.10101000.00000001.00000000</td>	
+			</tr>
+
+			<tr>
+				<td colspan='2' bgcolor='#E9E7E8'  valign='middle' ><font color="#393536">All odd numbered subnets in the 192.168.0.0 major network</font></td>
+			</tr>
+
+	</table>]]></text>
+  </component>
+  
+  
+</textcomponents>

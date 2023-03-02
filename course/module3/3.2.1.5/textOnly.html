@@ -1,0 +1,10 @@
+
+          <p>As shown in Figure 1, RIPv2 automatically summarizes networks at major network boundaries by default, just like RIPv1.  </p>
+          <p></p>
+          <p>To modify the default RIPv2 behavior of automatic summarization, use the<b> no auto-summary </b>router configuration mode command as shown in Figure 2. This command has no effect when using RIPv1. When automatic summarization has been disabled, RIPv2 no longer summarizes networks to their classful address at boundary routers. RIPv2 now includes all subnets and their appropriate masks in its routing updates.  The<b> show ip protocols </b>now states that “automatic network summarization is not in effect”. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: RIPv2 must be enabled before automatic summarization is disabled. </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to disable automatic summarization on R2 and R3.</p>
+        

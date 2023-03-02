@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide type="MBAR">
+		<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<element type="TEXT" subType="TABLE" compId="ID_table_html" x="40" y="120" width="600" height="337" />
+<element type="TEXT" subType="TITLE" compId="ID_s1_title"/>
+</slide>
+
+
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+<element type="IMAGE" x="0" y="0" width="680" height="490"  src="media_5.2.2.4A.png"/>
+<element type="TEXT" id="ID_static_1" text="MAC: 0025.83e6.4b01" x="452" y="67" align="center" width="84" />
+<element type="TEXT" id="ID_static_2" text="MAC: 0025.83e6.4b02" x="452" y="155" align="center" width="85" />
+<element type="TEXT" id="ID_static_3" text="F0/18" x="239" y="96" align="center" width="30" color="#f68026" bold="1"/>
+<element type="TEXT" id="ID_static_4" text="F0/19" x="239" y="138" align="center" width="30" />
+<element type="TEXT" subType="TABLE" compId="ID_s2_table_html" x="40" y="230" width="600" height="212" />
+<element type="TEXT" subType="TITLE" compId="ID_s2_title"/>
+</slide>
+
+
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+<element type="IMAGE" x="0" y="0" width="680" height="490"  src="media_5.2.2.4A.png"/>
+<element type="TEXT" id="ID_static_5" text="MAC: 0025.83e6.4b01" x="452" y="67" align="center" width="84" />
+<element type="TEXT" id="ID_static_6" text="MAC: 0025.83e6.4b02" x="452" y="155" align="center" width="85" />
+<element type="TEXT" id="ID_static_7" text="F0/18" x="239" y="96" align="center" width="30" />
+<element type="TEXT" id="ID_static_8" text="F0/19" x="239" y="138" align="center" width="30" color="#f68026" bold="1"/>
+<element type="TEXT" subType="TABLE" compId="ID_s3_table_html" x="40" y="230" width="600" height="212" />
+<element type="TEXT" subType="TITLE" compId="ID_s3_title"/>
+</slide>
+</slide>
+</data>

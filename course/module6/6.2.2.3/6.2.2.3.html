@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.2.3 Verifying Trunk Configuration</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verifying Trunk Configuration</h1>
+        <div>
+          <p>Figure 1 displays the configuration of switch port F0/1 on switch S1. The configuration is verified with the<b> show interfaces </b><i>interface-ID </i><b>switchport</b> command. </p>
+          <p></p>
+          <p>The top highlighted area shows that port F0/1 has its administrative mode set to<b> trunk</b>. The port is in trunking mode. The next highlighted area verifies that the native VLAN is VLAN 99. Further down in the output, the bottom highlighted area shows that all VLANs are enabled on the trunk.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 2 to configure a trunk supporting all VLANs on interface F0/1, with native VLAN 99. Verify the trunk configuration with the<b> show interfaces f0/1 switchport </b>command.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the syntax for configuring port f. zero slash one as a trunk port and setting the native v. lan to ninety nine.  The output from the "show interfaces f. zero slash one switchport" is also displayed to verify the changes have been applied correctly. Figure two is an interactive activity that allows the learner to practice configuring a port as a trunk port and setting the native v. lan.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

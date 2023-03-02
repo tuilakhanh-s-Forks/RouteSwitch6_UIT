@@ -1,0 +1,98 @@
+<textcomponents>
+
+	<component id="ID_title">
+		<text><![CDATA[<b>Static NAT Process</b>]]></text>
+	</component>
+
+	<component id="ID_txt01">
+		<text><![CDATA[Inside Network]]></text>
+	</component>
+
+	<component id="ID_txt02">
+		<text><![CDATA[Outside Network]]></text> 
+	</component>
+
+	<component id="ID_txt03">
+		<text><![CDATA[Web Server]]></text> 
+	</component>
+
+	<component id="ID_txt04">
+		<text><![CDATA[Internet]]></text> 
+	</component>
+
+	<component id="ID_txt05">
+		<text><![CDATA[Client]]></text> 
+	</component>
+
+	<component id="ID_txt06">
+		<text><![CDATA[SA 192.168.10.254]]></text> 
+	</component>
+
+	<component id="ID_txt07">
+		<text><![CDATA[DA 192.168.10.254]]></text> 
+	</component>
+
+	<component id="ID_txt08">
+		<text><![CDATA[SA 201.165.201.5]]></text> 
+	</component>
+
+	<component id="ID_txt09">
+		<text><![CDATA[DA 209.165.201.5]]></text> 
+	</component>
+
+	<component id="ID_s1_table01">
+		<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+	<tr class="mtable_title">
+			<td colspan="4" bgcolor='#FFFFFF'><font size="5"></font></td>
+		</tr>
+
+		<tr class="mtable_top">
+			<td colspan='4' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+
+	<tr>
+	<td bgcolor='#666263' width="100"><font color='#FFFFFF'><b>Inside Global<br>Address</b></font></td>
+	<td bgcolor='#666263' width="110"><font color='#FFFFFF'><b>Inside Local<br>Address</b></font></td>
+	<td bgcolor='#666263' width="110"><font color='#FFFFFF'><b>Outside Local<br>Address</b></font></td>
+	<td bgcolor='#666263' width="110"><font color='#FFFFFF'><b>Outside Global<br>Address</b></font></td>
+	</tr>
+
+	<tr>
+	<td bgcolor='#E9E7E8' valign="middle" width="130">209.165.201.5</td>
+	<td bgcolor='#E9E7E8' valign="middle">192.168.10.254</td>
+	<td bgcolor='#E9E7E8' valign="middle">209.165.200.254</td>
+	<td bgcolor='#E9E7E8' valign="middle">209.165.200.254</td>
+	</tr>
+
+	</table>]]></text>
+	</component> 
+	<component id="ID_s1_table01_html">
+		<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+
+			<caption colspan="4" class="mtable_title" bgcolor='#FFFFFF'><font size="5"></font></caption>
+		
+
+		<tr class="mtable_top">
+			<td colspan='4' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+
+	<tr>
+	<th scope="col" bgcolor='#666263' width="100"><font color='#FFFFFF'><b>Inside Global<br>Address</b></font></th>
+	<th scope="col" bgcolor='#666263' width="110"><font color='#FFFFFF'><b>Inside Local<br>Address</b></font></th>
+	<th scope="col" bgcolor='#666263' width="110"><font color='#FFFFFF'><b>Outside Local<br>Address</b></font></th>
+	<th scope="col" bgcolor='#666263' width="110"><font color='#FFFFFF'><b>Outside Global<br>Address</b></font></th>
+	</tr>
+
+	<tr>
+	<td bgcolor='#E9E7E8' valign="middle" width="130">209.165.201.5</td>
+	<td bgcolor='#E9E7E8' valign="middle">192.168.10.254</td>
+	<td bgcolor='#E9E7E8' valign="middle">209.165.200.254</td>
+	<td bgcolor='#E9E7E8' valign="middle">209.165.200.254</td>
+	</tr>
+
+	</table>]]></text>
+	</component> 
+
+</textcomponents>

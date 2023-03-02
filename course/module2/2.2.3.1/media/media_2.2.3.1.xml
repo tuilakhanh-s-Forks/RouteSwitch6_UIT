@@ -1,0 +1,125 @@
+<textcomponents>
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>IPv6 Command Syntax</b>]]></text>
+	</component>
+	<component id="ID_s1_table">
+		<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+			<tr class="mtable_title">
+			<td colspan="2" bgcolor='#FFFFFF'><font size="5"></font></td>
+		</tr>
+
+	<tr>
+		
+		<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+	</tr>
+	<tr>
+
+		<td bgcolor='#666263'  valign="top" width="125" class="mtitle"><font color='#ffffff' ><b>Parameter</b></font></td>
+		<td bgcolor='#666263'  valign="top" class="mtitle"><font color='#ffffff' ><b>Description</b></font></td>
+	</tr>
+
+	<tr>
+
+		<td bgcolor='#E9E7E8' valign="top"><font color='#000000' face="_typewriter" >ipv6-prefix</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' ><textformat blockindent="-16">Destination network address of the remote network to be added to the routing table.</textformat></font></td>
+	</tr>
+	<tr>
+		
+		<td bgcolor='#F2F2F2' valign="top"><font color='#000000' face="_typewriter">prefix-length</font></td>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536' >Prefix length of the remote network to be added to the routing table.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#000000' face="_typewriter">ipv6-address</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' ><textformat blockindent="-16"><ul class="bulletIndent20"><li>Commonly referred to as the next-hop router’s IP address.</li><li>Typically used when connecting to a broadcast media (i.e., Ethernet).</li><li>Commonly creates a recursive lookup.</li></ul></textformat></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#000000' face="_typewriter">exit-intf</font></td>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536' ><textformat blockindent="-16"><ul class="bulletIndent20"><li>Use the outgoing interface to forward packets to the destination network.</li><li>Also referred to as a directly attached static route.</li>
+<li>Typically used when connecting in a point-to-point configuration.</li></ul></textformat></font></td></tr></table>]]></text>
+	</component>
+
+	<component id="ID_s1_table_html">
+		<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+			<tr class="mtable_title">
+			<td colspan="2" bgcolor='#FFFFFF'><font size="5"></font></td>
+		</tr>
+
+      <caption class="mtable_title" colspan="2" bgcolor='#FFFFFF'><font size="1"></font></caption>
+  
+	<tr>
+		
+		<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+	</tr>
+	<tr>
+
+		<th scope="col" bgcolor='#666263'  valign="top" width="125" class="mtitle"><font color='#ffffff' ><b>Parameter</b></font></th>
+		<th scope="col" bgcolor='#666263'  valign="top" class="mtitle"><font color='#ffffff' ><b>Description</b></font></th>
+	</tr>
+
+	<tr>
+
+		<td bgcolor='#E9E7E8' valign="top"><font color='#000000' face="_typewriter" >ipv6-prefix</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' ><textformat blockindent="-16">Destination network address of the remote network to be added to the routing table.</textformat></font></td>
+	</tr>
+	<tr>
+		
+		<td bgcolor='#F2F2F2' valign="top"><font color='#000000' face="_typewriter">prefix-length</font></td>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536' >Prefix length of the remote network to be added to the routing table.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#000000' face="_typewriter">ipv6-address</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' ><textformat blockindent="-16"><ul class="bulletIndent20"><li>Commonly referred to as the next-hop router’s IP address.</li><li>Typically used when connecting to a broadcast media (i.e., Ethernet).</li><li>Commonly creates a recursive lookup.</li></ul></textformat></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#000000' face="_typewriter">exit-intf</font></td>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536' ><textformat blockindent="-16"><ul class="bulletIndent20"><li>Use the outgoing interface to forward packets to the destination network.</li><li>Also referred to as a directly attached static route.</li>
+<li>Typically used when connecting in a point-to-point configuration.</li></ul></textformat></font></td></tr></table>]]></text>
+	</component>
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>Enabling IPv6 Unicast Routing</b>]]></text>
+	</component>
+	<component id="ID_s3_title">
+		<text><![CDATA[<b>Enabling IPv6 Unicast Routing On R2</b>]]></text>
+	</component>
+	<component id="ID_sc_reset">
+		<text><![CDATA[Reset]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[Show Me]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[Show All]]></text>
+	</component>
+	<component id="ID_sc1_reset">
+		<text><![CDATA[Reset]]></text>
+	</component>
+	<component id="ID_sc1_showme">
+		<text><![CDATA[Show Me]]></text>
+	</component>
+	<component id="ID_sc1_showall">
+		<text><![CDATA[Show All]]></text>
+	</component>
+	<component id="ID_s3_SC1" fontSize="12" fontFace="_typewriter" fontColor="#ffffff">
+		<feedback id="fb"><![CDATA[<b>***</b><font face="_sans" color="#FFFFFF">You must enter the exact and full command.</font><b>***</b> ]]></feedback>
+		<existingcommands><![CDATA[<font face="_sans"><b>Enable IPv6 unicast routing.</b></font>]]></existingcommands>
+		<command prompt="R2(config)#">
+			<correctresponse><![CDATA[ipv6 unicast-routing]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans" class="syntaxBottomLine"><b>You successfully enabled IPv6 unicast routing on R2.</b>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+	<component id="ID_s4_title">
+		<text><![CDATA[<b>Enabling IPv6 Unicast Routing On R3</b>]]></text>
+	</component>
+	<component id="ID_s4_SC1" fontSize="12" fontFace="_typewriter" fontColor="#ffffff">
+		<feedback id="fb2"><![CDATA[<b>***</b><font face="_sans" color="#FFFFFF">You must enter the exact and full command.</font><b>***</b> ]]></feedback>
+		<existingcommands><![CDATA[<font face="_sans"><b>Enable IPv6 unicast routing.</b></font>]]></existingcommands>
+		<command prompt="R3(config)#">
+			<correctresponse><![CDATA[ipv6 unicast-routing]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans" class="syntaxBottomLine"><b>You successfully enabled IPv6 unicast routing on R3.</b>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+</textcomponents>

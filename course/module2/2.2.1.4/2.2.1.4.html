@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.1.4 Configure a Directly Connected Static Route</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configure a Directly Connected Static Route</h1>
+        <div>
+          <p>When configuring a static route, another option is to use the exit interface to specify the next-hop address. </p>
+          <p></p>
+          <p>In Figure 1, three directly connected static routes are configured on R1 using the exit interface. The routing table for R1 in Figure 2 shows that when a packet is destined for the 192.168.2.0/24 network, R1 looks for a match in the routing table, and finds that it can forward the packet out of its Serial 0/0/0 interface. No other lookups are required.</p>
+          <p></p>
+          <p>Notice how the routing table looks different for the route configured with an exit interface than for the route configured with a recursive entry.</p>
+          <p></p>
+          <p>Configuring a directly connected static route with an exit interface allows the routing table to resolve the exit interface in a single search, instead of two searches. Although the routing table entry indicates “directly connected”, the administrative distance of the static route is still 1. Only a directly connected interface can have an administrative distance of 0.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: For point-to-point interfaces, you can use static routes that point to the exit interface or to the next-hop address. For multipoint/broadcast interfaces, it is more suitable to use static routes that point to a next-hop address.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figures 3 and 4 to configure and verify directly connected static routes on R2 and R3.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: CEF (Cisco Express Forwarding) is the default behavior on most platforms running IOS 12.0 or later. CEF provides optimized lookup for efficient packet forwarding by using two main data structures stored in the data plane: a FIB (Forwarding Information Base), which is a copy of the routing table, and an adjacency table that includes Layer 2 addressing information. The information combined in both of these tables work together so there is no recursive lookup needed for next-hop IP address lookups. In other words, a static route using a next-hop IP requires only a single lookup when CEF is enabled on the router. Although static routes that use only an exit interface on point-to-point networks are common, the use of the default CEF forwarding mechanism makes this practice unnecessary. CEF is discussed in more detail later in the course.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">These figures are based on the standard lab diagram.  R. 1. with a lan connects to R. 2. with a lan which connects to R. 3. with a lan. Figure one shows the configuring of the two lans that router 1 is not connected to, the router two lan and the router three lan, as well as the wan between router two and router three.  The static routes were configured using exit interface. Figure two demonstrates the lookup process for router one to reach the lan on router three.  Figure three is an interactive activity that allows the learner to configure a static route on router two to reach the router three lan using exit interface. Figure four is an interactive activity that allows the learner to configure static routes on router three pointing to the networks on the other side of router two.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

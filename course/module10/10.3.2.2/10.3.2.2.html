@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.3.2.2 IOS Image Filenames</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IOS Image Filenames</h1>
+        <div>
+          <p>When selecting or upgrading a Cisco IOS router, it is important to choose the proper IOS image with the correct feature set and version. The Cisco IOS image file is based on a special naming convention. The name for the Cisco IOS image file contains multiple parts, each with a specific meaning. It is important to understand this naming convention when upgrading and selecting a Cisco IOS Software. </p>
+          <p></p>
+          <p>As shown in Figure 1, the<b> show flash </b>command displays the files stored in flash memory, including the system image files.</p>
+          <p></p>
+          <p>Figure 2 illustrates the different parts of an IOS 15 system image file on an ISR G2 device:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Image Name (c1900) </b>- Identifies the platform on which the image runs. In this example, the platform is a Cisco 1900 router.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>universalk9 </b>- Specifies the image designation. The two designations for an ISR G2 are universalk9 and universalk9_npe. Universalk9_npe does not contain strong encryption and is meant for countries with encryption restrictions. Features are controlled by licensing and can be divided into four technology packages. These are IP Base, Security, Unified Communications, and Data.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>mz </b>- Indicates where the image runs and if the file is compressed. In this example, mz indicates that the file runs from RAM and is compressed. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>SPA </b>- Designates that file is digitally signed by Cisco.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>152-4.M3 </b>- Specifies the filename format for the image 15.2(4)M3. This is the version of IOS, which includes the major release, minor release, maintenance release, and maintenance rebuild numbers. The M indicates this is an extended maintenance release. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>bin </b>- The file extension. This extension indicates that this file is a binary executable file.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The most common designation for memory location and compression format is mz. The first letter indicates the location where the image is executed on the router. The locations can include:</p>
+          <p>
+            <ul>
+              <li>
+                <b>f</b> - flash </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>m</b> - RAM  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>r</b> - ROM  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>l</b>  - relocatable </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The compression format can be either z for zip or x for mzip. Zipping is a method Cisco uses to compress some run-from-RAM images that is effective in reducing the size of the image. It is self-unzipping, so when the image is loaded into RAM for execution, the first action is to unzip.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The Cisco IOS Software naming conventions, field meaning, image content, and other details are subject to change.</p>
+          <p></p>
+          <p>
+            <b>Memory Requirements</b>
+          </p>
+          <p></p>
+          <p>On most Cisco routers including the integrated services routers, the IOS is stored in compact flash as a compressed image and loaded into DRAM during boot-up. The Cisco IOS Software Release 15.0 images available for the Cisco 1900 and 2900 ISR require 256MB of flash and 512MB of RAM. The 3900 ISR requires 256MB of flash and 1GB of RAM. This does not include additional management tools such as Cisco Configuration Professional (Cisco CP). For complete details, refer to the product data sheet for the specific router. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output from the "show flash colon zero" command on router one.  The i. o. s. image filename is highlighted. Figure two shows a breakdown of how to read and interpret each section of the image filename for i. o. s. version twelve dot four. Figure three shows a breakdown of how to read and interpret each section of the image filename for i. o. s. version fifteen dot two.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

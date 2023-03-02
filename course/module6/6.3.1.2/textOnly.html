@@ -1,0 +1,30 @@
+
+          <p>Historically, the first solution for inter-VLAN routing relied on routers with multiple physical interfaces. Each interface had to be connected to a separate network and configured with a distinct subnet. </p>
+          <p></p>
+          <p>In this legacy approach, inter-VLAN routing is performed by connecting different physical router interfaces to different physical switch ports. The switch ports connected to the router are placed in access mode and each physical interface is assigned to a different VLAN. Each router interface can then accept traffic from the VLAN associated with the switch interface that it is connected to, and traffic can be routed to the other VLANs connected to the other interfaces.</p>
+          <p></p>
+          <p>Click Play in the figure to view an animation of legacy inter-VLAN routing.</p>
+          <p></p>
+          <p>As seen in the animation:</p>
+          <p></p>
+          <p>1. PC1 on VLAN 10 is communicating with PC3 on VLAN 30 through router R1.</p>
+          <p></p>
+          <p>2. PC1 and PC3 are on different VLANs and have IPv4 addresses on different subnets. </p>
+          <p></p>
+          <p>3. Router R1 has a separate interface configured for each of the VLANs.</p>
+          <p></p>
+          <p>4. PC1 sends unicast traffic destined for PC3 to switch S2 on VLAN 10, where it is then forwarded out the trunk interface to switch S1. </p>
+          <p></p>
+          <p>5. Switch S1 then forwards the unicast traffic through its interface F0/3 to interface G0/0 on router R1. </p>
+          <p></p>
+          <p>6. The router routes the unicast traffic through its interface G0/1, which is connected to VLAN 30. </p>
+          <p></p>
+          <p>7. The router forwards the unicast traffic to switch S1 on VLAN 30. </p>
+          <p></p>
+          <p>8. Switch S1 then forwards the unicast traffic to switch S2 through the active trunk link, after which switch S2 can then forward the unicast traffic to PC3 on VLAN 30.</p>
+          <p></p>
+          <p>In this example, the router was configured with two separate physical interfaces to interact with the different VLANs and perform the routing.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: This method of inter-VLAN routing is not efficient and is generally no longer implemented in switched networks. It is shown in this course for explanation purposes only.</p>
+        

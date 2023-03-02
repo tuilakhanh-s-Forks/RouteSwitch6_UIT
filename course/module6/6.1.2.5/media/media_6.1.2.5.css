@@ -1,0 +1,15 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+.ora{
+    color: #F68026;
+}
+#ID_s1_txt06 { line-height:10px;}
+
+.orangeCallOut{
+	padding-right: 4px !important;
+	padding-left: 4px !important;
+}

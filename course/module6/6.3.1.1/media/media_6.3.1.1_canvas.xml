@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide>
+		<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+		<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_6.3.1.1.png" />
+		<element type="TEXT" subType="TITLE" compId="ID_title"/>
+<element type="TEXT" id="ID_static_1" text="G0/0" x="291" y="126.8" align="center" width="25.65" />
+<element type="TEXT" id="ID_static_2" text="G0/1" x="350" y="126.8" align="center" width="23.85" />
+<element type="TEXT" id="ID_static_3" text="F0/1" x="290" y="184.6" align="center" width="21.55" />
+<element type="TEXT" id="ID_static_4" text="F0/2" x="352" y="184.6" align="center" width="23.2" />
+<element type="TEXT" id="ID_static_5" text="F0/11" x="265" y="226.8" align="center" width="28.15" />
+<element type="TEXT" id="ID_static_6" text="F0/6" x="370" y="226.8" align="center" width="23.35" />
+<element type="TEXT" id="ID_static_7" text="172.17.10.21" x="212" y="354.95" align="center" width="66.5" />
+<element type="TEXT" id="ID_static_8" text="172.17.30.23" x="381" y="354.95" align="center" width="68.3" />
+<element type="TEXT" compId="ID_txt01" x="184" y="85" width="104.5" expand="up" align="center" class="orangeCallOut" />
+<element type="TEXT" compId="ID_txt03" x="379" y="85" width="104.5" expand="up" align="center" class="purpleCallOut"/>
+
+<element type="TEXT" compId="ID_txt02" x="105" y="245" width="104.5" expand="up+down" align="center" class="orangeCallOut" />
+<element type="TEXT" compId="ID_txt04" x="455" y="245" width="104.5" expand="up+down" align="center" class="purpleCallOut"/>
+<element type="TEXT" compId="ID_txt05" x="110" y="390" width="462.2" expand="down" align="left" />
+
+		</slide>
+</data>

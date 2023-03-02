@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide>
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+        <element type="TEXT" subType="TITLE" compId="ID_title" color="#fff" />
+        <element type="TEXT" compId="ID_txt01" x="53" y="73" width="101" expand="up+down" align="right" color="#ffffff" />
+        <element type="ROUTER" textId="ID_router_txt1" x="161.95" y="61.35" width="438" height="50" />
+        <element type="TEXT" compId="ID_txt02" x="55" y="160" width="99" expand="up+down" align="right" color="#ffffff" />
+        <element type="ROUTER" textId="ID_router_txt2" x="161.95" y="128" width="438" height="89" />
+        <element type="TEXT" compId="ID_txt03" x="55" y="268" width="98" expand="up+down" align="right" color="#ffffff" />
+        <element type="ROUTER" textId="ID_router_txt3" x="161.95" y="233.95" width="438" height="104" />
+        <element type="TEXT" compId="ID_txt04" x="55" y="372" width="99" expand="up+down" align="right" color="#ffffff" />
+        <element type="ROUTER" textId="ID_router_txt4" x="161.95" y="355.8" width="438" height="103" />
+    </slide>
+    <text id="ID_router_txt1">
+        <![CDATA[<pre>R1(config)# <b>access-list 1 deny host 192.168.10.99</b>
+R1(config)# <b>access-list 1 permit 192.168.0.0 0.0.255.255</b>]]></text>
+    <text id="ID_router_txt2">
+        <![CDATA[<pre>R1# <b>show access-lists 1</b>
+Standard IP access list 1
+<span class="orangeColor">   10 deny   192.168.10.99</span>
+   20 permit 192.168.0.0, wildcard bits 0.0.255.255
+R1#
+</pre>]]></text>
+    <text id="ID_router_txt3">
+        <![CDATA[<pre>
+R1# <b>conf t</b>      
+R1(config)# <b>ip access-list standard 1</b>
+R1(config-std-nacl)# <b>no 10</b>
+R1(config-std-nacl)# <b>10 deny host 192.168.10.10</b>
+R1(config-std-nacl)# <b>end</b>
+R1#</pre>]]></text>
+    <text id="ID_router_txt4">
+        <![CDATA[<pre>R1# <b>show access-lists</b>
+Standard IP access list 1
+<span class="orangeColor">   10 deny   192.168.10.10</span>
+   20 permit 192.168.0.0, wildcard bits 0.0.255.255
+R1#	
+</pre>]]></text>
+</data>

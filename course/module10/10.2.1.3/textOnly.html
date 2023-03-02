@@ -1,0 +1,9 @@
+
+          <p>Before NTP is configured on the network, the <b>show clock</b> command displays the current time on the software clock. With the <b>detail</b> option, the time source is also displayed. As shown in Figure 1, the software clock has been manually configured. Use the<b> ntp server</b><i> ip-address </i>command in global configuration mode to configure 209.165.200.225 as the NTP server for R1. To verify the time source is set to NTP, use the <b>show clock detail</b> command again.</p>
+          <p></p>
+          <p>As shown in Figure 2, use the <b>show ntp associations</b> and <b>show ntp status</b> commands to verify that R1 is synchronized with the NTP server at 209.165.200.225. Notice that R1 is synchronized with a stratum 1 NTP server at 209.165.200.225, which is synchronized with a GPS clock. The <b>show ntp status</b> command displays that R1 is now a stratum 2 device synchronized with the NTP server at 209.165.220.225.</p>
+          <p></p>
+          <p>The clock on S1 is configured to synchronize to R1, as shown in Figure 3. Output from the <b>show ntp associations </b>command verifies that the clock on S1 is now synchronized with R1 at 192.168.1.1 via NTP. R1 is a stratum 2 device and NTP server to S1. Now S1 is a stratum 3 device that can provide NTP service to other devices in the network, such as end devices.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to practice configuring and verifying NTP.</p>
+        

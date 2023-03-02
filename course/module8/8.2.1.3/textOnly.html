@@ -1,0 +1,27 @@
+
+          <p>The decision of whether a client is configured to obtain its IPv6 address information automatically using SLAAC, DHCPv6, or a combination of both depends on the settings within the RA message. </p>
+          <p></p>
+          <p>The two flags are the Managed Address Configuration flag (M flag) and the Other Configuration flag (O flag). </p>
+          <p></p>
+          <p>Using different combinations of the M and O flags, RA messages have one of three addressing options for the IPv6 device, as shown in the figure:</p>
+          <p>
+            <ul>
+              <li>SLAAC (Router Advertisement only)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Stateless DHCPv6 (Router Advertisement and DHCPv6)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Stateful DHCPv6 (DHCPv6 only)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Regardless of the option used, it is recommended by RFC 4861 that all IPv6 devices perform Duplicate Address Detection (DAD) on any unicast address, including addresses configured using SLAAC or DHCPv6. DAD is implemented using ICMPv6, which is specified by RFC 4443.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Although the RA message specifies the process the client should use in obtaining an IPv6 address dynamically, the client operating system may choose to ignore the RA message and use the services of a DHCPv6 server exclusively.</p>
+        

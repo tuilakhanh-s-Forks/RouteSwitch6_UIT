@@ -1,0 +1,6 @@
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+#ID_router_txt1{line-height: 14px; letter-spacing: -0.2px;}
+#ID_router_txt2{line-height: 13px; letter-spacing: -0.3px;}
+.text_color{color:#F68026 !important;}

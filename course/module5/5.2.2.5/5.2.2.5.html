@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.2.5 Port Security: Verifying</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Port Security: Verifying</h1>
+        <div>
+          <p>
+            <b>Verify Port Security</b>
+          </p>
+          <p></p>
+          <p>After configuring port security on a switch, check each interface to verify that the port security is set correctly, and check to ensure that the static MAC addresses have been configured correctly. </p>
+          <p></p>
+          <p>
+            <b>Verify Port Security Settings</b>
+          </p>
+          <p></p>
+          <p>To display port security settings for the switch, or for the specified interface, use the<b> show port-security interface </b>[<i>interface-id</i>] command. The output for the dynamic port security configuration is shown in Figure 1. By default, there is one MAC address allowed on this port.</p>
+          <p></p>
+          <p>The output shown in Figure 2 shows the values for the sticky port security settings. The maximum number of addresses is set to 10, as configured. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: The MAC address is identified as a sticky MAC.</p>
+          <p></p>
+          <p>Sticky MAC addresses are added to the MAC address table and to the running configuration. As shown in Figure 3, the sticky MAC for PC2 has been added to the running configuration for S1.</p>
+          <p></p>
+          <p></p>
+          <p>
+            <b>Verify Secure MAC Addresses</b>
+          </p>
+          <p></p>
+          <p>To display all secure MAC addresses configured on all switch interfaces, or on a specified interface with aging information for each, use the<b> show port-security address </b>command. As shown in Figure 4, the secure MAC addresses are listed along with the types. </p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output from the command, show port hyphen security interface fast Ethernet zero slash 18.  The setting for maximum MAC addresses is set to 1 in this example and is highlighted. Figure two highlights the fact that the new maximum number is set to 50, and that sticky MAC addresses is now set to one. Figure three shows the output from the command, show run pipe begin fast Ethernet zero slash 19.  The output lists the configuration of the port, including the port security.  A MAC address is listed in the configuration and represents a computer being connected to the switch port and being added to the running configuration file. Figure four shows the output from the command, show port-security address.  The figure lists the MAC address of the computer that was added to the switch in the previous figure as a secure sticky MAC address.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.2.2 Verifying DHCPv4</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verifying DHCPv4</h1>
+        <div>
+          <p>The topology shown in Figure 1 is used in the example output. In this example, R1 has been configured to provide DHCPv4 services. PC1 has not been powered up and, therefore, does not have an IP address. </p>
+          <p></p>
+          <p>As shown in Figure 2, the<b> show running-config | section dhcp </b>command output displays the DHCPv4 commands configured on R1. The <b>| section </b>parameter displays only the commands associated with DHCPv4 configuration.</p>
+          <p></p>
+          <p>As shown in Figure 3, the operation of DHCPv4 can be verified using the <b>show ip dhcp binding </b>command. This command displays a list of all IPv4 address to MAC address bindings that have been provided by the DHCPv4 service. The second command in Figure 3, <b>show ip dhcp server statistics</b>, is used to verify that messages are being received or sent by the router. This command displays count information regarding the number of DHCPv4 messages that have been sent and received.</p>
+          <p></p>
+          <p>As seen in the output for these commands, currently there are no bindings and the statistics indicate no messages sent or received. At this point no devices have requested DHCPv4 services from router R1.</p>
+          <p></p>
+          <p>In Figure 4, the commands are issued after PC1 and PC2 have been powered on and have completed the booting process.</p>
+          <p></p>
+          <p>Notice that the binding information now displays that the IPv4 addresses of 192.168.10.10 and 192.168.11.10 have been bound to MAC addresses. The statistics are also displaying DHCPDISCOVER, DHCPREQUEST, DHCPOFFER, and DHCPACK activity.</p>
+          <p></p>
+          <p>As shown in Figure 5, the<b> ipconfig /all</b> command, when issued on PC1, displays the TCP/IP parameters. Because PC1 was connected to the network segment 192.168.10.0/24, it automatically received a DNS suffix, IPv4 address, subnet mask, default gateway, and DNS server address from that pool. No DHCP-specific router interface configuration is required. If a PC is connected to a network segment that has a DHCPv4 pool available, the PC can obtain an IPv4 address from the appropriate pool automatically.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the same topology as figure one on the previous page. Figure two shows the output from the command, show running hyphen config pipe section d.h.c.p.  The output is the d.h.c.p. configuration on the router. Figure three shows the output from the command, show i.p. d.h.c.p. binding.  The output lists all i.p. and MAC address binding, and the example in the figure is an empty list.  The figure also shows the output from the command, show i.p. d.h.c.p. server statistics.  This command will display count information regarding the number of D.H.C.P.v.4 messages that have been sent and received. The example shows that one d.h.c.p. pool has been configured, but no messages have been sent or received. Figure four shows the output from the commands on the previous pages after two client computers have been powered on.  The two computers are now listed in the binding table with the assigned i.p. address listed with the mac address of each computer.  The statistics output lists eight d.h.c.p. discover messages and three d.h.c.p. request messages received by the router. Three d.h.c.p. offer messages and three d.h.c.p. ack messages were sent by the router. Figure five shows the output of the command, i.p. config, being run on a computer.  The figure highlights the domain name, the i.p. address, the d.n.s. server, and the default gateway values. All of these have been provided by the d.h.c.p. server.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+            <element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#ffffff" />
+            <element type="TEXT" subType="TABLE" compId="ID_table01_html" x="40" y="60" width="600" height="400" />
+            
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+            <element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#ffffff" />
+            <element type="ROUTER" textId="ID_router_txt1" x="40" y="60" width="600" height="400" />
+            <element type="TEXT" compId="ID_s2_txt02" x="50" y="353" width="411" expand="down" align="left" color="#ffffff" />
+            <element type="TEXT" compId="ID_s2_txt03" x="50" y="282" width="411" expand="down" align="left" color="#ffffff" />
+            
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+            <element type="TEXT" subType="TITLE" compId="ID_s3_title" color="#ffffff" />
+            <element type="ROUTER" textId="ID_router_txt2" x="40" y="60" width="600" height="400" />
+            <element type="TEXT" compId="ID_s3_txt02" x="50" y="268" width="411" expand="down" align="left" color="#ffffff" />
+            
+        </slide>
+    </slide>
+    <text id="ID_router_txt1">
+        <![CDATA[<table width="400" border="0" cellspacing="0" cellpadding="0"> <tr> <td>S1(config)# <strong>interface f0/1</strong></td> </tr> <tr> <td class="orangeC">S1(config-if)# <strong>no switchport trunk allowed vlan</strong></td> </tr> <tr> <td class="orangeC">S1(config-if)# <strong>no switchport trunk native vlan</strong></td> </tr> <tr> <td>S1(config-if)# <strong>end</strong></td> </tr> <tr> <td>S1# <strong>show interfaces f0/1 switchport</strong></td> </tr> <tr> <td>Name: Fa0/1</td> </tr> <tr> <td>Switchport: Enabled</td> </tr> <tr> <td>Administrative Mode: trunk</td> </tr> <tr> <td>Operational Mode: trunk</td> </tr> <tr> <td>Administrative Trunking Encapsulation: dot1q</td> </tr> <tr> <td>Operational Trunking Encapsulation: dot1q</td> </tr> <tr> <td>Negotiation of Trunking: On</td> </tr> <tr> <td class="orangeC">Access Mode VLAN: 1 (default)</td> </tr> <tr> <td>Trunking Native Mode VLAN: 1 (default)</td> </tr> <tr> <td>Administrative Native VLAN tagging: enabled</td> </tr> <tr> <td> <br/></td> </tr> <tr> <td>Administrative private-vlan trunk mappings: none</td> </tr> <tr> <td>Operational private-vlan: none</td> </tr> <tr> <td class="orangeC">Trunking VLANs Enabled: ALL</td> </tr> <tr> <td>Pruning VLANs Enabled: 2-1001</td> </tr> <tr> <td></td> </tr></table>]]>
+    </text>
+    <text id="ID_router_txt2">
+        <![CDATA[<table width="400" border="0" cellspacing="0" cellpadding="0"> <tr> <td>S1(config)# <strong>interface f0/1</strong></td> </tr> <tr> <td class="orangeC">S1(config-if)# <strong>switchport mode access </strong></td> </tr> <tr> <td>S1(config-if)# <strong>end</strong></td> </tr> <tr> <td>S1# <strong>show interfaces f0/1 switchport</strong></td> </tr> <tr> <td>Name: Fa0/1</td> </tr> <tr> <td>Switchport: Enabled</td> </tr> <tr> <td class="orangeC">Administrative Mode: static access</td> </tr> <tr> <td>Operational Mode: static access</td> </tr> <tr> <td>Administrative Trunking Encapsulation: dot1q</td> </tr> <tr> <td>Operational Trunking Encapsulation: native</td> </tr> <tr> <td>Negotiation of Trunking: Off</td> </tr> <tr> <td>Access Mode VLAN: 1 (default)</td> </tr> <tr> <td>Trunking Native Mode VLAN: 1 (default)</td> </tr> <tr> <td>Administrative Native VLAN tagging: enabled</td> </tr> <tr> <td></td> </tr></table>]]>
+    </text>
+</data>

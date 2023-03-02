@@ -1,0 +1,36 @@
+<textcomponents>
+
+<component id="ID_s1_title">
+  <text><![CDATA[<b>Access Layer</b>]]></text> 
+</component>
+<component id="ID_s1_label1">
+  <text><![CDATA[Internet]]></text> 
+</component>
+<component id="ID_s1_label2">
+  <text><![CDATA[Internet]]></text> 
+</component>
+<component id="ID_s1_label3">
+  <text><![CDATA[Core Layer]]></text> 
+</component>
+<component id="ID_s1_label4">
+  <text><![CDATA[Distribution Layer]]></text> 
+</component>
+<component id="ID_s1_label5">
+  <text><![CDATA[Access Layer]]></text> 
+</component>
+
+
+<component id="ID_s2_title">
+  <text><![CDATA[<b>Collapsed Core</b>]]></text> 
+</component>
+<component id="ID_s2_label1">
+  <text><![CDATA[Internet]]></text> 
+</component>
+<component id="ID_s2_label2">
+  <text><![CDATA[Internet]]></text> 
+</component>
+<component id="ID_s2_label3">
+  <text><![CDATA[Collapsed Core Layer]]></text> 
+</component>
+
+</textcomponents>

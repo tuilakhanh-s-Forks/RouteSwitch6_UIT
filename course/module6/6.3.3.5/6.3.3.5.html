@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.3.5 Configure Router-on-a-Stick: Verifying Routing</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.3.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configure Router-on-a-Stick: Verifying Routing</h1>
+        <div>
+          <p>After the router and switch have been configured to perform inter-VLAN routing, the next step is to verify host-to-host connectivity. Access to devices on remote VLANs can be tested using the<span class="cmd"><b></b></span><b>ping</b><span class="cmd"><b></b></span>command. </p>
+          <p></p>
+          <p>For the example shown in the figure, a<span class="cmd"><b></b></span><b>ping</b><span class="cmd"><b></b></span>and a<span class="cmd"><b></b></span><b>tracert</b><span class="cmd"><b></b></span>are initiated from PC1 to the destination address of PC3.</p>
+          <p></p>
+          <p>
+            <b>Ping Test</b>
+          </p>
+          <p></p>
+          <p>The<span class="cmd"><b></b></span><b>ping</b><span class="cmd"><b></b></span>command sends an ICMP echo request to the destination address. When a host receives an ICMP echo request, it responds with an ICMP echo reply to confirm that it received the ICMP echo request. The<span class="cmd"><b></b></span><b>ping</b><span class="cmd"><b></b></span>command calculates the elapsed time using the difference between the time the echo request was sent and the time the echo reply was received. This elapsed time is used to determine the latency of the connection. Successfully receiving a reply confirms that there is a path between the sending device and the receiving device.</p>
+          <p></p>
+          <p>
+            <b>Tracert Test</b>
+          </p>
+          <p></p>
+          <p>Tracert is a useful utility for confirming the routed path taken between two devices. On UNIX systems, the utility is specified by<span class="cmd"><b></b></span><b>traceroute</b><b>. </b>Tracert also uses ICMP to determine the path taken, but it uses ICMP echo requests with specific time-to-live values defined on the frame. </p>
+          <p></p>
+          <p>The time-to-live value determines exactly how many router hops away the ICMP echo is allowed to reach. The first ICMP echo request is sent with a time-to-live value set to expire at the first router on route to the destination device. </p>
+          <p></p>
+          <p>When the ICMP echo request times out on the first route, an ICMP message is sent back from the router to the originating device. The device records the response from the router and proceeds to send out another ICMP echo request, but this time with a greater time-to-live value. This allows the ICMP echo request to traverse the first router and reach the second device on route to the final destination. The process repeats recursively until finally the ICMP echo request is sent all the way to the final destination device. After the<span class="cmd"><b></b></span><b>tracert</b><span class="cmd"><b></b></span>utility finishes running, it displays a list of ingress router interfaces that the ICMP echo request reached on its way to the destination.</p>
+          <p></p>
+          <p>In the example, the<span class="cmd"><b></b></span><b>ping</b><span class="cmd"><b></b></span>utility was able to send an ICMP echo request to the IP address of PC3. Also, the<span class="cmd"><b></b></span><b>tracert</b><span class="cmd"><b></b></span>utility confirms that the path to PC3 is through the 172.17.10.1 subinterface IP address of router R1.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the results of a ping test to a remote host from the perspective of a P.C. on a separate v.lan and subnet through a router-on-a-stick inter-v.lan routing topology.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

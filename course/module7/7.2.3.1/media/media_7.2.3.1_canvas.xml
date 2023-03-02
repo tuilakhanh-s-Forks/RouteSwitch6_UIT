@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+           
+            <element type="IMAGE" src="7.2.3.1.png" x="0" y="0" width="680" height="490" />
+            <element type="TEXT" compId="ID_s1_txt01" x="370" y="65" width="181" expand="up+down" align="left" />
+            <element type="ROUTER" textId="router_text" x="40" y="326" width="600" height="130" />
+            <element type="TEXT" id="ID_static_1" text="G0/0" x="270" y="106" align="center" width="26" />
+            <element type="TEXT" id="ID_static_2" text="G0/1" x="378" y="106" align="center" width="24" />
+            <element type="TEXT" id="ID_static_3" text="192.168.10.0/24" x="150" y="159" align="center" width="86" />
+            <element type="TEXT" id="ID_static_4" text="192.168.11.0/24" x="426" y="159" align="center" width="86" />
+            <element type="TEXT" id="ID_static_5" text="192.168.10.10/24" x="154" y="235" align="center" width="93" />
+            <element type="TEXT" id="ID_static_6" text="192.168.11.10/24" x="416" y="235" align="center" width="93" />
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+            <element type="ACTIVITY" subType="SYNTAX" compId="ID_s2_SC1" x="25" y="50" width="630" height="388" size="10" resetId="ID_sc_reset" showMeId="ID_sc_showme" showAllId="ID_sc_showall" />
+        </slide>
+    </slide>
+    <text id="router_text">
+        <![CDATA[
+			R1(config)# <b>line vty 0 4</b><br/>
+			R1(config-line)# <b>login local</b><br/>
+			R1(config-line)# <b>transport input ssh</b><br/>
+			R1(config-line)# <b>access-class 21 in</b><br/>
+			R1(config-line)# <b>exit</b><br/>
+			R1(config)# <b>access-list 21 permit 192.168.10.0 0.0.0.255</b><br/>
+			R1(config)# <b>access-list 21 deny any</b><br/>
+	]]></text>
+</data>

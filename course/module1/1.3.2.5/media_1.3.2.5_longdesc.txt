@@ -1,0 +1,1 @@
+This page contains a link to a Cisco Packet Tracer activity titled "Investigating directly connected routes". Some aspects of Cisco Packet Tracer may not be accessible.

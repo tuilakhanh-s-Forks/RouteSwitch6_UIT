@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.3.1.7 Password Recovery</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.3.1.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Password Recovery</h1>
+        <div>
+          <p>Passwords on devices are used to prevent unauthorized access. For encrypted passwords, such as the enable secret passwords, the passwords must be replaced after recovery. Depending on the device, the detailed procedure for password recovery varies; however, all the password recovery procedures follow the same principle:</p>
+          <p></p>
+          <p>
+            <b>Step 1</b>. Enter the ROMMON mode.</p>
+          <p></p>
+          <p>
+            <b>Step 2</b>. Change the configuration register to 0x2142 to ignore the startup config file.</p>
+          <p></p>
+          <p>
+            <b>Step 3</b>. Make necessary changes to the original startup config file.</p>
+          <p></p>
+          <p>
+            <b>Step 4</b>. Save the new configuration.</p>
+          <p></p>
+          <p>Console access to the device through a terminal or terminal emulator software on a PC is required for password recovery. The terminal settings to access the device are:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>9600 baud rate</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>No parity</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>8 data bits</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>1 stop bit</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>No flow control</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>With console access, a user can access the ROMMON mode by using a break sequence during the boot up process or removing the external flash memory when the device is powered off.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The break sequence for PuTTY is Ctrl+Break. A list of standard break key sequences for other terminal emulators and operating systems can be found at: <a href="http://www.cisco.com/c/en/us/support/docs/routers/10000-series-routers/12818-61.html" target="_blank">http://www.cisco.com/c/en/us/support/docs/routers/10000-series-routers/12818-61.html</a></p>
+          <p></p>
+          <p>The ROMMON software supports some basic commands, such as <b>confreg</b>. The <b>confreg 0x2142</b> command allows the user to set the configuration register to 0x2142. With the configuration register at 0x2142, the device will ignore the startup config file during startup. The startup config file is where the forgotten passwords are stored. After setting the configuration register to 0x2142, type <b>reset</b> at the prompt to restart the device. Enter the break sequence while the device is rebooting and decompressing the IOS. Figure 1 displays the terminal output of a 1941 router in the ROMMON mode after using a break sequence during the boot up process.</p>
+          <p></p>
+          <p>After the device has finished reloading, copy the startup config to the running config, as displayed in Figure 2.</p>
+          <p></p>
+          <p>CAUTION: Do <i>not</i> enter <b>copy running-config startup-config</b>. This command erases your original startup configuration.</p>
+          <p></p>
+          <p>Because you are in privileged EXEC mode, you can now configure all the necessary passwords. After the new passwords are configured, change the configuration register back to 0x2102 using the <b>config-register 0x2102</b> command in the global configuration mode. Save the running-config to startup-config and reload the device, as shown in Figure 2.</p>
+          <p></p>
+          <p>
+            <b>Note:</b> The password <b>cisco</b> is not a strong password and is used here only as an example.</p>
+          <p></p>
+          <p>The device now uses the newly configured passwords for authentication. Be sure to use <b>show</b> commands to verify that all the configurations are still in place. For example, verify that the appropriate interfaces are not shut down after password recovery.</p>
+          <p></p>
+          <p>The following link provides detailed instructions for password recovery procedure for a specific device:</p>
+          <p></p>
+          <p>
+            <a href="http://www.cisco.com/c/en/us/support/docs/ios-nx-os-software/ios-software-releases-121-mainline/6130-index.html" target="_blank">http://www.cisco.com/c/en/us/support/docs/ios-nx-os-software/ios-software-releases-121-mainline/6130-index.html</a>
+          </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to practice password recovery on a router.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Add the media transcript</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

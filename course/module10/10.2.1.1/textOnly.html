@@ -1,0 +1,22 @@
+
+          <p>The software clock on a router or switch starts when the system boots and is the primary source of time for the system. It is important to synchronize the time across all devices on the network because all aspects of managing, securing, troubleshooting, and planning networks require accurate timestamping. When the time is not synchronized between devices, it will be impossible to determine the order of the events and the cause of an event.</p>
+          <p></p>
+          <p>Typically, the date and time settings on a router or switch can be set using one of two methods:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Manually configure the date and time, as shown in the figure</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Configure the Network Time Protocol (NTP)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>As a network grows, it becomes difficult to ensure that all infrastructure devices are operating with synchronized time. Even in a smaller network environment, the manual method is not ideal. If a router reboots, how will it get an accurate date and timestamp?</p>
+          <p></p>
+          <p>A better solution is to configure the NTP on the network. This protocol allows routers on the network to synchronize their time settings with an NTP server. A group of NTP clients that obtain time and date information from a single source have more consistent time settings. When NTP is implemented in the network, it can be set up to synchronize to a private master clock or it can synchronize to a publicly available NTP server on the Internet.</p>
+          <p></p>
+          <p>NTP uses UDP port 123 and is documented in RFC 1305.</p>
+        

@@ -1,0 +1,17 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+/*#ID_s1_txt01{padding-left:4px !important;}
+.syntaxChecker div{line-height:13px;
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+	.truncated_txt{
+		font-size: 10px !important;
+		letter-spacing: -0.85px !important;
+	}
+}*/

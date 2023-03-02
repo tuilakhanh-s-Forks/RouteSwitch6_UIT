@@ -1,0 +1,71 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>Verifying Dynamic NAT with <font face="_typewriter">show ip nat translations</font></b>]]></text>
+</component>
+<component id="ID_s2_title">
+<text><![CDATA[<b>Clearing NAT Translations</b>]]></text>
+</component>
+<component id="ID_s3_title">
+<text><![CDATA[<b>Verifying Dynamic NAT with <font face="_typewriter">show ip nat statistics</font></b>]]></text>
+</component>
+
+ <component id="ID_table">
+  <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+  	<tr class="mtable_title">
+			<td colspan="2" bgcolor='#FFFFFF'><font size="5"></font></td>
+		</tr>
+	<tr>
+
+		<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+	</tr>
+	<tr>
+	
+		
+		<td bgcolor='#666263' valign="top" ><font color='#ffffff' ><b>Command</b></font></td>
+		<td bgcolor='#666263'  valign="top" class="mtitle"><font color='#ffffff' ><b>Description</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#000000' face="_typewriter">clear ip nat translation *</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' >Clears all dynamic address translation entries from the NAT translation table.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#000000' face="_typewriter"><b>clear ip nat translation inside </b> <i>global-ip local-ip </i>[<b>outside </b> <i>local-ip global-ip</i>]</font></td>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536' >Clear a simple dynamic translation entry containing an inside translation or both inside and outside translation.</font></td></tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#000000' face="_typewriter"><b>clear ip nat translation </b><i>protocol </i> <b> inside </b> <i>global-ip global-port local-ip local-port </i>[<b>outside </b><i> local-ip local port global-ip global-port</i>]</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' >Clears an extended dynamic translation entry.</font></td>
+	</tr>
+	
+	</table>]]></text>
+  </component>
+
+  <component id="ID_table_html">
+  <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+  	
+			<caption colspan="2" class="mtable_title" bgcolor='#FFFFFF'><font size="5"></font></caption>
+	
+	<tr>
+
+		<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+	</tr>
+	<tr>
+	
+		
+		<th scope="col" bgcolor='#666263' valign="top" ><font color='#ffffff' ><b>Command</b></font></th>
+		<th scope="col" bgcolor='#666263'  valign="top" class="mtitle"><font color='#ffffff' ><b>Description</b></font></th>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#000000' face="_typewriter">clear ip nat translation *</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' >Clears all dynamic address translation entries from the NAT translation table.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#000000' face="_typewriter"><b>clear ip nat translation inside </b> <i>global-ip local-ip </i>[<b>outside </b> <i>local-ip global-ip</i>]</font></td>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536' >Clear a simple dynamic translation entry containing an inside translation or both inside and outside translation.</font></td></tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#000000' face="_typewriter"><b>clear ip nat translation </b><i>protocol </i> <b> inside </b> <i>global-ip global-port local-ip local-port </i>[<b>outside </b><i> local-ip local port global-ip global-port</i>]</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' >Clears an extended dynamic translation entry.</font></td>
+	</tr>
+	
+	</table>]]></text>
+  </component>
+</textcomponents>

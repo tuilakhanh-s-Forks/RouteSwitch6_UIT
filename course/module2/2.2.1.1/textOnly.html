@@ -1,0 +1,38 @@
+
+          <p>Static routes are configured using the<b> ip route </b>global configuration command. The basic syntax for the command is shown in the figure.</p>
+          <p></p>
+          <p>The following parameters are required to configure static routing:</p>
+          <p>
+            <ul>
+              <li>
+                <i>network-address</i>
+                <b></b>- Destination network address of the remote network to be added to the routing table, often this is referred to as the prefix.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <i>subnet-mask</i>
+                <b></b>- Subnet mask, or just mask, of the remote network to be added to the routing table. The subnet mask can be modified to summarize a group of networks. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>One or both of the following parameters must also be used:</p>
+          <p>
+            <ul>
+              <li>
+                <i>ip-address</i>
+                <b></b>- The IP address of the connecting router to use to forward the packet to the remote destination network. Commonly referred to as the next hop. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <i>exit-intf</i>
+                <b></b>- The outgoing interface to use to forward the packet to the next hop.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p></p>
+          <p>The <i>distance</i> parameter is used to create a floating static route by setting an administrative distance that is higher than a dynamically learned route.</p>
+        

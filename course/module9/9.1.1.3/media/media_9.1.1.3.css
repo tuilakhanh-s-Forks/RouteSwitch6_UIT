@@ -1,0 +1,16 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+#ID_txt03,#ID_static_1{
+	letter-spacing:-0.6px!important;
+}
+
+@media only screen and (device-width: 768px) {
+#ID_static_1{
+	margin-top:15px!important;
+	letter-spacing:-1.2px!important;
+}
+}

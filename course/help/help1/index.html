@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+	<head>
+		<link href="client/content/translation.css" rel="stylesheet">
+	</head>
+	<body ng-cloak>
+		<div class="help-app-container" ng-controller="Translation as translation">
+			<div ng-repeat="item in translation.data.contents | paginationFilter:translation.pagination.per:translation.pagination.page" ng-class="{ 'rtl-text-dir': translation.data.rtl == true }">
+				<div ng-if="item.pageNumber == 1">
+					<div class="intro-container">
+						<div class="img-container">
+							<img ng-src="{{ item.img }}" alt="{{ item.imgAlt }}">
+						</div>
+						<div class="intro-content">
+							<h2>{{ item.header }}</h2>
+							<p>{{ item.text }}</p>
+							<ul>
+								<li ng-repeat="item in item.list">{{ item }}</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div ng-if="item.pageNumber > 1">
+					<div class="help-container">
+						<div class="img-container">
+							<img ng-src="{{ item.img }}" alt="{{ item.imgAlt }}">
+						</div>
+						<div ng-class="translation.data.rtl ? 'help-content-right' : 'help-content-left'">
+							<p>{{ item.text }}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div ng-class="translation.data.rtl ? 'nav-left' : 'nav-right'">
+				<button type="button" class="back-page-icon" ng-click="translation.pagination.backPage()" ng-disabled="translation.pagination.page == 0" tabindex="1" ng-blur="translation.onblurPrev()">BACK</button>
+				<button type="button" class="next-page-icon" ng-click="translation.pagination.nextPage()" ng-disabled="translation.data.contents.length <= ((translation.pagination.per * translation.pagination.page) + translation.pagination.per)" tabindex="0" ng-blur="translation.onblurNext()">NEXT</button>
+			</div>
+		</div>
+		<!-- inject-vendor:js -->
+		<script src="../lib/angular.min.js"></script>
+		<script src="../lib/angular-aria.min.js"></script>
+		<!-- endinject -->
+
+		<!-- inject:js -->
+		<!-- Bootstrapping -->
+		<script src="client/app/app.module.js"></script>
+
+		<!-- Core Module -->
+		<script src="client/app/core/data.service.js"></script>
+
+		<!-- Translation -->
+		<script src="client/app/translation/translation.js"></script>
+
+		<!-- Pagination -->
+		<script src="client/app/pagination/pagination.js"></script>
+	</body>
+</html>

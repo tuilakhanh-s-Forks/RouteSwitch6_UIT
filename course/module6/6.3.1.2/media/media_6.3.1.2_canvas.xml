@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>	
+	<slide>		
+	<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+	<element type="ACTIVITY" subType="ANIMATION" movieClipId="anim01" totalFrames="1178"/> 
+	<!-- <element type="TEXT" id="ID_static_1" text="172.17.30.23" x="382.15" y="369.3" align="center" width="68.3" />
+	<element type="TEXT" id="ID_static_2" text="F0/23" x="315.25" y="258.15" align="center" width="29.95" />
+	<element type="TEXT" id="ID_static_3" text="172.17.10.21" x="152.5" y="369.3" align="center" width="66.5" />
+	<element type="TEXT" id="ID_static_4" text="F0/18" x="266.5" y="269.5" align="center" width="30" />
+	<element type="TEXT" id="ID_static_5" text="F0/11" x="223.05" y="258.15" align="center" width="28.15" />
+	<element type="TEXT" id="ID_static_6" text="172.17.20.22" x="264.35" y="369.3" align="center" width="68.15" />
+	<element type="TEXT" id="ID_static_7" text="F0/3" x="384.3" y="133.1" align="center" width="23.35" />
+	<element type="TEXT" id="ID_static_8" text="F0/4" x="437.55" y="146.7" align="center" width="23.4" />
+	<element type="TEXT" id="ID_static_9" text="F0/2" x="348.7" y="148.35" align="center" width="23.2" />
+	<element type="TEXT" id="ID_static_10" text="F0/2" x="211.75" y="148.35" align="center" width="23.2" />
+	<element type="TEXT" id="ID_static_11" text="F0/1" x="393.75" y="180.75" align="center" width="21.55" />
+	<element type="TEXT" id="ID_static_12" text="F0/1" x="152" y="180.75" align="center" width="21.55" />
+	<element type="TEXT" id="ID_static_13" text="F0/2" x="251.75" y="218.65" align="center" width="23.2" />
+	<element type="TEXT" id="ID_static_14" text="F0/1" x="296.95" y="218.95" align="center" width="21.55" />
+	<element type="TEXT" id="ID_static_15" text="172.17.30.1/24" x="513.25" y="106.85" align="center" width="79.35" />
+	<element type="TEXT" id="ID_static_16" text="G0/1" x="487.8" y="119.5" align="center" width="23.85" />
+	<element type="TEXT" id="ID_static_17" text="G0/0" x="431.1" y="95.6" align="center" width="25.65" />
+	<element type="TEXT" id="ID_static_18" text="172.17.10.1/24" x="402.65" y="81.65" align="center" width="79.35" />
+	 -->
+	 <element type="TEXT" compId="ID_bubble01" x="290" y="144.15" width="122.55" expand="up" align="center" color="#652c8a" />
+	<element type="TEXT" compId="ID_bubble02" x="200" y="210.15" width="71.3" expand="left" align="right" color="#652c8a" />
+	<element type="TEXT" compId="ID_bubble03" x="455" y="227" width="74.4" expand="down" align="left" color="#652c8a" />
+	<element type="TEXT" compId="ID_bubble04" x="16" y="169.15" width="148.9" expand="down" align="center" />
+	<element type="TEXT" subType="TITLE" compId="ID_title"/>
+	</slide>
+</data>

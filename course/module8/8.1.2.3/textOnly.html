@@ -1,0 +1,66 @@
+
+          <p>
+            <b>What is DHCP Relay?</b>
+          </p>
+          <p></p>
+          <p>In a complex hierarchical network, enterprise servers are usually located in a server farm. These servers may provide DHCP, DNS, TFTP, and FTP services for the network. Network clients are not typically on the same subnet as those servers. In order to locate the servers and receive services, clients often use broadcast messages. </p>
+          <p></p>
+          <p>In Figure 1, PC1 is attempting to acquire an IPv4 address from a DHCP server using a broadcast message. In this scenario, router R1 is not configured as a DHCPv4 server and does not forward the broadcast. Because the DHCPv4 server is located on a different network, PC1 cannot receive an IP address using DHCP.</p>
+          <p></p>
+          <p>In Figure 2, PC1 is attempting to renew its IPv4 address. To do so, the<b> ipconfig /release</b> command is issued. Notice that the IPv4 address is released and the address is shown to be 0.0.0.0. Next, the<b> ipconfig /renew </b>command is issued. This command causes PC1 to broadcast a DHCPDISCOVER message. The output shows that PC1 is unable to locate the DHCPv4 server. Because routers do not forward broadcasts, the request is not successful.</p>
+          <p></p>
+          <p>As a solution to this problem, an administrator can add DHCPv4 servers on all the subnets. However, running these services on several computers creates additional cost and administrative overhead. </p>
+          <p></p>
+          <p>A better solution is to configure a Cisco IOS helper address. This solution enables a router to forward DHCPv4 broadcasts to the DHCPv4 server. When a router forwards address assignment/parameter requests, it is acting as a DHCPv4 relay agent. In the example topology, PC1 would broadcast a request to locate a DHCPv4 server. If R1 was configured as a DHCPv4 relay agent, it would forward the request to the DHCPv4 server located on subnet 192.168.11.0.</p>
+          <p></p>
+          <p>As shown in Figure 3, the interface on R1 receiving the broadcast is configured with the <b>ip helper-address</b> interface configuration mode command. The address of the DHCPv4 server is configured as the only parameter. </p>
+          <p></p>
+          <p>When R1 has been configured as a DHCPv4 relay agent, it accepts broadcast requests for the DHCPv4 service and then forwards those requests as a unicast to the IPv4 address 192.168.11.6. The <b>show ip interface</b> command is used to verify the configuration.</p>
+          <p></p>
+          <p>As shown in Figure 4, PC1 is now able to acquire an IPv4 address from the DHCPv4 server.</p>
+          <p></p>
+          <p>DHCPv4 is not the only service that the router can be configured to relay. By default, the <b>ip helper-address</b> command forwards the following eight UDP services:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Port 37: Time </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Port 49: TACACS</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Port 53: DNS</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Port 67: DHCP/BOOTP server</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Port 68: DHCP/BOOTP client</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Port 69: TFTP</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Port 137: NetBIOS name service</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Port 138: NetBIOS datagram service</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Using the Syntax Checker in Figure 5, configure the DHCPv4 relay commands on the correct router so that PC3 can receive IPv4 addressing information from the DHCPv4 server. Refer back to Figure 1 to view the network topology.</p>
+        

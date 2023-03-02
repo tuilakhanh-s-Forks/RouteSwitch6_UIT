@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide>
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+        <element type="TEXT" subType="TITLE" compId="ID_title" />
+        <element type="IMAGE" src="media_6.1.1.2_topo.png" x="0" y="0" width="680" height="490" />
+        <element type="TEXT" compId="ID_txt07" x="45" y="137" width="100.5" expand="up+down" align="right" />
+        <element type="TEXT" compId="ID_txt05" x="45" y="219" width="100.5" expand="up+down" align="right" color="#4e4c4d" />
+        <element type="TEXT" compId="ID_txt03" x="45" y="292" width="100.5" expand="up+down" align="right" />
+        <element type="TEXT" id="ID_static_2" text="F0/18" x="215" y="214.6" align="center" width="30" />
+        <element type="TEXT" id="ID_static_5" text="F0/11" x="243.65" y="175.75" align="center" width="28.15" />
+        <element type="TEXT" id="ID_static_8" text="F0/6" x="262.15" y="246.45" align="center" width="23.35" />
+        <element type="TEXT" id="ID_static_3" text="F0/1" x="283.1" y="163.55" align="center" width="21.55" />
+        <element type="TEXT" id="ID_static_13" text="F0/1" x="297.95" y="198.6" align="center" width="21.55" />
+        <element type="TEXT" id="ID_static_12" text="F0/5" x="313.15" y="119.25" align="center" width="23.35" />
+        <element type="TEXT" id="ID_static_10" text="F0/1" x="313.15" y="90.35" align="center" width="21.55" />
+        <element type="TEXT" id="ID_static_11" text="F0/3" x="343.05" y="198.6" align="center" width="23.35" />
+        <element type="TEXT" id="ID_static_4" text="F0/3" x="358.35" y="163.55" align="center" width="23.35" />
+        <element type="TEXT" id="ID_static_9" text="F0/6" x="378.35" y="246.45" align="center" width="23.35" />
+        <element type="TEXT" id="ID_static_6" text="F0/11" x="382.8" y="187.8" align="center" width="28.15" />
+        <element type="TEXT" id="ID_static_7" text="F0/18" x="422.6" y="214.6" align="center" width="30" />
+        <element type="TEXT" compId="ID_txt06" x="535" y="140" width="100.5" expand="up+down" align="left" />
+        <element type="TEXT" compId="ID_txt04" x="535" y="220" width="100.45" expand="up+down" align="left" />
+        <element type="TEXT" compId="ID_txt02" x="535" y="292" width="100.5" expand="up+down" align="left" />
+        <element type="TEXTBOX" titleId="" bodyId="ID_txt01" x="115" y="337" width="450" height="128" subType="ROLLOVER" />
+    </slide>
+</data>

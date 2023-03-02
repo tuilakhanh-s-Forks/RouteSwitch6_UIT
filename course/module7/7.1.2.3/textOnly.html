@@ -1,0 +1,54 @@
+
+          <p>Calculating wildcard masks can be challenging. One shortcut method is to subtract the subnet mask from 255.255.255.255.</p>
+          <p></p>
+          <p>
+            <b>Wildcard Mask Calculation: Example 1</b>
+          </p>
+          <p></p>
+          <p>In the first example in the figure, assume you wanted to permit access to all users in the 192.168.3.0 network. Because the subnet mask is 255.255.255.0, you could take the 255.255.255.255 and subtract the subnet mask 255.255.255.0. The solution produces the wildcard mask 0.0.0.255.</p>
+          <p></p>
+          <p>
+            <b>Wildcard Mask Calculation: Example 2</b>
+          </p>
+          <p></p>
+          <p>In the second example in the figure, assume you wanted to permit network access for the 14 users in the subnet 192.168.3.32/28. The subnet mask for the IPv4 subnet is 255.255.255.240, therefore take 255.255.255.255 and subtract the subnet mask 255.255.255.240. The solution this time produces the wildcard mask 0.0.0.15.</p>
+          <p></p>
+          <p>
+            <b>Wildcard Mask Calculation: Example 3</b>
+          </p>
+          <p></p>
+          <p>In the third example in the figure, assume you wanted to match only networks 192.168.10.0 and 192.168.11.0. Again, you take the 255.255.255.255 and subtract the regular subnet mask which in this case would be 255.255.254.0. The result is 0.0.1.255.</p>
+          <p></p>
+          <p>You could accomplish the same result with statements like the two shown below:</p>
+          <p></p>
+          <p>
+            <span class="cmd">R1(config)# </span>
+            <span class="cmd">
+              <b>access-list 10 permit 192.168.10.0 0.0.1.255</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">R1(config)# </span>
+            <span class="cmd">
+              <b>access-list 10 permit 192.168.11.0 0.0.1.255</b>
+            </span>
+          </p>
+          <p></p>
+          <p>It is far more efficient to configure the wildcard mask in the following way:</p>
+          <p></p>
+          <p>
+            <span class="cmd">R1(config)#</span>
+            <span class="cmd">
+              <b> access-list 10 permit 192.168.10.0 0.0.1.255</b>
+            </span>
+          </p>
+          <p></p>
+          <p>Consider an example in which you need to match networks in the range between 192.168.16.0/24 to 192.168.31.0/24. These networks would summarize to 192.168.16.0/20. In this case, 0.0.15.255 is the correct wildcard mask to configure one efficient ACL statement, as shown below:</p>
+          <p></p>
+          <p>
+            <span class="cmd">R1(config)#</span>
+            <span class="cmd">
+              <b> access-list 10 permit 192.168.16.0 0.0.15.255</b>
+            </span>
+          </p>
+        

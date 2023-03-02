@@ -1,0 +1,8 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_txt02,#ID_txt04,#ID_txt06,#ID_txt08{
+	color:#0E6360;
+}

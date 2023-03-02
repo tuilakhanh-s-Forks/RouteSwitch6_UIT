@@ -1,0 +1,124 @@
+﻿
+<textcomponents>
+
+<component id="ID_s1_title">
+	<text><![CDATA[<b>Activity – Compare CDP and LLDP</b>]]></text>
+</component>
+
+<component id="MCTable_title">
+	<text><![CDATA[Protocol Characteristic]]></text>
+</component>
+
+<component id='ID_instr_title'>
+	<text><![CDATA[Instructions]]></text>
+</component>
+
+<component id='ID_instr_body'>
+	<text><![CDATA[Check the appropriate field next to each characteristic to indicate your answers.]]></text>
+</component>
+
+
+<!-- buttons -->
+<component id="ID_s1_CHECK">
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id="ID_s1_RESET">
+	<text><![CDATA[Reset]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[6]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[2]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>CDP</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>LLDP</b>]]></text>
+</component>
+
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+
+<component id="txt_q1">
+	<text><![CDATA[Used to gather information about Cisco devices which share the same data link]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[Advertisements share information about the type of device that is discovered, the names of the devices, and the number and type of interfaces]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[Works with network devices, such as routers, switches, and wireless LAN access points across multiple manufacturers’ devices]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[A vendor neutral neighbor discovery protocol to run on local area networks]]></text>
+</component>
+
+<component id="txt_q5">
+	<text><![CDATA[Media and protocol independent, runs on all Cisco devices]]></text>
+</component>
+
+<component id="txt_q6">
+	<text><![CDATA[This protocol advertises its identity and capabilities to other devices and receives the information from physically connected Layer 2 devices from multiple manufacturers]]></text>
+</component>
+
+
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a5">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a6">
+	<text><![CDATA[2]]></text>
+</component>
+
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[You have successfully classified the device discovery protocols.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[You have not successfully classified the device discovery protocols. Please click Reset to try again.]]></text>
+</component>
+
+</textcomponents>

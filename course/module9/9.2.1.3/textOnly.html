@@ -1,0 +1,9 @@
+
+          <p>A useful command to verify NAT operation is<b> show ip nat translations</b>. This command shows active NAT translations. Static translations, unlike dynamic translations, are always in the NAT table. Figure 1 shows the output from this command using the previous configuration example. Because the example is a static NAT configuration, the translation is always present in the NAT table regardless of any active communications. If the command is issued during an active session, the output also indicates the address of the outside device as shown in Figure 1.</p>
+          <p></p>
+          <p>Another useful command is<b> show</b><b> ip nat statistics</b>. As shown in Figure 2, the<b> show ip nat statistics </b>command displays information about the total number of active translations, NAT configuration parameters, the number of addresses in the pool, and the number of addresses that have been allocated. </p>
+          <p></p>
+          <p>To verify that the NAT translation is working, it is best to clear statistics from any past translations using the<b> clear ip nat statistics </b>command before testing.</p>
+          <p></p>
+          <p>Prior to any communications with the web server, the<b> show ip nat statistics </b>command shows no current hits. After the client establishes a session with the web server, the<b> show ip nat statistics </b>displays an increase to five hits on the Inside (Serial0/0/0) interface. This verifies that the static NAT translation is taking place on R2.</p>
+        

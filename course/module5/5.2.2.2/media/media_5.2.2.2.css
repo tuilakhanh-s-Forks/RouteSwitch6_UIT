@@ -1,0 +1,14 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+.alg{
+	margin-left: 15px !important;
+}
+
+@media only screen and (device-width:768px){
+.alg{
+	margin-left: 10px !important;
+}
+}

@@ -1,0 +1,79 @@
+<textcomponents>
+
+<component id="ID_title">
+  <text><![CDATA[<b>Common Problems with Trunks</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>Determine choices and select OS</b>]]></text> 
+ </component>
+ 
+ <component id="ID_table01">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+<tr class="mtable_title">
+	<td colspan="3" bgcolor='#FFFFFF'><font size="1"></font></td>
+</tr>
+
+<tr class="mtable_top">
+	<td colspan='3' bgcolor='#666263'><font size='1' color='#0E6360'>.</font></td>
+</tr>
+<tr>
+<td bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Problem</b></font></td>
+<td bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Result</b></font></td>
+<td bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Example</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="middle"><font color='#393536'>Native VLAN Mismatches</font></td>
+<td bgcolor='#E9E7E8' valign="middle"><font color='#393536'>Poses a security risk and creates unintended results.</font></td>
+<td bgcolor='#E9E7E8' valign="middle"><font color='#393536'>For example, one port is defined as VLAN 99 and the other is defined as VLAN 100.</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Trunk Mode Mismatches</font></td>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Causes loss of network connectivity.</font></td>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>For example, one side of the trunk is configured as an access port.</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="middle"><font color='#393536'>Allowed VLANs on Trunks</font></td>
+<td bgcolor='#E9E7E8' valign="middle"><font color='#393536'>Causes unexpected traffic or no traffic to be sent over the trunk.</font></td>
+<td bgcolor='#E9E7E8' valign="middle"><font color='#393536'>The list of allowed VLANs does not support current VLAN trunking requirements.</font></td>
+</tr>
+</table>]]></text> 
+</component>
+
+ <component id="ID_table01_html">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+<caption class="mtable_title" colspan="3" bgcolor='#FFFFFF'><font size="1"></font></caption>
+
+<tr class="mtable_top">
+	<td colspan='3' bgcolor='#666263'><font size='1' color='#0E6360'>.</font></td>
+</tr>
+<tr>
+<th scope="col" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Problem</b></font></th>
+<th scope="col" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Result</b></font></th>
+<th scope="col" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Example</b></font></th>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="middle"><font color='#393536'>Native VLAN Mismatches</font></td>
+<td bgcolor='#E9E7E8' valign="middle"><font color='#393536'>Poses a security risk and creates unintended results.</font></td>
+<td bgcolor='#E9E7E8' valign="middle"><font color='#393536'>For example, one port is defined as VLAN 99 and the other is defined as VLAN 100.</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Trunk Mode Mismatches</font></td>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Causes loss of network connectivity.</font></td>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>For example, one side of the trunk is configured as an access port.</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="middle"><font color='#393536'>Allowed VLANs on Trunks</font></td>
+<td bgcolor='#E9E7E8' valign="middle"><font color='#393536'>Causes unexpected traffic or no traffic to be sent over the trunk.</font></td>
+<td bgcolor='#E9E7E8' valign="middle"><font color='#393536'>The list of allowed VLANs does not support current VLAN trunking requirements.</font></td>
+</tr>
+</table>]]></text> 
+</component>
+
+ 
+</textcomponents>

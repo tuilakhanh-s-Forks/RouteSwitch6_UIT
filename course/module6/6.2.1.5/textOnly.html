@@ -1,0 +1,11 @@
+
+          <p>In the figure, the<b> no vlan </b><i>vlan-id </i>global configuration mode command is used to remove VLAN 20 from the switch. Switch S1 had a minimal configuration with all ports in VLAN 1 and an unused VLAN 20 in the VLAN database. The<b> show vlan brief </b>command verifies that VLAN 20 is no longer present in the vlan.dat file after using the<b> no vlan 20 </b>command.</p>
+          <p></p>
+          <p>
+            <b>Caution</b>: Before deleting a VLAN, reassign all member ports to a different VLAN first. Any ports that are not moved to an active VLAN are unable to communicate with other hosts after the VLAN is deleted and until they are assigned to an active VLAN.</p>
+          <p></p>
+          <p>Alternatively, the entire vlan.dat file can be deleted using the<b> delete flash:vlan.dat </b>privileged EXEC mode command. The abbreviated command version (<b>delete vlan.dat</b>) can be used if the vlan.dat file has not been moved from its default location. After issuing this command and reloading the switch, the previously configured VLANs are no longer present. This effectively places the switch into its factory default condition with regard to VLAN configurations.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: For a Catalyst switch, the<b> erase startup-config </b>command must accompany the<b> delete vlan.dat </b>command prior to reload to restore the switch to its factory default condition.</p>
+        

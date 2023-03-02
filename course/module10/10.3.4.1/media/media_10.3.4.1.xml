@@ -1,0 +1,80 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>IOS Packaging Model for ISR G2 Routers</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>Security</b><br>Cisco IOS Firewall, SSL VPN, DMVPN, IPS, GET VPN, IPsec, etc.<br>Devices: 1900, 2900, 3900]]></text>
+</component>
+<component id="ID_s1_txt02">
+  <text><![CDATA[<b>Unified Communication</b><br>CUBE, SRST, Voice Gateway, CUCME, DSP, VXML, etc.<br>Devices: 2900, 3900]]></text> 
+  </component>
+<component id="ID_s1_txt03">
+  <text><![CDATA[<b>Data</b><br>MPLS, BFD, RSVP, L2VPN, L2TPv3, IP SLA, etc.<br>Devices: 1900, 2900, 3900]]></text> 
+  </component>
+<component id="ID_s1_txt04">
+  <text><![CDATA[<b>IP Base</b><br>BGP, OSPF, EIGRP, ISIS, RIP, PBR, IGMP, Multicast<br>Default image for Access Routers<br>Devices: 1900, 2900, 3900]]></text> 
+  </component>
+  
+  
+  
+<component id="ID_s2_title">
+<text><![CDATA[<b>Technology  Packages Licenses</b>]]></text>
+</component>
+
+<!--Buttons-->
+<component id='ID_s2_btn01'>
+	<text><![CDATA[IP Base]]></text>
+</component>
+
+<component id='ID_s2_btn02'>
+	<text><![CDATA[Data]]></text>
+</component>
+
+<component id='ID_s2_btn03'>
+	<text><![CDATA[Unified Communications]]></text>
+</component>
+
+<component id='ID_s2_btn04'>
+	<text><![CDATA[Security]]></text>
+</component>
+
+
+<!--Textbox 1-->
+<component id='ID_s2_titleTxt01'>
+	<text><![CDATA[IP Base]]></text>
+</component>
+
+<component id='ID_s2_bodyTxt01'>
+	<text><![CDATA[Offers features found in IP Base IOS image on ISR 1900, 2900, and 3900 + Flexible Netflow + IPv6 parity for IPv4 features present in IP Base. Some of the key features are AAA, BGP, OSPF, EIGRP, IS-IS, RIP, PBR, IGMP, Multicast, DHCP, HSRP, GLBP, NHRP, HTTP, HQF, QoS, ACL, NBAR, GRE, CDP, ARP, NTP, PPP, PPPoA, PPPoE, RADIUS, TACACS, SCTP, SMDS, SNMP, STP, VLAN, DTP, IGMP, Snooping, SPAN, WCCP, ISDN, ADSL over ISDN, NAT-Basic X.25, RSVP, NTP, Flexible Netflow, etc.]]></text>
+</component>
+
+<!--Textbox 2-->
+<component id='ID_s2_titleTxt02'>
+	<text><![CDATA[Data]]></text>
+</component>
+
+<component id='ID_s2_bodyTxt02'>
+	<text><![CDATA[Data features found in SP Services and Enterprise Services IOS image on ISR 1900, 2900, and 3900 e.g. MPLS, BFD, RSVP, L2VPN, L2TPv3, Layer 2 Local Switching, Mobile IP, Multicast Authentication, FHRP-GLBP, IP SLAs, PfR, DECnet, ALPS, RSRB, BIP, DLSw+, FRAS, Token Ring, ISL, IPX, STUN, SNTP, SDLC, QLLC, etc.]]></text>
+</component>
+
+<!--Textbox 3-->
+<component id='ID_s2_titleTxt03'>
+	<text><![CDATA[Unified Communications]]></text>
+</component>
+
+<component id='ID_s2_bodyTxt03'>
+	<text><![CDATA[Offers the UC Features found in IPVoice IOS image on ISR 1900, 2900, and 3900 e.g. TDM/PSTN Gateway, Video Gateway [H320/324], Voice Conferencing, Codec Transcoding, RSVP Agent (voice), FAX T.37/38, CAC/QOS, Hoot-n-Holler, etc.]]></text>
+</component>
+
+<!--Textbox 4-->
+<component id='ID_s2_titleTxt04'>
+	<text><![CDATA[Security]]></text>
+</component>
+
+<component id='ID_s2_bodyTxt04'>
+	<text><![CDATA[Offers the security features found in Advanced Security IOS image on ISR 1900, 2900, and 3900 e.g. IKE v1 / IPsec / PKI, IPsec/GRE, Easy VPN w/ DVTI, DMVPN, Static VTI, Firewall, Network Foundation Protection, GETVPN, etc.]]></text>
+</component>
+
+</textcomponents>
+
+

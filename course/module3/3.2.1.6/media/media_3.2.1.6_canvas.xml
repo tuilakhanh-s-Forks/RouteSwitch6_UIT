@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+  <slide type="MBAR"> 
+  <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+    <slide> 
+    <element type="TEXT" subType="TITLE" compId="ID_s1_title"/>  
+  <element type="IMAGE" src="media_3.2.1.6.png" x="0" y="0"  width="680" height="490"/> 
+<element type="TEXT" id="ID_static_1" text="DCE" x="197.25" y="191.1" align="center" width="21.7" />
+<element type="TEXT" id="ID_static_2" text="S0/0/0 .1" x="197.25" y="208" align="center" width="35.85" />
+<element type="TEXT" id="ID_static_3" text=".1" x="124.1" y="194.2" align="center" width="7.55" />
+<element type="TEXT" id="ID_static_4" text="G0/0" x="106.1" y="213.85" align="center" width="25.65" />
+<element type="TEXT" id="ID_static_5" text="S0/0/0" x="269.15" y="199.55" align="center" width="35.85" />
+<element type="TEXT" id="ID_static_6" text=".2" x="295.95" y="215.8" align="center" width="8.45" />
+<element type="TEXT" id="ID_static_7" text="DCE" x="366.05" y="189.75" align="center" width="21.7" />
+<element type="TEXT" id="ID_static_8" text="S0/0/1 .2" x="366.05" y="206.65" align="center" width="34.05" />
+<element type="TEXT" id="ID_static_9" text="S0/0/1" x="441.55" y="198.2" align="center" width="34.05" />
+<element type="TEXT" id="ID_static_10" text=".1" x="467.45" y="214.55" align="center" width="7.55" />
+<element type="TEXT" id="ID_static_11" text="192.168.1.0/24" bold="1"  x="31.1" y="178.8" align="center" width="78.95" />
+<element type="TEXT" id="ID_static_12" text="192.168.2.0/24" bold="1"  x="212.45" y="239.2" align="center" width="78.95" />
+<element type="TEXT" id="ID_static_13" text="192.168.4.0/24" bold="1"  x="387.2" y="239.2" align="center" width="78.95" />
+<element type="TEXT" id="ID_static_14" text="192.168.3.0/24" bold="1"  x="298.9" y="119" align="center" width="78.95" />
+<element type="TEXT" id="ID_static_15" text=".1" x="320.9" y="175.35" align="center" width="7.55" />
+<element type="TEXT" id="ID_static_16" text="G0/0" x="340.9" y="175.35" align="center" width="25.65" />
+<element type="TEXT" id="ID_static_17" text=".1" x="538.65" y="196.8" align="center" width="7.55" />
+<element type="TEXT" id="ID_static_18" text="G0/0" x="538.65" y="212.65" align="center" width="25.65" />
+<element type="TEXT" id="ID_static_19" text="192.168.5.0/24" bold="1"  x="583.3" y="176.7" align="center" width="78.95" />
+</slide>
+ 
+ 
+    <slide>    
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#FFFFFF" /> 
+<element type="ROUTER" textId="ID_s2_staticTxt1" x="40" y="55" width="600" height="400" />   
+ </slide>
+  
+    <slide>
+      <element type="TEXT" subType="TITLE" compId="ID_s3_title"/>
+    <element type="IMAGE" src="media_3.2.1.6_C.png" x="0" y="0"  width="680" height="490"/>  
+ <element type="TEXT" id="ID_static_20" text="DCE" x="197.5" y="111.95" align="center" width="21.7" />
+<element type="TEXT" id="ID_static_21" text="S0/0/0 .1" x="197.5" y="128.85" align="center" width="35.85" />
+<element type="TEXT" id="ID_static_22" text=".1" x="124.35" y="115.05" align="center" width="7.55" />
+<element type="TEXT" id="ID_static_23" text="G0/0" x="106.35" y="134.7" align="center" width="25.65" />
+<element type="TEXT" id="ID_static_24" text="S0/0/0" x="269.4" y="120.4" align="center" width="35.85" />
+<element type="TEXT" id="ID_static_25" text=".2" x="296.2" y="136.65" align="center" width="8.45" />
+<element type="TEXT" id="ID_static_26" text="DCE" x="366.3" y="110.6" align="center" width="21.7" />
+<element type="TEXT" id="ID_static_27" text="S0/0/1 .2" x="366.3" y="127.5" align="center" width="34.05" />
+<element type="TEXT" id="ID_static_28" text="S0/0/1" x="441.8" y="119.05" align="center" width="34.05" />
+<element type="TEXT" id="ID_static_29" text=".1" x="467.7" y="135.4" align="center" width="7.55" />
+<element type="TEXT" id="ID_static_30" text="192.168.1.0/24" bold="1"  x="31.35" y="99.65" align="center" width="78.95" />
+<element type="TEXT" id="ID_static_31" text="192.168.2.0/24" bold="1"  x="212.7" y="160.05" align="center" width="78.95" />
+<element type="TEXT" id="ID_static_32" text="192.168.4.0/24" bold="1"  x="387.45" y="160.05" align="center" width="78.95" />
+<element type="TEXT" id="ID_static_33" text="192.168.3.0/24" bold="1"  x="299.15" y="39.85" align="center" width="78.95" />
+<element type="TEXT" id="ID_static_34" text=".1" x="321.15" y="96.2" align="center" width="7.55" />
+<element type="TEXT" id="ID_static_35" text="G0/0" x="341.15" y="96.2" align="center" width="25.65" />
+<element type="TEXT" id="ID_static_36" text=".1" x="538.9" y="117.65" align="center" width="7.55" />
+<element type="TEXT" id="ID_static_37" text="G0/0" x="538.9" y="133.5" align="center" width="25.65" />
+<element type="TEXT" id="ID_static_38" text="192.168.5.0/24" bold="1"  x="583.55" y="97.55" align="center" width="78.95" />
+
+ <element type="ACTIVITY" subType="SYNTAX" compId="ID_s3_SC5" x="25" y="185" width="630" height="290" resetId="ID_sc_reset" showMeId="ID_sc_showme" showAllId="ID_sc_showall"/>         
+    </slide>
+   </slide>
+ 
+<text id="ID_s2_staticTxt1"><![CDATA[
+<pre>
+R1(config)# <b>router rip</b> 
+R1(config-router)# <b>passive-interface g0/0</b> 
+R1(config-router)# <b>end </b>
+R1# 
+R1# <b>show ip protocols | begin Default</b> 
+  <font color="#F68026">Default version control: send version 2, receive version 2 
+    Interface Send Recv Triggered RIP Key- chain 
+    Serial0/0/0 2 2</font> 
+  Automatic network summarization is not in effect 
+  Maximum path: 4 
+  <font color="#F68026">Routing for Networks: 
+    192.168.1.0 
+    192.168.2.0 
+  Passive Interface(s): 
+    GigabitEthernet0/0</font>
+  Routing Information Sources: 
+    Gateway       Distance      Last Update 
+    192.168.2.2        120      00:00:06 
+    Distance: (default is 120)
+
+R1#</pre>]]></text>
+   
+</data>

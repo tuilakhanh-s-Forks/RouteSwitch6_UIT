@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide>
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+        <element type="IMAGE" src="media_6.1.2.1_topo.png" x="0" y="0" width="680" height="490" />
+        <element type="TEXT" subType="TITLE" compId="ID_title" />
+        <element type="TEXT" compId="ID_txt02" x="42" y="72" width="277.75" expand="down" align="left" size="11" class="orangeCallOut" />
+        <element type="TEXT" compId="ID_txt09" x="38" y="222" width="133.15" expand="up+down" align="right" />
+        <element type="TEXT" compId="ID_txt07" x="28" y="299" width="115.2" expand="up+down" align="right" />
+        <element type="TEXT" compId="ID_txt05" x="26" y="382" width="116.6" expand="up+down" align="right" color="#4e4c4d" />
+        <element type="TEXT" id="ID_static_2" text="F0/18" x="199.6" y="289.9" align="center" width="29.75" />
+        <element type="TEXT" id="ID_static_5" text="F0/11" x="246.65" y="270.5" align="center" width="27.95" />
+        <element type="TEXT" id="ID_static_8" text="F0/6" x="246.6" y="320.95" align="center" width="23.15" />
+        <element type="TEXT" id="ID_static_3" text="F0/1" x="272.5" y="227.3" align="center" width="21.4" />
+        <element type="TEXT" id="ID_static_10" text="F0/1" x="290.3" y="270.25" align="center" width="21.4" />
+        <element type="TEXT" compId="ID_txt03" x="238" y="341" width="183.1" expand="down" align="left" size="11" class="orangeCallOut" />
+        <element type="TEXT" id="ID_static_4" text="F0/3" x="359.55" y="222.05" align="center" width="23.15" />
+        <element type="TEXT" id="ID_static_11" text="F0/3" x="342.9" y="270.25" align="center" width="23.15" />
+        <element type="TEXT" id="ID_static_6" text="F0/11" x="385.75" y="270.5" align="center" width="27.95" />
+        <element type="TEXT" id="ID_static_9" text="F0/6" x="380.35" y="320.95" align="center" width="23.15" />
+        <element type="TEXT" id="ID_static_7" text="F0/18" x="429.9" y="289.9" align="center" width="29.75" />
+        <element type="TEXT" compId="ID_txt01" x="332" y="72" width="295.75" expand="down" align="left" size="11" class="orangeCallOut" />
+        <element type="TEXT" compId="ID_txt08" x="479" y="222" width="133.2" expand="up+down" align="left" />
+        <element type="TEXT" compId="ID_txt06" x="525" y="299" width="115.15" expand="up+down" align="left" />
+        <element type="TEXT" compId="ID_txt04" x="508" y="382" width="128.1" expand="up+down" align="left" />
+    </slide>
+</data>

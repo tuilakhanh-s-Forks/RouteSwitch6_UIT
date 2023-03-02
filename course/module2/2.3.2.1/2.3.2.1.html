@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.3.2.1 Troubleshoot a Missing Route</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.3.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Troubleshoot a Missing Route</h1>
+        <div>
+          <p>Networks are subject to forces that can cause their status to change quite often:</p>
+          <p>
+            <ul>
+              <li>An interface fails</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>A service provider drops a connection</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Links become oversaturated</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>An administrator enters a wrong configuration</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>When there is a change in the network, connectivity may be lost. Network administrators are responsible for pinpointing and solving the problem. To find and solve these issues, a network administrator must be familiar with tools to help isolate routing problems quickly. </p>
+          <p></p>
+          <p>Common IOS troubleshooting commands include: </p>
+          <p>
+            <ul>
+              <li>
+                <b>ping</b>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>traceroute</b>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip route</b>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip interface brief </b>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show cdp neighbors detail</b>
+                <span class="cmd">
+                  <b></b>
+                </span>
+              </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Figure 1 displays the result of an extended ping from the source interface of R1 to the LAN interface of R3. An extended ping is an enhanced version of the ping utility. Extended ping enables you to specify the source IP address for the ping packets.</p>
+          <p></p>
+          <p>Figure 2 displays the result of a traceroute from R1 to the R3 LAN.</p>
+          <p></p>
+          <p>Figure 3 displays the routing table of R1. </p>
+          <p></p>
+          <p>Figure 4 provides a quick status of all interfaces on the router. </p>
+          <p></p>
+          <p>Figure 5 provides a list of directly connected Cisco devices. This command validates Layer 2 (and therefore Layer 1) connectivity. For example, if a neighbor device is listed in the command output, but it cannot be pinged, then Layer 3 addressing should be investigated.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">These figures are based on the standard lab diagram.  Figure one shows the output of the "ping" command on router one to the P. C. on the router three lan.  This ping is using the source option to source the ping from the router one lan interface. Figure two shows the output of the "trace route" command on router one to the P. C. on the router three lan. Figure three shows the output of the "show i. p. route" command on router one, displaying the routing table. Figure four shows the output of the "show i. p. interface brief" command on router one indicating that the lan and wan interface are both up. Figure five shows the output of the "show c. d. p. neighbors" command on router one listing router two as a neighbor along with the lan switch attached to router one.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

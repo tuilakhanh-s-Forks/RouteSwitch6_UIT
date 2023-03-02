@@ -1,0 +1,5 @@
+
+          <p>After the ACL to restrict access to the VTY lines is configured, it is important to verify that it is working as expected. The figure shows two devices attempting to connect to R1 using SSH. Access list 21 has been configured on the VTY lines on R1. PC1 is successful while PC2 fails to establish a SSH connection. This is the expected behavior, as the configured access list permits VTY access from the 192.168.10.0/24 network while denying all other devices.</p>
+          <p></p>
+          <p>The output for R1 shows the result of issuing the <b>show access-lists </b>command after the SSH attempts by PC1 and PC2.  The match in the permit line of the output is a result of a successful SSH connection by PC1. The match in the deny statement is due to the failed attempt to create an SSH connection by PC2, a device on the 192.168.11.0/24 network.</p>
+        

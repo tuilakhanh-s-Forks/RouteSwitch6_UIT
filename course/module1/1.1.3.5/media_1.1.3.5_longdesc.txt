@@ -1,0 +1,1 @@
+This page contains a link to a Cisco Packet Tracer activity titled "Configuring I P v 4 and I P v 6 Interfaces". Some aspects of Cisco Packet Tracer may not be accessible.

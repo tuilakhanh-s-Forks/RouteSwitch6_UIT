@@ -1,0 +1,187 @@
+<textcomponents>
+	<!--SLIDE 1-->
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Router R1 as a DHCPv4 Server</b>]]></text>
+	</component>
+	<component id="ID_s1_txt01">
+		<text><![CDATA[<b>DHCPv4 Server</b>]]></text>
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[<b>DNS Server</b>]]></text>
+	</component>
+	<!--SLIDE 2-->
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>Configuring DHCPv4 Step 1: Excluding IPv4 Addresses</b>]]></text>
+	</component>
+	<!--SLIDE 3-->
+	<component id="ID_s3_title">
+		<text><![CDATA[<b>Configuring DHCPv4 Step 2: Configuring a DHCPv4 Pool</b>]]></text>
+	</component>
+	<!--SLIDE 4-->
+	<component id="ID_s4_title">
+		<text><![CDATA[<b>Configuring DHCPv4 Step 3: Configuring Specific Tasks</b>]]></text>
+	</component>
+	<component id="ID_S4_table1">
+		<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable" width='600px' >
+
+	<tr class="mtable_title">
+			<td colspan="2" bgcolor='#FFFFFF'><font size="5"></font></td>
+		</tr>
+
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+	<tr>
+		<td bgcolor='#666263' valign="top" width="252"><font color="#ffffff"><b>Required Tasks</b></font></td>
+		<td bgcolor='#666263' valign="top"><font color="#ffffff"><b>Command</b></font></td>
+	</tr>
+	
+	<tr>
+		<td bgcolor='#E9E7E8' valign="middle"><font color='#393536'>Define the address pool.</font></td>
+		<td bgcolor='#E9E7E8' valign="middle"><font color='#000000' face="_typewriter"><b>network </b><i>network-number </i>[<i>mask | /prefix-length</i>]</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Define the default router or gateway.</font></td>
+		<td bgcolor='#F2F2F2' valign="middle"><font color='#000000' face="_typewriter"><b>default-router </b> <i>address</i> [<i>address2...address8</i>]</font></td>
+	</tr>
+</table>]]></text>
+	</component>
+	<component id="ID_S4_table2">
+		<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable" width='600px' >
+
+	<tr class="mtable_title">
+			<td colspan="2" bgcolor='#FFFFFF'><font size="5"></font></td>
+		</tr>
+
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+	<tr>
+		<td bgcolor='#666263' valign="top" width="252"><font color="#ffffff"><b>Optional Tasks</b></font></td>
+		<td bgcolor='#666263' valign="top"><font color="#ffffff"><b>Command</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#393536'>Define a DNS server.</font></td>
+		<td bgcolor='#E9E7E8' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#000000' face="_typewriter"><b>dns-server </b><i>address </i>[<i>address2...address8</i>]</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#393536'>Define the domain name.</font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#000000' face="_typewriter"><b>domain-name </b> <i>domain</i></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#393536'>Define the duration of the DHCP lease.</font></td>
+		<td bgcolor='#E9E7E8' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#000000' face="_typewriter"><b>lease </b> {<i>days </i>[<i>hours</i>] [<i>minutes</i>] | <i>infinite</i>}</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#393536'>Define the NetBIOS WINS server.</font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#000000' face="_typewriter"><b>netbios-name-server </b> <i>address </i>[<i>address2...address8</i>]</font></td>
+	</tr>
+</table> ]]></text>
+	</component>
+
+		<component id="ID_S4_table1_html">
+		<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable" width='600px' >
+	 
+			<caption colspan="2" class="mtable_title" bgcolor='#FFFFFF'><font size="5"></font></caption>
+
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+	<tr>
+		<th scope="col" bgcolor='#666263' valign="top" width="252"><font color="#ffffff"><b>Required Tasks</b></font></th>
+		<th scope="col" bgcolor='#666263' valign="top"><font color="#ffffff"><b>Command</b></font></th>
+	</tr>
+	
+	<tr>
+		<td bgcolor='#E9E7E8' valign="middle"><font color='#393536'>Define the address pool.</font></td>
+		<td bgcolor='#E9E7E8' valign="middle"><font color='#000000' face="_typewriter"><b>network </b><i>network-number </i>[<i>mask | /prefix-length</i>]</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Define the default router or gateway.</font></td>
+		<td bgcolor='#F2F2F2' valign="middle"><font color='#000000' face="_typewriter"><b>default-router </b> <i>address</i> [<i>address2...address8</i>]</font></td>
+	</tr>
+</table>]]></text>
+	</component>
+	<component id="ID_S4_table2_html">
+		<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable" width='600px' >
+	 
+			<caption colspan="2" class="mtable_title" bgcolor='#FFFFFF'><font size="5"></font></caption>
+
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+	<tr>
+		<th scope="col" bgcolor='#666263' valign="top" width="252"><font color="#ffffff"><b>Optional Tasks</b></font></th>
+		<th scope="col" bgcolor='#666263' valign="top"><font color="#ffffff"><b>Command</b></font></th>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#393536'>Define a DNS server.</font></td>
+		<td bgcolor='#E9E7E8' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#000000' face="_typewriter"><b>dns-server </b><i>address </i>[<i>address2...address8</i>]</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#393536'>Define the domain name.</font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#000000' face="_typewriter"><b>domain-name </b> <i>domain</i></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#393536'>Define the duration of the DHCP lease.</font></td>
+		<td bgcolor='#E9E7E8' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#000000' face="_typewriter"><b>lease </b> {<i>days </i>[<i>hours</i>] [<i>minutes</i>] | <i>infinite</i>}</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#393536'>Define the NetBIOS WINS server.</font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#000000' face="_typewriter"><b>netbios-name-server </b> <i>address </i>[<i>address2...address8</i>]</font></td>
+	</tr>
+</table> ]]></text>
+	</component> 
+
+
+	
+	<!--SLIDE 5-->
+	<component id="ID_s5_title">
+		<text><![CDATA[<b>DHCPv4 Example</b>]]></text>
+	</component>
+	<!--SLIDE 6-->
+	<component id="ID_s6_title">
+		<text><![CDATA[<b>Configuring a DHCPv4 Server</b>]]></text>
+	</component>
+	<component id="ID_sc_reset">
+		<text><![CDATA[Reset]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[Show Me]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[Show All]]></text>
+	</component>
+	<component id="ID_s6_SC5" fontSize="12" fontFace="_typewriter" fontColor="#ffffff">
+		<feedback id="fb"><![CDATA[<b><font  face="_sans" color="#FFFFFF" >***You must enter the exact and full command. Commands that include a name or password are case-sensitive.***</font></b>
+		]]></feedback>
+		<existingcommands><![CDATA[<font  face="_sans" ><b>Exclude the .1 through the .9 address, along with the .254 address from the 192.168.11.0/24 address range.</b></font>]]></existingcommands>
+		<command prompt="R1(config)#"><correctresponse><![CDATA[ip dhcp excluded-address 192.168.11.1 192.168.11.9]]></correctresponse>
+		</command>
+		<command prompt="R1(config)#">
+			<correctresponse><![CDATA[ip dhcp excluded-address 192.168.11.254]]></correctresponse>
+			<instruction><![CDATA[<font  face="_sans" ><b>Configure the DHCPv4 pool LAN-POOL-2 for 192.168.11.0/24 LAN.</b></font>]]></instruction>
+		</command>
+		<command prompt="R1(config)#">
+			<correctresponse><![CDATA[ip dhcp pool LAN-POOL-2]]></correctresponse>
+		</command>
+		<command prompt="R1(dhcp-config)#">
+			<correctresponse><![CDATA[network 192.168.11.0 255.255.255.0]]></correctresponse>
+			<instruction><![CDATA[<font  face="_sans" ><b>Configure the default gateway address.</b></font>]]></instruction>
+		</command>
+		<command prompt="R1(dhcp-config)#">
+			<correctresponse><![CDATA[default-router 192.168.11.1]]></correctresponse>
+			<instruction><![CDATA[<font  face="_sans" ><b>Configure the DNS server address using the same address used for LAN-POOL-1.</b></font>]]></instruction>
+		</command>
+		<command prompt="R1(dhcp-config)#">
+			<correctresponse><![CDATA[dns-server 192.168.11.5]]></correctresponse>
+			<instruction><![CDATA[<font  face="_sans" ><b>Configure the domain name using the same address used for LAN-POOL-1.</b></font>]]></instruction>
+		</command>
+		<command prompt="R1(dhcp-config)#">
+			<correctresponse><![CDATA[domain-name example.com]]></correctresponse>
+			<deviceresponse><![CDATA[<font face="_typewriter" >R1(dhcp-config)#</font>]]></deviceresponse>
+			<instruction><![CDATA[<font  face="_sans" ><b>You successfully configured the DHCPv4 Server.</b></font>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+</textcomponents>

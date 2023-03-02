@@ -1,0 +1,19 @@
+
+          <p>Cisco consistently releases new Cisco IOS software versions to resolve caveats and provide new features. This example uses IPv6 for the transfer to show that TFTP can also be used across IPv6 networks. </p>
+          <p></p>
+          <p>Figure 1 illustrates copying a Cisco IOS software image from a TFTP server.  A new image file (c1900-universalk9-mz.SPA.152-4.M3.bin) will be copied from the TFTP server at 2001:DB8:CAFE:100::99 to the router. </p>
+          <p></p>
+          <p>Follow these steps to upgrade the software on the Cisco router:</p>
+          <p></p>
+          <p>
+            <b>Step 1. </b>Select a Cisco IOS image file that meets the requirements in terms of platform, features, and software. Download the file from cisco.com and transfer it to the TFTP server.</p>
+          <p></p>
+          <p>
+            <b>Step 2. </b>Verify connectivity to the TFTP server. Ping the TFTP server from the router. The output in Figure 2 shows the TFTP server is accessible from the router.</p>
+          <p></p>
+          <p>
+            <b>Step 3.  </b>Ensure that there is sufficient flash space on the router that is being upgraded. The amount of free flash can be verified using the<b> show flash0: </b>command. Compare the free flash space with the new image file size. The<b> show flash0: </b>command in Figure 3 is used to verify free flash size. Free flash space in the example is 182,394,880 bytes. </p>
+          <p></p>
+          <p>
+            <b>Step 4. </b>Copy the IOS image file from the TFTP server to the router using the<b> copy </b>command shown in Figure 4. After issuing this command with specified source and destination URLs, the user will be prompted for IP address of the remote host, source file name, and destination file name. The transfer of the file will begin.</p>
+        

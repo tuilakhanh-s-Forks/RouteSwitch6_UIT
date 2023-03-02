@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.1.7 Propagate a Default Route</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.1.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Propagate a Default Route</h1>
+        <div>
+          <p>Refer to Figure 1. In this scenario, R1 is the edge router, single-homed to a service provider. Therefore, all that is required for R1 to reach the Internet is a default static route going out of the Serial 0/0/1 interface. </p>
+          <p></p>
+          <p>Similar default static routes could be configured on R2 and R3, but it is much more scalable to enter it one time on the edge router R1 and then have R1 propagate it to all other routers using RIP. To provide Internet connectivity to all other networks in the RIP routing domain, the default static route needs to be advertised to all other routers that use the dynamic routing protocol. </p>
+          <p></p>
+          <p>To propagate a default route in RIP, the edge router must be configured with:</p>
+          <p>
+            <ul>
+              <li>A default static route using the<b> ip route 0.0.0.0 0.0.0.0 </b>command.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The<b> default-information originate </b>router configuration command. This instructs R1 to originate default information, by propagating the static default route in RIP updates.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The example in Figure 2 configures a fully-specified default static route to the service provider and then the route is propagated by RIP. Notice that R1 now has a Gateway of Last Resort and default route installed in its routing table.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to verify that the default route has been propagated to R2 and R3.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows three routers connected linearly through WAN links.  R1 is connected to R2 through a serial WAN link, and it has a LAN on its gigabit-Ethernet interface.  R2 is connected to both R1 and R3 through serial WAN links, and has a LAN on its gigabit-Ethernet interface.  R3 is only connected to R2 through a serial WAN link, and has a LAN on its gigabit-Ethernet interface.  Router R-1 has a WAN link to the Internet cloud configured.  Figure two configures a static route on a router with the command i.p. route zero dot zero dot zero dot zero dot zero dot zero dot zero dot zero dot serial zero slash zero slash one 209 dot 165 dot 200 dot 226.  The router is then configured to run rip with the router rip command.  The default route is configured to propagate its default route with the command, default hyphen information originate.  This is verified with the command, show i.p. route pipe begin Gateway and it shows a gateway of last resort listed along with the default route listed.  The default route is labeled with a capital S with an asterisk next to it to indicate that it is a candidate default route. Figure three is an interactive media element that allows the learner to verify that the default route has been propagated to routers R-2 and R-3.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

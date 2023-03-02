@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+<slide>
+	
+	<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_2.0.1.2.png" />
+	<element type="IMAGE" subType="STD" src="2_0_1_2_C.jpg" x="176.35" y="121.05" width="322.65" height="143.45"/>
+
+	<element type="TEXT" compId="ID_txt02" width="119.95" x="121.7" y="70.05" align="center" expand="up+down" size="11" />
+	<element type="TEXT" compId="ID_txt05" width="119.95" x="279.95" y="70.05" align="center" expand="up+down" size="11" />
+	<element type="TEXT" compId="ID_txt06" width="119.95" x="438.25" y="70" align="center" expand="up+down" size="11" />
+	<element type="TEXT" compId="ID_txt03" width="119.95" x="121.7" y="300.05" align="center" expand="up+down" size="11" />
+	<element type="TEXT" compId="ID_txt07" width="119.95" x="279" y="300.05" align="center" expand="up+down" size="11" />
+	<element type="TEXT" compId="ID_txt04" width="119.95" x="438.2" y="300.05" align="center" expand="up+down" size="11" />
+	<element type="TEXTBOX" x="98.5" y="370.95" width="473" height="90"  bodyId="ID_txt01"/>	
+</slide>
+
+</data>

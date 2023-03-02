@@ -1,0 +1,18 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_router_txt1,#ID_router_txt2,#ID_router_txt3{
+	color:#fff !important;
+	letter-spacing: -0.5px !important;
+}
+#ID_s1_txt01,#ID_s2_txt01,#ID_s3_txt01{
+	background-color: #fff !important;
+	padding:5px !important;
+	border-color: #fff !important;
+	background-color: #FFFFFF;
+padding-top: 5px !important;
+padding-bottom: 5px !important;
+box-shadow: 1px 1px 1px 1px #888888;
+}

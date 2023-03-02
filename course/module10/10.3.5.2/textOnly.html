@@ -1,0 +1,48 @@
+
+          <p>Evaluation licenses are replaced with Evaluation Right-To-Use licenses (RTU) after 60 days. An Evaluation license is good for a 60 day evaluation period. After the 60 days, this license automatically transitions into an RTU license. These licenses are available on the honor system and require the customer’s acceptance of the EULA. The EULA is automatically applied to all Cisco IOS software licenses. </p>
+          <p></p>
+          <p>The<b> license accept end user agreement </b>global configuration mode command is used to configure a one-time acceptance of the EULA for all Cisco IOS software packages and features. After the command is issued and the EULA accepted, the EULA is automatically applied to all Cisco IOS software licenses and the user is not prompted to accept the EULA during license installation.</p>
+          <p></p>
+          <p>Figure 1 shows how to configure a one-time acceptance of the EULA:</p>
+          <p></p>
+          <p>Router(config)# <b>license accept end user agreement</b></p>
+          <p></p>
+          <p>In addition, Figure 1 shows the command to activate an Evaluation RTU license:</p>
+          <p></p>
+          <p>Router# <b>license boot module </b><i>module-name</i><b> technology-package </b><i>package-name</i></p>
+          <p></p>
+          <p>Use the<b> ? </b>in place of the arguments to determine which module names and supported software packages are available on the router. Technology package names for Cisco ISR G2 platforms are:</p>
+          <p>
+            <ul>
+              <li>
+                <b>ipbasek9 </b>- IP Base technology package</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>securityk9 </b> - Security technology package </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>datak9</b> - Data technology package</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>uck9</b> - Unified Communications package (not available on 1900 series)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: A reload using the<b> reload </b>command is required to activate the software package.</p>
+          <p></p>
+          <p>Evaluation licenses are temporary, and are used to evaluate a feature set on new hardware. Temporary licenses are limited to a specific usage period (for example, 60 days).</p>
+          <p></p>
+          <p>Reload the router after a license is successfully installed using the<b> reload </b>command. The<b> show license </b>command in Figure 2 verifies that the license has been installed.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to accept the EULA and activate an Evaluation RTU data package license on the 1900 router.</p>
+        

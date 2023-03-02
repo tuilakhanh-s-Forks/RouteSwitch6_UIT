@@ -1,0 +1,99 @@
+<textcomponents>
+
+<!-- slide 1 -->
+<component id='ID_s1_title'>
+	<text><![CDATA[<b>The<font face="_typewriter"> show cdp </font>Command
+</b>]]></text>
+</component>
+<!-- end slide 1 -->
+
+
+<!-- slide 2 -->
+<component id='ID_s2_title'>
+	<text><![CDATA[<b>Configuring CDP on the Interface</b>]]></text>
+</component>
+<!-- end slide 2 -->
+
+
+<!-- slide 3 -->
+<component id='ID_s3_title'>
+	<text><![CDATA[<b>CDP Globally Disabled and Re-enabled</b>]]></text>
+</component>
+<!-- end slide 3 -->
+
+
+<!-- slide 4 -->
+<component id='ID_s4_title'>
+	<text><![CDATA[<b>Listing CDP Neighbors</b>]]></text>
+</component>
+<!-- end slide 4 -->
+
+
+<!-- slide 5 -->
+<component id='ID_s5_title'>
+	<text><![CDATA[<b>Displaying Enabled CDP Interfaces</b>]]></text>
+</component>
+<!-- end slide 5 -->
+
+
+<!-- slide 6 -->
+        <component id="ID_s6_title">
+        <text><![CDATA[<b>Configure and Verify CDP</b>]]></text>
+	</component>
+
+        <!--Syntax Checker Button Text-->
+		<component id="ID_s6_reset">
+			<text><![CDATA[Reset]]></text>
+		</component>
+
+        <component id="ID_s6_showme">
+			<text><![CDATA[Show Me]]></text>
+		</component>
+
+        <component id="ID_s6_showall">
+			<text><![CDATA[Show All]]></text>
+		</component>
+	<!--End Syntax Checker Button Text-->
+
+        <component id="ID_s6_SC" fontSize="12" fontFace='_typewriter'  fontColor="#ffffff">
+                <feedback id="fb"><![CDATA[<b><font face="_sans" color="#ffffff">***You must enter the exact and full command. Commands that include a name or password are case-sensitive.***</font></b> ]]></feedback>
+              <existingcommands><![CDATA[<font face="_sans"><b>Display the status of CDP on R1.</b></font>]]></existingcommands>
+                <command prompt="R1#">
+                       <correctresponse><![CDATA[ show cdp]]></correctresponse>
+                                <deviceresponse><![CDATA[% CDP is not enabled<br>R1#<br>]]></deviceresponse>
+                       <instruction><![CDATA[<font face="_sans"><b><ul>Enter Global Configuration mode to configure the following:<li>Enable CDP globally on R1.</li><li>Disable CDP on interface S0/0/0.</li><li>Use end command to exit Global Configuration mode.</li></font>]]></instruction>
+              </command>
+                <command prompt="R1#">
+                       <correctresponse><![CDATA[ configure terminal]]></correctresponse>
+              </command>
+                <command prompt="R1(config)#">
+                       <correctresponse><![CDATA[ cdp run]]></correctresponse>
+              </command>
+                <command prompt="R1(config)#">
+                       <correctresponse><![CDATA[ interface s0/0/0]]></correctresponse>
+              </command>
+                <command prompt="R1(config-if)#">
+                       <correctresponse><![CDATA[ no cdp enable]]></correctresponse>
+              </command>
+                <command prompt="R1(config-if)#">
+                       <correctresponse><![CDATA[ end]]></correctresponse>
+                                <deviceresponse><![CDATA[R1#]]></deviceresponse>
+                       <instruction><![CDATA[<font face="_sans"><b>Display the list of CDP neighbors on R1.</font>]]></instruction>
+              </command>
+                <command prompt="R1#">
+                       <correctresponse><![CDATA[ show cdp neighbors]]></correctresponse>
+                                <deviceresponse><![CDATA[Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge<br>                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone,<br>                  D - Remote, C - CVTA, M - Two-port Mac Relay<br><br>Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID<br>S1               Gig 0/1           122              S I   WS-C2960- Fas 0/5]]></deviceresponse>
+                       <instruction><![CDATA[<font face="_sans"><b>Display more details from the list of CDP neighbors on R1.</font>]]></instruction>
+              </command>
+                <command prompt="R1#">
+                       <correctresponse><![CDATA[ show cdp neighbors detail]]></correctresponse>
+                                <deviceresponse><![CDATA[<br>-------------------------<br>Device ID: S1<br>Entry address(es):<br>  IP address: 192.168.1.2<br>Platform: cisco WS-C2960-24TT-L,  Capabilities: Switch IGMP<br>Interface: GigabitEthernet0/1,  Port ID (outgoing port): FastEthernet0/5<br>Holdtime : 136 sec<br><br>Version :<br>Cisco IOS Software, C2960 Software (C2960-LANBASEK9-M), Version 15.0(2)SE7, RELEASE SOFTWARE (fc1)<br>Technical Support: http://www.cisco.com/techsupport<br>Copyright (c) 1986-2014 by Cisco Systems, Inc.<br>Compiled Thu 23-Oct-14 14:49 by prod_rel_team<br><br>advertisement version: 2<br>Protocol Hello:  OUI=0x00000C, Protocol ID=0x0112; payload len=27, value=00000000FFFFFFFF010221FF000000000000002291210380FF0000<br>VTP Management Domain: ''<br>Native VLAN: 1<br>Duplex: full<br>Management address(es):<br>  IP address: 192.168.1.2<br><br><br>Total cdp entries displayed : 1]]></deviceresponse>
+                       <instruction><![CDATA[<font face="_sans"><b>You have successfully configured and verified CDP.</font>]]></instruction>
+              </command>
+<command prompt=""/>
+ </component>
+ 
+<!-- end slide 6 -->
+
+
+</textcomponents>

@@ -1,0 +1,8 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+#ID_s4_txt01,#ID_s5_txt01{padding-left:3px;line-height:15px;}
+#static1{letter-spacing: -1px !important;}

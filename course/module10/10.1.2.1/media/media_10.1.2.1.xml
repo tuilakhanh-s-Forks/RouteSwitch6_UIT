@@ -1,0 +1,13 @@
+﻿<textcomponents>
+
+	<component id="ID_title">
+		<text><![CDATA[<b>Link Layer Discovery Protocol Operation</b>]]></text>
+	</component>
+    <component id="ID_txt01">
+		<text><![CDATA[LLDP Advertisements]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[Cisco devices support sending vendor-neutral LLDP advertisements to connected devices.]]></text>
+	</component>
+	
+</textcomponents>

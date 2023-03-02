@@ -1,0 +1,9 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_s1_title,#ID_s2_title,#ID_s3_title{
+	color:#fff !important;
+}
+#static,.spanclr{color:#F68026 !important;}

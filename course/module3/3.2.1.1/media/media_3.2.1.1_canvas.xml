@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide type="MBAR">		
+		<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+<element type="IMAGE" src="media_3.2.1.1.png" x="0" y="0" width="680" height="490" />
+<element type="TEXT" id="ID_static_1" text="DCE" x="201.5" y="202.45" align="center" width="21.7" />
+<element type="TEXT" id="ID_static_2" text="S0/0/0 .1" x="201.5" y="219.35" align="center" width="35.85" />
+<element type="TEXT" id="ID_static_3" text=".1" x="130.35" y="205.55" align="center" width="7.55" />
+<element type="TEXT" id="ID_static_4" text="G0/0" x="112.35" y="225.2" align="center" width="25.65" />
+<element type="TEXT" id="ID_static_5" text="S0/0/0" x="273.4" y="210.9" align="center" width="35.85" />
+<element type="TEXT" id="ID_static_6" text=".2" x="300.2" y="227.15" align="center" width="8.45" />
+<element type="TEXT" id="ID_static_7" text="DCE" x="370.3" y="201.1" align="center" width="21.7" />
+<element type="TEXT" id="ID_static_8" text="S0/0/1 .2" x="370.3" y="218" align="center" width="34.05" />
+<element type="TEXT" id="ID_static_9" text="S0/0/1" x="445.8" y="209.55" align="center" width="34.05" />
+<element type="TEXT" id="ID_static_10" text=".1" x="471.7" y="225.9" align="center" width="7.55" />
+<element type="TEXT" id="ID_static_11" text="192.168.1.0/24" bold="1"  x="19.6" y="188.05" align="center" width="78.95" />
+<element type="TEXT" id="ID_static_12" text="192.168.2.0/24" bold="1"  x="216.7" y="250.55" align="center" width="78.95" />
+<element type="TEXT" id="ID_static_13" text="192.168.4.0/24" bold="1"  x="391.45" y="250.55" align="center" width="78.95" />
+<element type="TEXT" id="ID_static_14" text="192.168.3.0/24" bold="1"  x="301.05" y="91.35" align="center" width="78.95" />
+<element type="TEXT" id="ID_static_15" text=".1" x="325.15" y="186.7" align="center" width="7.55" />
+<element type="TEXT" id="ID_static_16" text="G0/0" x="345.15" y="186.7" align="center" width="25.65" />
+<element type="TEXT" id="ID_static_17" text=".1" x="542.9" y="208.15" align="center" width="7.55" />
+<element type="TEXT" id="ID_static_18" text="G0/0" x="542.9" y="224" align="center" width="25.65" />
+<element type="TEXT" id="ID_static_19" text="192.168.5.0/24" bold="1"  x="581.25" y="188.05" align="center" width="78.95" />
+<element type="TEXT" subType="TITLE" compId="ID_s1_title"/>
+</slide>
+
+
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<element type="TEXT" compId="ID_s1_table01_html" x="40" y="113" width="600" height="356.8" />
+<element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#FFFFFF" />
+</slide>
+
+
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<element type="ROUTER" textId="ID_router_txt1" x="40" y="135" width="600" height="108" />
+<text id="ID_router_txt1"><![CDATA[
+<pre>
+R1# <b>conf t</b> 
+Enter configuration commands, one per line. End with CNTL/Z. 
+R1(config)# router rip 
+R1(config-router)#</pre>]]></text>
+<element type="TEXT" subType="TITLE" compId="ID_s3_title" color="#FFFFFF" />
+</slide>	
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<element type="ROUTER" textId="ID_router_txt2" x="30" y="50" width="620" height="415" />
+<text id="ID_router_txt2"><![CDATA[
+<pre>
+R1(config-router)# ? 
+
+Router configuration commands: 
+  address-family         Enter Address Family command mode 
+  <font color="#F68026">auto-summary           Enable automatic network number summarization</font>
+  default                Set a command to its defaults 
+  <font color="#F68026">default-information    Control distribution of default information</font>
+  default-metric         Set metric of redistributed routes 
+  distance               Define an administrative distance 
+  distribute-list        Filter networks in routing updates 
+  exit                   Exit from routing protocol configuration mode 
+  flash-update-threshold Specify flash update threshold insecond 
+  help                   Description of the interactive help system 
+  input-queue            Specify input queue depth 
+  maximum-paths          Forward packets over multiple paths 
+  neighbor               Specify a neighbor router 
+  <font color="#F68026">network                Enable routing on an IP network</font>
+  no                     Negate a command or set its defaults 
+  offset-list            Add or subtract offset from RIP metrics 
+  output-delay           Interpacket delay for RIP updates 
+  <font color="#F68026">passive-interface      Suppress routing updates on an interface</font>
+  redistribute           Redistribute information from another routing protocol 
+  timers                 Adjust routing timers 
+  traffic-share          How to compute traffic share over alternate paths 
+  validate-update-source Perform sanity checks against source address of routing updates 
+  <font color="#F68026">version                Set routing protocol version</font>
+
+R1(config-router)#
+</pre>]]></text>
+<element type="TEXT" subType="TITLE" compId="ID_s4_title" color="#FFFFFF" />
+</slide>
+		</slide>
+	
+</data>

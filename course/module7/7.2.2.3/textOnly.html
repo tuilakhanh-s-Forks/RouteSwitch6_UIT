@@ -1,0 +1,29 @@
+
+          <p>In a previous example, sequence numbers were used to edit a standard numbered IPv4 ACL. By referring to the statement sequence numbers, individual statements can easily be inserted or deleted. This method can also be used to edit standard named ACLs.</p>
+          <p></p>
+          <p>The figure shows an example of inserting a line to a named ACL. </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>In the first <b>show</b> command output, you can see that the ACL named NO_ACCESS has two numbered lines indicating access rules for a workstation with the IPv4 address 192.168.11.10. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>From named access list configuration mode, statements can be inserted or removed. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>To add a statement to deny another workstation requires inserting a numbered line. In the example, the workstation with the IPv4 address 192.168.11.11 is being added using a new sequence number of 15. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The final <b>show</b> command output verifies that the new workstation is now denied access.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: In named access list configuration mode, use the <b>no </b><i>sequence-number</i> command to quickly delete individual statements.</p>
+        

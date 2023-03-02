@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.1.3 Configure and Verify NTP</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configure and Verify NTP</h1>
+        <div>
+          <p>Before NTP is configured on the network, the <b>show clock</b> command displays the current time on the software clock. With the <b>detail</b> option, the time source is also displayed. As shown in Figure 1, the software clock has been manually configured. Use the<b> ntp server</b><i> ip-address </i>command in global configuration mode to configure 209.165.200.225 as the NTP server for R1. To verify the time source is set to NTP, use the <b>show clock detail</b> command again.</p>
+          <p></p>
+          <p>As shown in Figure 2, use the <b>show ntp associations</b> and <b>show ntp status</b> commands to verify that R1 is synchronized with the NTP server at 209.165.200.225. Notice that R1 is synchronized with a stratum 1 NTP server at 209.165.200.225, which is synchronized with a GPS clock. The <b>show ntp status</b> command displays that R1 is now a stratum 2 device synchronized with the NTP server at 209.165.220.225.</p>
+          <p></p>
+          <p>The clock on S1 is configured to synchronize to R1, as shown in Figure 3. Output from the <b>show ntp associations </b>command verifies that the clock on S1 is now synchronized with R1 at 192.168.1.1 via NTP. R1 is a stratum 2 device and NTP server to S1. Now S1 is a stratum 3 device that can provide NTP service to other devices in the network, such as end devices.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to practice configuring and verifying NTP.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figures 1, 2, and 3 have the same topology showing NTP servers and NTP clients. Router R1 is an NTP server for switch S1. In Figure 1, R1 is configured as an NTP server. In Figure 2, the 'show ntp associations' and 'show ntp status' commands verify that R1 is now an NTP server. In Figure 3, switch S1 is configured and verified as an NTP server.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+
+          <p>The figure shows the logic of routing and ACL processes. When a packet arrives at a router interface, the router process is the same, whether ACLs are used or not. As a frame enters an interface, the router checks to see whether the destination Layer 2 address matches its interface Layer 2 address, or whether the frame is a broadcast frame. </p>
+          <p></p>
+          <p></p>
+          <p>If the frame address is accepted, the frame information is stripped off and the router checks for an ACL on the inbound interface. If an ACL exists, the packet is tested against the statements in the list. </p>
+          <p></p>
+          <p>If the packet matches a statement, the packet is either permitted or denied. If the packet is accepted, it is then checked against routing table entries to determine the destination interface. If a routing table entry exists for the destination, the packet is then switched to the outgoing interface, otherwise the packet is dropped. </p>
+          <p></p>
+          <p>Next, the router checks whether the outgoing interface has an ACL. If an ACL exists, the packet is tested against the statements in the list. </p>
+          <p></p>
+          <p>If the packet matches a statement, it is either permitted or denied.</p>
+          <p></p>
+          <p>If there is no ACL or the packet is permitted, the packet is encapsulated in the new Layer 2 protocol and forwarded out the interface to the next device.</p>
+        

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide>
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+        <element type="IMAGE" src="9_2_4_2.png" x="0" y="0" width="680" height="490" />
+        <element type="IMAGE" x="91" y="263" width="490" height="166" subType="STD" src="media_9_2_4_2.jpg" />
+        <element type="TEXT" id="ID_static_1" text="209.165.200.225/28" x="375" y="78" align="center" width="114" />
+        <element type="TEXT" id="ID_static_2" text="192.168.1.254:80" x="210" y="223" align="center" color="#652C8A" bold="1" width="98" />
+        <element type="TEXT" id="ID_static_3" text="209.165.200.225:80" color="#652C8A" bold="1" x="333" y="223" align="center" width="113" />
+        <element type="TEXT" id="ID_static_4" text="192.168.1.254" x="89" y="186" align="center" width="81" />
+        <element type="TEXT" compId="ID_txt02" x="180" y="130" width="81" expand="up+down" align="center" />
+        <element type="TEXT" compId="ID_txt03" x="419" y="130" width="81" expand="up+down" align="center" />
+        <element type="TEXT" compId="ID_txt01" x="86" y="167" width="89" expand="left+right" align="center" />
+        <element type="TEXT" compId="ID_txt04" x="478" y="166" width="87" expand="left+right" align="center" />
+        <element type="TEXT" compId="ID_txt05" x="296" y="107" width="70" expand="up" align="center" />
+        <element type="TEXT" class="purpleCallOut" compId="ID_txt06" x="460" y="205" width="146" expand="right" align="center" />
+        <element type="TEXT" subType="TITLE" compId="ID_title" />
+    </slide>
+</data>

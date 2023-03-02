@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+<slide>
+	        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+			<element type="IMAGE" src="media_1.3.4.3.png" x="0" y="0" width="680" height="490"/>
+			
+			<element type="TEXT" subType="TITLE" compId="ID_title"/>			
+			
+			<element type="ROUTER" textId="staticTxt" width="600" height="251" x="40" y="226.95" size="10" style="font-family:Courier New"/>
+			
+	
+</slide>
+<text id="staticTxt"><![CDATA[
+			<pre>R1# <b>show ip route | begin Gateway</b>
+<span>Gateway of last resort is 209.165.200.226 to network 0.0.0.0             </span>
+
+<span>D*EX  0.0.0.0/0 [170/2297856] via 209.165.200.226, 00:07:29, Serial0/0/0 </span>
+      10.0.0.0/24 is subnetted, 2 subnets
+<span>D        10.1.1.0 [90/2172416] via 209.165.200.226, 00:07:29, Serial0/0/0
+D        10.1.2.0 [90/2172416] via 209.165.200.226, 00:07:29, Serial0/0/0</span> 
+      192.168.10.0/24 is variably subnetted, 2 subnets, 2 masks
+C        192.168.10.0/24 is directly connected, GigabitEthernet0/0
+L        192.168.10.1/32 is directly connected, GigabitEthernet0/0
+      192.168.11.0/24 is variably subnetted, 2 subnets, 2 masks
+C        192.168.11.0/24 is directly connected, GigabitEthernet0/1
+L        192.168.11.1/32 is directly connected, GigabitEthernet0/1
+      209.165.200.0/24 is variably subnetted, 2 subnets, 2 masks
+C        209.165.200.224/30 is directly connected, Serial0/0/0
+L        209.165.200.225/32 is directly connected, Serial0/0/0
+R1#
+</pre>]]></text>
+</data>

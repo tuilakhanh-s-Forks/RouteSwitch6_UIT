@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.1.1 Router RIP Configuration Mode</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Router RIP Configuration Mode</h1>
+        <div>
+          <p>Although RIP is rarely used in modern networks, it is useful as a foundation for understanding basic network routing. This section provides a brief overview of how to configure basic RIP settings and how to verify RIPv2. </p>
+          <p></p>
+          <p>Refer to the reference topology in Figure 1 and the addressing table in Figure 2. In this scenario, all routers have been configured with basic management features and all interfaces identified in the reference topology are configured and enabled. There are no static routes configured and no routing protocols enabled; therefore, remote network access is currently impossible. RIPv1 is used as the dynamic routing protocol. To enable RIP, use the<b> router rip </b>command, as shown in Figure 3. This command does not directly start the RIP process. Instead, it provides access to the router configuration mode where the RIP routing settings are configured. When enabling RIP, the default version is RIPv1.</p>
+          <p></p>
+          <p>To disable and eliminate RIP, use the<b> no router rip </b>global configuration command. This command stops the RIP process and erases all existing RIP configurations. </p>
+          <p></p>
+          <p>Figure 4 displays the various RIP commands that can be configured. The highlighted keywords are covered in this section. </p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows three routers connected linearly through WAN links.  R1 is connected to R2 through a serial WAN link, and it has a LAN on its gigabit-Ethernet interface.  R2 is connected to both R1 and R3 through serial WAN links, and also has a LAN on its gigabit-Ethernet interface.  R3 is only connected to R2 through a serial WAN link, and a LAN on its gigabit-Ethernet interface.  There are five different network addresses in the figure.  Figure two shows a simplified routing table for the network.  Routers R-1 and R-3 each have 2 directly connected networks and router R-2 has three.  Figure three shows the commands used to activate RIP on a router.  The figure begins in privileged exec mode, and the first command is config t, which moves to global configuration mode.  The next command is router rip, which activates RIP on the router and places the prompt at router-rip. Figure four shows the output from entering a question mark at the router-rip prompt.  This command results in the router listing all the commands that can be entered while at router-rip prompt.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

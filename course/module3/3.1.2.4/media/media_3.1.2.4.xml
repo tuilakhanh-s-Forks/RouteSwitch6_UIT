@@ -1,0 +1,73 @@
+<textcomponents>
+
+	<component id="ID_title">
+		<text><![CDATA[<b>Dynamic Routing Advantages and Disadvantages</b>]]></text>
+	</component>
+	
+	<component id='ID_table'>
+		<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+							<tr class="mtable_title">
+			<td colspan="2" bgcolor='#FFFFFF'><font size="1"></font></td>
+		</tr>
+		
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#666263'><font size='1' color='#0E6360'>.</font></td>
+		</tr>
+							<tr>
+							  <td  bgcolor='#666263' class="mtitle" ><font  color='#ffffff'><b>Advantages</b></font></td>
+							  <td  bgcolor='#666263' class="mtitle"><font  color='#ffffff'><b>Disadvantages</b></font></td>
+							</tr>
+							<tr>
+							  <td bgcolor='#E9E7E8' valign="top">Suitable in all topologies where multiple routers are required.</td>
+							  <td bgcolor='#E9E7E8' valign="top">Can be more complex to implement.</td>
+							</tr>
+							<tr>
+							  <td bgcolor='#F2F2F2' valign="top">Generally independent of the network size.</td>
+							  <td bgcolor='#F2F2F2' valign="top">Less secure. Additional configuration settings are required to secure.</td>
+							</tr> 
+							<tr>
+							  <td bgcolor='#E9E7E8' valign="top">Automatically adapts topology to reroute traffic if possible.</td>
+							  <td bgcolor='#E9E7E8' valign="top">Route depends on the current topology.</td>
+							</tr>	
+							<tr>
+							  <td bgcolor='#F2F2F2' valign="top">&nbsp;</td>
+							  <td bgcolor='#F2F2F2' valign="top">Requires additional CPU, RAM, and link bandwidth.</td>
+							</tr>
+						  </table>]]>
+		</text>
+</component>
+
+
+<component id='ID_table_html'>
+		<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+							<caption class="mtable_title" colspan="2" bgcolor='#FFFFFF'><font size="1"></font></caption>
+		
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#666263'><font size='1' color='#0E6360'>.</font></td>
+		</tr>
+							<tr>
+							  <th scope="col" bgcolor='#666263' class="mtitle" ><font  color='#ffffff'><b>Advantages</b></font></th>
+							  <th scope="col" bgcolor='#666263' class="mtitle"><font  color='#ffffff'><b>Disadvantages</b></font></th>
+							</tr>
+							<tr>
+							  <td bgcolor='#E9E7E8' valign="top">Suitable in all topologies where multiple routers are required.</td>
+							  <td bgcolor='#E9E7E8' valign="top">Can be more complex to implement.</td>
+							</tr>
+							<tr>
+							  <td bgcolor='#F2F2F2' valign="top">Generally independent of the network size.</td>
+							  <td bgcolor='#F2F2F2' valign="top">Less secure. Additional configuration settings are required to secure.</td>
+							</tr> 
+							<tr>
+							  <td bgcolor='#E9E7E8' valign="top">Automatically adapts topology to reroute traffic if possible.</td>
+							  <td bgcolor='#E9E7E8' valign="top">Route depends on the current topology.</td>
+							</tr>	
+							<tr>
+							  <td bgcolor='#F2F2F2' valign="top">&nbsp;</td>
+							  <td bgcolor='#F2F2F2' valign="top">Requires additional CPU, RAM, and link bandwidth.</td>
+							</tr>
+						  </table>]]>
+		</text>
+</component>
+
+
+</textcomponents>

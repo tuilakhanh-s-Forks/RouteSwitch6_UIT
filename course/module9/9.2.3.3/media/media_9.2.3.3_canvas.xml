@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+<slide type="MBAR">
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+<slide>
+<element type="IMAGE" src="media_9.2.3.3_A.png" x="0" y="0" width="680" height="490" />
+<element type="TEXT" compId="ID_s1_table01_html" x="40" y="339" width="600" height="140" />
+<element type="TEXT" id="ID_static_1" text="192.168.10.10" x="80.6" y="131.2" align="center" width="75.15" color="#652C8A" />
+<element type="TEXT" id="ID_static_2" text="1444" x="168.55" y="131.2" align="center" width="26" color="#652C8A" />
+<element type="TEXT" id="ID_static_3" text="209.165.201.1" x="212.05" y="131.2" align="center" width="74.05" color="#0E6360" />
+<element type="TEXT" id="ID_static_4" text="80" x="311.5" y="131.2" align="center" width="13.45" color="#0E6360" />
+<element type="TEXT" id="ID_static_5" text=" 209.165.200.225" x="345" y="131.2" align="center" width="88.85"  color="#0D658B"/>
+<element type="TEXT" id="ID_static_6" text="1444" x="440.9" y="131.2" align="center" width="26"  color="#0D658B" />
+<element type="TEXT" id="ID_static_7" text="209.165.201.1" x="482.7" y="131.2" align="center" width="74.05" color="#774723"/>
+<element type="TEXT" id="ID_static_8" text="80" x="582" y="131.2" align="center" width="13.45" color="#774723"/>
+<element type="TEXT" id="ID_static_9" text="192.168.10.11 " x="79.75" y="254.8" align="center" width="73.45" color="#652C8A" />
+<element type="TEXT" id="ID_static_10" text="1444" x="168.55" y="254.8" align="center" width="26" color="#652C8A" />
+<element type="TEXT" id="ID_static_11" text="209.165.202.129" x="205.3" y="254.8" align="center" width="88.9" color="#0E6360" />
+<element type="TEXT" id="ID_static_12" text="80" x="310.4" y="254.8" align="center" width="13.45" color="#0E6360" />
+<element type="TEXT" id="ID_static_13" text="209.165.200.225 " x="346" y="254.8" align="center" width="88.85" color="#0D658B" />
+<element type="TEXT" id="ID_static_14" text="1445" x="440.9" y="254.8" align="center" width="25.85" color="#0D658B" />
+<element type="TEXT" id="ID_static_15" text="209.165.202.129" x="476.4" y="254.8" align="center" width="88.9" color="#774723"/>
+<element type="TEXT" id="ID_static_16" text="80" x="582" y="254.8" align="center" width="13.45" color="#774723"/>
+<element type="TEXT" compId="ID_s1_txt03" x="171" y="115" width="26.95" expand="up+down" align="center" color="#652c8a" />
+<element type="TEXT" compId="ID_s1_txt02" x="75" y="115" width="85.3" expand="up+down" align="center" color="#652c8a" />
+<element type="TEXT" compId="ID_s1_txt05" x="304" y="115" width="23" expand="up+down" align="center" color="#0e6360" />
+<element type="TEXT" compId="ID_s1_txt04" x="208" y="115" width="82.65" expand="up+down" align="center" color="#0E6360" />
+<element type="TEXT" compId="ID_s1_txt07" x="442" y="115" width="27.45" expand="up+down" align="center" color="#0d658b" />
+<element type="TEXT" compId="ID_s1_txt06" x="349" y="115" width="82.2" expand="up+down" align="center" color="#0d658b" />
+<element type="TEXT" compId="ID_s1_txt09" x="574" y="115" width="22.65" expand="up+down" align="center" color="#774723" />
+<element type="TEXT" compId="ID_s1_txt08" x="480" y="115" width="81.25" expand="up+down" align="center" color="#774723" />
+<element type="TEXT" compId="ID_s1_txt12" x="170" y="240" width="27.9" expand="up+down" align="center" color="#652c8a" />
+<element type="TEXT" compId="ID_s1_txt11" x="74" y="240" width="88.2" expand="up+down" align="center" color="#652C8A" />
+<element type="TEXT" compId="ID_s1_txt14" x="303" y="240" width="23.8" expand="up+down" align="center" color="#0e6360" />
+<element type="TEXT" compId="ID_s1_txt13" x="208" y="240" width="83.4" expand="up+down" align="center" color="#0e6360" />
+<element type="TEXT" compId="ID_s1_txt16" x="443" y="240" width="25.05" expand="up+down" align="center" color="#0d658b" />
+<element type="TEXT" compId="ID_s1_txt15" x="350" y="240" width="81.35" expand="up+down" align="center" color="#0d658b" />
+<element type="TEXT" compId="ID_s1_txt18" x="574" y="240" width="22.65" expand="up+down" align="center" color="#774723" />
+<element type="TEXT" compId="ID_s1_txt17" x="479" y="240" width="82.85" expand="up+down" align="center" color="#774723" />
+<element type="TEXT" compId="ID_s1_txt01" x="98" y="64" width="123.6" expand="up" align="left" />
+<element type="TEXT" compId="ID_s1_txt10" x="97" y="185" width="123.55" expand="up" align="left" />
+<element type="TEXT" subType="TITLE" compId="ID_s1_title"/>
+</slide>
+
+
+
+<slide>
+<element type="IMAGE" src="media_9.2.3.3_B.png" x="0" y="0" width="680" height="490" />
+
+<element type="TEXT" compId="ID_s2_table01_html" x="40" y="339" width="600" height="140" />
+<element type="TEXT" id="ID_static_21" text="209.165.201.1" x="80.6" y="131.2" align="center" width="74.05" color="#652C8A" />
+<element type="TEXT" id="ID_static_22" text="80" x="176.95" y="131.2" align="center" width="13.45" color="#652C8A"/>
+<element type="TEXT" id="ID_static_23" text="192.168.10.10" x="210.65" y="131.2" align="center" width="75.15"  color="#0D658B"/>
+<element type="TEXT" id="ID_static_24" text="1444" x="298.9" y="131.2" align="center" width="26"  color="#0D658B"/>
+<element type="TEXT" id="ID_static_25" text=" 209.165.201.1" x="349.2" y="131.2" align="center" width="74.05" color="#0D658B" />
+<element type="TEXT" id="ID_static_26" text="80" x="450.9" y="131.2" align="center" width="13.45"  color="#0D658B"/>
+<element type="TEXT" id="ID_static_27" text="209.165.200.225" x="476.4" y="131.2" align="center" width="88.85" color="#774723"/>
+<element type="TEXT" id="ID_static_28" text="1444" x="571.5" y="131.2" align="center" width="26" color="#774723"/>
+<element type="TEXT" id="ID_static_29" text="209.165.202.129" x="72.05" y="254.8" align="center" width="88.9" color="#652C8A"/>
+<element type="TEXT" id="ID_static_30" text="80" x="176.95" y="254.8" align="center" width="13.45" color="#652C8A"/>
+<element type="TEXT" id="ID_static_31" text="192.168.10.11" x="209.5" y="254.8" align="center" width="73.45"  color="#0D658B"/>
+<element type="TEXT" id="ID_static_32" text="1444" x="299.9" y="254.8" align="center" width="26"  color="#0D658B"/>
+<element type="TEXT" id="ID_static_33" text="209.165.202.129" x="345" y="254.8" align="center" width="88.9"  color="#0D658B"/>
+<element type="TEXT" id="ID_static_34" text="80" x="450.9" y="254.8" align="center" width="13.45"  color="#0D658B"/>
+<element type="TEXT" id="ID_static_35" text="209.165.200.225" x="476.4" y="254.8" align="center" width="88.85" color="#774723" />
+<element type="TEXT" id="ID_static_36" text="1445" x="572.2" y="254.8" align="center" width="25.85" color="#774723"/>
+<element type="TEXT" compId="ID_s2_txt03" x="171" y="115" width="26.95" expand="up+down" align="center" color="#652c8a" />
+<element type="TEXT" compId="ID_s2_txt02" x="75" y="115" width="85.3" expand="up+down" align="center" color="#652c8a" />
+<element type="TEXT" compId="ID_s2_txt05" x="304" y="115" width="23" expand="up+down" align="center" color="#0e6360" />
+<element type="TEXT" compId="ID_s2_txt04" x="208" y="115" width="82.65" expand="up+down" align="center" color="#0e6360" />
+<element type="TEXT" compId="ID_s2_txt07" x="442" y="115" width="27.45" expand="up+down" align="center" color="#0d658b" />
+<element type="TEXT" compId="ID_s2_txt06" x="349" y="115" width="82.2" expand="up+down" align="center" color="#0d658b" />
+<element type="TEXT" compId="ID_s2_txt09" x="574" y="115" width="22.65" expand="up+down" align="center" color="#774723" />
+<element type="TEXT" compId="ID_s2_txt08" x="480" y="115" width="81.25" expand="up+down" align="center" color="#774723" />
+<element type="TEXT" compId="ID_s2_txt12" x="170" y="240" width="27.9" expand="up+down" align="center" color="#652c8a" />
+<element type="TEXT" compId="ID_s2_txt11" x="74" y="240" width="88.2" expand="up+down" align="center" color="#652c8a" />
+<element type="TEXT" compId="ID_s2_txt14" x="303" y="240" width="23.8" expand="up+down" align="center" color="#0e6360" />
+<element type="TEXT" compId="ID_s2_txt13" x="208" y="240" width="83.4" expand="up+down" align="center" color="#0e6360" />
+<element type="TEXT" compId="ID_s2_txt16" x="443" y="240" width="25.05" expand="up+down" align="center" color="#0d658b" />
+<element type="TEXT" compId="ID_s2_txt15" x="350" y="240" width="81.35" expand="up+down" align="center" color="#0d658b" />
+<element type="TEXT" compId="ID_s2_txt18" x="574" y="240" width="22.65" expand="up+down" align="center" color="#774723" />
+<element type="TEXT" compId="ID_s2_txt17" x="479" y="240" width="82.85" expand="up+down" align="center" color="#774723" />
+<element type="TEXT" compId="ID_s2_txt01" x="491" y="64" width="123.6" expand="up" align="center" />
+<element type="TEXT" compId="ID_s2_txt10" x="490" y="185" width="123.55" expand="up" align="center" />
+<element type="TEXT" subType="TITLE" compId="ID_s2_title"/>
+</slide>
+</slide> 
+	 
+</data>

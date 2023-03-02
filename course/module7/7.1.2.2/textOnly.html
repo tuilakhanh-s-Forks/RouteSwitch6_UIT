@@ -1,0 +1,21 @@
+
+          <p>
+            <b>Wildcard Masks to Match IPv4 Subnets</b>
+          </p>
+          <p></p>
+          <p>Calculating the wildcard mask can take some practice. Figure 1 provides three examples of wildcard masks. </p>
+          <p></p>
+          <p>In the first example the wildcard mask stipulates that every bit in the IPv4 192.168.1.1 must match exactly. </p>
+          <p></p>
+          <p>In the second example, the wildcard mask stipulates that anything will match. </p>
+          <p></p>
+          <p>In the third example, the wildcard mask stipulates that any host within the 192.168.1.0/24 network will match. </p>
+          <p></p>
+          <p>
+            <b>Wildcard Masks to Match Ranges</b>
+          </p>
+          <p></p>
+          <p>The two examples in Figure 2 are more complex. In example 1, the first two octets and first four bits of the third octet must match exactly. The last four bits in the third octet and the last octet can be any valid number. This results in a mask that checks for the range of networks 192.168.16.0 to 192.168.31.0.</p>
+          <p></p>
+          <p>Example 2 shows a wildcard mask that matches the first two octets, and the least significant bit in the third octet. The last octet and the first seven bits in the third octet can be any valid number. The result is a mask that would permit or deny all hosts from odd subnets from the 192.168.0.0 major network.</p>
+        

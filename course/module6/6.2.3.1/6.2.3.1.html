@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.3.1 IP Addressing Issues with VLAN</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IP Addressing Issues with VLAN</h1>
+        <div>
+          <p>Each VLAN must correspond to a unique IP subnet. If two devices in the same VLAN have different subnet addresses, they cannot communicate. This is a common problem, and it is easy to solve by identifying the incorrect configuration and changing the subnet address to the correct one.</p>
+          <p></p>
+          <p>In Figure 1, PC1 cannot connect to the Web/TFTP server shown. </p>
+          <p></p>
+          <p>A check of the IPv4 configuration settings of PC1 shown in Figure 2, reveals the most common error in configuring VLANs: an incorrectly configured IPv4 address. PC1 is configured with an IPv4 address of 172.172.10.21, but it should have been configured with 172.17.10.21.</p>
+          <p></p>
+          <p>In Figure 3, the PC1 Fast Ethernet configuration dialog box shows the updated IPv4 address of 172.17.10.21. The output on the bottom reveals that PC1 has regained connectivity to the Web/TFTP server found at IPv4 address 172.17.10.30.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a small lan with a p. c. connected to switch two, a p. c. connected to switch three, and a web server connected to switch one.  The links between the switches are trunk links and the necessary v. lans are allowed.  The p. c. connected to switch two has a callout stating that it cannot connect to the web server. Figure two shows the output from the "i. p. config" command on the p. c. Figure three shows a screenshot for configuring the i. p. address on the p. c. to change it to the correct subnet.  Note that the screenshot is from a p. c. in packet tracer.  Below is the output from a ping command on the p. c. showing a successful ping to the web server.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

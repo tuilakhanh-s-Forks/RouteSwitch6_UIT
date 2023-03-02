@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.5.3 Test the IPv4 Floating Static Route</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.5.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Test the IPv4 Floating Static Route</h1>
+        <div>
+          <p>Because the default static route on R1 to R2 has an administrative distance of 1, traffic from R1 to R3 should go through R2. The output in Figure 1 confirms that traffic between R1 and R3 flows through R2. </p>
+          <p></p>
+          <p>What would happen if R2 failed? To simulate this failure both serial interfaces of R2 are shut down, as shown in Figure 2.</p>
+          <p></p>
+          <p>Notice in Figure 3 that R1 automatically generates messages indicating that the serial interface to R2 is down. A look at the routing table verifies that the default route is now pointing to R3 using the floating static default route configured with an AD value of 5 and a next-hop of 10.10.10.2.</p>
+          <p></p>
+          <p>The output in Figure 4 confirms that traffic now flows directly between R1 and R3. </p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">These figures are based on the standard lab diagram with an additional link between router one and router three. Figure one shows the output of the "trace route" command on router one to the lan on router three taking two hops. Figure two shows serial zero zero zero and serial zero zero one on router two being shut down.  This should cause the floating static route to become the preferred route on router one.  Figure three shows the output of the "show i. p. route static" command on router one confirming that the floating static route has become the preferred route. Figure four shows the output of the "trace route" command on router one to the lan on router three taking one hop.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

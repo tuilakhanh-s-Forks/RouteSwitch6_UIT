@@ -1,0 +1,13 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+/*.space{padding-left:20px;}*/
+
+#ID_s1_txt02
+{
+background-color: #0D658B !important;	
+padding: 4px 5px 3px 5px;
+}

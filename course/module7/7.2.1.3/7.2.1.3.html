@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.1.3 Numbered Standard IPv4 ACL Examples</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Numbered Standard IPv4 ACL Examples</h1>
+        <div>
+          <p>Figure 1 shows an example of an ACL that permits a specific subnet except for a specific host on that subnet.</p>
+          <p></p>
+          <p>The first command deletes the previous version of ACL 1. The next ACL statement, denies the PC1 host located at 192.168.10.10. Every other host on the 192.168.10.0/24 network is then permitted. Again the implicit deny statement matches every other network.</p>
+          <p></p>
+          <p>The ACL is reapplied to interface S0/0/0 in an outbound direction.</p>
+          <p></p>
+          <p>Figure 2 shows an example of an ACL that denies a specific host. This ACL replaces the previous example. This example still blocks traffic from host PC1 but permits all other traffic.</p>
+          <p></p>
+          <p>The first two commands are the same as the previous example. The first command deletes the previous version of ACL 1 and the next ACL statement denies the PC1 host that is located at 192.168.10.10.</p>
+          <p></p>
+          <p>The third line is new and permits all other hosts. This means that all hosts from the 192.168.10.0/24 network will be permitted except for PC1, which was denied in the previous statement.</p>
+          <p></p>
+          <p>This ACL is applied to interface G0/0 in the inbound direction. Because the filter only affects the 192.168.10.0/24 LAN on G0/0 it is more efficient to apply the ACL to the inbound interface. The ACL could be applied to S0/0/0 in the outbound direction but then R1 would have to examine packets from all networks including 192.168.11.0/24.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description"> Figure shows the commands required to configure an A.C.L. to deny a specific host while permitting a specific subnet. The commands begin in global configuration mode. The first command removes the previous A.C.L. The command is, no access hyphen list 1. The next command is, access hyphen list 1 deny host 192 dot 168 dot 10 dot 10. The A.C.L. is configured to permit the network with the command, access hyphen list 1 permit 192 dot 168 dot 10 dot zero zero dot zero dot zero dot 255. The command moves to the WAN interface via the command, interface serial zero slash zero slash zero. Lastly the A.C.L. is applied to the interface in the outbound direction via the command, i.p. access hyphen group 1 out.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

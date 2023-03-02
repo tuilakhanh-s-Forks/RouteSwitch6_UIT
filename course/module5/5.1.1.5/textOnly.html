@@ -1,0 +1,72 @@
+
+          <p>
+            <b>Step 1. Configure Management Interface</b>
+          </p>
+          <p></p>
+          <p>An IPv4 address and subnet mask is configured on the management SVI of the switch from VLAN interface configuration mode. As shown in Figure 1, the <b>interface vlan 99 </b>command is used to enter interface configuration mode. The <b>ip address </b>command is used to configure the IPv4 address. The<b> no shutdown </b>command enables the interface. In this example, VLAN 99 is configured with IPv4 address 172.17.99.11. </p>
+          <p></p>
+          <p>The SVI for VLAN 99 will not appear as "up/up" until VLAN 99 is created and there is a device connected to a switch port associated with VLAN 99. To create a VLAN with the vlan_id of 99, and associate it to an interface, use the following commands: </p>
+          <p></p>
+          <p>
+            <span class="cmd">S1(config)#</span>
+            <span class="cmd">
+              <b> vlan </b>
+            </span>
+            <span class="cmd">
+              <i>vlan_id</i>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">S1(config-vlan)#</span>
+            <span class="cmd">
+              <b> name </b>
+            </span>
+            <span class="cmd">
+              <i>vlan_name</i>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">S1(config-vlan)#</span>
+            <span class="cmd">
+              <b> exit</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">S1(config)#</span>
+            <span class="cmd">
+              <b> interface </b>
+            </span>
+            <span class="cmd">
+              <i>interface_id </i>
+            </span>
+            <span class="cmd">
+              <b></b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">S1(config-if)#</span>
+            <span class="cmd">
+              <b></b>
+            </span>
+            <span class="cmd">
+              <b>switchport access vlan </b>
+            </span>
+            <span class="cmd">
+              <i>vlan_id</i>
+            </span>
+          </p>
+          <p></p>
+          <p>
+            <b>Step 2. Configure Default Gateway </b>
+          </p>
+          <p></p>
+          <p>The switch should be configured with a default gateway if it will be managed remotely from networks that are not directly connected. The default gateway is the router to which the switch is connected. The switch will forward its IP packets with destination IP addresses outside the local network to the default gateway. As shown in Figure 2, R1 is the default gateway for S1. The interface on R1 connected to the switch has the IPv4 address 172.17.99.1. This address is the default gateway address for S1.</p>
+          <p></p>
+          <p>To configure the default gateway for the switch, use the<b> ip default-gateway </b>command. Enter the IPv4 address of the default gateway. The default gateway is the IPv4 address of the router interface to which the switch is connected. Use the<b> copy running-config startup-config </b>command to back up your configuration.</p>
+          <p></p>
+          <p>
+            <b>Step 3. Verify Configuration</b>
+          </p>
+          <p></p>
+          <p>As shown in Figure 3, the<b> show ip interface brief </b>command is useful when determining the status of both physical and virtual interfaces. The output shown confirms that interface VLAN 99 has been configured with an IPv4 address and subnet mask.</p>
+        

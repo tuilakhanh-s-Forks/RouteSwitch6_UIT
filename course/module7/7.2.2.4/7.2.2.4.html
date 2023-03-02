@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.2.4 Verifying ACLs</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verifying ACLs</h1>
+        <div>
+          <p>As shown in Figure 1, the <b>show ip interface</b> command is used to verify the ACL on the interface. The output from this command includes the number or name of the access list and the direction in which the ACL was applied. The output shows router R1 has the access list 1 applied to its S0/0/0 outbound interface and the access list NO_ACCESS applied to its g0/0 interface, also in the outbound direction.</p>
+          <p></p>
+          <p>The example in Figure 2 shows the result of issuing the <b>show access-lists</b> command on router R1. To view an individual access list use the <b>show access-lists</b> command followed by the access list number or name. The NO_ACCESS statements may look strange. Notice that sequence number 15 is displayed prior to sequence number 10. This is a result of the router’s internal process and will be discussed later in this section.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the use of the command, show i.p. interface, to display any A.C.L.s applied.  The figure shows the output from the command, show i.p. interface serial zero slash zero slash zero. The following line is highlighted, outgoing access list is 1.  The command is run again for the gigabit Ethernet interface and the output lists outgoing access list is no underscore access list, which is a named A.C.L. Figure two shows the output from the command, show access hyphen lists.  This will display the full contents of all A.C.L’s on a router, but doesn’t specify where each A.C.L. is placed.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

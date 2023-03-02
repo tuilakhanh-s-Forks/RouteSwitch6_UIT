@@ -1,0 +1,33 @@
+
+          <p>There are three types of NAT translation: </p>
+          <p>
+            <ul>
+              <li>
+                <b>Static address translation (static NAT) </b>- One-to-one address mapping between local and global addresses.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Dynamic address translation (dynamic NAT) </b>- Many-to-many address mapping between local and global addresses. Translations are made on an as-available basis; for example, if there are 100 inside local addresses and 10 inside global addresses, then at any given time only 10 of the 100 inside local addresses can be translated. This limitation of dynamic NAT makes it much less useful for production networks than port address translation.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Port Address Translation (PAT) </b>- Many-to-one address mapping between local and global addresses. This method is also known as overloading (NAT overloading). For example, if there are 100 inside local addresses and 10 inside global addresses, PAT uses ports as an additional parameter to provide a multiplier effect, making it possible to reuse any one of the 10 inside global addresses up to 65,536 times (depending on whether the flow is based on UDP, TCP, or ICMP).</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Static NAT</b>
+          </p>
+          <p></p>
+          <p>Static NAT uses a one-to-one mapping of local and global addresses. These mappings are configured by the network administrator and remain constant.</p>
+          <p></p>
+          <p>In the figure, R2 is configured with static mappings for the inside local addresses of Svr1, PC2, and PC3. When these devices send traffic to the Internet, their inside local addresses are translated to the configured inside global addresses. To outside networks, these devices have public IPv4 addresses.</p>
+          <p></p>
+          <p>Static NAT is particularly useful for web servers or devices that must have a consistent address that is accessible from the Internet, such as a company web server. It is also useful for devices that must be accessible by authorized personnel when offsite, but not by the general public on the Internet. For example, a network administrator from PC4 can SSH to Svr1’s inside global address (209.165.200.226). R2 translates this inside global address to the inside local address and connects the administrator’s session to Svr1. </p>
+          <p></p>
+          <p>Static NAT requires that enough public addresses are available to satisfy the total number of simultaneous user sessions.</p>
+        

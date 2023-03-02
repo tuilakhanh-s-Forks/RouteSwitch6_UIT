@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+		<slide type="MBAR">
+		<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+		<element type="TEXT" id="ID_static_1" text="2001:DB8:ACAD:2::/64" bold="1" x="380" y="92" align="center" width="72.35" />
+    	<element type="TEXT" id="ID_static_2" text="2001:DB8:ACAD:4::/64" bold="1" x="175" y="230" align="center" width="72.35" />
+    	<element type="TEXT" id="ID_static_3" text="2001:DB8:ACAD:5::/64" bold="1" x="390" y="230" align="center" width="78.95" />
+    	<element type="TEXT" id="ID_static_4" text="2001:DB8:ACAD:1::/64" bold="1" x="80" y="317" align="center" width="72.35" />
+    	<element type="TEXT" id="ID_static_5" text="2001:DB8:ACAD:3::/64" bold="1" x="480" y="317" align="center" width="78.95" />
+		<element type="TEXT" id="ID_static_6" text="G0/0" x="311" y="148" align="center" width="25.65" />
+		<element type="TEXT" id="ID_static_7" text="S0/0/1 DCE" x="371" y="194.55" align="left" width="34.05" />
+		<element type="TEXT" id="ID_static_8" text="S0/0/0" x="282.3" y="198.7" align="center" width="35.85" />
+		<element type="TEXT" id="ID_static_9" text="S0/0/1" x="347" y="260" align="center" width="34.05" />
+		<element type="TEXT" id="ID_static_10" text="G0/0" x="231" y="275.2" align="center" width="25.65" />
+		<element type="TEXT" id="ID_static_11" text="G0/0" x="427.05" y="274.4" align="center" width="25.65" />
+		<element type="TEXT" id="ID_static_12" text="S0/0/0 DCE" x="303" y="260.5" align="right" width="35.85" />
+		<element type="TEXT" id="ID_static_13" text=":1" x="282" y="256.6" align="center" width="7.55" />
+		<element type="TEXT" id="ID_static_14" text=":1" x="248" y="291.5" align="center" width="7.55" />
+		<element type="TEXT" id="ID_static_15" text=":2" x="328" y="205.95" align="center" width="9.2" />
+		<element type="TEXT" id="ID_static_16" text=":2" x="347" y="205.95" align="center" width="9.2" />
+		<element type="TEXT" id="ID_static_17" text=":1" x="345" y="148" align="center" width="7.55" />
+		<element type="TEXT" id="ID_static_18" text=":1" x="391" y="256" align="center" width="7.55" />
+		<element type="TEXT" id="ID_static_19" text=":1" x="426" y="291.2" align="center" width="7.55" />
+	<slide> 
+		<element type="TEXT" subType="TITLE" compId="ID_s1_title" />
+		<element type="IMAGE" src="media_2.2.3.2.png" x="0" y="0" width="680" height="490"/>		
+		<element type="ROUTER" textId="Router_s1_txt01" x="40" y="335" width="600" height="144" size="11"/>		
+	</slide>
+
+
+	<slide>
+		<element type="TEXT" subType="TITLE" compId="ID_s2_title" />
+		<element type="IMAGE" src="media_2.2.3.2_s2.png" x="0" y="0" width="680" height="490"/>		
+		<element type="ROUTER" textId="Router_s2_txt01" x="40" y="335" width="600" height="144" size="11"/>
+	</slide>
+
+
+	<slide>
+		<element type="TEXT" subType="TITLE" compId="ID_s3_title" />
+		<element type="IMAGE" src="media_2.2.3.2_s3.png" x="0" y="0" width="680" height="490"/>		
+		<element type="ROUTER" textId="Router_s3_txt01" x="40" y="335" width="600" height="144" size="11"/>	
+	</slide>
+
+
+	<slide> 
+		<element type="TEXT" subType="TITLE" compId="ID_s4_title" />
+		<element type="IMAGE" src="media_2.2.3.2.png" x="0" y="0" width="680" height="490"/>		
+		<element type="ROUTER" textId="ID_s4_txt01" x="40" y="335" width="600" height="144" size="11" />		
+	</slide>
+
+
+	<slide>
+		<element type="TEXT" subType="TITLE" compId="ID_s5_title" /> 
+		<element type="IMAGE" src="media_2.2.3.2.png" x="0" y="0" width="680" height="490"/>		
+		<element type="ROUTER" textId="ID_s5_txt01" x="40" y="335" width="600" height="144" size="11"/>
+	</slide>
+			
+		</slide>
+	<text id="staticTxt2"><![CDATA[G0/0.<br/>1]]></text>
+	<text id="staticTxt3"><![CDATA[.1<br/>G0/1]]></text>
+	<text id="staticTxt5"><![CDATA[.225<br/>S0/0/0]]></text>
+	<text id="Router_s1_txt01"><![CDATA[<pre>R1# show ipv6 route 
+
+&lt;output omitted&gt;
+
+C   2001:DB8:ACAD:1::/64 [0/0]
+     via GigabitEthernet0/0, directly connected
+L   2001:DB8:ACAD:1::1/128 [0/0]
+     via GigabitEthernet0/0, receive
+C   2001:DB8:ACAD:4::/64 [0/0]
+     via Serial0/0/0, directly connected
+L   2001:DB8:ACAD:4::1/128 [0/0]
+     via Serial0/0/0, receive
+L   FF00::/8 [0/0]
+     via Null0, receive
+R1#
+</pre>]]></text>
+
+<text id="Router_s2_txt01"><![CDATA[<pre>R2# show ipv6 route
+
+&lt;output omitted&gt;
+
+C   2001:DB8:ACAD:2::/64 [0/0]
+     via GigabitEthernet0/0, directly connected
+L   2001:DB8:ACAD:2::1/128 [0/0]
+     via GigabitEthernet0/0, receive
+C   2001:DB8:ACAD:4::/64 [0/0]
+     via Serial0/0/0, directly connected
+L   2001:DB8:ACAD:4::2/128 [0/0]
+     via Serial0/0/0, receive
+C   2001:DB8:ACAD:5::/64 [0/0]
+     via Serial0/0/1, directly connected
+L   2001:DB8:ACAD:5::2/128 [0/0]
+     via Serial0/0/1, receive
+L   FF00::/8 [0/0]
+     via Null0, receive
+R2#
+</pre>]]></text>
+<text id="Router_s3_txt01"><![CDATA[<pre>R3# show ipv6 route
+ 
+&lt;output omitted&gt;
+
+C   2001:DB8:ACAD:3::/64 [0/0]
+     via GigabitEthernet0/0, directly connected
+L   2001:DB8:ACAD:3::1/128 [0/0]
+     via GigabitEthernet0/0, receive
+C   2001:DB8:ACAD:5::/64 [0/0]
+     via Serial0/0/1, directly connected
+L   2001:DB8:ACAD:5::1/128 [0/0]
+     via Serial0/0/1, receive
+L   FF00::/8 [0/0]
+     via Null0, receive
+R3#
+</pre>]]></text>
+<text id="ID_s4_txt01"><![CDATA[<pre>R1# ping ipv6 2001:DB8:ACAD:4::2
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 2001:DB8:ACAD:4::2,
+timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), 
+round-trip min/avg/max = 12/30/96 ms
+R1#</pre>]]></text>
+<text id="ID_s5_txt01"><![CDATA[<pre>R1# ping ipv6 2001:DB8:ACAD:3::1
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 2001:DB8:ACAD:3::1, 
+timeout is 2 seconds:
+
+% No valid route for destination
+Success rate is 0 percent (0/1)
+R1#</pre>]]></text>
+
+</data>

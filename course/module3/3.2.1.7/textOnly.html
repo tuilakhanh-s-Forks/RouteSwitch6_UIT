@@ -1,0 +1,21 @@
+
+          <p>Refer to Figure 1. In this scenario, R1 is the edge router, single-homed to a service provider. Therefore, all that is required for R1 to reach the Internet is a default static route going out of the Serial 0/0/1 interface. </p>
+          <p></p>
+          <p>Similar default static routes could be configured on R2 and R3, but it is much more scalable to enter it one time on the edge router R1 and then have R1 propagate it to all other routers using RIP. To provide Internet connectivity to all other networks in the RIP routing domain, the default static route needs to be advertised to all other routers that use the dynamic routing protocol. </p>
+          <p></p>
+          <p>To propagate a default route in RIP, the edge router must be configured with:</p>
+          <p>
+            <ul>
+              <li>A default static route using the<b> ip route 0.0.0.0 0.0.0.0 </b>command.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The<b> default-information originate </b>router configuration command. This instructs R1 to originate default information, by propagating the static default route in RIP updates.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The example in Figure 2 configures a fully-specified default static route to the service provider and then the route is propagated by RIP. Notice that R1 now has a Gateway of Last Resort and default route installed in its routing table.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to verify that the default route has been propagated to R2 and R3.</p>
+        

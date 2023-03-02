@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.1.2 Video Demonstration - MAC Address Tables on Connected Switches</title>
+    <!-- Activity / Other / Flash PnC -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Video Demonstration - MAC Address Tables on Connected Switches</h1>
+        <div>
+          <p>Switches use MAC addresses to direct network communications through the switch, to the appropriate port, toward the destination. A switch is made up of integrated circuits and the accompanying software that controls the data paths through the switch. For a switch to know which port to use to transmit a frame, it must first learn which devices exist on each port. As the switch learns the relationship of ports to devices, it builds a table called a MAC address, or content addressable memory (CAM) table.  CAM is a special type of memory used in high-speed searching applications.</p>
+          <p></p>
+          <p>LAN switches determine how to handle incoming data frames by maintaining the MAC address table. A switch builds its MAC address table by recording the MAC address of each device connected to each of its ports. The switch uses the information in the MAC address table to send frames destined for a specific device out the port which has been assigned to that device.</p>
+          <p></p>
+          <p>The following two-step process is performed on every Ethernet frame that enters a switch.</p>
+          <p></p>
+          <p>
+            <b>Step 1. Learn – Examining the Source MAC Address</b>
+          </p>
+          <p></p>
+          <p>Every frame that enters a switch is checked for new information to learn. It does this by examining the frame’s source MAC address and port number where the frame entered the switch:</p>
+          <p>
+            <ul>
+              <li>If the source MAC address does not exist, it is added to the table along with the incoming port number. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>If the source MAC address does exist, the switch updates the refresh timer for that entry. By default, most Ethernet switches keep an entry in the table for five minutes.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: If the source MAC address does exist in the table but on a different port, the switch treats this as a new entry. The entry is replaced using the same MAC address, but with the more current port number.</p>
+          <p></p>
+          <p>
+            <b>Step 2. Forward – Examining the Destination MAC Address</b>
+          </p>
+          <p></p>
+          <p>If the destination MAC address is a unicast address, the switch will look for a match between the destination MAC address of the frame and an entry in its MAC address table:</p>
+          <p>
+            <ul>
+              <li>If the destination MAC address is in the table, it will forward the frame out the specified port.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>If the destination MAC address is not in the table, the switch will forward the frame out all ports except the incoming port. This is called an unknown unicast. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: If the destination MAC address is a broadcast or a multicast, the frame is also flooded out all ports except the incoming port.</p>
+          <p></p>
+          <p>Click Play in the figure to view a demonstration of how two connected switches build MAC address tables.</p>
+          <p></p>
+          <p>Click <a href="../../files/4.2.1.2%20Video%20Slides%20-%20MAC%20Address%20Tables%20on%20Connected%20Switches.pdf" target="_blank">here</a> to download video slides from the demonstration.</p>
+          <p></p>
+          <p>Click <a href="../../files/4.2.1.2%20Video%20-%20MAC%20Address%20Tables%20on%20Connected%20Switches.pdf" target="_blank">here</a> to read the transcript of this video.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" src="media/index.html" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows three p.c.s. Each p.c. is connected to one switch. A frame is being sent from one p.c. into the switch. Figure two shows three p.c.s. Each p.c. is connected to one switch. A frame is being sent from p.c. 1 into the switch. Text in the figure states that the switch M.A.C. table has created a new entry indicating Port 1 has learned the M.A.C. address of P.C. 1, and all other ports are empty. Figure three shows a switch forwarding a frame out ports 2 and 3 to p.c. 3 and p.c. 2. The switch does not know the mac addresses for p.c. 3 and p.c. 2.Figure four shows P.C. 3 responding by sending a frame to the switch. Figure five shows that a switch has processed a frame it received from P.C. 3. The mac address tab now contains the mac address for p.c. 3. Figure six shows a frame being returned to P.C. 1 from the switch.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

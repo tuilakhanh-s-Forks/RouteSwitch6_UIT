@@ -1,0 +1,26 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#router_text1 span{
+color:#f26200;
+font-weight:bold;
+
+
+}
+
+#router_text1{
+	overflow: hidden !important;
+}
+
+#router_text2 span{
+color:#f26200;
+font-weight:bold;
+
+
+}
+
+#router_text2{
+	overflow: hidden !important;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.4.2 Verify Router DHCPv6 Configuration</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.4.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verify Router DHCPv6 Configuration</h1>
+        <div>
+          <p>The router configurations for stateless and stateful DHCPv6 services have many similarities but also include significant differences. Figure 1 shows the configuration commands for both types of DHCPv6 services.</p>
+          <p></p>
+          <p>
+            <b>Stateful DHCPv6 </b>
+          </p>
+          <p></p>
+          <p>A router configured for stateful DHCPv6 services has the <b>address prefix</b> command to provide addressing information.</p>
+          <p>For stateful DHCPv6 services the <b>ipv6 nd managed-config-flag</b> interface configuration mode command is used. In this instance, the client ignores the addressing information in the RA message and communicates with a DHCPv6 server for both addressing and other information.</p>
+          <p></p>
+          <p>
+            <b>Stateless DHCPv6</b>
+          </p>
+          <p></p>
+          <p>For stateless DHCPv6 services the <b>ipv6 nd other-config-flag</b> interface configuration mode command is used. This informs the device to use SLAAC for addressing information and a stateless DHCPv6 server for other configuration parameters.</p>
+          <p></p>
+          <p>The <b>show ipv6 interface</b> command can be used to view the current configuration to determine the allocation method. As shown in Figure 2, the last line of the output indicates how clients obtain addresses and other parameters.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one lists the commands used to configure stateful d.h.c.p.v.6 services on a router.  The example begins in global configuration mode and the commands are as follows.  The first command is, i.p.v.6. unicast hyphen routing.  The next command is, d.h.c.p. pool i.p.v.6.  hyphen stateful.  The next command is, address prefix 2 0 0 1 colon d b 8 colon c a f e colon 1 colon colon slash 64 lifetime infinite.  The next command is, d.n.s. hyphen server 2 0 0 1 colon d b 8 colon c a f e colon a a a a colon colon 5.  The next command is, domain hyphen name example dot com.  The d.h.c.p.v.6. pool has been configured and the next set of commands bind the pool to the interface.  The C.L.I. in the example moves to the local interface first with the command, exit. The exit command is then followed by the command, interface g zero slash one.  The next command is, i.p.v.6. address 2 0 0 1 colon d b 8 colon c a f e colon 1 colon colon 1 slash 64.  The next command is, d.h.c.p. pool i.p.v.6.  hyphen stateful .  The last command is, i.p.v.6. n.d. managed hyphen config hyphen flag.  The address prefix command and the i.p.v.6. n.d. managed command are highlighted to signify that these commands are specific to stateful configuration.  The figure also lists the commands to configure stateless d.h.c.p.v.6. services.  The example begins in global configuration mode and the commands are as follows.  The first command is, i.p.v.6. unicast hyphen routing.  The next command is, d.h.c.p. pool i.p.v.6. hyphen stateless.  The next command is, d.n.s. hyphen server 2 0 0 1 colon d b 8 colon c a f e colon a a a a colon colon 5.  The next command is, domain hyphen name example dot com.  The d.h.c.p.v.6. pool has been configured and the next set of commands bind the pool to the interface.  The C.L.I. in the example moves to the local interface first with the command, exit. The exit command is then followed by the command, interface g zero slash one.  The next command is, i.p.v.6. address 2 0 0 1 colon d b 8 colon c a f e colon 1 colon colon 1 slash 64.  The next command is, d.h.c.p. pool i.p.v.6. hyphen stateless.  The last command is, i.p.v.6. n.d. other hyphen config hyphen flag.  The command i.p.v.6. n.d. other hyphen config hyphen flag is highlighted in the figure to signify it as being specific to stateless d.h.c.p.v.6. configuration. Figure two shows the output for three different configurations when running the command, show i.p.v.6. interface, on a specific router interface.  The first output is for S.L.A.A.C., and the figure highlights the line that states “hosts use stateless autoconfig for address”.  The next output is for stateless d.h.c.p.v.6., and the figure highlights the line that states “hosts use d.h.c.p. to obtain other configuration”.  The third output is for stateful d.h.c.p.v.6. and the figure highlights the line that states “hosts use d.h.c.p. to obtain routable addresses”.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

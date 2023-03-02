@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+	<data>		
+
+		<slide>	
+			<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+			<element type="TEXT" subType="TITLE" compId="ID_title" color="#fff"/>
+			<element type="ROUTER" textId="ID_router_txt1" x="40" y="82.95" width="600" height="292" />	
+			<element type="TEXT" compId="ID_txt01" x="47.35" y="313.85" width="104" expand="right" align="left" color="#fff"/>
+		</slide>
+	
+		
+		
+		
+<text id="ID_router_txt1"><![CDATA[
+<pre>R1# <b>debug ipv6 dhcp detail</b>
+   IPv6 DHCP debugging is on (detailed)
+R1# 
+*Feb  3 21:27:41.123: <span class="orangecolor">IPv6 DHCP: Received SOLICIT from FE80::32F7:DFF:FE25:2DE1</span> on
+GigabitEthernet0/1
+*Feb  3 21:27:41.123: IPv6 DHCP: detailed packet contents
+*Feb  3 21:27:41.123:   src FE80::32F7:DFF:FE25:2DE1 (GigabitEthernet0/1)
+*Feb  3 21:27:41.127:   dst FF02::1:2
+*Feb  3 21:27:41.127:   type SOLICIT(1), xid 13190645
+*Feb  3 21:27:41.127:   option ELAPSED-TIME(8), len 2
+*Feb  3 21:27:41.127:     elapsed-time 0
+*Feb  3 21:27:41.127:   option CLIENTID(1), len 10
+*Feb  3 21:27:41.127:     000
+*Feb  3 21:27:41.127: <span class="orangecolor">IPv6 DHCP: Using interface pool IPV6-STATEFUL</span>
+*Feb  3 21:27:41.127: <span class="orangecolor">IPv6 DHCP: Creating binding for FE80::32F7:DFF:FE25:2DE1 
+in pool IPV6-STATEFUL</span>
+</pre>
+]]></text>
+
+
+
+
+
+		
+	</data>
+
+
+

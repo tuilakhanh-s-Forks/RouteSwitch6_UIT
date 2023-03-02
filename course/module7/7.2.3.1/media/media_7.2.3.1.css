@@ -1,0 +1,7 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+#router_text{padding:2px 0 0 2px ! important;}

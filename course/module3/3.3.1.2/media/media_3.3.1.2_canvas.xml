@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+            <element type="ROUTER" textId="ID_router_txt1" x="40" y="55" width="600" height="400" />
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="media_3.3.1.2.png" />
+            <element type="TEXT" textId="ID_router_txt2" x="158.05" y="154.45" width="432" height="26.2" />
+            <element type="TEXT" compId="ID_s2_txt01" x="120" y="127" width="75" expand="up" align="center" />
+            <element type="TEXT" compId="ID_s2_txt02" x="192" y="127" width="221" expand="up" align="center" />
+            <element type="TEXT" compId="ID_s2_txt03" x="436" y="127" width="111" expand="up" align="center" />
+            <element type="TEXT" compId="ID_s2_txt04" x="93" y="299" width="502" expand="down" align="left" />
+            <element type="TEXT" compId="ID_s2_txt05" x="93" y="330" width="502" expand="down" align="left" />
+            <element type="TEXT" compId="ID_s2_txt06" x="93" y="359" width="502" expand="down" align="left" />
+            <element type="TEXT" compId="ID_txt07" x="55" y="268" width="301" expand="right" align="left" />
+        </slide>
+    </slide>
+    <text id="ID_router_txt1">
+        <![CDATA[
+<pre>R1# show ip route | begin Gateway
+Gateway of last resort is 209.165.200.234 to network 0.0.0.0
+
+S*    0.0.0.0/0 [1/0] via 209.165.200.234
+      172.16.0.0/16 is variably subnetted, 5 subnets, 2 masks
+<span class="color">C        172.16.1.0/24 is directly connected, GigabitEthernet0/0
+L        172.16.1.1/32 is directly connected, GigabitEthernet0/0</span>
+R        172.16.2.0/24 [120/1] via 209.165.200.226, 00:00:21, Serial0/0/0
+R        172.16.3.0/24 [120/2] via 209.165.200.226, 00:00:21, Serial0/0/0
+R        172.16.4.0/28 [120/2] via 209.165.200.226, 00:00:21, Serial0/0/0
+R     192.168.0.0/16 [120/2] via 209.165.200.226, 00:00:16, Serial0/0/0
+      209.165.200.0/24 is variably subnetted, 5 subnets, 2 masks
+<span class="color">C        209.165.200.224/30 is directly connected, Serial0/0/0
+L        209.165.200.225/32 is directly connected, Serial0/0/0</span>
+R        209.165.200.228/30 [120/1] via 209.165.200.226, 00:00:21, Serial0/0/0
+<span class="color">C        209.165.200.232/30 is directly connected, Serial0/0/1
+L        209.165.200.233/32 is directly connected, Serial0/0/1</span>
+R1#</pre>
+]]>
+    </text>
+    <text id="ID_router_txt2">
+        <![CDATA[
+ <pre>C     <span class="space">172.16.1.0/24 is directly connected,   GigabitEthernet0/0</span>
+L     <span class="space">172.16.1.1/32 is directly connected,   GigabitEthernet0/0</span></pre>
+]]>
+    </text>
+</data>

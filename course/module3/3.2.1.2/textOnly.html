@@ -1,0 +1,22 @@
+
+          <p>By entering the RIP router configuration mode, the router is instructed to run RIPv1. But the router still needs to know which local interfaces it should use for communication with other routers, as well as which locally connected networks it should advertise to those routers.  </p>
+          <p></p>
+          <p>To enable RIP routing for a network, use the<b> network </b><i>network-address </i>router configuration mode command. Enter the classful network address for each directly connected network. This command:</p>
+          <p>
+            <ul>
+              <li>Enables RIP on all interfaces that belong to a specific network. Associated interfaces now both send and receive RIP updates.  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Advertises the specified network in RIP routing updates sent to other routers every 30 seconds. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: RIPv1 is a classful routing protocol for IPv4. Therefore,  if a subnet address is entered, the IOS automatically converts it to the classful network address.  For example, entering the<b> network 192.168.1.32 </b>command would automatically be converted to<b> network 192.168.1.0 </b>in the running configuration file. The IOS does not give an error message, but instead corrects the input and enters the classful network address.  </p>
+          <p></p>
+          <p>In Figure 1, the<b> network </b>command is used to advertise the R1 directly connected networks.  </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 2 to configure a similar configuration on R2 and R3.</p>
+        

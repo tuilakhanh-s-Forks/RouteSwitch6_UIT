@@ -1,0 +1,32 @@
+
+          <p>The terms, inside and outside, are combined with the terms local and global to refer to specific addresses. In the figure, router R2 has been configured to provide NAT. It has a pool of public addresses to assign to inside hosts. </p>
+          <p>
+            <ul>
+              <li>
+                <b>Inside local address</b> - The address of the source as seen from inside the network. In the figure, the IPv4 address 192.168.10.10 is assigned to PC1. This is the inside local address of PC1. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Inside global address</b> - The address of source as seen from the outside network. In the figure, when traffic from PC1 is sent to the web server at 209.165.201.1, R2 translates the inside local address to an inside global address. In this case, R2 changes the IPv4 source address from 192.168.10.10 to 209.165.200.226. In NAT terminology, the inside local address of 192.168.10.10 is translated to the inside global address of 209.165.200.226. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Outside global address</b> - The address of the destination as seen from the outside network. It is a globally routable IPv4 address assigned to a host on the Internet. For example, the web server is reachable at IPv4 address 209.165.201.1. Most often the outside local and outside global addresses are the same.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Outside local address</b> - The address of the destination as seen from the inside network. In this example, PC1 sends traffic to the web server at the IPv4 address 209.165.201.1. While uncommon, this address could be different than the globally routable address of the destination.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The figure shows how traffic is addressed that is sent from an internal PC to an external web server, across the NAT-enabled router. It also shows how return traffic is initially addressed and translated.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The use of the outside local address is outside the scope of this course. </p>
+        

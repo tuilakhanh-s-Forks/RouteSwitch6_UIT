@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+        <slide>
+            <element type="ROUTER" textId="ID_router_txt1" x="40" y="55" width="600" height="400" />
+            <element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#FFFFFF"  />
+        </slide>
+        <slide>
+            <element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#FFFFFF" />
+            <element type="ACTIVITY" subType="SYNTAX" compId="ID_s2_SC5" x="25" y="45" width="630" height="400" resetId="ID_sc_reset" showMeId="ID_sc_showme" showAllId="ID_sc_showall" />
+        </slide>
+    </slide>
+    <text id="ID_router_txt1">
+        <![CDATA[<code>R1# <b>terminal history size 200</b>
+R1#
+R1# <b>show history</b>
+  show ip interface brief 
+  show interface g0/0
+  show ip interface g0/1
+  show ip route
+  show ip route 209.165.200.224
+  show running-config interface s0/0/0
+  terminal history size 200
+  show history
+R1#
+<pre>	]]></text>
+</data>

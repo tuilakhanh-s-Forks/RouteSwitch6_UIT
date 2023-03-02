@@ -1,0 +1,121 @@
+﻿
+<textcomponents>
+
+<component id="ID_s1_title">
+	<text><![CDATA[<font size="17"><b>Activity - Frame Forwarding Methods</b></font>]]></text>
+</component>
+
+<component id="MCTable_title">
+	<text><![CDATA[Description]]></text>
+</component>
+
+<component id='ID_instr_title'>
+	<text><![CDATA[Instruction]]></text>
+</component>
+
+<component id='ID_instr_body'>
+	<text><![CDATA[Descriptions of switch frame forwarding methods are provided in the table. Click in the Store-and-Forward or Cut-Through fields to match the methods to the descriptions.]]></text>
+</component>
+
+
+<!-- buttons -->
+<component id="ID_s1_CHECK">
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id="ID_s1_RESET">
+	<text><![CDATA[Reset]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[6]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[2]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>Store-and-Forward</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>Cut-Through</b>]]></text>
+</component>
+
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+
+<component id="txt_q1">
+	<text><![CDATA[Buffers frames until the full frame has been received by the switch.]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[Checks the frame for errors before releasing it out of its switch ports if the full frame was not received, the switch discards it.]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[No error checking on frames is performed by the switch before releasing the frame out of its ports.]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[A great method to use to conserve bandwidth on your network.]]></text>
+</component>
+
+<component id="txt_q5">
+	<text><![CDATA[The destination Network Interface Card (NIC) discards any incomplete frames using this frame forwarding method.]]></text>
+</component>
+
+<component id="txt_q6">
+	<text><![CDATA[The faster switching method, but may produce more errors in data integrity therefore, more bandwidth may be consumed.]]></text>
+</component>
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a5">
+	<text><![CDATA[2s]]></text>
+</component>
+
+<component id="txt_a6">
+	<text><![CDATA[2]]></text>
+</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[<font size="17">Correct</font>]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[You have sucessfully matched the description to the correct frame forwarding technique.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[<font size="17">Incorrect</font>]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[You have not sucessfully matched the description to the correct frame forwarding technique. Click the Reset button and try again.]]></text>
+</component>
+
+</textcomponents>

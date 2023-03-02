@@ -1,0 +1,24 @@
+
+          <p>Trunking issues are usually associated with incorrect configurations. When configuring VLANs and trunks on a switched infrastructure, the following types of configuration errors are the most common:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Native VLAN mismatches</b> - Trunk ports are configured with different native VLANs. This configuration error generates console notifications, and can cause inter-VLAN routing issues, among other problems. This poses a security risk. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Trunk mode mismatches</b> - One trunk port is configured in a mode that is not compatible for trunking on the corresponding peer port. This configuration error causes the trunk link to stop working. Be sure both sides of the trunk are configured with the <b>switchport mode trunk</b> command. Other trunk configuration commands are beyond the scope of this course.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Allowed VLANs on trunks </b>- The list of allowed VLANs on a trunk has not been updated with the current VLAN trunking requirements. In this situation, unexpected traffic (or no traffic) is being sent over the trunk.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>If an issue with a trunk is discovered and if the cause is unknown, start troubleshooting by examining the trunks for a native VLAN mismatch. If that is not the cause, check for trunk mode mismatches, and finally check for the allowed VLAN list on the trunk. The next two pages examine how to fix the common problems with trunks. </p>
+        

@@ -1,0 +1,22 @@
+
+          <p>Static routing has three primary uses: </p>
+          <p>
+            <ul>
+              <li>Providing ease of routing table maintenance in smaller networks that are not expected to grow significantly.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Routing to and from stub networks. A stub network is a network accessed by a single route, and the router has only one neighbor.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Using a single default route to represent a path to any network that does not have a more specific match with another route in the routing table. Default routes are used to send traffic to any destination beyond the next upstream router.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The figure shows an example of a stub network connection and a default route connection. Notice in the figure that any network attached to R1 would only have one way to reach other destinations, whether to networks attached to R2, or to destinations beyond R2. This means that network 172.16.3.0 is a stub network and R1 is a stub router.  </p>
+          <p></p>
+          <p>In this example, a static route can be configured on R2 to reach the R1 LAN. Additionally, because R1 has only one way to send out non-local traffic, a default static route can be configured on R1 to point to R2 as the next hop for all other networks. </p>
+        

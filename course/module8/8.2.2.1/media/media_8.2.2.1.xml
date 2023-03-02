@@ -1,0 +1,33 @@
+<textcomponents>
+<!--Slide 1-->
+<component id="ID_s1_title">
+<text><![CDATA[<b>Configuring Stateless DHCPv6 on a Router</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+   <text><![CDATA[<b>Step 1:</b> Enable IPv6 Routing]]></text>
+   </component>
+<component id="ID_s1_txt02">
+   <text><![CDATA[<b>Step 2:</b> Configure a DHCPv6 Pool]]></text>
+   </component>
+<component id="ID_s1_txt03">
+   <text><![CDATA[<b>Step 3:</b> Configure Pool Parameters]]></text>
+   </component>
+<component id="ID_s1_txt04">
+   <text><![CDATA[<b>Step 4:</b> Configure the DHCPv6 Interface]]></text>
+   </component>
+
+
+<!--Slide 2-->
+<component id="ID_s2_title">
+<text><![CDATA[<b>Configuring Router R1 as Stateless DHCPv6 Server</b>]]></text>
+</component>
+<component id="ID_s2_txt01">
+   <text><![CDATA[<b>DHCPv6 Stateless Server</b>]]></text>
+   </component>
+<component id="ID_s2_txt02">
+   <text><![CDATA[<b>DHCPv6 Client</b>]]></text>
+   </component>
+
+
+
+</textcomponents>

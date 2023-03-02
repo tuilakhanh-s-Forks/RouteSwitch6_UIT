@@ -1,0 +1,9 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#s1_staticTxt1 span{
+color:#f26200;
+
+}

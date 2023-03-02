@@ -1,0 +1,32 @@
+<textcomponents>
+<component id="ID_title">
+   <text><![CDATA[<b>Benefits of VLANs</b>]]></text>
+   </component>
+
+<component id="ID_txt01">
+   <text><![CDATA[<textformat blockindent="-14"><li>Improved Security</li><li>Reduced Cost</li><li>Better Performance</li><li>Smaller Broadcast Domains</li><li>IT Efficiency</li><li>Management Efficiency</li><li>Simpler Project and Application Management</li></textformat>]]></text>
+   </component>
+
+<component id="ID_txt02">
+   <text><![CDATA[Guest<br/>VLAN 30<br/>172.17.30.26/24]]></text>
+   </component>
+<component id="ID_txt03">
+   <text><![CDATA[Guest<br/>VLAN 30<br/>172.17.30.23/24]]></text>
+   </component>
+<component id="ID_txt04">
+   <text><![CDATA[Student<br/>VLAN 20<br/>172.17.20.25/24]]></text>
+   </component>
+<component id="ID_txt05">
+   <text><![CDATA[Student<br/>VLAN 20<br/>172.17.20.22/24]]></text>
+   </component>
+<component id="ID_txt06">
+   <text><![CDATA[Faculty<br/>VLAN 10<br/>172.17.10.24/24]]></text>
+   </component>
+<component id="ID_txt07">
+   <text><![CDATA[Faculty<br/>VLAN 10<br/>172.17.10.21/24]]></text>
+   </component>
+<component id="ID_txt08">
+   <text><![CDATA[Gateway<br/>VLAN 30<br/>172.17.30.1/24]]></text>
+   </component>   
+</textcomponents>
+

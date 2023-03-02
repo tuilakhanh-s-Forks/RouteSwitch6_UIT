@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+<slide type="MBAR">
+	<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<slide>
+	<element type="ROUTER" textId="ID_router_txt1" x="40" y="55" width="600" height="400" />
+	<element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#FFFFFF" />	
+</slide>
+<slide>
+	<element type="ROUTER" textId="ID_router_txt2" x="40" y="55" width="600" height="400" />
+	<element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#FFFFFF" />
+</slide>
+
+</slide>
+<text id="ID_router_txt1" ><![CDATA[<pre>R2# <b>show ip nat translations</b> 
+Pro Inside global         Inside local        Outside local      Outside global
+tcp <font class="extra">209.165.200.226:51839</font> 192.168.10.10:51839 209.165.201.1:80   209.165.201.1:80
+tcp <font class="extra">209.165.200.226:42558</font> 192.168.11.10:42558 209.165.202.129:80 209.165.202.129:80
+R2#
+</pre>]]></text>
+
+<text id="ID_router_txt2" ><![CDATA[<pre>R2# <b>clear ip nat statistics</b>
+
+R2# <b>show ip nat statistics</b>
+Total active translations: 2 (0 static, <font class="extra">2 dynamic; 2 extended)</font>
+Peak translations: 2, occurred 00:00:05 ago
+Outside interfaces:
+  Serial0/0/1
+Inside interfaces: 
+  Serial0/1/0
+Hits: 4  Misses: 0
+CEF Translated packets: 4, CEF Punted packets: 0
+Expired translations: 0
+Dynamic mappings:
+-- Inside Source
+[Id: 3] access-list 1 pool NAT-POOL2 refcount 2
+<font class="extra">pool NAT-POOL2:</font> netmask 255.255.255.224
+     <font class="extra">start 209.165.200.226 end 209.165.200.240</font>
+     type generic, total addresses 15, <font class="extra">allocated 1 </font>(6%), misses 0
+
+Total doors: 0
+Appl doors: 0
+Normal doors: 0
+Queued Packets: 0
+R2#
+</pre>]]></text>
+ 
+</data>

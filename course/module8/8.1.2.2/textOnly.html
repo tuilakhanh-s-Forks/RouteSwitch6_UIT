@@ -1,0 +1,15 @@
+
+          <p>The topology shown in Figure 1 is used in the example output. In this example, R1 has been configured to provide DHCPv4 services. PC1 has not been powered up and, therefore, does not have an IP address. </p>
+          <p></p>
+          <p>As shown in Figure 2, the<b> show running-config | section dhcp </b>command output displays the DHCPv4 commands configured on R1. The <b>| section </b>parameter displays only the commands associated with DHCPv4 configuration.</p>
+          <p></p>
+          <p>As shown in Figure 3, the operation of DHCPv4 can be verified using the <b>show ip dhcp binding </b>command. This command displays a list of all IPv4 address to MAC address bindings that have been provided by the DHCPv4 service. The second command in Figure 3, <b>show ip dhcp server statistics</b>, is used to verify that messages are being received or sent by the router. This command displays count information regarding the number of DHCPv4 messages that have been sent and received.</p>
+          <p></p>
+          <p>As seen in the output for these commands, currently there are no bindings and the statistics indicate no messages sent or received. At this point no devices have requested DHCPv4 services from router R1.</p>
+          <p></p>
+          <p>In Figure 4, the commands are issued after PC1 and PC2 have been powered on and have completed the booting process.</p>
+          <p></p>
+          <p>Notice that the binding information now displays that the IPv4 addresses of 192.168.10.10 and 192.168.11.10 have been bound to MAC addresses. The statistics are also displaying DHCPDISCOVER, DHCPREQUEST, DHCPOFFER, and DHCPACK activity.</p>
+          <p></p>
+          <p>As shown in Figure 5, the<b> ipconfig /all</b> command, when issued on PC1, displays the TCP/IP parameters. Because PC1 was connected to the network segment 192.168.10.0/24, it automatically received a DNS suffix, IPv4 address, subnet mask, default gateway, and DNS server address from that pool. No DHCP-specific router interface configuration is required. If a PC is connected to a network segment that has a DHCPv4 pool available, the PC can obtain an IPv4 address from the appropriate pool automatically.</p>
+        

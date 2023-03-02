@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.3.4 Configure Router-on-a-Stick: Verifying Subinterfaces</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configure Router-on-a-Stick: Verifying Subinterfaces</h1>
+        <div>
+          <p>By default, Cisco routers are configured to route traffic between local subinterfaces. As a result, routing does not specifically need to be enabled.</p>
+          <p></p>
+          <p>In Figure 1, the <b>show vlan</b> command displays information about the Cisco IOS VLAN subinterfaces. The output shows the two VLAN subinterfaces, GigabitEthernet0/0.10 and GigabitEthernet0/0.30.</p>
+          <p></p>
+          <p>Examine the routing table using the<span class="cmd"><b></b></span><b>show ip route</b><span class="cmd"><b></b></span>command (Figure 2). In the example, the routes defined in the routing table indicate that they are associated with specific subinterfaces, rather than separate physical interfaces. There are two routes in the routing table. One route is to the 172.17.10.0 subnet, which is attached to the local subinterface G0/0.10. The other route is to the 172.17.30.0 subnet, which is attached to the local subinterface G0/0.30. The router uses this routing table to determine where to send the traffic it receives. For example, if the router received a packet on subinterface G0/0.10 destined for the 172.17.30.0 subnet, the router would identify that it should send the packet out subinterface G0/0.30 to reach hosts on the 172.17.30.0 subnet.</p>
+          <p></p>
+          <p></p>
+          <p>Use the Syntax Checker, in Figure 3, to configure and verify router-on-a-stick on R1.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output of the command, show v.lans, from the perspective of a router that has been configured for router-on-a-stick inter-v.lan routing. Figure two shows the output of the ip routing table from the perspective of a router that has been configured for router-on-a-stick inter-v.lan routing. Figure three is a syntax checker that demonstrates the process of creating sub-interfaces, setting the encapsulation, and activating the physical interfaces on a router which is being used for router-on-a-stick inter-v.lan routing.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

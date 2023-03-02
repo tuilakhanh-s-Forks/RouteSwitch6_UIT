@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+<slide>
+			<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+        <element type="IMAGE" src="media_6.3.3.5.png" width="680" height="490" x="0" y="0" />
+        <element type="TEXT" subType="TITLE" compId="ID_title" />
+        <element type="TEXT" id="ID_static_1" text="G0/0" x="306" y="104" align="center" width="26" />
+        <element type="TEXT" id="ID_static_6" text="F0/5" x="306" y="135" align="center" width="23" />
+        <element type="TEXT" compId="ID_txt01" x="149" y="84" width="106" expand="up" align="center" />
+        <element type="TEXT" id="ID_static_2" text="F0/11" x="302" y="196.5" align="center" width="28" />
+        <element type="TEXT" compId="ID_txt03" x="143" y="144" width="103" expand="up" align="center" class="orangeCallOut" />
+        <element type="TEXT" id="ID_static_4" text="172.17.10.21" x="217" y="277" align="center" width="67" bold="1" />
+        <element type="TEXT" id="ID_static_3" text="F0/6" x="344" y="196.5" align="center" width="23" />
+        <element type="TEXT" compId="ID_txt04" x="429" y="144" width="116" expand="up" align="center" class="purpleCallOut" />
+        <element type="TEXT" id="ID_static_5" text="172.17.30.23" x="380" y="277" align="center" width="68" bold="1" />
+        <element type="TEXT" compId="ID_txt02" x="458" y="55" width="190" expand="down" align="center" />
+<element type="ROUTER" textId="ID_s1_txt01" x="40" y="303" width="600" height="170" />
+
+			
+	
+</slide>
+
+<text id="ID_s1_txt01"><![CDATA[<table width="425" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="2"><span class="col"><b>PC1</b>&gt;</span> <strong>ping 172.17.30.23</strong></td>
+  </tr>
+  <tr>
+    <td width="21">&nbsp;</td>
+    <td width="379">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2">Pinging 172.17.30.23 with 32 bytes of data:</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2">Reply from 172.17.30.23: bytes=32 time=17ms TTL=127</td>
+  </tr>
+  <tr>
+    <td colspan="2">Reply from 172.17.30.23: bytes=32 time=15ms TTL=127</td>
+  </tr>
+  <tr>
+    <td colspan="2">Reply from 172.17.30.23: bytes=32 time=18ms TTL=127</td>
+  </tr>
+  <tr>
+    <td colspan="2">Reply from 172.17.30.23: bytes=32 time=19ms TTL=127</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2">Ping statistics for 172.17.30.23:</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),</td>
+  </tr>
+  <tr>
+    <td colspan="2">Approximate round trip times in milli-seconds:</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>Minimum = 15ms, Maximum = 19ms, Average = 17ms</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2"><span class="col"><b>PC1</b>&gt;</span> <strong>tracert 172.17.30.23</strong></span></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2">Tracing route to 172.17.30.23 over a maximum of 30 hops: </td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="13%">1</td>
+        <td width="19%">9 ms </td>
+        <td width="19%">7 ms</td>
+        <td width="19%">9 ms</td>
+        <td width="30%">172.17.10.1</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>16 ms </td>
+        <td>15 ms</td>
+        <td>16 ms</td>
+        <td>172.17.30.23</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2">Trace complete.</td>
+  </tr>
+</table>]]></text>
+
+
+</data>

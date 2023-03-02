@@ -1,0 +1,11 @@
+/*   load the main media CSS file    */
+@import url('../../../common/styles/media2.css');
+
+#txt1{font-size:10px ! important;font-weight:bold ! important;}
+#txt2{font-size:10px ! important;font-weight:bold ! important;}
+#txt3{font-size:10px ! important;}
+#txt4{font-size:11px ! important;color:#fff ! important;font-weight:bold ! important;}
+#static_text {letter-spacing:-0.5px !important;}
+#static_text1 {letter-spacing:-0.5px !important;}
+
+

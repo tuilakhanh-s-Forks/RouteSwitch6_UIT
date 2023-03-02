@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        	<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+        <slide>
+        	<element type="IMAGE" src="media_1.1.2.6_s1.png" x="0" y="0" width="680" height="490" />
+
+        	<element type="IMAGE" src="media_1.1.2.6A.png" x="468.9" y="121.95" width="76.8" height="76.8" />
+			<element type="IMAGE" src="media_1.1.2.6B.png" x="464.9" y="259.95" width="76.8" height="76.8" />
+            <element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#FFFFFF"/>
+            <element type="TEXT" compId="ID_s1_header1" x="130" y="81" width="72.4" expand="up+down" align="center" size="10" color="#ffffff" />
+            <element type="TEXT" compId="ID_s1_header2" x="207" y="81" width="134.1" expand="up+down" align="center" size="10" color="#ffffff" />
+            <element type="TEXT" compId="ID_s1_header3" x="345" y="81" width="102.7" expand="up+down" align="center" size="10" color="#ffffff" />
+            <element type="TEXT" compId="ID_s1_header4" x="452" y="81" width="98.5" expand="up+down" align="center" size="10" color="#ffffff" />
+            <element type="TEXT" compId="ID_s1_txt01" x="129" y="149" width="72.75" expand="up+down" align="center" size="10" />
+            <element type="TEXT" compId="ID_s1_txt03" x="208" y="149" width="130.1" expand="up+down" align="left" size="10" />
+            <element type="TEXT" compId="ID_s1_txt06" x="345" y="202" width="102.7" expand="up+down" align="center" size="10" />
+            <element type="TEXT" compId="ID_s1_txt08" x="452" y="197" width="102.1" expand="down" align="center" size="10" />
+            <element type="TEXT" compId="ID_s1_txt02" x="129" y="301" width="72.75" expand="up+down" align="center" size="10" />
+            <element type="TEXT" compId="ID_s1_txt04" x="207" y="206" width="134.1" expand="down" align="left" size="10" />
+            <element type="TEXT" compId="ID_s1_txt05" x="207" y="314" width="134.1" expand="down" align="left" size="10" />
+            <element type="TEXT" compId="ID_s1_txt07" x="345" y="355" width="102.7" expand="up+down" align="center" size="10" />
+            <element type="TEXT" compId="ID_s1_txt09" x="452" y="340" width="102.1" expand="down" align="center" size="10" />
+        </slide>
+        <slide>
+        	<element type="IMAGE" src="media_1.1.2.6_s2.png" x="0" y="0" width="680" height="490" />
+        	<element type="IMAGE" src="media_1.1.2.6_s2F.png" x="127.85" y="112.9" width="74.3" height="48.65" />
+			<element type="IMAGE" src="media_1.1.2.6_s2G.png" x="226.35" y="113.8" width="92.3" height="61.35" />
+			<element type="IMAGE" src="media_1.1.2.6_s2A.png" x="343.95" y="158.85" width="104" height="88.05" />
+			<element type="IMAGE" src="media_1.1.2.6_s2B.png" x="128.1" y="274" width="73.85" height="53.8" />
+			<element type="IMAGE" src="media_1.1.2.6_s2E.png" x="343.9" y="313" width="103.85" height="44.15" />
+			<element type="IMAGE" src="media_1.1.2.6_s2D.png" x="207.2" y="208.15" width="67.15" height="32.9" />
+			<element type="IMAGE" src="media_1.1.2.6_s2G.png" x="275.9" y="205.35" width="64.6" height="42.9" />
+			<element type="IMAGE" src="media_1.1.2.6_s2C.png" x="205.5" y="313" width="135.5" height="48.8" />
+			<element type="IMAGE" src="media_1.1.2.6A.png" x="468.9" y="121.95" width="76.8" height="76.8" />
+			<element type="IMAGE" src="media_1.1.2.6B.png" x="464.9" y="259.95" width="76.8" height="76.8" />
+            <element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#FFFFFF"/>
+            <element type="TEXT" compId="ID_s2_header1" x="130" y="81" width="72.4" expand="up+down" align="center" size="10" color="#ffffff" />
+            <element type="TEXT" compId="ID_s2_header2" x="207" y="81" width="134.1" expand="up+down" align="center" size="10" color="#ffffff" />
+            <element type="TEXT" compId="ID_s2_header3" x="345" y="81" width="102.7" expand="up+down" align="center" size="10" color="#ffffff" />
+            <element type="TEXT" compId="ID_s2_header4" x="452" y="81" width="98.5" expand="up+down" align="center" size="10" color="#ffffff" />
+            <element type="TEXT" compId="ID_s2_txt01" x="129" y="161" width="70.15" expand="down" align="center" size="10" />
+            <element type="TEXT" compId="ID_s2_txt03" x="207" y="175" width="134.1" expand="down" align="center" size="10" />
+            <element type="TEXT" compId="ID_s2_txt06" x="345" y="248" width="102.7" expand="down" align="center" size="10" />
+            <element type="TEXT" compId="ID_s2_txt08" x="452" y="197" width="102.1" expand="down" align="center" size="10" />
+            <element type="TEXT" compId="ID_s2_txt02" x="130" y="329" width="70.85" expand="down" align="center" size="10" />
+            <element type="TEXT" compId="ID_s2_txt04" x="207" y="250" width="68.45" expand="down" align="center" size="10" />
+            <element type="TEXT" compId="ID_s2_txt04A" x="277" y="250" width="62.55" expand="down" align="center" size="10" />
+            <element type="TEXT" compId="ID_s2_txt05" x="208" y="362" width="131.6" expand="down" align="left" size="10" />
+            <element type="TEXT" compId="ID_s2_txt07" x="345" y="360" width="102.7" expand="down" align="center" size="10" />
+            <element type="TEXT" compId="ID_s2_txt09" x="452" y="340" width="102.1" expand="down" align="center" size="10" />
+        </slide>
+    </slide>
+</data>

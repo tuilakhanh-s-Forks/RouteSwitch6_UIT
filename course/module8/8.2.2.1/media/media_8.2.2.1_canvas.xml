@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide type="MBAR">
+		<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_8.2.2.1.png" />
+<element type="TEXT" compId="ID_s1_txt01" x="42" y="103" width="593" expand="down" align="left" />
+<element type="TEXT" compId="ID_s1_txt02" x="42" y="204" width="593" expand="down" align="left" />
+<element type="TEXT" compId="ID_s1_txt03" x="44" y="306" width="593" expand="down" align="left" color="#0" />
+<element type="TEXT" compId="ID_s1_txt04" x="45" y="424" width="593" expand="down" align="left" />
+
+
+<element type="TEXT" textId="ID_static_1" x="45" y="84" width="244" height="26.8" />
+<text id="ID_static_1"><![CDATA[<pre>Router(config)<b># ipv6 unicast-routing</b></pre>]]></text>
+<!-- <element type="TEXT" id="ID_static_1" text="Router(config)# ipv6 unicast-routing" x="45" y="84" align="center" width="244" /> -->
+<element type="TEXT" textId="ID_router_txt1" x="45" y="173" width="287" height="37.95" />
+<text id="ID_router_txt1"><![CDATA[<pre>Router(config)<b># ipv6 dhcp pool</b> pool-name</br>Router(config-dhcpv6)<b>#</b></pre>]]></text>
+<element type="TEXT" textId="ID_router_txt2" x="45" y="274" width="366" height="26.8" />
+<text id="ID_router_txt2"><![CDATA[<pre>Router(config-dhcpv6)<b># dns-server</b>dns-server-address</br>Router(config-dhcpv6)<b># domain-name </b>domain-name</pre>]]></text>
+<element type="TEXT" textId="ID_router_txt3" x="45" y="375.95" width="320" height="41.55" />
+<text id="ID_router_txt3"><![CDATA[<pre>Router(config)<b># interface</b>type number</br>Router(config-if)<b># ipv6 dhcp server</b> pool-name</br>Router(config-if)<b># ipv6 nd other-config-flag</b></pre>]]></text>
+<element type="TEXT" subType="TITLE" compId="ID_s1_title"/>
+</slide>
+
+
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_8.2.2.1B.png" />
+<element type="ROUTER" textId="ID_router_txt4" x="40" y="254" width="600" height="175" />
+<text id="ID_router_txt4"><![CDATA[<pre>R1(config)# ipv6 unicast-routing</br>R1(config)# ipv6 dhcp pool IPV6-STATELESS</br>R1(config-dhcpv6)# dns-server 2001:db8:cafe:aaaa::5</br>R1(config-dhcpv6)# domain-name example.com</br>R1(config-dhcpv6)# exit</br>R1(config)# interface g0/1</br>R1(config-if)# ipv6 address 2001:db8:cafe:1::1/64</br>R1(config-if)# ipv6 dhcp server IPV6-STATELESS</br>R1(config-if)# ipv6 nd other-config-flag</pre>]]></text>
+<element type="TEXT" id="ID_static_2" text="G0/1" x="214" y="143" align="center" width="24" />
+<element type="TEXT" id="ID_static_3" text="G0/1" x="440" y="143" align="center" width="24" />
+<element type="TEXT" compId="ID_s2_txt01" x="110" y="167" width="155" expand="down" align="center" />
+<element type="TEXT" compId="ID_s2_txt02" x="421" y="167" width="150" expand="down" align="center" />
+<element type="TEXT" subType="TITLE" compId="ID_s2_title"/>
+</slide>
+
+  </slide>
+</data>

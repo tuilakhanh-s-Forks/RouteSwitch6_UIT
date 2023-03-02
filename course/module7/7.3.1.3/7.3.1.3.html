@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.1.3 Cisco IOS Reorders Standard ACLs </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Cisco IOS Reorders Standard ACLs </h1>
+        <div>
+          <p>The order in which standard ACEs are entered may not be the order that they are stored, displayed, or processed by the router.</p>
+          <p>Figure 1 shows the configuration of a standard access list. Range statements that deny three networks are configured first followed by five host statements. The host statements are all valid statements because their host IPv4 addresses are not part of the previously entered range statements.</p>
+          <p></p>
+          <p>The <b>show running-config</b> command is used to verify the ACL configuration. Notice that the statements are listed in a different order than they were entered. We will use the <b>show access-lists</b> command to understand the logic behind this.</p>
+          <p></p>
+          <p>As shown in Figure 2, the <b>show access-lists</b> command displays ACEs along with their sequence numbers. We might expect the order of the statements in the output to reflect the order in which they were entered. However, the <b>show access-lists</b> output shows that this is not the case.</p>
+          <p></p>
+          <p>The order in which the standard ACEs are listed is the sequence used by the IOS to process the list. Notice that the statements are grouped into two sections, host statements followed by range statements. The sequence number indicates the order that the statement was entered, not the order the statement will be processed.</p>
+          <p></p>
+          <p>The host statements are listed first but not necessarily in the order that they were entered. The IOS puts host statements in an order using a special hashing function. The resulting order optimizes the search for a host ACL entry. The range statements are displayed after the host statements. These statements are listed in the order in which they were entered.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The hashing function is only applied to host statements in an IPv4 standard access list. The details of the hashing function are beyond the scope of this course.</p>
+          <p></p>
+          <p>Recall that standard and numbered ACLs can be edited using sequence numbers. When inserting a new ACL statement, the sequence number will only affect the location of a range statement in the list. Host statements will always be put in order using the hashing function.</p>
+          <p></p>
+          <p>Continuing with the example, after saving the running-configuration, the router is reloaded. As shown in Figure 2, the <b>show access-lists</b> command displays the ACL in the same order, however the statements have been renumbered. The sequence numbers are now in numerical order.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the contents of an A.C.L. that first denies three network range addresses, and then specifically allows five host i.p. addresses.  When the command, show running hyphen config, is run the A.C.L. statements are placed in the following order: the five permit host entries are first, followed by the three deny range statements.  Figure two shows the output from the command, show access hyphen list 1.  This output lists the five permit host entries first, and then the three deny range statements.  Each statement retains its original sequence number as entered.  The figure continues with saving the configuration file, rebooting the router, and then displays the configuration file.  The A.C.L. is still ordered with the host entries first followed by the network ranges, but now the sequence numbers have been rewritten to match the order.  This shows that the router changes the order and the sequence number in order to maximize efficiency.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

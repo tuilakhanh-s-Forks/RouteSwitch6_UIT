@@ -1,0 +1,11 @@
+
+          <p>Using the <b>show</b> commands described earlier reveals most of the more common ACL errors. The most common errors are entering ACEs in the wrong order and not specifying adequate ACL rules. Other common errors include applying the ACL using the wrong direction, the wrong interface, or the wrong source addresses. </p>
+          <p></p>
+          <p>
+            <b>Security Policy</b>: PC2 should not be able to access the File Server.</p>
+          <p></p>
+          <p>In Figure 1, although PC2 cannot access the File Server, neither can PC1. When viewing the output of the <b>show access-list</b> command, only PC2 is explicitly denied. However, there is no permit statement allowing other access. </p>
+          <p></p>
+          <p>
+            <b>Solution</b>: All access out the G0/0 interface to the 192.168.30.0/24 LAN is currently implicitly denied. Add a statement to ACL 10 to permit all other traffic, as shown in Figure 2. PC1 should now be able to access the file server. Output from the <b>show access-list</b> command verifies that a ping from PC1 to the File Server matches the permit any statement.</p>
+        

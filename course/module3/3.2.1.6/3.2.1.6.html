@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.1.6 Configure Passive Interfaces</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.1.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configure Passive Interfaces</h1>
+        <div>
+          <p>By default, RIP updates are forwarded out all RIP-enabled interfaces. However, RIP updates really only need to be sent out interfaces that are connected to other RIPenabled routers.  </p>
+          <p></p>
+          <p>For instance, refer to the topology in Figure 1. RIP sends updates out of its G0/0 interface even though no RIP device exists on that LAN.  R1 has no way of knowing this and, as a result, sends an update every 30 seconds. Sending out unneeded updates on a LAN impacts the network in three ways:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Wasted Bandwidth </b>- Bandwidth is used to transport unnecessary updates. Because RIP updates are either broadcasted or multicasted, switches also forward the updates out all ports.  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Wasted Resources </b>- All devices on the LAN must process the update up to the transport layers, at which point the devices will discard the update. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Security Risk </b>- Advertising updates on a broadcast network is a security risk. RIP updates can be intercepted with packet sniffing software.  Routing updates can be modified and sent back to the router, corrupting the routing table with false metrics that misdirect traffic. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Use the<b> passive-interface </b>router configuration command to prevent the transmission of routing updates through a router interface, but still allow that network to be advertised to other routers. The command stops routing updates out the specified interface. However, the network that the specified interface belongs to is still advertised in routing updates that are sent out other interfaces.  </p>
+          <p></p>
+          <p>There is no need for R1, R2, and R3 to forward RIP updates out of their LAN interfaces. The configuration in Figure 2 identifies the R1 G0/0 interface as passive. The<b> show ip protocols </b>command is then used to verify that the Gigabit Ethernet interface was passive. Notice that the G0/0 interface is no longer listed as sending or receiving version 2 updates, but instead is now listed under the Passive Interface(s) section. Also notice that the network 192.168.1.0 is still listed under Routing for Networks, which means that this network is still included as a route entry in RIP updates that are sent to R2. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: All routing protocols support the<b> passive-interface </b>command.  </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to configure the LAN interface as a passive interface on R2 and R3.</p>
+          <p></p>
+          <p>As an alternative, all interfaces can be made passive using the<b> passive-interface default </b>command. Interfaces that should not be passive can be re-enabled using the<b> no passive-interface </b>command.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows three routers connected linearly through WAN links.  R1 is connected to R2 through a serial WAN link, and it has a LAN on its gigabit-Ethernet interface.  R2 is connected to both R1 and R3 through serial WAN links, and also has a LAN on its gigabit-Ethernet interface.  R3 is only connected to R2 through a serial WAN link, and a LAN on its gigabit-Ethernet interface.  There are five different network addresses in the figure.  Figure two shows the commands required to set a passive interface.  The commands begin in global configuration mode and then enables rip routing.  The next command disables RIP updates from being sent out a specified interface, and the command used is passive hyphen interface g zero slash zero.  This is confirmed with the show i.p. protocols pipe begin Default command and the section titled Passive Interfaces is highlighted where the gigabit Ethernet zero slash zero interface is listed. Figure three is an interactive media element that allows the learner to configure rip routing and set a passive interface on a router.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

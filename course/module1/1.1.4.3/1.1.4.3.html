@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.1.4.3 Filter Show Command Output</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.1.4.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Filter Show Command Output</h1>
+        <div>
+          <p>Commands that generate multiple screens of output are, by default, paused after 24 lines. At the end of the paused output, the --More-- text displays. Pressing <b>Enter</b> displays the next line and pressing the spacebar displays the next set of lines. Use the<b> terminal length </b>command to specify the number of lines to be displayed. A value of 0 (zero) prevents the router from pausing between screens of output.</p>
+          <p></p>
+          <p>Another very useful feature that improves the user experience in the command-line interface (CLI) is the filtering of<b> show </b>output. Filtering commands can be used to display specific sections of output. To enable the filtering command, enter a pipe (<b>|</b>) character after the<b> show </b>command and then enter a filtering parameter and a filtering expression.</p>
+          <p></p>
+          <p>The filtering parameters that can be configured after the pipe include:</p>
+          <p>
+            <ul>
+              <li>
+                <b>section </b>- Shows entire section that starts with the filtering expression</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>include </b>- Includes all output lines that match the filtering expression</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>exclude </b>- Excludes all output lines that match the filtering expression</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>begin </b>- Shows all the output lines from a certain point, starting with the line that matches the filtering expression</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Output filters can be used in combination with any<b> show </b>command.</p>
+          <p></p>
+          <p>Figures 1 to 4 provide examples of the various output filters.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 5 to filter output.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows an example using filtering commands with the Cisco I.O.S.  In the example the command show running dash config pipe section line v.t.y. is entered and the result is the section of the running configuration that is for the v.t.y. lines. Figure two shows an example of using a filtering command, and it is show i.p. interface brief pipe include up.  The output lists three interfaces that are up, meaning they are active. Figure three shows an example of using a filtering command, and it is show i.p. interface brief pipe exclude unassigned.  The output lists three interfaces that are up, meaning they are active.  Noticeably missing is the fourth interface on the router that doesn’t currently have an i.p. address assigned, hence this interface address is unassigned and omitted from the output. Figure four shows an example of using a filtering command, and it is show i.p. route pipe begin Gateway.  The output lists the contents of the show i.p. route command beginning with the keyword gateway and continuing through the end of the output. Figure five is an interactive media element that allows the learner to practice using filtering commands.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.3.2 Default Logging</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Default Logging</h1>
+        <div>
+          <p>By default, Cisco routers and switches send log messages for all severity levels to the console. On some IOS versions, the device also buffers log messages by default. To enable these two settings, use the<b> logging console </b>and<b> logging buffered </b>global configuration commands, respectively. </p>
+          <p></p>
+          <p>The<b> show logging </b>command displays the default logging service settings on a Cisco router, as shown in the figure. The first lines of output list information about the logging process, with the end of the output listing log messages.</p>
+          <p></p>
+          <p>The first highlighted line states that this router logs to the console and includes debug messages. This actually means that all debug level messages, as well as any lower level messages (such as notification level messages), are logged to the console. On most Cisco IOS routers, the default severity level is 7, debugging. The output also notes that 32 such messages have been logged.</p>
+          <p></p>
+          <p>The second highlighted line states that this router logs to an internal buffer. Because this router has enabled logging to an internal buffer, the<b> show logging </b>command also lists the messages in that buffer. You can view some of the system messages that have been logged at the end of the output.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the output from the show logging command on a router.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

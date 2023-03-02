@@ -1,0 +1,20 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+#ID_txt01{
+	height:333.05px;
+	overflow:auto;
+}
+
+
+@media only screen and (device-width: 768px) {
+#ID_txt01{
+width:250px!important;
+}
+#ID_s3_title,#ID_s4_title,#ID_s5_title,#ID_s7_title{
+width:450px!important;
+}
+}

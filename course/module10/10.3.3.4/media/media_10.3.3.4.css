@@ -1,0 +1,13 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_s1_txt01{
+	background-color: #0D658B !important;
+	padding: 4px !important;
+}
+
+.orangeColor{
+	color: #F68026 !important;
+}

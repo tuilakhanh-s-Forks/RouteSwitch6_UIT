@@ -1,0 +1,15 @@
+
+          <p>To reduce the number of routing table entries, multiple static routes can be summarized into a single static route if:</p>
+          <p>
+            <ul>
+              <li>The destination networks are contiguous and can be summarized into a single network address. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The multiple static routes all use the same exit interface or next-hop IP address.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>In the figure, R1 would require four separate static routes to reach the 172.20.0.0/16 to 172.23.0.0/16 networks. Instead, one summary static route can be configured and still provide connectivity to those networks.</p>
+        

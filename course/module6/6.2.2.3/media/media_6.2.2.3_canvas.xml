@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+  <slide type="MBAR">	
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+		 
+			<slide>
+				<element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#FFFFFF" />
+					
+			    <element type="ROUTER" textId="ID_routerOutput1" x="40" y="45" width="600" height="420" />
+			    <element type="TEXT" x="48" y="440" width="150" align="left" expand="right" color="#FFFFFF" compId="ID_s1_txt01" />
+			</slide>
+
+			<slide>
+				<element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#FFFFFF" />
+				<element type="ACTIVITY" subType="SYNTAX" compId="ID_SC2" x="25" y="45" width="630" height="400" resetId="ID_sc_reset" showMeId="ID_sc_showme" showAllId="ID_sc_showall"/>
+			</slide>
+
+		
+   </slide>
+
+   <text id="ID_routerOutput1"><![CDATA[<code>S1(config)# <b>interface f0/1</b>
+S1(config-if)# <b>switchport mode trunk</b>
+S1(config-if)# <b>switchport trunk native vlan 99</b>
+S1(config-if)# <b>end</b>
+S1# <b>show interfaces f0/1 switchport</b>
+Name: Fa0/1
+Switchport: Enabled
+<span class="orangeC">Administrative Mode: trunk
+Operational Mode: trunk
+Administrative Trunking Encapsulation: dot1q
+Operational Trunking Encapsulation: dot1q</span>
+Negotiation of Trunking: On
+Access Mode VLAN: 1 (default)
+<span class="orangeC">Trunking Native Mode VLAN: 99 (VLAN0099)
+Administrative Native VLAN tagging: enabled</span>
+Voice VLAN: none
+Administrative private-vlan host-association: none 
+Administrative private-vlan mapping: none 
+Administrative private-vlan trunk native VLAN: none
+Administrative private-vlan trunk Native VLAN tagging: enabled
+Administrative private-vlan trunk encapsulation: dot1q
+Administrative private-vlan trunk normal VLANs: none
+Administrative private-vlan trunk associations: none
+Administrative private-vlan trunk mappings: none
+Operational private-vlan: none
+<span class="orangeC">Trunking VLANs Enabled: ALL</span>
+Pruning VLANs Enabled: 2-1001
+
+</code>]]></text>
+</data>

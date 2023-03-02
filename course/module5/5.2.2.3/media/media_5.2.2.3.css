@@ -1,0 +1,9 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_title{
+	color:#fff !important;
+}
+#ID_txt01{padding:5px;background-color: #0D658B;}

@@ -1,0 +1,131 @@
+<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Verification Commands</b>]]></text>
+</component>
+
+<component id="ID_s1_table01">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000'glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+<tr class="mtable_title">
+	<td colspan='2' bgcolor='#FFFFFF'><font size='12' class="font11px" color='#393536'><b>Cisco Switch IOS Commands</b></font></td>
+</tr>
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+</tr>
+<tr>
+<td bgcolor='#E9E7E8' valign="middle">Display interface status and configuration.</td>
+<td bgcolor='#E9E7E8' valign="middle" width="290"><font face="_typewriter" color="#000000">S1# <b class="command">show interfaces </b>[<i>interface-id</i>]</font></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' valign="middle">Display current startup configuration.</td>
+<td bgcolor='#F2F2F2' valign="middle"><font face="_typewriter" color="#000000">S1# <b class="command">show startup-config</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#E9E7E8' valign="middle">Display current operating config.</td>
+<td bgcolor='#E9E7E8' valign="middle"><font face="_typewriter" color="#000000">S1# <b class="command">show running-config</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' valign="middle"> Display information about flash file system.</td>
+<td bgcolor='#F2F2F2' valign="middle"><font face="_typewriter" color="#000000">S1# <b class="command">show flash</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#E9E7E8' valign="middle">Display system hardware and software status.</td>
+<td bgcolor='#E9E7E8' valign="middle"><font face="_typewriter" color="#000000">S1# <b class="command">show version</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' valign="middle">Display history of commands entered.</td>
+<td bgcolor='#F2F2F2' valign="middle"><font face="_typewriter" color="#000000">S1# <b class="command">show history</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#E9E7E8' valign="middle">Display IP information about an interface.</td>
+<td bgcolor='#E9E7E8' valign="middle"><font face="_typewriter" color="#000000">S1# <b class="command">show ip </b>[<i>interface-id</i>]</font></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' valign="middle">Display the MAC address table.</td>
+<td bgcolor='#F2F2F2' valign="middle"><font face="_typewriter" color="#000000">S1# <b class="command">show mac-address-table</b></font><br/>OR<br/><font face="_typewriter" color="#000000">S1# <b class="command">show mac address-table</b></font></td>
+</tr>
+</table>]]></text>
+</component>
+
+
+<component id="ID_s1_table01_html">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000'glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+<caption  class="mtable_title" colspan="2" bgcolor='#FFFFFF'>
+               <font size="12"><b>Cisco Switch IOS Commands</b></font>
+           </caption>
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+</tr>
+<tr>
+<td bgcolor='#E9E7E8' valign="middle">Display interface status and configuration.</td>
+<td bgcolor='#E9E7E8' valign="middle" width="290"><font face="_typewriter" color="#000000">S1# <b class="command">show interfaces </b>[<i>interface-id</i>]</font></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' valign="middle">Display current startup configuration.</td>
+<td bgcolor='#F2F2F2' valign="middle"><font face="_typewriter" color="#000000">S1# <b class="command">show startup-config</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#E9E7E8' valign="middle">Display current operating config.</td>
+<td bgcolor='#E9E7E8' valign="middle"><font face="_typewriter" color="#000000">S1# <b class="command">show running-config</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' valign="middle"> Display information about flash file system.</td>
+<td bgcolor='#F2F2F2' valign="middle"><font face="_typewriter" color="#000000">S1# <b class="command">show flash</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#E9E7E8' valign="middle">Display system hardware and software status.</td>
+<td bgcolor='#E9E7E8' valign="middle"><font face="_typewriter" color="#000000">S1# <b class="command">show version</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' valign="middle">Display history of commands entered.</td>
+<td bgcolor='#F2F2F2' valign="middle"><font face="_typewriter" color="#000000">S1# <b class="command">show history</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#E9E7E8' valign="middle">Display IP information about an interface.</td>
+<td bgcolor='#E9E7E8' valign="middle"><font face="_typewriter" color="#000000">S1# <b class="command">show ip </b>[<i>interface-id</i>]</font></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' valign="middle">Display the MAC address table.</td>
+<td bgcolor='#F2F2F2' valign="middle"><font face="_typewriter" color="#000000">S1# <b class="command">show mac-address-table</b></font><br/>OR<br/><font face="_typewriter" color="#000000">S1# <b class="command">show mac address-table</b></font></td>
+</tr>
+</table>]]></text>
+</component>
+
+
+
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Running Configuration</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+<component id="ID_s2_txt03">
+<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+<component id="ID_s2_txt04">
+<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+<component id="ID_s2_txt05">
+<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+<component id="ID_s3_title">
+<text><![CDATA[<b>Interface Status</b>]]></text>
+</component>
+
+<component id="ID_s3_txt01">
+<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+</textcomponents>
+
+

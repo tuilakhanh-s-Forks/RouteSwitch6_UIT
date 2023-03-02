@@ -1,0 +1,16 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+.orangeColor{
+	color: #F68026 !important;
+}
+#ID_s1_txt01,#ID_s1_txt02,#ID_s2_txt01,#ID_s2_txt02,#ID_s2_txt03{
+	background-color:#0D658B !important;
+	padding:3px !important;
+}
+
+
+#ID_router_txt1{letter-spacing:-.5px !important;}
+#ID_router_txt3,#ID_router_txt4,#ID_router_txt5{line-height:14px;}

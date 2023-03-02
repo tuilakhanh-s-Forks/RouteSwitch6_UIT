@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+            <element type="TEXT" subType="TITLE" compId="ID_s1_title" />
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="media_6.2.3.6.png" />
+            <element type="TEXT" compId="ID_s1_txt01" x="55" y="92" width="131" expand="up" align="center" />
+            
+            <element type="TEXT" id="ID_static_1" text="F0/4" x="237" y="122" align="center" width="23" />
+            <element type="TEXT" id="ID_static_2" text="F0/1" x="228" y="142" align="center" width="22" />
+            <element type="TEXT" id="ID_static_3" text="F0/1" x="166" y="216" align="center" width="22" />
+            <element type="TEXT" id="ID_static_4" text="F0/2" x="323" y="122" align="center" width="23" />
+             <element type="TEXT" compId="ID_s1_txt02" x="375" y="92" width="131" expand="up" align="center" />
+            <element type="TEXT" id="ID_static_5" text="F0/3" x="315" y="142" align="center" width="23" />
+            <element type="TEXT" compId="ID_s1_txt06" x="210" y="329" width="151" expand="up+down" align="center" class="orangeCallOut" />
+            <element type="TEXT" id="ID_static_6" text="F0/3" x="339" y="226" align="center" width="23" />
+            <element type="TEXT" id="ID_static_7" text="F0/11" x="381" y="216" align="center" width="28" />
+            <element type="TEXT" compId="ID_s1_txt03" x="468" y="161" width="101" expand="up" align="center" />
+           
+            
+           
+            
+            <element type="TEXT" id="ID_static_8" text="F0/18" x="421" y="251" align="center" width="30" />
+             <element type="TEXT" compId="ID_s1_txt04" x="451" y="304" width="90" expand="up" align="center" />
+            <element type="BUBBLE" compId="ID_s1_txt05" x="372" y="364" width="235" height="70" align="center" tailPosition="12" tailFlip="1" />
+            
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+             <element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#ffffff" />
+              <element type="TEXT" compId="ID_s2_txt01" x="45" y="55" width="583" expand="right" align="left" color="#ffffff" />
+            <element type="ROUTER" textId="ID_router_txt1" x="40" y="77" width="600" height="175" />
+             <element type="TEXT" compId="ID_s2_txt02" x="44" y="270" width="583" expand="right" align="left" color="#ffffff" />
+            <element type="ROUTER" textId="ID_router_txt2" x="40" y="292" width="600" height="145" />
+           
+           
+           
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+            <element type="TEXT" subType="TITLE" compId="ID_s3_title" color="#ffffff" />
+            <element type="TEXT" compId="ID_s3_txt01" x="45" y="55" width="583" expand="down" align="left" color="#ffffff" />
+            <element type="ROUTER" textId="ID_router_txt3" x="40" y="77" width="600" height="220" />
+            
+            
+            <element type="TEXT" compId="ID_s3_txt02" x="44" y="311" width="583" expand="down" align="left" color="#ffffff" />
+            <element type="ROUTER" textId="ID_router_txt4" x="40" y="332" width="600" height="90" />
+            
+        </slide>
+    </slide>
+    <text id="ID_router_txt1">
+        <![CDATA[<pre>S3# <b>show interfaces trunk</b>
+Port  Mode  Encapsulation  Status    Native vlan
+Fa0/3 on    802.1q         trunking  99
+Port  Vlans allowed on trunk
+<span style="width:409px" class="orangeC">Fa0/3 10,20,99</span>
+Port  Vlans allowed and active in management domain
+Fa0/3 10,20,99
+Port  Vlans in spanning tree forwarding state and not 
+pruned
+Fa0/3 10,20,99</pre>]]></text>
+    <text id="ID_router_txt2">
+        <![CDATA[<pre>S1# <b>show interfaces trunk</b>
+Port        Mode    Encapsulation  Status    Native vlan
+Fa0/1       on        802.1q       trunking      99
+Fa0/3       on        802.1q       trunking      99
+Port     Vlans allowed on trunk
+Fa0/1    10,99
+<span style="width:409px" class="orangeC">Fa0/3    10,99</span>
+…
+S1#</pre>]]></text>
+    <text id="ID_router_txt3">
+        <![CDATA[<pre>S1# <b>config terminal</b> 
+S1(config)# <b>interface f0/1</b> 
+S1(config-if)# <b>switchport trunk allowed vlan 10,20,99</b> 
+S1(config-if)# <b>interface f0/3</b> 
+S1(config-if)# <b>switchport trunk allowed vlan 10,20,99</b> 
+S1# <b>show interfaces trunk</b>
+Port        Mode   Encapsulation  Status    Native vlan
+Fa0/1       on        802.1q      trunking      99
+Fa0/3       on        802.1q      trunking      99
+Port     Vlans allowed on trunk
+<span style="width:409px" class="orangeC">Fa0/1    10,20,99
+Fa0/3    10,20,99</span>
+…</pre>]]></text>
+    <text id="ID_router_txt4">
+        <![CDATA[<pre>PC5> <b>ping 172.17.20.10</b>
+Pinging 172.17.20.10 with 32 bytes of data:
+Reply from 172.17.20.10: bytes=32 time=147ms TTL=128
+…</pre>]]></text>
+</data>

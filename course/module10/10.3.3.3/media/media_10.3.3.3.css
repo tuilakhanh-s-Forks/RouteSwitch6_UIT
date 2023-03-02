@@ -1,0 +1,15 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_s2_txt01,#ID_s3_txt01,#ID_s4_txt01
+{
+	background-color: #0D658B !important;
+	border-color: #0D658B !important;
+	padding: 5px !important;
+}
+.align
+{
+	color: #F68026 !important;
+}

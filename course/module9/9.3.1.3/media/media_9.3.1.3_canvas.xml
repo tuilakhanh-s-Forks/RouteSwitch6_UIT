@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+<slide type="MBAR">
+	<slide>
+		<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+		<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_9.3.1.3A.png" />
+<element type="TEXT" id="ID_static_1" text="209.165.202.129" x="442" y="226" align="center" width="89" />
+<element type="TEXT" id="ID_static_2" text="192.168.10.10" x="63" y="55" align="center" width="75" />
+<element type="TEXT" id="ID_static_3" text="S0/0/0" x="295" y="124" align="center" width="36" />
+<element type="TEXT" id="ID_static_4" text="S0/1/0" x="383" y="129" align="center" width="36" />
+<element type="TEXT" id="ID_static_5" text="192.168.11.10" x="58" y="231" align="center" width="75" />
+<element type="TEXT" id="ID_static_6" text=".225" x="378" y="166" align="center" width="23" />
+<element type="TEXT" id="ID_static_7" text="209.165.200.224/27" x="368" y="96" align="center" width="106" />
+<element type="TEXT" id="ID_static_8" text="209.165.201.1" x="490" y="72" align="center" width="74" />
+<element type="TEXT" id="ID_static_9" text="10.1.1.0/30" x="265" y="96" align="center" width="60" />
+<element type="TEXT" id="ID_static_10" text=".2" x="317" y="166" align="center" width="9" />
+<element type="TEXT" compId="ID_s1_txt05" x="298" y="279" width="113" expand="up+down" align="center" class="orangeCallOut" />
+<element type="TEXT" compId="ID_s1_txt02" x="430" y="158" width="94" expand="up+down" align="center" />
+<element type="TEXT" compId="ID_s1_txt01" x="197" y="146" width="89" expand="up+down" align="center" />
+<element type="TEXT" compId="ID_s1_txt03" x="205" y="322" width="286" expand="up+down" align="center" />
+<element type="TEXT" compId="ID_s1_txt07" x="563" y="107" width="55" expand="up+down" align="left" />
+<element type="TEXT" compId="ID_s1_txt08" x="563" y="184" width="55" expand="up+down" align="left" />
+<!-- <element type="TEXT" id="ID_static_11" text="R2# show ip nat translations R2#" x="51" y="366" align="center" width="191" /> -->
+<element type="ROUTER" textId="ID_s1_txt09" x="40" y="354" width="600" height="95"  />
+<text id="ID_s1_txt09">
+             <![CDATA[<pre>R2<b># show ip nat translations</b></br>R2<b>#</b></pre>]]></text>
+
+<element type="TEXT" compId="ID_s1_txt06" x="298" y="70" width="44" expand="left+right" align="center" color="#ffffff" />
+	</slide>
+	
+	<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<element type="ROUTER" textId="ID_router_txt2" x="40" y="50" width="600" height="408" />
+<text id="ID_router_txt2"><![CDATA[
+<pre>R2# <b>show ip nat statistics</b>
+Total active translations: 0 (0 static, 0 dynamic; 0 extended)
+Peak translations: 0
+<span class="orangeColor">Outside interfaces:
+  Serial0/0/0
+Inside interfaces: 
+  Serial0/1/0</span>
+Hits: 0  Misses: 0
+ 
+
+R2(config)# <b>interface serial 0/0/0</b>
+R2(config-if)# <b>no ip nat outside</b>
+R2(config-if)# <b>ip nat inside</b>
+R2(config-if)# <b>exit</b>
+R2(config)# <b>interface serial 0/0/1</b>
+R2(config-if)# <b>no ip nat inside</b>      
+R2(config-if)# <b>ip nat outside</b>
+
+</pre>
+]]></text>
+<!--<text id="ID_router_txt1"><![CDATA[<pre>R2# show ip nat statistics Total active translations: 0 (0 static, 0 dynamic; 0 extended) Peak translations: 0 Outside interfaces: Serial0/0/0 Inside interfaces: Serial0/1/0 Hits: 0 Misses: 0 R2(config)# interface serial 0/0/0 R2(config-if)# no ip nat outside R2(config-if)# ip nat inside R2(config-if)# exit R2(config)# interface serial 0/0/1 R2(config-if)# no ip nat inside R2(config-if)# ip nat outside</pre>]]></text>-->
+<element type="TEXT" compId="ID_s2_txt01" x="50" y="172" width="312" expand="right" align="left" color="#ffffff" />
+</slide>
+
+	
+	<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<element type="ROUTER" textId="ID_router_txt3" x="40" y="50" width="600" height="408" />
+<text id="ID_router_txt3"><![CDATA[
+<pre>R2# <b>show access-lists</b>
+Standard IP access list 1
+    10 permit 192.168.0.0, wildcard bits <span class="orangeColor">0.0.0.255</span>
+R2#
+
+R2(config)# <b>no access-list 1</b>
+R2(config)# <b>access-list 1 permit 192.168.0.0 0.0.255.255</b>
+</pre>
+]]></text>
+<!--<text id="ID_router_txt2"><![CDATA[<pre>R2# show access-lists Standard IP access list 1 10 permit 192.168.0.0, wildcard bits 0.0.0.255 R2# R2(config)# no access-list 1 R2(config)# access-list 1 permit 192.168.0.0 0.0.255.255</pre>]]></text>-->
+</slide>
+
+	
+	<slide>
+		<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+		<element type="TEXT" subType="TITLE" compId="ID_s4_title"/>
+		<element type="ROUTER" textId="ID_router_txt4" x="40" y="50" width="600" height="408" />
+		<text id="ID_router_txt4"><![CDATA[
+<pre>R2# <b>show ip nat statistics</b>
+Total active translations: 1 (0 static, <span class="orangeColor">1 dynamic; 1 extended)</span>
+Peak translations: 1, occurred 00:37:58 ago
+Outside interfaces:
+  Serial0/0/1
+Inside interfaces: 
+  Serial0/1/0
+<span class="orangeColor">Hits: 20</span>  Misses: 0
+CEF Translated packets: 20, CEF Punted packets: 0
+Expired translations: 1
+Dynamic mappings:
+-- Inside Source
+[Id: 5] access-list 1 pool NAT-POOL2 refcount 1
+ pool NAT-POOL2: netmask 255.255.255.224
+start 209.165.200.226 end 209.165.200.240
+type generic, total addresses 15, <span class="orangeColor">allocated 1</span> (6%), misses 0
+<span id="ID_s4_txt01"></span> 
+R2# <b>show ip nat translations</b> 
+Pro Inside global      Inside local      Outside local     Outside global
+icmp 209.165.200.226:38 192.168.10.10:38 209.165.201.1:38  209.165.201.1:38
+R2#
+</pre>
+]]></text>
+	
+	</slide>
+	
+</slide>
+	
+
+
+
+
+
+
+
+</data>

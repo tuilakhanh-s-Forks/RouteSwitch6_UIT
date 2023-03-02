@@ -1,0 +1,16 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_bubble04{
+background-color: #FFFFFF;
+padding-top: 5px !important;
+padding-bottom: 5px !important;
+box-shadow: 1px 1px 1px 1px #888888;
+}
+
+#ID_frame02,#ID_frame01,#ID_frame03{
+	 text-shadow: 1px 0px 0px #ffffff , 0px 2px 0px #ffffff, 2px 0px 0px #ffffff, 
+  0px -1px 0px #ffffff, 1px 4px 5px #ffffff;
+}

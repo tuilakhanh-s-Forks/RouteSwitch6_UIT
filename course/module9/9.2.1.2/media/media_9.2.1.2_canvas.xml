@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide>
+		<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+		<element type="IMAGE" x="0" y="0" width="680" height="490"  src="media_9.2.1.2.png" />
+<element type="TEXT" compId="ID_s1_table01_html" x="90" y="350" width="600" height="140" />
+<element type="TEXT" id="ID_static_7" text="192.168.10.254" x="64" y="175" align="center" width="82" />
+<element type="TEXT" id="ID_static_8" text="209.165.200.254" x="525" y="175" align="center" width="89" />
+<element type="TEXT" compId="ID_txt01" x="178" y="79" width="105" expand="up+down" align="center" />
+<element type="TEXT" compId="ID_txt02" x="396" y="79" width="105" expand="up+down" align="center" />
+<element type="TEXT" compId="ID_txt04" x="409" y="124" width="77" expand="up+down" align="center" />
+<element type="TEXT" compId="ID_txt03" x="44" y="158" width="116" expand="up+down" align="center" />
+<element type="TEXT" compId="ID_txt05" x="510" y="158" width="104" expand="up+down" align="center" />
+<element type="TEXT" id="ID_static_9" text="SA 192.168.10.254" x="142" y="284" align="center" class="glow" width="74" bold="1" />
+<element type="TEXT" id="ID_static_10" text="DA 192.168.10.254" x="229" y="215" align="center" class="glow" bold="1" width="74" />
+<element type="TEXT" id="ID_static_11" text="DA 209.165.201.5" x="447" y="215" align="center"  class="glow" bold="1" width="69" />
+<element type="TEXT" id="ID_static_12" text="SA 209.165.201.5" x="366" y="283" align="center" class="glow" bold="1" width="69" />
+
+<element type="TEXT" subType="TITLE" compId="ID_title"/>
+	</slide>
+</data>

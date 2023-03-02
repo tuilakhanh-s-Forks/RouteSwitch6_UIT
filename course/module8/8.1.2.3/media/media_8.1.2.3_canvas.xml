@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+	<data>		
+		<slide type="MBAR">	
+		<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_8.1.2.3a.png" />
+<element type="TEXT" id="ID_static_1" text="192.168.10.0/24" x="149.8" y="233.25" align="center" width="85.95" />
+<element type="TEXT" id="ID_static_2" text="192.168.11.0/24" x="342.75" y="233.25" align="center" width="85.95" />
+<element type="TEXT" id="ID_static_3" text="192.168.30.0/24" x="477.75" y="233.25" align="center" width="85.95" />
+<element type="TEXT" id="ID_static_4" text="S0/0/0" x="379.75" y="88.4" align="center" width="35.85" />
+<element type="TEXT" id="ID_static_5" text="S0/0/1" x="470.75" y="88.4" align="center" width="34.05" />
+<element type="TEXT" id="ID_static_6" text="S0/0/0" x="328.8" y="124.15" align="center" width="35.85" />
+<element type="TEXT" id="ID_static_7" text="10.1.1.1/30" x="366.75" y="143.15" align="center" width="59.5" />
+<element type="TEXT" id="ID_static_8" text="G0/0" x="277.3" y="166.05" align="center" width="25.65" />
+<element type="TEXT" id="ID_static_9" text="G0/1 .1" x="343.75" y="174.15" align="center" width="23.85" />
+<element type="TEXT" id="ID_static_10" text="S0/0/1" x="552.75" y="124.15" align="center" width="34.05" />
+<element type="TEXT" id="ID_static_11" text="G0/0" x="572.75" y="175.15" align="center" width="25.65" />
+<element type="TEXT" id="ID_static_12" text=".1" x="269.5" y="179.05" align="center" width="7.55" />
+<element type="TEXT" compId="ID_s1_txt04" x="448" y="405" width="74.35" expand="down" align="center" />
+<element type="TEXT" compId="ID_s1_txt03" x="367" y="405" width="79.4" expand="down" align="center" />
+<element type="BUBBLE" compId="ID_s1_txt01" x="124" y="106" width="198.1" height="50" align="center" tailPosition="4" tailFlip="1" />
+<element type="BUBBLE" compId="ID_s1_txt02" x="34" y="337" width="162.95" height="80" align="center" tailPosition="3" tailFlip="0" />
+<element type="TEXT" subType="TITLE" compId="ID_s1_title"/>
+</slide>
+
+
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<element type="ROUTER" textId="ID_router_txt1" x="40" y="63" width="600" height="355" />
+<element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#fff"/>
+</slide>
+
+
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<element type="ROUTER" textId="ID_router_txt2" x="40" y="63" width="600" height="355" />
+
+<element type="TEXT" compId="ID_s3_txt01" x="49" y="215" width="104.5" expand="right" align="left" color="#ffffff" />
+<element type="TEXT" subType="TITLE" compId="ID_s3_title" color="#fff"/>
+</slide>
+
+
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<element type="ROUTER" textId="ID_router_txt3" x="40" y="63" width="600" height="355" />
+
+<element type="TEXT" subType="TITLE" compId="ID_s4_title" color="#fff"/>
+</slide>
+
+
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_8.1.2.3.png" />
+<element type="ACTIVITY" subType="SYNTAX" compId="ID_s5_SC5" x="40" y="45" width="600" height="400" resetId="ID_sc_reset" showMeId="ID_sc_showme" showAllId="ID_sc_showall"/>
+<element type="TEXT" subType="TITLE" compId="ID_s5_title" color="#fff"/>
+</slide>	
+</slide>
+		
+		
+<text id="ID_router_txt1">
+<![CDATA[
+<pre>C:\Documents and Settings\Administrator>ipconfig /release
+
+Windows IP Configuration
+
+Ethernet adapter Local Area Connection:
+
+  Connection-specific DNS Suffix.: 
+  IP Address ....................: 0.0.0.0
+  Subnet Mask....................: 0.0.0.0
+  Default Gateway................: 
+
+C:\Documents and Settings\Administrator>ipconfig /renew
+
+Windows IP Configuration
+
+An error occurred while renewing interface Local Area Connection:
+unable to contact your DHCP server. Request has timed out.</pre>
+]]>
+</text>
+		
+<text id="ID_router_txt2"><![CDATA[
+<pre>R1(config)# <b>interface g0/0</b>
+R1(config-if)# <b>ip helper-address 192.168.11.6</b>
+R1(config-if)# <b>end</b>
+R1# <b>show ip interface g0/0</b>
+GigabitEthernet0/0 is up, line protocol is up 
+  Internet address is 192.168.10.1/24
+  Broadcast address is 255.255.255.255
+  Address determined by setup command
+  MTU is 1500 bytes
+  Helper address is 192.168.11.6</pre>
+]]>
+</text>
+
+<text id="ID_router_txt3"><![CDATA[
+<pre>C:Documents and Settings\Administrator>ipconfig /release
+
+Windows IP Configuration
+Ethernet adapter Local Area Connection:
+
+	Connection-specific DNS Suffix.:
+	IP Address ....................: 0.0.0.0
+	Subnet Mask....................: 0.0.0.0
+	Default Gateway................:
+
+C:Documents and SettingsAdministrator>ipconfig /renew
+
+Windows IP Configuration
+
+Ethernet adapter Local Area Connection:
+	
+	Connection-specific DNS Suffix.:
+	IP Address ....................: 192.168.10.11
+	Subnet Mask....................: 255.255.255.0
+	Default Gateway................: 192.168.10.1
+
+C:Documents and Settings\Administrator></pre>]]>
+</text>
+</data>
+
+
+

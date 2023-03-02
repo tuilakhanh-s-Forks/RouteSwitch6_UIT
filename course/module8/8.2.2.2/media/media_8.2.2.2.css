@@ -1,0 +1,11 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_router_txt1{
+	line-height:16px;
+}
+#ID_router_txt1 pre{
+	padding:2px !important;
+}

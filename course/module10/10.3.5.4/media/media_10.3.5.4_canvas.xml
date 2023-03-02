@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="media_10.3.5.4.png" />
+            <element type="ROUTER" textId="ID_router_txt1" x="40" y="230" width="600" height="90" />
+            <element type="ROUTER" textId="ID_router_txt2" x="40" y="360" width="600" height="110" />
+            <element type="TEXT" compId="ID_s1_txt01" x="234" y="99" width="186" expand="up" align="center" />
+            <element type="TEXT" compId="ID_s1_txt02" x="38" y="205" width="595" expand="right" align="left" color="#ffffff" />
+            <element type="TEXT" compId="ID_s1_txt03" x="38" y="335" width="595" expand="right" align="left" color="#ffffff" />
+            <element type="TEXT" subType="TITLE" compId="ID_s1_title" />
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+            <element type="ACTIVITY" subType="SYNTAX" compId="ID_SC2" x="25" y="55" width="630" height="400" resetId="ID_sc_reset" showMeId="ID_sc_showme" showAllId="ID_sc_showall" />
+            <element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#FFFFFF" />
+        </slide>
+        <text id="ID_router_txt1">
+            <![CDATA[<pre>R1(config)# <b>license boot module c1900 technology-package 
+seck9 disable</b>
+R1(config)# <b>exit</b>
+R1# <b>reload</b></pre>]]></text>
+        <text id="ID_router_txt2">
+            <![CDATA[<pre>R1# <b>license clear seck9</b>
+R1# <b>configure terminal</b>
+R1(config)# <b>no license boot module c1900 technology-package 
+seck9 disable</b>
+R1(config)# <b>exit</b>
+R1# <b>reload</b></pre>]]></text>
+    </slide>
+</data>

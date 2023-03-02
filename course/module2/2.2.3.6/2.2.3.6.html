@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.3.6 Verify IPv6 Static Routes</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.3.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verify IPv6 Static Routes</h1>
+        <div>
+          <p>Along with<b> ping </b>and<b> traceroute</b>, useful commands to verify static routes include:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>show ipv6 route </b>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ipv6 route static</b>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ipv6 route network</b>
+              </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Figure 1 displays sample output of the<b> show ipv6 route static </b>command. The output reflects the use of static routes using next-hop global unicast addresses.</p>
+          <p></p>
+          <p>Figure 2 displays sample output from the<b> show ip route 2001:DB8:ACAD:3:: </b>command.</p>
+          <p></p>
+          <p>Figure 3 verifies the<b> ipv6 route </b>configuration in the running configuration.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">These figures are based on the standard lab diagram.  R. 1. with a lan connects to R. 2. with a lan which connects to R. 3. with a lan. Figure one shows the output of the "show i. p. v. 6 route static" command on router 1.Figure two shows the output of the "show i. p. v. 6 route" for a specific network. Figure three shows the output of the "show running dash config pipe section i. p. v. 6 route" command.  </div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

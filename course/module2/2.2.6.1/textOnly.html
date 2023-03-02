@@ -1,0 +1,23 @@
+
+          <p>A host route is an IPv4 address with a 32-bit mask or an IPv6 address with a 128-bit mask. There are three ways a host route can be added to the routing table:</p>
+          <p>
+            <ul>
+              <li>Automatically installed when an IP address is configured on the router (as shown in Figures 1 and 2)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Configured as a static host route</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Host route automatically obtained through other methods (discussed in later courses)</li>
+            </ul>
+          </p>
+          <p>Cisco IOS automatically installs a host route, also known as a local host route, when an interface address is configured on the router. A host route allows for a more efficient process for packets that are directed to the router itself, rather than for packet forwarding. This is in addition to the connected route, designated with a C in the routing table for the network address of the interface.</p>
+          <p></p>
+          <p>When an active interface on a router is configured with an IP address, a local host route is automatically added to the routing table. The local routes are marked with “L” in the output of the routing table. The IP addresses assigned to the Branch Serial0/0/0 interface are 198.51.100.1/30 for IPv4 and 2001:DB8:ACAD:1::1/64 for IPv6. The local routes for the interface are installed by the IOS in the routing table as shown in the output in Figure 1 for IPv4 and Figure 2 for IPv6.</p>
+          <p></p>
+          <p>Note: For IPv4, the local routes marked with “L” were introduced with IOS version 15.</p>
+        

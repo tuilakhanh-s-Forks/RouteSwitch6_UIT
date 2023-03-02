@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.1.4 Named Standard IPv4 ACL Syntax</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Named Standard IPv4 ACL Syntax</h1>
+        <div>
+          <p>Naming an ACL makes it easier to understand its function. When you identify your ACL with a name instead of with a number, the configuration mode and command syntax are slightly different.</p>
+          <p></p>
+          <p>Figure 1 shows the steps required to create a standard named ACL.</p>
+          <p></p>
+          <p>
+            <b>Step 1.</b> Starting from the global configuration mode, use the <b>ip access-list</b> command to create a named ACL. ACL names are alphanumeric, case sensitive, and must be unique. The <b>ip access-list standard</b><i> name </i>command is used to create a standard named ACL. After entering the command, the router is in standard (std) named ACL (nacl) configuration mode as indicated by the second prompt in the Figure 1.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Numbered ACLs use the global configuration command <b>access-list</b>, whereas named IPv4 ACLs use the <b>ip access-list</b> command.</p>
+          <p></p>
+          <p>
+            <b>Step 2.</b> From the named ACL configuration mode, use <b>permit</b> or <b>deny</b> statements to specify one or more conditions for determining whether a packet is forwarded or dropped. You can use <b>remark</b> to add a comment to the ACL.</p>
+          <p></p>
+          <p>
+            <b>Step 3.</b> Apply the ACL to an interface using the <b>ip access-group</b><i> name </i>command. Specify whether the ACL should be applied to packets as they enter the interface (<b>in</b>) or applied to packets as they exit the interface (<b>out</b>).</p>
+          <p></p>
+          <p>Figure 2 shows the commands used to configure a standard named ACL on router R1, interface G0/0, that denies host 192.168.11.10 access to the 192.168.10.0 network. The ACL is named NO_ACCESS.</p>
+          <p></p>
+          <p>Capitalizing ACL names is not required, but makes them stand out when viewing the running-config output. It also makes it less likely that you will accidentally create two different ACLs with the same name but with different uses of capitalization.</p>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description"> Figure one shows the commands used to create a named A.C.L. The first command is, i.p. access hyphen list, followed by either standard or extended, which is then followed by the A.C.L. name. This moves the router into a new mode of config hyphen s.t.d. hyphen n.a.c.l. Permit and or deny statements are entered next, along with the optional remark statement. This is followed by the i.p. addresses and the optional command, log. The last step is to apply the A.C.L. to an interface in a specified direction. Figure two configures a named A.C.L. The first command is, i.p. access hyphen list standard no underscore access. The next command is, deny host 192 dot 168 dot 11 dot 10. The next command is, permit any. Next the router is moved to the specified interface via the command, interface gigabit Ethernet zero slash zero. The last step is to apply the A.C.L. via the command, i.p. access hyphen group no underscore access out.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

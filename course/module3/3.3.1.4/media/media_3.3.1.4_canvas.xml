@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide>
+        <element type="IMAGE" x="0" y="0" width="1000" height="490" src="../../../common/images/page_backgrounds/bg_activity.jpg" />
+        <element type="TEXTBOX" titleId="ID_s1_instr_title" bodyId="ID_s1_instr_body" x="40" y="55" width="315" height="200" />
+        <element type="IMAGE" x="0" y="0" width="1000" height="490" src="3.3.1.4.png" />
+        <element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#FFFFFF" />
+        <element type="TEXT" compId="ID_header" x="422" y="275" width="78" expand="up+down" align="center" />
+        <element type="TEXT" compId="ID_header1" x="552" y="275" width="87" expand="up+down" align="center" />
+        <element type="TEXT" id="ID_static_1" text="10.4.0.0/16" x="435" y="311" align="center" width="62" />
+        <element type="TEXT" id="ID_static_2" text="172.16.2.0/24" x="429" y="343" align="center" width="74" />
+        <element type="TEXT" id="ID_static_3" text="172.16.3.0/24" x="429" y="376" align="center" width="74" />
+        <element type="TEXT" id="ID_static_4" text="192.168.110.0/24" x="419" y="408" align="center" width="92" />
+        <element type="TEXT" id="ID_static_5" text="192.168.120.0/24" x="419" y="441" align="center" width="92" />
+        <element type="TEXT" compId="ID_header2" x="672" y="275" width="116" expand="up+down" align="center" />
+        <element type="TEXT" compId="ID_header3" x="817" y="275" width="95" expand="up+down" align="center" />
+        <element type="ROUTER" textId="ID_router_txt1" x="393.5" y="52.8" width="570" height="205" />
+        <element type="ACTIVITY" subType="DRAGDROP" method="NORMAL" replicate="true" compWidth="100" compHeight="30" dragIcon="" dropIcon="" tickPosition="left" dragAlpha="0.3">
+            <subelement type="DRAG" x="40.3" y="271.35" compId="ID_drag01" />
+            <subelement type="DRAG" x="149.3" y="271.35" compId="ID_drag02" />
+            <subelement type="DRAG" x="256.3" y="271.35" compId="ID_drag03" />
+            <subelement type="DRAG" x="94.35" y="410.6" compId="ID_drag04" />
+            <subelement type="DRAG" x="40.3" y="305.75" compId="ID_drag05" />
+            <subelement type="DRAG" x="149.3" y="305.75" compId="ID_drag06" />
+            <subelement type="DRAG" x="256.3" y="305.75" compId="ID_drag07" />
+            <subelement type="DRAG" x="201.35" y="410.6" compId="ID_drag08" />
+            <subelement type="DRAG" x="40.3" y="340.15" compId="ID_drag09" />
+            <subelement type="DRAG" x="149.3" y="340.15" compId="ID_drag10" />
+            <subelement type="DRAG" x="256.3" y="340.15" compId="ID_drag11" />
+            <subelement type="DRAG" x="256.3" y="374.55" compId="ID_drag12" />
+            <subelement type="DRAG" x="40.3" y="374.55" compId="ID_drag13" />
+            <subelement type="DRAG" x="149.3" y="374.55" compId="ID_drag14" />
+            <subelement type="DROP" x="547.05" y="301.75" match="9" />
+            <subelement type="DROP" x="683" y="301.75" match="8" />
+            <subelement type="DROP" x="816" y="301.75" match="1" />
+            <subelement type="DROP" x="547.05" y="334.25" match="12" />
+            <subelement type="DROP" x="683" y="334.25" match="1" />
+            <subelement type="DROP" x="816" y="334.25" match="1" />
+            <subelement type="DROP" x="547.05" y="366.75" match="2" />
+            <subelement type="DROP" x="683" y="366.75" match="7" />
+            <subelement type="DROP" x="816" y="366.75" match="13" />
+            <subelement type="DROP" x="547.05" y="399.25" match="0" />
+            <subelement type="DROP" x="683" y="399.25" match="4" />
+            <subelement type="DROP" x="816" y="399.25" match="11" />
+            <subelement type="DROP" x="547.05" y="431.75" match="5" />
+            <subelement type="DROP" x="683" y="431.75" match="10" />
+            <subelement type="DROP" x="816" y="431.75" match="8" />
+            <subelement type="CHECK" x="42" y="450" width="145" height="21" compId="ID_CHECK" />
+            <subelement type="RESET" x="210" y="450" width="145" height="21" compId="ID_RESET" />
+            <subelement type="FEEDBACK" x="361" y="157.6" width="280" height="180" correctTitleId="ID_CORRECT_TITLE" correctBodyId="ID_CORRECT_BODY" wrongTitleId="ID_INCORRECT_TITLE" wrongBodyId="ID_INCORRECT_BODY" />
+        </element>
+    </slide>
+    <text id="ID_router_txt1">
+        <![CDATA[<code>Gateway of last resort is not set
+
+R    192.168.120.0/24 [120/1] via 172.16.2.1, 00:00:02, Serial0/0/0
+O    192.168.110.0/24 [110/65] via 172.16.2.1, 00:01:39, Serial0/0/0
+     172.16.0.0/24 is subnetted, 3 subnets
+C       172.16.1.0 is directly connected, FastEthernet0/0
+C       172.16.2.0 is directly connected, Serial0/0/0
+D       172.16.3.0 [90/2172416] via 172.16.2.1, 00:07:53, Serial0/0/0
+     10.0.0.0/16 is subnetted, 1 subnets
+S       10.4.0.0 is directly connected, Serial0/0/0
+C    192.168.1.0/24 is directly connected, Serial0/0/1
+O    192.168.100.0/24 [110/65] via 172.16.2.1, 00:01:15, Serial0/0/0</code>]]></text>
+</data>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.1.2.2 Configure and Verify LLDP</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configure and Verify LLDP</h1>
+        <div>
+          <p>Depending on the device, LLDP may be enabled by default. To enable LLDP globally on a Cisco network device, enter the <b>lldp run</b> command in the global configuration mode. To disable LLDP, enter the <b>no lldp run</b> command in the global configuration mode.</p>
+          <p></p>
+          <p>Similar to CDP, LLDP can be configured on specific interfaces. However, LLDP must be configured separately to transmit and receive LLDP packets, as shown in Figure 1.</p>
+          <p></p>
+          <p>To verify LLDP has been enabled on the device, enter the <b>show lldp</b> command in the privileged EXEC mode.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 2 to practice configuring and verifying LLDP.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure is command line showing first that LLDP is enabled globally with the 'lldp run' command. Then, on interface g0/1, the 'lldp transmit' and 'lldp receive' commands are entered. Finally, the output of the 'show lldp' command is diplayed show that LLDP is active, sending updates every 30 seconds, with a hold time of 120 seconds, and interface re-initialization delay of 2 seconds.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

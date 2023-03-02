@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide>
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="media_1.3.1.2.png" />
+        <element type="TEXT" id="ID_static_1" text=".10" x="96" y="53.4" align="center" width="14.95" />
+        <element type="TEXT" id="ID_static_2" text=".10" x="96" y="147.45" align="center" width="14.95" />
+        <element type="TEXT" id="ID_static_3" text=".10" x="565.9" y="52.8" align="center" width="14.95" />
+        <element type="TEXT" id="ID_static_4" text=".1" x="428.05" y="87.4" align="center" width="6.55" />
+        <element type="TEXT" id="ID_static_5" text=".1" x="434.15" y="140.1" align="center" width="6.55" />
+        <element type="TEXT" id="ID_static_6" text="G0/0 .1" x="218.4" y="68.75" align="right" width="24.65" />
+        <element type="TEXT" id="ID_static_7" text=".225 S0/0/0" x="292.95" y="123.95" align="center" width="34.85" />
+        <element type="TEXT" id="ID_static_8" text=".1 G0/1" x="215.45" y="145.3" align="right" width="22.85" />
+        <element type="TEXT" id="ID_static_9" text=".10" x="564.85" y="143.85" align="center" width="14.95" />
+        <element type="TEXT" id="ID_static_10" text="209.165.200.224/30" x="280.65" y="90.1" align="center" width="104.9" bold="1" />
+        <element type="TEXT" id="ID_static_11" text="192.168.10.0/24" x="125.8" y="40.55" align="center" width="84.55" bold="1" />
+        <element type="TEXT" id="ID_static_12" text="192.168.11.0/24" x="120.55" y="183.4" align="center" width="84.55" bold="1" />
+        <element type="TEXT" id="ID_static_13" text="10.1.1.0/24" x="466.2" y="43.15" align="center" width="58.15" bold="1" />
+        <element type="TEXT" id="ID_static_14" text="10.1.2.0/24" x="456.6" y="182.9" align="center" width="58.15" bold="1" />
+        <element type="TEXT" id="ID_static_15" text=".226" x="366.3" y="113.85" align="center" width="22.55" />
+        <element type="TEXT" id="ID_static_16" text="S0/0/0" x="354" y="131.5" align="center" width="35.85" />
+        <element type="TEXT" id="ID_static_17" text="PC1" x="54.6" y="59.8" align="center" width="35.85" bold="1" />
+        <element type="TEXT" id="ID_static_18" text="PC2" x="54.6" y="153" align="center" width="35.85" bold="1" />
+        <element type="TEXT" id="ID_static_19" text="PC3" x="586.9" y="60.55" align="center" width="35.85" bold="1" />
+        <element type="TEXT" id="ID_static_20" text="PC4" x="586.4" y="153.6" align="center" width="35.85" bold="1" />
+        <element type="TEXT" id="ID_static_21" text="R1" x="246.3" y="126.1" align="center" width="31" bold="1" />
+        <element type="TEXT" id="ID_static_22" text="R2" x="410.1" y="124.85" align="center" width="31" bold="1" />
+        <element type="TEXT" compId="ID_s1_txt02" x="48.85" y="232.75" align="center" width="104" />
+        <element type="TEXT" subType="TITLE" compId="ID_title" />
+        <element type="ROUTER" textId="ID_s1_txt01" x="40" y="211" width="600" height="216" size="11" />
+    </slide>
+    <text id="ID_s1_txt01">
+        <![CDATA[
+    <pre>R1# show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+       * - candidate default, U - per-user static route, o - ODR
+       P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+     10.0.0.0/24 is subnetted, 2 subnets
+D       10.1.1.0/24 [90/2170112] via 209.165.200.226, 01:02:56, Serial0/0/0
+D       10.1.2.0/24 [90/2170112] via 209.165.200.226, 01:02:49, Serial0/0/0
+     192.168.10.0/24 is variably subnetted, 2 subnets, 2 masks
+C       192.168.10.0/24 is directly connected, GigabitEthernet0/0
+L       192.168.10.1/32 is directly connected, GigabitEthernet0/0
+     192.168.11.0/24 is variably subnetted, 2 subnets, 2 masks
+C       192.168.11.0/24 is directly connected, GigabitEthernet0/1
+L       192.168.11.1/32 is directly connected, GigabitEthernet0/1
+     209.165.200.0/24 is variably subnetted, 2 subnets, 2 masks
+C       209.165.200.224/30 is directly connected, Serial0/0/0
+L       209.165.200.225/32 is directly connected, Serial0/0/0
+
+
+
+</pre>
+]]></text>
+</data>

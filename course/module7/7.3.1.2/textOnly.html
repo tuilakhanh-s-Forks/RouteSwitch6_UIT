@@ -1,0 +1,9 @@
+
+          <p>Cisco IOS applies an internal logic when accepting and processing standard ACEs. As discussed previously, ACEs are processed sequentially; therefore, the order in which ACEs are entered is important.</p>
+          <p></p>
+          <p>For example, in Figure 1, ACL 3 contains two ACEs. The first ACE uses a wildcard mask to deny a range of addresses, which includes all hosts in the 192.168.10.0/24 network. The second ACE is a host statement that examines a specific host, 192.168.10.10, that belongs to the 192.168.10.0/24 network. The IOS internal logic for standard access lists rejects the second statement and returns an error message because it is a subset of the previous statement. </p>
+          <p></p>
+          <p>The configuration in Figure 2 of ACL 4 has the same two statements but in reverse order. This is a valid sequence of statements because the first statement refers a specific host, not a range of hosts.</p>
+          <p></p>
+          <p>In Figure 3, ACL 5 shows that a host statement can be configured after a statement that denotes a range of hosts. The host must not be within the range covered by a previous statement. The 192.168.11.10 host address is not a member of the 192.168.10.0/24 network so this is a valid statement.</p>
+        

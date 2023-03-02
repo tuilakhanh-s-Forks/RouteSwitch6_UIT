@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.3.5 Configure a Fully Specified Static IPv6 Route</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.3.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configure a Fully Specified Static IPv6 Route</h1>
+        <div>
+          <p>In a fully specified static route, both the exit interface and the next-hop IPv6 address are specified. Similar to fully specified static routes used with IPv4, this would be used if CEF were not enabled on the router and the exit interface was on a multi-access network.  With CEF, a static route using only a next-hop IPv6 address would be the preferred method even when the exit interface is a multi-access network.</p>
+          <p></p>
+          <p>Unlike IPv4, there is a situation in IPv6 when a fully specified static route must be used. If the IPv6 static route uses an IPv6 link-local address as the next-hop address, a fully specified static route including the exit interface must be used. Figure 1 shows an example of a fully qualified IPv6 static route using an IPv6 link-local address as the next-hop address.</p>
+          <p></p>
+          <p>The reason a fully specified static route must be used is because IPv6 link-local addresses are not contained in the IPv6 routing table. Link-local addresses are only unique on a given link or network. The next-hop link-local address may be a valid address on multiple networks connected to the router. Therefore, it is necessary that the exit interface be included.</p>
+          <p></p>
+          <p>In Figure 1, a fully specified static route is configured using R2’s link-local address as the next-hop address. Notice that IOS requires that an exit interface be specified. </p>
+          <p></p>
+          <p>Figure 2 shows the IPv6 routing table entry for this route. Notice that both the next-hop link-local address and the exit interface are included. </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to configure fully specified static IPv6 routes on R2 to reach R1’s LAN using a link-local address.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">These figures show two routers connected with a serial cable.  Each router has a lan attached. Figure one shows the syntax for configuring a fully qualified static route on router one to the lan on router two.  The fully qualified route statement is required since we are using the link-local address as the next hop.  This requires the use of exit interface. Figure two shows the result of issuing the "show i. p. v. 6 route static pipe begin followed by an i. p. v. 6 address" command on router one. Figure three is an interactive activity that allows the learner to practice configuring a fully qualified static route in i. p. v. 6.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

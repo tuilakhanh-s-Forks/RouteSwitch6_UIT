@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide>
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="media_2.2.4.2.png" />
+        <element type="TEXT" id="ID_static_1" text=":1" x="337" y="180" align="center" width="16" />
+        <element type="TEXT" id="ID_static_2" text=":1" x="397" y="267" align="center" width="8" />
+        <element type="TEXT" id="ID_static_3" text="2001:DB8:ACAD:2::/64" x="363" y="110" align="center" width="119" />
+        <element type="TEXT" id="ID_static_4" text="2001:DB8:ACAD:4::/64" x="145" y="245" align="center" width="119" />
+        <element type="TEXT" id="ID_static_5" text="2001:DB8:ACAD:5::/64" x="390" y="247" align="center" width="119" />
+        <element type="TEXT" id="ID_static_6" text="2001:DB8:ACAD:1::/64" x="84" y="330" align="center" width="119" />
+        <element type="TEXT" id="ID_static_7" text="2001:DB8:ACAD:3::/64" x="453" y="330" align="center" width="119" />
+        <element type="TEXT" id="ID_static_8" text="G0/0" x="304" y="180" align="center" width="26" />
+        <element type="TEXT" id="ID_static_9" text="S0/0/1 DCE" x="369" y="205" align="left" width="34" />
+        <element type="TEXT" id="ID_static_10" text="S0/0/0" x="267" y="228" align="center" width="36" />
+        <element type="TEXT" id="ID_static_11" text="G0/0" x="205" y="285" align="center" width="26" />
+        <element type="TEXT" id="ID_static_12" text="G0/0" x="444" y="285" align="center" width="26" />
+        <element type="TEXT" id="ID_static_13" text=":2" x="315" y="236" align="center" width="9" />
+        <element type="TEXT" id="ID_static_14" text=":2" x="345" y="236" align="center" width="9" />
+        <element type="TEXT" id="ID_static_15" text=":1" x="271" y="262" align="center" width="8" />
+        <element type="TEXT" id="ID_static_16" text=":1" x="211" y="305" align="center" width="8" />
+        <element type="TEXT" id="ID_static_17" text=":1" x="447" y="305" align="center" width="8" />
+        <element type="TEXT" id="ID_static_19" text="S0/0/1" x="340" y="300" align="center" width="34" />
+        <element type="TEXT" id="ID_static_21" text="S0/0/0 DCE" x="297" y="290" align="left" width="36" />
+        <element type="ROUTER" textId="staticTxt" x="40" y="374.25" width="600" height="100" />
+        <element type="TEXT" subType="TITLE" compId="ID_title" />
+    </slide>
+    <text id="staticTxt">
+        <![CDATA[<pre>R1(config)# <b>ipv6 route ::/0 2001:DB8:ACAD:4::2</b>
+R1(config)#</pre>]]></text>
+</data>

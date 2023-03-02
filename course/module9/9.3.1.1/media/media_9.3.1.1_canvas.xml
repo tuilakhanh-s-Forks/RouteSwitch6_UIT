@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<slide type="MBAR">
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+<element type="IMAGE" x="0" y="0" width="680" height="490"  src="media_9.3.1.1.png" />
+<element type="TEXT" id="ID_static_1" text="209.165.202.129" x="473" y="281" align="center" width="89" />
+<element type="TEXT" id="ID_static_2" text="192.168.10.10" x="58" y="131" align="center" width="75" />
+<element type="TEXT" id="ID_static_3" text="S0/0/0" x="278" y="192" align="center" width="36" />
+<element type="TEXT" id="ID_static_4" text="S0/1/0" x="382" y="195" align="center" width="36" />
+<element type="TEXT" id="ID_static_5" text="192.168.11.10" x="58" y="280" align="center" width="75" />
+<element type="TEXT" id="ID_static_6" text=".225" x="376" y="222" align="center" width="23" />
+<element type="TEXT" id="ID_static_9" text="PC1" x="84.3" y="155.8" align="center" width="31.05" bold="1" color="#fff"/>
+<element type="TEXT" id="ID_static_10" text="PC2" x="83.8" y="240.25" align="center" width="32.05" bold="1" color="#fff"/>
+<element type="TEXT" id="ID_static_11" text="R1" x="166.45" y="213.9" align="center" width="24.75" bold="1" color="#fff"/>
+<element type="TEXT" id="ID_static_12" text="R2" x="337.35" y="213.9" align="center" width="24.9" bold="1" color="#fff"/>
+<element type="TEXT" id="ID_static_7" text="209.165.200.224/27" x="355" y="241" align="center" width="98" />
+<element type="TEXT" id="ID_static_8" text="209.165.201.1" x="485" y="131" align="center" width="74" />
+<element type="TEXT" compId="ID_s1_txt05" x="308" y="295" width="85" expand="left+right" align="center" class="orangeCallOut"/>
+<element type="TEXT" compId="ID_s1_txt03" x="444" y="204" width="82" expand="up+down" align="center" />
+<element type="TEXT" compId="ID_s1_txt01" x="74" y="95" width="277" expand="up" align="center" />
+<element type="TEXT" compId="ID_s1_txt02" x="352" y="95" width="271" expand="up" align="center" />
+<element type="TEXT" compId="ID_s1_txt06" x="567" y="165" width="55" expand="up+down" align="left" size="10" />
+<element type="TEXT" compId="ID_s1_txt07" x="567" y="240" width="55" expand="up+down" align="left" size="10" />
+<element type="TEXT" compId="ID_s1_txt08" x="208" y="383" width="284" expand="down" align="center" />
+<element type="TEXT" subType="TITLE" compId="ID_s1_title"/>
+</slide>
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<element type="ROUTER" textId="ID_router_txt1" x="40" y="55" width="600" height="380" />
+<element type="TEXT" compId="ID_s2_txt01" x="50" y="110" width="312" expand="right" align="left" color="#ffffff" />
+<element type="TEXT" compId="ID_s2_txt02" x="50" y="345" width="312" expand="right" align="left" color="#ffffff" />
+</slide>
+<text id="ID_router_txt1"><![CDATA[<pre>R2# clear ip nat statistics
+R2# clear ip nat translation *
+R2#
+
+
+R2# show ip nat statistics
+Total active translations: 1 (0 static, 1 dynamic; 1 extended)
+Peak translations: 1, occurred 00:00:09 ago
+Outside interfaces:
+ Serial0/0/1
+Inside interfaces:
+  Serial0/0/0
+Hits: 31 Misses: 0
+CEF Translated packets: 31, CEF Punted packets: 0
+Expired translations: 0
+Dynamic mappings:
+-- Inside Source
+ [Id: 5] access-list 1 pool NAT-POOL2 refcount 1
+pool NAT-POOL2: netmask 255.255.255.224
+start 209.165.200.226 end 209.165.200.240
+type generic, total addresses 15, allocated 1 (6%), misses 0
+
+
+R2# show ip nat translations
+Pro Inside global          Inside local         Outside local      Outside global 
+tcp 209.165.200.226:19005  192.168.10.10:19005  209.165.201.1:23   209.165.201.1:23
+R2#</pre>]]></text>
+
+</slide>
+
+

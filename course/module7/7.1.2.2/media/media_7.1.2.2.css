@@ -1,0 +1,15 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+.mtable .mtable_top {
+    background-color: transparent !important;
+}
+#ID_s2_txt01,#ID_s2_txt02,#ID_s1_txt01,#ID_s1_txt02,#ID_s1_txt03
+{
+	background-color: #0D658B;
+	border-color: #0D658B;
+	padding: 5px 5px;
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide>
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+        <element type="TEXT" subType="TITLE" compId="ID_title" color="#ffffff" />
+        <element type="TEXT" compId="ID_txt01" x="5" y="85" width="140" expand="up+down" align="right" color="#ffffff" />
+
+        <element type="ROUTER" textId="ID_router_txt1" x="162.95" y="70" width="491" height="49" />
+        <element type="TEXT" compId="ID_txt02" x="5" y="151" width="140" expand="up+down" align="right" color="#ffffff" />
+        
+        <element type="ROUTER" textId="ID_router_txt2" x="162.95" y="131" width="491" height="60" />
+        <element type="ROUTER" textId="ID_router_txt3" x="162.95" y="203" width="491" height="60" />
+        <element type="ROUTER" textId="ID_router_txt4" x="162.95" y="275" width="491" height="90" />
+        <element type="ROUTER" textId="ID_router_txt5" x="162.95" y="377" width="491" height="62" />
+        <element type="TEXT" compId="ID_txt06" x="171" y="210" width="65" expand="right" align="left" color="#ffffff" />
+        <element type="TEXT" compId="ID_txt04" x="5" y="308" width="140" expand="up+down" align="right" color="#ffffff" />
+        <element type="TEXT" compId="ID_txt05" x="5" y="397" width="140" expand="up+down" align="right" color="#ffffff" />
+        <element type="TEXT" compId="ID_txt03" x="5" y="224" width="140" expand="up+down" align="right" color="#ffffff" />
+    </slide>
+    <text id="ID_router_txt1">
+        <![CDATA[<pre>R1(config)# <b>access-list 1 deny host 192.168.10.99</b>
+R1(config)# <b>access-list 1 permit 192.168.0.0 0.0.255.255</b></pre>]]></text>
+    <text id="ID_router_txt2">
+        <![CDATA[<pre>R1# <b>show running-config | include access-list 1</b>
+<div class="align">access-list 1 deny host 192.168.10.99</div>access-list 1 permit 192.168.0.0 0.0.255.255</pre>]]></text>
+    <text id="ID_router_txt3">
+        <![CDATA[<pre><div id="texts3">access-list 1 deny host 192.168.10.10
+access-list 1 permit 192.168.0.0 0.0.255.255</div></pre>]]></text>
+    <text id="ID_router_txt4">
+        <![CDATA[<pre>R1# <b>config t</b>
+Enter configuration commands, one per line. End with CNTL/Z.
+R1(config)# <b>no access-list 1</b>
+R1(config)# <b>access-list 1 deny host 192.168.10.10</b>
+R1(config)# <b>access-list 1 permit 192.168.0.0 0.0.255.255</b></pre>]]></text>
+    <text id="ID_router_txt5">
+        <![CDATA[<pre>R1# <b>show running-config | include access-list 1</b>
+<div class="align">access-list 1 deny host 192.168.10.10</div>access-list 1 permit 192.168.0.0 0.0.255.255</pre>]]></text>
+</data>

@@ -1,0 +1,16 @@
+
+          <p>The output of the<b> show ip nat translations </b>command shown in Figure 1 displays the details of the two previous NAT assignments. The command displays all static translations that have been configured and any dynamic translations that have been created by traffic. </p>
+          <p></p>
+          <p>Adding the <b>verbose</b> keyword displays additional information about each translation, including how long ago the entry was created and used. </p>
+          <p></p>
+          <p>By default, translation entries time out after 24 hours, unless the timers have been reconfigured with the<b> ip nat translation timeout </b><i>timeout-seconds</i> command in global configuration mode.</p>
+          <p></p>
+          <p>To clear dynamic entries before the timeout has expired, use the<b> clear ip nat translation </b>privileged EXEC mode command (Figure 2).  It is useful to clear the dynamic entries when testing the NAT configuration. As shown in the table, this command can be used with keywords and variables to control which entries are cleared. Specific entries can be cleared to avoid disrupting active sessions. Use the<b> clear ip nat translation * </b>privileged EXEC command to clear all translations from the table. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Only the dynamic translations are cleared from the table. Static translations cannot be cleared from the translation table.</p>
+          <p></p>
+          <p>In Figure 3, the<b> show ip nat statistics </b>command displays information about the total number of active translations, NAT configuration parameters, the number of addresses in the pool, and how many of the addresses have been allocated.</p>
+          <p></p>
+          <p>Alternatively, use the<b> show running-config </b>command and look for NAT, ACL, interface, or pool commands with the required values. Examine these carefully and correct any errors discovered.</p>
+        

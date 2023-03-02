@@ -1,0 +1,120 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>Trunk Configuration</b>]]></text>
+</component>
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Example Topology</b>]]></text>
+</component>
+
+<component id="ID_s3_title">
+<text><![CDATA[<b>Sample Configuration</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[Faculty<br/>VLAN 10<br/>172.17.10.21]]></text> 
+</component>
+<component id="ID_s2_txt02">
+<text><![CDATA[Student<br/>VLAN 20<br/>172.17.20.22]]></text> 
+</component>
+<component id="ID_s2_txt03">
+<text><![CDATA[Guest<br/>VLAN 30<br/>172.17.30.23]]></text> 
+</component>
+<component id="ID_s2_txt04">
+<text><![CDATA[Trunk]]></text> 
+</component>
+
+
+
+<component id="ID_s1_table01">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' >
+ 
+ 			<tr class="mtable_title">
+				<td colspan="2" bgcolor='#FFFFFF'><font size="14" align='center'><b>Cisco Switch IOS Commands</b></font></td>
+			</tr>
+
+            <tr class="mtable_top">
+                <td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+            </tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="middle" width="225">Enter global configuration mode.</td>
+<td bgcolor='#E9E7E8' valign="middle"><font face='_typewriter'>S1# <b>configure terminal</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle" width="150">Enter interface configuration mode.</td>
+<td bgcolor='#F2F2F2' valign="middle"><font face='_typewriter'>S1(config)# <b>interface </b><i> interface_id</i></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="middle" width="150">Force the link to be a trunk link.</td>
+<td bgcolor='#E9E7E8' valign="middle"><font face='_typewriter'>S1(config-if)# <b>switchport mode trunk</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle" width="150">Specify a native VLAN for untagged frames.</td>
+<td bgcolor='#F2F2F2' valign="middle"><font face='_typewriter'>S1(config-if)# <b>switchport trunk native vlan </b><i> vlan_id</i></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="middle" width="150">Specify the list of VLANs to be allowed on the trunk link.</td>
+<td bgcolor='#E9E7E8' valign="middle"><font face='_typewriter'>S1(config-if)# <b>switchport trunk allowed vlan </b><i> vlan-list</i></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle" width="150">Return to the privileged EXEC mode.</td>
+<td bgcolor='#F2F2F2' valign="middle"><font face='_typewriter'>S1(config-if)# <b>end</b></font></td>
+</tr>
+
+</table>]]></text>
+</component>
+
+
+
+<component id="ID_s1_table01_html">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' >
+
+  <caption  class="mtable_title" colspan="2" bgcolor='#FFFFFF'>
+                <font size="14"><b>Cisco Switch IOS Commands</b></font>
+            </caption>
+
+            <tr class="mtable_top">
+                <td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+            </tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="middle" width="225">Enter global configuration mode.</td>
+<td bgcolor='#E9E7E8' valign="middle"><font face='_typewriter'>S1# <b>configure terminal</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle" width="150">Enter interface configuration mode.</td>
+<td bgcolor='#F2F2F2' valign="middle"><font face='_typewriter'>S1(config)# <b>interface </b><i> interface_id</i></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="middle" width="150">Force the link to be a trunk link.</td>
+<td bgcolor='#E9E7E8' valign="middle"><font face='_typewriter'>S1(config-if)# <b>switchport mode trunk</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle" width="150">Specify a native VLAN for untagged frames.</td>
+<td bgcolor='#F2F2F2' valign="middle"><font face='_typewriter'>S1(config-if)# <b>switchport trunk native vlan </b><i> vlan_id</i></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="middle" width="150">Specify the list of VLANs to be allowed on the trunk link.</td>
+<td bgcolor='#E9E7E8' valign="middle"><font face='_typewriter'>S1(config-if)# <b>switchport trunk allowed vlan </b><i> vlan-list</i></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle" width="150">Return to the privileged EXEC mode.</td>
+<td bgcolor='#F2F2F2' valign="middle"><font face='_typewriter'>S1(config-if)# <b>end</b></font></td>
+</tr>
+
+</table>]]></text>
+</component>
+
+
+</textcomponents>

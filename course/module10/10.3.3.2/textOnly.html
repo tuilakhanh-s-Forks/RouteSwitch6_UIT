@@ -1,0 +1,20 @@
+
+          <p>To maintain network operations with minimum down time, it is necessary to have procedures in place for backing up Cisco IOS images. This allows the network administrator to quickly copy an image back to a router in case of a corrupted or erased image.</p>
+          <p></p>
+          <p>In Figure 1, the network administrator wants to create a backup of the current image file on the router (c1900-universalk9-mz.SPA.152-4.M3.bin) to the TFTP server at 172.16.1.100.</p>
+          <p></p>
+          <p>To create a backup of the Cisco IOS image to a TFTP server, perform the following three steps:</p>
+          <p></p>
+          <p>
+            <b>Step 1.  </b>Ensure that there is access to the network TFTP server. Ping the TFTP server to test connectivity, as shown in Figure 2.</p>
+          <p></p>
+          <p>
+            <b>Step 2.  </b>Verify that the TFTP server has sufficient disk space to accommodate the Cisco IOS Software image. Use the<b> show flash0: </b>command on the router to determine the size of the Cisco IOS image file. The file in the example is 68831808 bytes long.</p>
+          <p></p>
+          <p>
+            <b>Step 3.  </b>Copy the image to the TFTP server using the<b> copy </b><i>source-url destination-url </i>command, as shown in Figure 3.</p>
+          <p></p>
+          <p>After issuing the command using the specified source and destination URLs, the user is prompted for the source file name, IP address of the remote host, and destination file name. The transfer will then begin.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 on R2 to copy the IOS to a TFTP server.</p>
+        

@@ -1,0 +1,109 @@
+<textcomponents>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>Static NAT</b>]]></text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[<b>Static NAT Translation<b>]]></text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[<b>Inside</b>]]></text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[<b>Outside</b>]]></text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[Internet]]>
+        </text>
+    </component>
+    <component id="ID_call">
+        <text>
+            <![CDATA[PC4> ssh 209.165.200.226]]>
+        </text>
+    </component>
+    <component id="ID_table01">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+<tr class="mtable_title">
+					<td colspan="2" bgcolor='#FFFFFF'><font size="12"><b>Static NAT Table</b></font></td>
+				</tr>
+
+
+
+<tr class="mtable_top">
+					<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+				</tr>
+
+<tr>
+<td bgcolor='#666263' valign="top" class="mtitle" width="290"><font  color='#ffffff'><font size="11"><b>Inside Local Address</b></font></font></td>
+<td bgcolor='#666263' valign="top" class="mtitle"><font  color='#ffffff'><font size="11"><b>Inside Global Address - Addresses reachable via R2</b></font></font></td>
+</tr>
+
+
+<tr>
+<td  bgcolor='#FACCA8' valign="top"><font color='#393536'>192.168.10.10</font></td>
+<td  bgcolor='#FACCA8' valign="top"><font color='#393536'>209.165.200.226</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>192.168.10.11</font></td>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>209.165.200.227</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>192.168.10.12</font></td>
+<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>209.165.200.228</font></td>
+</tr>
+
+
+
+</table>]]>
+        </text>
+    </component>
+
+     <component id="ID_table01_html">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+
+                    <caption colspan="2" class="mtable_title" bgcolor='#FFFFFF'><font size="12"><b>Static NAT Table</b></font></caption>
+                
+
+
+
+<tr class="mtable_top">
+                    <td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+                </tr>
+
+<tr>
+<th scope="col" bgcolor='#666263' valign="top" class="mtitle" width="290"><font  color='#ffffff'><font size="11"><b>Inside Local Address</b></font></font></th>
+<th scope="col" bgcolor='#666263' valign="top" class="mtitle"><font  color='#ffffff'><font size="11"><b>Inside Global Address - Addresses reachable via R2</b></font></font></th>
+</tr>
+
+
+<tr>
+<td  bgcolor='#FACCA8' valign="top"><font color='#393536'>192.168.10.10</font></td>
+<td  bgcolor='#FACCA8' valign="top"><font color='#393536'>209.165.200.226</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>192.168.10.11</font></td>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>209.165.200.227</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>192.168.10.12</font></td>
+<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>209.165.200.228</font></td>
+</tr>
+
+
+
+</table>]]>
+        </text>
+    </component>
+</textcomponents>

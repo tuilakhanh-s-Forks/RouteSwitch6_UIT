@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.1.2 Advertise Networks</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Advertise Networks</h1>
+        <div>
+          <p>By entering the RIP router configuration mode, the router is instructed to run RIPv1. But the router still needs to know which local interfaces it should use for communication with other routers, as well as which locally connected networks it should advertise to those routers.  </p>
+          <p></p>
+          <p>To enable RIP routing for a network, use the<b> network </b><i>network-address </i>router configuration mode command. Enter the classful network address for each directly connected network. This command:</p>
+          <p>
+            <ul>
+              <li>Enables RIP on all interfaces that belong to a specific network. Associated interfaces now both send and receive RIP updates.  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Advertises the specified network in RIP routing updates sent to other routers every 30 seconds. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: RIPv1 is a classful routing protocol for IPv4. Therefore,  if a subnet address is entered, the IOS automatically converts it to the classful network address.  For example, entering the<b> network 192.168.1.32 </b>command would automatically be converted to<b> network 192.168.1.0 </b>in the running configuration file. The IOS does not give an error message, but instead corrects the input and enters the classful network address.  </p>
+          <p></p>
+          <p>In Figure 1, the<b> network </b>command is used to advertise the R1 directly connected networks.  </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 2 to configure a similar configuration on R2 and R3.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the command line commands to enable RIP version 1 routing for a specified network on a router.  The figure begins in global configuration mode.  The first command is router rip.  The next command uses the keyword network followed by the network address.  In the figure, two networks are configured on the router and the first command is network 192 dot 168 dot 1 dot 0.  The second command is 192 dot 168 dot 2 dot 0.  Note that when using RIP version 1, a subnet mask is not listed in the commands. Figure two is an interactive media element that allows the learner to enter the commands necessary to configure RIP and advertise appropriate networks on a router.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

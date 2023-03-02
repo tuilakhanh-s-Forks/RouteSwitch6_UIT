@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide type="MBAR">
+	
+	<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+	<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_7.3.2.1.png" />
+<element type="TEXT" compId="ID_txt01" x="282" y="63" width="97" expand="up+down" align="center" />
+
+<element type="TEXT" id="ID_static_1" text="S0/0/0" x="210" y="111" align="center" width="36" />
+<element type="TEXT" id="ID_static_3" text="G0/0" x="180" y="162" align="center" width="26" />
+
+<element type="TEXT" id="ID_static_2" text="G0/1" x="250" y="163" align="center" width="22" />
+<element type="TEXT" id="ID_static_4" text="192.168.10.0/24" x="90" y="188" align="center" width="86" bold="1"/>
+<element type="TEXT" id="ID_static_5" text="192.168.11.0/24" x="270" y="189" align="center" width="86" bold="1" />
+<element type="TEXT" id="ID_static_6" text="192.168.10.10" x="133" y="306" align="center" width="75" bold="1" />
+<element type="TEXT" id="ID_static_7" text="192.168.11.10" x="224" y="306" align="center" width="75" bold="1" />
+<element type="TEXT" id="ID_static_8" text="S0/0/1" x="410" y="111" align="center" width="34" />
+<element type="TEXT" id="ID_static_9" text="G0/0" x="398" y="166" align="center" width="26" />
+<element type="TEXT" id="ID_static_10" text="192.168.30.0/24" x="440" y="189" align="center" width="86" bold="1" />
+<element type="TEXT" id="ID_static_11" text="192.168.30.10" x="390" y="306" align="center" width="75" bold="1" />
+<slide>
+<element type="ROUTER" textId="ID_router_txt1" x="59" y="359.5" width="580" height="116" />
+<text id="ID_router_txt1"><![CDATA[<pre>R3# show access-list</br>Standard IP access list 10</br>   10 deny 192.168.11.10</br>R3#</pre>]]></text>
+</slide>
+
+
+
+<slide>
+<element type="ROUTER" textId="ID_router_txt2" x="58.9" y="359.5" width="580" height="116" />
+<text id="ID_router_txt2"><![CDATA[<pre>R3(config)# access-list 10 permit any</br>R3(config)# end</br>R3# show access-list</br>Standard IP access list 10</br>   10 deny 192.168.11.10</br>   20 permit any (4 match(es))</br>R3#</pre>]]></text>
+</slide>
+
+		
+					
+	</slide>
+</data>

@@ -1,0 +1,17 @@
+
+          <p>Like IPv4, IPv6 supports static and default static routes. They are used and configured like IPv4 static routes. </p>
+          <p></p>
+          <p>To configure a default static IPv6 route, use the<b> ipv6 route ::/0 </b>{<i>ipv6-address </i>|<i> interface-type interface-number</i>}  global configuration command.</p>
+          <p></p>
+          <p>Figure 1 shows the configuration of a default static route on R1 to the Serial 0/0/0 interface. </p>
+          <p></p>
+          <p>Notice in the output shown in Figure 2 that the default static route configuration generated an ‘<b>S</b>’ entry in the routing table. The ‘<b>S</b>’ signifies that the route source is a static route. Unlike the IPv4 static route, there is no asterisk (<b>*</b>) or Gateway of Last Resort explicitly identified. </p>
+          <p></p>
+          <p>Like IPv4, static routes are routes explicitly configured to reach a specific remote network. Static IPv6 routes are configured using the<b> ipv6 route </b><i>ipv6-prefix</i><i>/</i><i>prefix-length</i>  {<i>ipv6-address</i><i></i>|<i></i><i>interface-type interface-number</i>}<i></i> global configuration command. </p>
+          <p></p>
+          <p>The example in Figure 3 shows the configuration of two static routes from R2 to reach the two LANs on R1. The route to the 2001:0DB8:ACAD:2::/64 LAN is configured with an exit interface, while the route to the 2001:0DB8:ACAD:1::/64 LAN is configured with the next hop IPv6 address. The next hop IPv6 address can be either an IPv6 global unicast or link-local address.</p>
+          <p></p>
+          <p>Figure 4 shows the routing table with the new static routes installed.</p>
+          <p></p>
+          <p>Figure 5 confirms remote network connectivity to the 2001:0DB8:ACAD:4::/64 LAN on R2 from R1.</p>
+        

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide type="MBAR">
+	<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+	<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_9.2.2.3_common.png" />
+<element type="TEXT" compId="ID_s2_table01_html" x="81" y="342" width="300" height="130" />
+<element type="TEXT" compId="ID_s2_txt02" x="391" y="72" width="131" expand="up+down" align="center" />
+<element type="TEXT" compId="ID_s2_txt01" x="185" y="72" width="131" expand="up+down" align="center" />
+<element type="TEXT" compId="ID_s2_txt03" x="420" y="198" width="72" expand="up+down" align="center" />
+<element type="TEXT" compId="ID_s2_txt04" x="544" y="176" width="59" expand="up+down" align="left" />
+<element type="TEXT" id="ID_static_1" text="209.165.200.254" x="473.55" y="234" align="center" width="89" />
+<element type="TEXT" id="ID_static_2" text="192.168.10.10" x="51" y="177" align="center" width="75" />
+<element type="TEXT" id="ID_static_3" text="192.168.10.0/24" x="43" y="107" align="center" width="86" bold="1"/>
+<element type="TEXT" id="ID_static_4" text="192.168.11.0/24" x="43" y="296" align="center" width="86" bold="1"/>
+<element type="TEXT" id="ID_static_5" text="192.168.11.10" x="51" y="271" align="center" width="70" />
+<slide>
+	<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_9.2.2.3_s1.png" />
+	<element type="TEXT" id="ID_static_6" text="SA 192.168.10.10" x="210" y="115" align="center" width="70" class="glow" bold="1"/>
+	<element type="TEXT" id="ID_static_7" text="SA 209.165.200.226" x="412" y="115" align="center" width="70" class="glow" bold="1"/>
+	<element type="TEXT" id="ID_static_8" text="SA 192.168.11.10" x="210" y="263" align="center" width="70" class="glow" bold="1"/>
+	<element type="TEXT" id="ID_static_9" text="SA 209.165.200.227" x="412" y="263" align="center" width="70" class="glow" bold="1"/>
+	<!-- <element type="TEXT" id="ID_static_10" text="5a" x="62" y="405" align="center" width="14" />
+	<element type="TEXT" id="ID_static_11" text="5b" x="245" y="308" align="center" width="14" />
+	<element type="TEXT" id="ID_static_12" text="4" x="454" y="308" align="center" width="7" />
+	<element type="TEXT" id="ID_static_13" text="5b" x="62" y="427" align="center" width="14" />
+	<element type="TEXT" id="ID_static_14" text="5a" x="246" y="92" align="center" width="13" />
+	<element type="TEXT" id="ID_static_15" text="4" x="448" y="91" align="center" width="7" /> -->
+	<element type="TEXT" subType="TITLE" compId="ID_s2_title"/>
+</slide>
+
+
+
+<slide>
+	<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_9.2.2.3_s2.png" />
+	<element type="TEXT" id="ID_static_22" text="SA 192.168.10.10" x="210" y="115" align="center" width="70" class="glow" bold="1"/>
+	<element type="TEXT" id="ID_static_23" text="SA 209.165.200.226" x="412" y="115" align="center" width="70" class="glow" bold="1"/>
+	<element type="TEXT" id="ID_static_24" text="DA 192.168.11.10" x="210" y="263" align="center" width="70" class="glow" bold="1"/>
+	<element type="TEXT" id="ID_static_25" text="DA 209.165.200.227" x="412" y="263" align="center" width="70" class="glow" bold="1"/>
+	<!-- <element type="TEXT" id="ID_static_16" text="3" x="62" y="405" align="center" width="7" />
+	<element type="TEXT" id="ID_static_17" text="1" x="245" y="308" align="center" width="5" />
+	<element type="TEXT" id="ID_static_18" text="3" x="454" y="308" align="center" width="7" />
+	<element type="TEXT" id="ID_static_19" text="3" x="62" y="427" align="center" width="7" />
+	<element type="TEXT" id="ID_static_20" text="1" x="246" y="92" align="center" width="5" />
+	<element type="TEXT" id="ID_static_21" text="3" x="448" y="91" align="center" width="7" /> -->
+	<element type="TEXT" subType="TITLE" compId="ID_s1_title"/>
+</slide>
+
+</slide> 
+	 
+</data>

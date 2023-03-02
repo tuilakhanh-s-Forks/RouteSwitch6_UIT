@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.3.1 The access-class Command </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>The access-class Command </h1>
+        <div>
+          <p>You can improve the security of administrative lines by restricting VTY access. Restricting VTY access is a technique that allows you to define which IP addresses are allowed remote access to the router EXEC process. You can specify which IP addresses are allowed remote access to your router with an ACL and an<b> access-class </b>statement configured on your VTY lines. Use this technique with SSH to further improve administrative access security.</p>
+          <p></p>
+          <p>The<b> access-class </b>command configured in line configuration mode restricts incoming and outgoing connections between a particular VTY (into a Cisco device) and the addresses in an access list. </p>
+          <p></p>
+          <p>The command syntax of the<b> access-class </b>command is:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config-line)# </span>
+            <span class="cmd">
+              <b>access-class</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>access-list-number</i>
+            </span>
+            <span class="cmd"> {</span>
+            <span class="cmd">
+              <b>in </b>
+            </span>
+            <span class="cmd">[</span>
+            <span class="cmd">
+              <b>vrf-also</b>
+            </span>
+            <span class="cmd">]</span>
+            <span class="cmd">
+              <b></b>
+            </span>
+            <span class="cmd">|</span>
+            <span class="cmd">
+              <b> out</b>
+            </span>
+            <span class="cmd">}</span>
+          </p>
+          <p></p>
+          <p>The parameter <b>in</b> restricts incoming connections between the addresses in the access list and the Cisco device, while the parameter <b>out</b> restricts outgoing connections between a particular Cisco device and the addresses in the access list. </p>
+          <p></p>
+          <p>An example allowing a range of addresses to access VTY lines 0 - 4 is shown in Figure 1. The ACL in the figure is configured to permit network 192.168.10.0 to access VTY lines 0 - 4 but deny all other networks. </p>
+          <p></p>
+          <p>The following should be considered when configuring access lists on VTYs:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Both named and numbered access lists can be applied to VTYs.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Identical restrictions should be set on all the VTYs, because a user can attempt to connect to any of them.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 2 to practice securing VTY access.</p>
+          <p></p>
+          <p>Note: Access lists apply to packets that travel through a router. They are not designed to block packets that originate within the router. By default, an outbound ACL does not prevent remote access connections initiated from the router. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a router with a local network segment on each of two gigabit Ethernet interfaces.  Each segment consists of a switch and a computer.  The router has V.T.Y. ports zero through four configured for access.  The figure shows the commands required to create an A.C.L. that restricts V.T.Y. connections.  The figure begins in global configuration mode and then moves to the v.t.y. lines with the command, line v.t.y. zero space four.  The next command configures the router to use a local database for access with the command login local.  The next line sets the type of connection to allow. The command is, transport input s.s.h.  This is followed by applying an A.C.L. on the lines with the command, access hyphen class 21 in.  The figure moves from line configuration mode to global configuration mode with the command, exit.  The A.C.L. is created with the command, access hyphen list 21 permit 192 dot 168 dot 10 dot zero zero dot zero dot zero dot 255, and the command, access hyphen list 21 deny any. Figure two is an interactive media element that allows the learner to configure the v.t.y. lines to accept s.s.h. on a router.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

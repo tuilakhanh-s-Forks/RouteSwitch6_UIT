@@ -1,0 +1,130 @@
+{
+	"title": "Internet of Everything - Assessment and Certificates - Tutorial",
+	"lang": "en",
+	"rtl": false,
+	"contents": [
+		{
+			"pageNumber": 1,
+			"img": "client/content/img/help03-page01-bg.jpg",
+			"imgAlt": "Welcome collage background image. It includes photos of a bus, a guitar, a city view and a mountain top",
+			"header": "Assessment and Certificates - Tutorial",
+			"text": "This tutorial will show you how use the Terms and Concepts practice activities, as well as how to find the:",
+			"list": [
+				"Beginning of Course survey",
+				"How Much Do I Know Already?",
+				"Module quizzes",
+				"End of Course assessment",
+				"End of Course survey",
+				"Certificate of Completion"
+			]
+		},
+		{
+			"pageNumber": 2,
+			"img": "client/content/img/help03-page02-bg.jpg",
+			"imgAlt": "Course dashboard with Return to Class button highlighted.",
+			"text": "On the course dashboard, click the 'Return to Class' button."
+		},
+		{
+			"pageNumber": 3,
+			"img": "client/content/img/help03-page03-bg.jpg",
+			"imgAlt": "Course home page with 'Assignments' navigation text highlighted.",
+			"text": "On the course home page, click the 'Assignments' menu option."
+		},
+		{
+			"pageNumber": 4,
+			"img": "client/content/img/help03-page04-bg.jpg",
+			"imgAlt": "Assignments page with 'Pre-Course Survey', 'End of Course Feedback', 'How Much Do I Know Already?', 'How to Get Your Certificate', and 'End of Course Assessment' assignments shown.",
+			"text": "The Assignments page contains links to the 'Pre-Course Survey', 'End of Course Feedback', 'How Much Do I Know Already?', 'How to Get Your Certificate', and 'End of Course Assessment' assignments. (These assignments may not be the same for every course.)"
+		},
+		{
+			"pageNumber": 5,
+			"img": "client/content/img/help03-page05-bg.jpg",
+			"imgAlt": "Assignments page with 'Modules button highlighted'",
+			"text": "To navigate to the Terms and Concepts Practice, click the 'Modules' menu option."
+		},
+		{
+			"pageNumber": 6,
+			"img": "client/content/img/help03-page06-bg.jpg",
+			"imgAlt": "Modules page with 'Chapter 1 - Terms and Concepts Practive button highlighted'",
+			"text": "On the Modules page, click the 'Chapter 1 - Terms and Concepts Practice' button."
+		},	
+		{
+			"pageNumber": 7,
+			"img": "client/content/img/help03-page07-bg.jpg",
+			"imgAlt": "Terms and Concepts Practice with Choose a Study Mode highlighted",
+			"text": "The practice activities are available in several different modes. Explore other modes by selecting them from the 'Choose a Study Mode' menu."
+		},
+		{
+			"pageNumber": 8,
+			"img": "client/content/img/help03-page08-bg.jpg",
+			"imgAlt": "Terms and Concepts practice match mode",
+			"text": "As the instructions indicate, the Match mode allows you to match terms and concepts with their corresponding descriptions."
+		},
+		{
+			"pageNumber": 9,
+			"img": "client/content/img/help03-page09-bg.jpg",
+			"imgAlt": "Terms and Concepts Practice match mode",
+			"text": "As you match items correctly, the pairs will disappear."
+		},
+		{
+			"pageNumber": 10,
+			"img": "client/content/img/help03-page10-bg.jpg",
+			"imgAlt": "Terms and Concepts Practice match mode",
+			"text": "This is an opportunity to practice. The timer and your score will not affect successful completion of the course."
+		},
+		{
+			"pageNumber": 11,
+			"img": "client/content/img/help03-page11-bg.jpg",
+			"imgAlt": "Terms and Concepts Practice with Choose a Study Mode highlighted",
+			"text": "When all matches have been made correctly, you have the opportunity to repeat the activity or select another mode to continue practicing."
+		},
+		{
+			"pageNumber": 12,
+			"img": "client/content/img/help03-page12-bg.jpg",
+			"imgAlt": "Terms and Concepts Practice flashcards mode",
+			"text": "In Flashcards mode, try to identify the term or concept to which the description refers."
+		},
+		{
+			"pageNumber": 13,
+			"img": "client/content/img/help03-page13-bg.jpg",
+			"imgAlt": "Terms and Concepts Practice Flashcards mode with CLICK TO FLIP highlighted",
+			"text": "Click on CLICK TO FLIP to the reveal the correct answer"
+		},
+		{
+			"pageNumber": 14,
+			"img": "client/content/img/help03-page14-bg.jpg",
+			"imgAlt": "Terms and Concepts Practice Flashcards mode with answer shown",
+			"text": "The flashcard flips over and reveals the answer."
+		},
+		{
+			"pageNumber": 15,
+			"img": "client/content/img/help03-page15-bg.jpg",
+			"imgAlt": "Terms and Concepts Practice Flashcards mode with “View previous card” and “View next card” buttons highlighted",
+			"text": "Click the 'View previous card' and 'View next card' buttons to advance to the next flashcard or return to the previous flashcard."
+		},
+		{
+			"pageNumber": 16,
+			"img": "client/content/img/help03-page16-bg.jpg",
+			"imgAlt": "Terms and Concepts Practice Flashcards mode with CLICK TO FLIP highlighted",
+			"text": "Click on 'CLICK TO FLIP' to the turn the card over again"
+		},
+		{
+			"pageNumber": 17,
+			"img": "client/content/img/help03-page17-bg.jpg",
+			"imgAlt": "Terms and Concepts Practice Flashcards mode with Options button highlighted",
+			"text": "Click the 'Options' button to access additional settings."
+		},
+		{
+			"pageNumber": 18,
+			"img": "client/content/img/help03-page18-bg.jpg",
+			"imgAlt": "Terms and Concepts Practice options",
+			"text": "Explore the available settings to customize your experience."
+		},
+		{
+			"pageNumber": 19,
+			"img": "client/content/img/help03-page19-bg.jpg",
+			"imgAlt": "",
+			"text": "This concludes the Course Navigation tutorial."
+		}
+	]
+}

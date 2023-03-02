@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide>
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+        <element type="IMAGE" src="media_7.2.3.2.png" x="0" y="0" width="680" height="490" />
+        <element type="TEXT" id="ID_static_1" text="G0/0" x="265" y="177" align="center" width="26" />
+        <element type="TEXT" id="ID_static_2" text="G0/1" x="351" y="177" align="center" width="24" />
+        <element type="TEXT" id="ID_static_3" text="192.168.10.0/24" x="137" y="239" align="center" width="86" />
+        <element type="TEXT" id="ID_static_4" text="192.168.11.0/24" x="409" y="239" align="center" width="86" />
+        <element type="TEXT" id="ID_static_5" text="192.168.10.10/24" x="141" y="310" align="center" width="93" />
+        <element type="TEXT" id="ID_static_6" text="192.168.11.10/24" x="398" y="310" align="center" width="93" />
+        <element type="ROUTER" textId="ID_router_txt1" x="40" y="38" width="600" height="90" />
+        <text id="ID_router_txt1">
+            <![CDATA[<pre>R1# <b>show access-lists</b> 
+Standard IP access list 21 
+    10 permit 192.168.10.0, wildcard bits 0.0.0.255 (2 matches) 
+    20 deny any (1 match) 
+R1#
+</pre>]]></text>
+        <element type="ROUTER" textId="ID_router_txt2" x="62" y="370" width="200" height="90" />
+        <text id="ID_router_txt2">
+            <![CDATA[<pre>PC1><b>ssh 192.168.10.1</b> 
+
+Login as: <b>admin</b> 
+Password: <b>*****</b>
+R1></pre>]]></text>
+        <element type="ROUTER" textId="ID_router_txt3" x="343" y="370" width="275" height="110" />
+        <text id="ID_router_txt3">
+            <![CDATA[<pre>PC2>ssh 192.168.11.1 
+    ssh connect to host 192.168.11.1 port
+    22: Connection refused 
+
+PC2></pre>]]></text>
+    </slide>
+</data>

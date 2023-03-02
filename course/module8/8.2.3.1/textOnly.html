@@ -1,0 +1,37 @@
+
+          <p>Configuring a stateful DHCPv6 server is similar to configuring a stateless server. The most significant difference is that a stateful server also includes IPv6 addressing information similar to a DHCPv4 server. </p>
+          <p></p>
+          <p>
+            <b>Step 1. Enable IPv6 Routing </b>
+          </p>
+          <p></p>
+          <p>As shown in Figure 1, the<b> ipv6 unicast-routing </b>command is required to enable IPv6 routing. This command is not necessary for the router to be a stateful DHCPv6 server, but it is required for the router to source ICMPv6 RA messages. </p>
+          <p></p>
+          <p>
+            <b>Step 2.</b>
+            <b>Configure a DHCPv6 Pool</b>
+          </p>
+          <p></p>
+          <p>The<b> ipv6 dhcp pool </b><i>pool-name </i>command creates a pool and enters the router in DHCPv6 configuration mode, which is identified by the Router(config-dhcpv6)# prompt.</p>
+          <p></p>
+          <p>
+            <b>Step 3.</b>
+            <b>Configure Pool Parameters</b>
+          </p>
+          <p></p>
+          <p>With stateful DHCPv6 all addressing and other configuration parameters must be assigned by the DHCPv6 server. The<b> address prefix </b>command is used to indicate the pool of addresses to be allocated by the server. The<b> lifetime </b>option indicates the valid and preferred lease times in seconds. As with stateless DHCPv6, the client uses the source IPv6 address from the packet that contained the RA message.</p>
+          <p></p>
+          <p>Other information provided by the stateful DHCPv6 server typically includes DNS server address and the domain name.</p>
+          <p></p>
+          <p>
+            <b>Step 4. Interface Commands</b>
+          </p>
+          <p></p>
+          <p>The<b> ipv6 dhcp server </b><i>pool-name </i>interface command binds the DHCPv6 pool to the interface. The router responds to stateless DHCPv6 requests on this interface with the information contained in the pool. The M flag needs to be changed from 0 to 1 using the interface command<b> ipv6 nd managed-config-flag</b>. This informs the device not to use SLAAC but to obtain IPv6 addressing and all configuration parameters from a stateful DHCPv6 server.</p>
+          <p></p>
+          <p>
+            <b>DHCPv6 Stateful Server Example</b>
+          </p>
+          <p></p>
+          <p>Figure 2 shows an example of stateful DHCPv6 server commands for a router configured on R1. Notice that a default gateway is not specified because the router will automatically send its own link-local address as the default gateway. Router R3 is configured as a client to help verify the stateful DHCPv6 operations. </p>
+        

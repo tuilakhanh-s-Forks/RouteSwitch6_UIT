@@ -1,0 +1,13 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_txt01{
+	padding: 4px 3px !important;
+}
+
+#ID_txt02,#ID_txt03{
+	background-color: #FFFFFF;
+	padding: 4px 4px !important;
+}

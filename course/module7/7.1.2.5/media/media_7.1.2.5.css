@@ -1,0 +1,27 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_router_txt1{
+	color:#fff !important;
+}
+#ID_router_txt2{
+	color:#fff !important;
+}
+#ID_txt01{
+	background-color:#0B5474 !important;
+	padding:4px !important;
+}
+#ID_txt02{
+	background-color:#0B5474 !important;
+	padding:4px !important;
+}
+
+#ID_txt03{
+	background-color: #FFFFFF;
+padding: 5px !important;
+box-shadow: 1px 1px 1px 1px #888888;
+
+
+}

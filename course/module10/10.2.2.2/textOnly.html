@@ -1,0 +1,31 @@
+
+          <p>On Cisco network devices, the syslog protocol starts by sending system messages and<b> debug </b>output to a local logging process internal to the device. How the logging process manages these messages and outputs is based on device configurations. For example, syslog messages may be sent across the network to an external syslog server. These messages can be retrieved without the need of accessing the actual device. Log messages and outputs stored on the external server can be pulled into various reports for easier reading. </p>
+          <p></p>
+          <p>Alternatively, syslog messages may be sent to an internal buffer. Messages sent to the internal buffer are only viewable through the CLI of the device. </p>
+          <p></p>
+          <p>Finally, the network administrator may specify that only certain types of system messages are sent to various destinations. For example, the device may be configured to forward all system messages to an external syslog server. However, debug-level messages are forwarded to the internal buffer and are only accessible by the administrator from the CLI.  </p>
+          <p></p>
+          <p>As shown in the figure, popular destinations for syslog messages include:</p>
+          <p>
+            <ul>
+              <li>Logging buffer (RAM inside a router or switch)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Console line </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Terminal line</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Syslog server</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>It is possible to remotely monitor system messages by viewing the logs on a syslog server, or by accessing the device through Telnet, SSH, or through the console port.</p>
+        

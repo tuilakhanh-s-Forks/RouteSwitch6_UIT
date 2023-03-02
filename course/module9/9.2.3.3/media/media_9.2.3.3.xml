@@ -1,0 +1,249 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>PAT Analysis from PCs to Servers</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+<text><![CDATA[PC1 to Svr1]]></text>
+</component>
+<component id="ID_s1_txt02">
+<text><![CDATA[<b>SA</b>]]></text>
+</component>
+<component id="ID_s1_txt03">
+<text><![CDATA[<b>SP</b>]]></text>
+</component>
+<component id="ID_s1_txt04">
+<text><![CDATA[<b>DA</b>]]></text>
+</component>
+<component id="ID_s1_txt05">
+<text><![CDATA[<b>DP</b>]]></text>
+</component>
+<component id="ID_s1_txt06">
+<text><![CDATA[<b>SA</b>]]></text>
+</component>
+<component id="ID_s1_txt07">
+<text><![CDATA[<b>SP</b>]]></text>
+</component>
+<component id="ID_s1_txt08">
+<text><![CDATA[<b>DA</b>]]></text>
+</component>
+<component id="ID_s1_txt09">
+<text><![CDATA[<b>DP</b>]]></text>
+</component>
+<component id="ID_s1_txt10">
+<text><![CDATA[PC2 to Svr2]]></text>
+</component>
+<component id="ID_s1_txt11">
+<text><![CDATA[<b>SA</b>]]></text>
+</component>
+<component id="ID_s1_txt12">
+<text><![CDATA[<b>SP</b>]]></text>
+</component>
+<component id="ID_s1_txt13">
+<text><![CDATA[<b>DA</b>]]></text>
+</component>
+<component id="ID_s1_txt14">
+<text><![CDATA[<b>DP</b>]]></text>
+</component>
+<component id="ID_s1_txt15">
+<text><![CDATA[<b>SA</b>]]></text>
+</component>
+<component id="ID_s1_txt16">
+<text><![CDATA[<b>SP</b>]]></text>
+</component>
+<component id="ID_s1_txt17">
+<text><![CDATA[<b>DA</b>]]></text>
+</component>
+<component id="ID_s1_txt18">
+<text><![CDATA[<b>DP</b>]]></text>
+</component>
+
+<component id="ID_s1_table01">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable" width="600" >
+
+	<tr class="mtable_title">
+			<td colspan="4" bgcolor='#FFFFFF'><font size="11"><b>NAT Table</b></font></td>
+		</tr>
+
+		<tr class="mtable_top">
+			<td colspan='4' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+		<tr>		
+			<td bgcolor="#666263" valign="top"><font color='#FFFFFF'><b>Inside Local  Address</b></font></td>
+			<td bgcolor="#666263" valign="top"><font color='#FFFFFF'><b>Inside Global Address</b></font></td>
+			<td bgcolor="#666263" valign="top"><font color='#FFFFFF'><b>Outside Global Address</b></font></td>
+			<td bgcolor="#666263" valign="top"><font color='#FFFFFF'><b>Outside Local Address</b></font></td>	
+		</tr>
+		<tr>	
+			<td  bgcolor="#E9E7E8" valign="top"><font color='#0D658B'><b>192.168.10.10:1444</b></font></td>
+			<td  bgcolor="#E9E7E8" valign="top"><font color='#652C8A'><b>209.165.200.225:1444</b></font></td>
+			<td  bgcolor="#E9E7E8" valign="top"><font color='#0E6360'><b>209.165.201.1:80</b></font></td>
+			<td  bgcolor="#E9E7E8" valign="top"><font color='#774723'><b>209.165.201.1:80</b></font></td>
+		</tr>
+		<tr>	
+			<td  bgcolor="#F2F2F2" valign="top"><font color='#0D658B'><b>192.168.10.11:1444</b></font></td>
+			<td  bgcolor="#F2F2F2" valign="top"><font color='#652C8A'><b>209.165.200.225:1445</b></font></td>
+			<td  bgcolor="#F2F2F2" valign="top"><font color='#0E6360'><b>209.165.202.129:80</b></font></td>
+			<td  bgcolor="#F2F2F2" valign="top"><font color='#774723'><b>209.165.202.129:80</b></font></td>
+		</tr>
+		
+</table>]]></text>
+</component> 
+
+<component id="ID_s1_table01_html">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable" width="600" >
+
+	
+			<caption colspan="4" class="mtable_title" bgcolor='#FFFFFF'><font size="14"><b>NAT Table</b></font></caption>
+		
+
+		<tr class="mtable_top">
+			<td colspan='4' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+		<tr>		
+			<th scope="col" bgcolor="#666263" valign="top"><font color='#FFFFFF'><b>Inside Local  Address</b></font></th>
+			<th scope="col" bgcolor="#666263" valign="top"><font color='#FFFFFF'><b>Inside Global Address</b></font></th>
+			<th scope="col" bgcolor="#666263" valign="top"><font color='#FFFFFF'><b>Outside Global Address</b></font></th>
+			<th scope="col" bgcolor="#666263" valign="top"><font color='#FFFFFF'><b>Outside Local Address</b></font></th>	
+		</tr>
+		<tr>	
+			<td  bgcolor="#E9E7E8" valign="top"><font color='#0D658B'><b>192.168.10.10:1444</b></font></td>
+			<td  bgcolor="#E9E7E8" valign="top"><font color='#652C8A'><b>209.165.200.225:1444</b></font></td>
+			<td  bgcolor="#E9E7E8" valign="top"><font color='#0E6360'><b>209.165.201.1:80</b></font></td>
+			<td  bgcolor="#E9E7E8" valign="top"><font color='#774723'><b>209.165.201.1:80</b></font></td>
+		</tr>
+		<tr>	
+			<td  bgcolor="#F2F2F2" valign="top"><font color='#0D658B'><b>192.168.10.11:1444</b></font></td>
+			<td  bgcolor="#F2F2F2" valign="top"><font color='#652C8A'><b>209.165.200.225:1445</b></font></td>
+			<td  bgcolor="#F2F2F2" valign="top"><font color='#0E6360'><b>209.165.202.129:80</b></font></td>
+			<td  bgcolor="#F2F2F2" valign="top"><font color='#774723'><b>209.165.202.129:80</b></font></td>
+		</tr>
+		
+</table>]]></text>
+</component> 
+
+
+
+
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>PAT Analysis from Servers to PCs</b>]]></text>
+</component>
+<component id="ID_s2_txt01">
+<text><![CDATA[Svr1 to PC1]]></text>
+</component>
+<component id="ID_s2_txt02">
+<text><![CDATA[<b>SA</b>]]></text>
+</component>
+<component id="ID_s2_txt03">
+<text><![CDATA[<b>SP</b>]]></text>
+</component>
+<component id="ID_s2_txt04">
+<text><![CDATA[<b>DA</b>]]></text>
+</component>
+<component id="ID_s2_txt05">
+<text><![CDATA[<b>DP</b>]]></text>
+</component>
+<component id="ID_s2_txt06">
+<text><![CDATA[<b>SA</b>]]></text>
+</component>
+<component id="ID_s2_txt07">
+<text><![CDATA[<b>SP</b>]]></text>
+</component>
+<component id="ID_s2_txt08">
+<text><![CDATA[<b>DA</b>]]></text>
+</component>
+<component id="ID_s2_txt09">
+<text><![CDATA[<b>DP</b>]]></text>
+</component>
+<component id="ID_s2_txt10">
+<text><![CDATA[Svr2 to PC2]]></text>
+</component>
+<component id="ID_s2_txt11">
+<text><![CDATA[<b>SA</b>]]></text>
+</component>
+<component id="ID_s2_txt12">
+<text><![CDATA[<b>SP</b>]]></text>
+</component>
+<component id="ID_s2_txt13">
+<text><![CDATA[<b>DA</b>]]></text>
+</component>
+<component id="ID_s2_txt14">
+<text><![CDATA[<b>DP</b>]]></text>
+</component>
+<component id="ID_s2_txt15">
+<text><![CDATA[<b>SA</b>]]></text>
+</component>
+<component id="ID_s2_txt16">
+<text><![CDATA[<b>SP</b>]]></text>
+</component>
+<component id="ID_s2_txt17">
+<text><![CDATA[<b>DA</b>]]></text>
+</component>
+<component id="ID_s2_txt18">
+<text><![CDATA[<b>DP</b>]]></text>
+</component>
+
+<component id="ID_s2_table01">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable" width="600" >
+
+	<tr class="mtable_title">
+			<td colspan="4" bgcolor='#FFFFFF'><font size="11"><b>NAT Table</b></font></td>
+		</tr>
+
+		<tr class="mtable_top">
+			<td colspan='4' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+		<tr>		
+			<td bgcolor="#666263" valign="top"><font color='#FFFFFF'><b>Inside Local  Address</b></font></td>
+			<td bgcolor="#666263" valign="top"><font color='#FFFFFF'><b>Inside Global Address</b></font></td>
+			<td bgcolor="#666263" valign="top"><font color='#FFFFFF'><b>Outside Global Address</b></font></td>
+			<td bgcolor="#666263" valign="top"><font color='#FFFFFF'><b>Outside Local Address</b></font></td>	
+		</tr>
+		<tr>	
+			<td  bgcolor="#E9E7E8" valign="top"><font color='#0D658B'><b>192.168.10.10:1444</b></font></td>
+			<td  bgcolor="#E9E7E8" valign="top"><font color='#652C8A'><b>209.165.200.225:1444</b></font></td>
+			<td  bgcolor="#E9E7E8" valign="top"><font color='#0E6360'><b>209.165.201.1:80</b></font></td>
+			<td  bgcolor="#E9E7E8" valign="top"><font color='#774723'><b>209.165.201.1:80</b></font></td>
+		</tr>
+		<tr>	
+			<td  bgcolor="#F2F2F2" valign="top"><font color='#0D658B'><b>192.168.10.11:1444</b></font></td>
+			<td  bgcolor="#F2F2F2" valign="top"><font color='#652C8A'><b>209.165.200.225:1445</b></font></td>
+			<td  bgcolor="#F2F2F2" valign="top"><font color='#0E6360'><b>209.165.202.129:80</b></font></td>
+			<td  bgcolor="#F2F2F2" valign="top"><font color='#774723'><b>209.165.202.129:80</b></font></td>
+		</tr>
+		
+</table>]]></text>
+</component> 
+
+<component id="ID_s2_table01_html">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable" width="600" >
+
+	
+			<caption colspan="4" class="mtable_title" bgcolor='#FFFFFF'><font size="14"><b>NAT Table</b></font></caption>
+		
+
+		<tr class="mtable_top">
+			<td colspan='4' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+		<tr>		
+			<th scope="col" bgcolor="#666263" valign="top"><font color='#FFFFFF'><b>Inside Local  Address</b></font></th>
+			<th scope="col" bgcolor="#666263" valign="top"><font color='#FFFFFF'><b>Inside Global Address</b></font></th>
+			<th scope="col" bgcolor="#666263" valign="top"><font color='#FFFFFF'><b>Outside Global Address</b></font></th>
+			<th scope="col" bgcolor="#666263" valign="top"><font color='#FFFFFF'><b>Outside Local Address</b></font></th>	
+		</tr>
+		<tr>	
+			<td  bgcolor="#E9E7E8" valign="top"><font color='#0D658B'><b>192.168.10.10:1444</b></font></td>
+			<td  bgcolor="#E9E7E8" valign="top"><font color='#652C8A'><b>209.165.200.225:1444</b></font></td>
+			<td  bgcolor="#E9E7E8" valign="top"><font color='#0E6360'><b>209.165.201.1:80</b></font></td>
+			<td  bgcolor="#E9E7E8" valign="top"><font color='#774723'><b>209.165.201.1:80</b></font></td>
+		</tr>
+		<tr>	
+			<td  bgcolor="#F2F2F2" valign="top"><font color='#0D658B'><b>192.168.10.11:1444</b></font></td>
+			<td  bgcolor="#F2F2F2" valign="top"><font color='#652C8A'><b>209.165.200.225:1445</b></font></td>
+			<td  bgcolor="#F2F2F2" valign="top"><font color='#0E6360'><b>209.165.202.129:80</b></font></td>
+			<td  bgcolor="#F2F2F2" valign="top"><font color='#774723'><b>209.165.202.129:80</b></font></td>
+		</tr>
+		
+</table>]]></text>
+</component> 
+</textcomponents>

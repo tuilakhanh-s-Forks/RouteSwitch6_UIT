@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.3.3 Router and Switch Commands for Syslog Clients</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Router and Switch Commands for Syslog Clients</h1>
+        <div>
+          <p>There are three steps to configuring the router to send system messages to a syslog server where they can be stored, filtered, and analyzed:</p>
+          <p></p>
+          <p>
+            <b>Step 1. </b>In global configuration mode, use the <b>logging </b>command to<b></b>configure the destination hostname or IPv4 address of the syslog.</p>
+          <p></p>
+          <p>
+            <b>Step 2. </b>Control the messages that will be sent to the syslog server with the<b> logging trap </b><i>level </i>global configuration mode command. For example, to limit the messages to levels 4 and lower (0 to 4), use one of the two equivalent commands.</p>
+          <p></p>
+          <p>
+            <b>Step 3. </b>Optionally, configure the source interface with the<b> logging source-interface </b><i>interface-type interface-number </i>global configuration mode command. This specifies that syslog packets contain the IPv4 or IPv6 address of a specific interface, regardless of which interface the packet uses to exit the router.</p>
+          <p></p>
+          <p>In Figure 1, R1 is configured to send log messages of levels 4 and lower to the syslog server at 192.168.1.3. The source interface is set as the G0/0 interface. A loopback interface is created, then shut down, and then brought back up. The console output reflects these actions.</p>
+          <p></p>
+          <p>Shown in Figure 2, the Tftpd32 syslog server has been set up on a Windows 7 machine with IPv4 address 192.168.1.3. As you can see, the only messages that appear on the syslog server are those with severity level of 4 or lower (more severe). The messages with severity level of 5 or higher (less severe) appear on the router console output, but do not appear on the syslog server output, because the logging trap<b></b>limits the syslog messages sent to the syslog server based on severity.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the commands to configure a router to send system messages to a sys log server. Figure two shows sys log server output using t.f.t.p. 32.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

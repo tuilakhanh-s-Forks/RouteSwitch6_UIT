@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.1.2.2 Default Gateways</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Default Gateways</h1>
+        <div>
+          <p>To enable network access, devices must be configured with IP address information to identify the appropriate:</p>
+          <p>
+            <ul>
+              <li>
+                <b>IP address </b>- Identifies a unique host on a local network.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Subnet mask </b>- Identifies with which network subnet the host can communicate.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Default gateway </b>- Identifies the IP address of the router to send a packet to when the destination is not on the same local network subnet.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>When a host sends a packet to a device that is on the same IP network, the packet is simply forwarded out of the host interface to the destination device. </p>
+          <p></p>
+          <p>When a host sends a packet to a device on a different IP network, then the packet is forwarded to the default gateway, because a host device cannot communicate directly with devices outside of the local network. The default gateway is the destination that routes traffic from the local network to devices on remote networks. It is often used to connect a local network to the Internet. </p>
+          <p></p>
+          <p>The default gateway is usually the address of the interface on the router connected to the local network. The router maintains routing table entries of all connected networks as well as entries of remote networks, and determines the best path to reach those destinations. </p>
+          <p></p>
+          <p>For example, if PC1 sends a packet to the Web Server located at 172.16.1.99, it would discover that the Web Server is not on the local network and it, therefore, must send the packet to the Media Access Control (MAC) address of its default gateway. The Packet protocol data unit (PDU) in the figure identifies the source and destination IP and MAC addresses.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: A router is also usually configured with its own default gateway. This is known as the Gateway of Last Resort.  </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a switch with two computers and an F.T.P. server connected to it.  There is a link from the switch to a router. The router links to another router, which then links to a third router.  The default gateway for the two computers and the server is the router port that is connected to the switch.   The third router has a switch connected to it and a web server is connected to that switch.  The figure shows a P.D.U. that is formed when one of the computers needs to communicate with the web server.  The P.D.U. consists of the destination MAC address, which will be the MAC address of the default gateway since the web server is not on the local network and the packet must be sent to the router.  The source MAC will be that of the computer sending the request, and the source I.P. address will be from the sending computer.  The destination I.P. address will be that of the web server.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

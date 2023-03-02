@@ -1,0 +1,101 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Dynamic versus Static Routing</b>]]></text> 
+</component>
+
+<component id="ID_table">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'  cellspacing="2" class="mtable">
+	<tr class="mtable_title">
+		<td colspan='3' bgcolor='#FFFFFF' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	<tr class="mtable_top">
+			<td colspan='3' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+	<tr>
+		<td bgcolor='#666263' valign="top" width='115'><font bgcolor='#097A76' color='#EFF8F7'> </font></td>
+		<td bgcolor='#666263' valign="top" ><font bgcolor='#097A76' color='#EFF8F7'><b>Dynamic Routing</b></font></td>
+		<td bgcolor='#666263' valign="top" ><font bgcolor='#097A76' color='#EFF8F7'><b>Static Routing</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263'><b><font color='#FFFFFF'>Configuration Complexity</font></b></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>Generally independent of the network size</font></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>Increases with network size</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263'><b><font color='#FFFFFF'>Topology Changes</font></b></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>Automatically adapts to topology changes</font></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>Administrator intervention required</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263'><b><font color='#FFFFFF'>Scaling</font></b></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>Suitable for simple and complex topologies</font></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>Suitable for simple topologies</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263'><b><font color='#FFFFFF'>Security</font></b></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>Less secure</font></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>More secure</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263'><b><font color='#FFFFFF'>Resource Usage</font></b></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>Uses CPU, memory, link bandwith</font></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>No extra resources needed</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263'><b><font color='#FFFFFF'>Predictability</font></b></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>Route depends on the current topology</font></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>Route to destination is always the same</font></td>
+	</tr>
+</table>]]></text>
+</component>
+
+<component id="ID_table_html">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'  cellspacing="2" class="mtable">
+
+
+       <caption class="mtable_title" colspan="2" bgcolor='#FFFFFF'><font size="1"></font></caption>
+
+	<tr class="mtable_title">
+		<td colspan='3' bgcolor='#FFFFFF' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+	</tr>
+	<tr class="mtable_top">
+			<td colspan='3' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+	<tr>
+		<th scope="col" bgcolor='#666263' valign="top" width='115'><font bgcolor='#097A76' color='#EFF8F7'> </font></th>
+		<th scope="col" bgcolor='#666263' valign="top" ><font bgcolor='#097A76' color='#EFF8F7'><b>Dynamic Routing</b></font></th>
+		<th scope="col" bgcolor='#666263' valign="top" ><font bgcolor='#097A76' color='#EFF8F7'><b>Static Routing</b></font></th>
+	</tr>
+	<tr>
+		<td bgcolor='#666263'><b><font color='#FFFFFF'>Configuration Complexity</font></b></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>Generally independent of the network size</font></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>Increases with network size</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263'><b><font color='#FFFFFF'>Topology Changes</font></b></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>Automatically adapts to topology changes</font></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>Administrator intervention required</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263'><b><font color='#FFFFFF'>Scaling</font></b></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>Suitable for simple and complex topologies</font></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>Suitable for simple topologies</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263'><b><font color='#FFFFFF'>Security</font></b></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>Less secure</font></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>More secure</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263'><b><font color='#FFFFFF'>Resource Usage</font></b></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>Uses CPU, memory, link bandwith</font></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>No extra resources needed</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263'><b><font color='#FFFFFF'>Predictability</font></b></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>Route depends on the current topology</font></td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>Route to destination is always the same</font></td>
+	</tr>
+</table>]]></text>
+</component>
+</textcomponents>

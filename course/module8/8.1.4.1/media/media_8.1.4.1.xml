@@ -1,0 +1,86 @@
+<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Troubleshooting DHCPv4</b>]]></text>
+</component>
+
+<component id="ID_s1_table01">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#666263' valign="middle" width="220"><font color='#FFFFFF'><b>Troubleshooting Task 1:</b></font></td>
+<td  bgcolor='#E9E7E8' valign="middle" width="370"><font color='#393536'>Resolve address conflicts.</font></td>
+</tr>
+
+<tr>
+<td  bgcolor='#666263' valign="middle"><font color='#FFFFFF'><b>Troubleshooting Task 2:</b></font></td>
+<td  bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Verify physical connectivity.</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#666263' valign="middle"><font color='#FFFFFF'><b>Troubleshooting Task 3:</b></font></td>
+<td bgcolor='#E9E7E8' valign="middle"><font color='#393536'>Test with a static IPv4 address.</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#666263' valign="middle"><font color='#FFFFFF'><b>Troubleshooting Task 4:</b></font></td>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Verify switch port configuration.</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#666263' valign="middle"><font color='#FFFFFF'><b>Troubleshooting Task 5:</b></font></td>
+<td bgcolor='#E9E7E8' valign="middle"><font color='#393536'>Test from the same subnet or VLAN.</font></td>
+</tr>
+
+ 
+</table>]]></text> 
+</component>
+
+<component id="ID_s1_table01_html">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+<caption class="mtable_title" colspan="2" bgcolor='#FFFFFF'><font size="16"></font></caption>
+
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#666263' valign="middle" width="220"><font color='#FFFFFF'><b>Troubleshooting Task 1:</b></font></td>
+<td  bgcolor='#E9E7E8' valign="middle" width="370"><font color='#393536'>Resolve address conflicts.</font></td>
+</tr>
+
+<tr>
+<td  bgcolor='#666263' valign="middle"><font color='#FFFFFF'><b>Troubleshooting Task 2:</b></font></td>
+<td  bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Verify physical connectivity.</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#666263' valign="middle"><font color='#FFFFFF'><b>Troubleshooting Task 3:</b></font></td>
+<td bgcolor='#E9E7E8' valign="middle"><font color='#393536'>Test with a static IPv4 address.</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#666263' valign="middle"><font color='#FFFFFF'><b>Troubleshooting Task 4:</b></font></td>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Verify switch port configuration.</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#666263' valign="middle"><font color='#FFFFFF'><b>Troubleshooting Task 5:</b></font></td>
+<td bgcolor='#E9E7E8' valign="middle"><font color='#393536'>Test from the same subnet or VLAN.</font></td>
+</tr>
+
+ 
+</table>]]></text> 
+</component>
+
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Viewing DHCPv4 Conflicts</b>]]></text>
+</component>
+
+</textcomponents>

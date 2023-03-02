@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<slide type="MBAR">
+
+		<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+		<element type="IMAGE" src="media_6.3.2.3_s1.png" width="680" height="490" x="0" y="0" />
+	<slide>
+		<element type="TEXT" subType="TITLE" compId="ID_s1_title"/>
+		<element type="TEXT" id="ID_static_8" text="172.17.10.1/24" x="210" y="77.55" align="center" width="78.95" bold="1"/>
+		<element type="TEXT" compId="ID_txt01" x="137" y="128" width="102.9" expand="up+down" align="center" class="orangeCallOut" />
+		<element type="TEXT" id="ID_static_1" text="G0/0" x="308" y="104.2" align="center" width="25.65" />
+		<element type="TEXT" id="ID_static_2" text="F0/4" x="308.8" y="132.7" align="center" width="23.4" />
+		<element type="TEXT" id="ID_static_3" text="F0/11" x="304.1" y="194.5" align="center" width="28.15" />
+		<element type="TEXT" id="ID_static_5" text="172.17.10.21" x="214" y="278.1" align="center" width="66.85" bold="1"/>
+		<element type="TEXT" id="ID_static_9" text="172.17.30.1/24" x="374.45" y="77.55" align="center" width="78.95" bold="1"/>
+		<element type="TEXT" compId="ID_txt02" x="440" y="128" width="106.1" expand="up+down" align="center" class="purpleCallOut"/>
+		<element type="TEXT" id="ID_static_7" text="G0/1" x="350" y="104.2" align="center" width="23.85" />
+		<element type="TEXT" id="ID_static_10" text="F0/5" x="349.75" y="132.7" align="center" width="23.35" />
+		<element type="TEXT" id="ID_static_4" text="F0/6" x="341.4" y="194.5" align="center" width="23.35" />
+		<element type="TEXT" id="ID_static_6" text="172.17.30.23" x="378" y="278.1" align="center" width="68.35" bold="1"/>
+		<element type="ROUTER" textId="router_txt_1" x="40" y="303" width="600" height="170"/>
+	</slide>
+	<slide>
+		<element type="TEXT" subType="TITLE" compId="ID_s2_title"/>
+		<element type="TEXT" id="ID_static_11" text="172.17.10.1/24" x="210" y="77.55" align="center" width="78.95" bold="1"/>
+		<element type="TEXT" compId="ID_txt01" x="137" y="128" width="102.9" expand="up+down" align="center" class="orangeCallOut" />
+		<element type="TEXT" id="ID_static_12" text="G0/0" x="308" y="104.2" align="center" width="25.65" />
+		<element type="TEXT" id="ID_static_13" text="F0/4" x="308.8" y="132.7" align="center" width="23.4" />
+		<element type="TEXT" id="ID_static_14" text="F0/11" x="304.1" y="194.5" align="center" width="28.15" />
+		<element type="TEXT" id="ID_static_15" text="172.17.10.21" x="214" y="278.1" align="center" width="66.85" bold="1"/>
+		<element type="TEXT" id="ID_static_16" text="172.17.30.1/24" x="374.45" y="77.55" align="center" width="78.95" bold="1"/>
+		<element type="TEXT" compId="ID_txt02" x="440" y="128" width="106.1" expand="up+down" align="center" class="purpleCallOut"/>
+		<element type="TEXT" id="ID_static_17" text="G0/1" x="350" y="104.2" align="center" width="23.85" />
+		<element type="TEXT" id="ID_static_18" text="F0/5" x="349.75" y="132.7" align="center" width="23.35" />
+		<element type="TEXT" id="ID_static_19" text="F0/6" x="341.4" y="194.5" align="center" width="23.35" />
+		<element type="TEXT" id="ID_static_20" text="172.17.30.23" x="378" y="278.1" align="center" width="68.35" bold="1"/>
+		<element type="ROUTER" textId="router_txt_2" x="40" y="303" width="600" height="170"/>
+	</slide>
+
+</slide>
+<text id="router_txt_1"><![CDATA[<pre><span class="col">R1(config)#</span> <b>interface g0/0 </b>
+<span class="col">R1(config-if)#</span> <b>ip address 172.17.10.1 255.255.255.0 </b>
+<span class="col">R1(config-if)#</span> <b>no shutdown </b>
+*Mar 20 01:42:12.951: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, 
+changed state to up
+*Mar 20 01:42:13.951: %LINEPROTO-5-UPDOWN: Line protocol on Interface 
+GigabitEthernet0/0, changed state to up
+<span class="col">R1(config-if)#</span> <b>interface g0/1 </b>
+<span class="col">R1(config-if)#</span> <b>ip address 172.17.30.1 255.255.255.0 </b>
+<span class="col">R1(config-if)#</span> <b>no shutdown </b>
+*Mar 20 01:42:54.951: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, 
+changed state to up
+*Mar 20 01:42:55.951: %LINEPROTO-5-UPDOWN: Line protocol on Interface 
+GigabitEthernet0/1, changed state to up
+R1(config-if)# <b>end </b>
+R1# <b>copy running-config startup-config </b>
+
+</pre>]]></text> 
+<text id="router_txt_2"><![CDATA[<pre>R1# <b>show ip route </b>
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile,
+       B - BGP, D - EIGRP, EX - EIGRP external, O - OSPF,
+       IA - OSPF inter area, N1 - OSPF NSSA external type 1,
+       N2 - OSPF NSSA external type 2, E1 - OSPF external type 1,
+       E2 - OSPF external type 2, i - IS-IS, su - IS-IS summary,
+       L1 - IS-IS level-1, L2 - IS-IS level-2,
+       ia - IS-IS inter area, * - candidate default,
+       U - per-user static route, o - ODR,
+       P - periodic downloaded static route, H - NHRP, l - LISP,
+       +  - replicated route, % - next hop override
+
+Gateway of last resort is not set
+
+      172.17.0.0/16 is variably subnetted, 4 subnets, 2 masks
+<span class="col"><b>C        172.17.10.0/24 is directly connected, GigabitEthernet0/0
+L        172.17.10.1/32 is directly connected, GigabitEthernet0/0
+C        172.17.30.0/24 is directly connected, GigabitEthernet0/1
+L        172.17.30.1/32 is directly connected, GigabitEthernet0/1</b></span>
+
+</pre>]]></text>
+</data>

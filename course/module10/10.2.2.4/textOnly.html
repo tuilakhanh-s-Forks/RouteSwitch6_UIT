@@ -1,0 +1,8 @@
+
+          <p>By default, log messages are not timestamped. For example, in the figure, the R1 GigabitEthernet 0/0 interface is shutdown. The message logged to the console does not identify when the interface state was changed. Log messages should be timestamped so that when they are sent to another destination, such as a Syslog server, there is record of when the message was generated. </p>
+          <p></p>
+          <p>Use the command <b>service timestamps log datetime </b>to force logged events to display the date and time. As shown in the figure, when the R1 GigabitEthernet 0/0 interface is reactivated, the log messages now contain the date and time.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: When using the<b> datetime </b>keyword, the clock on the networking device must be set, either manually or through NTP, as previously discussed. </p>
+        

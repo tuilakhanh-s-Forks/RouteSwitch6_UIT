@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.3.2.2 Solve a Connectivity Problem</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Solve a Connectivity Problem</h1>
+        <div>
+          <p>Finding a missing (or misconfigured) route is a relatively straightforward process, if the right tools are used in a methodical manner. </p>
+          <p></p>
+          <p>For instance, in this example, the user at PC1 reports that he cannot access resources on the R3 LAN. This can be confirmed by pinging the LAN interface of R3 using the LAN interface of R1 as the source (see Figure 1). The results show that there is no connectivity between these LANs.</p>
+          <p></p>
+          <p>A traceroute in Figure 2 reveals that R2 is not responding as expected. For some reason, R2 forwards the traceroute back to R1. R1 returns it to R2. This loop would continue until the time to live (TTL) value decrements to zero, in which case, the router would then send an Internet Control Message Protocol (ICMP) destination unreachable message to R1.</p>
+          <p></p>
+          <p>The next step is to investigate the routing table of R2, because it is the router displaying a strange forwarding pattern. The routing table in Figure 3 reveals that the 192.168.2.0/24 network is configured incorrectly. A static route to the 192.168.2.0/24 network has been configured using the next-hop address 172.16.2.1. Using the configured next-hop address, packets destined for the 192.168.2.0/24 network are sent back to R1. It is clear from the topology that the 192.168.2.0/24 network is connected to R3, not R1. Therefore, the static route to the 192.168.2.0/24 network on R2 must use next-hop 192.168.1.1, not 172.16.2.1.</p>
+          <p></p>
+          <p>Figure 4 shows output from the running configuration that reveals the incorrect<b> ip route </b>statement. The incorrect route is removed and the correct route is then entered.</p>
+          <p></p>
+          <p>Figure 5 verifies that R1 can now reach the LAN interface of R3. As a last step in confirmation, the user on PC1 should also test connectivity to the 192.168.2.0/24 LAN.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">These figures are based on the standard lab diagram.  Figure one shows the output of the "ping" command on router one to the P. C. on the router three lan.  This ping is using the source option to source the ping from the router one lan interface.  This ping fails. Figure two shows the output of the "trace route" command on router one to the p. c. on the router three lan.  The trace route fails since router two sends the packet back to router one.  The trace route shows the packet hopping back and forth from router one to router two. Figure three shows the output of the "show ip route" command on router two.  Here we notice that router two has a static route to the router three lan pointing to router one. Figure four shows the output of the "show running dash config" command on router two, listing the static routes.  We notice that the static route to the router three lan is misconfigured.  The output also shows removing the static route and replacing it with the properly configured route. Figure five shows the output of the "ping" command on router one to the P. C. on the router three lan.  This ping is using the source option to source the ping from the router one lan interface.  This ping is successful.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

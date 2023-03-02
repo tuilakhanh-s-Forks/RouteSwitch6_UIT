@@ -1,0 +1,26 @@
+
+          <p>A primary function of a router is to determine the best path to use to send packets. To determine the best path, the router searches its routing table for a network address that matches the destination IP address of the packet.</p>
+          <p></p>
+          <p>The routing table search results in one of three path determinations:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Directly connected network </b>- If the destination IP address of the packet belongs to a device on a network that is directly connected to one of the interfaces of the router, that packet is forwarded directly to the destination device. This means that the destination IP address of the packet is a host address on the same network as the interface of the router.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Remote network </b>- If the destination IP address of the packet belongs to a remote network, then the packet is forwarded to another router. Remote networks can only be reached by forwarding packets to another router.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>No route determined </b>- If the destination IP address of the packet does not belong to either a connected or remote network, the router determines if there is a Gateway of Last Resort available. A Gateway of Last Resort is set when a default route is configured or learned on a router. If there is a default route, the packet is forwarded to the Gateway of Last Resort. If the router does not have a default route, then the packet is discarded.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The logic flowchart in the figure illustrates the router packet forwarding decision process.</p>
+        

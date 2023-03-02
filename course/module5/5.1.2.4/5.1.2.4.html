@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.2.4 Verifying Switch Port Configuration</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verifying Switch Port Configuration</h1>
+        <div>
+          <p>Figure 1 describes some of the options for the<b> show </b>command that are helpful in verifying common configurable switch features.</p>
+          <p></p>
+          <p>Figure 2 shows sample abbreviated output from the<b> show running-config </b>command. Use this command to verify that the switch has been correctly configured. As seen in the output for S1, some important information is shown:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Fast Ethernet 0/18 interface configured with the management VLAN 99</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>VLAN 99 configured with an IPv4 address of 172.17.99.11 255.255.255.0</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Default gateway set to 172.17.99.1</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The<b> show interfaces </b>command is another commonly used command, which displays status and statistics information on the network interfaces of the switch. The<b> show interfaces </b>command is frequently used when configuring and monitoring network devices. </p>
+          <p></p>
+          <p>Figure 3 shows the output from the<b> show interfaces fastEthernet 0/18 </b>command. The first line in the figure indicates that the FastEthernet 0/18 interface is up/up meaning that it is operational. Further down, the output shows that the duplex is full and the speed is 100 Mb/s.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a table listing useful show commands for use on switches.  The first command listed is, show interfaces, which is used to display interface status and configuration.  The next command listed, is, show startup hyphen config, which is used to display the startup configuration file.  The next command listed is, show running hyphen configuration, which is used to display the running configuration. The next command listed is, show flash, which will display the flash file system.  The next command listed is, show version, which will display hardware and software status.  The next command listed is, show history, which will display history of commands entered.  The next command listed is, show i.p. interface hyphen i.d., which will display the i.p. information for the specific interface. The last command listed is, show mac hyphen address hyphen table, which will display the MAC V address table. Figure two shows the output of the, show running hyphen config command.  The output is abbreviated to show information regarding switchport zero slash 18, including the virtual LAN assignment for that interface.  The output also shows the i.p. address of virtual LAN 99 that is configured on the switch and the default gateway. Figure three shows the output from the command, show interfaces fast Ethernet zero slash 18.  This output provides detail about the specific interface including the configuration for speed and duplex, the current operational status, and the i.p. address.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

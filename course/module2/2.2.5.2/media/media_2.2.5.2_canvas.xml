@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="media_2.2.5.2.png" />
+            <element type="ROUTER" textId="ID_router_txt1" x="48.75" y="341.35" width="346" height="40.8" />
+            <element type="TEXT" id="ID_static_1" text=".1" x="338" y="142" align="center" width="8" />
+            <element type="TEXT" id="ID_static_2" text=".1" x="397" y="224" align="center" width="8" />
+            <element type="TEXT" id="ID_static_3" text="172.16.1.0/24" x="209" y="121" align="center" width="72" />
+            <element type="TEXT" id="ID_static_4" text="172.16.2.0/24" x="190" y="190" align="center" width="72" />
+            <element type="TEXT" id="ID_static_5" text="192.168.1.0/24" x="388" y="205" align="center" width="79" />
+            <element type="TEXT" id="ID_static_6" text="172.16.3.0/24" x="114" y="274" align="center" width="72" />
+            <element type="TEXT" id="ID_static_7" text="192.168.2.0/24" x="475" y="274" align="center" width="79" />
+            <element type="TEXT" id="ID_static_8" text="G0/0" x="305" y="142" align="center" width="26" />
+            <element type="TEXT" id="ID_static_9" text="S0/0/1 DCE" x="371" y="171" align="center" width="34" />
+            <element type="TEXT" id="ID_static_25" text="S0/0/0" x="237" y="220" align="center" width="36" />
+            <element type="TEXT" id="ID_static_10" text="S0/0/0" x="267" y="170" align="center" width="36" />
+            <element type="TEXT" id="ID_static_11" text="G0/0" x="200" y="240" align="center" width="26" />
+            <element type="TEXT" id="ID_static_12" text="G0/0" x="445" y="240" align="center" width="26" />
+            <element type="TEXT" id="ID_static_13" text=".2" x="310" y="199" align="center" width="9" />
+            <element type="TEXT" id="ID_static_14" text=".2" x="348" y="200" align="center" width="9" />
+            <element type="TEXT" id="ID_static_15" text=".1" x="291" y="216" align="center" width="8" />
+            <element type="TEXT" id="ID_static_16" text=".1" x="215" y="259" align="center" width="8" />
+            <element type="TEXT" id="ID_static_17" text=".1" x="446" y="259" align="center" width="8" />
+            <element type="TEXT" id="ID_static_18" text="S0/0/1" x="294" y="264" align="center" width="34" />
+            <element type="TEXT" id="ID_static_19" text="S0/0/0" x="345" y="239" align="center" width="34" />
+            <element type="TEXT" id="ID_static_20" text="S0/0/0" x="351" y="256" align="center" width="36" />
+            <element type="TEXT" id="ID_static_21" text="S0/0/1 DCE" x="289" y="228" align="center" width="36" />
+            <element type="TEXT" id="ID_static_22" text="10.10.10.0/24" x="299" y="291" align="center" width="72" />
+            <element type="TEXT" id="ID_static_23" text=".1" x="289" y="275" align="center" width="8" />
+            <element type="TEXT" id="ID_static_24" text=".2" x="370" y="269" align="center" width="9" />
+            <element type="ROUTER" textId="router_text1" x="40" y="329" width="600" height="150" />
+            <element type="TEXT" subType="TITLE" compId="ID_s1_title" />
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="media_2.2.5.2.png" />
+            <element type="TEXT" id="ID_static_1" text=".1" x="338" y="142" align="center" width="8" />
+            <element type="TEXT" id="ID_static_2" text=".1" x="397" y="224" align="center" width="8" />
+            <element type="TEXT" id="ID_static_3" text="172.16.1.0/24" x="209" y="121" align="center" width="72" />
+            <element type="TEXT" id="ID_static_4" text="172.16.2.0/24" x="190" y="190" align="center" width="72" />
+            <element type="TEXT" id="ID_static_5" text="192.168.1.0/24" x="388" y="205" align="center" width="79" />
+            <element type="TEXT" id="ID_static_6" text="172.16.3.0/24" x="114" y="274" align="center" width="72" />
+            <element type="TEXT" id="ID_static_7" text="192.168.2.0/24" x="475" y="274" align="center" width="79" />
+            <element type="TEXT" id="ID_static_8" text="G0/0" x="305" y="142" align="center" width="26" />
+            <element type="TEXT" id="ID_static_9" text="S0/0/1 DCE" x="371" y="171" align="center" width="34" />
+            <element type="TEXT" id="ID_static_25" text="S0/0/0" x="237" y="220" align="center" width="36" />
+            <element type="TEXT" id="ID_static_10" text="S0/0/0" x="267" y="170" align="center" width="36" />
+            <element type="TEXT" id="ID_static_11" text="G0/0" x="200" y="240" align="center" width="26" />
+            <element type="TEXT" id="ID_static_12" text="G0/0" x="445" y="240" align="center" width="26" />
+            <element type="TEXT" id="ID_static_13" text=".2" x="310" y="199" align="center" width="9" />
+            <element type="TEXT" id="ID_static_14" text=".2" x="348" y="200" align="center" width="9" />
+            <element type="TEXT" id="ID_static_15" text=".1" x="291" y="216" align="center" width="8" />
+            <element type="TEXT" id="ID_static_16" text=".1" x="215" y="259" align="center" width="8" />
+            <element type="TEXT" id="ID_static_17" text=".1" x="446" y="259" align="center" width="8" />
+            <element type="TEXT" id="ID_static_18" text="S0/0/1" x="294" y="264" align="center" width="34" />
+            <element type="TEXT" id="ID_static_19" text="S0/0/0" x="345" y="239" align="center" width="34" />
+            <element type="TEXT" id="ID_static_20" text="S0/0/0" x="351" y="256" align="center" width="36" />
+            <element type="TEXT" id="ID_static_21" text="S0/0/1 DCE" x="289" y="228" align="center" width="36" />
+            <element type="TEXT" id="ID_static_22" text="10.10.10.0/24" x="299" y="291" align="center" width="72" />
+            <element type="TEXT" id="ID_static_23" text=".1" x="289" y="275" align="center" width="8" />
+            <element type="TEXT" id="ID_static_24" text=".2" x="370" y="269" align="center" width="9" />
+            <element type="ROUTER" textId="router_text2" x="40" y="329" width="600" height="150" />
+            <element type="TEXT" subType="TITLE" compId="ID_s2_title" />
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+            <element type="ACTIVITY" subType="SYNTAX" compId="ID_SC" x="25" y="50" width="630" height="400" resetId="ID_sc_reset" showMeId="ID_sc_showme" showAllId="ID_sc_showall" />
+            <element type="TEXT" subType="TITLE" compId="ID_s3_title" color="#FFFFFF" />
+        </slide>
+    </slide>
+    <text id="router_text1">
+        <![CDATA[<code>R1(config)# <b>ip route 0.0.0.0 0.0.0.0 172.16.2.2</b>  
+R1(config)# <b>ip route 0.0.0.0 0.0.0.0 10.10.10.2 5</b>
+R1(config)#</code>
+   ]]></text>
+    <text id="router_text2">
+        <![CDATA[<code><span>R1# <b>show ip route static | begin Gateway</b></span>
+<span >Gateway of last resort is 0.0.0.0 to network 0.0.0.0</span>
+
+<span class="rt2" style="padding-left:0px">S*    0.0.0.0/0 [1/0] via 172.16.2.2</span>
+<span style="padding-left:0px;">R1#</span></code>]]></text>
+</data>

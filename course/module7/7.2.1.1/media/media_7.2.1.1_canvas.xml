@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <slide type="MBAR">
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+            <element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#ffffff" />
+            <element type="TEXT" subType="TABLE" compId="ID_Table_01_html" x="40" y="54" width="600" height="400" />
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+            <element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#ffffff" />
+            <element type="ROUTER" textId="ID_router_txt1" x="46.55" y="74.15" width="600" height="250" />
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+            <element type="TEXT" subType="TITLE" compId="ID_s3_title" color="#ffffff" />
+            <element type="ROUTER" textId="ID_router_txt2" x="46.55" y="74.15" width="600" height="250" />
+        </slide>
+    </slide>
+    <text id="ID_router_txt1">
+        <![CDATA[           R1(config)# <b>access-list 10 permit 192.168.10.0 0.0.0.255  </b><br/> R1(config)# <b>exit  </b><br/> R1# <b>show access-lists  </b><br/> Standard IP access list 10<br/> <span style="padding-left:27px"> 10 permit 192.168.10.0, wildcard bits 0.0.0.255</span><br/> R1# <b>conf t  </b><br/> Enter configuration commands, one per line. End with<br/> CNTL/Z.<br/> R1(config)# <b>no access-list 10  </b><br/> R1(config)# <b>exit  </b><br/> R1# <b>show access-lists  </b><br/> R1#        
+         ]]></text>
+    <text id="ID_router_txt2">
+        <![CDATA[           R1(config)# <b>access-list 10 remark Permit hosts from the 192.168.10.0 LAN  </b><br/> R1(config)# <b>access-list 10 permit 192.168.10.0 0.0.0.255  </b><br/> R1(config)# <b>exit  </b><br/> R1# <b>show running-config | include access-list 10  </b><br/> access-list 10 remark Permit hosts from the 192.168.10.0 LAN<br/> access-list 10 permit 192.168.10.0 0.0.0.255<br/> R1#
+         ]]></text>
+</data>

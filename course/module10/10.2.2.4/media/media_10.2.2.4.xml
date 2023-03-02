@@ -1,0 +1,17 @@
+﻿<textcomponents>
+
+
+<!-- slide 1 -->
+
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Adding a Timestamp to Syslog Messages</b>]]></text>
+	</component>
+	
+	<component id='ID_s1_txt01'>
+		<text><![CDATA[ ]]></text>
+	</component>
+
+<!-- end slide 1 -->
+
+	
+</textcomponents>

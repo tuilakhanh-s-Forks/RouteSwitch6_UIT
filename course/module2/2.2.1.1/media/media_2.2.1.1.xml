@@ -1,0 +1,76 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b><font face="_typewriter">ip route</font> Command Syntax]]></text>
+</component>
+
+  <component id="ID_table">
+  <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+  	<tr class="mtable_title">
+			<td colspan="2" bgcolor='#FFFFFF'><font size="5"></font></td>
+		</tr>
+	<tr>
+
+		<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+	</tr>
+	<tr>
+	
+		
+		<td width="125" bgcolor='#666263' valign="top" ><font color='#ffffff' ><b>Parameter</b></font></td>
+		<td bgcolor='#666263'  valign="top" class="mtitle"><font color='#ffffff' ><b>Description</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#000000' face="_typewriter">network-address</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' ><textformat blockindent="-14">Destination network address of the remote network to be added to the routing table</textformat></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#000000' face="_typewriter">subnet-mask</font></td>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536' ><textformat blockindent="-14"><li>Subnet mask of the remote network to be <span class="span1">added to the routing table.</span></li><li>The subnet mask can be modified to <span class="span1">summarize a group of networks.</span></li></textformat></font></td></tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#000000' face="_typewriter">ip-address</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' ><textformat blockindent="-14"><li>Commonly referred to as the next-hop router’s <span class="span1">IP address.</span></li><li>Typically used when connecting to a broadcast <span class="span1">media (i.e., Ethernet).</span></li><li>Commonly creates a recursive lookup</li></textformat></font></td>
+	</tr>
+	<tr><td bgcolor='#F2F2F2' valign="top"><font color='#000000' face="_typewriter">exit-intf</font></td>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536'  ><textformat blockindent="-14"><li>Use the outgoing interface to forward packets <span class="span1">to the destination network.</span></li><li>Also referred to as a directly attached static <span class="span1">route.</span></li><li>Typically used when connecting in a point-<span class="span1">to-point configuration.</span></li></textformat></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#000000' face="_typewriter">distance</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' ><textformat blockindent="-14"><li>(Optional) Configures an administrative <span class="span1">distance.</span></li><li>Typically used to configure a floating static <span class="span1">route.</span></li></textformat></font></td>
+	</tr>
+	</table>]]></text>
+  </component>
+
+  <component id="ID_table_html">
+  <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+  
+
+     <caption class="mtable_title" colspan="2" bgcolor='#FFFFFF'><font size="1"></font></caption>
+
+		<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+	</tr>
+	<tr>
+	
+		
+		<th scope="col" width="125" bgcolor='#666263' valign="top" ><font color='#ffffff' ><b>Parameter</b></font></th>
+		<th scope="col" bgcolor='#666263'  valign="top" class="mtitle"><font color='#ffffff' ><b>Description</b></font></th>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#000000' face="_typewriter">network-address</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' ><textformat blockindent="-14">Destination network address of the remote network to be added to the routing table</textformat></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#000000' face="_typewriter">subnet-mask</font></td>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536' ><textformat blockindent="-14"><li>Subnet mask of the remote network to be <span class="span1">added to the routing table.</span></li><li>The subnet mask can be modified to <span class="span1">summarize a group of networks.</span></li></textformat></font></td></tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#000000' face="_typewriter">ip-address</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' ><textformat blockindent="-14"><li>Commonly referred to as the next-hop router’s <span class="span1">IP address.</span></li><li>Typically used when connecting to a broadcast <span class="span1">media (i.e., Ethernet).</span></li><li>Commonly creates a recursive lookup</li></textformat></font></td>
+	</tr>
+	<tr><td bgcolor='#F2F2F2' valign="top"><font color='#000000' face="_typewriter">exit-intf</font></td>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536'  ><textformat blockindent="-14"><li>Use the outgoing interface to forward packets <span class="span1">to the destination network.</span></li><li>Also referred to as a directly attached static <span class="span1">route.</span></li><li>Typically used when connecting in a point-<span class="span1">to-point configuration.</span></li></textformat></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#000000' face="_typewriter">distance</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' ><textformat blockindent="-14"><li>(Optional) Configures an administrative <span class="span1">distance.</span></li><li>Typically used to configure a floating static <span class="span1">route.</span></li></textformat></font></td>
+	</tr>
+	</table>]]></text>
+  </component>
+</textcomponents>

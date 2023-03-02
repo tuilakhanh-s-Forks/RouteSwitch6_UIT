@@ -1,0 +1,13 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+.orangeCallOut{
+	padding: 5px 2px 5px 2px !important;
+}
+#ID_router_txt5{
+	letter-spacing: -0.6px !important;
+}
+.orangeColor{
+	color: #F68026 !important;
+}

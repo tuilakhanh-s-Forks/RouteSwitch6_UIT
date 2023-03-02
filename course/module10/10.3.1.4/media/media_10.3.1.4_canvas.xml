@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+ <slide>
+	<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<element type="TEXT" subType="TITLE" compId="ID_title" color="#fff" />
+<element type="ROUTER" textId="ID_router_txt1" x="40" y="55" width="600" height="400" />
+</slide>
+
+	<text id="ID_router_txt1"><![CDATA[<pre>R1# <b>copy running-config tftp</b>
+Remote host []? <b>192.168.10.254</b>
+Name of the configuration file to write[R1-config]? <b>R1-Jan-2016</b>
+Write file R1-Jan-2016 to 192.168.10.254? [confirm]
+Writing R1-Jan-2016 !!!!!! [OK]
+</pre>]]></text>
+
+</data>
+	
+

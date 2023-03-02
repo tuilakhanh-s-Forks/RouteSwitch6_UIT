@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+<slide>
+	        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+			<element type="IMAGE" src="media_1.3.4.5.png" x="0" y="0" height="490" width="680"/>
+			<element type="TEXT" subType="TITLE" compId="ID_title" />
+      <element type="TEXT" compId="ID_txt01" x="321" y="143" width="70" />
+			<element type="ROUTER" textId="staticTxt" width="600" height="219.95" x="45" y="243" size="10" />	
+</slide>
+<text id="staticTxt"><![CDATA[<pre>R1# <b>show ipv6 route</b>     
+IPv6 Routing Table - default - 9 entries
+Codes: C - Connected, L - Local, S - Static, U - Per-user Static route
+       B - BGP, R - RIP, H - NHRP, I1 - ISIS L1
+       I2 - ISIS L2, IA - ISIS interarea, IS - ISIS summary, D - EIGRP
+       EX - EIGRP external, ND - ND Default, NDp - ND Prefix, DCE - 
+Destination
+       NDr - Redirect, O - OSPF Intra, OI - OSPF Inter, OE1 - OSPF ext 1
+       OE2 - OSPF ext 2, ON1 - OSPF NSSA ext 1, ON2 - OSPF NSSA ext 2
+C   2001:DB8:ACAD:1::/64 [0/0]
+     via GigabitEthernet0/0, directly connected
+L   2001:DB8:ACAD:1::1/128 [0/0]
+     via GigabitEthernet0/0, receive
+C   2001:DB8:ACAD:2::/64 [0/0]
+     via GigabitEthernet0/1, directly connected
+L   2001:DB8:ACAD:2::1/128 [0/0]
+     via GigabitEthernet0/1, receive
+C   2001:DB8:ACAD:3::/64 [0/0]
+     via Serial0/0/0, directly connected
+L   2001:DB8:ACAD:3::1/128 [0/0]
+     via Serial0/0/0, receive
+<span>D   2001:DB8:ACAD:4::/64 [90/2172416]
+     via FE80::D68C:B5FF:FECE:A120, Serial0/0/0
+D   2001:DB8:ACAD:5::/64 [90/2172416]
+     via FE80::D68C:B5FF:FECE:A120, Serial0/0/0</span>
+L   FF00::/8 [0/0]
+     via Null0, receive
+R1#
+
+</pre>]]></text>
+</data>

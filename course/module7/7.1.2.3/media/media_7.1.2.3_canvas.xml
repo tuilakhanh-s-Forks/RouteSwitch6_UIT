@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide>
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+        <element type="TEXT" subType="TITLE" compId="ID_s1_title" />
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="media_7.1.2.3.png" />
+        <element type="TEXT" compId="ID_s1_txt01" x="164" y="110" width="147.7" expand="left+right" align="left" />
+        <element type="TEXT" id="ID_static_1" bold="1" text="255.255.255.255" x="361.25" y="89.55" align="center" width="130.85" />
+        <element type="TEXT" id="ID_static_2" bold="1" text="- 255.255.255.000" x="346.6" y="109.75" align="center" width="155" />
+        <element type="TEXT" id="ID_static_3" bold="1" text="255" x="468.7" y="133.95" align="center" width="25.85" />
+        <element type="TEXT" compId="ID_s1_txt02" x="164" y="247" width="147.7" expand="left+right" align="left" />
+        <element type="TEXT" id="ID_static_4" bold="1" text="255.255.255.255" x="361.25" y="226" align="center" width="130.85" />
+        <element type="TEXT" id="ID_static_5" bold="1" text="- 255.255.255.240" x="346.6" y="245.1" align="center" width="155" />
+        <element type="TEXT" id="ID_static_6" bold="1" text="15" x="478.7" y="271.4" align="center" width="15.65" />
+        <element type="TEXT" compId="ID_s1_txt03" x="164" y="384" width="147.7" expand="left+right" align="left" />
+        <element type="TEXT" id="ID_static_7" bold="1" text="255.255.255.255" x="361.25" y="361.55" align="center" width="130.85" />
+        <element type="TEXT" id="ID_static_8" bold="1" text="- 255.255.254.000" x="346.6" y="380.85" align="center" width="155" />
+        <element type="TEXT" id="ID_static_9" bold="1" text="1.255" x="454" y="408.05" align="center" width="41.05" />
+    </slide>
+</data>

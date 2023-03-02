@@ -1,0 +1,18 @@
+
+          <p>ACLs define the set of rules that give added control for packets that enter inbound interfaces, packets that relay through the router, and packets that exit outbound interfaces of the router. ACLs do not act on packets that originate from the router itself. </p>
+          <p></p>
+          <p>ACLs can be configured to apply to inbound traffic and outbound traffic as shown in the figure.</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Inbound ACLs </b>- Incoming packets are processed before they are routed to the outbound interface. An inbound ACL is efficient because it saves the overhead of routing lookups if the packet is discarded. If the packet is permitted by the ACL, it is then processed for routing. Inbound ACLs are best used to filter packets when the network attached to an inbound interface is the only source of packets that need to be examined.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Outbound ACLs </b>- Incoming packets are routed to the outbound interface, and then they are processed through the outbound ACL. Outbound ACLs are best used when the same filter will be applied to packets coming from multiple inbound interfaces before exiting the same outbound interface. </li>
+            </ul>
+          </p>
+        

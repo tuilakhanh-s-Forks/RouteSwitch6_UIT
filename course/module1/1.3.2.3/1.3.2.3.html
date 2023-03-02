@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.3.2.3 Directly Connected Examples</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.3.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Directly Connected Examples</h1>
+        <div>
+          <p>The examples in Figures 1 to 3 show the steps to configure and activate the interfaces attached to R1. Notice the Layer 1 and 2 informational messages generated as each interface is activated.</p>
+          <p></p>
+          <p>As each interface is added, the routing table automatically adds the connected (‘<b>C</b>’) and local (‘<b>L</b>’) entries. Figure 4 provides an example of the routing table with the directly connected interfaces of R1 configured and activated.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 5 to configure and activate the interfaces connected to R2. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the command to add a description to an interface and assign it an i.p. address.  The figure shows the command line interface for a router and begins in global configuration mode.  The first command moves to the desired interface, and the command is interface gigabit Ethernet zero slash zero.  The next command puts a description in the configuration file for the interface, and the command here is description Link to LAN 1.  The next command assigns the i.p. address and subnet mask, and it is i.p. address 192 dot 168 dot 10 dot 1 255 dot 255 dot 255 dot zero.  The interface must now be turned on with the no shutdown command.  The interface then gets changed to the status of up. Figure two configures the next interface.  The first command moves to the interface, and the command is interface gigabit Ethernet zero slash one.  The next command puts a description in the configuration file for the interface, and the command here is description Link to LAN 2.  The next command assigns the i.p. address and subnet mask, and it is i.p. address 192 dot 168 dot 11 dot 1 255 dot 255 dot 255 dot zero.  The interface must now be turned on with the no shutdown command.  The interface is changed to the status of up. Figure three configures the next interface.  The first command moves to the interface, and the command is interface serial zero slash zero slash zero.  The next command puts a description in the configuration file for the interface, and the command here is description Link to R1.  The next command assigns the i.p. address and subnet mask, and it is i.p. address 209 dot 165 dot 200 dot 225 255 dot 255 dot 255 dot zero.  Next, a clock rate needs to be assigned to the serial link and the command is clock rate 128000.  The interface must now be turned on with the no shutdown command.  The interface is changed to the status of up. Figure four shows the output from the show i.p. route route pipe Gateway command.  This displays the routing table and applies the filter to show everything in the file that occurs after the word Gateway, including the keyword Gateway.  The table displays the six entries expected due to the three configured interfaces in the previous three figures. Figure five is an interactive media element that allows the learner to configure three interfaces on a router so that it connects with the router in the previous four figures.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

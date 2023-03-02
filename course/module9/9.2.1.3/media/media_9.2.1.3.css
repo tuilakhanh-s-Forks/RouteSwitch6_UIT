@@ -1,0 +1,21 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+html, body {
+	margin:0;
+	height:100%; 
+}
+
+
+.align
+{
+	color: #F68026 !important;
+}
+#ID_s1_txt02,#ID_s1_txt01
+{
+	background-color: #067EB2 !important;
+	border-color: #067EB2 !important;
+	padding: 5px ;
+}

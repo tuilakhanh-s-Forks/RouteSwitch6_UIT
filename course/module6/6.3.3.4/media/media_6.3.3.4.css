@@ -1,0 +1,11 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+/*#ID_router_txt2{padding-left:3px !important;}*/
+
+.col{
+	color: #F68026;
+}

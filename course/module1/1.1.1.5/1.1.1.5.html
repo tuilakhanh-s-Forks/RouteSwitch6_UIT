@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.1.1.5 Routers Choose Best Paths</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.1.1.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Routers Choose Best Paths</h1>
+        <div>
+          <p>The primary functions of a router are to:</p>
+          <p>
+            <ul>
+              <li>Determine the best path to send packets </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Forward packets toward their destination</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The router uses its routing table to determine the best path to use to forward a packet. When the router receives a packet, it examines the destination address of the packet and uses the routing table to search for the best path to that network. The routing table also includes the interface to be used to forward packets for each known network. When a match is found, the router encapsulates the packet into the data link frame of the outgoing or exit interface, and the packet is forwarded toward its destination.</p>
+          <p></p>
+          <p>It is possible for a router to receive a packet that is encapsulated in one type of data link frame, and to forward the packet out of an interface that uses a different type of data link frame. For example, a router may receive a packet on an Ethernet interface, but must forward the packet out of an interface configured with the Point-to-Point Protocol (PPP). The data link encapsulation depends on the type of interface on the router and the type of medium to which it connects. The different data link technologies that a router can connect to include Ethernet, PPP, Frame Relay, DSL, cable, and wireless (802.11, Bluetooth, etc.).</p>
+          <p></p>
+          <p>The animation in the figure follows a packet from the source PC to the destination PC. Notice that it is the responsibility of the router to find the destination network in its routing table and forward the packet on toward its destination. In this example, router R1 receives the packet encapsulated in an Ethernet frame. After de-encapsulating the packet, R1 uses the destination IP address of the packet to search its routing table for a matching network address. After a destination network address is found in the routing table, R1 encapsulates the packet inside a PPP frame and forwards the packet to R2. A similar process is performed by R2.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Routers use static routes and dynamic routing protocols to learn about remote networks and build their routing tables.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows two LANs. Each LAN has a router. The LANs are connected to each other by a WAN link.  Each router has a switch connected to an Ethernet port, and each switch has multiple local devices connected to it.  An animation shows a packet being sent from a computer on one LAN to a computer on the other LAN.  The packet travels first to the switch, and then to the router.  When the router receives the packet it examines the packet and locates the destination I.P. address. Then the router looks at its own routing table to determine what path to use in order to deliver the packet.  The router transfers the packet to the serial port and sends it to the other router.  This router receives the packet on the serial interface and this router also goes through the I.P. examination step and the route table lookup step.  It transfers the packet to its Ethernet interface, and then it is sent to the switch, which delivers the packet to the destination computer.  </div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

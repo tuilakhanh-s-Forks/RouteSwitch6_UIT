@@ -1,0 +1,118 @@
+<textcomponents>
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Create a VLAN</b>]]></text>
+	</component>
+	<component id="ID_s1_table01">
+		<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' 
+glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+<td colspan='2' bgcolor='#FFFFFF'><font size='15' color='#393536'><b>Cisco Switch IOS Commands</b></font></td>
+</tr>
+
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td></tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="middle">Enter global configuration mode.</td>
+<td bgcolor='#E9E7E8' valign="middle"><font face='_typewriter'>S1# <b>configure terminal</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle">Create a VLAN with a valid id number.</td>
+<td bgcolor='#F2F2F2' valign="middle"><font face='_typewriter'>S1(config)# <b>vlan </b><i>vlan-id</i></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="middle">Specify a unique name to identify the VLAN.</td>
+<td bgcolor='#E9E7E8' valign="middle"><font face='_typewriter'>S1(config-vlan)# <b>name </b><i>vlan-name</i></font></td>	
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle">Return to the privileged EXEC mode.</td>
+<td bgcolor='#F2F2F2' valign="middle"><font face='_typewriter'>S1(config-vlan)# <b>end</b></font></td>
+</tr>
+
+</table>]]></text>
+	</component>
+
+<component id="ID_s1_table01_html">
+		<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' 
+glow='true' glowcolor='#808080' cellpadding='4'>
+
+
+            <caption colspan="2" class="mtable_title" bgcolor='#FFFFFF'><font size="14"><b>Cisco Switch IOS Commands</b></font></caption>
+
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td></tr>
+
+<tr>
+<th scope="col" bgcolor='#E9E7E8' valign="middle">Enter global configuration mode.</th>
+<th scope="col" bgcolor='#E9E7E8' valign="middle"><font face='_typewriter'>S1# <b>configure terminal</b></font></th>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle">Create a VLAN with a valid id number.</td>
+<td bgcolor='#F2F2F2' valign="middle"><font face='_typewriter'>S1(config)# <b>vlan </b><i>vlan-id</i></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="middle">Specify a unique name to identify the VLAN.</td>
+<td bgcolor='#E9E7E8' valign="middle"><font face='_typewriter'>S1(config-vlan)# <b>name </b><i>vlan-name</i></font></td>	
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle">Return to the privileged EXEC mode.</td>
+<td bgcolor='#F2F2F2' valign="middle"><font face='_typewriter'>S1(config-vlan)# <b>end</b></font></td>
+</tr>
+
+</table>]]></text>
+	</component>
+
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>Sample Configuration</b>]]></text>
+	</component>
+	<component id="ID_s2_txt01">
+		<text><![CDATA[Student PC]]></text>
+	</component>
+	<component id="ID_s2_txt02">
+		<text><![CDATA[Switch S1:<br/>VLAN 20<br/>"student"]]></text>
+	</component>
+	<component id="ID_s3_title">
+		<text><![CDATA[<b>Verification</b>]]></text>
+	</component>
+	<component id="ID_sc_reset">
+		<text><![CDATA[Reset]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[Show Me]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[Show All]]></text>
+	</component>
+	<component id="ID_SC5" fontSize="12" fontFace="_typewriter" fontColor="#ffffff">
+		<feedback id="fb"><![CDATA[<b><font face="_sans" color="#FFFFFF">***You must enter the exact and full command. Commands that include a name or password are case-sensitive.***</font></b>
+		]]></feedback>
+		<existingcommands><![CDATA[<font face="_sans"><b>Create VLAN 20 and assign the VLAN name Student. Return directly to privileged EXEC mode when complete.</b></font>]]></existingcommands>
+		<command prompt="S1#">
+			<correctresponse><![CDATA[configure terminal]]></correctresponse>
+			<deviceresponse><![CDATA[Enter configuration commands, one per line.  End with CNTL/Z.]]></deviceresponse>
+		</command>
+		<command prompt="S1(config)#">
+			<correctresponse><![CDATA[vlan 20]]></correctresponse>
+		</command>
+		<command prompt="S1(config-vlan)#">
+			<correctresponse><![CDATA[name Student]]></correctresponse>
+		</command>
+		<command prompt="S1(config-vlan)#">
+			<correctresponse><![CDATA[end]]></correctresponse>
+			<deviceresponse><![CDATA[S1#<br>*Mar 31, 08:55:14.5555: %SYS-5-CONFIG_I: Configured from console by console<br>S1#]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"><b>Display the brief VLAN information.</b></font>]]></instruction>
+		</command>
+		<command prompt="S1#">
+			<correctresponse><![CDATA[show vlan brief]]></correctresponse>
+			<deviceresponse><![CDATA[VLAN Name               Status    Ports <br>---- ------------------ --------- ----------------------------- <br>1    default            active    Fa0/1, Fa0/2, Fa0/3, Fa0/4 <br>                                  Fa0/5, Fa0/6, Fa0/7, Fa0/8 <br>                                  Fa0/9, Fa0/10, Fa0/11, Fa0/12 <br>                                  Fa0/13, Fa0/14, Fa0/15, Fa0/16 <br>                                  Fa0/17, Fa0/18, Fa0/19, Fa0/20 <br>                                  Fa0/21, Fa0/22, Fa0/23, Fa0/24 <br>1                                 Gig0/1, Gig0/2 <br>20   Student            active    <br>1002 fddi-default       act/unsup <br>1003 token-ring-default act/unsup <br>1004 fddinet-default    act/unsup <br>1005 trnet-default      act/unsup <br>S1#]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"><b>You successfully created Student VLAN 20.</font>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+</textcomponents>

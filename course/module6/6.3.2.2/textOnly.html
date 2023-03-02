@@ -1,0 +1,13 @@
+
+          <p>To configure legacy inter-VLAN routing, start by configuring the switch. </p>
+          <p></p>
+          <p>As shown in the figure, router R1 is connected to switch ports F0/4 and F0/5, which have been configured for VLANs 10 and 30, respectively.</p>
+          <p></p>
+          <p>Use the<b> vlan</b><i> vlan_id </i>global configuration mode command to create VLANs. In this example, VLANs 10 and 30 were created on switch S1. </p>
+          <p></p>
+          <p>After the VLANs have been created, the switch ports are assigned to the appropriate VLANs. The<b> switchport access vlan</b><i> vlan_id </i>command is executed from interface configuration mode on the switch for each interface to which the router connects.</p>
+          <p></p>
+          <p>In this example, interfaces F0/4 and F0/11 have been assigned to VLAN 10 using the<b> switchport access vlan 10</b> command. The same process is used to assign interface F0/5 and F0/6 on switch S1 to VLAN 30. </p>
+          <p></p>
+          <p>Finally, to protect the configuration so that it is not lost after a reload of the switch, the<b> copy running-config startup-config </b>command is executed to back up the running configuration to the startup configuration.</p>
+        

@@ -1,0 +1,23 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+
+#ID_s1_txt01{width:392px !important;}
+#texts3{margin-top:15px}
+.align {
+	/*margin-left:-2px;*/
+	color:#F68026; 
+}
+#ID_s1_txt01,#ID_s2_txt01,#ID_s3_txt01,#ID_s4_txt01,#ID_s5_txt01{
+color:#393536!important;
+}
+#ID_txt01,#ID_txt02,#ID_txt03,#ID_txt04,#ID_txt05
+{
+	background-color: #0D658B;
+	border-color: #0D658B;
+	padding: 5px 5px;
+}
+

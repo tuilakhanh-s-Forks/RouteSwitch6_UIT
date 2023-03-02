@@ -1,0 +1,22 @@
+
+          <p>
+            <b>Disable Unused Ports</b>
+          </p>
+          <p></p>
+          <p>A simple method that many administrators use to help secure the network from unauthorized access is to disable all unused ports on a switch. For example, if a Catalyst 2960 switch has 24 ports and there are three Fast Ethernet connections in use, it is good practice to disable the 21 unused ports. Navigate to each unused port and issue the Cisco IOS<b> shutdown </b>command. If, later on, a port must be reactivated, it can be enabled with the<b> no shutdown </b>command. The figure shows partial output for this configuration.</p>
+          <p></p>
+          <p>It is simple to make configuration changes to multiple ports on a switch. If a range of ports must be configured, use the<b> interface range </b>command.</p>
+          <p></p>
+          <p>
+            <span class="cmd">Switch(config)# </span>
+            <span class="cmd">
+              <b>interface range</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>type module/first-number – last-number</i>
+            </span>
+          </p>
+          <p></p>
+          <p>The process of enabling and disabling ports can be time-consuming, but it enhances security on the network and is well worth the effort.</p>
+        

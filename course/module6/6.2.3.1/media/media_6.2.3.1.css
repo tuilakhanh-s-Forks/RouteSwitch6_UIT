@@ -1,0 +1,16 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+.orangeC{
+	color: #F68026 ;
+}
+
+#ID_s1_txt04{
+	color: #FFFFFF !important;
+}
+
+.orangeCallOut{
+	padding: 6px !important;
+}

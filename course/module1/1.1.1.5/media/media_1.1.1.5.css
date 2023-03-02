@@ -1,0 +1,39 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_s1_txt01{
+	line-height:11.7px;
+	font-size:9px;
+	letter-spacing:-1.5px;
+	
+}
+#ID_s2_txt01{
+	line-height:11px;
+	font-size:9px;
+	letter-spacing:-1.5px;
+}
+
+#ID_txt01,#ID_txt04,#ID_txt03
+{
+	text-align: left !important;
+}
+@media only screen 
+and (device-width : 768px) 
+
+{
+	#ID_s1_txt01
+	{
+		line-height:118%;		 
+		font-size:9px ;
+		margin-top: 7px;	 
+	}
+	
+	#ID_s2_txt01{
+		line-height:110%;		 
+		font-size:9px ;
+		margin-top: -2px;;	
+	}
+
+}

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<slide type="MBAR">
+		<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+		<slide>
+			<element type="IMAGE" src="media_1.3.3.2.png" x="0" y="0" width="680" height="490"/>	 
+			<element type="TEXT" subType="TITLE" compId="ID_s1_title"/>
+			
+			<element type="ROUTER" textId="router_text1" x="45.75" y="263.5" width="600" height="210" size="10" />	
+		</slide>
+
+		  <slide>
+			<element type="TEXT" subType="TITLE" compId="ID_s2_title"/>
+  			<element type="IMAGE" src="media_1.3.3.2.A.png" x="0" y="0" width="680" height="490"/>	 
+			
+			<element type="ROUTER"  textId="router_text2"  x="45.75"    y="263.5"   width="600" height="210" size="10" />		
+		  </slide>
+		  
+
+		  <slide>
+			<element type="TEXT" subType="TITLE" compId="ID_SC1_title"/>
+
+			 <element type="ACTIVITY" subType="SYNTAX" compId="ID_SC3" x="25" y="60" width="630" height="388" resetId="ID_sc_reset" showMeId="ID_sc_showme" showAllId="ID_sc_showall"/>	
+
+		  </slide>
+
+		  <slide>
+			<element type="TEXT" subType="TITLE" compId="ID_SC2_title"/>
+
+			 <element type="ACTIVITY" subType="SYNTAX" compId="ID_SC4" x="25" y="60" width="630" height="388" resetId="ID_sc2_reset" showMeId="ID_sc2_showme" showAllId="ID_sc2_showall"/>			
+
+		  </slide>
+
+		 
+	</slide>
+
+<text id="router_text1"><![CDATA[<code>R1(config)# <b>ip route 0.0.0.0 0.0.0.0 Serial0/0/0</b> 
+R1(config)# <b>exit</b> 
+R1# 
+*Feb 1 10:19:34.483: %SYS-5-CONFIG_I: Configured from console <br/>by console 
+
+R1# <b>show ip route | begin Gateway</b> 
+<span>Gateway of last resort is 0.0.0.0 to network 0.0.0.0</span> 
+
+<span>S* 0.0.0.0/0 is directly connected, Serial0/0/0</span> 
+   192.168.10.0/24 is variably subnetted, 2 subnets, 2 masks 
+C     192.168.10.0/24 is directly connected, GigabitEthernet0/0 
+L     192.168.10.1/32 is directly connected, GigabitEthernet0/0 
+   192.168.11.0/24 is variably subnetted, 2 subnets, 2 masks 
+C     192.168.11.0/24 is directly connected, GigabitEthernet0/1 
+L     192.168.11.1/32 is directly connected, GigabitEthernet0/1 
+   209.165.200.0/24 is variably subnetted, 2 subnets, 2 masks 
+C     209.165.200.224/30 is directly connected, Serial0/0/0 
+L     209.165.200.225/32 is directly connected, Serial0/0/0 
+R1#</code>]]></text>
+
+<text id="router_text2"><![CDATA[<code>R2(config)# <b>ip route 192.168.10.0 255.255.255.0 s0/0/0</b> 
+R2(config)# <b>ip route 192.168.11.0 255.255.255.0 209.165.200.225  </b> 
+R2(config)# <b>exit</b> 
+R2# 
+R2# <b>show ip route | begin Gateway</b> 
+Gateway of last resort is not set 
+
+      10.0.0.0/8 is variably subnetted, 4 subnets, 2 masks 
+C      10.1.1.0/24 is directly connected, GigabitEthernet0/0 
+L      10.1.1.1/32 is directly connected, GigabitEthernet0/0 
+C      10.1.2.0/24 is directly connected, GigabitEthernet0/1 
+L      10.1.2.1/32 is directly connected, GigabitEthernet0/1
+<span>S     192.168.10.0/24 is directly connected, Serial0/0/0 
+S     192.168.11.0/24 [1/0] via 209.165.200.225</span>
+      209.165.200.0/24 is variably subnetted, 2 subnets, 2 masks
+C      209.165.200.224/30 is directly connected, Serial0/0/0 
+L      209.165.200.226/32 is directly connected, Serial0/0/0 
+R2# 
+</code>]]></text>
+
+</data>

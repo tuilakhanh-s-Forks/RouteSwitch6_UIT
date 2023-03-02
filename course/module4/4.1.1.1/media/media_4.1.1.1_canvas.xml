@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide type="MBAR">
+	<slide>
+	<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_photo.jpg" />
+<element type="IMAGE" x="50" y="29" width="580" height="435" subType="STD" src="media_4_1_1_1_S1.jpg" />
+<element type="TEXT" subType="TITLE" compId="ID_s1_title"/>
+</slide>
+
+
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_photo.jpg" />
+<element type="IMAGE" x="73" y="229" width="316" height="219" subType="STD" src="media_4_1_1_1_S2_A.jpg" />
+<element type="IMAGE" x="190" y="59" width="293" height="120" subType="STD" src="media_4_1_1_1_S2_B.jpg" />
+<element type="IMAGE" x="444" y="229" width="158" height="219" subType="STD" src="media_4_1_1_1_S2_C.jpg" />
+<element type="TEXT" compId="ID_s2_txt02" x="80" y="455" width="301" expand="down" align="center" color="#ffffff" />
+<element type="TEXT" compId="ID_s2_txt01" x="196" y="186" width="282" expand="left+right" align="center" color="#ffffff" />
+<element type="TEXT" compId="ID_s2_txt03" x="441" y="455" width="164" expand="down" align="left" color="#ffffff" />
+<element type="TEXT" subType="TITLE" compId="ID_s2_title"/>
+</slide>
+
+
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_photo.jpg" />
+<element type="IMAGE" x="153" y="292" width="376" height="148" subType="STD" src="media_4_1_1_1_S3_C.jpg" />
+<element type="IMAGE" x="373" y="63" width="222" height="177" subType="STD" src="media_4_1_1_1_S3_D.jpg" />
+<element type="IMAGE" x="87" y="63" width="222" height="177" subType="STD" src="media_4_1_1_1_S3_A.jpg" />
+<element type="TEXT" compId="ID_s3_txt01" x="377" y="247" width="214" expand="down" align="center" color="#ffffff" />
+<element type="TEXT" compId="ID_s3_txt02" x="83" y="247" width="233" expand="down" align="center" color="#ffffff" />
+<element type="TEXT" compId="ID_s3_txt03" x="153" y="447" width="378" expand="down" align="center" color="#ffffff" />
+<element type="TEXT" subType="TITLE" compId="ID_s3_title"/>
+</slide>
+</slide>
+</data>

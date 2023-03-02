@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide>
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+        <element type="TEXT" subType="TITLE" compId="ID_title" color="#fff" />
+        <element type="ROUTER" textId="ID_router_txt1" x="40" y="55" width="600" height="400" />
+        <text id="ID_router_txt1">
+            <![CDATA[<pre>Switch# <b>show file systems</b>
+File Systems:
+
+       Size(b)     Free(b)     Type  Flags  Prefixes
+*    32514048    20887552     flash     rw    flash:
+          -           -      opaque     rw       vb:
+          -           -      opaque     ro       bs:
+          -           -      opaque     rw   system:
+          -           -      opaque     rw   tmpsys:
+        65536       48897     nvram     rw    nvram:
+          -           -      opaque     ro   xmodem:
+          -           -      opaque     ro   ymodem:
+          -           -      opaque     rw     null:
+          -           -      opaque     ro      tar:
+          -           -     network     rw     tftp:
+          -           -     network     rw      rcp:
+          -           -     network     rw     http:
+          -           -     network     rw      ftp:
+          -           -     network     rw      scp:
+          -           -     network     rw    https:
+          -           -     opaque      ro      cns:</pre>]]></text>
+    </slide>
+</data>

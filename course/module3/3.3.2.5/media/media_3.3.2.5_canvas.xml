@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        <!-- Slide 1 -->
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="media_3.3.2.5.A.png" />
+            <element type="TEXT" compId="ID_s1_txt01" x="94" y="88" width="95" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s1_txt02" x="96" y="142" width="95" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s1_txt03" x="95" y="197" width="95" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s1_txt10" x="348" y="73" width="91" expand="up" align="center" color="#0" />
+            <element type="TEXT" compId="ID_s1_txt11" x="348" y="132" width="91" expand="up" align="center" color="#0" />
+            <element type="TEXT" compId="ID_s1_txt12" x="348" y="184" width="91" expand="up" align="center" color="#0" />
+            <element type="TEXT" compId="ID_s1_header1" x="96" y="55" width="100" expand="up" align="center" color="#0" />
+            <element type="TEXT" compId="ID_s1_header3" x="455" y="55" width="148" expand="up" align="center" color="#0" />
+            <element type="TEXT" compId="ID_s1_txt04" x="481" y="88" width="95" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s1_txt05" x="482" y="142" width="95" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s1_txt06" x="482" y="197" width="95" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s1_txt07" x="234" y="88" width="95" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s1_txt08" x="236" y="142" width="95" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s1_txt09" x="236" y="197" width="95" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s1_txt13" x="101" y="243" width="84" expand="up+down" align="center" />
+            <element type="TEXT" compId="ID_s1_txt14" x="105" y="280" width="77" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s1_txt15" x="101" y="331" width="85" expand="down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s1_txt16" x="106.75" y="416" width="85" expand="down" align="center" color="#ffffff" />
+            <element type="TEXT" subType="TITLE" compId="ID_s1_title" />
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="media_3.3.2.5.B.png" />
+            <element type="TEXT" subType="TITLE" compId="ID_s2_title" />
+            <element type="TEXT" compId="ID_s2_txt01" x="94" y="88" width="95" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s2_txt02" x="96" y="142" width="95" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s2_txt03" x="95" y="197" width="95" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s2_txt10" x="348" y="73" width="91" expand="up" align="center" color="#0" />
+            <element type="TEXT" compId="ID_s2_txt11" x="348" y="132" width="91" expand="up" align="center" color="#0" />
+            <element type="TEXT" compId="ID_s2_txt12" x="348" y="184" width="91" expand="up" align="center" color="#0" />
+            <element type="TEXT" compId="ID_s2_header1" x="96" y="55" width="100" expand="up" align="center" color="#0" />
+            <element type="TEXT" compId="ID_s2_header3" x="455" y="55" width="148" expand="up" align="center" color="#0" />
+            <element type="TEXT" compId="ID_s2_txt04" x="481" y="88" width="95" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s2_txt05" x="482" y="142" width="95" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s2_txt06" x="482" y="197" width="95" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s2_txt07" x="234" y="88" width="95" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s2_txt08" x="236" y="142" width="95" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s2_txt09" x="236" y="197" width="95" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s2_txt13" x="101" y="243" width="84" expand="up+down" align="center" />
+            <element type="TEXT" compId="ID_s2_txt14" x="105" y="280" width="77" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s2_txt18" x="101" y="331" width="85" expand="down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s2_txt20" x="106.75" y="416" width="85" expand="down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s2_txt16" x="238" y="280" width="90" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s2_txt15" x="239" y="243" width="90" expand="up+down" align="center" />
+            <element type="TEXT" compId="ID_s2_txt17" x="479" y="280" width="100" expand="up+down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s2_txt22" x="348" y="266" width="91" expand="up" align="center" />
+            <element type="TEXT" compId="ID_s2_txt19" x="235" y="333" width="150" expand="down" align="center" color="#ffffff" />
+            <element type="TEXT" compId="ID_s2_txt21" x="240" y="411" width="150" expand="down" align="center" color="#ffffff" />
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+            <element type="ROUTER" textId="ID_router_txt1" x="40" y="55" width="600" height="400" />
+            <element type="TEXT" subType="TITLE" compId="ID_s3_title" color="#FFFFFF" />
+        </slide>
+    </slide>
+    <!-- Router text -->
+    <text id="ID_router_txt1">
+        <![CDATA[
+<pre>R1# <b>show ip route | begin Gateway</b>
+Gateway of last resort is 209.165.200.234 to network 0.0.0.0
+
+S*    0.0.0.0/0 [1/0] via 209.165.200.234
+      172.16.0.0/16 is variably subnetted, 5 subnets, 2 masks
+<span class="color">C        172.16.1.0/24 is directly connected, GigabitEthernet0/0
+L        172.16.1.1/32 is directly connected, GigabitEthernet0/0
+R        172.16.2.0/24 [120/1] via 209.165.200.226, 00:00:21, Serial0/0/0
+R        172.16.3.0/24 [120/2] via 209.165.200.226, 00:00:21, Serial0/0/0
+R        172.16.4.0/28 [120/2] via 209.165.200.226, 00:00:21, Serial0/0/0
+R     192.168.0.0/16 [120/2] via 209.165.200.226, 00:00:16, Serial0/0/0</span>
+      209.165.200.0/24 is variably subnetted, 5 subnets, 2 masks
+<span class="color">C        209.165.200.224/30 is directly connected, Serial0/0/0
+L        209.165.200.225/32 is directly connected, Serial0/0/0
+R        209.165.200.228/30 [120/1] via 209.165.200.226, 00:00:21, Serial0/0/0
+C        209.165.200.232/30 is directly connected, Serial0/0/1
+L        209.165.200.233/32 is directly connected, Serial0/0/1</span>
+R1#
+
+</code>]]></text>
+</data>

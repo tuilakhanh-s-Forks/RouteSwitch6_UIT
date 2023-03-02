@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.2.4 Level 1 Parent Route</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Level 1 Parent Route</h1>
+        <div>
+          <p>As illustrated in Figure 1, the 172.16.0.0 and 209.165.200.0 routes are level 1 parent routes. A parent route is a level 1 network route that is subnetted. A parent route can never be an ultimate route. </p>
+          <p></p>
+          <p>Figure 2 highlights the level 1 parent routes in the routing table of R1. In the routing table, it basically provides a heading for the specific subnets it contains. Each entry displays the classful network address, the number of subnets and the number of different subnet masks into which the classful address has been subdivided. </p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one displays the relationship between a level one route and a parent route.  The figure is a chart that lists a network route as a level one route and below it is the title Parent Route if the level one network is a subnetted network. Figure two shows the output from the command, show i.p. route pipe begin Gateway. Two parent routes are highlighted.  The first route reads 172 dot 16 dot zero dot zero slash 16 is variably subnetted, 5 subnets, and 3 masks.  Below this the five subnets are listed along with the next hop I.P. address.  For example, one of the subnet lines reads R for RIP, 172 dot 16 dot 2 dot 0 slash 24 120 slash 2 via 209 dot 165 dot 200 dot 226.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

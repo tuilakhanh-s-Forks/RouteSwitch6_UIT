@@ -1,0 +1,188 @@
+<textcomponents>
+<!--slide 1-->
+<component id="ID_s1_title">
+<text><![CDATA[<b>Verify Interface Status</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+<component id="ID_table01">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+<tr class="mtable_top">
+<td colspan='3' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+
+<tr>
+<td width="198" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Interface Status</b></font></td>
+<td  width="198" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Line Protocol Status</b></font></td>
+<td  width="198" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Link State</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Up</font></td>
+<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Up</font></td>
+<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Operational</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Down</font></td>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Down</font></td>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Interface Problem</font></td>
+</tr>
+
+</table>]]></text> 
+</component>
+
+
+<component id="ID_table01_html">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+	<caption class="mtable_title" colspan="2" bgcolor='#FFFFFF'><font size="1"></font></caption>
+<tr class="mtable_top">
+<td colspan='3' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+
+<tr>
+<th scope="col" width="198" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Interface Status</b></font></th>
+<th scope="col" width="198" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Line Protocol Status</b></font></th>
+<th scope="col" width="198" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Link State</b></font></th>
+</tr>
+
+<tr>
+<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Up</font></td>
+<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Up</font></td>
+<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Operational</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Down</font></td>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Down</font></td>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Interface Problem</font></td>
+</tr>
+
+</table>]]></text> 
+</component>
+
+
+<!--slide 2-->
+<component id="ID_s2_title">
+<text><![CDATA[<b>Display Interface Status and Statistics</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+
+<!--slide 3-->
+<component id="ID_s3_title">
+<text><![CDATA[<b>Network Access Layer Issues</b>]]></text>
+</component>
+
+<component id="ID_s3_table">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+
+<tr>
+<td width="150" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Error Type</b></font></td>
+<td  width="445" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Description</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Input Errors</font></td>
+<td  bgcolor="#E9E7E8" valign="top"><font color='#393536'>Total number of errors. It includes runts, giants, no buffer, CRC, frame, overrun, and ignored counts.</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Runts</font></td>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Packets that are discarded because they are smaller than the minimum packet size for the medium. For instance, any Ethernet packet that is less than 64 bytes is considered a runt.</font></td>
+</tr>
+
+<tr>
+<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Giants</font></td>
+<td  bgcolor="#E9E7E8" valign="top"><font color='#393536'>Packets that are discarded because they exceed the maximum packet size for the medium. For example, any Ethernet packet that is greater than 1,518 bytes is considered a giant.</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>CRC</font></td>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>CRC errors are generated when the calculated checksum is not the same as the checksum received.</font></td>
+</tr>
+
+<tr>
+<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Output Errors</font></td>
+<td  bgcolor="#E9E7E8" valign="top"><font color='#393536'>Sum of all errors that prevented the final transmission of datagrams out of the interface that is being examined.</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Collisions</font></td>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Number of messages retransmitted because of an Ethernet collision.</font></td>
+</tr>
+
+<tr>
+<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Late Collisions</font></td>
+<td  bgcolor="#E9E7E8" valign="top"><font color='#393536'>A collison that occurs after 512 bits of the frame have been transmitted.</font></td>
+</tr>
+</table>]]></text> 
+</component>
+
+<component id="ID_s3_table_html">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+	<caption class="mtable_title" colspan="2" bgcolor='#FFFFFF'><font size="1"></font></caption>
+
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+
+<tr>
+<th scope="col" width="150" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Error Type</b></font></th>
+<th scope="col" width="445" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Description</b></font></th>
+</tr>
+
+<tr>
+<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Input Errors</font></td>
+<td  bgcolor="#E9E7E8" valign="top"><font color='#393536'>Total number of errors. It includes runts, giants, no buffer, CRC, frame, overrun, and ignored counts.</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Runts</font></td>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Packets that are discarded because they are smaller than the minimum packet size for the medium. For instance, any Ethernet packet that is less than 64 bytes is considered a runt.</font></td>
+</tr>
+
+<tr>
+<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Giants</font></td>
+<td  bgcolor="#E9E7E8" valign="top"><font color='#393536'>Packets that are discarded because they exceed the maximum packet size for the medium. For example, any Ethernet packet that is greater than 1,518 bytes is considered a giant.</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>CRC</font></td>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>CRC errors are generated when the calculated checksum is not the same as the checksum received.</font></td>
+</tr>
+
+<tr>
+<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Output Errors</font></td>
+<td  bgcolor="#E9E7E8" valign="top"><font color='#393536'>Sum of all errors that prevented the final transmission of datagrams out of the interface that is being examined.</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Collisions</font></td>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Number of messages retransmitted because of an Ethernet collision.</font></td>
+</tr>
+
+<tr>
+<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Late Collisions</font></td>
+<td  bgcolor="#E9E7E8" valign="top"><font color='#393536'>A collison that occurs after 512 bits of the frame have been transmitted.</font></td>
+</tr>
+</table>]]></text> 
+</component>
+
+</textcomponents>

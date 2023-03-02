@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.1.5 How NAT Works</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.1.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>How NAT Works</h1>
+        <div>
+          <p>In this example, PC1 with private address 192.168.10.10 wants to communicate with an outside web server with public address 209.165.201.1.</p>
+          <p></p>
+          <p>Click the Play button in the figure to start the animation.</p>
+          <p></p>
+          <p>PC1 sends a packet addressed to the web server. The packet is forwarded by R1 to R2.</p>
+          <p></p>
+          <p>When the packet arrives at R2, the NAT-enabled router for the network, R2 reads the source IPv4 address of the packet to determine if the packet matches the criteria specified for translation. </p>
+          <p></p>
+          <p>In this case, the source IPv4 address does match the criteria and is translated from 192.168.10.10 (inside local address) to 209.165.200.226 (inside global address). R2 adds this mapping of the local to global address to the NAT table.</p>
+          <p></p>
+          <p>R2 sends the packet with the translated source address toward the destination. </p>
+          <p></p>
+          <p>The web server responds with a packet addressed to the inside global address of PC1 (209.165.200.226).</p>
+          <p></p>
+          <p>R2 receives the packet with destination address 209.165.200.226. R2 checks the NAT table and finds an entry for this mapping. R2 uses this information and translates the inside global address (209.165.200.226) to the inside local address (192.168.10.10), and the packet is forwarded toward PC1. </p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">This animation demonstrates how the addressing is set as a packet travels across a nat border router from source to destination.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.1.4.4 Command History Feature</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.1.4.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Command History Feature</h1>
+        <div>
+          <p>The command history feature is useful, because it temporarily stores the list of executed commands to be recalled. </p>
+          <p></p>
+          <p>To recall commands in the history buffer, press<b> Ctrl</b>+<b>P </b>or the<b> Up Arrow </b>key. The command output begins with the most recent command. Repeat the key sequence to recall successively older commands. To return to more recent commands in the history buffer, press <b>Ctrl</b>+<b>N</b> or the <b>Down Arrow</b> key. Repeat the key sequence to recall successively more recent commands.</p>
+          <p></p>
+          <p>By default, command history is enabled and the system captures the last 10 command lines in its history buffer. Use the<b> show history </b>privileged EXEC command to display the contents of the buffer.</p>
+          <p></p>
+          <p>It is also practical to increase the number of command lines that the history buffer records during the current terminal session only. Use the<b> terminal history size </b>user EXEC command to increase or decrease the size of the buffer.</p>
+          <p></p>
+          <p>Figure 1 displays a sample of the<b> terminal history size </b>and<b> show history </b>commands.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 2 to practice the two EXEC commands.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the command terminal history size 200 being entered on a router thereby setting the history to remember the 200 most recent commands.  The command show history is then run on the router and the output lists the most recent commands entered on the router. Figure two is an interactive media element that allows the learner to practice with the terminal history size and show history commands.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

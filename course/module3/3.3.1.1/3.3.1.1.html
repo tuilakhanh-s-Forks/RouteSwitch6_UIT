@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.1.1 Routing Table Entries</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Routing Table Entries</h1>
+        <div>
+          <p>The topology displayed in Figure 1 is used as the reference topology for this section.  Notice that in the topology:</p>
+          <p>
+            <ul>
+              <li>R1 is the edge router that connects to the Internet; therefore, it is propagating a default static route to R2 and R3. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>R1, R2, and R3 contain discontiguous networks separated by another classful network.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>R3 is also introducing a 192.168.0.0/16 supernet route.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Figure 2 displays the IPv4 routing table of R1 with directly connected, static, and dynamic routes.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The routing table hierarchy in Cisco IOS was originally implemented with the classful routing scheme. Although the routing table incorporates both classful and classless addressing, the overall structure is still built around this classful scheme.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows three routers connected linearly through WAN links.  R-1 is connected to R-2 through a serial WAN link, and it has a LAN on an Ethernet interface.  R-2 is connected to both R-1 and R-3 through serial WAN links, and has a LAN on an Ethernet interface.  R-3 is only connected to R-2 through a serial WAN link, and has two LANs on Ethernet interfaces.  R-1 has a serial WAN link to the Internet, and router R-3 has a serial WAN link to another cloud network. Figure two shows the output from the command, show i.p. route pipe begin Gateway.  This shows the routing table for router R-1, which has three directly connected routes with three interface I.P. addresses, five routes learned through RIP, one candidate default route, and one gateway of last resort configured.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+
+          <p>
+            <b>Verifying the Stateful DHCPv6 Server</b>
+          </p>
+          <p></p>
+          <p>In Figure 1, the <b>show ipv6 dhcp pool</b> command verifies the name of the DHCPv6 pool and its parameters. The number of active clients is 1, which reflects client R3 receiving its IPv6 global unicast address from this server.</p>
+          <p></p>
+          <p>The <b>show ipv6 dhcp binding</b> command, as shown in Figure 2, displays the automatic binding between the link-local address of the client and the address assigned by the server. FE80::32F7:DFF:FE25:2DE1 is the link-local address of the client. In this example, this is the G0/1 interface of R3. This address is bound to the IPv6 global unicast address, 2001:DB8:CAFE:1:5844:47B2:2603:C171, which was assigned by R1, the DHCPv6 server. This information is maintained by a stateful DHCPv6 server and not by a stateless DHCPv6 server.</p>
+          <p></p>
+          <p>
+            <b>Verifying the Stateful DHCPv6 Client</b>
+          </p>
+          <p></p>
+          <p>The output from the <b>show ipv6 interface </b>command shown in Figure 3 verifies the IPv6 global unicast address on DHCPv6 client R3 that was assigned by the DHCPv6 server. The default router information is not from the DHCPv6 server, but was determined by using the source IPv6 address from the RA message. Although the client does not use the information contained in the RA message, it is able to use the source IPv6 address for its default gateway information.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to configure and verify stateless DHCPv6.</p>
+        

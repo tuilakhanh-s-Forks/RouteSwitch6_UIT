@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+<slide type="MBAR">
+	<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+
+<slide>
+	<element type="IMAGE" src="media_1.3.2.3.png" x="0" y="0" width="680" height="490"/>
+			<element type="IMAGE" src="1_3_2_3.png" x="0" y="0" width="680" height="490"/>
+			<element type="TEXT" compId="ID_s1_title" x="2" y="2" width="672.05" expand="down" align="center" size="17" />
+			
+			<element type="ROUTER" textId="staticTxt" x="85" y="232" width="500" height="220"/>
+			
+	
+</slide>
+<slide>
+	<element type="IMAGE" src="media_1.3.2.3.png" x="0" y="0" width="680" height="490"/>
+			<element type="IMAGE" src="1_3_2_3.png" x="0" y="0" width="680" height="490"/>
+			<element type="TEXT" compId="ID_s2_title" x="2" y="2" width="672.05" expand="down" align="center" size="17" />
+			
+			<element type="ROUTER" textId="staticTxt1" x="85" y="232" width="500" height="220"/>
+				
+</slide>
+<slide>
+	        <element type="IMAGE" src="media_1.3.2.3.png" x="0" y="0" width="680" height="490"/>
+			<element type="IMAGE" src="1_3_2_3.png" x="0" y="0" width="680" height="490"/>
+			<element type="TEXT" compId="ID_s3_title" x="2" y="2" width="672.05" expand="down" align="center" size="17" />
+			
+			<element type="ROUTER" textId="staticTxt2" x="85" y="232" width="500" height="220"/>
+				
+</slide>
+<slide>
+	         <element type="IMAGE" src="media_1.3.2.3.png" x="0" y="0" width="680" height="490"/>
+			<element type="IMAGE" src="1_3_2_3.png" x="0" y="0" width="680" height="490"/>
+			<element type="TEXT" compId="ID_s4_title" x="2" y="2" width="672.05" expand="down" align="center" size="17" />
+			
+			<element type="ROUTER" textId="staticTxt3" x="85" y="232" width="500" height="220"/>
+				
+</slide>
+<slide>
+			<element type="TEXT" subType="TITLE" compId="ID_SC_title" />
+			<element type="ACTIVITY" subType="SYNTAX" compId="ID_SC5" x="35" y="35" width="600" height="387" resetId="ID_sc_reset" showMeId="ID_sc_showme" showAllId="ID_sc_showall"/>	
+</slide>
+</slide>
+<text id="staticTxt"><![CDATA[ 	R1(config)# <b>interface gigabitethernet 0/0  </b><br/> R1(config-if)# <b>description Link to LAN 1  </b><br/> R1(config-if)# <b>ip address 192.168.10.1 255.255.255.0  </b><br/> 
+	<span>R1(config-if)# <b>no shutdown  </b><br/> </span> 	R1(config-if)# <b>exit  </b><br/> R1(config)#<br/> *Feb 1 13:37:35.035: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to down<br/> R1(config)#<br/>
+	<span>*Feb 1 13:37:38.211: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to up<br/> *Feb 1 13:37:39.211: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up</span> 	R1(config)#<br/>
+	]]>
+</text>
+	
+	<text id="staticTxt1"><![CDATA[R1(config)# <b>interface gigabitethernet 0/1  </b><br/> R1(config-if)# <b>description Link to LAN 2  </b><br/> R1(config-if)# <b>ip address 192.168.11.1 255.255.255.0  </b><br/>  
+	<span>R1(config-if)#<b> no shutdown  </b><br/></span>   	R1(config-if)# <b>exit  </b><br/> R1(config)#<br/> *Feb 1 13:38:01.471: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to down<br/> R1(config)#<br/>  
+	<span>*Feb 1 13:38:04.211: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up<br/> *Feb 1 13:38:05.211: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up</span> 	R1(config)#<br/>  
+	]]></text>
+	
+	<text id="staticTxt2"><![CDATA[ 	R1(config)# <b>interface serial 0/0/0  </b><br/> R1(config-if)# <b>description Link to R1  </b><br/> R1(config-if)# <b>ip address 209.165.200.225 255.255.255.252  </b><br/> R1(config-if)# <b>clock rate 128000  </b><br/>        
+	<span>R1(config-if)# <b>no shutdown  </b></span>         	R1(config-if)# <b>exit  </b><br/> R1(config)#<br/>  
+	<span>*Feb 1 13:38:22.723: %LINK-3-UPDOWN: Interface Serial0/0/0, changed state to up<br/> *Feb 1 13:38:23.723: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/0, changed state to up<br/></span>  	R1(config)# <b>exit  </b>
+	]]></text>
+	
+	<text id="staticTxt3"><![CDATA[ 	R1# <b>do show ip route | begin Gateway  </b><br/> Gateway of last resort is not set<br/> 192.168.10.0/24 is variably subnetted, 2 subnets, 2 masks<br/>
+	<span>C 192.168.10.0/24 is directly connected, GigabitEthernet0/0<br/> L 192.168.10.1/32 is directly connected, GigabitEthernet0/0</span><br/>192.168.11.0/24 is variably subnetted, 2 subnets, 2 masks</span><br/>
+	<span>C 192.168.11.0/24 is directly connected, GigabitEthernet0/1<br/> L 192.168.11.1/32 is directly connected, GigabitEthernet0/1</span><br/>209.165.200.0/24 is variably subnetted, 2 subnets, 2 masks<br/>
+	<span>C 209.165.200.224/30 is directly connected, Serial0/0/0
+		<br/> L 209.165.200.225/32 is directly connected, Serial0/0/0</span></br> 	R1#
+	]]></text>
+	
+</data>

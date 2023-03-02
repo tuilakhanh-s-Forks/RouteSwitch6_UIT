@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.2.3 Alleviating Network Congestion</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Alleviating Network Congestion</h1>
+        <div>
+          <p>LAN switches have special characteristics that make them effective at alleviating network congestion. By default, interconnected switch ports attempt to establish a link in full duplex, therefore eliminating collision domains. Each full duplex port of the switch provides the full bandwidth to the device or devices that are connected to that port. A full-duplex connection can carry transmitted and received signals at the same time. Full-duplex connections have dramatically increased LAN network performance, and are required for 1 Gb/s Ethernet speeds and higher.</p>
+          <p></p>
+          <p>Switches interconnect LAN segments, use a table of MAC addresses to determine the segment to which the frame is to be sent, and can lessen or eliminate collisions entirely. The following are some important characteristics of switches that contribute to alleviating network congestion:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>High port density </b>- Switches have high-port densities: 24- and 48-port switches are often just a single rack unit and operate at speeds of 100 Mb/s, 1 Gb/s, and 10 Gb/s. Large enterprise switches may support many hundreds of ports.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Large frame buffers </b>- The ability to store more received frames before having to start dropping them is useful, particularly when there may be congested ports to servers or other parts of the network.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Port speed </b>- Depending on the cost of a switch, it may be possible to support a mixture of speeds. Ports of 100 Mb/s, and 1 or 10 Gb/s are common (100 Gb/s is also possible).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Fast internal switching </b>- Having fast internal forwarding capabilities allows high performance. The method that is used may be a fast internal bus or shared memory, which affects the overall performance of the switch.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Low per-port cost </b>- Switches provide high-port density at a lower cost. </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows three types of switching hardware; fixed configuration, modular, and stackable.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

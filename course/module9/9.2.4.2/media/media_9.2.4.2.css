@@ -1,0 +1,11 @@
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+#ID_static_2,
+#ID_static_3 {
+    letter-spacing: -0.1px !important;
+}
+
+.purpleCallOut {
+    padding: 5px 2px 5px !important;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.1.2 The Order of ACEs in an ACL</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>The Order of ACEs in an ACL</h1>
+        <div>
+          <p>Cisco IOS applies an internal logic when accepting and processing standard ACEs. As discussed previously, ACEs are processed sequentially; therefore, the order in which ACEs are entered is important.</p>
+          <p></p>
+          <p>For example, in Figure 1, ACL 3 contains two ACEs. The first ACE uses a wildcard mask to deny a range of addresses, which includes all hosts in the 192.168.10.0/24 network. The second ACE is a host statement that examines a specific host, 192.168.10.10, that belongs to the 192.168.10.0/24 network. The IOS internal logic for standard access lists rejects the second statement and returns an error message because it is a subset of the previous statement. </p>
+          <p></p>
+          <p>The configuration in Figure 2 of ACL 4 has the same two statements but in reverse order. This is a valid sequence of statements because the first statement refers a specific host, not a range of hosts.</p>
+          <p></p>
+          <p>In Figure 3, ACL 5 shows that a host statement can be configured after a statement that denotes a range of hosts. The host must not be within the range covered by a previous statement. The 192.168.11.10 host address is not a member of the 192.168.10.0/24 network so this is a valid statement.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a conflicting access list entry on a current A.C.L.  The first line is access hyphen list 3 deny 192 dot 168 dot 10 dot zero zero dot zero dot zero dot 255.  This is followed by the command access hyphen list 3 permit host 192 dot 168 dot 10 dot 10, which conflicts with the deny statement and causes an error message to be sent to the console. Figure two shows the same two commands used in the previous figure, but in opposite order. This command sequence is accepted by the router. Figure three shows two entries that do not conflict.  The first command is, access hyphen list 5 deny 192 dot 168 dot 10 dot zero zero dot zero dot zero dot 255.  This command is followed by, access hyphen list 5 permit host 192 dot 168 dot 11 dot 10.  The host is not affected by the network in the deny statement so it is accepted.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

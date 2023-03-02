@@ -1,0 +1,85 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>ACL Best Practices</b>]]></text>
+</component>
+
+  <component id="ID_table">
+  <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable" width="600">
+  	<tr class="mtable_title">
+			<td colspan="2" bgcolor='#FFFFFF'><font size="5"></font></td>
+		</tr>
+	<tr>
+
+		<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+	</tr>
+	<tr>
+	
+		
+		<td bgcolor='#666263' valign="top" ><font color='#ffffff' ><b>Guideline</b></font></td>
+		<td bgcolor='#666263'  valign="top" ><font color='#ffffff' ><b>Benefit</b></font></td>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>Base your ACLs on the security policy of the organization.</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' >This will ensure you implement organizational security guidelines.</font></td>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>Prepare a description of what you want your ACLs to do.</font></td>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>This will help you avoid inadvertently creating potential access problems.</font></td>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>Use a text editor to create, edit, and save ACLs.</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>This will help you create a library of reusable ACLs.</font></td>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>Test your ACLs on a development network before implementing them on a production network.</font></td>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>This will help you avoid costly errors.</font></td>
+		
+    </tr>
+	
+	</table>]]></text>
+  </component>
+
+  <component id="ID_table_html">
+  <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable" width="600">
+ 
+			<caption colspan="2" class="mtable_title" bgcolor='#FFFFFF'><font size="5"></font></caption>
+		
+	<tr>
+
+		<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+	</tr>
+	<tr>
+	
+		
+		<th scope="col" bgcolor='#666263' valign="top" ><font color='#ffffff' ><b>Guideline</b></font></th>
+		<th scope="col" bgcolor='#666263'  valign="top" ><font color='#ffffff' ><b>Benefit</b></font></th>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>Base your ACLs on the security policy of the organization.</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' >This will ensure you implement organizational security guidelines.</font></td>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>Prepare a description of what you want your ACLs to do.</font></td>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>This will help you avoid inadvertently creating potential access problems.</font></td>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>Use a text editor to create, edit, and save ACLs.</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>This will help you create a library of reusable ACLs.</font></td>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>Test your ACLs on a development network before implementing them on a production network.</font></td>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>This will help you avoid costly errors.</font></td>
+		
+    </tr>
+	
+	</table>]]></text>
+  </component>
+</textcomponents>

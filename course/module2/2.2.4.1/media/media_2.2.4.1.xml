@@ -1,0 +1,101 @@
+<textcomponents>
+
+	<component id="ID_title">
+		<text><![CDATA[<b>Default Static IPv6 Route Syntax</b>]]></text>
+	</component>
+	
+	<component id='ID_table'>
+		<text><![CDATA[
+						 <table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+						 	<tr class="mtable_title">
+								<td colspan="2" bgcolor='#FFFFFF'><font size="1"> </font></td>
+							</tr>
+
+							
+								<tr>
+									<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+								</tr> 
+							  
+								<tr>
+								  <td width='140px' bgcolor='#666263' class="mtitle"><font  color='#ffffff'><b>Parameter</b></font></td>
+								  <td  bgcolor='#666263' class="mtitle"><font  color='#ffffff'><b>Description</b></font></td>
+								</tr>
+
+								<tr>
+
+								  <td bgcolor='#E9E7E8' valign="top"><font color='#000000' face="_typewriter">::/0</font></td>
+								  <td bgcolor='#E9E7E8' valign="top"><font color='#393536'>Matches any IPv6 prefix regardless of prefix length.</font></td>
+								</tr>
+								
+								<tr>
+								  <td bgcolor='#F2F2F2' valign="top"><font color='#000000' face="_typewriter">ipv6-address</font></td>
+								  <td bgcolor='#F2F2F2' valign="top"><font color='#393536'>
+									<textformat blockindent='-14'>
+										<li>Commonly referred to as the next-hop router’s IPv6 address.</li>
+										<li>Typically used when connecting to a broadcast media (i.e., Ethernet).</li>
+										<li>Commonly creates a recursive lookup.</li>
+									</textformat></font></td>
+								</tr>
+								<tr>
+								  <td bgcolor='#E9E7E8' valign="top"><font color='#000000' face="_typewriter">exit-intf</font></td>
+								  <td bgcolor='#E9E7E8' valign="top"><font color='#393536'>
+									<textformat blockindent='-14'>
+										<li>Use the outgoing interface to forward packets to the destination network.</li>
+										<li>Also referred to as a directly attached static route.</li>
+										<li>Typically used when connecting in a point-to-point configuration.</li>
+									</textformat></font></td>
+								</tr>      
+							  </table>
+					]]>
+		</text>
+</component>
+
+
+<component id='ID_table_html'>
+		<text><![CDATA[
+						 <table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+						 <caption class="mtable_title" colspan="2" bgcolor='#FFFFFF'><font size="1"></font></caption>
+
+							
+								<tr>
+									<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+								</tr> 
+							  
+								<tr>
+								  <th scope="col" width='140px' bgcolor='#666263' class="mtitle"><font  color='#ffffff'><b>Parameter</b></font></th>
+								  <th scope="col" bgcolor='#666263' class="mtitle"><font  color='#ffffff'><b>Description</b></font></th>
+								</tr>
+
+								<tr>
+
+								  <td bgcolor='#E9E7E8' valign="top"><font color='#000000' face="_typewriter">::/0</font></td>
+								  <td bgcolor='#E9E7E8' valign="top"><font color='#393536'>Matches any IPv6 prefix regardless of prefix length.</font></td>
+								</tr>
+								
+								<tr>
+								  <td bgcolor='#F2F2F2' valign="top"><font color='#000000' face="_typewriter">ipv6-address</font></td>
+								  <td bgcolor='#F2F2F2' valign="top"><font color='#393536'>
+									<textformat blockindent='-14'>
+										<li>Commonly referred to as the next-hop router’s IPv6 address.</li>
+										<li>Typically used when connecting to a broadcast media (i.e., Ethernet).</li>
+										<li>Commonly creates a recursive lookup.</li>
+									</textformat></font></td>
+								</tr>
+								<tr>
+								  <td bgcolor='#E9E7E8' valign="top"><font color='#000000' face="_typewriter">exit-intf</font></td>
+								  <td bgcolor='#E9E7E8' valign="top"><font color='#393536'>
+									<textformat blockindent='-14'>
+										<li>Use the outgoing interface to forward packets to the destination network.</li>
+										<li>Also referred to as a directly attached static route.</li>
+										<li>Typically used when connecting in a point-to-point configuration.</li>
+									</textformat></font></td>
+								</tr>      
+							  </table>
+					]]>
+		</text>
+</component>
+
+
+</textcomponents>

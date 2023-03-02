@@ -1,0 +1,76 @@
+﻿<textcomponents>
+
+
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Clearing an Active and Permanent License</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+  <text><![CDATA[Uninstalling the License]]></text> 
+  </component>
+<component id="ID_s1_txt02">
+  <text><![CDATA[<b>Step 1. Disable the technology package.</b>]]></text> 
+  </component>
+<component id="ID_s1_txt03">
+  <text><![CDATA[<b>Step 2. Clear the license.</b>]]></text> 
+  </component>
+  <component id="ID_s2_title">
+<text><![CDATA[<b></b>]]></text>
+</component>
+  
+  
+  
+
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Uninstalling the License on R2</b>]]></text>
+</component>
+
+<component id="ID_sc_reset">
+		<text><![CDATA[Reset]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[Show Me]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[Show All]]></text>
+	</component>
+
+ <component id="ID_SC2" fontFace="_typewriter" fontSize="12" fontColor="#ffffff">
+		<feedback id="fb"><![CDATA[<b>***</b><font face="_sans"color="#FFFFFF">You must enter the exact and full command.</font><b>***</b> 
+		]]></feedback>		
+		<existingcommands><![CDATA[<font face="_sans"><b>On router R2 perform the following tasks:<ul><li>Disable the technology package 'seck9'<li>Return to privileged EXEC mode with the 'exit' command<li>Reload the router for changes to take effect</ul></b></font>]]></existingcommands>
+		<command  prompt="R2(config)#">
+		    <correctresponse><![CDATA[license boot module c1900 technology-package seck9 disable]]></correctresponse>
+		</command>
+		<command  prompt="R2(config)#">
+		    <correctresponse><![CDATA[exit]]></correctresponse>
+		</command>
+		<command  prompt="R2#">
+		    <correctresponse><![CDATA[reload]]></correctresponse>
+				<deviceresponse><![CDATA[&lt;Simulated reload&gt;]]></deviceresponse> 
+			<instruction><![CDATA[<font face="_sans"><b>Now perform the following tasks:<ul><li>Clear the 'seck9' license<li>Enter configuration mode and remove the boot option for the license<li>Return to privileged EXEC mode with the 'exit' command<li>Reload the router for changes to take effect</ul></b>]]></instruction>
+		</command>
+		<command  prompt="R2#">
+		    <correctresponse><![CDATA[license clear seck9]]></correctresponse>
+		</command>
+		<command  prompt="R2#">
+		    <correctresponse><![CDATA[configure terminal]]></correctresponse>
+		</command>
+		<command  prompt="R2(config)#">
+		    <correctresponse><![CDATA[no license boot module c1900 technology-package seck9 disable]]></correctresponse>
+		</command>
+		<command  prompt="R2(config)#">
+		    <correctresponse><![CDATA[exit]]></correctresponse>
+		</command>
+		<command  prompt="R2#">
+		    <correctresponse><![CDATA[reload]]></correctresponse>
+				<deviceresponse><![CDATA[&lt;Simulated reload&gt;]]></deviceresponse> 
+			<instruction><![CDATA[<font face="_sans"><b>You successfully uninstalled the security license on R2.</b>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+
+
+</textcomponents>
+

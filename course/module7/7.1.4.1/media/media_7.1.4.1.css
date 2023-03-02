@@ -1,0 +1,29 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_txt01,#ID_txt02{
+	color:#fff !important;
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	#ID_static_txt01  ,#ID_static_txt02 , #ID_static_txt03 , #ID_static_txt04 , #ID_static_txt05 , 
+	#ID_static_txt06,#ID_static_txt07,#ID_static_txt08{
+		font-size: 0.87em !important;
+	}
+
+	#ID_static_txt02 , #ID_static_txt07{
+		left:-8px !important;
+	}
+	#ID_static_txt01 , #ID_static_txt05{
+		left:-4px !important;
+	}
+
+	#ID_static_txt04 , #ID_static_txt06{
+		left:4px !important;
+	}
+
+	
+}

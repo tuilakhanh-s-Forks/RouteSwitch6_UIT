@@ -1,0 +1,42 @@
+﻿<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>Backing Up the License</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+  <text><![CDATA[Backing Up the License]]></text> 
+  </component>
+
+  <component id="ID_s1_txt02">
+     <text><![CDATA[&lt;output omitted&gt;]]></text>
+     </component>
+
+
+<component id="ID_sc_reset">
+		<text><![CDATA[Reset]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[Show Me]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[Show All]]></text>
+	</component>
+
+
+<component id="ID_SC2" fontFace="_typewriter" fontSize="12" fontColor="#ffffff">
+		<feedback id="fb"><![CDATA[<b>***</b><font  face="_sans" color="#FFFFFF">You must enter the exact and full command.</font><b>***</b> 
+		]]></feedback>		
+		<existingcommands><![CDATA[<font  face="_sans"><b>On router R2 perform the following tasks:<ul><li>Save all licenses to flash0:R2_license_files<li>Verify the file has been saved to flash0</ul></b></font>]]></existingcommands>
+		<command  prompt="R2#">
+		    <correctresponse><![CDATA[license save flash0:R2_license_files]]></correctresponse>
+				<deviceresponse><![CDATA[license lines saved ..... to flash0:R2_license_files]]></deviceresponse> 
+		</command>
+		<command  prompt="R2#">
+		    <correctresponse><![CDATA[show flash0:]]></correctresponse>
+				<deviceresponse><![CDATA[<font face="_typewriter"><pre>-#- --length-- -----date/time------ path <br>1     68831808 Apr 2 2013 21:50:32  +00:00 c1900-universalk9<br/>-mz.SPA.152-4.M3.bin <br>2         1153 Apr 27 2013 01:34:32 +00:00 R2_license_files <br> <br>182398976 bytes available (68832961 bytes used) <br> <br>R2#<pre>]]></deviceresponse> 
+			<instruction><![CDATA[<font  face="_sans" class="syntaxBottomLine"><b>You successfully backed up the license on R2.</b>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+</textcomponents>
+
+

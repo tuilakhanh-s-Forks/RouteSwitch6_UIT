@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.3.2 Verifying the VTY Port is Secured</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verifying the VTY Port is Secured</h1>
+        <div>
+          <p>After the ACL to restrict access to the VTY lines is configured, it is important to verify that it is working as expected. The figure shows two devices attempting to connect to R1 using SSH. Access list 21 has been configured on the VTY lines on R1. PC1 is successful while PC2 fails to establish a SSH connection. This is the expected behavior, as the configured access list permits VTY access from the 192.168.10.0/24 network while denying all other devices.</p>
+          <p></p>
+          <p>The output for R1 shows the result of issuing the <b>show access-lists </b>command after the SSH attempts by PC1 and PC2.  The match in the permit line of the output is a result of a successful SSH connection by PC1. The match in the deny statement is due to the failed attempt to create an SSH connection by PC2, a device on the 192.168.11.0/24 network.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the topology from the previous page, and the screen output of a computer on each of the two LANs attempting to access the router through s.s.h.  The first computer is on the 192 dot 168 dot 10 dot zero network, which is the accepted network configured in the A.C.L., and access is permitted.  The second computer is in the 192 dot 168 dot 11 dot zero network, and is denied access due to the A.C.L.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

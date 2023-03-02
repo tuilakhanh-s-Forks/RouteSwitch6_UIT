@@ -1,0 +1,62 @@
+
+          <p>After directly connected interfaces are configured and added to the routing table, then static or dynamic routing can be implemented. </p>
+          <p></p>
+          <p>Static routes are manually configured. They define an explicit path between two networking devices. Unlike a dynamic routing protocol, static routes are not automatically updated and must be manually reconfigured if the network topology changes. The benefits of using static routes include improved security and resource efficiency. Static routes use less bandwidth than dynamic routing protocols, and no CPU cycles are used to calculate and communicate routes. The main disadvantage to using static routes is the lack of automatic reconfiguration if the network topology changes.</p>
+          <p></p>
+          <p>There are two common types of static routes in the routing table:</p>
+          <p>
+            <ul>
+              <li>Static route to a specific network</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Default static route</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>A static route can be configured to reach a specific remote network. IPv4 static routes are configured using the following command:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config)#</span>
+            <span class="cmd">
+              <b> ip route </b>
+            </span>
+            <span class="cmd">
+              <i>network mask</i>
+            </span>
+            <span class="cmd"> {</span>
+            <span class="cmd">
+              <i>next-hop-ip</i>
+            </span>
+            <span class="cmd"> | </span>
+            <span class="cmd">
+              <i>exit-intf</i>
+            </span>
+            <span class="cmd">} </span>
+          </p>
+          <p></p>
+          <p>A static route is identified in the routing table with the code ‘<b>S</b>’.</p>
+          <p></p>
+          <p>A default static route is similar to a default gateway on a host. The default static route specifies the exit point to use when the routing table does not contain a path for the destination network. A default static route is useful when a router has only one exit point to another router, such as when the router connects to a central router or service provider. </p>
+          <p></p>
+          <p>To configure an IPv4 default static route, use the following command:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config)#</span>
+            <span class="cmd">
+              <b> ip route 0.0.0.0 0.0.0.0</b>
+            </span>
+            <span class="cmd"> {</span>
+            <span class="cmd">
+              <i>exit-intf</i>
+            </span>
+            <span class="cmd"> | </span>
+            <span class="cmd">
+              <i>next-hop-ip</i>
+            </span>
+            <span class="cmd">}</span>
+          </p>
+          <p></p>
+          <p>The figure provides a simple scenario of how default and static routes can be applied. </p>
+        

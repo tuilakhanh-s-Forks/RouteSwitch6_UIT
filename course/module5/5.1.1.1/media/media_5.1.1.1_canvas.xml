@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+	<data>		
+		<slide>		
+		<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+		
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_5.1.1.1.png" />
+<element type="ROUTER" textId="ID_router_txt1" x="20" y="207" width="615" height="61" />
+<text id="ID_router_txt1">
+	<![CDATA[<pre><b>S1(config)#</b><span id="static1"> boot system</span><span id="static2"> flash:</span><span id="static3">/c2960-lanbasek9-mz.150-2.SE/</span><span id="static4">c2960-lanbasek9-mz.150-2.SE.bin</span></pre>]]>
+</text>
+<element type="TEXT" compId="ID_s1_txt01" x="219" y="333" width="393" expand="up+down" align="left" />
+<element type="TEXT" compId="ID_s1_txt02" x="219" y="355" width="393" expand="up+down" align="left" />
+<element type="TEXT" compId="ID_s1_txt03" x="219" y="377" width="393" expand="up+down" align="left" />
+<element type="TEXT" compId="ID_s1_txt04" x="219" y="399" width="393" expand="up+down" align="left" />
+<element type="TEXT" subType="TITLE" compId="ID_s1_title"/>
+</slide>
+
+	</data>
+

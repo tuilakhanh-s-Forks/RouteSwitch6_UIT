@@ -1,0 +1,41 @@
+
+          <p>Use the <b>debug ip nat</b> command to verify the operation of the NAT feature by displaying information about every packet that is translated by the router. The <b>debug ip nat detailed</b> command generates a description of each packet considered for translation. This command also provides information about certain errors or exception conditions, such as the failure to allocate a global address. The <b>debug ip nat detailed</b> command generates more overhead than the <b>debug ip nat</b> command, but it can provide the detail that may be needed to troubleshoot the NAT problem. Always turn off debugging when finished.</p>
+          <p></p>
+          <p>Figure 1 shows a sample <b>debug ip nat</b> output. The output shows that the inside host (192.168.10.10) initiated traffic to the outside host (209.165.201.1) and the source address was translated to address 209.165.200.226. </p>
+          <p></p>
+          <p>When decoding the debug output, note what the following symbols and values indicate: </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>* (asterisk)</b> - The asterisk next to NAT indicates that the translation is occurring in the fast-switched path. The first packet in a conversation is always process-switched, which is slower. The remaining packets go through the fast-switched path if a cache entry exists. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>s=</b> - This symbol refers to the source IPv4 address. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>a.b.c.d</b>---><b>w.x.y.z</b> - This value indicates that source address a.b.c.d is translated to w.x.y.z. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>d=</b> - This symbol refers to the destination IPv4 address. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>[xxxx]</b> - The value in brackets is the IPv4 identification number. This information may be useful for debugging in that it enables correlation with other packet traces from protocol analyzers. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Verify that the ACL referenced in the NAT command is permitting all of the necessary networks. In Figure 2, only 192.168.0.0/16 addresses are eligible to be translated. Packets from the inside network destined for the Internet with source addresses that are not explicitly permitted by ACL 1 are not translated by R2.</p>
+        

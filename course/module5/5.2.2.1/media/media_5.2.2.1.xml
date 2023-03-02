@@ -1,0 +1,12 @@
+<textcomponents>
+
+
+<component id="ID_title">
+<text><![CDATA[<b>Disable Unused Ports</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+  <text><![CDATA[Disable unused ports using the <font face="_typewriter" color="#000000"><b>shutdown</b></font> command.]]></text> 
+</component>
+
+</textcomponents>

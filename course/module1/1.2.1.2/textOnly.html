@@ -1,0 +1,11 @@
+
+          <p>In the animation in the figure, PC1 is sending a packet to PC2. PC1 must determine if the destination IPv4 address is on the same network. PC1 determines its own subnet by doing an <b>AND</b> operation on its own IPv4 address and subnet mask. This produces the network address that PC1 belongs to. Next, PC1 does this same <b>AND</b> operation using the packet destination IPv4 address and the PC1 subnet mask. </p>
+          <p></p>
+          <p>If the destination network address is the same network as PC1, then PC1 does not use the default gateway.  Instead, PC1 refers to its ARP cache for the MAC address of the device with that destination IPv4 address. If the MAC address is not in the cache, then PC1 generates an ARP request to acquire the address to complete the packet and send it to the destination. If the destination network address is on a different network, then PC1 forwards the packet to its default gateway.</p>
+          <p></p>
+          <p>To determine the MAC address of the default gateway, PC1 checks its ARP table for the IPv4 address of the default gateway and its associated MAC address.</p>
+          <p></p>
+          <p>If an ARP entry does not exist in the ARP table for the default gateway, PC1 sends an ARP request. Router R1 sends back an ARP reply. PC1 can then forward the packet to the MAC address of the default gateway, the Fa0/0 interface of router R1.</p>
+          <p></p>
+          <p>A similar process is used for IPv6 packets. Instead of the ARP process, IPv6 address resolution uses ICMPv6 Neighbor Solicitation and Neighbor Advertisement messages. IPv6-to-MAC address mapping are kept in a table similar to the ARP cache, called the neighbor cache.</p>
+        

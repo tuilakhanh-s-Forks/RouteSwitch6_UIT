@@ -1,0 +1,63 @@
+﻿<textcomponents>
+
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>LLDP Configure and Verify Commands</b>]]></text>
+	</component>
+
+	 <component id="ID_s2_title">
+        <text><![CDATA[<b>Configure and Verify LLDP</b>]]></text>
+	</component>
+
+        <!--Syntax Checker Button Text-->
+		<component id="ID_s1_reset">
+			<text><![CDATA[Reset]]></text>
+		</component>
+
+        <component id="ID_s1_showme">
+			<text><![CDATA[Show Me]]></text>
+		</component>
+
+        <component id="ID_s1_showall">
+			<text><![CDATA[Show All]]></text>
+		</component>
+	<!--End Syntax Checker Button Text-->
+
+        <component id="ID_s1_SC" fontSize="12" fontFace='_typewriter'  fontColor="#ffffff">
+                <feedback id="fb"><![CDATA[<b><font face="_sans" color="#ffffff">***You must enter the exact and full command. Commands that include a name or password are case-sensitive.***</font></b> ]]></feedback>
+              <existingcommands><![CDATA[<font face="_sans"><b>Display the status of LLDP on R1.</b></font>]]></existingcommands>
+                <command prompt="R1#">
+                       <correctresponse><![CDATA[ show lldp]]></correctresponse>
+                                <deviceresponse><![CDATA[% LLDP is not enabled<br>R1#<br>]]></deviceresponse>
+                       <instruction><![CDATA[<font face="_sans"><b><ul>Enter Global Configuration mode to configure the following:<li>Enable LLDP globally on R1.</li><li>Disable LLDP on interface S0/0/0.</li><li>Use end command to exit Global Configuration mode.</li></font>]]></instruction>
+              </command>
+                <command prompt="R1#">
+                       <correctresponse><![CDATA[ configure terminal]]></correctresponse>
+              </command>
+                <command prompt="R1(config)#">
+                       <correctresponse><![CDATA[ lldp run]]></correctresponse>
+              </command>
+                <command prompt="R1(config)#">
+                       <correctresponse><![CDATA[ interface s0/0/0]]></correctresponse>
+              </command>
+                <command prompt="R1(config-if)#">
+                       <correctresponse><![CDATA[ no lldp transmit]]></correctresponse>
+              </command>
+                <command prompt="R1(config-if)#">
+                       <correctresponse><![CDATA[ end]]></correctresponse>
+                                <deviceresponse><![CDATA[R1#]]></deviceresponse>
+                       <instruction><![CDATA[<font face="_sans"><b>Display the list of LLDP neighbors on S1.</font>]]></instruction>
+              </command>
+                <command prompt="S1#">
+                       <correctresponse><![CDATA[ show lldp neighbors]]></correctresponse>
+                                <deviceresponse><![CDATA[Capability codes:<br>    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device<br>    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other<br><br>Device ID           Local Intf     Hold-time  Capability      Port ID<br>R1                  Fa0/5          99         R               Gi0/1<br><br>Total entries displayed: 1<br>]]></deviceresponse>
+                       <instruction><![CDATA[<font face="_sans"><b>Display more details from the list of LLDP neighbors on S1.</font>]]></instruction>
+              </command>
+                <command prompt="S1#">
+                       <correctresponse><![CDATA[ show lldp neighbors detail]]></correctresponse>
+                                <deviceresponse><![CDATA[<br>------------------------------------------------<br>Chassis id: c471.fe45.73a0<br>Port id: Gi0/1<br>Port Description: GigabitEthernet0/1<br>System Name: R1<br><br>System Description:<br>Cisco IOS Software, C1900 Software (C1900-UNIVERSALK9-M), Version 15.4(3)M2, RELEASE SOFTWARE (fc2)<br>Technical Support: http://www.cisco.com/techsupport<br>Copyright (c) 1986-2015 by Cisco Systems, Inc.<br>Compiled Fri 06-Feb-15 17:01 by prod_rel_team<br><br>Time remaining: 106 seconds<br>System Capabilities: B,R<br>Enabled Capabilities: R<br>Management Addresses - not advertised<br>Auto Negotiation - not supported<br>Physical media capabilities - not advertised<br>Media Attachment Unit type - not advertised<br>Vlan ID: - not advertised<br><br><br>Total entries displayed: 1<br>]]></deviceresponse>
+                       <instruction><![CDATA[<font face="_sans"><b>You have successfully configured and verified LLDP.</font>]]></instruction>
+              </command>
+<command prompt=""/>
+ </component>
+
+</textcomponents>

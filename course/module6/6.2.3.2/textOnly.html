@@ -1,0 +1,13 @@
+
+          <p>If there is still no connection between devices in a VLAN, but IP addressing issues have been ruled out, refer to the flowchart in Figure 1 to troubleshoot:</p>
+          <p></p>
+          <p>
+            <b>Step 1</b>. Use the<b> show vlan </b>command to check whether the port belongs to the expected VLAN. If the port is assigned to the wrong VLAN, use the<b> switchport access vlan </b>command to correct the VLAN membership. Use the<b> show mac address-table </b>command to check which addresses were learned on a particular port of the switch, and to which VLAN that port is assigned, as show in Figure 2.</p>
+          <p></p>
+          <p>
+            <b>Step 2</b>. If the VLAN to which the port is assigned is deleted, the port becomes inactive. The ports of a deleted VLAN will not be listed in the output of the<b> show vlan </b>command. Use the<b> show interfaces switchport </b>command to verify the inactive VLAN is assigned to the port, as shown in Figure 2.</p>
+          <p></p>
+          <p>The example in Figure 2 shows MAC addresses that were learned on the F0/1 interface. It can be seen that MAC address 000c.296a.a21c was learned on interface F0/1 in VLAN 10. If this number is not the expected VLAN number, change the port VLAN membership using the<b> switchport access vlan </b>command.</p>
+          <p></p>
+          <p>Each port in a switch belongs to a VLAN. If the VLAN to which the port belongs is deleted, the port becomes inactive. All ports belonging to the VLAN that was deleted are unable to communicate with the rest of the network. Use the<b> show interface f0/1 switchport </b>command to check whether the port is inactive. If the port is inactive, it is not functional until the missing VLAN is created using the<b> vlan</b><i> vlan-id </i>global configuration command or the VLAN is removed from the port with the<b> no switchport access vlan </b><i>vlan-id </i>command.</p>
+        

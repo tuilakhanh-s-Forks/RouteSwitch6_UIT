@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.3.5.1 License Verification</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.3.5.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>License Verification</h1>
+        <div>
+          <p>After a new license has been installed the router must be rebooted using the<b> reload </b>command. As shown in Figure 1, the<b> show version </b>command is used after the router is reloaded to verify that license has been installed.</p>
+          <p></p>
+          <p>The<b> show license </b>command in Figure 2 is used to display additional information about Cisco IOS software licenses. This command displays license information used to help with troubleshooting issues related to Cisco IOS software licenses. This command displays all the licenses installed in the system. In this example, both the IP Base and Security licenses have been installed. This command also displays the features that are available, but not licensed to execute, such as the Data feature set. Output is grouped according to how the features are stored in license storage.</p>
+          <p></p>
+          <p>The following is a brief description of the output:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Feature</b> - Name of the feature</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>License Type</b> - Type of license; such as Permanent or Evaluation</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>License State</b> - Status of the license; such as Active or In Use </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>License Count</b> - Number of licenses available and in use, if counted.  If non-counted is indicated, the license is unrestricted. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>License Priority</b> - Priority of the license; such as high or low </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Refer to the Cisco IOS 15 command reference guide for complete details on the information displayed in the<b> show license </b>command.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output from the "show version" command on router one.  The security feature is highlighted. Figure two shows the output from the "show license" command on router one.  The different features and their type are highlighted.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

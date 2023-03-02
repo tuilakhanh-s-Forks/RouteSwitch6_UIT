@@ -1,0 +1,4 @@
+ID_s1_txt02 -> Added font color
+ID_s1_txt03 -> Added font color
+ID_s2_txt02 -> Added font color
+ID_s2_txt03 -> Added font color

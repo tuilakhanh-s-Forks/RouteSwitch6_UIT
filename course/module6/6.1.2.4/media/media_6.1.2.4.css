@@ -1,0 +1,11 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+@media only screen and (device-width: 768px) {
+#ID_txt08,#ID_txt09,#ID_txt10,#ID_txt11{
+width:78px !important;
+}
+}

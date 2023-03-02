@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.2.2 Configuring Dynamic NAT</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configuring Dynamic NAT</h1>
+        <div>
+          <p>Figure 1 shows the steps and the commands used to configure dynamic NAT.  </p>
+          <p></p>
+          <p>
+            <b>Step 1. </b>Define the pool of addresses that will be used for translation using the <b>ip nat pool</b> command. This pool of addresses is typically a group of public addresses. The addresses are defined by indicating the starting IPv4 address and the ending IPv4 address of the pool. The <b>netmask</b> or <b>prefix-length</b> keyword indicates which address bits belong to the network and which bits belong to the host for the range of addresses. </p>
+          <p></p>
+          <p>
+            <b>Step 2. </b>Configure a standard ACL to identify (permit) only those addresses that are to be translated. An ACL that is too permissive can lead to unpredictable results. Remember there is an implicit <b>deny all</b> statement at the end of each ACL.</p>
+          <p></p>
+          <p>
+            <b>Step 3. </b>Bind the ACL to the pool. The<b> ip nat inside source list </b><i>access-list-number </i><b>pool </b><i>pool name </i>command is used to bind the ACL to the pool. This configuration is used by the router to identify which devices (<b>list</b>) receive which addresses (<b>pool</b>).</p>
+          <p></p>
+          <p>
+            <b>Step 4. </b>Identify which interfaces are inside, in relation to NAT; that is, any interface that connects to the inside network.</p>
+          <p></p>
+          <p>
+            <b>Step 5.</b> Identify which interfaces are outside, in relation to NAT; that is, any interface that connects to the outside network.</p>
+          <p></p>
+          <p>Figure 2 shows an example topology and configuration. This configuration allows translation for all hosts on the 192.168.0.0/16 network, which includes the 192.168.10.0 and 192.168.11.0 LANs, when they generate traffic that enters S0/0/0 and exits S0/1/0. These hosts are translated to an available address in the pool in the range 209.165.200.226 - 209.165.200.240.</p>
+          <p></p>
+          <p>Figure 3 shows the topology used for the Syntax Checker configuration. Use the Syntax Checker in Figure 4 to configure dynamic NAT on R2. </p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a table listing the steps for configuring dynamic nat. Figure two shows the nat topology. Below the topology, the syntax for configuring a nat pool and the syntax for creating an access control list to define which inside addresses may be translated. Figure three shows the topology to be used in the next interactive activity. Figure four is an interactive activity that allows the learner to practice configuring dynamic nat.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

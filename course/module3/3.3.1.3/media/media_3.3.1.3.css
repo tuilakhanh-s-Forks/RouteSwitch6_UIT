@@ -1,0 +1,96 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+#ID_txt08
+{
+    background-color: #FACCA8;
+    border:2px solid #7B797A;
+    border-radius: 4px;
+}
+
+#ID_txt12
+{
+    background-color: #E0D5E6;
+    border:2px solid #7B797A;
+    border-radius: 4px;
+}
+
+#ID_txt10
+{
+    background-color: #E6EBA8;
+    border:2px solid #7B797A;
+    border-radius: 4px;
+}
+
+#ID_txt14
+{
+    background-color: #DBECDA;
+    border:2px solid #7B797A;
+    border-radius: 4px;
+}
+
+#ID_txt09
+{
+    background-color: #FFF3B9;
+    border:2px solid #7B797A;
+    border-radius: 4px;
+}
+
+#ID_txt12
+{
+    background-color: #E0D5E6;
+    border:2px solid #7B797A;
+    border-radius: 4px;
+}
+
+#ID_txt11
+{
+    background-color: #F3D0D6;
+    border:2px solid #7B797A;
+    border-radius: 4px;
+}
+
+#ID_txt13
+{
+    background-color: #CCE9E7;
+    border:2px solid #7B797A;
+    border-radius: 4px;
+}
+
+
+
+#col2{left: 17px;
+    letter-spacing: 0px;
+    position: absolute;}
+#col3{left: 113px;
+    letter-spacing: -0.2px;
+    position: absolute;}
+#col4{left: 158px;
+      position: absolute;}
+#col5{left: 184px;
+    letter-spacing: 0.3px;
+    position: absolute;}
+#col6{left: 298px;
+    letter-spacing: 0.3px;
+    position: absolute;}
+#col7{position:absolute;left:364px;letter-spacing:1px;}
+
+@media only screen and (device-width: 768px) {
+#router_text2{letter-spacing:-.081px;padding-left:1.6px}
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #router_text2{letter-spacing:-.081px;padding-left:1.6px}
+
+     #col3{
+        left: 112px;
+        letter-spacing: -0.2px;
+    }
+    
+}
+#ID_txt08,#ID_txt09,#ID_txt10,#ID_txt11,#ID_txt12,#ID_txt13
+{
+    margin-left: -12px;
+}
+

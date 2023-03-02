@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.3.4.4 Step 2. Obtain a License</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.3.4.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Step 2. Obtain a License</h1>
+        <div>
+          <p>The second step is to obtain the license, which is actually a license file. A license file, also known as a Software Activation License, is obtained using one of the following options:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Cisco License Manager (CLM) </b>- This is a free software application available at <a href="http://www.cisco.com/go/clm" target="_blank">http://www.cisco.com/go/clm</a>. Cisco License Manager is a standalone application from Cisco that helps network administrators rapidly deploy multiple Cisco software licenses across their networks. Cisco License Manager can discover network devices, view their license information, and acquire and deploy licenses from Cisco. The application provides a GUI that simplifies installation and helps automate license acquisition, as well as perform multiple licensing tasks from a central location. CLM is free of charge and can be downloaded from CCO.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Cisco License Registration Portal </b>- This is the web-based portal for getting and registering individual software licenses, available at <a href="http://www.cisco.com/go/license" target="_blank">http://www.cisco.com/go/license</a>.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Both of these processes require a PAK number and a Unique Device Identifier (UDI). </p>
+          <p></p>
+          <p>The PAK is received during purchase. </p>
+          <p></p>
+          <p>The UDI is a combination of the Product ID (PID), the Serial Number (SN), and the hardware version. The SN is an 11 digit number which uniquely identifies a device. The PID identifies the type of device. Only the PID and SN are used for license creation. This UDI can be displayed using the<b> show license udi </b>command shown in Figure 1. This information is also available on a pull-out label tray found on the device. Figure 2 shows an example of the pull-out label on a Cisco 1941 router.</p>
+          <p></p>
+          <p>After entering the appropriate information, the customer receives an email containing the license information to install the license file. The license file is an XML text file with a .lic extension. </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to determine the UDI on router R2.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output from the "show license u. d. i." command on router one. Figure two shows a router with a pull out label displaying the u. d. i. and the p. i. d. for the router. Figure three is an interactive activity that allows the learner to practice displaying the u. d. i. for a router at the command line.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+
+          <p>In this example, Figures 1 to 3 display the routing tables of R1, R2, and R3. Each router has entries only for directly connected networks and their associated local addresses. None of the routers have any knowledge of any networks beyond their directly connected interfaces.</p>
+          <p></p>
+          <p>For example, R1 has no knowledge of networks:</p>
+          <p>
+            <ul>
+              <li>2001:DB8:ACAD:2::/64 - LAN on R2</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>2001:DB8:ACAD:5::/64 - Serial network between R2 and R3</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>2001:DB8:ACAD:3::/64 - LAN on R3</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Figure 4 displays a successful ping from R1 to R2. Figure 5 displays an unsuccessful ping to the R3 LAN. This is because R1 does not have an entry in its routing table for that network.</p>
+          <p></p>
+          <p>The next hop can be identified by an IPv6 address, exit interface, or both. How the destination is specified creates one of three route types: </p>
+          <p>
+            <ul>
+              <li>
+                <b>Next-hop static IPv6 route </b>- Only the next-hop IPv6 address is specified</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Directly connected static IPv6 route </b>- Only the router exit interface is specified</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Fully specified static IPv6 route </b>- The next-hop IPv6 address and exit interface are specified</li>
+            </ul>
+          </p>
+        

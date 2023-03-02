@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="media_2.2.4.3.png" />
+        <element type="TEXT" id="ID_static_1" text="172.16.1.0/24" x="210" y="120" align="center" width="72" />
+        <element type="TEXT" id="ID_static_2" text="172.16.2.0/24" x="182" y="215" align="center" width="72" />
+        <element type="TEXT" id="ID_static_3" text="192.168.1.0/24" x="415" y="215" align="center" width="79" />
+        <element type="TEXT" id="ID_static_4" text="172.16.3.0/24" x="140" y="308" align="center" width="72" />
+        <element type="TEXT" id="ID_static_5" text="192.168.2.0/24" x="454" y="308" align="center" width="79" />
+        <element type="TEXT" id="ID_static_6" text="G0/0" x="313" y="148" align="center" width="26" />
+        <element type="TEXT" id="ID_static_7" text="S0/0/1 DCE" x="375" y="190" align="center" width="34" />
+        <element type="TEXT" id="ID_static_8" text="S0/0/0" x="282" y="198" align="center" width="36" />
+        <element type="TEXT" id="ID_static_9" text="S0/0/1" x="348" y="261" align="center" width="34" />
+        <element type="TEXT" id="ID_static_10" text="G0/0" x="224" y="275" align="center" width="26" />
+        <element type="TEXT" id="ID_static_11" text="G0/0" x="427" y="274" align="center" width="26" />
+        <element type="TEXT" id="ID_static_12" text="S0/0/0 DCE" x="305" y="260" align="right" width="36" />
+        <element type="TEXT" id="ID_static_13" text=".1" x="285" y="256" align="center" width="8" />
+        <element type="TEXT" id="ID_static_14" text=".1" x="239" y="291" align="center" width="8" />
+        <element type="TEXT" id="ID_static_15" text=".2" x="327" y="205" align="center" width="9" />
+        <element type="TEXT" id="ID_static_16" text=".2" x="347" y="205" align="center" width="9" />
+        <element type="TEXT" id="ID_static_17" text=".1" x="343" y="148" align="center" width="8" />
+        <element type="TEXT" id="ID_static_18" text=".1" x="393" y="256" align="center" width="8" />
+        <element type="TEXT" id="ID_static_19" text=".1" x="429" y="291" align="center" width="8" />
+        <slide>
+            <element type="TEXT" subType="TITLE" compId="ID_s1_title" />
+            <element type="ROUTER" textId="ID_s1_txt01" x="40" y="338.3" width="600" height="135" />
+        </slide>
+        <slide>
+            <element type="ROUTER" textId="ID_s2_txt01" x="40" y="338.3" width="600" height="135" />
+            <element type="TEXT" subType="TITLE" compId="ID_s2_title" />
+        </slide>
+    </slide>
+    <text id="staticTxt2">
+        <![CDATA[G0/0.<br/>1]]>
+    </text>
+    <text id="staticTxt3">
+        <![CDATA[.1<br/>G0/1]]>
+    </text>
+    <text id="staticTxt5">
+        <![CDATA[.225<br/>S0/0/0]]>
+    </text>
+    <text id="ID_s1_txt01">
+        <![CDATA[
+	<table width="384" border="0" cellspacing="0" cellpadding="0"> <tr> <td colspan="2">R1#<strong>show ipv6 route static</strong></td> </tr> <tr> <td colspan="2">IPv6 Routing Table - default - 6 entries</td> </tr> <tr> <td>Codes:</td> <td>C - Connected, L - Local, <span class="orange" >S - Static,</span></td> </tr> <tr> <td width="49">&nbsp;</td> <td width="240">U - Per-user Static route</td> </tr> <tr> <td>&nbsp;</td> <td>B - BGP, R - RIP, I1 - ISIS L1, I2 - ISIS L2</td> </tr> <tr> <td>&nbsp;</td> <td>IA - ISIS interarea, IS - ISIS summary,</td> </tr> <tr> <td>&nbsp;</td> <td>D - EIGRP, EX - EIGRP external</td> </tr> <tr> <td>&nbsp;</td> <td>ND - ND Default, NDp - ND Prefix,</td> </tr> <tr> <td>&nbsp;</td> <td>DCE - Destination, NDr - Redirect</td> </tr> <tr> <td>&nbsp;</td> <td>O - OSPF Intra, OI - OSPF Inter, OE1 - OSPF ext 1,</td> </tr> <tr> <td>&nbsp;</td> <td>OE2 - OSPF ext 2 </td> </tr> <tr> <td>&nbsp;</td> <td>ON1 - OSPF NSSA ext 1, ON2 - OSPF NSSA ext 2</td> </tr> <tr> <td  class="orange" bgcolor="#FACCA8">S ::/0 [1/0]</td> </tr> <tr> <td bgcolor="#FACCA8" ><span class="orange" >via 2001:DB8:ACAD:4::2</span></td> </tr> <tr> <td>R1# </td> <td>&nbsp;</td> </tr></table>
+]]>
+    </text>
+    <text id="ID_s2_txt01">
+        <![CDATA[
+<table width="389" border="0" cellspacing="0" cellpadding="0"> <tr> <td colspan="2">R1#<strong>ping 2001:0DB8:ACAD:3::1</strong></td> </tr> <tr> <td colspan="2">Type escape sequence to abort.</td> </tr> <tr> <td colspan="2">Sending 5, 100-byte ICMP Echos to 2001:DB8:ACAD:3::1,</td> </tr> <tr> <td colspan="2">timeout is 2 seconds:</td> </tr> <tr> <td colspan="2">!!!!!</td> </tr> <tr> <td colspan="2">Success rate is 100 percent(5/5),round-trip min/avg/max = 28/28/28 ms</td> </tr> <tr> <td width="11">R1# </td> <td width="213">&nbsp;</td> </tr></table>
+]]>
+    </text>
+    <text id="ID_SC">
+        <![CDATA[
+	SYNTAX CHECKER PLACEHOLDER
+]]>
+    </text>
+</data>

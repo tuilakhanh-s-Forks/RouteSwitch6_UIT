@@ -1,0 +1,77 @@
+
+          <p>Cisco devices produce syslog messages as a result of network events. Every syslog message contains a severity level and a facility. </p>
+          <p></p>
+          <p>The smaller numerical levels are the more critical syslog alarms. The severity level of the messages can be set to control where each type of message is displayed (i.e. on the console or the other destinations).  The complete list of syslog levels is shown in Figure 1.</p>
+          <p>Each syslog level has its own meaning:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Warning Level 4 - Emergency Level 0</b>: These messages are error messages about software or hardware malfunctions; these types of messages mean that the functionality of the device is affected. The severity of the issue determines the actual syslog level applied. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Notification Level 5</b>: The notifications level is for normal, but significant events. For example, interface up or down transitions, and system restart messages are displayed at the notifications level. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Informational Level 6</b>: A normal information message that does not affect device functionality. For example, when a Cisco device is booting, you might see the following informational message: <span class="cmd">%LICENSE-6-EULA_ACCEPT_ALL: The Right to Use End User License Agreement is accepted</span>.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Debugging Level 7</b>: This level indicates that the messages are output generated from issuing various<b> debug </b>commands.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>In addition to specifying the severity, syslog messages also contain information on the facility. Syslog facilities are service identifiers that identify and categorize system state data for error and event message reporting. The logging facility options that are available are specific to the networking device. For example, Cisco 2960 Series switches running Cisco IOS Release 15.0(2) and Cisco 1941 routers running Cisco IOS Release 15.2(4) support 24 facility options that are categorized into 12 facility types. </p>
+          <p></p>
+          <p>Some common syslog message facilities reported on Cisco IOS routers include:</p>
+          <p>
+            <ul>
+              <li>IP</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>OSPF protocol</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>SYS operating system</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>IP security (IPsec)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Interface IP (IF)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>By default, the format of syslog messages on the Cisco IOS Software is as follows:</p>
+          <p></p>
+          <p>
+            <span class="cmd">seq no: timestamp: %facility-severity-MNEMONIC: description</span>
+          </p>
+          <p></p>
+          <p>The fields contained in the Cisco IOS Software syslog message are explained in Figure 2. </p>
+          <p></p>
+          <p>For example, sample output on a Cisco switch for an EtherChannel link changing state to up is:</p>
+          <p></p>
+          <p>
+            <span class="cmd">00:00:46: %LINK-3-UPDOWN: Interface Port-channel1, changed state to up</span>
+          </p>
+          <p></p>
+          <p>Here the facility is LINK and the severity level is 3, with a MNEMONIC of UPDOWN. </p>
+          <p></p>
+          <p>The most common messages are link up and down messages, and messages that a device produces when it exits from configuration mode. If ACL logging is configured, the device generates syslog messages when packets match a parameter condition. </p>
+        

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.5.2 Configure an IPv4 Floating Static Route</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.5.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configure an IPv4 Floating Static Route</h1>
+        <div>
+          <p>IPv4 floating static routes are configured using the<b> ip route </b>global configuration command and specifying an administrative distance. If no administrative distance is configured, the default value (1) is used.</p>
+          <p></p>
+          <p>Refer to the topology in Figure 1. In this scenario, the preferred default route from R1 is to R2. The connection to R3 should be used for backup only.</p>
+          <p></p>
+          <p>R1 is configured with a default static route pointing to R2. Because no administrative distance is configured, the default value (1) is used for this static route. R1 is also configured with a floating static default pointing to R3 with an administrative distance of 5. This value is greater than the default value of 1 and therefore; this route floats and is not present in the routing table, unless the preferred route fails.</p>
+          <p></p>
+          <p>Figure 2 verifies that the default route to R2 is installed in the routing table. Note that the backup route to R3 is not present in the routing table.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to configure R3 similarly to R1.</p>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the standard lab diagram with an additional link between router one and router three.  The figure shows the syntax for creating a default static route on router one pointing to router two and another pointing to router three with a larger administrative distance of 5.  This makes the first route the preferred route and the second is a floating static route. Figure two shows the output of the "show i. p. route static" command on router one.  Only the first route is shown in the output since it is the preferred route. Figure three is an interactive activity that allows the learner to practice configuring floating static routes.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+.spanorange{
+	color:  #DB7222 !important;
+}
+
+.makebold{
+	font-weight: bold !important;
+}

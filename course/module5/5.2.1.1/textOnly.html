@@ -1,0 +1,13 @@
+
+          <p>Secure Shell (SSH) is a protocol that provides a secure (encrypted) management connection to a remote device. SSH should replace Telnet for management connections. Telnet is an older protocol that uses unsecure plaintext transmission of both the login authentication (username and password) and the data transmitted between the communicating devices. SSH provides security for remote connections by providing strong encryption when a device is authenticated (username and password) and also for the transmitted data between the communicating devices. SSH is assigned to TCP port 22. Telnet is assigned to TCP port 23.  </p>
+          <p></p>
+          <p>In Figure 1, an attacker can monitor packets using Wireshark. A Telnet stream can be targeted to capture the username and password.</p>
+          <p></p>
+          <p>In Figure 2, the attacker can capture the username and password of the administrator from the plaintext Telnet session.</p>
+          <p></p>
+          <p>Figure 3 shows the Wireshark view of an SSH session. The attacker can track the session using the IP address of the administrator device.</p>
+          <p></p>
+          <p>However, in Figure 4, the username and password are encrypted.</p>
+          <p></p>
+          <p>To enable SSH on a Catalyst 2960 switch, the switch must be using a version of the IOS software including cryptographic (encrypted) features and capabilities. In Figure 5, use the<b> show version </b>command on the switch to see which IOS the switch is currently running.An IOS filename that includes the combination “k9” supports cryptographic (encrypted) features and capabilities.</p>
+        

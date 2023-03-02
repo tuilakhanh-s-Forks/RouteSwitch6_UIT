@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.1.2.7 Enable IP on a Switch</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.1.2.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Enable IP on a Switch</h1>
+        <div>
+          <p>Network infrastructure devices require IP addresses to enable remote management. Using the device IP address, the network administrator can remotely connect to the device using Telnet, SSH, HTTP, or HTTPS.</p>
+          <p></p>
+          <p>A switch does not have a dedicated interface to which an IP address can be assigned. Instead, the IP address information is configured on a virtual interface called a switched virtual interface (SVI). </p>
+          <p></p>
+          <p>For example, in Figure 1, the SVI on the Layer 2 switch S1 is assigned the IP address 192.168.10.2/24 and a default gateway of 192.168.10.1.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 2 to configure the Layer 2 switch S2.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a LAN consisting of two routers, and each router has a switch on each of its two gigabit Ethernet ports.  Each of the four switches has a computer connected to it.  The figure shows the commands used to configure an I.P. address on the S.V.I. and the process in the figure configures one switch with an I.P. address and a default gateway.  The first command is run from configuration mode and is interface v lan 1, which causes the switch to move to interface configuration mode.   The next command is i.p. address 192 dot 168 dot 10 dot 2 255 dot 255 dot 255 dot zero.  The interface must now be turned on with the no shutdown command.  Setting the default gateway is next, and this is configured from global configuration mode. The command for the figure is i.p. default dash gateway 192 dot 168 dot 10 dot 1.Figure two is an interactive activity that allows the learner to configure an I.P. address and a default gateway on a switch.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

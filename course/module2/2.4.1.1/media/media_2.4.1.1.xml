@@ -1,0 +1,11 @@
+<textcomponents>
+
+<component id="ID_tBox_header01">
+<text><![CDATA[Static Routes]]></text>
+</component>
+
+<component id="ID_tBox_body01">
+<text><![CDATA[<textformat blockindent='-10'><ul class="bubbleBullets"><li>Are not advertised over the network, resulting in better security.</li><li>Use less bandwidth than dynamic routing protocols.</li><li>Use known paths to send data.</li></ul></textformat>]]></text>
+</component>
+
+</textcomponents>

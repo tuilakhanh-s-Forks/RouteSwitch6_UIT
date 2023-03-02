@@ -1,0 +1,53 @@
+﻿<textcomponents>
+
+	<component id="ID_s1_title">
+		<text><![CDATA[Duplex and Speed Settings]]></text>
+	</component>
+	
+	<component id="ID_s1_txt01">
+		<text><![CDATA[Duplex]]></text>
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[Duplex]]></text>
+	</component>
+	<component id="ID_s1_txt03">
+		<text><![CDATA[Speed]]></text>
+	</component>
+	<component id="ID_s1_txt04">
+		<text><![CDATA[Speed]]></text>
+	</component>
+	<component id="ID_s1_txt05">
+		<text><![CDATA[Full]]></text>
+	</component>
+	<component id="ID_s1_txt06">
+		<text><![CDATA[Half]]></text>
+	</component>
+	<component id="ID_s1_txt07">
+		<text><![CDATA[Full]]></text>
+	</component>
+	<component id="ID_s1_txt08">
+		<text><![CDATA[Half]]></text>
+	</component>
+	<component id="ID_s1_txt09">
+		<text><![CDATA[100 Mb/s]]></text>
+	</component>
+	<component id="ID_s1_txt10">
+		<text><![CDATA[10 Mb/s]]></text>
+	</component>
+	<component id="ID_s1_txt11">
+		<text><![CDATA[1000 Mb/s]]></text>
+	</component>
+	<component id="ID_s1_txt12">
+		<text><![CDATA[100 Mb/s]]></text>
+	</component>
+	<component id="ID_s1_txt13">
+		<text><![CDATA[10 Mb/s]]></text>
+	</component>
+	<component id="ID_s1_txt14">
+		<text><![CDATA[Port 1]]></text>
+	</component>
+	<component id="ID_s1_txt15">
+		<text><![CDATA[Autonegotiation]]></text>
+	</component>
+
+</textcomponents>

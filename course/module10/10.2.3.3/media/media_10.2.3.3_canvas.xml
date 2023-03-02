@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+            <element type="ROUTER" textId="ID_router_txt1" x="40" y="55" width="600" height="400" />
+            <text id="ID_router_txt1">
+                <![CDATA[<pre><span class="align">R1(config)# logging 192.168.1.3 
+R1(config)# logging trap 4 
+R1(config)# logging source-interface g0/0 
+R1(config)# interface loopback 0</span> 
+R1(config-if)# 
+*Jun 12 22:06:02.902: %LINK<span class="align1">-3-</span>UPDOWN: Interface Loopback0, changed state to up 
+*Jun 12 22:06:03.902: %LINEPROTO<span class="align">-5-</span>UPDOWN: Line protocol on Interface Loopback0, 
+changed state to up 
+*Jun 12 22:06:03.902: %SYS<span class="align">-6-</span>LOGGINGHOST_STARTSTOP: Logging to host 192.168.1.3 
+port 514 started - CLI initiated 
+<span class="align">R1(config-if)# shutdown</span> 
+R1(config-if)# 
+*Jun 12 22:06:49.642: %LINK<span class="align">-5-</span>CHANGED: Interface Loopback0, changed state to 
+administratively down 
+*Jun 12 22:06:50.642: %LINEPROTO<span class="align">-5-</span>UPDOWN: Line protocol on Interface Loopback0, 
+changed state to down 
+<span class="align">R1(config-if)# no shutdown</span> 
+R1(config-if)# 
+*Jun 12 22:09:18.210: %LINK<span class="align1">-3-</span>UPDOWN: Interface Loopback0, changed state to up 
+*Jun 12 22:09:19.210: %LINEPROTO<span class="align">-5-</span>UPDOWN: Line protocol on Interface Loopback0, 
+changed state to up 
+R1(config-if)#</pre>]]></text>
+            <element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#ffffff" />
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_photo.jpg" />
+            <element type="IMAGE" x="90" y="115" width="500" height="288" subType="STD" src="10_2_3_3A.jpg" />
+            <element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#ffffff" />
+        </slide>
+    </slide>
+</data>

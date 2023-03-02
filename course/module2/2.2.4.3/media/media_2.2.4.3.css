@@ -1,0 +1,13 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+.orange{
+	color: #F68026 !important;
+	background-color: #000000 !important;
+}
+
+#ID_static_1,#ID_static_2,#ID_static_3,#ID_static_4,#ID_static_5{
+	font-weight: bold !important;
+}

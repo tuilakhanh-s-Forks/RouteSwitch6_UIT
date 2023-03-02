@@ -1,0 +1,12 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+#ID_s2_txt07, #ID_s2_txt08{
+	letter-spacing:-0.5px;
+}
+#ID_s1_txt10{
+line-height: 13px;
+}

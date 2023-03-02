@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.1.2 Legacy Inter-VLAN Routing</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Legacy Inter-VLAN Routing</h1>
+        <div>
+          <p>Historically, the first solution for inter-VLAN routing relied on routers with multiple physical interfaces. Each interface had to be connected to a separate network and configured with a distinct subnet. </p>
+          <p></p>
+          <p>In this legacy approach, inter-VLAN routing is performed by connecting different physical router interfaces to different physical switch ports. The switch ports connected to the router are placed in access mode and each physical interface is assigned to a different VLAN. Each router interface can then accept traffic from the VLAN associated with the switch interface that it is connected to, and traffic can be routed to the other VLANs connected to the other interfaces.</p>
+          <p></p>
+          <p>Click Play in the figure to view an animation of legacy inter-VLAN routing.</p>
+          <p></p>
+          <p>As seen in the animation:</p>
+          <p></p>
+          <p>1. PC1 on VLAN 10 is communicating with PC3 on VLAN 30 through router R1.</p>
+          <p></p>
+          <p>2. PC1 and PC3 are on different VLANs and have IPv4 addresses on different subnets. </p>
+          <p></p>
+          <p>3. Router R1 has a separate interface configured for each of the VLANs.</p>
+          <p></p>
+          <p>4. PC1 sends unicast traffic destined for PC3 to switch S2 on VLAN 10, where it is then forwarded out the trunk interface to switch S1. </p>
+          <p></p>
+          <p>5. Switch S1 then forwards the unicast traffic through its interface F0/3 to interface G0/0 on router R1. </p>
+          <p></p>
+          <p>6. The router routes the unicast traffic through its interface G0/1, which is connected to VLAN 30. </p>
+          <p></p>
+          <p>7. The router forwards the unicast traffic to switch S1 on VLAN 30. </p>
+          <p></p>
+          <p>8. Switch S1 then forwards the unicast traffic to switch S2 through the active trunk link, after which switch S2 can then forward the unicast traffic to PC3 on VLAN 30.</p>
+          <p></p>
+          <p>In this example, the router was configured with two separate physical interfaces to interact with the different VLANs and perform the routing.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: This method of inter-VLAN routing is not efficient and is generally no longer implemented in switched networks. It is shown in this course for explanation purposes only.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure is an animation with a topology demonstrating three hosts connected to a three-switch cluster. Each switch is connected to each other through trunk links and one switch is connected to a router using two physical cables. The animation demonstrates how a unicast packet travels through the topology and requires the router to be able to forward packets to different subnets. Highlighted is the need for two cables connected to two physical interfaces on the router to make inter-subnet connectivity possible.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

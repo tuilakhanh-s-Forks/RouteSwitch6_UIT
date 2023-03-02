@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.1.4 Enable and Verify RIPv2</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Enable and Verify RIPv2</h1>
+        <div>
+          <p>By default, when a RIP process is configured on a Cisco router, it is running RIPv1, as shown in Figure 1. However, even though the router only sends RIPv1 messages, it can interpret both RIPv1 and RIPv2 messages. A RIPv1 router ignores the RIPv2 fields in the route entry. </p>
+          <p></p>
+          <p>Use the<b> version 2 </b>router configuration mode command to enable RIPv2, as shown in Figure 2. Notice how the<b> show ip protocols </b>command verifies that R2 is now configured to send and receive version 2 messages only. The RIP process now includes the subnet mask in all updates, making RIPv2 a classless routing protocol.  </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Configuring<b> version 1 </b>enables RIPv1 only, while configuring<b> no version </b>returns the router to the default setting of sending version 1 updates but listening for version 1 and version 2 updates. </p>
+          <p></p>
+          <p>Figure 3 verifies that there are no longer any RIP routes in the routing table. This is because R1 is now only listening for RIPv2 updates. R2 and R3 are still sending RIPv1 updates. Therefore, the<b> version 2 </b>command must be configured on all routers in the routing domain. </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to enable RIPv2 on R2 and R3.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output from the command show i.p. protocols and is highlighting the section that states the router is sending version one, but can receive version one and version two updates. Figure two shows the commands to enable RIP version 2 on a router.  The figure begins in global configuration mode and enables RIP with the command router rip.  The next command is version 2, which enables RIP version 2 and disables RIP version 1.  The result from the command show i.p. protocols is shown, and now the router is sending and receiving only version 2 of RIP. Figure three shows the output from the show i.p. route pipe begin Gateway command. This shows the routing table, which has no RIP routes because in the previous figure the version 2 command enabled only version 2 on the router and RIP version 1 updates are now ignored. Figure four is an interactive media element that allows the learner to configure RIP version 2 on a router.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+#ID_router_txt1 pre {padding-left:2px !important;}

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <slide>
+    	<element type="IMAGE" x="0" y="0" width="1000" height="490" src="../../../common/images/page_backgrounds/bg_activity.jpg" />
+    	<element type="IMAGE" src="media_1.1.2.8_topo.png" x="0" y="0" width="1000" height="490"/>
+    	<element type="TEXT" subType="TITLE" compId="ID_title" color="#FFFFFF"/>
+    	<element type="TEXTBOX" titleId="ID_instr_title" bodyId="ID_instr_body" x="26" y="55" width="250" height="209" />
+        <element type="TEXT" id="ID_static_5" text="172.16.10.0/24" x="483.75" y="81.65" align="center" width="78.95" />
+        <element type="TEXT" id="ID_static_6" text="10.10.10.0/24" x="594.5" y="81.65" align="center" width="72.35" />
+        <element type="TEXT" id="ID_static_7" text="172.16.20.0/24" x="708.15" y="81.65" align="center" width="78.95" />
+        <element type="TEXT" id="ID_static_1" text="Fa0/0" x="500.8" y="169.6" align="center" width="29.1" />
+        <element type="TEXT" id="ID_static_2" text="S0/0/0" x="612" y="165.1" align="center" width="35.85" />
+        <element type="TEXT" id="ID_static_3" text="S0/0/0" x="644.75" y="193.8" align="center" width="35.85" />
+        <element type="TEXT" id="ID_static_4" text="Fa0/0" x="749.15" y="169.6" align="center" width="29.1" />
+        <element type="TEXT" compId="ID_txt01" x="386" y="254" width="90.65" expand="right" align="left" size="12" color="#FFFFFF"/>
+        <element type="TEXT" compId="ID_txt02" x="478" y="254" width="94.8" expand="right" align="left" size="12" color="#FFFFFF"/>
+        <element type="TEXT" compId="ID_txt03" x="579" y="254" width="113.9" expand="right" align="left" size="12" color="#FFFFFF"/>
+        <element type="TEXT" compId="ID_txt04" x="703" y="254" width="108.95" expand="right" align="left" size="12" color="#FFFFFF"/>
+        <element type="TEXT" compId="ID_txt05" x="815" y="254" width="108.5" expand="right" align="left" size="12" color="#FFFFFF"/>
+        <element type="TEXT" id="ID_static_101" text="R1" x="385" y="288" align="left" width="35.05"  />
+        <element type="TEXT" id="ID_static_8" text="Fa0/0" x="477" y="284.75" align="center" width="29.1" />
+        <element type="TEXT" id="ID_static_25" text="172.16.10.1" x="575" y="284.75" align="center" width="59.9" />
+        <element type="TEXT" id="ID_static_14" text="255.255.255.0" x="705" y="284.75" align="center" width="75.7" />
+        <element type="TEXT" id="ID_static_23" text="N/A" x="817" y="284.75" align="center" width="20.2" />
+        <element type="TEXT" id="ID_static_9" text="S0/0/0" x="477" y="303.25" align="center" width="35.85" />
+        <element type="TEXT" id="ID_static_26" text="10.10.10.1" x="575" y="303.25" align="center" width="53.3" />
+        <element type="TEXT" id="ID_static_15" text="255.255.255.0" x="705" y="303.25" align="center" width="75.7" />
+        <element type="TEXT" id="ID_static_22" text="N/A" x="817" y="303.25" align="center" width="20.2" />
+        <element type="TEXT" id="ID_static_102" text="R2" x="385" y="330" align="left" width="39.15" />
+        <element type="TEXT" id="ID_static_10" text="Fa0/0" x="477" y="321.75" align="center" width="29.1" />
+        <element type="TEXT" id="ID_static_16" text="255.255.255.0" x="705" y="321.25" align="center" width="75.7" />
+        <element type="TEXT" id="ID_static_21" text="N/A" x="817" y="322.4" align="center" width="20.2" />
+        <element type="TEXT" id="ID_static_11" text="S0/0/0" x="477" y="351.8" align="center" width="35.85" />
+        <element type="TEXT" id="ID_static_17" text="255.255.255.0" x="705" y="351.3" align="center" width="75.7" />
+        <element type="TEXT" id="ID_static_20" text="N/A" x="817" y="352.4" align="center" width="20.2" />
+        <element type="TEXT" id="ID_static_103" text="PC1" x="385" y="383" align="left" width="35.05" />
+        <element type="TEXT" id="ID_static_12" text="N/A" x="477" y="381.75" align="center" width="20.2" />
+        <element type="TEXT" id="ID_static_27" text="172.16.10.10" x="575" y="381.75" align="center" width="68.3" />
+        <element type="TEXT" id="ID_static_18" text="255.255.255.0" x="705" y="381.75" align="center" width="75.7" />
+        <element type="TEXT" id="ID_static_24" text="172.16.10.1" x="813" y="381.75" align="center" width="59.9" />
+        <element type="TEXT" id="ID_static_104" text="PC2" x="385" y="402" align="left" width="39.15"/>
+        <element type="TEXT" id="ID_static_13" text="N/A" x="477" y="399.85" align="center" width="20.2" />
+        <element type="TEXT" id="ID_static_19" text="255.255.255.0" x="705" y="399.85" align="center" width="75.7" />
+
+        <element type="ACTIVITY" subType="DRAGDROP" method="NORMAL" replicate="true" compWidth="79" compHeight="24" dragIcon="" dropIcon="" tickPosition="right">
+		
+		  <subelement type="DRAG" x="30" y="322" compId="ID_drag01" />
+		  <subelement type="DRAG" x="160" y="322" compId="ID_drag02" />
+		  <subelement type="DRAG" x="30" y="385" compId="ID_drag09" />
+		  <subelement type="DRAG" x="30" y="355" compId="ID_drag06" />
+		  <subelement type="DRAG" x="160" y="355" compId="ID_drag04" />
+		  <subelement type="DRAG" x="160" y="385" compId="ID_drag05" />
+		
+	       <subelement type="DROP" x="314" y="97"  match="3" />
+		   <subelement type="DROP" x="420" y="107"  match="0" />
+		   <subelement type="DROP" x="531" y="107"  match="4" />
+		   <subelement type="DROP" x="647" y="107"  match="2" />
+		   <subelement type="DROP" x="757" y="107"  match="5" />
+		   <subelement type="DROP" x="862" y="97"  match="1" />
+		   
+		  <subelement type="DROP" x="575" y="322"  match="5" />
+		  <subelement type="DROP" x="575" y="353"   match="2"/>
+		  <subelement type="DROP" x="575" y="401"   match="1"/>
+		  <subelement type="DROP" x="813" y="401"  match="5"/>
+		   
+		  <subelement type="CHECK" x="28" y="453.25" width="113" height="21" compId="ID_CHECK"/>
+		  <subelement type="RESET" x="159.95" y="453.25" width="113" height="21" compId="ID_RESET"/>
+		  <subelement type="FEEDBACK" x="371.20" y="151.40" width="250" height="174.90" correctTitleId="ID_s1_CORRECT_TITLE" correctBodyId="ID_s1_CORRECT_BODY" wrongTitleId="ID_s1_INCORRECT_TITLE" wrongBodyId="ID_s1_INCORRECT_BODY"/>
+		  </element> 
+    </slide>
+</data>
+

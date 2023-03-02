@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>		
+	<slide type="MBAR">	
+		<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<slide>
+<element type="ROUTER" textId="ID_router_txt1" x="40" y="60" width="600" height="400" />
+<text id="ID_router_txt1"><![CDATA[<pre>Router<b># show cdp</b></br>Global CDP information: </br>      Sending CDP packets every 60 seconds</br>      Sending a holdtime value of 180 seconds</br>      Sending CDPv2 advertisements is enabled</pre>]]></text>
+<element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#fff"/>
+</slide>
+
+
+
+<slide>
+<element type="ROUTER" textId="ID_router_txt2" x="40" y="60" width="600" height="400" />
+<text id="ID_router_txt2"><![CDATA[<pre>Switch(config)<b># interface gigabitethernet 0/1</b></br>Switch(config-if)<b># cdp enable</b></pre>]]></text>
+<element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#fff"/>
+</slide>
+
+
+
+<slide>
+<element type="ROUTER" textId="ID_router_txt3" x="40" y="60" width="600" height="400" />
+<text id="ID_router_txt3"><![CDATA[<pre>Router(config)<b># no cdp run</b></br>Router(config)<b># exit</b></br>Router<b># show cdp</b></br><span class="orangeColor">% CDP is not enabled</span></br>Router<b># conf t</b></br>Router(config)<b># cdp run</b></pre>]]></text>
+<element type="TEXT" subType="TITLE" compId="ID_s3_title" color="#fff"/>
+</slide>
+
+
+
+<slide>
+<element type="ROUTER" textId="ID_router_txt4" x="40" y="60" width="600" height="400" />
+<text id="ID_router_txt4"><![CDATA[<pre>Router# <b>show cdp neighbors</b>
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone,
+                  D - Remote, C - CVTA, M - Two-port Mac Relay
+ 
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+ 
+<b><span class="orangeColor">Total cdp entries displayed : 0</span></b></pre>]]></text>
+<element type="TEXT" subType="TITLE" compId="ID_s4_title" color="#fff"/>
+</slide>
+
+
+
+<slide>
+<element type="ROUTER" textId="ID_router_txt5" x="40" y="60" width="600" height="400" />
+<text id="ID_router_txt5"><![CDATA[<pre>Router# <b>show cdp interface</b>
+Embedded-Service-Engine0/0 is administratively down, line protocol is down
+  Encapsulation ARPA
+  Sending CDP packets every 60 seconds
+  Holdtime is 180 seconds
+GigabitEthernet0/0 is administratively down, line protocol is down
+  Encapsulation ARPA
+  Sending CDP packets every 60 seconds
+  Holdtime is 180 seconds
+<b><span class="orangeColor">GigabitEthernet0/1 is up, line protocol is up</span></b>
+  Encapsulation ARPA
+  Sending CDP packets every 60 seconds
+  Holdtime is 180 seconds
+Serial0/0/0 is administratively down, line protocol is down
+  Encapsulation HDLC
+  Sending CDP packets every 60 seconds
+  Holdtime is 180 seconds
+Serial0/0/1 is administratively down, line protocol is down
+  Encapsulation HDLC
+  Sending CDP packets every 60 seconds
+  Holdtime is 180 seconds
+</pre>]]></text>
+<element type="TEXT" subType="TITLE" compId="ID_s5_title" color="#fff"/>
+</slide>
+
+
+
+<slide>
+<element type="IMAGE" src="../../../common/images/page_backgrounds/bg_tables.jpg" x="0" y="0" width="680" height="490" />
+		<element type="TEXT" subType="TITLE" compId="ID_s6_title" color="#fff"/>
+		<element type="ACTIVITY" subType="SYNTAX" compId="ID_s6_SC" x="25" y="45" width="630" height="400" resetId="ID_s6_reset" showMeId="ID_s6_showme" showAllId="ID_s6_showall"/>
+</slide>
+
+ </slide>
+
+
+</data>

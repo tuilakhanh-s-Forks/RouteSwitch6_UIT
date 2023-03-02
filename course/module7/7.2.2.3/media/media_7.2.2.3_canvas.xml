@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide>
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+        <element type="TEXT" subType="TITLE" compId="ID_title" color="#FFFFFF" />
+        <element type="ROUTER" x="50" y="79" width="580" height="280" textId="router_text1" />
+        <element type="TEXT" compId="ID_text01" x="49" y="368" width="576" expand="down" align="left" />
+    </slide>
+    <text id="router_text1">
+        <![CDATA[<code>R1# <b>show access-lists</b>
+Standard IP access list NO_ACCESS
+    10 deny   192.168.11.10
+    20 permit 192.168.11.0, wildcard bits 0.0.0.255
+R1# <b>conf t</b>
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)# <b>ip access-list standard NO_ACCESS</b>
+R1(config-std-nacl)#<b> 15 deny host 192.168.11.11</b>
+R1(config-std-nacl)#<b> end</b>
+R1# <b>show access-lists</b>
+Standard IP access list NO_ACCESS
+    10 deny   192.168.11.10
+    <span class="tb">15 deny   192.168.11.11</span>
+    20 permit 192.168.11.0, wildcard bits 0.0.0.255
+R1#</code>	]]></text>
+</data>

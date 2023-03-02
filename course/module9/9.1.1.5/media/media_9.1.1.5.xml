@@ -1,0 +1,130 @@
+<textcomponents>
+
+	<component id="ID_title">
+		<text><![CDATA[<b>NAT In Action</b>]]></text>
+	</component>
+ 
+  	<component id="ID_txt01">
+		<text><![CDATA[<b>SA</b><br/>192.168.10.10]]></text>
+    </component>
+	 
+	<component id="ID_txt02">
+		<text><![CDATA[<b>SA</b><br/>209.165.200.226]]></text>
+    </component>
+	 
+	<component id="ID_txt03">
+		<text><![CDATA[<b>DA</b><br/>209.165.200.226]]></text>
+	</component>
+	 
+	<component id="ID_txt04">
+		<text><![CDATA[<b>DA</b><br/>192.168.10.10]]></text>
+	</component>
+	
+<!--table data-->
+
+ <component id="ID_table">
+  <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+		<tr class="mtable_title">
+			<td colspan="4" bgcolor='#FFFFFF'><font size="13"><b>NAT Table</b></font></td>
+		</tr>
+		<tr class="mtable_top">
+			<td colspan='4' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+		<tr colspan='6'>
+			<td bgcolor='#666263'  valign="top" ><font color='#ffffff' size="11"><b>Inside Local</b></font></td>
+			<td bgcolor='#666263'  valign="top" ><font color='#ffffff' size="11"><b>Inside Global</b></font></td>
+			<td bgcolor='#666263'  valign="top" ><font color='#ffffff' size="11"><b>Outside Local</b></font></td>
+			<td bgcolor='#666263'  valign="top"><font color='#ffffff' size="11"><b>Outside Global</b></font></td>
+		</tr>
+
+		<tr>
+			<td bgcolor='#E9E7E8' valign="middle"><font color='#393536' size="11">192.168.10.10</font></td>
+			<td bgcolor='#E9E7E8' valign="middle"><font color='#393536' size="11">209.165.200.226</font></td>
+			<td bgcolor='#E9E7E8' valign="middle"><font color='#393536' size="11">209.165.201.1</font></td>
+			<td bgcolor='#E9E7E8' valign="middle"><font color='#393536' size="11">209.165.201.1</font></td>
+		</tr>
+
+	</table>]]></text>
+  </component>
+
+  <component id="ID_table_html">
+  <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+		
+			<caption colspan="4" class="mtable_title" bgcolor='#FFFFFF'><font size="14"><b>NAT Table</b></font></caption>
+		
+		<tr class="mtable_top">
+			<td colspan='4' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+		<tr colspan='6'>
+			<th scope="col" bgcolor='#666263'  valign="top" ><font color='#ffffff' size="11"><b>Inside Local</b></font></th>
+			<th scope="col" bgcolor='#666263'  valign="top" ><font color='#ffffff' size="11"><b>Inside Global</b></font></th>
+			<th scope="col" bgcolor='#666263'  valign="top" ><font color='#ffffff' size="11"><b>Outside Local</b></font></th>
+			<th scope="col" bgcolor='#666263'  valign="top"><font color='#ffffff' size="11"><b>Outside Global</b></font></th>
+		</tr>
+
+		<tr>
+			<td bgcolor='#E9E7E8' valign="middle"><font color='#393536' size="11">192.168.10.10</font></td>
+			<td bgcolor='#E9E7E8' valign="middle"><font color='#393536' size="11">209.165.200.226</font></td>
+			<td bgcolor='#E9E7E8' valign="middle"><font color='#393536' size="11">209.165.201.1</font></td>
+			<td bgcolor='#E9E7E8' valign="middle"><font color='#393536' size="11">209.165.201.1</font></td>
+		</tr>
+
+	</table>]]></text>
+  </component>
+ 
+<!--ANIMATION CONTROLLER-->
+	<component id="end">
+		<text><![CDATA[End]]></text>
+	</component>
+	
+	<component id="fforward">
+		<text><![CDATA[Fast Forward]]></text>
+	</component>
+	
+	<component id="pause">
+		<text><![CDATA[Pause]]></text>
+	</component>
+	
+	<component id="play">
+		<text><![CDATA[Play]]></text>
+	</component>
+	
+	<component id="rewind">
+		<text><![CDATA[Rewind]]></text>
+	</component>
+	
+	<component id="start">
+		<text><![CDATA[Start]]></text>
+	</component>
+
+	<component id="disc-end">
+       <text>
+           <![CDATA[End media]]>
+       </text>
+   </component>
+   <component id="disc-fforward">
+       <text>
+           <![CDATA[Fast Forward media]]>
+       </text>
+   </component>
+   <component id="disc-pause">
+       <text>
+           <![CDATA[Pause media]]>
+       </text>
+   </component>
+   <component id="disc-play">
+       <text>
+           <![CDATA[Play media]]>
+       </text>
+   </component>
+   <component id="disc-rewind">
+       <text>
+           <![CDATA[Rewind media]]>
+       </text>
+   </component>
+   <component id="disc-start">
+       <text>
+           <![CDATA[Start media]]>
+       </text>
+   </component>
+</textcomponents>

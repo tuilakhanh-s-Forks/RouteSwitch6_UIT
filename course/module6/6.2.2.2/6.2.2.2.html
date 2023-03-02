@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.2.2 Resetting the Trunk to Default State</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Resetting the Trunk to Default State</h1>
+        <div>
+          <p>Figure 1 shows the commands to remove the allowed VLANs and reset the native VLAN of the trunk. When reset to the default state, the trunk allows all VLANs and uses VLAN 1 as the native VLAN.</p>
+          <p></p>
+          <p>Figure 2 shows the commands used to reset all trunking characteristics of a trunking interface to the default settings. The<b> show interfaces f0/1 switchport</b> command reveals that the trunk has been reconfigured to a default state.</p>
+          <p></p>
+          <p>In Figure 3, the sample output shows the commands used to remove the trunk feature from the F0/1 switch port on switch S1. The<b> show interfaces f0/1 switchport </b>command reveals that the F0/1 interface is now in static access mode.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a table with the commands for resetting the native v. lan and resetting the allowed v. lans on a trunk link. Figure two shows the syntax for resetting the native v. lan and resetting the allowed v. lans on a trunk link. The output from the "show interfaces f. zero slash one switchport" command to verify the port has been reconfigured properly is also shown. Figure three shows the syntax for configuring port f. zero slash one as an access port. The "show interfaces f. zero slash one switchport" command to verify the port has been reconfigured properly is also shown.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

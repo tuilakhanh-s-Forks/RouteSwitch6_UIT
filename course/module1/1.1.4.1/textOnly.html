@@ -1,0 +1,48 @@
+
+          <p>There are several <b>show</b> commands that can be used to verify the operation and configuration of an interface. The following three commands are especially useful to quickly identify an interface status:</p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip interface brief </b>- Displays a summary for all interfaces including the IPv4 address of the interface and current operational status. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip route </b>- Displays the contents of the IPv4 routing table stored in RAM. In Cisco IOS 15, active interfaces should appear in the routing table with two related entries identified by the code ‘<b>C</b>’ (Connected) or ‘<b>L</b>’ (Local). In previous IOS versions, only a single entry with the code ‘<b>C</b>’ will appear.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show running-config interface </b>
+                <i>interface-id</i>
+                <b></b>- Displays the commands configured on the specified interface. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Figure 1 displays the output of the<b> show ip interface brief </b>command. The output reveals that the LAN interfaces and the WAN link are all activated and operational as indicated by the Status of “up” and Protocol of “up”. A different output would indicate a problem with either the configuration or the cabling.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: In Figure 1, the Embedded-Service-Engine0/0 interface is displayed because Cisco ISRs G2 have dual core CPUs on the motherboard. The Embedded-Service-Engine0/0 interface is outside the scope of this course.</p>
+          <p></p>
+          <p>Figure 2 displays the output of the <b>show ip route</b> command. Notice the three directly connected network entries and the three local host route interface entries. A local host route has an administrative distance of 0. It also has a /32 mask for IPv4, and a /128 mask for IPv6. The local host route is for routes on the router owning the IP address. It is used to allow the router to process packets destined to that IP.</p>
+          <p></p>
+          <p>Figure 3 displays the output of the <b>show running-config interface</b> command. The output displays the current commands configured on the specified interface. </p>
+          <p></p>
+          <p>The following two commands are used to gather more detailed interface information: </p>
+          <p>
+            <ul>
+              <li>
+                <b>show interfaces </b>- Displays interface information and packet flow count for all interfaces on the device. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip interface </b>- Displays the IPv4 related information for all interfaces on a router.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figures 4 and 5 to verify the interfaces on R1.</p>
+        

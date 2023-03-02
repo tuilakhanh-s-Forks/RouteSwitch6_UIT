@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide type="MBAR">
+		<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<slide>
+<element type="TEXT" compId="ID_s1_txt01" x="38" y="35" width="596" expand="right" align="left" color="#ffffff" />
+<element type="TEXT" compId="ID_s1_txt02" x="38" y="272" width="596" expand="right" align="left" color="#ffffff" />
+<element type="ROUTER" textId="ID_router_txt1" x="40" y="59" width="600" height="179" />
+<text id="ID_router_txt1"><![CDATA[<pre>R1(config)# ipv6 unicast-routing</br>R1(config)# ipv6 dhcp pool IPV6-STATEFUL</br><span class="orangeColor">R1(config-dhcpv6)# address prefix 2001:DB8:CAFE:1::/64 lifetime infinite</span></br>R1(config-dhcpv6)# dns-server 2001:db8:cafe:aaaa::5</br>R1(config-dhcpv6)# domain-name example.com</br>R1(config-dhcpv6)# exit</br>R1(config)# interface g0/1</br>R1(config-if)# ipv6 address 2001:db8:cafe:1::1/64</br>R1(config-if)# ipv6 dhcp server IPV6-STATEFUL</br><span class="orangeColor">R1(config-if)# ipv6 nd managed-config-flag</span></pre>]]></text>
+<element type="ROUTER" textId="ID_router_txt2" x="40" y="295" width="600" height="161" />
+<text id="ID_router_txt2"><![CDATA[<pre>R1(config)# ipv6 unicast-routing</br>R1(config)# ipv6 dhcp pool IPV6-STATELESS</br>R1(config-dhcpv6)# dns-server 2001:db8:cafe:aaaa::5</br>R1(config-dhcpv6)# domain-name example.com</br>R1(config-dhcpv6)# exit</br>R1(config)# interface g0/1</br>R1(config-if)# ipv6 address 2001:db8:cafe:1::1/64</br>R1(config-if)# ipv6 dhcp server IPV6-STATELESS</br><span class="orangeColor">R1(config-if)# ipv6 nd other-config-flag</span></pre>]]></text>
+</slide>
+
+
+
+<slide>
+<element type="TEXT" compId="ID_s2_txt01" x="38" y="35" width="596" expand="right" align="left" color="#ffffff" />
+<element type="TEXT" compId="ID_s2_txt02" x="38" y="186" width="596" expand="right" align="left" color="#ffffff" />
+<element type="TEXT" compId="ID_s2_txt03" x="38" y="323" width="596" expand="right" align="left" color="#ffffff" />
+<element type="ROUTER" textId="ID_router_txt3" x="40" y="59" width="600" height="114" />
+<text id="ID_router_txt3"><![CDATA[<pre>R1# show ipv6 interface g0/1</br>GigabitEthernet0/1 is up, line protocol is up</br> IPv6 is enabled, link-local address is</br>FE80::D68C:B5FF:FECE:A0C1</br></br></br><span class="orangeColor">Hosts use stateless autoconfig for addresses.</span></pre>]]></text>
+<element type="ROUTER" textId="ID_router_txt4" x="40" y="208" width="600" height="101" />
+<text id="ID_router_txt4"><![CDATA[<pre>R1# show ipv6 interface g0/1</br>GigabitEthernet0/1 is up, line protocol is up</br> IPv6 is enabled, link-local address is FE80::D68C:B5FF:FECE:A0C1</br></br></br><span class="orangeColor">Hosts use DHCP to obtain other configuration.</span></pre>]]></text>
+<element type="ROUTER" textId="ID_router_txt5" x="40" y="344" width="600" height="111" />
+<text id="ID_router_txt5"><![CDATA[<pre>R1# show ipv6 interface g0/1</br>GigabitEthernet0/1 is up, line protocol is up</br>IPv6 is enabled, link-local address is FE80::D68C:B5FF:FECE:A0C1</br></br></br><span class="orangeColor">Hosts use DHCP to obtain routable addresses.</span></pre>]]></text>
+<element type="TEXT" compId="ID_s2_txt04" x="46" y="124" width="105" expand="right" align="left" color="#ffffff" />
+<element type="TEXT" compId="ID_s2_txt05" x="47" y="257" width="105" expand="right" align="left" color="#ffffff" />
+<element type="TEXT" compId="ID_s2_txt06" x="50" y="397" width="105" expand="right" align="left" color="#ffffff" />
+</slide>
+</slide>
+</data>

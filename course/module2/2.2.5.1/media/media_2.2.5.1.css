@@ -1,0 +1,10 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_speech01{
+	background-color: #652C8A !important;	
+}
+
+

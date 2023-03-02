@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+  <slide type="MBAR">
+	<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<element type="ROUTER" textId="ID_router_txt1" x="40" y="50" width="600" height="346.05" size="11"/>
+<element type="TEXT" compId="ID_s1_txt01" x="50" y="265" width="312" expand="right" align="left" color="#ffffff" />
+</slide>
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+<element type="IMAGE" x="0" y="0" width="680" height="490"  src="media_9.3.1.2.png" />
+<element type="TEXT" compId="ID_s2_txt04" x="461" y="157" width="67" expand="up+down" align="center" />
+<element type="TEXT" compId="ID_s2_txt05" x="570" y="120" width="55" expand="up+down" align="left" />
+<element type="TEXT" compId="ID_s2_txt06" x="570" y="194" width="55" expand="up+down" align="left" />
+<element type="TEXT" compId="ID_s2_txt01" x="79" y="50" width="261" expand="up+down" align="right" />
+<element type="TEXT" compId="ID_s2_txt02" x="358" y="50" width="261" expand="up+down" align="left" />
+<element type="TEXT" compId="ID_s2_txt08" x="208" y="304" width="286" expand="up+down" align="center" />
+<element type="TEXT" id="ID_static_1" text="10.1.1.0/30" x="277" y="125" align="center" width="60" />
+<element type="TEXT" id="ID_static_2" text=".2" x="310" y="174" align="center" width="9" />
+<element type="TEXT" id="ID_static_3" text="209.165.200.224/27" x="367" y="125" align="center" width="106" />
+<element type="TEXT" compId="ID_s2_txt07" x="284" y="258" width="131" expand="up+down" align="center" class="orangeCallOut" />
+<element type="ROUTER" textId="ID_router_txt2" x="40" y="347.5" width="600" height="108" />
+<element type="TEXT" id="ID_static_4" text="S0/0/0" x="282" y="147" align="center" width="36" />
+<element type="TEXT" id="ID_static_5" text="S0/1/0" x="382" y="149" align="center" width="36" />
+<element type="TEXT" id="ID_static_6" text="192.168.11.10" x="72" y="233" align="center" width="75" />
+<element type="TEXT" id="ID_static_7" text="209.165.201.1" x="494" y="86" align="center" width="74" />
+<element type="TEXT" id="ID_static_8" text="209.165.202.129" x="482" y="233" align="center" width="89" />
+<element type="TEXT" id="ID_static_9" text="192.168.10.10" x="72" y="93" align="center" width="75" />
+<element type="TEXT" id="ID_static_10" text=".225" x="380" y="169" align="center" width="23" />
+<element type="TEXT" subType="TITLE" compId="ID_s2_title"/>
+</slide>
+<text id="ID_router_txt1"><![CDATA[<pre>R2#<b>debug ip nat</b>
+IP NAT debugging is on
+R2#
+*Feb 15 20:01:311.670: NAT*: s=192.168.10.10->209.165.200.226, d=209.165.201.1 [2817]
+*Feb 15 20:01:311.682: NAT*: s=209.165.201.1, d=209.165.200.226->192.168.10.10 [4180]
+*Feb 15 20:01:311.698: NAT*: s=192.168.10.10->209.165.200.226, d=209.165.201.1 [2818]
+*Feb 15 20:01:311.702: NAT*: s=192.168.10.10->209.165.200.226, d=209.165.201.1 [2819]
+*Feb 15 20:01:311.710: NAT*: s=192.168.10.10->209.165.200.226, d=209.165.201.1 [2820]
+*Feb 15 20:01:311.710: NAT*: s=209.165.201.1, d=209.165.200.226->192.168.10.10 [4181]
+*Feb 15 20:01:311.722: NAT*: s=209.165.201.1, d=209.165.200.226->192.168.10.10 [4182]
+*Feb 15 20:01:311.726: NAT*: s=192.168.10.10->209.165.200.226, d=209.165.201.1 [2821]
+*Feb 15 20:01:311.730: NAT*: s=209.165.201.1, d=209.165.200.226->192.168.10.10 [4183]
+*Feb 15 20:01:311.734: NAT*: s=192.168.10.10->209.165.200.226, d=209.165.201.1 [2822]
+*Feb 15 20:01:311.734: NAT*: s=209.165.201.1, d=209.165.200.226->192.168.10.10 [4184]
+</pre>]]></text>
+
+<text id="ID_router_txt2"><![CDATA[<pre>R2#<b>show access-lists</b>
+Standard IP access list 1
+  10 permit 192.168.0.0, wildcard bits 0.0.255.255 (29 matches)
+R2#</pre>]]></text>
+ </slide>
+</data>

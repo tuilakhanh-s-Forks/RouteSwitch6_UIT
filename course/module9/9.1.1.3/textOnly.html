@@ -1,0 +1,63 @@
+
+          <p>In NAT terminology, the inside network is the set of networks that is subject to translation. The outside network refers to all other networks. </p>
+          <p></p>
+          <p>When using NAT, IPv4 addresses have different designations based on whether they are on the private network, or on the public network (Internet), and whether the traffic is incoming or outgoing. </p>
+          <p></p>
+          <p>NAT includes four types of addresses:</p>
+          <p>
+            <ul>
+              <li>Inside local address</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Inside global address</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Outside local address</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Outside global address</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>When determining which type of address is used, it is important to remember that NAT terminology is always applied from the perspective of the device with the translated address:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Inside address</b> - The address of the device which is being translated by NAT. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Outside address</b> - The address of the destination device. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>NAT also uses the concept of local or global with respect to addresses:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Local address</b> - A local address is any address that appears on the inside portion of the network.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Global address</b> - A global address is any address that appears on the outside portion of the network. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>In the figure, PC1 has an inside local address of 192.168.10.10. From the perspective of PC1, the web server has an outside address of 209.165.201.1. When packets are sent from PC1 to the global address of the web server, the inside local address of PC1 is translated to 209.165.200.226 (inside global address). The address of the outside device is not typically translated, because that address is usually a public IPv4 address.</p>
+          <p></p>
+          <p>Notice that PC1 has different local and global addresses, whereas the web server has the same public IPv4 address for both. From the perspective of the web server, traffic originating from PC1 appears to have come from 209.165.200.226, the inside global address.</p>
+          <p></p>
+          <p>The NAT router, R2 in the figure, is the demarcation point between the inside and outside networks and as between local and global addresses.</p>
+        

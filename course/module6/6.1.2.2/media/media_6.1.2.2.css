@@ -1,0 +1,24 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_s1_broadcast10,#ID_s1_broadcast2,#ID_s1_broadcast3,#ID_s1_broadcast4,#ID_s1_broadcast5,#ID_s2_broadcast1{
+	background-color: #652C8A;
+	border: 1px solid #FFFFFF;
+	color: #FFFFFF !important;
+	padding: 4px 2px 4px 2px !important;
+}
+
+.orangeCallOut{
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+}
+
+#ID_s1_txt07,#ID_s2_txt07{
+	background-color: #FFFFFF;
+	padding-left:5px !important;
+padding-top: 5px !important;
+padding-bottom: 5px !important;
+box-shadow: 1px 1px 1px 1px #888888;
+}

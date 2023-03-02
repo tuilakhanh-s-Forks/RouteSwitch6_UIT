@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide type="MBAR">
+	
+		<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_8.2.2.3A.png" />
+<element type="ROUTER" textId="ID_router_txt1" x="40" y="193" width="600" height="160" />
+<text id="ID_router_txt1"><![CDATA[<pre>R1# show ipv6 dhcp pool</br>DHCPv6 pool: IPV6-STATELESS</br> DNS server: 2001:DB8:CAFE:AAAA::5</br> Domain name: example.com</br> Active clients: 0</br>R1# </pre>]]></text>
+<element type="TEXT" id="ID_static_1" text="G0/1" x="155" y="101" align="center" width="24" />
+<element type="TEXT" id="ID_static_2" text="G0/1" x="499" y="101" align="center" width="24" />
+<!-- <element type="TEXT" compId="ID_s4_txt01" x="58" y="124" width="141" expand="down" align="center" /> -->
+<!-- <element type="TEXT" compId="ID_s4_txt02" x="483" y="124" width="141" expand="down" align="center" /> -->
+<element type="TEXT" subType="TITLE" compId="ID_s1_title"/>
+</slide>
+
+
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+
+<element type="ROUTER" textId="ID_router_txt2" x="40" y="60" width="600" height="400" />
+<text id="ID_router_txt2"><![CDATA[<pre>R3# show ipv6 interface g0/1</br>GigabitEthernet0/1 is up, line protocol is up</br> IPv6 is enabled, link-local address is FE80::32F7:DFF:FE25:2DE1</br>No Virtual link-local address(es):</br><span class="orangeColor">Stateless address autoconfig enabled</br>Global unicast address(es):</br>  2001:DB8:CAFE:1:32F7:DFF:FE25:2DE1,</span>subnet is 2001:DB8:CAFE:1::/64 [EUI/CAL/PRE]</br>   valid lifetime 2591935 preferred lifetime 604735</br>Joined group address(es):</br>  FF02::1</br>  FF02::1:FF25:2DE1</br>MTU is 1500 bytes</br>ICMP error messages limited to one every 100 milliseconds</br>ICMP redirects are enabled</br>ICMP unreachables are sent</br>ND DAD is enabled, number of DAD attempts: 1</br>ND reachable time is 30000 milliseconds (using 30000)</br>ND NS retransmit interval is 1000 milliseconds</br><span class="orangeColor">Default router is FE80::D68C:B5FF:FECE:A0C1 on</br> GigabitEthernet0/1</span></br>R3# </pre>]]></text>
+<element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#ffffff"/>
+</slide>
+
+
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+
+<element type="ROUTER" textId="ID_router_txt3" x="40" y="60" width="600" height="400" />
+<text id="ID_router_txt3"><![CDATA[<pre>R3# debug ipv6 dhcp detail</br>  IPv6 DHCP debugging is on (detailed)</br>R3#</br>*Feb 3 02:39:10.454: IPv6 DHCP: <span class="orangeColor">Sending INFORMATION-REQUEST to FF02::1:2</span>on</br>GigabitEthernet0/1</br>*Feb 3 02:39:10.454: IPv6 DHCP: detailed packet contents</br>*Feb 3 02:39:10.454: <span class="orangeColor">src FE80::32F7:DFF:FE25:2DE1</span></br>*Feb 3 02:39:10.454: <span class="orangeColor">dst FF02::1:2 (GigabitEthernet0/1)</span></br>*Feb 3 02:39:10.454: type INFORMATION-REQUEST(11), xid 12541745</br></br>*Feb 3 02:39:10.454: <span class="orangeColor">IPv6 DHCP: Adding server</br>                    FE80::D68C:B5FF:FECE:A0C1</span></br>*Feb 3 02:39:10.454:<span class="orangeColor">IPv6 DHCP: Processing options</span></br>*Feb 3 02:39:10.454: <span class="orangeColor">IPv6 DHCP: Configuring DNS server</br>                    2001:DB8:CAFE:AAAA::5</span></br>*Feb 3 02:39:10.454:<span class="orangeColor"> IPv6 DHCP: Configuring domain name</br>                         example.com</span></br>*Feb 3 02:39:10.454: IPv6 DHCP: DHCPv6 changes state from INFORMATION-REQUEST</br>to IDLE(REPLY_RECEIVED) on GigabitEthernet0/1</br>R3# </pre>]]></text>
+<element type="TEXT" compId="ID_s3_txt01" x="48" y="195" width="105" expand="right" align="left" color="#ffffff" />
+<element type="TEXT" subType="TITLE" compId="ID_s3_title" color="#ffffff"/>
+</slide>
+
+
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_8.2.2.3D.png" />
+<element type="ACTIVITY" subType="SYNTAX" compId="ID_s4_SC1" x="25" y="191" width="630" height="279" resetId="ID_s4_reset" showMeId="ID_s4_showme" showAllId="ID_s4_showall"/>
+<element type="TEXT" id="ID_static_3" text="G0/1" x="155" y="101" align="center" width="24" />
+<element type="TEXT" id="ID_static_4" text="G0/1" x="499" y="101" align="center" width="24" />
+<element type="TEXT" compId="ID_s4_txt01" x="58" y="124" width="141" expand="down" align="center" />
+<element type="TEXT" compId="ID_s4_txt02" x="483" y="124" width="141" expand="down" align="center" />
+<slide buttonType="BLUE" buttonX="58" buttonY="248" buttonWidth="160" buttonHeight="21" compId="ID_s4_reset" selected="false" >
+</slide>
+<slide buttonType="BLUE" buttonX="235" buttonY="248" buttonWidth="160" buttonHeight="21" compId="ID_s4_showme" selected="false" >
+</slide>
+<slide buttonType="BLUE" buttonX="412" buttonY="248" buttonWidth="160" buttonHeight="21" compId="ID_s4_showall" selected="false" >
+</slide>
+<element type="TEXT" subType="TITLE" compId="ID_s4_title" />
+</slide>
+
+
+ </slide>
+	
+	
+	
+</data>

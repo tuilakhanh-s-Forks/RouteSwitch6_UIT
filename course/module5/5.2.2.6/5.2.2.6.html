@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.2.6 Ports in Error Disabled State</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.2.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Ports in Error Disabled State</h1>
+        <div>
+          <p>When a port is configured with port security, a violation can cause the port to become error disabled. When a port is error disabled, it is effectively shut down and no traffic is sent or received on that port. A series of port security related messages display on the console (Figure 1). </p>
+          <p></p>
+          <p>
+            <b>Note</b>: The port protocol and link status is changed to down.</p>
+          <p></p>
+          <p>The port LED will turn off. The<b> show interfaces </b>command identifies the port status as<b> err-disabled </b>(Figure 2). The output of the<b> show port-security interface </b>command now shows the port status as<b> secure-shutdown</b>. Because the port security violation mode is set to shutdown, the port with the security violation goes to the error disabled state. </p>
+          <p></p>
+          <p>The administrator should determine what caused the security violation before re-enabling the port. If an unauthorized device is connected to a secure port, the port should not be re-enabled until the security threat is eliminated. To re-enable the port, use the<b> shutdown </b>interface configuration mode command (Figure 3). Then, use the<b> no shutdown </b>interface configuration command to make the port operational.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the error messages sent to the console of a switch when a port goes into the error disabled state.  The message contains a lot of details regarding the violation and includes the MAC address that caused the violation. Figure two shows the output from the command, show interface fast Ethernet zero slash 18.  The output lists information about the port, including the status as err hyphen disabled.  Figure two also shows the output from the command, show port hyphen security interface fast Ethernet zero slash 18.  This output displays additional information regarding the security of the specified port, including violation information. Figure three shows the process of re-enabling a port that was shut down due to a security violation.  The figure begins in global configuration mode and moves to the port with the command, interface fast Ethernet zero.  The port is shut down with the command, shutdown.  The port is turned on with the command, no shut.  The port will now function again.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

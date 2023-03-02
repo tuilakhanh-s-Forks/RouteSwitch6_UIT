@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>		
+<slide type="MBAR">	
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+<slide>	
+	<element type="TEXT" subType="TITLE" compId="ID_s1_title"/>
+	<element type="IMAGE" src="media_10.1.2.3_A.png" x="0" y="0" width="680" height="490"/>
+	<element type="ROUTER" textId="ID_router_txt1" x="40" y="190" width="600" height="265"  size="11" />
+			
+	</slide>
+			
+	<slide>	
+	<element type="TEXT" subType="TITLE" compId="ID_s2_title" />
+	<element type="IMAGE" src="media_10.1.2.3_B.png" x="0" y="0" width="680" height="490"/>
+	<element type="ROUTER" textId="ID_router_txt2"  x="40" y="190" width="600" height="265" size="11" />
+	<element type="TEXT" id="ID_static_1" text="G0/1" x="202" y="101.7" width="35" align="center" />
+	<element type="TEXT" id="ID_static_2" text="F0/5" x="278" y="101.7" width="35" align="center" />
+	<element type="TEXT" id="ID_static_3" text="F0/4" x="381" y="101.7" width="35" align="center" />
+	<element type="TEXT" id="ID_static_4" text="F0/4" x="447" y="101.7" width="35" align="center" />			
+	</slide>
+	</slide>	
+			
+	<text id="ID_router_txt1"><![CDATA[<pre>S1# <b>show lldp neighbors</b>
+Capability codes:
+    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
+ 
+Device ID           Local Intf     Hold-time  Capability      Port ID
+<span class="orangeText">R1                  Fa0/5</span>          99         R               <span class="orangeText">Gi0/1</span>
+<span class="orangeText">S2                  Fa0/4</span>          120        B               <span class="orangeText">Fa0/4</span>
+
+Total entries displayed: 2
+</pre>]]></text>
+
+		<text id="ID_router_txt2"><![CDATA[<pre>S1# <b>show lldp neighbors detail</b>
+------------------------------------------------
+Chassis id       : fc99.4775.c3e0
+Port id          : Gi0/1
+Port Description : GigabitEthernet0/1
+System Name      : R1
+ 
+System Description:
+Cisco IOS Software, C1900 Software (C1900-UNIVERSALK9-M), Version 15.4(3)M2, 
+  RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2015 by Cisco Systems, Inc.
+Compiled Fri 06-Feb-15 17:01 by prod_rel_team
+ 
+Time remaining       : 101 seconds
+System Capabilities  : B,R
+Enabled Capabilities : R
+<span class="orangeText">Management Addresses:
+    IP: 192.168.1.1</span>
+Auto Negotiation - not supported
+Physical media capabilities - not advertised
+Media Attachment Unit type - not advertised
+Vlan ID: - not advertised
+ 
+------------------------------------------------
+Chassis id        : 0cd9.96d2.3f80
+Port id           : Fa0/4
+Port Description  : FastEthernet0/4
+System Name       : S2
+<span id="ID_s1_txt01" style="color:#FFF; text-align:left !important"></span>
+</pre>]]></text>
+</data>
+
+
+

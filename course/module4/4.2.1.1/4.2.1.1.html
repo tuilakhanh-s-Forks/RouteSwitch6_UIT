@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.1.1 Switching as a General Concept in Networking and Telecommunications</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Switching as a General Concept in Networking and Telecommunications</h1>
+        <div>
+          <p>The concept of switching and forwarding frames is universal in networking and telecommunications. Various types of switches are used in LANs, WANs, and the public switched telephone network (PSTN). The fundamental concept of switching refers to a device making a decision based on two criteria:</p>
+          <p>
+            <ul>
+              <li>Ingress port </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Destination address</li>
+            </ul>
+          </p>
+          <p>The decision on how a switch forwards traffic is made in relation to the flow of that traffic. The term ingress is used to describe where a frame enters the device on a port. The term egress is used to describe frames leaving the device from a particular port. </p>
+          <p></p>
+          <p></p>
+          <p>A LAN switch maintains a table that it uses to determine how to forward traffic through the switch. Click Play in the figure to see an animation of the switching process. In this example:  </p>
+          <p>
+            <ul>
+              <li>If a message enters switch port 1 and has a destination address of EA, then the switch forwards the traffic out port 4. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>If a message enters switch port 5 and has a destination address of EE, then the switch forwards the traffic out port 1. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>If a message enters switch port 3 and has a destination address of AB, then the switch forwards the traffic out port 6. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The only intelligence of the LAN switch is its ability to use its table to forward traffic based on the ingress port and the destination address of a message. With a LAN switch, there is only one master switching table that describes a strict association between addresses and ports; therefore, a message with a given destination address always exits the same egress port, regardless of the ingress port it enters. </p>
+          <p></p>
+          <p>Layer 2 Ethernet switches forward Ethernet frames based on the destination MAC address of the frames.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure is an animation demonstrating how a L.A.N. switch makes forwarding decisions based upon the destination address of an incoming frame.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+.color{
+    color: #F68026;
+	font-weight: bold;
+}
+
+
+@media only screen and (device-width:768px){	
+#ID_router_txt2{
+	left: -8px !important;
+	letter-spacing: -0.2px !important;
+}
+}

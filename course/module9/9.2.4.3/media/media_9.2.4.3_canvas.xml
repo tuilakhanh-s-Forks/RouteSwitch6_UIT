@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="media_9.2.4.3A.png" />
+            <element type="TEXT" compId="ID_s1_table01_html" x="40" y="133" width="600" height="320" />
+            <element type="TEXT" textId="ID_router_txt1" x="49" y="70" width="405" height="27.15" />
+            <element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#FFFFFF" />
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="media_9.2.4.3B.png" />
+            <element type="TEXT" compId="ID_s2_txt07" x="40" y="257" width="603" expand="up" align="left" />
+            <element type="TEXT" compId="ID_s2_txt08" x="40" y="326" width="603" expand="up" align="left" />
+            <element type="TEXT" compId="ID_s2_txt09" x="39" y="399" width="603" expand="up" align="left" />
+            <element type="TEXT" compId="ID_s2_txt06" x="419" y="188" width="162" expand="right" align="left" class="orangeCallOut" />
+            <element type="TEXT" id="ID_static_1" text="192.168.10.254:80" x="208" y="225" align="center" width="98" />
+            <element type="TEXT" id="ID_static_2" text="209.165.200.225:8080" x="357" y="224" align="center" width="119" />
+            <element type="TEXT" id="ID_static_3" text="S0/0/0" x="274" y="99" align="center" width="33" />
+            <element type="TEXT" id="ID_static_4" text="S0/1/0" x="371" y="99" align="center" width="33" />
+            <element type="TEXT" id="ID_static_5" text=".225" x="365" y="130" align="center" width="23" />
+            <element type="TEXT" compId="ID_s2_txt03" x="92" y="150" width="111" expand="right" align="left" />
+            <element type="TEXT" id="ID_static_6" text="192.168.10.254" x="94" y="172" align="center" width="82" />
+            <element type="TEXT" id="ID_static_7" text="209.165.200.254" x="483" y="170" align="center" width="89" />
+            <element type="TEXT" id="ID_static_8" text="209.165.200.224/27" x="354" y="76" align="center" width="106" />
+            <element type="TEXT" compId="ID_s2_txt05" x="509" y="150" width="79" expand="left+right" align="center" />
+            <element type="TEXT" compId="ID_s2_txt01" x="87" y="55" width="252" expand="up" align="center" />
+            <element type="TEXT" compId="ID_s2_txt04" x="418" y="112" width="94" expand="up+down" align="center" />
+            <element type="TEXT" compId="ID_s2_txt02" x="341" y="55" width="248" expand="up" align="center" />
+            <element type="TEXT" subType="TITLE" compId="ID_s2_title" />
+            <element type="TEXT" textId="ID_router_txt2" x="44" y="278.05" width="418" height="24.95" />
+            <element type="TEXT" textId="ID_router_txt3" x="44" y="347.55" width="240" height="27.55" />
+            <element type="TEXT" textId="ID_router_txt4" x="44" y="420.05" width="240" height="27.55" />
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="media_9.2.4.3B.png" />
+            <element type="ROUTER" textId="ID_router_txt5" x="40" y="250" width="597" height="210" />
+            <element type="TEXT" compId="ID_s3_txt06" x="419" y="188" width="162" expand="right" align="left" class="orangeCallOut" />
+            <element type="TEXT" id="ID_static_9" text="192.168.10.254:80" x="206" y="224" align="center" width="98" />
+            <element type="TEXT" id="ID_static_10" text="209.165.200.225:8080" x="357" y="224" align="center" width="119" />
+            <element type="TEXT" id="ID_static_11" text="S0/0/0" x="274" y="99" align="center" width="33" />
+            <element type="TEXT" id="ID_static_12" text="S0/1/0" x="371" y="99" align="center" width="33" />
+            <element type="TEXT" id="ID_static_13" text=".225" x="365" y="130" align="center" width="23" />
+            <element type="TEXT" compId="ID_s3_txt03" x="92" y="150" width="111" expand="right" align="left" />
+            <element type="TEXT" compId="ID_s3_txt05" x="509" y="150" width="79" expand="left+right" align="center" />
+            <element type="TEXT" id="ID_static_14" text="192.168.10.254" x="94" y="172" align="center" width="82" />
+            <element type="TEXT" id="ID_static_15" text="209.165.200.254" x="483" y="170" align="center" width="89" />
+            <element type="TEXT" id="ID_static_16" text="209.165.200.224/27" x="354" y="76" align="center" width="106" />
+            <element type="TEXT" compId="ID_s3_txt01" x="87" y="55" width="252" expand="up" align="center" />
+            <element type="TEXT" compId="ID_s3_txt04" x="418" y="112" width="94" expand="up+down" align="center" />
+            <element type="TEXT" compId="ID_s3_txt02" x="341" y="55" width="248" expand="up" align="center" />
+            <element type="TEXT" subType="TITLE" compId="ID_s3_title" />
+        </slide>
+    </slide>
+    <text id="ID_router_txt1">
+        <![CDATA[<table width="410" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><strong>ip nat inside source</strong> {<strong>static</strong> {<strong>tcp</strong> | <strong>udp</strong> <i>local-ip local-port</i></td>
+  </tr>
+  <tr>
+    <td><i>global-ip global-port</i>} [<strong>extendable</strong>] </td>
+  </tr>
+</table>]]>
+    </text>
+    <text id="ID_router_txt2">
+        <![CDATA[R2(config)# <strong><b>ip nat inside source static tcp 192.168.10.254 80 209.165.200.225 8080</b></strong>]]></text>
+    <text id="ID_router_txt3">
+        <![CDATA[R2(config)# <strong><b>interface Serial0/0/0</b></strong><br/>
+R2(config-if)# <strong><b>ip nat inside</b></strong>]]></text>
+    <text id="ID_router_txt4">
+        <![CDATA[R2(config)# <strong><b>interface Serial0/1/0</b></strong><br/>
+R2(config-if)# <strong><b>ip nat outside</b></strong>]]></text>
+    <text id="ID_router_txt5">
+        <![CDATA[<pre>R2# <b>show ip nat translations</b>
+Pro Inside global        Inside local       Outside local         Outside global
+tcp 209.165.200.225:<span class="orangeColor">8080</span> 192.168.10.254:80  209.165.200.254:46088 209.165.200.254:46088
+tcp 209.165.200.225:<span class="orangeColor">8080</span> 192.168.10.254:80  ---                   ---
+R2#
+</pre>]]></text>
+</data>

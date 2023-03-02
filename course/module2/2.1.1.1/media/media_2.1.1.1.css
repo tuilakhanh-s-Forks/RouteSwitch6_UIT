@@ -1,0 +1,33 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+
+li{
+	margin-left:15px !important;
+	
+}
+#ID_s1_txt02, #ID_s1_txt03, #ID_s2_txt02, #ID_s2_txt03 {
+	line-height:11px;
+	color: #fff !important;
+}
+
+@media only screen and (device-width: 768px) {
+#ID_s2_txt01,#ID_s1_txt01{
+width:78px !important;
+font-size:10px!important;
+margin-left:-5px!important;
+color: #fff !important;
+}
+li{
+	margin-left:20px !important;
+}
+
+
+    
+    #ID_static_10, #ID_static_9, #ID_static_11, #ID_static_12, #ID_static_13 {
+        letter-spacing: -0.9px;
+    }
+}

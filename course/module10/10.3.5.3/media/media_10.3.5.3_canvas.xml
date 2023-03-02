@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="media_10.3.5.3.png" />
+            <element type="TEXT" compId="ID_s1_txt01" x="233" y="101" width="217" expand="up" align="center" />
+            <element type="ROUTER" textId="ID_router_txt1" x="40" y="229.2" width="600" height="220" />
+            <element type="TEXT" compId="ID_s1_txt02" x="49" y="312" width="105" expand="right" align="left" color="#ffffff" />
+            <element type="TEXT" subType="TITLE" compId="ID_s1_title" />
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+            <element type="ACTIVITY" subType="SYNTAX" compId="ID_SC2" x="25" y="55" width="630" height="400" resetId="ID_sc_reset" showMeId="ID_sc_showme" showAllId="ID_sc_showall" />
+        </slide>
+        <text id="ID_router_txt1">
+            <![CDATA[<pre>R1# <b>license save flash0:all_licenses.lic</b>
+license lines saved ..... to flash0:all_licenses.lic
+
+R1# <b>show flash0:</b>
+-# - --length-- -----date/time------ path
+
+
+8  68831808 Apr 2 2013 21:29:58 +00:00 
+   c1900-universalk9-mz.SPA.152-4.M3.bin
+9      1153 Apr 26 2013 02:24:30 +00:00 <span class="orangeColor">all_licenses.lic</span>
+
+182390784 bytes available (74096640 bytes used)
+
+R1# </pre>]]></text>
+    </slide>
+</data>

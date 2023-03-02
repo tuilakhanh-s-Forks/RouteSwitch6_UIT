@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+	<data>		
+		<slide type="MBAR">	
+		
+	<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_8.1.2.1A.png" />
+<element type="TEXT" subType="TITLE" compId="ID_s1_title"/>
+<element type="TEXT" id="ID_static_5" text="S0/0/0" x="277" y="91" align="center" width="36" />
+
+<element type="TEXT" id="ID_static_7" text="S0/0/0" x="223" y="125" align="center" width="36" />
+<element type="TEXT" compId="ID_s1_txt01" x="68" y="148" width="142" expand="up" align="right" />
+<element type="TEXT" id="ID_static_8" text="10.1.1.1/30" x="263" y="144" align="center" width="60" />
+<element type="TEXT" id="ID_static_9" text="G0/0" x="173" y="167" align="center" width="26" />
+<element type="TEXT" id="ID_static_13" text=".1" x="166" y="180" align="center" width="8" />
+
+<element type="TEXT" id="ID_static_10" text="G0/1 .1" x="240" y="175" align="center" width="24" />
+<element type="TEXT" id="ID_static_1" text="192.168.10.0/24" x="39" y="235" align="center" width="86" />
+<element type="TEXT" id="ID_static_2" text="192.168.11.0/24" x="240" y="235" align="center" width="86" />
+<element type="TEXT" compId="ID_s1_txt02" x="332" y="370" width="69" expand="up+down" align="left" />
+<element type="TEXT" id="ID_static_3" text="192.168.11.5" x="281" y="406" align="center" width="68" />
+
+<element type="TEXT" id="ID_static_6" text="S0/0/1" x="368" y="91" align="center" width="34" />
+
+<element type="TEXT" id="ID_static_11" text="S0/0/1" x="429" y="125" align="center" width="34" />
+<element type="TEXT" id="ID_static_12" text="G0/0" x="449" y="176" align="center" width="26" />
+<element type="TEXT" id="ID_static_4" text="192.168.30.0/24" x="356" y="235" align="center" width="86" />
+
+</slide>
+
+
+
+<slide>
+	<!-- <element type="IMAGE" x="0" y="0" width="680" height="490" src="media_8.1.2.1B.png" /> -->
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<element type="ROUTER" textId="ID_router_txt1" x="40" y="90" width="600" height="60" />
+<!-- <text id="ID_router_txt1"><![CDATA[<pre>R1(config)# ip dhcp excluded-address low-address [high-address]</pre>]]></text>
+ --><element type="ROUTER" textId="ID_router_txt2" x="40" y="170" width="600" height="110" />
+<!-- <text id="ID_router_txt2"><![CDATA[<pre>R1(config)# ip dhcp excluded-address 192.168.10.1 192.168.10.9 R1(config)# ip dhcp excluded-address 192.168.10.254</pre>]]></text> -->
+<element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#fff"/>
+</slide>
+
+
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<element type="ROUTER" textId="ID_router_txt3" x="40" y="90" width="600" height="60" />
+<!--<text id="ID_router_txt3"><![CDATA[<pre>R1(config)# ip dhcp pool pool-name R1(dhcp-config)#</pre>]]></text>-->
+<element type="ROUTER" textId="ID_router_txt4" x="40" y="170" width="600" height="110" />
+<!--<text id="ID_router_txt4"><![CDATA[<pre>R1(config)# ip dhcp pool LAN-POOL-1 R1(dhcp-config)#</pre>]]></text>-->
+<element type="TEXT" subType="TITLE" compId="ID_s3_title" color="#fff"/>
+</slide>
+
+
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<element type="TEXT" subType="TITLE" compId="ID_s4_title" color="#fff"/>
+
+<element type="TEXT" compId="ID_S4_table1_html" x="40" y="90" width="600" height="132" />
+<element type="TEXT" compId="ID_S4_table2_html" x="40" y="237" width="600" height="90" />
+</slide>
+
+
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<element type="ROUTER" textId="ID_router_txt5" x="40" y="90" width="600" height="190" />
+<!--<text id="ID_router_txt5"><![CDATA[<pre>R1(config)# ip dhcp excluded-address 192.168.10.1 192.168.10.9 R1(config)# ip dhcp excluded-address 192.168.10.254 R1(config)# ip dhcp pool LAN-POOL-1 R1(dhcp-config)# network 192.168.10.0 255.255.255.0 R1(dhcp-config)# default-router 192.168.10.1 R1(dhcp-config)# dns-server 192.168.11.5 R1(dhcp-config)# domain-name example.com R1(dhcp-config)# end R1# </pre>]]></text>-->
+<element type="TEXT" subType="TITLE" compId="ID_s5_title" color="#fff"/>
+</slide>
+
+
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<!-- <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+	 -->
+<element type="TEXT" subType="TITLE" compId="ID_s6_title" color="#fff"/>
+	 
+			<element type="TEXT" subType="TITLE" compId="ID_title" color="#FFFFFF" />
+			<element type="ACTIVITY" subType="SYNTAX" compId="ID_s6_SC5" x="25" y="40" width="630" height="410" resetId="ID_sc_reset" showMeId="ID_sc_showme" showAllId="ID_sc_showall"/>
+</slide>
+			
+		</slide>	
+		
+		
+		<text id="ID_router_txt1"><![CDATA[
+<pre>R1(config)# <b>ip dhcp excluded-address</b> <i>low-address</i> [<i>high-address</i>]</pre>
+		]]>
+		</text>
+		
+		<text id="ID_router_txt2"><![CDATA[
+<pre>R1(config)# <b>ip dhcp excluded-address 192.168.10.1 192.168.10.9</b>
+R1(config)# <b>ip dhcp excluded-address 192.168.10.254</b></pre>
+		]]>
+		</text>
+		
+		<text id="ID_router_txt3"><![CDATA[
+<pre>R1(config)# <b>ip dhcp pool</b> <i>pool-name</i>
+R1(dhcp-config)#</pre>
+		]]>
+		</text>
+		
+		<text id="ID_router_txt4"><![CDATA[
+<pre>R1(config)# <b>ip dhcp pool LAN-POOL-1</b>
+R1(dhcp-config)#</pre>
+		]]>
+		</text>
+		
+<text id="ID_router_txt5"><![CDATA[
+<pre>R1(config)# <b>ip dhcp excluded-address 192.168.10.1 192.168.10.9</b>
+R1(config)# <b>ip dhcp excluded-address 192.168.10.254</b>          
+R1(config)# <b>ip dhcp pool LAN-POOL-1</b>
+R1(dhcp-config)# <b>network 192.168.10.0 255.255.255.0</b>
+R1(dhcp-config)# <b>default-router 192.168.10.1</b>
+R1(dhcp-config)# <b>dns-server 192.168.11.5</b>
+R1(dhcp-config)# <b>domain-name example.com</b>
+R1(dhcp-config)# <b>end</b>
+R1# 
+</pre>
+		]]>
+		</text>
+
+	</data>
+
+
+

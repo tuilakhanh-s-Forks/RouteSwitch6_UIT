@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.2.5 Wildcard Mask Keyword Examples</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Wildcard Mask Keyword Examples</h1>
+        <div>
+          <p>Example 1 in the figure shows how to use the<b> any </b>keyword to substitute the IPv4 address 0.0.0.0 with a wildcard mask of 255.255.255.255.</p>
+          <p></p>
+          <p>Example 2 shows how to use the<b> host </b>keyword to substitute for the wildcard mask when identifying a single host.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The syntax for configuring standard IPv4 ACLs is covered later in this chapter.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows two examples using the C.L.I. commands for creating an access list that will permit any address.  The examples begin in global configuration mode. The first example lists the method using wildcard masks.  The command is, access hyphen list 1 permit zero dot zero dot zero dot zero 255 dot 255 dot 255 dot 255.  The next example uses the keyword any, and the command is, access hyphen list 1 permit any.  The second example is an A.C.L. that specifies a particular host. The command is, access hyphen list 1 permit 192 dot 168 dot 10 dot 10 zero dot zero dot zero dot zero.  The next command in example two uses the keyword host. The command is, access hyphen list 1 permit host 192 dot 168 dot 10 dot 10.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

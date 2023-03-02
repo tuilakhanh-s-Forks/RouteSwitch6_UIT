@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.2.5 Level 2 Child Route</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Level 2 Child Route</h1>
+        <div>
+          <p>A level 2 child route is a route that is a subnet of a classful network address. As illustrated in Figure 1, a level 1 parent route is a level 1 network route that is subnetted. Level 1 parent routes contain level 2 child routes, as shown in Figure 2.</p>
+          <p></p>
+          <p>Like a level 1 route, the source of a level 2 route can be a directly connected network, a static route, or a dynamically learned route. Level 2 child routes are also ultimate routes.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The routing table hierarchy in Cisco IOS has a classful routing scheme. A level 1 parent route is the classful network address of the subnet route. This is the case even if a classless routing protocol is the source of the subnet route.</p>
+          <p></p>
+          <p>Figure 3 highlights the child routes in the routing table of R1.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one displays the relationship between a level one route, a level two child route, and a parent route.  Figure two lists the level one route of 172 dot 16 dot 0 dot 0, followed by four level two routes of 172 dot 16 dot 1 dot 0 slash 24, 172 dot 16 dot 2 dot 0 slash 24, 172 dot 16 dot 3 dot 0 slash 24, and 172 dot 16 dot 4 dot 0 slash 2.Figure three shows the output from the command, show i.p. route pipe begin Gateway. The child routes are highlighted.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

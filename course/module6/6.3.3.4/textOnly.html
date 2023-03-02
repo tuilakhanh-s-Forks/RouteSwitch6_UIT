@@ -1,0 +1,10 @@
+
+          <p>By default, Cisco routers are configured to route traffic between local subinterfaces. As a result, routing does not specifically need to be enabled.</p>
+          <p></p>
+          <p>In Figure 1, the <b>show vlan</b> command displays information about the Cisco IOS VLAN subinterfaces. The output shows the two VLAN subinterfaces, GigabitEthernet0/0.10 and GigabitEthernet0/0.30.</p>
+          <p></p>
+          <p>Examine the routing table using the<span class="cmd"><b></b></span><b>show ip route</b><span class="cmd"><b></b></span>command (Figure 2). In the example, the routes defined in the routing table indicate that they are associated with specific subinterfaces, rather than separate physical interfaces. There are two routes in the routing table. One route is to the 172.17.10.0 subnet, which is attached to the local subinterface G0/0.10. The other route is to the 172.17.30.0 subnet, which is attached to the local subinterface G0/0.30. The router uses this routing table to determine where to send the traffic it receives. For example, if the router received a packet on subinterface G0/0.10 destined for the 172.17.30.0 subnet, the router would identify that it should send the packet out subinterface G0/0.30 to reach hosts on the 172.17.30.0 subnet.</p>
+          <p></p>
+          <p></p>
+          <p>Use the Syntax Checker, in Figure 3, to configure and verify router-on-a-stick on R1.</p>
+        

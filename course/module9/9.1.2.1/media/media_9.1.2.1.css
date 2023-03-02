@@ -1,0 +1,10 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+.width50{
+	width:50%;
+}
+#static_txt01 {font-family:Courier New;width:168.5px !important;}

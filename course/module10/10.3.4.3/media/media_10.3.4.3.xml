@@ -1,0 +1,27 @@
+<textcomponents>
+
+<component id="ID_title">
+	<text><![CDATA[<b>Purchasing a License for a Feature</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+	<text><![CDATA[<b>IP Base</b><br/>Data<br/>Unified Communications<br/>Security]]></text> 
+</component>
+
+<component id="ID_txt02">
+	<text><![CDATA[Data License]]></text> 
+</component>
+
+<component id="ID_txt03">
+	<text><![CDATA[Unified Communications License]]></text> 
+</component>
+
+<component id="ID_txt04">
+	<text><![CDATA[Security License]]></text> 
+</component>
+
+<component id="ID_txt05">
+	<text><![CDATA[Data<br/>Unified Communications<br/>Security]]></text> 
+</component>
+
+</textcomponents>

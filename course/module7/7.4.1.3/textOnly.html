@@ -1,0 +1,25 @@
+
+          <p>By default a router does not filter traffic. Traffic that enters the router is routed solely based on information within the routing table.</p>
+          <p></p>
+          <p>Packet filtering controls access to a network by analyzing the incoming and outgoing packets and passing or dropping them based on criteria such as the source IP address, destination IP addresses, and the protocol carried within the packet. A packet-filtering router uses rules to determine whether to permit or deny traffic. A router can also perform packet filtering at Layer 4, the transport layer. </p>
+          <p></p>
+          <p>An ACL is a sequential list of permit or deny statements. The last statement of an ACL is always an implicit deny which blocks all traffic. To prevent the implied deny any statement at the end of the ACL from blocking all traffic, the<b> permit any </b>statement can be added.</p>
+          <p></p>
+          <p>When network traffic passes through an interface configured with an ACL, the router compares the information within the packet against each entry, in sequential order, to determine whether the packet matches one of the statements. If a match is found, the packet is processed accordingly.</p>
+          <p></p>
+          <p>ACLs are configured to apply to inbound traffic or to apply to outbound traffic. </p>
+          <p></p>
+          <p>Standard ACLs can be used to permit or deny traffic only from source IPv4 addresses. The destination of the packet and the ports involved are not evaluated.  The basic rule for placing a standard ACL is to place it close to the destination.</p>
+          <p></p>
+          <p>Extended ACLs filter packets based on several attributes: protocol type, source or destination IPv4 address, and source or destination ports. The basic rule for placing an extended ACL is to place it as close to the source as possible. </p>
+          <p></p>
+          <p>The<b> access-list </b>global configuration command defines a standard ACL with a number in the range of 1 through 99The<b> ip access-list standard </b><i>name </i>is used to create a standard named ACL.</p>
+          <p></p>
+          <p>After an ACL is configured, it is linked to an interface using the<b> ip access-group </b>command in interface configuration mode. Remember these rules: one ACL per protocol, one ACL per direction, one ACL per interface. </p>
+          <p></p>
+          <p>To remove an ACL from an interface, first enter the<b> no ip access-group </b>command on the interface, and then enter the global <b>no access-list</b> command to remove the entire ACL.</p>
+          <p></p>
+          <p>The<b> show running-config </b>and<b> show access-lists </b>commands are used to verify ACL configuration. The<b> show ip interface </b>command is used to verify the ACL on the interface and the direction in which it was applied.</p>
+          <p></p>
+          <p>The<b> access-class </b>command configured in line configuration mode restricts incoming and outgoing connections between a particular VTY and the addresses in an access list. </p>
+        

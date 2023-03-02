@@ -1,0 +1,9 @@
+
+          <p>Each VLAN must correspond to a unique IP subnet. If two devices in the same VLAN have different subnet addresses, they cannot communicate. This is a common problem, and it is easy to solve by identifying the incorrect configuration and changing the subnet address to the correct one.</p>
+          <p></p>
+          <p>In Figure 1, PC1 cannot connect to the Web/TFTP server shown. </p>
+          <p></p>
+          <p>A check of the IPv4 configuration settings of PC1 shown in Figure 2, reveals the most common error in configuring VLANs: an incorrectly configured IPv4 address. PC1 is configured with an IPv4 address of 172.172.10.21, but it should have been configured with 172.17.10.21.</p>
+          <p></p>
+          <p>In Figure 3, the PC1 Fast Ethernet configuration dialog box shows the updated IPv4 address of 172.17.10.21. The output on the bottom reveals that PC1 has regained connectivity to the Web/TFTP server found at IPv4 address 172.17.10.30.</p>
+        

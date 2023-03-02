@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide>
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+        <element type="TEXT" subType="TITLE" compId="ID_title" color="#ffffff" />
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="media_7.1.2.5.png" />
+        <element type="TEXT" compId="ID_txt01" x="41" y="80" width="587" expand="right" align="left" color="#ffffff" />
+        <element type="TEXT" textId="ID_router_txt1" x="48" y="106.6" width="392" height="41.55" />
+        <text id="ID_router_txt1">
+            <![CDATA[<pre>R1(config)# access-list 1 permit 0.0.0.0 255.255.255.255</br>!OR</br>R1(config)# access-list 1 permit any</pre>]]></text>
+        <element type="TEXT" compId="ID_txt02" x="41" y="238" width="587" expand="right" align="left" color="#ffffff" />
+        <element type="TEXT" textId="ID_router_txt2" x="47.15" y="262.95" width="379" height="41.55" />
+        <text id="ID_router_txt2">
+            <![CDATA[<pre>R1(config)# access-list 1 permit 192.168.10.10 0.0.0.0</br>!OR</br>R1(config)# access-list 1 permit host 192.168.10.10</pre>]]></text>
+        <element type="TEXT" compId="ID_txt03" x="47" y="390" width="576" expand="up" align="left" />
+    </slide>
+</data>

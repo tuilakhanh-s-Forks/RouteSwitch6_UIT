@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.2.5 ACL Statistics</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>ACL Statistics</h1>
+        <div>
+          <p>After an ACL has been applied to an interface and some testing has occurred, the<b> show access-lists </b>command will show statistics for each statement that has been matched. In the output in Figure 1, note that some of the statements have been matched. When traffic is generated that should match an ACL statement, the matches shown in the<b> show access-lists </b>command output should increase. For instance, in this example, if a ping is issued from PC1 to PC3 or PC4, the output will show an increase in the matches for the deny statement of ACL 1. </p>
+          <p></p>
+          <p>Both permit and deny statements will track statistics for matches; however, recall that every ACL has an implied deny any as the last statement. This statement will not appear in the <b>show access-lists</b> command; therefore, statistics for that statement will not appear. To view statistics for the implied deny any statement, the statement can be configured manually and will appear in the output. </p>
+          <p></p>
+          <p>During testing of an ACL, the counters can be cleared using the <b>clear access-list counters</b> command. This command can be used alone or with the number or name of a specific ACL. As shown in Figure 2, this command clears the statistic counters for an ACL.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows how to view A.C.L. statistics.  The figure shows the output from the privileged exec mode command, show access hyphen lists.  The output lists the lines for each A.C.L. and the number of matches for each line.  For example, line 10 of A.C.L. number 1 is displayed followed by the following words, 4 matches.  This means that there have been four packets that met the condition of line 10.  In the figure, a ping is sent that will match the condition of line 10 and when the statistics are viewed; the number of matches has increased. Figure two shows the use of the command, clear access hyphen list counters 1. The output from the command, show access hyphen lists, no longer lists any matches for the A.C.L.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

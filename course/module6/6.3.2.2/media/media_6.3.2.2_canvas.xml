@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+<element type="TEXT" subType="TITLE" compId="ID_title"/>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_6.3.2.2.png" />
+<element type="TEXT" id="ID_static_8" text="172.17.10.1/24" x="210" y="77.55" align="center" width="78.95" bold="1"/>
+<element type="TEXT" compId="ID_txt01" x="137" y="128" width="102.9" expand="up+down" align="center" class="orangeCallOut" />
+
+<element type="TEXT" id="ID_static_1" text="G0/0" x="308" y="104.2" align="center" width="25.65" />
+<element type="TEXT" id="ID_static_2" text="F0/4" x="308.8" y="132.7" align="center" width="23.4" />
+<element type="TEXT" id="ID_static_3" text="F0/11" x="304.1" y="194.5" align="center" width="28.15" />
+<element type="TEXT" id="ID_static_5" text="172.17.10.21" x="214" y="278.1" align="center" width="66.85" bold="1"/>
+<element type="TEXT" id="ID_static_9" text="172.17.30.1/24" x="374.45" y="77.55" align="center" width="78.95" bold="1"/>
+<element type="TEXT" compId="ID_txt02" x="440" y="128" width="106.1" expand="up+down" align="center" class="purpleCallOut"/>
+<element type="TEXT" id="ID_static_7" text="G0/1" x="350" y="104.2" align="center" width="23.85" />
+<element type="TEXT" id="ID_static_10" text="F0/5" x="349.75" y="132.7" align="center" width="23.35" />
+<element type="TEXT" id="ID_static_4" text="F0/6" x="341.4" y="194.5" align="center" width="23.35" />
+
+
+
+
+<element type="TEXT" id="ID_static_6" text="172.17.30.23" x="378" y="278.1" align="center" width="68.35" bold="1"/>
+
+
+
+
+<element type="ROUTER" textId="router_txt_1" x="40" y="303" width="600" height="170" />
+</slide>
+<text id="router_txt_1"><![CDATA[<pre><span class="color">S1(config)#</span> <b>vlan 10</b>
+<span class="color">S1(config-vlan)#</span> <b>vlan 30</b>
+<span class="color">S1(config-vlan)#</span> <b>interface f0/11</b>
+<span class="color">S1(config-if)#</span> <b>switchport access vlan 10</b>
+<span class="color">S1(config-if)#</span> <b>interface f0/4</b>
+<span class="color">S1(config-if)#</span> <b>switchport access vlan 10</b>
+<span class="color">S1(config-if)#</span> <b>interface f0/6</b>
+<span class="color">S1(config-if)#</span> <b>switchport access vlan 30</b>
+<span class="color">S1(config-if)#</span> <b>interface f0/5</b>
+<span class="color">S1(config-if)#</span> <b>switchport access vlan 30</b>
+<span class="color">S1(config-if)#</span> <b>end</b>
+*Mar 20 01:22:56.751: %SYS-5-CONFIG_I: Configured 
+from console by console
+S1# <b>copy running-config startup-config</b>
+Destination filename [startup-config]? 
+Building configuration...
+[OK]</pre>]]></text> 
+</data>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.3.3 Configure Router-on-a-Stick: Router Subinterface Configuration</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configure Router-on-a-Stick: Router Subinterface Configuration</h1>
+        <div>
+          <p>The configuration of the router is different when a router-on-a-stick configuration is used, compared to legacy inter-VLAN routing. The figure shows that multiple subinterfaces are configured.</p>
+          <p></p>
+          <p>Each subinterface is created using the<span class="cmd"><b></b></span><b>interface</b><i> interface_id subinterface_id </i>global configuration mode command. The syntax for the subinterface is the physical interface, in this case g0/0, followed by a period and a subinterface number. As shown in the figure subinterface GigabitEthernet0/0.10 is created using the<b> interface g0/0.10 global </b>configuration mode command. The subinterface number is typically configured to reflect the VLAN number.</p>
+          <p></p>
+          <p>Before assigning an IP address to a subinterface, the subinterface must be configured to operate on a specific VLAN using the<span class="cmd"><b></b></span><b>encapsulation dot1q</b><i> vlan_id </i>command. In this example, subinterface G0/0.10 is assigned to VLAN 10. </p>
+          <p></p>
+          <p>
+            <b>Note:</b> There is a<span class="cmd"><b></b></span><b>native</b><span class="cmd"><b></b></span>keyword option that can be appended to this command to set the IEEE 802.1Q native VLAN. In this example, the<span class="cmd"><b></b></span><b>native</b><span class="cmd"><b></b></span>keyword option was excluded to leave the native VLAN default as VLAN 1.</p>
+          <p></p>
+          <p>Next, assign the IPv4 address for the subinterface using the<span class="cmd"><b></b></span><b>ip address</b><i> ip_address subnet_mask </i>subinterface configuration mode command. In this example, subinterface G0/0.10 is assigned the IPv4 address 172.17.10.1 using the<span class="cmd"><b></b></span><b>ip address 172.17.10.1 255.255.255.0 </b>command. </p>
+          <p></p>
+          <p>This process is repeated for all router subinterfaces required to route between the VLANs configured on the network. Each router subinterface must be assigned an IP address on a unique subnet for routing to occur. For example, the other router subinterface, G0/0.30, is configured to use IPv4 address 172.17.30.1, which is on a different subnet from subinterface G0/0.10.</p>
+          <p></p>
+          <p>After a physical interface is enabled, subinterfaces will automatically be enabled upon configuration. Subinterfaces do not need to be enabled with the<span class="cmd"><b></b></span><b>no shutdown</b><span class="cmd"><b></b></span>command at the subinterface configuration mode level of the Cisco IOS software. </p>
+          <p></p>
+          <p>If the physical interface is disabled, all subinterfaces are disabled. In this example, the command<span class="cmd"><b></b></span><b>no shutdown</b><span class="cmd"><b></b></span>is entered in interface configuration mode for interface G0/0, which in turn, enables all of the configured subinterfaces.</p>
+          <p></p>
+          <p>Individual subinterfaces can be administratively shut down with the<span class="cmd"><b></b></span><b>shutdown</b><b></b>command. Also, individual subinterfaces can be enabled independently with the<span class="cmd"><b></b></span><b>no shutdown</b><span class="cmd"><b></b></span>command in the subinterface configuration mode.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a router-on-a-stick topology and the steps necessary to configure sub-interfaces and the trunk encapsulation on a router that has a single physical connection to a switch.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

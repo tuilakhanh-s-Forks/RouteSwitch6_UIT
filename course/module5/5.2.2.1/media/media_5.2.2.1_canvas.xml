@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+		<slide>
+			<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+			<element type="IMAGE" x="0" y="0" width="680" height="490"  src="media_5.2.2.1.png"/>
+    		<element type="ROUTER" textId="ID_router_txt1" x="40" y="146.45" width="600" height="294" />
+			<element type="IMAGE" x="7.5" y="2.5" width="680" height="490"  src="arrow.png"/>
+
+			<element type="TEXT" id="ID_static_1" text="172.17.99.11" x="416" y="58" align="center" width="67" />
+			<element type="TEXT" id="ID_static_2" text="172.17.99.21" x="247" y="75" align="center" width="67" />
+			<element type="TEXT" compId="ID_txt01" x="282" y="235" width="285" expand="up+down" align="center" class="orangeCallOut" />
+			<element type="TEXT" subType="TITLE" compId="ID_title"/>		
+		</slide>
+				
+<text id="ID_router_txt1"><![CDATA[
+<pre>S1# <b>show run</b>
+Building configuration...
+…
+version 15.0
+hostname S1
+…
+interface FastEthernet0/4
+ shutdown
+!
+interface FastEthernet0/5
+ shutdown
+!
+interface FastEthernet0/6
+description web server
+!
+interface FastEthernet0/7
+ shutdown
+!
+…</pre>
+]]></text>
+
+<text id="ID_s2_txt01"><![CDATA[<div><img src="arrow.png" width="103.8" height="129" /></div>]]></text>
+	
+	
+	
+</data>

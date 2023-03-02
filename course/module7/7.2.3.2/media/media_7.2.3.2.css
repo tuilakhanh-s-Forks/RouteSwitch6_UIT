@@ -1,0 +1,19 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+/*#ID_s1_txt01, #ID_s1_txt02, #ID_s1_txt03 {
+    line-height: 11px;
+	padding-left:2px;
+}
+
+#ID_s1_txt01 {letter-spacing: -1px;}
+#ID_s1_txt02 {letter-spacing: -0.8px;}
+#ID_s1_txt03 {letter-spacing: -1px;}
+#static1{letter-spacing: -1px !important;}*/
+
+#ID_router_txt3{
+	letter-spacing: -0.2px !important;
+}

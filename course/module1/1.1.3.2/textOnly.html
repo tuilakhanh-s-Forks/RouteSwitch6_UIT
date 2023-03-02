@@ -1,0 +1,30 @@
+
+          <p>One distinguishing feature between switches and routers is the type of interfaces supported by each. For example, Layer 2 switches support LANs and, therefore, have multiple FastEthernet or Gigabit Ethernet ports. </p>
+          <p></p>
+          <p>Routers support LANs and WANs and can interconnect different types of networks; therefore, they support many types of interfaces. For example, G2 ISRs have one or two integrated Gigabit Ethernet interfaces and High-Speed WAN Interface Card (HWIC) slots to accommodate other types of network interfaces, including serial, DSL, and cable interfaces. </p>
+          <p></p>
+          <p>To be available, an interface must be: </p>
+          <p>
+            <ul>
+              <li>
+                <b>Configured with an IP address and a subnet mask </b>- Use the<b> ip address</b><i> ip-address subnet-mask </i>interface configuration command.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Activated </b>- By default, LAN and WAN interfaces are not activated (<b>shutdown</b>). To enable an interface, it must be activated using the<b> no shutdown </b>command. (This is similar to powering on the interface.) The interface must also be connected to another device (a hub, a switch, or another router) for the physical layer to be active.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Optionally, the interface could also be configured with a short description of up to 240 characters. It is good practice to configure a description on each interface. On production networks, the benefits of interface descriptions are quickly realized as they are helpful in troubleshooting and to identify a third party connection and contact information.</p>
+          <p></p>
+          <p>Depending on the type of interface, additional parameters may be required. For example, in the lab environment, the serial interface connecting to the serial cable end labeled DCE must be configured with the<b> clock rate </b>command. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Accidentally using the<b> clock rate </b>command on a DTE interface generates a “%Error: This command applies only to DCE interface” informational message.</p>
+          <p></p>
+          <p>Figures 1 through 3 provide examples of configuring the router interfaces of R1. In Figure 3, notice that the state of Serial0/0/0 is “down”. The status will change to “up” when the Serial0/0/0 interface on R2 is configured and activated.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to configure router R2.</p>
+        

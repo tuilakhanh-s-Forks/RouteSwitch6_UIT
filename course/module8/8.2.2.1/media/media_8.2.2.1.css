@@ -1,0 +1,10 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+/*#ID_static_1,#ID_router_txt1,#ID_router_txt2,#ID_router_txt3{
+	background-color:#E9E7E8 !important;
+	padding:3px !important;
+}
+*/

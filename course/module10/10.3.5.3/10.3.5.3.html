@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.3.5.3 Back up the License</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.3.5.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Back up the License</h1>
+        <div>
+          <p>The<b> license save </b>command is used to copy all licenses in a device and store them in a format required by the specified storage location. Saved licenses are restored by using the<b> license install </b>command.</p>
+          <p></p>
+          <p>The command to back up a copy of the licenses on a device is:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router#</span>
+            <span class="cmd">
+              <b> license save </b>
+            </span>
+            <span class="cmd">
+              <i>file-sys://lic-location</i>
+            </span>
+            <span class="cmd"></span>
+          </p>
+          <p></p>
+          <p>Use the<b> show flash0: </b>command to verify that the licenses have been saved (Figure 1).</p>
+          <p></p>
+          <p>The license storage location can be a directory or a URL that points to a file system. Use the<b> ? </b>command to see the storage locations supported by a device. </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 2 to save all license files on router R2.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a worker and the syntax for backing up a license to flash. Figure two is an interactive activity that allows the learner to practice backing up a license.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

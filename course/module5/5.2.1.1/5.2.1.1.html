@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.1.1 SSH Operation</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>SSH Operation</h1>
+        <div>
+          <p>Secure Shell (SSH) is a protocol that provides a secure (encrypted) management connection to a remote device. SSH should replace Telnet for management connections. Telnet is an older protocol that uses unsecure plaintext transmission of both the login authentication (username and password) and the data transmitted between the communicating devices. SSH provides security for remote connections by providing strong encryption when a device is authenticated (username and password) and also for the transmitted data between the communicating devices. SSH is assigned to TCP port 22. Telnet is assigned to TCP port 23.  </p>
+          <p></p>
+          <p>In Figure 1, an attacker can monitor packets using Wireshark. A Telnet stream can be targeted to capture the username and password.</p>
+          <p></p>
+          <p>In Figure 2, the attacker can capture the username and password of the administrator from the plaintext Telnet session.</p>
+          <p></p>
+          <p>Figure 3 shows the Wireshark view of an SSH session. The attacker can track the session using the IP address of the administrator device.</p>
+          <p></p>
+          <p>However, in Figure 4, the username and password are encrypted.</p>
+          <p></p>
+          <p>To enable SSH on a Catalyst 2960 switch, the switch must be using a version of the IOS software including cryptographic (encrypted) features and capabilities. In Figure 5, use the<b> show version </b>command on the switch to see which IOS the switch is currently running.An IOS filename that includes the combination “k9” supports cryptographic (encrypted) features and capabilities.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one is a packet capture file of a telnet session using Wireshark. Figure two shows the details of the telnet session.  Here the data can be read since the data it is not encrypted. Figure three is a packet capture file of an s.s.h. session. Figure four shows the details of the s.s.h. session and the data is encrypted and cannot be read. Figure five shows the output from the command, show version, which displays the current i.o.s. running on the switch.  The letter K and the number 9 in the filename indicate that it supports cryptographic features.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

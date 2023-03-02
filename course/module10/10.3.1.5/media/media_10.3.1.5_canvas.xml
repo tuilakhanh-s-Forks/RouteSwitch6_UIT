@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide>
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_photo.jpg" />
+        <element type="IMAGE" x="140" y="100" width="400" height="133" subType="STD" src="10_3_1_5.jpg" />
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="Symbol_1.png" />
+        <element type="TEXT" compId="ID_txt01" x="429" y="254" width="104" expand="left" align="center" class="orangeCallOut" />
+        <element type="TEXT" subType="TITLE" compId="ID_title" color="#FFFFFF" />
+       <element type="ROUTER" textId="ID_router_txt1" x="40" y="330" width="600" height="75" />
+<text id="ID_router_txt1"><![CDATA[<pre>Router# <b>dir usbflash0:</b>
+Directory of usbflash0:/ 
+1 -rw- 30125020 Dec 22 2032 05:31:32 +00:00 c3825-entservicesk9-mz.123-14.T 
+63158272 bytes total (33033216 bytes free)
+</pre>]]></text>
+    </slide>
+   
+</data>

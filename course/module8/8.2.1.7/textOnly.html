@@ -1,0 +1,32 @@
+
+          <p> As shown in Figure 1, stateless or stateful DHCPv6, or both begin with an ICMPv6 RA message from the router. The RA message might have been a periodic message or solicited by the device using an RS message. </p>
+          <p></p>
+          <p>If stateless or stateful DHCPv6 is indicated in the RA message, then the device begins DHCPv6 client/server communications.</p>
+          <p></p>
+          <p>
+            <b>DHCPv6 Communications</b>
+          </p>
+          <p></p>
+          <p>When stateless DHCPv6 or stateful DHCPv6 is indicated by the RA, DHCPv6 operation is invoked. DHCPv6 messages are sent over UDP. DHCPv6 messages from the server to the client use UDP destination port 546. The client sends DHCPv6 messages to the server using UDP destination port 547.</p>
+          <p></p>
+          <p>The client, now a DHCPv6 client, needs to locate a DHCPv6 server. In Figure 2, the client sends a DHCPv6 SOLICIT message to the reserved IPv6 multicast all-DHCPv6-servers address FF02::1:2. This multicast address has link-local scope, which means routers do not forward the messages to other networks. </p>
+          <p></p>
+          <p>One or more DHCPv6 servers respond with a DHCPv6 ADVERTISE unicast message as shown in Figure 3. The ADVERTISE message informs the DHCPv6 client that the server is available for DHCPv6 service.</p>
+          <p></p>
+          <p>In Figure 4, the client responds with a DHCPv6 REQUEST or INFORMATION-REQUEST unicast message to the server, depending on whether it is using stateful or stateless DHCPv6.</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Stateless DHCPv6 client </b>- The client sends a DHCPv6 INFORMATION-REQUEST message to the DHCPv6 server requesting only configuration parameters, such as DNS server address. The client generated its own IPv6 address using the prefix from the RA message and a self-generated Interface ID.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Stateful DHCPv6 client </b>- The client sends a DHCPv6 REQUEST message to the server to obtain an IPv6 address and all other configuration parameters from the server.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The server sends a DHCPv6 REPLY unicast message to the client containing the information requested in the REQUEST or INFORMATION-REQUEST message as shown in Figure 5.</p>
+        

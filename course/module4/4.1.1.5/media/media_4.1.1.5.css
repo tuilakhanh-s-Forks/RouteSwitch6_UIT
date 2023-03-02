@@ -1,0 +1,26 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+html, body {
+	margin:0;
+	height:100%;
+
+}
+
+#ID_s1_txt11{height:28px !important}
+
+#ID_s1_txt01,#ID_s1_txt02 {padding:4px;}
+
+#ID_s2_txt02,#ID_s2_txt03,#ID_s2_txt03,#ID_s2_txt05,#ID_s2_txt06 {padding:3px;}
+
+#ID_s2_txt09{
+line-height:1;
+}
+@media only screen and (device-width: 768px) {
+#ID_s2_txt07{
+width:78px !important;
+font-size:10px!important;
+
+}}

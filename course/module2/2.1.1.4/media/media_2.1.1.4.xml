@@ -1,0 +1,129 @@
+﻿<textcomponents><component id="MCTable_title"><text><![CDATA[ ]]></text></component>
+
+<!-- instructions -->
+
+
+<component id="ID_s1_title">
+	<text><![CDATA[<b>Activity – Identify the Advantages and Disadvantages of Static Routing</b>]]></text>
+</component>
+
+<!-- instructions -->
+<component id="ID_instr_title">
+	<text><![CDATA[Instruction]]></text>
+</component>
+
+<component id="ID_instr_body">
+	<text><![CDATA[Determine whether the static routing descriptors are advantages or disadvantages of static routing.Click the appropriate field next to each descriptor to indicate your answers.]]></text>
+</component>
+
+<!-- buttons -->
+<component id="ID_s1_CHECK">
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id="ID_s1_RESET">
+	<text><![CDATA[Reset]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[6]]></text>
+</component>
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[2]]></text>
+</component>
+
+
+<component id="MCTable_title">
+    <text><![CDATA[ ]]></text>
+</component>
+
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>Advantage</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>Disadvantage</b>]]></text>
+</component>
+
+
+
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+	<text><![CDATA[Configuration complexity increases with network size.]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[No extra resources (CPU, bandwidth, etc.) are needed.]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[Topology changes will affect configuration.]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[Route path to destination is always the same.]]></text>
+</component>
+
+<component id="txt_q5">
+	<text><![CDATA[Routing tables are small and maintenance is minimal.]]></text>
+</component>
+
+<component id="txt_q6">
+	<text><![CDATA[No automatic updates will be made to the routing table if topology changes.]]></text>
+</component>
+
+
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a5">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a6">
+	<text><![CDATA[2]]></text>
+</component>
+
+
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[You have successfully identified the advantages and disadvantages of static routing.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[You have not successfully identified the advantages and disadvantages of static routing. Please click Reset to try again.]]></text>
+</component>
+
+</textcomponents>

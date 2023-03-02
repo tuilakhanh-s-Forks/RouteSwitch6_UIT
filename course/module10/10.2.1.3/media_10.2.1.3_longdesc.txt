@@ -1,0 +1,1 @@
+Figures 1, 2, and 3 have the same topology showing NTP servers and NTP clients. Router R1 is an NTP server for switch S1. In Figure 1, R1 is configured as an NTP server. In Figure 2, the 'show ntp associations' and 'show ntp status' commands verify that R1 is now an NTP server. In Figure 3, switch S1 is configured and verified as an NTP server.

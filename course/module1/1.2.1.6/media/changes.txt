@@ -1,0 +1,35 @@
+BEFORE
+<component id="ID_s1_inst">
+<text><![CDATA[<b>Activity - Match Layers</b> In this activity, you are given a blank frame to build according to the scenario. Determine the destination and source MAC addresses, and the source IP and destination IP addresses that would correctly build the frame as specified. Enter your answers by dragging the MAC and IP addresses to the appropriate fields.<br><br><b>Scenario 1</b> – PC1 is sending data to PC2 – all devices are ARP complete. In this frame, indicate the start of the data traffic for frame building. All answers will not be used.]]></text>
+</component>
+
+AFTER
+<component id="ID_s1_inst">
+<text><![CDATA[<b>Activity - Match Layers</b>]]></text>
+</component>
+
+<component id='ID_s1_instr_title'>
+	<text><![CDATA[Instructions]]></text>
+</component>
+
+<component id='ID_s1_instr_body'>
+	<text><![CDATA[In this activity, you are given a blank frame to build according to the scenario. Determine the destination and source MAC addresses, and the source IP and destination IP addresses that would correctly build the frame as specified. Enter your answers by dragging the MAC and IP addresses to the appropriate fields.<br><br><b>Scenario 1</b> – PC1 is sending data to PC2 – all devices are ARP complete. In this frame, indicate the start of the data traffic for frame building. All answers will not be used.]]></text>
+</component>
+----------------------------------------------------------------------------------------------------------------
+BEFORE
+<component id="ID_s1_inst">
+<text><![CDATA[<b>Activity - Match Layers</b> In this activity, you are given a blank frame to build according to the scenario. Determine the destination and source MAC addresses, and the source IP and destination IP addresses that would correctly build the frame as specified. Enter your answers by dragging the MAC and IP addresses to the appropriate fields.<br/><br/><b>Scenario 2</b> – R2 has received the frame from PC1 and now needs to send it to PC2. All devices are still ARP complete. In this frame, build the frame to transfer the data from R2 to PC2. All answers will not be used.]]></text>
+</component>
+
+AFTER
+<component id="ID_s2_inst">
+<text><![CDATA[<b>Activity - Match Layers</b>]]></text>
+</component>
+
+<component id='ID_s2_instr_title'>
+	<text><![CDATA[Instructions]]></text>
+</component>
+
+<component id='ID_s2_instr_body'>
+	<text><![CDATA[In this activity, you are given a blank frame to build according to the scenario. Determine the destination and source MAC addresses, and the source IP and destination IP addresses that would correctly build the frame as specified. Enter your answers by dragging the MAC and IP addresses to the appropriate fields.<br/><br/><b>Scenario 2</b> – R2 has received the frame from PC1 and now needs to send it to PC2. All devices are still ARP complete. In this frame, build the frame to transfer the data from R2 to PC2. All answers will not be used.]]></text>
+</component>

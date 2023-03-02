@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.1.1 ip route Command</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>ip route Command</h1>
+        <div>
+          <p>Static routes are configured using the<b> ip route </b>global configuration command. The basic syntax for the command is shown in the figure.</p>
+          <p></p>
+          <p>The following parameters are required to configure static routing:</p>
+          <p>
+            <ul>
+              <li>
+                <i>network-address</i>
+                <b></b>- Destination network address of the remote network to be added to the routing table, often this is referred to as the prefix.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <i>subnet-mask</i>
+                <b></b>- Subnet mask, or just mask, of the remote network to be added to the routing table. The subnet mask can be modified to summarize a group of networks. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>One or both of the following parameters must also be used:</p>
+          <p>
+            <ul>
+              <li>
+                <i>ip-address</i>
+                <b></b>- The IP address of the connecting router to use to forward the packet to the remote destination network. Commonly referred to as the next hop. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <i>exit-intf</i>
+                <b></b>- The outgoing interface to use to forward the packet to the next hop.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p></p>
+          <p>The <i>distance</i> parameter is used to create a floating static route by setting an administrative distance that is higher than a dynamically learned route.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the syntax for configuring a static route.  The syntax is "i. p. route", followed by the destination network address, followed by the destination network mask, followed by the exit interface or the next hop I. P. address.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

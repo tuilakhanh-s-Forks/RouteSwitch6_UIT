@@ -1,0 +1,1 @@
+Figure shows R1 configured with the ‘service timestamps log datetime’ command to force log messages to display the date and time.

@@ -1,0 +1,9 @@
+
+          <p>In the example shown in the figure, a Cisco router is used as the stateless DHCPv6 client. This is not a typical scenario and is used for demonstration purposes only. Typically, a stateless DHCPv6 client is a device, such as a computer, tablet, mobile device, or webcam.</p>
+          <p></p>
+          <p>The client router needs an IPv6 link-local address on the interface to send and receive IPv6 messages, such as RS messages and DHCPv6 messages. The link-local address of a router is created automatically when IPv6 is enabled on the interface. This can happen when a global unicast address is configured on the interface or by using the<b> ipv6 enable </b>command. After the router receives a link-local address, it can participate in IPv6 neighbor discovery. </p>
+          <p></p>
+          <p>In this example, the<b> ipv6 enable </b>command is used because the router does not yet have a global unicast address.</p>
+          <p></p>
+          <p>The<b> ipv6 address autoconfig </b>command enables automatic configuration of IPv6 addressing using SLAAC. By assumption, the server router is configured for stateless DHCPv6 so it sends an RA message to inform the client router to use stateless DHCPv6 to obtain DNS information.</p>
+        

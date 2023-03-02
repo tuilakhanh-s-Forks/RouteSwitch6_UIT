@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.2.4 Wildcard Mask Keywords</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Wildcard Mask Keywords</h1>
+        <div>
+          <p>Working with decimal representations of binary wildcard mask bits can be tedious. To simplify this task, the keywords<b> host </b>and<b> any</b> help identify the most common uses of wildcard masking. These keywords eliminate entering wildcard masks when identifying a specific host or an entire network. These keywords also make it easier to read an ACL by providing visual clues as to the source or destination of the criteria.</p>
+          <p></p>
+          <p>The<b> host</b> keyword substitutes for the 0.0.0.0 mask. This mask states that all IPv4 address bits must match to filter just one host address.</p>
+          <p>The <b>any</b> option substitutes for the IPv4 address and 255.255.255.255 mask. This mask says to ignore the entire IPv4 address or to accept any addresses. </p>
+          <p></p>
+          <p>
+            <b>Example 1: Wildcard Masking Process with a Single IPv4 Address</b>
+          </p>
+          <p></p>
+          <p>In Example 1 in the figure, instead of entering <b>192.168.10.10 0.0.0.0</b>, you can use <b>host 192.168.10.10</b>. </p>
+          <p></p>
+          <p>
+            <b>Example 2: Wildcard Masking Process with a Match Any IPv4 Address</b>
+          </p>
+          <p></p>
+          <p>In Example 2 in the figure, instead of entering <b>0.0.0.0 255.255.255.255</b>, you can use the keyword<b> any</b> by itself.</p>
+          <p></p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows an example of the all zeros wildcard mask matching all binary bits for an exact I.P. address match. The figure also shows the all ones wildcard mask implying any I.P. address will match.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

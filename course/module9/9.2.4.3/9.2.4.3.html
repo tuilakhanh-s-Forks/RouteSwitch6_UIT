@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.4.3 Configuring Port Forwarding with IOS</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.4.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configuring Port Forwarding with IOS</h1>
+        <div>
+          <p>Implementing port forwarding with IOS commands is similar to the commands used to configure static NAT.  Port forwarding is essentially a static NAT translation with a specified TCP or UDP port number.</p>
+          <p></p>
+          <p>Figure 1 shows the static NAT command used to configure port forwarding using IOS. </p>
+          <p></p>
+          <p>Figure 2 shows an example of configuring port forwarding using IOS commands on router R2.  192.168.10.254 is the inside local IPv4 address of the web server listening on port 80. Users will access this internal web server using the global IPv4 address 209.165.200.225, a globally unique public IPv4 address. In this case, it is the address of the Serial 0/1/0 interface of R2. The global port is configured as 8080. This will be the destination port used, along with the global IPv4 address of 209.165.200.225 to access the internal web server. Notice within the NAT configuration, the following command parameters:</p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <i>local-ip</i>
+                </span> = 192.168.10.254</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <i>local-port</i>
+                </span> = 80</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <i>global-ip</i>
+                </span> = 209.165.200.225</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <i>global-port</i>
+                </span> = 8080</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>When a well-known port number is not being used, the client must specify the port number in the application.</p>
+          <p></p>
+          <p>Like other types of NAT, port forwarding requires the configuration of both the inside and outside NAT interfaces.</p>
+          <p></p>
+          <p>Similar to static NAT, the <b>show ip nat translations</b> command can be used to verify the port forwarding, as shown in Figure 3. </p>
+          <p></p>
+          <p>In the example, when the router receives the packet with the inside global IPv4 address of 209.165.200.225 and a TCP destination port 8080, the router performs a NAT table lookup using the destination IPv4 address and destination port as the key. The router then translates the address to the inside local address of host 192.168.10.254 and destination port 80. R2 then forwards the packet to the web server. For return packets from the web server back to the client, this process is reversed.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the syntax for configuring a port forward using the Cisco I. O. S.  There is a table describing the command options. Figure two shows a router with an inside network on the left and an outside network on the right.  This is achieved using static nat. The commands for configuring port forwarding are listed below the image. Figure three shows an S. O. H. O. router with an inside network on the left and an outside network on the right.  The output from the "show i. p. nat translations" command is listed below the image.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

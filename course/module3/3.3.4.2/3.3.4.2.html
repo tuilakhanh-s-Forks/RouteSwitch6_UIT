@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.4.2 Directly Connected Entries</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.4.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Directly Connected Entries</h1>
+        <div>
+          <p>The routing table of R1 is displayed in Figure 1 using the<b> show ipv6 route </b>command. Although, the command output is displayed slightly differently than in the IPv4 version, it still contains the relevant route information. </p>
+          <p></p>
+          <p>Figure 2 highlights the connected network and local routing table entries of the directly connected interfaces. The three entries were added when the interfaces were configured and activated. </p>
+          <p></p>
+          <p>As shown in Figure 3, directly connected route entries display the following information:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Route source </b>- Identifies how the route was learned. Directly connected interfaces have two route source codes (C identifies a directly connected network while L identifies that this is a local route.) </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Directly connected network </b>- The IPv6 address of the directly connected network.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Administrative distance </b>- Identifies the trustworthiness of the route source. IPv6 uses the same distances as IPv4. A value of 0 indicates the best, most trustworthy source.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Metric </b>- Identifies the value assigned to reach the remote network. Lower values indicate preferred routes. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Outgoing interface </b>- Identifies the exit interface to use when forwarding packets to the destination network.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: The serial links have reference bandwidths configured to observe how EIGRP metrics select the best route. The reference bandwidth is not a realistic representation of modern networks. It is used only to provide a visual depiction of link speed.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the I.P.V.6. routing table for router R-1 produced from the command, show i.p. route.  The table consists of three directly connected routes, three interface I.P. addresses, and three networks learned from E.I.G.R.P. Figure two highlights the three directly connected networks and the three interface I.P. addresses. Figure three lists one of the entries and identifies each piece of the entry.  The line reads C for a directly connected route, 2 0 0 1 colon D B 8 colon C A F E colon A 0 0 1 colon colon slash 64 for the network address, 0 slash 0 for the administrative distance and the metric.  The line ends with via serial zero slash zero slash zero for the outgoing interface.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

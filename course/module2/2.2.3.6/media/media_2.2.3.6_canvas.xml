@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+       <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="media_2.2.3.6.png" />
+            <element type="TEXT" id="ID_static_1" text="2001:DB8:ACAD:2::/64" bold="1" x="380" y="92" align="center" width="72.35" />
+			<element type="TEXT" id="ID_static_2" text="2001:DB8:ACAD:4::/64" bold="1" x="175" y="230" align="center" width="72.35" />
+			<element type="TEXT" id="ID_static_3" text="2001:DB8:ACAD:5::/64" bold="1" x="390" y="230" align="center" width="78.95" />
+			<element type="TEXT" id="ID_static_4" text="2001:DB8:ACAD:1::/64" bold="1" x="80" y="317" align="center" width="72.35" />
+			<element type="TEXT" id="ID_static_5" text="2001:DB8:ACAD:3::/64" bold="1" x="480" y="317" align="center" width="78.95" />
+            <element type="TEXT" id="ID_static_6" text="G0/0" x="309.65" y="145.5" align="center" width="26" />
+            <element type="TEXT" id="ID_static_7" text="S0/0/1 DCE" x="365.55" y="196.05" align="left" width="34" />
+            <element type="TEXT" id="ID_static_8" text="S0/0/0" x="284.3" y="196.2" align="center" width="36" />
+            <element type="TEXT" id="ID_static_9" text="S0/0/1" x="346.7" y="259.3" align="center" width="34" />
+            <element type="TEXT" id="ID_static_10" text="G0/0" x="230.55" y="272.7" align="center" width="26" />
+            <element type="TEXT" id="ID_static_11" text="G0/0" x="424.1" y="271.9" align="center" width="26" />
+            <element type="TEXT" id="ID_static_12" text="S0/0/0 DCE" x="304.25" y="258" align="right" width="36" />
+            <element type="TEXT" id="ID_static_13" text=":1" x="343.6" y="144.9" align="center" width="8" />
+            <element type="TEXT" id="ID_static_14" text=":1" x="246.35" y="291" align="center" width="8" />
+            <element type="TEXT" id="ID_static_15" text=":2" x="330" y="203.45" align="center" width="9" />
+            <element type="TEXT" id="ID_static_16" text=":2" x="344.3" y="203.45" align="center" width="9" />
+            <element type="TEXT" id="ID_static_17" text=":1" x="282.65" y="254.1" align="center" width="8" />
+            <element type="TEXT" id="ID_static_18" text=":1" x="388.25" y="254.1" align="center" width="8" />
+            <element type="TEXT" id="ID_static_19" text=":1" x="424.1" y="291" align="center" width="8" />
+            <element type="TEXT" id="ID_static_20" text="PC2" x="328.15" y="52.25" align="center" width="25" color="#FFFFFF" bold="1" />
+            <element type="TEXT" id="ID_static_21" text="R2" x="332.9" y="185.45" align="center" width="25" color="#FFFFFF" bold="1" />
+            <element type="TEXT" id="ID_static_22" text="PC1" x="92.15" y="278.15" align="center" width="25" color="#FFFFFF" bold="1" />
+            <element type="TEXT" id="ID_static_23" text="R1" x="278.75" y="295.25" align="center" width="25" color="#FFFFFF" bold="1" />
+            <element type="TEXT" id="ID_static_24" text="R3" x="388.2" y="294.25" align="center" width="25" color="#FFFFFF" bold="1" />
+            <element type="TEXT" id="ID_static_25" text="PC3" x="569.65" y="278.15" align="center" width="25" color="#FFFFFF" bold="1" />
+        <slide>
+            <element type="TEXT" subType="TITLE" compId="ID_s1_title" />
+             <element type="ROUTER" textId="ID_router_txt1" x="30" y="334.9" width="620" height="140" color="#FFFFFF" bold="1" />
+            <text id="ID_router_txt1">
+<![CDATA[<pre>R1# show ipv6 route static
+IPv6 Routing Table - default - 8 entries
+Codes: C - Connected, L - Local, S - Static, U - Per-user Static route, B - BGP,
+       D - EIGRP, EX - EIGRP external, ND - ND Default, NDp - ND Prefix,
+       R - RIP, I1 - ISIS L1, I2 - ISIS L2, IA - ISIS interarea, IS - ISIS summary,
+       DCE - Destination, NDr - Redirect, O - OSPF Intra, OI - OSPF Inter,
+       OE1 - OSPF ext 1, OE2 - OSPF ext 2, ON1 - OSPF NSSA ext 1,
+       ON2 - OSPF NSSA ext 2
+S   2001:DB8:ACAD:2::/64 [1/0]
+     via 2001:DB8:ACAD:4::2
+S   2001:DB8:ACAD:3::/64 [1/0]
+     via 2001:DB8:ACAD:4::2
+S   2001:DB8:ACAD:5::/64 [1/0]
+     via 2001:DB8:ACAD:4::2
+R1#</pre>]]>
+</text>
+        </slide>
+        <slide>
+            <element type="TEXT" subType="TITLE" compId="ID_s2_title" />
+            <element type="ROUTER" textId="ID_router_txt2" x="30" y="334.9" width="620" height="140" color="#FFFFFF" bold="1" />
+            <text id="ID_router_txt2">
+<![CDATA[<pre>R1# show ipv6 route 2001:db8:acad:3::
+Routing entry for 2001:DB8:ACAD:3::/64
+  Known via "static", distance 1, metric 0
+  Route count is 1/1, share count 0
+  Routing paths:
+    2001:DB8:ACAD:4::2
+      Last updated 00:19:11 ago
+R1#</pre>]]>
+</text>
+        </slide>
+        <slide>
+            <element type="TEXT" subType="TITLE" compId="ID_s3_title" />
+             <element type="ROUTER" textId="ID_router_txt3" x="30" y="334.9" width="620" height="140" color="#FFFFFF" bold="1" />
+            <text id="ID_router_txt3">
+<![CDATA[<pre>R1# show running-config | section ipv6 route
+ipv6 route 2001:DB8:ACAD:2::/64 2001:DB8:ACAD:4::2
+ipv6 route 2001:DB8:ACAD:3::/64 2001:DB8:ACAD:4::2
+ipv6 route 2001:DB8:ACAD:5::/64 2001:DB8:ACAD:4::2
+R1#</pre>]]>
+</text>
+        </slide>
+    </slide>
+</data>

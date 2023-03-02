@@ -1,0 +1,67 @@
+
+          <p>To use numbered standard ACLs on a Cisco router, you must first create the standard ACL and then activate the ACL on an interface.</p>
+          <p></p>
+          <p>The <b>access-list</b> global configuration command defines a standard ACL with a number in the range of 1 through 99. Cisco IOS Software Release 12.0.1 extended these numbers by allowing 1300 to 1999 to be used for standard ACLs. This allows for a maximum of 798 possible standard ACLs. These additional numbers are referred to as expanded IPv4 ACLs.</p>
+          <p></p>
+          <p>The full syntax of the standard ACL command is as follows:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config)# </span>
+            <span class="cmd">
+              <b>access-list</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>access-list-number</i>
+            </span>
+            <span class="cmd"> {</span>
+            <span class="cmd">
+              <b>deny</b>
+            </span>
+            <span class="cmd"> | </span>
+            <span class="cmd">
+              <b>permit</b>
+            </span>
+            <span class="cmd"> | </span>
+            <span class="cmd">
+              <b>remark</b>
+            </span>
+            <span class="cmd"> } </span>
+            <span class="cmd">
+              <i>source</i>
+            </span>
+            <span class="cmd"> [ </span>
+            <span class="cmd">
+              <i>source-wildcard</i>
+            </span>
+            <span class="cmd"> ][ </span>
+            <span class="cmd">
+              <b>log</b>
+            </span>
+            <span class="cmd"> ]</span>
+          </p>
+          <p></p>
+          <p>Figure 1 provides a detailed explanation of the syntax for a standard ACL.</p>
+          <p></p>
+          <p>ACEs can permit or deny an individual host or a range of host addresses. To create a host statement in numbered ACL 10 that permits a specific host with the IPv4 address 192.168.10.10, you would enter:</p>
+          <p></p>
+          <p>
+            <span class="cmd">R1(config)# </span>
+            <span class="cmd">
+              <b>access-list 10 permit host 192.168.10.10</b>
+            </span>
+          </p>
+          <p></p>
+          <p>As shown in Figure 2, to create a statement that will permit a range of IPv4 addresses in a numbered ACL 10 that permits all IPv4 addresses in the network 192.168.10.0/24, you would enter:</p>
+          <p></p>
+          <p>
+            <span class="cmd">R1(config)# </span>
+            <span class="cmd">
+              <b>access-list 10 permit 192.168.10.0 0.0.0.255</b>
+            </span>
+          </p>
+          <p></p>
+          <p>To remove the ACL, the global configuration <b>no access-list</b> command is used. Issuing the <b>show access-list</b> command confirms that access list 10 has been removed.</p>
+          <p></p>
+          <p>Typically, when an administrator creates an ACL, the purpose of each statement is known and understood. However, to ensure that the administrator and others recall the purpose of a statement, remarks should be included. The <b>remark</b> keyword is used for documentation and makes access lists a great deal easier to understand. Each remark is limited to 100 characters. The ACL in Figure 3, although fairly simple, is used to provide an example. When reviewing the ACL in the configuration using the <b>show running-config</b> command, the remark is also displayed.</p>
+        

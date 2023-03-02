@@ -1,0 +1,107 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Security Violation Modes</b>]]></text>
+</component>
+
+<component id="ID_table">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' class="mtable" glowcolor='#808080' cellpadding='4'>
+<tr>
+<td bgcolor='#FFFFFF' colspan='6'><font class="mtitle" size='15' color='#393536'><b>Security Violation Modes</b></font></td>
+</tr>
+<tr class="mtable_top">
+<td colspan='6' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+<tr>
+<td bgcolor='#666263'  valign="top" class="tit"><font color='#ffffff' size="11"><b>Violation Mode</b></font></td>
+<td bgcolor='#666263'  valign="top" class="tit"><font color='#ffffff' size="11"><b>Forwards Traffic</b></font></td>
+<td bgcolor='#666263'  valign="top" class="tit"><font color='#ffffff' size="11"><b>Sends Syslog Message</b></font></td>
+<td bgcolor='#666263'  valign="top" class="tit"><font color='#ffffff' size="11"><b>Displays Error Message</b></font></td>
+<td bgcolor='#666263'  valign="top" class="tit"><font color='#ffffff' size="11"><b>Increases Violation Counter</b></font></td>
+<td bgcolor='#666263'  valign="top" class="tit"><font color='#ffffff' size="11"><b>Shuts Down Port</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Protect</td>
+<td bgcolor='#F2F2F2'>No</td>
+<td bgcolor='#F2F2F2'>No</td>
+<td bgcolor='#F2F2F2'>No</td>
+<td bgcolor='#F2F2F2'>No</td>
+<td bgcolor='#F2F2F2'>No</td>
+</tr>
+<tr>
+<td bgcolor='#E9E7E8'>Restrict</td>
+<td bgcolor='#E9E7E8'>No</td>
+<td bgcolor='#E9E7E8'>Yes</td>
+<td bgcolor='#E9E7E8'>No</td>
+<td bgcolor='#E9E7E8'>Yes</td>
+<td bgcolor='#E9E7E8'>No</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Shutdown</td>
+<td bgcolor='#F2F2F2'>No</td>
+<td bgcolor='#F2F2F2'>No</td>
+<td bgcolor='#F2F2F2'>No</td>
+<td bgcolor='#F2F2F2'>Yes</td>
+<td bgcolor='#F2F2F2'>Yes</td>
+</tr></table>]]></text>
+</component>
+
+
+<component id="ID_table_html">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' class="mtable" glowcolor='#808080' cellpadding='4'>
+
+
+<caption  class="mtable_title" colspan="6" bgcolor='#FFFFFF'>
+               <font size="15"><b>Security Violation Modes</b></font>
+           </caption>
+
+<tr class="mtable_top">
+<td colspan='6' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+<tr>
+<th scope="col" bgcolor='#666263'  valign="top" class="tit"><font color='#ffffff' size="11"><b>Violation Mode</b></font></th>
+<th scope="col" bgcolor='#666263'  valign="top" class="tit"><font color='#ffffff' size="11"><b>Forwards Traffic</b></font></th>
+<th scope="col" bgcolor='#666263'  valign="top" class="tit"><font color='#ffffff' size="11"><b>Sends Syslog Message</b></font></th>
+<th scope="col" bgcolor='#666263'  valign="top" class="tit"><font color='#ffffff' size="11"><b>Displays Error Message</b></font></th>
+<th scope="col" bgcolor='#666263'  valign="top" class="tit"><font color='#ffffff' size="11"><b>Increases Violation Counter</b></font></th>
+<th scope="col" bgcolor='#666263'  valign="top" class="tit"><font color='#ffffff' size="11"><b>Shuts Down Port</b></font></th>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Protect</td>
+<td bgcolor='#F2F2F2'>No</td>
+<td bgcolor='#F2F2F2'>No</td>
+<td bgcolor='#F2F2F2'>No</td>
+<td bgcolor='#F2F2F2'>No</td>
+<td bgcolor='#F2F2F2'>No</td>
+</tr>
+<tr>
+<td bgcolor='#E9E7E8'>Restrict</td>
+<td bgcolor='#E9E7E8'>No</td>
+<td bgcolor='#E9E7E8'>Yes</td>
+<td bgcolor='#E9E7E8'>No</td>
+<td bgcolor='#E9E7E8'>Yes</td>
+<td bgcolor='#E9E7E8'>No</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Shutdown</td>
+<td bgcolor='#F2F2F2'>No</td>
+<td bgcolor='#F2F2F2'>No</td>
+<td bgcolor='#F2F2F2'>No</td>
+<td bgcolor='#F2F2F2'>Yes</td>
+<td bgcolor='#F2F2F2'>Yes</td>
+</tr></table>]]></text>
+</component>
+
+<component id="ID_Title_txt01">
+<text><![CDATA[Security Violations Occur In These Situations]]></text>
+</component>
+
+<component id="ID_Body_txt01">
+<text><![CDATA[<textformat blockindent='-14'><ul><li>A station with MAC address that is not in the address table attempts to access the interface when the table is full.</li><li>An address is being used on two secure interfaces in the same VLAN.</li></ul></textformat>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Security violation modes include: Protect, Restrict, and Shutdown. ]]></text>
+</component>
+
+</textcomponents>

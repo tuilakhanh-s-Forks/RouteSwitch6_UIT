@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.3.1.3 Chapter 5: Switch Configuration</title>
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.3.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Chapter 5: Switch Configuration</h1>
+        <div>
+          <p>When a Cisco LAN switch is first powered on it goes through the following boot sequence:</p>
+          <p></p>
+          <p>1. First, the switch loads a power-on self-test (POST) program stored in ROM.  POST checks the CPU subsystem. It tests the CPU, DRAM, and the portion of the flash device that makes up the flash file system.</p>
+          <p>2. Next, the switch loads the boot loader software. The boot loader is a small program stored in ROM and is run immediately after POST successfully completes.</p>
+          <p>3. The boot loader performs low-level CPU initialization. It initializes the CPU registers, which control where physical memory is mapped, the quantity of memory, and its speed. </p>
+          <p>4. The boot loader initializes the flash file system on the system board. </p>
+          <p>5. Finally, the boot loader locates and loads a default IOS operating system software image into memory and gives control of the switch over to the IOS. </p>
+          <p></p>
+          <p>The specific Cisco IOS file that is loaded is specified by the BOOT environmental variable. After the Cisco IOS is loaded it uses the commands found in the startup-config file to initialize and configure the interfaces. If the Cisco IOS files are missing or damaged, the boot loader program can be used to reload or recover from the problem.</p>
+          <p></p>
+          <p>The operational status of the switch is displayed by a series of LEDs on the front panel. These LEDs display such things as port status, duplex, and speed.</p>
+          <p></p>
+          <p>An IP address is configured on the SVI of the management VLAN to allow for remote configuration of the device. A default gateway belonging to the management VLAN must be configured on the switch using the <b>ip default-gateway</b> command. If the default gateway is not properly configured, remote management is not possible. It is recommended that Secure Shell (SSH) be used to provide a secure (encrypted) management connection to a remote device to prevent the sniffing of unencrypted user names and passwords, which is possible when using protocols such as Telnet. </p>
+          <p></p>
+          <p>One of the advantages of a switch is that it allows full-duplex communication between devices, effectively doubling the communication rate. Although it is possible to specify the speed and duplex settings of a switch interface, it is recommended that the switch be allowed to set these parameters automatically to avoid errors.</p>
+          <p></p>
+          <p>Switch port security is a requirement to prevent such attacks as MAC Address Flooding and DHCP Spoofing.  Switch ports should be configured to allow only frames with specific source MAC addresses to enter. Frames from unknown source MAC addresses should be denied and cause the port to shut down to prevent further attacks.</p>
+          <p></p>
+          <p>Port security is only one defense against network compromise. There are 10 best practices that represent the best insurance for a network:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Develop a written security policy for the organization.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Shut down unused services and ports.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Use strong passwords and change them often.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Control physical access to devices.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Avoid using standard insecure HTTP websites, especially for login screens.  Instead use the more secure HTTPS.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Perform backups and test the backed up files on a regular basis.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Educate employees about social engineering attacks, and develop policies to validate identities over the phone, via email, and in person.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Encrypt sensitive data and protect it with a strong password.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Implement security hardware and software, such as firewalls.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Keep IOS software up-to-date by installing security patches weekly or daily, if possible.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>These methods are only a starting point for security management. Organizations must remain vigilant at all times to defend against continually evolving threats.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a table listing the basic configuration commands for switch interfaces.  The C.L.I. begins in privilege exec mode and the first command is, configure terminal.  This will move to global configuration mode.  The next command is, interface fast Ethernet zero slash one, and the switch prompt becomes config hyphen i.f. inside the parentheses.  This moves to the configuration mode for the specified interface.  The next command is, duplex full. This command will set the duplex option to full.  The next command is, speed 100. This command will set the speed on the interface to 100 megabits per second.  The running configuration is copied to the startup configuration file with the command, copy running hyphen config startup hyphen config.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

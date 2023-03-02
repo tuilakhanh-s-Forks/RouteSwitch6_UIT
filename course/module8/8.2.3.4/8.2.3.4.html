@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.3.4 Configuring a Router as a DHCPv6 Relay Agent</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configuring a Router as a DHCPv6 Relay Agent</h1>
+        <div>
+          <p>If the DHCPv6 server is located on a different network than the client, then the IPv6 router can be configured as a DHCPv6 relay agent. The configuration of a DHCPv6 relay agent is similar to the configuration of an IPv4 router as a DHCPv4 relay. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Although the configuration of a DHCPv6 relay agent is similar to DHCPv4, IPv6 router or relay agents forward DHCPv6 messages slightly differently than DHCPv4 relays. The messages and the process are beyond the scope of this curriculum.</p>
+          <p></p>
+          <p>Figure 1 shows an example topology where a DHCPv6 server is located on the 2001:DB8:CAFE:1::/64 network. The network administrator wants to use this DHCPv6 server as a central, stateful DHCPv6 server to allocate IPv6 addresses to all clients. Therefore, clients on other networks such as PC1 on the 2001:DB8:CAFE:A::/64 network, must communicate with the DHCPv6 server. </p>
+          <p></p>
+          <p>DHCPv6 messages from clients are sent to the IPv6 multicast address FF02::1:2. All_DHCPv6_Relay_Agents_and_Servers address. This address has link-local scope which means routers do not forward these messages. The router must be configured as a DHCPv6 relay agent to enable the DHCPv6 client and server to communicate.</p>
+          <p></p>
+          <p>
+            <b>Configuring the DHCPv6 Relay Agent</b>
+          </p>
+          <p></p>
+          <p>As shown in Figure 2, a DHCPv6 relay agent is configured using the <b>ipv6 dhcp relay destination</b> command. This command is configured on the interface facing the DHCPv6 client using the address of the DHCPv6 server as the destination.</p>
+          <p></p>
+          <p>The <b>show ipv6 dhcp interface</b> command verifies the G0/0 interface is in relay mode with 2001:DB8:CAFE:1::6 configured as the DHCPv6 server.</p>
+          <p></p>
+          <p>Using the Syntax Checker in Figure 3, configure the DHCPv6 relay commands on the correct router so that PC3 can receive IPv6 addressing information from the DHCPv6 server. Refer to Figure 1 to view the network topology.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a network topology of three routers.  R-2 is in the middle and has a serial WAN link to R-1 and a serial WAN link to R-3.  R-1 and R-3 are not directly connected.  R-1 has two active gigabit Ethernet LANs. Each of these LANs has a switch connected to them, and each switch is connected to a computer. There is also a d.h.c.p. server connected to S-2.  R-3 has one active gigabit Ethernet LAN, which contains a switch and a computer. Figure two shows the commands used to configure a d.h.c.p.v.6. relay agent.  The example begins in global configuration mode and first moves to the specific interface with the command, interface g zero slash zero.  The next command is, i.p.v.6. d.h.c.p. relay destination 2 0 0 1 colon d b 8 colon c a f e colon 1 colon colon 6.  The figure then shows the output from the command, show i.p.v.6. d.h.c.p. interface g zero slash zero.  This output states that the interface is in relay mode and lists the configured relay i.p. address. Figure three is an interactive activity that allows the learner to configure a d.h.c.p.v.6. relay agent.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

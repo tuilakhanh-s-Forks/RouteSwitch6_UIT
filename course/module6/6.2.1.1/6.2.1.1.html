@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.1.1 VLAN Ranges on Catalyst Switches</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>VLAN Ranges on Catalyst Switches</h1>
+        <div>
+          <p>Different Cisco Catalyst switches support various numbers of VLANs. The number of supported VLANs is large enough to accommodate the needs of most organizations. For example, the Catalyst 2960 and 3560 Series switches support over 4,000 VLANs. Normal range VLANs on these switches are numbered 1 to 1,005 and extended range VLANs are numbered 1,006 to 4,094. The figure illustrates the available VLANs on a Catalyst 2960 switch running Cisco IOS Release 15.x.</p>
+          <p></p>
+          <p>
+            <b>Normal Range VLANs</b>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Used in small- and medium-sized business and enterprise networks.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Identified by a VLAN ID between 1 and 1005. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>IDs 1002 through 1005 are reserved for Token Ring and Fiber Distributed Data Interface (FDDI) VLANs.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>IDs 1 and 1002 to 1005 are automatically created and cannot be removed.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Configurations are stored within a VLAN database file, called vlan.dat. The vlan.dat file is located in the flash memory of the switch. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The VLAN Trunking Protocol (VTP), which helps manage VLAN configurations between switches, can only learn and store normal range VLANs.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Extended Range VLANs</b>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Enable service providers to extend their infrastructure to a greater number of customers. Some global enterprises could be large enough to need extended range VLAN IDs.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Are identified by a VLAN ID between 1006 and 4094.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Configurations are not written to the vlan.dat file.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Support fewer VLAN features than normal range VLANs.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Saved, by default, in the running configuration file. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>VTP does not learn extended range VLANs.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: 4096 is the upper boundary for the number of VLANs available on Catalyst switches, because there are 12 bits in the VLAN ID field of the IEEE 802.1Q header.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the syntax for configuring a switchport as a trunk and configuring the native v. lan as v. lan ninety nine.  The output of the "show interfaces trunk" command is also displayed.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

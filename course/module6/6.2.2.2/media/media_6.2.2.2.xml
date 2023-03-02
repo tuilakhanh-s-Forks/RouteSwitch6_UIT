@@ -1,0 +1,112 @@
+<textcomponents>
+
+<!--SLIDE 1-->
+<component id="ID_s1_title">
+<text><![CDATA[<b>Resetting Configured Values on Trunk Links</b>]]></text>
+</component>
+
+<component id="ID_table01">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' 
+glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+<td colspan='2' bgcolor='#FFFFFF'><font size='15' color='#393536'><b>Cisco Switch IOS Commands</b></font></td>
+</tr>
+
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' width="225" valign="top"><font color='#393536'>Enter global configuration mode.</font></td>
+<td bgcolor='#E9E7E8' valign="middle"><font face="_typewriter" color='#393536'>S1# <b>configure terminal</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Enter interface configuration mode.</font></td>
+<td bgcolor='#F2F2F2' valign="middle"><font face="_typewriter" color='#393536'>S1(config)# <b>interface </b><i>interface_id</i></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="middle"><font color='#393536'>Set trunk to allow all VLANs.</font></td>
+<td bgcolor='#E9E7E8' valign="middle"><font face="_typewriter" color='#393536'>S1(config-if)# <b>no switchport trunk allowed vlan</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Reset native VLAN to default.</font></td>
+<td bgcolor='#F2F2F2' valign="middle"><font face="_typewriter" color='#393536'>S1(config-if)# <b>no switchport trunk native vlan</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="middle"><font color='#393536'>Return to the privileged EXEC mode.</font></td>
+<td bgcolor='#E9E7E8' valign="middle"><font face="_typewriter" color='#393536'>S1(config-if)# <b>end</b></font></td>
+</tr>
+
+</table>]]></text> 
+</component>
+
+<component id="ID_table01_html">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' 
+glow='true' glowcolor='#808080' cellpadding='4'>
+
+
+  <caption  class="mtable_title" colspan="2" bgcolor='#FFFFFF'>
+                <font size="14"><b>Cisco Switch IOS Commands</b></font>
+            </caption>
+
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' width="225" valign="top"><font color='#393536'>Enter global configuration mode.</font></td>
+<td bgcolor='#E9E7E8' valign="middle"><font face="_typewriter" color='#393536'>S1# <b>configure terminal</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Enter interface configuration mode.</font></td>
+<td bgcolor='#F2F2F2' valign="middle"><font face="_typewriter" color='#393536'>S1(config)# <b>interface </b><i>interface_id</i></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="middle"><font color='#393536'>Set trunk to allow all VLANs.</font></td>
+<td bgcolor='#E9E7E8' valign="middle"><font face="_typewriter" color='#393536'>S1(config-if)# <b>no switchport trunk allowed vlan</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="middle"><font color='#393536'>Reset native VLAN to default.</font></td>
+<td bgcolor='#F2F2F2' valign="middle"><font face="_typewriter" color='#393536'>S1(config-if)# <b>no switchport trunk native vlan</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="middle"><font color='#393536'>Return to the privileged EXEC mode.</font></td>
+<td bgcolor='#E9E7E8' valign="middle"><font face="_typewriter" color='#393536'>S1(config-if)# <b>end</b></font></td>
+</tr>
+
+</table>]]></text> 
+</component>
+
+
+<!--SLIDE 2-->
+<component id="ID_s2_title">
+<text><![CDATA[<b>Resetting Trunk Link Example</b>]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+<component id="ID_s2_txt03">
+<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+
+<!--SLIDE 3-->
+<component id="ID_s3_title">
+<text><![CDATA[<b>Return Port to Access Mode</b>]]></text>
+</component>
+
+<component id="ID_s3_txt02">
+<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+</textcomponents>

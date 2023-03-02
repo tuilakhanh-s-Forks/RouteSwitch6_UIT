@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<textcomponents>
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>Syslog Severity Level</b>]]></text>
+    </component>
+    <component id="ID_s1_table">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+	<tr class="mtable_title">
+			<td colspan="3" bgcolor='#FFFFFF'><font size="5"></font></td>
+		</tr>
+
+		<tr class="mtable_top">
+			<td colspan='3' bgcolor='#666263'><font size='1' color='#0E6360'>.</font></td>
+		</tr>
+	
+	
+	
+	<tr>
+		<td bgcolor='#666263' valign="top" width="215" class="msubtitle"><font color='#ffffff'><b>Severity Name</b></font></td>
+		<td bgcolor='#666263' valign="top" width="190" class="msubtitle"><font color='#ffffff'><b>Severity Level</b></font></td>
+		<td bgcolor='#666263' valign="top" class="msubtitle"><font color='#ffffff'><b>Explanation</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Emergency</font></td>
+		<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Level 0</font></td>
+		<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>System Unusable</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2" valign="top"><font color='#393536'>Alert</font></td>
+		<td bgcolor="#F2F2F2" valign="top"><font color='#393536'>Level 1</font></td>
+		<td bgcolor="#F2F2F2" valign="top"><font color='#393536'>Immediate Action Needed</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Critical</font></td><td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Level 2</font></td>	
+		<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Critical Condition</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2" valign="top">Error</td>	
+		<td bgcolor="#F2F2F2" valign="top">Level 3</td>
+		<td bgcolor="#F2F2F2" valign="top">Error Condition</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="top">Warning</td>
+		<td bgcolor="#E9E7E8" valign="top">Level 4</td>
+		<td bgcolor="#E9E7E8" valign="top">Warning Condition</td>
+	</tr>
+		<tr>
+		<td bgcolor="#F2F2F2" valign="top">Notification</td>	
+		<td bgcolor="#F2F2F2" valign="top">Level 5</td>
+		<td bgcolor="#F2F2F2" valign="top">Normal, but Significant Condition</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="top">Informational</td>
+		<td bgcolor="#E9E7E8" valign="top">Level 6</font></td>
+		<td bgcolor="#E9E7E8" valign="top">Informational Message</td>
+	</tr>
+		<tr>
+		<td bgcolor="#F2F2F2" valign="top">Debugging</td>	
+		<td bgcolor="#F2F2F2" valign="top">Level 7</td>
+		<td bgcolor="#F2F2F2" valign="top">Debugging Message</td>
+	</tr>
+		
+	</table>]]>
+        </text>
+    </component>
+
+     <component id="ID_s1_table_html">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+	
+			<caption colspan="3" class="mtable_title" bgcolor='#FFFFFF'><font size="5"></font></caption>
+		
+
+		<tr class="mtable_top">
+			<td colspan='3' bgcolor='#666263'><font size='1' color='#0E6360'>.</font></td>
+		</tr>
+	
+	
+	
+	<tr>
+		<th scope="col" bgcolor='#666263' valign="top" width="215" class="msubtitle"><font color='#ffffff'><b>Severity Name</b></font></th>
+		<th scope="col" bgcolor='#666263' valign="top" width="190" class="msubtitle"><font color='#ffffff'><b>Severity Level</b></font></th>
+		<th scope="col" bgcolor='#666263' valign="top" class="msubtitle"><font color='#ffffff'><b>Explanation</b></font></th>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Emergency</font></td>
+		<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Level 0</font></td>
+		<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>System Unusable</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2" valign="top"><font color='#393536'>Alert</font></td>
+		<td bgcolor="#F2F2F2" valign="top"><font color='#393536'>Level 1</font></td>
+		<td bgcolor="#F2F2F2" valign="top"><font color='#393536'>Immediate Action Needed</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Critical</font></td><td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Level 2</font></td>	
+		<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Critical Condition</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2" valign="top">Error</td>	
+		<td bgcolor="#F2F2F2" valign="top">Level 3</td>
+		<td bgcolor="#F2F2F2" valign="top">Error Condition</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="top">Warning</td>
+		<td bgcolor="#E9E7E8" valign="top">Level 4</td>
+		<td bgcolor="#E9E7E8" valign="top">Warning Condition</td>
+	</tr>
+		<tr>
+		<td bgcolor="#F2F2F2" valign="top">Notification</td>	
+		<td bgcolor="#F2F2F2" valign="top">Level 5</td>
+		<td bgcolor="#F2F2F2" valign="top">Normal, but Significant Condition</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="top">Informational</td>
+		<td bgcolor="#E9E7E8" valign="top">Level 6</font></td>
+		<td bgcolor="#E9E7E8" valign="top">Informational Message</td>
+	</tr>
+		<tr>
+		<td bgcolor="#F2F2F2" valign="top">Debugging</td>	
+		<td bgcolor="#F2F2F2" valign="top">Level 7</td>
+		<td bgcolor="#F2F2F2" valign="top">Debugging Message</td>
+	</tr>
+		
+	</table>]]>
+        </text>
+    </component>
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>Syslog Message Format</b>]]></text>
+    </component>
+    <component id="ID_s2_table_html">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+	<caption colspan="2" class="mtable_title" bgcolor='#FFFFFF'><font size="5"></font></caption>
+		
+
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#666263'><font size='1' color='#0E6360'>.</font></td>
+		</tr>
+	<tr>
+		<th scope="col" bgcolor='#666263' valign="top" width="165" class="msubtitle"><font color='#ffffff'><b>Field</b></font></th>
+		<th scope="col" bgcolor='#666263' valign="top" class="msubtitle"><font color='#ffffff'><b>Explanation</b></font></th>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="top">seq no</td>
+		<td bgcolor="#E9E7E8" valign="top">Stamps log messages with a sequence number only if the <font face="_typewriter"><b>service sequence-numbers </b></font>global configuration command is configured.</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2" valign="top">timestamp</td>
+		<td bgcolor="#F2F2F2" valign="top">Date and time of the message or event, which appears only if the <font face="_typewriter"><b> service timestamps </b></font>global configuration command is configured.</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="top">facility</td>	
+		<td bgcolor="#E9E7E8" valign="top">The facility to which the message refers.</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2" valign="top">severity</td>	
+		<td bgcolor="#F2F2F2" valign="top">Single-digit code from 0 to 7 that is the severity of the message.</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="top">MNEMONIC</td>
+		<td bgcolor="#E9E7E8" valign="top">Text string that uniquely describes the message.</td>
+	</tr>
+		<tr>
+		<td bgcolor="#F2F2F2" valign="top">description</td>	
+		<td bgcolor="#F2F2F2" valign="top">Text string containing detailed information about the event being reported.</td>
+	</tr>
+	
+	</table>]]>
+        </text>
+    </component>
+
+    <component id="ID_s2_table">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+	<tr class="mtable_title">
+			<td colspan="2" bgcolor='#FFFFFF'><font size="5"></font></td>
+		</tr>
+
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#666263'><font size='1' color='#0E6360'>.</font></td>
+		</tr>
+	<tr>
+		<td bgcolor='#666263' valign="top" width="165" class="msubtitle"><font color='#ffffff'><b>Field</b></font></td>
+		<td bgcolor='#666263' valign="top" class="msubtitle"><font color='#ffffff'><b>Explanation</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="top">seq no</td>
+		<td bgcolor="#E9E7E8" valign="top">Stamps log messages with a sequence number only if the <font face="_typewriter"><b>service sequence-numbers </b></font>global configuration command is configured.</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2" valign="top">timestamp</td>
+		<td bgcolor="#F2F2F2" valign="top">Date and time of the message or event, which appears only if the <font face="_typewriter"><b> service timestamps </b></font>global configuration command is configured.</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="top">facility</td>	
+		<td bgcolor="#E9E7E8" valign="top">The facility to which the message refers.</td>
+	</tr>
+	<tr>
+		<td bgcolor="#F2F2F2" valign="top">severity</td>	
+		<td bgcolor="#F2F2F2" valign="top">Single-digit code from 0 to 7 that is the severity of the message.</td>
+	</tr>
+	<tr>
+		<td bgcolor="#E9E7E8" valign="top">MNEMONIC</td>
+		<td bgcolor="#E9E7E8" valign="top">Text string that uniquely describes the message.</td>
+	</tr>
+		<tr>
+		<td bgcolor="#F2F2F2" valign="top">description</td>	
+		<td bgcolor="#F2F2F2" valign="top">Text string containing detailed information about the event being reported.</td>
+	</tr>
+	
+	</table>]]>
+        </text>
+    </component>
+</textcomponents>

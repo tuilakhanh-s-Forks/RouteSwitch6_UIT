@@ -1,0 +1,20 @@
+
+          <p>When configuring normal range VLANs, the configuration details are stored in flash memory on the switch, in a file called vlan.dat. Flash memory is persistent and does not require the<b> copy running-config startup-config </b>command. However, because other details are often configured on a Cisco switch at the same time that VLANs are created, it is good practice to save running configuration changes to the startup configuration.</p>
+          <p></p>
+          <p>Figure 1 displays the Cisco IOS command syntax used to add a VLAN to a switch and give it a name. Naming each VLAN is considered a best practice in switch configuration.</p>
+          <p></p>
+          <p>Figure 2 shows how the student VLAN (VLAN 20) is configured on switch S1. In the topology example, the student computer (PC2) has not been associated with a VLAN yet, but it does have an IP address of 172.17.20.22.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to create a VLAN and use the<b> show vlan brief</b> command to display the contents of the vlan.dat file. </p>
+          <p></p>
+          <p>In addition to entering a single VLAN ID, a series of VLAN IDs can be entered separated by commas, or a range of VLAN IDs separated by hyphens using the<b> vlan</b><i> vlan-id </i>command. For example, use the following command to create VLANs 100, 102, 105, 106, and 107:</p>
+          <p></p>
+          <p></p>
+          <p>
+            <span class="cmd">S1(config)#</span>
+            <span class="cmd">
+              <b> vlan 100,102,105-107</b>
+            </span>
+          </p>
+          <p></p>
+        

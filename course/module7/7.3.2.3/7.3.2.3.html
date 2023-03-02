@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.2.3 Troubleshooting Standard IPv4 ACLs - Example 3</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Troubleshooting Standard IPv4 ACLs - Example 3</h1>
+        <div>
+          <p>
+            <b>Security Policy</b>: Only PC1 is allowed SSH remote access to R1.</p>
+          <p></p>
+          <p>In Figure 1, PC1 is unable to remotely access R1 using an SSH connection. Viewing the running configuration section for the VTY lines reveals that an ACL named PC1-SSH is correctly applied for inbound connections. The VTY lines are correctly configured to only allow SSH connections. From the output of the show access-list command, you notice that the IPv4 address is the G0/0 interface for R1, not the IPv4 address of PC1. Also, notice that the administrator configured an explicit deny any statement in the ACL. This is helpful because, in this situation, you will see matches for failed attempts to remotely access R1. </p>
+          <p></p>
+          <p>
+            <b>Solution</b>: Figure 2 shows the process for correcting the error. Because the statement that needs to be corrected is the first statement, we use the sequence number 10 to delete it by entering <b>no 10</b>. We then configure the correct IPv4 address for PC1. The <b>clear access-list counters</b> command resets the output to only show new matches. An attempt from PC2 to remotely access R1 is successful, as shown in the output for the <b>show access-list</b> command.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description"> Figure shows a network of three routers.  R-2 is at the top of a triangle layout and has a serial WAN connection to both R-1 and R-3.  There is no direct connection between R-1 and R-3. R-2 also has a connection to the Internet.  Routers R-1 and R-3 each have two active gigabit interfaces for local network segments, and each segment has a switch with a computer connected to the switch.  R-1 has network 192 dot 168 dot 10 dot zero on interface gigabit zero slash zero, and network 192 dot 168 dot 11 dot zero on interface gigabit zero slash one.  R-3 has network 192 dot 168 dot 30 dot zero on interface gigabit zero slash zero.  All segments are class C networks with a slash 24.  This is the reference topology for the next series of pages.  Figure 1 shows the output from VTY section of the running configuration and the show access-list command. Figure 2 shows the process of removing the first statement and applying the correct one and then viewing output from the show access-list command.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

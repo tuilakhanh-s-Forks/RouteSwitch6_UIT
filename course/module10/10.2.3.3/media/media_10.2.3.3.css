@@ -1,0 +1,14 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+.align
+{
+	color: #F68026 !important;
+}
+.align1
+{
+	color: #8557A0 !important;
+}
+
+

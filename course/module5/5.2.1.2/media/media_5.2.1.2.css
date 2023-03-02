@@ -1,0 +1,7 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_router_txt1{padding-top:5px;}
+#ID_s2_title{color:#fff !important;}

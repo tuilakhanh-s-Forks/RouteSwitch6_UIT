@@ -1,0 +1,33 @@
+
+          <p>With CDP enabled on the network, the <b>show cdp neighbors</b> command can be used to determine the network layout.</p>
+          <p></p>
+          <p>For example, consider the lack of documentation in the topology shown in Figure 1. No information is available regarding the rest of the network. The <b>show cdp neighbors</b> command provides helpful information about each CDP neighbor device, including the following:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Device identifiers</b> - The host name of the neighbor device (S1)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Port identifier</b> - The name of the local and remote port (Gig 0/1 and Fas 0/5, respectively)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Capabilities list</b> - Whether the device is a router or a switch (S for switch; I for IGMP is beyond scope for this course)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Platform</b> - The hardware platform of the device (WS-C2960 for Cisco 2960 switch)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>If more information is needed, the <b>show cdp neighbors</b> detail command can also provide information, such as the neighbors’ IOS version and IPv4 address, as displayed in Figure 2. By accessing S1 either remotely through SSH or physically through the console port, a network administrator can determine the other devices connected to S1, as displayed in the output of the <b>show cdp neighbors</b> in Figure 3.</p>
+          <p></p>
+          <p>Another switch, S2, is revealed in the output. The network administrator then accesses S2 and displays the CDP neighbors, as shown in Figure 4. The only device connected to S2 is S1. Therefore, there are no more devices to discover in the topology. The network administrator can now update the documentation to reflect the discovered devices.</p>
+        

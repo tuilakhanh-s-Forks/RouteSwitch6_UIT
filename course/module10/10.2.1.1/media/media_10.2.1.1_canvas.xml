@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>		
+	<slide>	
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+		<!--<element type="IMAGE" src="bg.jpg" x="0" y="0" width="680" height="490" />-->
+		<element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#FFF"/>
+		<element type="ROUTER" textId="ID_router_txt1" x="40" y="147" width="600" height="90" size="11"/>
+	</slide>
+		
+
+	<text id="ID_router_txt1"><![CDATA[<pre>R1# <b>clock set 20:36:00 dec 11 2015</b>
+R1#
+*Dec 11 20:36:00.000: %SYS-6-CLOCKUPDATE: System clock has been
+updated from 21:32:31 UTC Fri Dec 11 2015 to 20:36:00 UTC Fri Dec 11
+2015, configured from console by console.</pre>]]></text>
+		
+</data>

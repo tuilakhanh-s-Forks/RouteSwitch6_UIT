@@ -1,0 +1,14 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+.orangeText{color: #F68026 !important;}
+#ID_router_txt2{letter-spacing: -0.5px !important;}
+
+
+#ID_s1_txt01
+{
+	 position: absolute;
+      top: 414px;
+	  left:-55px;
+}

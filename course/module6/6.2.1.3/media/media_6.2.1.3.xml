@@ -1,0 +1,208 @@
+<textcomponents>
+    <!--SLIDE 1-->
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>Assign Ports to VLANs</b>]]></text>
+    </component>
+    <component id="ID_s1_table01">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' 
+glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+<td colspan='2' bgcolor='#FFFFFF'><font size='15' color='#393536'><b>Cisco Switch IOS Commands</b></font></td>
+</tr>
+
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' width="200">Enter global configuration mode.</td>
+<td bgcolor='#E9E7E8'><font face="_typewriter">S1# <b>configure terminal</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'>Enter interface configuration mode.</td>
+<td bgcolor='#F2F2F2'><font face="_typewriter">S1(config)# <b>interface </b><i> interface_id</i></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8'>Set the port to access mode.</td>
+<td bgcolor='#E9E7E8'><font face="_typewriter">S1(config-if)# <b>switchport mode access</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'>Assign the port to a VLAN.</td>
+<td bgcolor='#F2F2F2'><font face="_typewriter">S1(config-if)# <b>switchport access vlan </b><i>vlan_id</i>
+</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8'>Return to the privileged EXEC mode.</td>
+<td bgcolor='#E9E7E8'><font face="_typewriter">S1(config-if)# <b>end</b></font></td>
+</tr>
+
+</table>]]>
+        </text>
+    </component>
+
+ <component id="ID_s1_table01_html">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' 
+glow='true' glowcolor='#808080' cellpadding='4'>
+
+  <caption  class="mtable_title" colspan="2" bgcolor='#FFFFFF'>
+                <font size="14"><b>Cisco Switch IOS Commands</b></font>
+            </caption>
+
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' width="200">Enter global configuration mode.</td>
+<td bgcolor='#E9E7E8'><font face="_typewriter">S1# <b>configure terminal</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'>Enter interface configuration mode.</td>
+<td bgcolor='#F2F2F2'><font face="_typewriter">S1(config)# <b>interface </b><i> interface_id</i></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8'>Set the port to access mode.</td>
+<td bgcolor='#E9E7E8'><font face="_typewriter">S1(config-if)# <b>switchport mode access</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'>Assign the port to a VLAN.</td>
+<td bgcolor='#F2F2F2'><font face="_typewriter">S1(config-if)# <b>switchport access vlan </b><i>vlan_id</i>
+</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8'>Return to the privileged EXEC mode.</td>
+<td bgcolor='#E9E7E8'><font face="_typewriter">S1(config-if)# <b>end</b></font></td>
+</tr>
+
+</table>]]>
+        </text>
+    </component>
+
+    <!--SLIDE 2-->
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>Example Configuration</b>]]></text>
+    </component>
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[Student PC<br/>172.17.20.22<br/>]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt02">
+        <text>
+            <![CDATA[Switch S1:<br/>Port F0/18<br/>VLAN 20]]>
+        </text>
+    </component>
+    <!--SLIDE 3-->
+    <component id="ID_s3_title">
+        <text>
+            <![CDATA[<b>Sample Topology with IP Phone</b>]]></text>
+    </component>
+    <component id="ID_s3_txt01">
+        <text>
+            <![CDATA[Switchport must support VLAN traffic for:<textformat blockindent="-14"><ul><li>Voice traffic to the IP phone</li><li>Data traffic to PC5</li></ul></textformat>]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt02">
+        <text>
+            <![CDATA[<b>Student<br/>VLAN 20 - 172.17.20.25</b>]]></text>
+    </component>
+    <!--SLIDE 4-->
+    <component id="ID_s4_title">
+        <text>
+            <![CDATA[<b>Configuring a Data and Voice VLANs to a Switchport</b>]]></text>
+    </component>
+    <component id="ID_s4_txt01">
+        <text>
+            <![CDATA[<b>Student<br/>VLAN 20 - 172.17.20.25</b>]]></text>
+    </component>
+    <!--SLIDE 5-->
+    <component id="ID_s5_title">
+        <text>
+            <![CDATA[<b>Assign Ports to VLANs</b>]]></text>
+    </component>
+    <component id="ID_sc_reset">
+        <text>
+            <![CDATA[Reset]]>
+        </text>
+    </component>
+    <component id="ID_sc_showme">
+        <text>
+            <![CDATA[Show Me]]>
+        </text>
+    </component>
+    <component id="ID_sc_showall">
+        <text>
+            <![CDATA[Show All]]>
+        </text>
+    </component>
+        <component id="ID_SC5" fontSize="12" fontFace='_typewriter'  fontColor="#ffffff">
+                <feedback id="fb"><![CDATA[<b><font face="_sans" color="#FFFFFF">***You must enter the exact and full command. Commands that include a name or password are case-sensitive.***</font></b> ]]></feedback>
+              <existingcommands><![CDATA[<font face="_sans"><b>Enter global configuration mode, create VLAN 20, name it "student", and return to global configuration mode.</b></font>]]></existingcommands>
+                <command prompt="S3#">
+                       <correctresponse><![CDATA[configure terminal]]></correctresponse>
+                                <deviceresponse><![CDATA[Enter configuration commands, one per line.  End with CNTL/Z.]]></deviceresponse>
+              </command>
+                <command prompt="S3(config)#">
+                       <correctresponse><![CDATA[vlan 20 ]]></correctresponse>
+              </command>
+                <command prompt="S3(config-vlan)#">
+                       <correctresponse><![CDATA[name student]]></correctresponse>
+              </command>
+                <command prompt="S3(config-vlan)#">
+                       <correctresponse><![CDATA[exit]]></correctresponse>
+                                <deviceresponse><![CDATA[S3(config)# ]]></deviceresponse>
+                       <instruction><![CDATA[<font face="_sans"><b>From global configuration mode, create VLAN 150, name it "VOICE" and return to global configuration mode.</font>]]></instruction>
+              </command>
+                <command prompt="S3(config)#">
+                       <correctresponse><![CDATA[ vlan 150 ]]></correctresponse>
+              </command>
+                <command prompt="S3(config-vlan)#">
+                       <correctresponse><![CDATA[ name VOICE]]></correctresponse>
+              </command>
+                <command prompt="S3(config-vlan)#">
+                       <correctresponse><![CDATA[ exit]]></correctresponse>
+                                <deviceresponse><![CDATA[S3(config)# ]]></deviceresponse>
+                       <instruction><![CDATA[<font face="_sans"><b>From global configuration mode, enter interface F0/18, make it an access port and assign it VLAN 20. </font>]]></instruction>
+              </command>
+                <command prompt="S3(config)#">
+                       <correctresponse><![CDATA[interface F0/18]]></correctresponse>
+              </command>
+                <command prompt="S3(config-if)#">
+                       <correctresponse><![CDATA[switchport mode access]]></correctresponse>
+              </command>
+                <command prompt="S3(config-if)#">
+                       <correctresponse><![CDATA[switchport access vlan 20]]></correctresponse>
+                                <deviceresponse><![CDATA[S3(config-if)#]]></deviceresponse>
+                       <instruction><![CDATA[<font face="_sans"><b>Enable QoS settings to trust the CoS values, assign it to the voice VLAN, and return to privileged EXEC mode.</font>]]></instruction>
+              </command>
+                <command prompt="S3(config-if)#">
+                       <correctresponse><![CDATA[mls qos trust cos]]></correctresponse>
+              </command>
+                <command prompt="S3(config-if)#">
+                       <correctresponse><![CDATA[switchport voice vlan 150]]></correctresponse>
+              </command>
+                <command prompt="S3(config-if)#">
+                       <correctresponse><![CDATA[end]]></correctresponse>
+                                <deviceresponse><![CDATA[S3#<br>*Mar 31, 09:34:24.3434: %SYS-5-CONFIG_I: Configured from console by console]]></deviceresponse>
+                       <instruction><![CDATA[<font face="_sans"><b>Display the brief vlan information.</font>]]></instruction>
+              </command>
+                <command prompt="S3#">
+                       <correctresponse><![CDATA[show vlan brief]]></correctresponse>
+                                <deviceresponse><![CDATA[VLAN Name                             Status    Ports<br>---- -------------------------------- --------- -------------------------------<br>1    default                          active    Fa0/1, Fa0/2, Fa0/3, Fa0/4<br>                                                Fa0/5, Fa0/6, Fa0/7, Fa0/8<br>                                                Fa0/9, Fa0/10, Fa0/11, Fa0/12<br>                                                Fa0/13, Fa0/14, Fa0/15, Fa0/16<br>                                                Fa0/17, Fa0/19, Fa0/20, Fa0/21<br>                                                Fa0/22, Fa0/23, Fa0/24, Gi0/1<br>                                                Gi0/2<br>20   student                          active    Fa0/18<br>150  VOICE                            active    Fa0/18<br>1002 fddi-default                     act/unsup <br>1003 token-ring-default               act/unsup <br>1004 fddinet-default                  act/unsup <br>1005 trnet-default                    act/unsup <br>S3#]]></deviceresponse>
+                       <instruction><![CDATA[<font face="_sans"><b>You successfully assigned a port to a data VLAN and a voice VLAN.</font>]]></instruction>
+              </command>
+<command prompt=""/>
+ </component>
+</textcomponents>

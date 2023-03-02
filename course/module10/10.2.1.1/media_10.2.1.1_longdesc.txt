@@ -1,0 +1,1 @@
+Router R1 is configured with the 'clock set 20:36:00 dec 11 2015' command. A syslog messages displays that the clock has been updated

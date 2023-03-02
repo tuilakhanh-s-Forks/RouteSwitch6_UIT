@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.1.2 Applying Standard IPv4 ACLs to Interfaces</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Applying Standard IPv4 ACLs to Interfaces</h1>
+        <div>
+          <p>After a standard IPv4 ACL is configured, it is linked to an interface using the <b>ip access-group</b> command in interface configuration mode:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config-if)# </span>
+            <span class="cmd">
+              <b>ip access-group</b>
+            </span>
+            <span class="cmd"> { </span>
+            <span class="cmd">
+              <i>access-list-number</i>
+            </span>
+            <span class="cmd"> | </span>
+            <span class="cmd">
+              <i>access-list-name</i>
+            </span>
+            <span class="cmd"> } { </span>
+            <span class="cmd">
+              <b>in</b>
+            </span>
+            <span class="cmd"> | </span>
+            <span class="cmd">
+              <b>out</b>
+            </span>
+            <span class="cmd"> }</span>
+          </p>
+          <p></p>
+          <p>To remove an ACL from an interface, first enter the <b>no ip access-group</b> command on the interface, and then enter the global <b>no access-list</b> command to remove the entire ACL.</p>
+          <p></p>
+          <p>Figure 1 lists the steps and syntax to configure and apply a numbered standard ACL on a router.</p>
+          <p></p>
+          <p>Figure 2 shows an example of an ACL designed to permit a single network.</p>
+          <p></p>
+          <p>This ACL allows only traffic from source network 192.168.10.0 to be forwarded out of interface S0/0/0. Traffic from networks other than 192.168.10.0 is blocked.</p>
+          <p></p>
+          <p>The first line identifies the ACL as access list 1. It permits traffic that matches the selected parameters. In this case, the IPv4 address and wildcard mask identifying the source network is 192.168.10.0 0.0.0.255. Recall that there is an implicit deny all statement that is equivalent to adding the line <b>access-list 1 deny 0.0.0.0 255.255.255.255</b> or <b>access-list deny any</b> to the end of the ACL.</p>
+          <p></p>
+          <p>The <b>ip access-group 1 out</b> interface configuration command links and ties ACL 1 to the Serial 0/0/0 interface as an outbound filter.</p>
+          <p></p>
+          <p>Therefore, ACL 1 only permits hosts from the 192.168.10.0/24 network to exit router R1. It denies any other network including the 192.168.11.0 network</p>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description"> Figure one shows the application of an A.C.L. to an interface. The first line creates an A.C.L. The next command moves to the interface on which the A.C.L. will be placed. The command is, interface serial zero slash zero slash zero. Once in interface configuration mode the command used to apply an A.C.L. to the interface is, i.p. access hyphen group 1 out. Figure two shows a topology which depicts the steps and commands listed on figure one.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

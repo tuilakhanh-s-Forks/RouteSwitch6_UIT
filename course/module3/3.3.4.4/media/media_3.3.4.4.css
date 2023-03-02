@@ -1,0 +1,7 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+#ID_router_txt1,#ID_router_txt2,#ID_router_txt3{letter-spacing:-.4px;padding-left:4px !important;}

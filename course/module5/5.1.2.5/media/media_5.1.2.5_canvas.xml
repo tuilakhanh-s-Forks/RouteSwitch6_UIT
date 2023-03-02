@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+<slide type="MBAR">
+	<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<slide>
+<element type="TEXT" compId="ID_table01_html" x="41.01" y="341.85" width="600" height="131" />
+<element type="TEXT" compId="ID_s1_txt01" x="44.95" y="143" width="104" expand="right" align="left" color="#ffffff" />
+<element type="ROUTER" textId="ID_router_txt1" x="40" y="73.55" width="600" height="257" />
+<!-- <text id="ID_router_txt1">
+<![CDATA[<pre><b>S1# show interfaces FastEthernet0/1</b>
+<span id="static">FastEthernet0/1 is up, line protocol is up</span>
+Hardware is Fast Ethernet, address is 0022.91c4.0e01 (bia 0022.91c4.0e01)
+MTU 1500 bytes, BW 100000 Kbit, DLY 100 usec,</pre>]]></text> -->
+<element type="TEXT" subType="TITLE" compId="ID_s1_title"/>
+</slide>
+
+
+
+<slide>
+<element type="ROUTER" textId="ID_router_txt2" x="40" y="73.55" width="600" height="257" />
+<!-- <text id="ID_router_txt2">
+	<![CDATA[<pre>S1# show interfaces FastEthernet0/1 FastEthernet0/1 is up, line protocol is upHardware is Fast Ethernet, address is 0022.91c4.0e01 (bia 0022.91c4.0e01)MTU 1500 bytes, BW 100000 Kbit, DLY 100 usec, 2295197 packets input, 305539992 bytes, 0 no buffer Received 1925500 broadcasts, 0 runts, 0 giants, 0 throttles 3 input errors, 3 CRC, 0 frame, 0 overrun, 0 ignored 0 watchdog, 68 multicast, 0 pause input 0 input packets with dribble condition detected 3594664 packets output, 436549843 bytes, 0 underruns 8 output errors, 1790 collisions, 10 interface resets 0 unknown protocol drops 0 babbles, 235 late collision, 0 deferred</pre>]]></text> -->
+<element type="TEXT" compId="ID_s2_txt01" x="47" y="124" width="105" expand="right" align="left" color="#ffffff" />
+<element type="TEXT" compId="ID_s2_txt02" x="47" y="280" width="105" expand="right" align="left" color="#ffffff" />
+<element type="TEXT" subType="TITLE" compId="ID_s2_title"/>
+</slide>
+
+<slide>
+<element type="TEXT" compId="ID_s3_table_html" x="40" y="69" width="600" height="355" />
+<element type="TEXT" subType="TITLE" compId="ID_s3_title"/>
+</slide>
+<text id="ID_router_txt1"><![CDATA[<pre><b>S1# show interfaces FastEthernet0/1</b>
+<span class="spanclr" style="width: 405px;">FastEthernet0/1 is up, line protocol is up</span> 
+Hardware is Fast Ethernet, address is 0022.91c4.0e01 (bia 0022.91c4.0e01)
+MTU 1500 bytes, BW 100000 Kbit, DLY 100 usec,
+</pre>]]></text>
+	
+	<text id="ID_router_txt2"><![CDATA[<pre class="font11px"><b>S1# show interfaces FastEthernet0/1</b>
+FastEthernet0/1 is up, line protocol is up Hardware is Fast Ethernet, address is
+0022.91c4.0e01 (bia 0022.91c4.0e01) MTU 1500 bytes, BW 100000 Kbit, DLY 100 usec,
+ 
+  2295197 packets input, 305539992 bytes, 0 no buffer 
+  Received 1925500 broadcasts, <span class="spanclr">0 runts, 0 giants,</span> 0 
+  throttles   
+<span class="spanclr" style="width: 405px;">  3 input errors, 3 CRC, 0 frame, 0 overrun, 0 ignored</span>
+  0 watchdog, 68 multicast, 0 pause input
+  0 input packets with dribble condition detected
+  3594664 packets output, 436549843 bytes, 0 underruns
+<span class="spanclr" style="width: 405px;">  8 output errors, 1790 collisions, 10 interface resets</span> 
+  0 unknown protocol drops
+  0 babbles, <span class="spanclr">235 late collision,</span> 0 deferred
+</pre>]]></text>
+
+</slide>
+</data>

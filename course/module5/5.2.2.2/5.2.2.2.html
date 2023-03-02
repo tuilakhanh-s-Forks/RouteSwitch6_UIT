@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.2.2 Port Security: Operation</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Port Security: Operation</h1>
+        <div>
+          <p>
+            <b>Port Security</b>
+          </p>
+          <p></p>
+          <p>All switch ports (interfaces) should be secured before the switch is deployed for production use. One way to secure ports is by implementing a feature called port security. Port security limits the number of valid MAC addresses allowed on a port. The MAC addresses of legitimate devices are allowed access, while other MAC addresses are denied.</p>
+          <p></p>
+          <p>Port security can be configured to allow one or more MAC addresses. If the number of MAC addresses allowed on the port is limited to one, then only the device with that specific MAC address can successfully connect to the port.</p>
+          <p></p>
+          <p>If a port is configured as a secure port and the maximum number of MAC addresses is reached, any additional attempts to connect by unknown MAC addresses will generate a security violation. Figure 1 summarizes these points.</p>
+          <p></p>
+          <p>
+            <b>Secure MAC Address Types</b>
+          </p>
+          <p></p>
+          <p>There are a number of ways to configure port security. The type of secure address is based on the configuration and includes:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Static secure MAC addresses </b>- MAC addresses that are manually configured on a port by using the<b> switchport port-security mac-address </b><i>mac-address </i>interface configuration mode command. MAC addresses configured in this way are stored in the address table and are added to the running configuration on the switch. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Dynamic secure MAC addresses </b>- MAC addresses that are dynamically learned and stored only in the address table. MAC addresses configured in this way are removed when the switch restarts. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Sticky secure MAC addresses </b>- MAC addresses that can be dynamically learned or manually configured, then stored in the address table and added to the running configuration.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Sticky Secure MAC addresses </b>
+          </p>
+          <p>To configure an interface to convert dynamically learned MAC addresses to sticky secure MAC addresses and add them to the running configuration, you must enable sticky learning. Sticky learning is enabled on an interface by using the<b> switchport port-security mac-address sticky </b>interface configuration mode command. </p>
+          <p></p>
+          <p>When this command is entered, the switch converts all dynamically learned MAC addresses, including those that were dynamically learned before sticky learning was enabled, into sticky secure MAC addresses. All sticky secure MAC addresses are added to the address table and to the running configuration. </p>
+          <p></p>
+          <p>Sticky secure MAC addresses can also be manually defined. When sticky secure MAC addresses are configured by using the<b> switchport port-security mac-address sticky </b><i>mac-address </i>interface configuration mode command, all specified addresses are added to the address table and the running configuration. </p>
+          <p></p>
+          <p>If the sticky secure MAC addresses are saved to the startup configuration file, then when the switch restarts or the interface shuts down, the interface does not need to relearn the addresses. If the sticky secure addresses are not saved, they will be lost. </p>
+          <p></p>
+          <p>If sticky learning is disabled by using the<b> no switchport port-security mac-address sticky </b>interface configuration mode command, the sticky secure MAC addresses remain part of the address table, but are removed from the running configuration. </p>
+          <p></p>
+          <p>Figure 2 shows the characteristics of sticky secure MAC addresses.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The port security feature will not work until port security is enabled on the interface using the<b> switchport port-security </b>command. </p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows an Ethernet port with a security shield next to it.  This represents the concept of securing switch ports.  The figure lists two points regarding security on switch ports.  The first is to specify a single MAC address or a group of valid MAC addresses allowed on a port.  The second is to specify that a port should automatically shut down if unauthorized MAC addresses are detected. Figure two lists characteristics of sticky secure switch ports.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

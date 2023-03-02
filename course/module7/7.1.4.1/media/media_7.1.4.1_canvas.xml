@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide>
+	
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_7.1.4.1.png" />
+<element type="TEXT" subType="TITLE" compId="ID_title"/>
+
+<element type="TEXT" id="ID_static_1" text="S0/0/0" x="265" y="92" align="center" width="36" />
+<element type="TEXT" id="ID_static_2" text="S0/0/0" x="250" y="160" align="center" width="36" />
+<element type="BUBBLE" compId="ID_txt01" x="36" y="96" width="190" height="80" align="left" tailPosition="5" tailFlip="0" />
+<element type="TEXT" id="ID_static_3" text="G0/0" x="165" y="207" align="center" width="26" />
+<element type="TEXT" id="ID_static_13" text="G0/1" x="250" y="207" align="center" width="24" />
+<element type="TEXT" id="ID_static_14" text="192.168.10.0/24" x="70" y="249" align="center" width="86"  bold="1"/>
+
+<element type="TEXT" id="ID_static_4" text="192.168.11.0/24" x="270" y="303" align="center" width="86" bold="1" />
+<element type="TEXT" id="ID_static_5" text="192.168.10.10" x="120" y="417" align="center" width="75" bold="1" />
+<element type="TEXT" compId="ID_txt03" x="113" y="430" width="105" expand="down" align="center" color="#652c8a" />
+<element type="TEXT" id="ID_static_6" text="192.168.11.10" x="220" y="417" align="center" width="75" bold="1" />
+<element type="TEXT" id="ID_static_11" text="S0/0/1" x="370" y="92" align="center" width="34" />
+<element type="TEXT" id="ID_static_12" text="S0/0/1" x="405" y="160" align="center" width="34" />
+<element type="BUBBLE" compId="ID_txt02" x="448" y="96" width="190" height="80" align="left" tailPosition="7" tailFlip="0" />
+<element type="TEXT" id="ID_static_15" text="G0/0" x="400" y="207" align="center" width="26" />
+<element type="TEXT" id="ID_static_16" text="G0/1" x="480" y="207" align="center" width="24" />
+<element type="TEXT" id="ID_static_9" text="192.168.30.0/24" x="310" y="249" align="center" width="86" bold="1" />
+<element type="TEXT" id="ID_static_10" text="192.168.31.0/24" x="520" y="249" align="center" width="86" bold="1" />
+<element type="TEXT" id="ID_static_7" text="192.168.30.12" x="357" y="417" align="center" width="75" bold="1" />
+<element type="TEXT" id="ID_static_8" text="192.168.31.12" x="459" y="417" align="center" width="75" bold="1" />
+
+
+
+<element type="TEXT" compId="ID_txt04" x="452" y="430" width="105" expand="down" align="center" color="#652c8a" />
+
+
+		
+	</slide>
+
+	<text id="ID_static_txt01"><![CDATA[192.168.10.10]]></text>
+	<text id="ID_static_txt02"><![CDATA[192.168.10.0/24]]></text>
+	<text id="ID_static_txt03"><![CDATA[192.168.11.0/24]]></text>
+	<text id="ID_static_txt04"><![CDATA[192.168.11.10]]></text>
+	<text id="ID_static_txt05"><![CDATA[192.168.30.12]]></text>
+	<text id="ID_static_txt06"><![CDATA[192.168.31.12]]></text>
+	<text id="ID_static_txt07"><![CDATA[192.168.30.0/24]]></text>
+	<text id="ID_static_txt08"><![CDATA[192.168.31.0/24]]></text>
+	
+
+		
+</data>

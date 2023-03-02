@@ -1,0 +1,21 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Directly Connected and Remote Network Routes</b>]]></text>
+	</component>
+	
+	<component id="ID_txt01">
+		<text><![CDATA[<b>Directly Connected Network</b>]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[<b>Directly Connected Network</b>]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[<b>Directly Connected Network</b>]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[<b>Remote Networks</b/>]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[<b>Remote Networks</b/>]]></text>
+	</component>
+</textcomponents>

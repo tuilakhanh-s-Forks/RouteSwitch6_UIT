@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.4.1 IPv6 Routing Table Entries</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.4.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPv6 Routing Table Entries</h1>
+        <div>
+          <p>Components of the IPv6 routing table are very similar to the IPv4 routing table. For instance, it is populated using directly connected interfaces, static routes, and dynamically learned routes. </p>
+          <p></p>
+          <p>Because IPv6 is classless by design, all routes are effectively level 1 ultimate routes. There is no level 1 parent of level 2 child routes. </p>
+          <p></p>
+          <p>The topology displayed in the figure is used as the reference topology for this section.  Notice that in the topology:</p>
+          <p>
+            <ul>
+              <li>R1, R2, and R3 are configured in a full mesh topology. All routers have redundant paths to various networks.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>R2 is the edge router and connects to the ISP; however, a default static route is not being advertised.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>EIGRP for IPv6 has been configured on all three routers.</li>
+            </ul>
+          </p>
+          <p>
+            <b>Note</b>: Although EIGRP for IPv6 is used to populate the routing tables, the operation and configuration of EIGRP is beyond the scope of this course.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a topology of three routers configured in a triangle layout. Each router is connected to the other two routers giving a full mesh topology.  Each router has two active serial WAN links with I.P.v.6. addresses and each router has a LAN on a gigabit Ethernet interface with an I.P.v.6. address.  The routing protocol used is E.I.G.R.P. for I.P.V.6.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

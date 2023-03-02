@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.2.1 Method 1 - Use a Text Editor</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Method 1 - Use a Text Editor</h1>
+        <div>
+          <p>After someone is familiar with creating and editing ACLs, it may be easier to construct the ACL using a text editor such as Microsoft Notepad. This allows you to create or edit the ACL and then paste it into the router interface. For an existing ACL, you can use the <b>show running-config</b> command to display the ACL, copy and paste it into the text editor, make the necessary changes, and paste it back in to the router interface. </p>
+          <p></p>
+          <p>
+            <b>Configuration</b>: For example, assume that the host IPv4 address in the figure was incorrectly entered. Instead of the 192.168.10.99 host, it should have been the 192.168.10.10 host. Here are the steps to edit and correct ACL 1:</p>
+          <p></p>
+          <p>
+            <b>Step 1. </b>Display the ACL using the <b>show running-config</b> command. The example in the figure uses the <b>include</b> keyword to display only the ACEs.</p>
+          <p></p>
+          <p>
+            <b>Step 2. </b>Highlight the ACL, copy it, and then paste it into Microsoft Notepad. Edit the list as required. After the ACL is correctly displayed in Microsoft Notepad, highlight it and copy it.</p>
+          <p></p>
+          <p>
+            <b>Step 3. </b>In global configuration mode, remove the access list using the <b>no access-list 1 </b>command. Otherwise, the new statements would be appended to the existing ACL. Then paste the new ACL into the configuration of the router.</p>
+          <p></p>
+          <p>
+            <b>Step 4. </b>Using the <b>show running-config</b> command, verify the changes</p>
+          <p></p>
+          <p>It should be mentioned that when using the <b>no access-list</b> command, different IOS software releases act differently. If the ACL that has been deleted is still applied to an interface, some IOS versions act as if no ACL is protecting your network while others deny all traffic. For this reason it is good practice to remove the reference to the access list from the interface before modifying the access list. If there is an error in the new list, disable it and troubleshoot the problem. In that instance, the network has no ACL during the correction process.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the process for using a text editor to edit a numbered A.C.L.  The first command creates a numbered A.C.L. with the number 1. The A.C.L. can be viewed using the command show running hyphen config pipe include access hyphen list 1.  The A.C.L. can be copied and pasted into a text editor and edited.  The current A.C.L. is removed from the interface using the keyword no.  The new A.C.L. is then pasted into the router and can be verified with the command, show running hyphen config pipe include access hyphen list 1.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

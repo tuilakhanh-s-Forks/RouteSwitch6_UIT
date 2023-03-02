@@ -1,0 +1,12 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+pre {
+    letter-spacing: -0.9px;
+}
+.orangeColor {
+     color:#F68026 !important;
+}

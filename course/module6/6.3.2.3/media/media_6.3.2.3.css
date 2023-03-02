@@ -1,0 +1,12 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_txt01,#ID_txt02{
+	padding: 6px 0px 6px 0px !important;
+}
+
+.col{
+	color: #F68026;
+}

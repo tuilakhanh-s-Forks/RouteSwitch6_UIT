@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.2.2 Method 2 - Use Sequence Numbers</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Method 2 - Use Sequence Numbers</h1>
+        <div>
+          <p>As shown in the figure, the initial configuration of ACL 1 included a host statement for host 192.168.10.99. This was in error. The host should have been configured as 192.168.10.10. To edit the ACL using sequence numbers follow these steps:</p>
+          <p></p>
+          <p>
+            <b>Step 1. </b>Display the current ACL using the <b>show access-lists 1</b> command. The output from this command will be discussed in more detail later in this section. The sequence number is displayed at the beginning of each statement. The sequence number was automatically assigned when the access list statement was entered. Notice that the misconfigured statement has the sequence number 10.</p>
+          <p></p>
+          <p>
+            <b>Step 2. </b>Enter the <b>ip access-lists standard</b> command that is used to configure named ACLs. The ACL number 1, is used as the name. First, the misconfigured statement needs to be deleted using the <b>no 10</b> command with 10 referring to the sequence number. Next, a new sequence number 10 statement is added using the command, <b>10 deny host 192.168.10.10</b>.  </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Statements cannot be overwritten using the same sequence number as an existing statement. The current statement must be deleted first, and then the new one can be added.</p>
+          <p></p>
+          <p>
+            <b>Step 3. </b>Verify the changes using the <b>show access-lists</b> command.</p>
+          <p></p>
+          <p>As discussed previously, Cisco IOS implements an internal logic to standard access lists. The order in which standard ACEs are entered may not be the order in which they are stored, displayed or processed by the router. The <b>show access-lists</b> command displays the ACEs with their sequence numbers.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the process of editing numbered A.C.L.s using sequence numbers.  The figure begins in global configuration mode and the first command creates the A.C.L.  This command is, access hyphen list one deny host 192 dot 168 dot 10 dot 99.  The next command is, access hyphen list 1 permit 192 dot 168 dot zero dot zero zero dot zero dot 255 dot 255.  The contents of the A.C.L. is displayed via the command, show access hyphen lists. The figure is highlighting the line that is incorrect.  This A.C.L. is accessed with the command, i.p. access hyphen list standard 1.  The line is removed via the command, no 10.  A new line 10 is added with the command, 10 deny host 192 dot 168 dot 10 dot 10.  The contents A.C.L. is displayed with the command, show access hyphen lists. The figure is highlighting now corrected line.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

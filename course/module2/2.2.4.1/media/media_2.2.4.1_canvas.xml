@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide>
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="media_2.2.4.1.png" />
+        <element type="TEXT" compId="ID_table_html" x="40" y="189" width="600" height="276" />
+        <element type="TEXT" subType="TITLE" compId="ID_title" color="#FFFFFF" />
+        <element type="TEXT" textId="staticTxt" x="46.85" y="118.05" width="405" height="13.05" />
+    </slide>
+    <text id="staticTxt">
+        <![CDATA[Router(config)# <b> ipv6 route ::/0 </b> {<i> ipv6-address | exit-intf </i> } ]]></text>
+</data>

@@ -1,0 +1,13 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+#ID_static_9, #ID_static_10, #ID_static_11, #ID_static_12{
+	font-size:9px !important;
+	letter-spacing: -0.8px;
+	
+	line-height:15px !important;
+	text-shadow:  0 0 0.2em #FFFFFF,0 0 0.2em #FFFFFF,0 0 0.2em #FFFFFF,0 0 0.2em #FFFFFF,0 0 0.2em #FFFFFF,0 0 0.2em #FFFFFF,0 0 0.2em #FFFFFF,0 0 0.2em #FFFFFF,0 0 0.2em #FFFFFF,0 0 0.2em #FFFFFF;
+}

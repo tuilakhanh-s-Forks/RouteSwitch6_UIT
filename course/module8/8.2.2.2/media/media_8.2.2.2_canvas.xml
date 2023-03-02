@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide>
+	<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_8.2.2.2.png" />
+<element type="ROUTER" textId="ID_router_txt1" x="40" y="264" width="600" height="93" />
+<text id="ID_router_txt1"><![CDATA[<pre>R3(config)# interface g0/1</br>R3(config-if)# ipv6 enable</br>R3(config-if)# ipv6 address autoconfig</br>R3(config-if)# </pre>]]></text>
+<element type="TEXT" id="ID_static_1" text="G0/1" x="184" y="149" align="center" width="24" />
+<element type="TEXT" id="ID_static_2" text="G0/1" x="470" y="149" align="center" width="24" />
+<element type="TEXT" compId="ID_text01" x="77" y="173" width="155" expand="down" align="center" />
+<element type="TEXT" compId="ID_text02" x="451" y="173" width="150" expand="down" align="center" />
+<element type="TEXT" subType="TITLE" compId="ID_title" size="17"/>
+	
+	</slide>
+	
+</data>

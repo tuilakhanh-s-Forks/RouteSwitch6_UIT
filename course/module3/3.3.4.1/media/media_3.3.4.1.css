@@ -1,0 +1,40 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+#cmdText01, #cmdText02, #cmdText03{ color:#F68026 !important; font-weight:bold;}
+#texLh {line-height:13px;}
+#ID_static_6{
+		letter-spacing:-0.1px;
+		left:-16px !important;
+		
+	}
+
+	#ID_static_5{
+		letter-spacing:-0.1px;
+		
+	}
+#ID_txt02{
+	background-color:#fff;
+	padding:5px;
+	box-shadow: 3px 3px 3px #888888;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+	#ID_static_6{
+		letter-spacing:-.8px;
+		left: -7px !important;
+	}
+	#ID_static_4{
+		top: 5px !important;
+	}
+	#ID_static_16 , #ID_static_17, #ID_static_13{
+		left: -3px !important;
+	}
+	#ID_static_15{
+		left: 3px !important;
+	}
+}

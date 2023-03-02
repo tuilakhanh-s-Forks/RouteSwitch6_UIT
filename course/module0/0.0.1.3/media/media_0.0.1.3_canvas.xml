@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+ 
+<slide>
+	<element type="IMAGE" subType="bg" bgType="IMAGE" />
+	<element type="ACTIVITY" subType="ANIMATION_TWEENMAX" />
+	<element type="TEXT" textId="ID_static1" x="110" y="50" />
+</slide> 
+
+
+	<text id="ID_static1"><![CDATA[
+
+	<img id="img1" src="1.jpg" alt="The figure shows people all over the world using various types of technology." style="position:absolute;width:460px;height:400px;z-index:1; "/>
+	<img id="img2" src="2.jpg" alt="The figure shows people all over the world using various types of technology." style="position:absolute;width:460px;height:400px;z-index:2;"/>
+	<img id="img3" src="3.jpg" alt="The figure shows people all over the world using various types of technology." style="position:absolute;width:460px;height:400px;z-index:3;"/>
+	<img id="img4" src="4.jpg" alt="The figure shows people all over the world using various types of technology." style="position:absolute;width:460px;height:400px;z-index:4;"/>
+	<img id="img5" src="1.jpg" alt="The figure shows people all over the world using various types of technology." style="position:absolute;width:460px;height:400px;z-index:5; "/>
+
+	]]></text>
+</data>
+
+

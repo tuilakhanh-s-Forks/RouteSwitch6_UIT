@@ -1,0 +1,11 @@
+<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[Switches]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<textformat blockindent='-14'><ul><li>Identify connected hosts, port locations, and unique MAC addresses</li><li>Record unique host addresses to a MAC address table</li><li>Send and receive data traffic using unicasts, multicasts, and broadcasts</li></ul></textformat>]]></text>
+</component>
+
+</textcomponents>

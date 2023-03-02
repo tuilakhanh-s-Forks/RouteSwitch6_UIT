@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+        <slide>
+            <element type="ROUTER" textId="ID_router_txt1" x="40" y="55" width="600" height="400" />
+            <element type="TEXT" subType="TITLE" compId="ID_s1_header" color="#ffffff" />
+        </slide>
+        <slide>
+            <element type="ROUTER" textId="ID_router_txt2" x="40" y="55" width="600" height="400" />
+            <element type="TEXT" compId="ID_s2_txt01" x="49" y="350" width="246" expand="right" align="left" color="#ffffff" />
+            <element type="TEXT" subType="TITLE" compId="ID_s2_header" color="#ffffff" />
+        </slide>
+        <slide>
+            <element type="ACTIVITY" subType="SYNTAX" compId="ID_s3_SC1" x="25" y="55" width="630" height="400" resetId="ID_sc_reset" showMeId="ID_sc_showme" showAllId="ID_sc_showall" />
+        </slide>
+    </slide>
+    <text id="ID_router_txt1">
+        <![CDATA[<pre>R1(config)#<b> license accept end user agreement</b>
+R1(config)#<b> license boot module c1900 technology-package 
+datak9</b>
+% use 'write' command to make license boot config take 
+effect on next boot
+R1(config)# 
+*Apr 25 23:15:01.874: %IOS_LICENSE_IMAGE_APPLICATION-6-
+LICENSE_LEVEL: Module name = c1900 Next reboot level = 
+datak9 and License = datak9
+*Apr 25 23:15:02.502: %LICENSE-6-EULA_ACCEPTED: <span class = "orangeColor">EULA for </span> 
+<span class = "orangeColor">feature datak9 1.0 has been accepted.</span> 
+UDI=CISCO1941/K9:FTX1636848Z; StoreIndex=1:Built-In 
+License Storage
+R1(config)# </pre>]]></text>
+    <text id="ID_router_txt2">
+        <![CDATA[<pre>R1#<b> show license</b>
+Index 1 Feature: ipbasek9                       
+        Period left: Life time
+        License Type: Permanent
+        License State: Active, In Use
+        License Count: Non-Counted
+        License Priority: Medium
+Index 2 Feature: securityk9                     
+        Period left: Life time
+        License Type: Permanent
+        License State: Active, In Use
+        License Count: Non-Counted
+        License Priority: Medium
+Index 3 Feature: <span class = "orangeColor">datak9</span>                        
+<span class = "orangeColor">        Period left: 8  weeks 4  days</span>        
+	Period Used: 0  minute  0  second
+<span class = "orangeColor">        License Type: EvalRightToUse</span>        
+	License State: Active, Not in Use, EULA accepted
+        License Count: Non-Counted
+        License Priority: Low
+</pre>]]></text>
+</data>

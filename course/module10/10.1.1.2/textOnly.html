@@ -1,0 +1,17 @@
+
+          <p>For Cisco devices, CDP is enabled by default. For security reasons, it may be desirable to disable CDP on a network device globally, or per interface. With CDP, an attacker can gather valuable insight about the network layout, such as IP addresses, IOS versions, and types of devices.</p>
+          <p></p>
+          <p>To verify the status of CDP and display information about CDP, enter the <b>show cdp</b> command, as displayed in Example 1.</p>
+          <p></p>
+          <p>To enable CDP globally for all the supported interfaces on the device, enter <b>cdp run</b> in the global configuration mode. CDP can be disabled for all the interfaces on the device with the<b> no cdp run </b>command in the global configuration mode.</p>
+          <p></p>
+          <p>To disable CDP on a specific interface, such as the interface facing an ISP, enter <b>no cdp enable</b> in the interface configuration mode. CDP is still enabled on the device; however, no more CDP advertisements will be sent out that interface. To enable CDP on the specific interface again, enter <b>cdp enable</b>, as shown in Figure 2.</p>
+          <p></p>
+          <p>Figure 3 shows CDP disabled globally using the command <b>no cdp run</b> and re-enabled using the <b>cdp run</b> command.</p>
+          <p></p>
+          <p>To verify the status of CDP and display a list of neighbors, use the <b>show cdp neighbors</b> command in the privileged EXEC mode. The <b>show cdp neighbors</b> command displays important information about the CDP neighbors. Currently, this device does not have any neighbors because it is not physically connected to any devices, as indicated by the results of the <b>show cdp neighbors</b> command displayed in Figure 4.</p>
+          <p></p>
+          <p>Use the <b>show cdp interface</b> command to display the interfaces that are CDP enabled on a device. The status of each interface is also displayed. Figure 5 shows that five interfaces are CDP enabled on the router with only one active connection to another device.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 6 to practice configuring and verifying CDP.</p>
+        

@@ -1,0 +1,14 @@
+
+          <p>Dynamic routing protocols are used by routers to facilitate the exchange of routing information between routers. The purpose of dynamic routing protocols includes: discovering remote networks, maintaining up-to-date routing information, choosing the best path to destination networks, and finding a new best path if the current path is no longer available. While dynamic routing protocols require less administrative overhead than static routing, they do require dedicating part of a router’s resources for protocol operation, including CPU time and network link bandwidth. </p>
+          <p></p>
+          <p>Networks typically use a combination of both static and dynamic routing. Dynamic routing is the best choice for large networks and static routing is better for stub networks.</p>
+          <p></p>
+          <p>Routing protocols are responsible for discovering remote networks, as well as maintaining accurate network information. When there is a change in the topology routing protocols propagate that information throughout the routing domain. The process of bringing all routing tables to a state of consistency, where all of the routers in the same routing domain, or area, have complete and accurate information about the network, is called convergence. Some routing protocols converge faster than others.</p>
+          <p></p>
+          <p></p>
+          <p>Routers sometimes learn about multiple routes to the same network from both static routes and dynamic routing protocols. When a router learns about a destination network from more than one routing source, Cisco routers use the administrative distance value to determine which source to use. Each dynamic routing protocol has a unique administrative value, along with static routes and directly connected networks. The lower the administrative value, the more preferred the route source. A directly connected network is always the preferred source, followed by static routes and then various dynamic routing protocols.</p>
+          <p></p>
+          <p>Routing table entries contain a route source, a destination network, and an outgoing interface. Route sources can be either connected, local, static, or from a dynamic routing protocol. </p>
+          <p></p>
+          <p>IPv4 routing tables can contain four types of routes: ultimate routes, level 1 routes, level 1 parent routes, and level 2 child routes. Because IPv6 is classless by design, all routes are effectively level 1 ultimate routes. There is no level 1 parent of level 2 child routes.</p>
+        

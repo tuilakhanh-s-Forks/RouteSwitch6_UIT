@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	
+	<slide>
+		<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+		<element type="TEXT" subType="TITLE" compId="ID_title"/>
+		<element type="IMAGE" src="media_1.3.2.1.png" x="0" y="0" width="680" height="490"/>
+		
+			
+		<element type="ROUTER" textId="ID_router_txt1" x="40" y="250" width="600" height="209" />	  
+	</slide>
+	
+         <text id="ID_router_txt1"><![CDATA[R1# <b>show ip route</b><br/>
+      Codes:L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP<br/>
+     <div style="padding-left:34px;">D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area <br/>
+      N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2<br/>
+      E1 - OSPF external type 1, E2 - OSPF external type 2<br/>
+      i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2<br/>
+      ia - IS-IS inter area, * - candidate default, U - per-user static route<br/>
+      o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP<br/>
+      + - replicated route, % - next hop override</div><br />
+
+Gateway of last resort is not set<br/>
+
+R1#]]></text>
+		
+
+</data>

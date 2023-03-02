@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.3.4 Configure a Directly Connected Static IPv6 Route</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configure a Directly Connected Static IPv6 Route</h1>
+        <div>
+          <p>When configuring a static route on point-to-point networks, an alternative to using the next-hop IPv6 address is to specify the exit interface. This is an alternative used in older IOSs or whenever CEF is disabled, to avoid the recursive lookup problem. </p>
+          <p></p>
+          <p>For instance, in Figure 1, three directly connected static routes are configured on R1 using the exit interface. </p>
+          <p></p>
+          <p>The IPv6 routing table for R1 in Figure 2 shows that when a packet is destined for the 2001:DB8:ACAD:3::/64 network, R1 looks for a match in the routing table and finds that it can forward the packet out of its Serial 0/0/0 interface. No other lookups are required.</p>
+          <p></p>
+          <p>Notice how the routing table looks different for the route configured with an exit interface than the route configured with a recursive entry.</p>
+          <p></p>
+          <p>Configuring a directly connected static route with an exit interface allows the routing table to resolve the exit interface in a single search instead of two searches. Recall that with the use of the CEF forwarding mechanism, static routes with an exit interface are considered unnecessary. A single lookup is performed using a combination of the FIB and adjacency table stored in the data plane.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 and Figure 4 to configure directly connected static IPv6 routes.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">These figures are based on the standard lab diagram.  R. 1. with a lan connects to R. 2. with a lan which connects to R. 3. with a lan. Figure one shows configuring the static routes to remote networks on router one using i. p. v. 6.  The static routes were configured using exit interface. Figure two demonstrates the lookup process for router one to reach the lan on router three. Figure three is an interactive activity that allows the learner to configure a static route on router two, using i. p. v. 6, to reach the router three lan using exit interface. Figure four is an interactive activity that allows the learner to configure static routes on router three, using i. p. v. 6, pointing to the networks on the other side of router two.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.2.3 Editing Standard Named ACLs</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Editing Standard Named ACLs</h1>
+        <div>
+          <p>In a previous example, sequence numbers were used to edit a standard numbered IPv4 ACL. By referring to the statement sequence numbers, individual statements can easily be inserted or deleted. This method can also be used to edit standard named ACLs.</p>
+          <p></p>
+          <p>The figure shows an example of inserting a line to a named ACL. </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>In the first <b>show</b> command output, you can see that the ACL named NO_ACCESS has two numbered lines indicating access rules for a workstation with the IPv4 address 192.168.11.10. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>From named access list configuration mode, statements can be inserted or removed. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>To add a statement to deny another workstation requires inserting a numbered line. In the example, the workstation with the IPv4 address 192.168.11.11 is being added using a new sequence number of 15. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The final <b>show</b> command output verifies that the new workstation is now denied access.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: In named access list configuration mode, use the <b>no </b><i>sequence-number</i> command to quickly delete individual statements.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the process of inserting a statement into an existing A.C.L.  The figure shows an existing A.C.L. named, no underscore access. The A.C.L. has two entries, line 10 and line 20.  The figure then shows the addition of a line between the two existing lines. This line is added via the command, 15 deny host 192 dot 168 dot 11 dot 11.  The contents A.C.L. is displayed with the command show access hyphen lists and the figure is highlighting the line numbered 15, which is between lines 10 and 20.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

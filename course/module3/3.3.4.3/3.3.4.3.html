@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.4.3 Remote IPv6 Network Entries</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.4.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Remote IPv6 Network Entries</h1>
+        <div>
+          <p>Figure 1 highlights the routing table entries for the three remote networks (i.e., R2 LAN, R3 LAN, and the link between R2 and R3). The three entries were added by the EIGRP. </p>
+          <p></p>
+          <p>Figure 2 displays a routing table entry on R1 for the route to remote network 2001:DB8:CAFE:3::/64  on R3. The entry identifies the following information:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Route source </b>- Identifies how the route was learned. Common codes include O (OSPF), D (EIGRP), R (RIP), and S (Static route).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Destination network </b>- Identifies the address of the remote IPv6 network.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Administrative distance </b>- Identifies how trustworthiness of the route source. IPv6 uses the same distances as IPv4.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Metric </b>- Identifies the value assigned to reach the remote network. Lower values indicate preferred routes. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Next hop </b>- Identifies the IPv6 address of the next router to forward the packet to.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Outgoing interface </b>- Identifies the exit interface to use to forward a packet toward the final destination.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>When an IPv6 packet arrives on a router interface, the router examines the IPv6 header and identifies the destination IPv6 address. The router then proceeds through the following router lookup process.</p>
+          <p></p>
+          <p>The router examines level 1 network routes for the best match with the destination address of the IPv6 packet. Just like IPv4, the longest match is the best match. For example, if there are multiple matches in the routing table, the router chooses the route with the longest match.  A match is made by matching the far left bits of the packet’s destination IPv6 address with the IPv6 prefix and prefix-length in the IPv6 routing table.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the I.P.V.6. routing table for router R-1 produced from the command, show i.p. route.  The figure highlights the three remote networks learned through E.I.G.R.P.  Figure two lists one of the entries and identifies each piece of the entry.  The line reads D for the route source being E.I.G.R.P., 2 0 0 1 colon D B 8 colon C A F E colon 3 colon colon slash 64 for the network address, 90 for the administrative distance, slash 2 1 7 0 1 1 2 for the metric.  The line ends with via F E 8 0 colon colon 3 for the next hop I.P. address and serial zero slash zero slash zero for the outgoing interface.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

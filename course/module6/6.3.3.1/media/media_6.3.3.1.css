@@ -1,0 +1,30 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_txt03{
+background-color: #FFFFFF;
+padding-top: 5px !important;
+padding-bottom: 5px !important;
+box-shadow: 1px 1px 1px 1px #888888;
+}
+
+#ID_txt01{
+	background-color: #4E4C4D;
+	border-style: solid;
+	border-width: 2px;
+	padding-top: 2px !important;
+	padding-bottom: 2px !important;
+	border-color: #FFFFFF;
+	box-shadow: 1px 1px 1px 1px #888888;
+}
+#ID_txt02{
+	background-color: #0E6360;
+	border-style: solid;
+	border-width: 2px;
+	padding-top: 2px !important;
+	padding-bottom: 2px !important;
+	border-color: #FFFFFF;
+	box-shadow: 1px 1px 1px 1px #888888;
+}

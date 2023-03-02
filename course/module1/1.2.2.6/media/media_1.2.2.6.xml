@@ -1,0 +1,119 @@
+<textcomponents>
+
+<component id="ID_s1_title">
+	<text><![CDATA[<b>Activity – Match the Administrative Distance to its Route Source</b>]]></text>
+</component>
+
+<component id='ID_s1_instr_title'>
+	<text><![CDATA[Instructions]]></text>
+</component>
+
+<component id='ID_s1_instr_body'>
+	<text><![CDATA[Match the administrative distance to its route source.]]></text>
+</component>
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each Administrative Distance to its route source.]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each Administrative Distance to its route source. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+<!--Drag Items-->
+
+<component id='ID_s1_drag_header'>
+	<text><![CDATA[<font color="#FFFFFF"><b>Steps]]></text>
+</component>
+
+<component id='ID_s1_drag01'>
+	<text><![CDATA[0]]></text>
+</component>
+
+<component id='ID_s1_drag02'>
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id='ID_s1_drag03'>
+	<text><![CDATA[5]]></text>
+</component>
+
+<component id='ID_s1_drag04'>
+	<text><![CDATA[20]]></text>
+</component>
+
+<component id='ID_s1_drag05'>
+	<text><![CDATA[90]]></text>
+</component>
+
+<component id='ID_s1_drag06'>
+	<text><![CDATA[100]]></text>
+</component>
+
+<component id='ID_s1_drag07'>
+	<text><![CDATA[110]]></text>
+</component>
+
+<component id='ID_s1_drag08'>
+	<text><![CDATA[115]]></text>
+</component>
+
+<component id='ID_s1_drag09'>
+	<text><![CDATA[120]]></text>
+</component>
+
+<component id='ID_s1_drag10'>
+	<text><![CDATA[170]]></text>
+</component>
+
+<!--Questions-->
+<component id='ID_s1_text_header01'>
+	<text><![CDATA[Administrative Distance]]></text>
+</component>
+
+<component id='ID_s1_text_header02'>
+	<text><![CDATA[Route Source]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+	<text><![CDATA[RIP]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+  <text><![CDATA[Static]]></text> 
+</component>
+
+<component id="ID_s1_txt03">
+  <text><![CDATA[Internal EIGRP]]></text> 
+</component>
+
+<component id="ID_s1_txt04">
+	<text><![CDATA[OSPF]]></text>
+</component>
+
+<component id="ID_s1_txt05">
+  <text><![CDATA[Connected]]></text> 
+</component>
+
+<component id="ID_s1_txt06">
+  <text><![CDATA[External BGP]]></text> 
+</component>
+
+</textcomponents>

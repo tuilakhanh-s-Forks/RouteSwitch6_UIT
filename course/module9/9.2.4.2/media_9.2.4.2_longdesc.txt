@@ -1,0 +1,1 @@
+Figure shows a wireless router with an inside network on the left and an outside network on the right.  There is a screenshot the Packet Tracer GUI configuring port forwarding.  

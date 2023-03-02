@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide>
+        <element type="IMAGE" src="bg.png" x="0" y="0" width="680" height="490" />
+        <element type="IMAGE" src="media_1.3.1.1.png" x="0" y="0" width="680" height="490" />
+        <element type="TEXT" compId="ID_txt01" x="23" y="114" width="140" align="center" expand="up" />
+        <element type="TEXT" compId="ID_txt02" x="23" y="330" width="140" align="center" expand="up+down" />
+        <element type="TEXT" compId="ID_txt03" x="267" y="280" width="140" align="center" expand="up+down" />
+        <element type="TEXT" compId="ID_txt04" x="534.95" y="329" width="120.25" align="center" expand="up+down" />
+        <element type="TEXT" compId="ID_txt05" x="534.95" y="117" width="120.25" align="center" expand="up+down" />
+        <element type="TEXT" id="ID_static_1" text="192.168.10.0/24" x="43.45" y="151.75" align="center" width="96" />
+        <element type="TEXT" id="ID_static_2" text="192.168.11.0/24" x="40.85" y="287.1" align="center" width="96" />
+        <element type="TEXT" id="ID_static_3" text="10.1.1.0/24" x="542.55" y="148.65" align="center" width="96" />
+        <element type="TEXT" id="ID_static_4" text="10.1.2.0/24" x="542.55" y="290.9" align="center" width="96" />
+        <element type="TEXT" id="ID_static_5" text="209.165.200.224/30" x="279.5" y="204.25" align="center" width="120" />
+        <element type="TEXT" id="ID_static_6" text=".225" x="235.35" y="222.35" align="center" width="31" />
+        <element type="TEXT" id="ID_static_7" text=".226" x="412.2" y="235.9" align="center" width="31" />
+        <element type="TEXT" id="ID_static_8" text=".1" x="158.9" y="197.5" align="center" width="31" />
+        <element type="TEXT" id="ID_static_9" text=".1" x="158.9" y="240.55" align="center" width="31" />
+        <element type="TEXT" id="ID_static_10" text="R1" x="188.5" y="226.65" align="center" width="31" bold="1" />
+        <element type="TEXT" id="ID_static_11" text="R2" x="452.8" y="233.65" align="center" width="31" bold="1" />
+        <element type="TEXT" subType="TITLE" compId="ID_title" />
+    </slide>
+</data>

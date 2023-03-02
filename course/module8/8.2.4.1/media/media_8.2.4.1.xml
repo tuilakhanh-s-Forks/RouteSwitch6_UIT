@@ -1,0 +1,73 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Troubleshooting DHCPv6</b>]]></text>
+</component>
+
+<component id="ID_table">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+	<tr class="mtable_title">
+					<td colspan="2" bgcolor='#FFFFFF'><font size="5"></font></td>
+				</tr>
+
+				<tr class="mtable_top">
+					<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+				</tr>
+							  
+
+	<tr>
+		<td bgcolor='#666263' valign="middle" width="200"><font color="#FFFFFF">Troubleshooting Task 1</font></td>
+		<td bgcolor='#E9E7E8' valign="middle" width="400">Resolve address conflicts.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263' valign="middle"><font color="#FFFFFF">Troubleshooting Task 2</font></td>
+		<td bgcolor='#F2F2F2' valign="middle">Verify allocation method.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263' valign="middle"><font color="#FFFFFF">Troubleshooting Task 3</font></td>
+		<td bgcolor='#E9E7E8' valign="middle">Test with a static IPv6 address.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263' valign="middle"><font color="#FFFFFF">Troubleshooting Task 4</font></td>
+		<td bgcolor='#F2F2F2' valign="middle">Verify switch port configuration.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263' valign="middle"><font color="#FFFFFF">Troubleshooting Task 5</font></td>
+		<td bgcolor='#E9E7E8' valign="middle">Test from the same subnet or VLAN.</td>
+	</tr>
+</table>]]></text>
+</component>
+
+<component id="ID_table_html">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+	<caption class="mtable_title" colspan="2" bgcolor='#FFFFFF'><font size="5"></font></caption>
+
+				<tr class="mtable_top">
+					<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+				</tr>
+							  
+
+	<tr>
+		<td bgcolor='#666263' valign="middle" width="200"><font color="#FFFFFF">Troubleshooting Task 1</font></td>
+		<td bgcolor='#E9E7E8' valign="middle" width="400">Resolve address conflicts.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263' valign="middle"><font color="#FFFFFF">Troubleshooting Task 2</font></td>
+		<td bgcolor='#F2F2F2' valign="middle">Verify allocation method.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263' valign="middle"><font color="#FFFFFF">Troubleshooting Task 3</font></td>
+		<td bgcolor='#E9E7E8' valign="middle">Test with a static IPv6 address.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263' valign="middle"><font color="#FFFFFF">Troubleshooting Task 4</font></td>
+		<td bgcolor='#F2F2F2' valign="middle">Verify switch port configuration.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#666263' valign="middle"><font color="#FFFFFF">Troubleshooting Task 5</font></td>
+		<td bgcolor='#E9E7E8' valign="middle">Test from the same subnet or VLAN.</td>
+	</tr>
+</table>]]></text>
+</component>
+</textcomponents>
+

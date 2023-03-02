@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        <element type="IMAGE" x="0" y="0" width="1000" height="490" src="../../../common/images/page_backgrounds/bg_activity.jpg" />
+        <slide>
+            <element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#FFFFFF" />
+            <element type="TEXTBOX" titleId="ID_s1_instr_title" bodyId="ID_s1_instr_body" x="55" y="39" width="276.4" height="160" animated="0" subType="ROLLOVER" />
+            <element type="IMAGE" x="0" y="0" width="1000" height="490" src="media_3.3.4.4.png" />
+            <element type="TEXT" compId="ID_s1_txt02" x="470" y="46" width="131" expand="down" align="center" />
+            <element type="TEXT" compId="ID_s1_txt03" x="604" y="46" width="131" expand="down" align="center" />
+            <element type="TEXT" compId="ID_s1_txt04" x="726" y="46" width="131" expand="down" align="center" />
+            <!-- <element type="TEXT" compId="ID_s1_txt05" x="15" y="149" width="104.5" expand="right" align="left" size="10" /> -->
+            <element type="TEXT" compId="ID_s1_txt01" x="510" y="177" width="336" expand="down" align="center" />
+            <element type="ROUTER" textId="ID_router_txt1" x="500.7" y="200.25" width="344" height="275" />
+            <element type="ACTIVITY" subType="DRAGDROP" method="NORMAL" replicate="false" compWidth="80" compHeight="53.50" dragIcon="" dropIcon="" tickPosition="left" dragAlpha="0.3" size="10">
+                <subelement type="DRAG" compId="ID_s1_drag01" x="35.7" y="227.65" />
+                <subelement type="DRAG" compId="ID_s1_drag02" x="148.85" y="227.65" />
+                <subelement type="DRAG" compId="ID_s1_drag03" x="263.05" y="227.65" />
+                <subelement type="DRAG" compId="ID_s1_drag04" x="35.7" y="292.65" />
+                <subelement type="DRAG" compId="ID_s1_drag05" x="148.85" y="292.65" />
+                <subelement type="DRAG" compId="ID_s1_drag06" x="263.05" y="292.65" />
+                <subelement type="DRAG" compId="ID_s1_drag07" x="35.7" y="357.05" />
+                <subelement type="DRAG" compId="ID_s1_drag08" x="148.85" y="357.05" />
+                <subelement type="DRAG" compId="ID_s1_drag09" x="263.05" y="357.05" />
+                <subelement type="DROP" x="499.7" y="77.45" match="0" />
+                <subelement type="DROP" x="630.85" y="77.45" match="4" />
+                <subelement type="DROP" x="755.05" y="77.45" match="1" />
+                <subelement type="CHECK" x="75" y="435" width="110" height="23" compId="ID_s1_CHECK" />
+                <subelement type="RESET" x="193" y="435" width="110" height="23" compId="ID_s1_RESET" />
+                <subelement type="FEEDBACK" x="350" y="156" width="300" height="200" correctTitleId="ID_s1_CORRECT_TITLE" correctBodyId="ID_s1_CORRECT_BODY" wrongTitleId="ID_s1_INCORRECT_TITLE" wrongBodyId="ID_s1_INCORRECT_BODY" />
+            </element>
+        </slide>
+        <slide>
+            <element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#FFFFFF" />
+            <element type="TEXTBOX" titleId="ID_s2_instr_title" bodyId="ID_s2_instr_body" x="55" y="39" width="276.4" height="160" animated="0" subType="ROLLOVER" />
+            <element type="IMAGE" x="0" y="0" width="1000" height="490" src="media_3.3.4.4.png" />
+            <element type="TEXT" compId="ID_s2_txt01" x="510" y="177" width="336" expand="down" align="center" />
+             <element type="TEXT" compId="ID_s2_txt02" x="470" y="46" width="131" expand="down" align="center" />
+            <element type="TEXT" compId="ID_s2_txt03" x="604" y="46" width="131" expand="down" align="center" />
+            <element type="TEXT" compId="ID_s2_txt04" x="726" y="46" width="131" expand="down" align="center" />
+            <!--   <element type="TEXT" compId="ID_s2_txt05" x="15" y="149" width="104.5" expand="right" align="left" size="10" /> -->
+            <element type="ROUTER" textId="ID_router_txt2" x="500.7" y="200.25" width="344" height="275" />
+            <element type="ACTIVITY" subType="DRAGDROP" method="NORMAL" replicate="false" compWidth="80" compHeight="53.50" dragIcon="" dropIcon="" tickPosition="left" dragAlpha="0.3" size="10">
+                <subelement type="DRAG" compId="ID_s2_drag01" x="35.7" y="227.65" />
+                <subelement type="DRAG" compId="ID_s2_drag02" x="148.85" y="227.65" />
+                <subelement type="DRAG" compId="ID_s2_drag03" x="263.05" y="227.65" />
+                <subelement type="DRAG" compId="ID_s2_drag04" x="35.7" y="292.65" />
+                <subelement type="DRAG" compId="ID_s2_drag05" x="148.85" y="292.65" />
+                <subelement type="DRAG" compId="ID_s2_drag06" x="263.05" y="292.65" />
+                <subelement type="DRAG" compId="ID_s2_drag07" x="35.7" y="357.05" />
+                <subelement type="DRAG" compId="ID_s2_drag08" x="148.85" y="357.05" />
+                <subelement type="DRAG" compId="ID_s2_drag09" x="263.05" y="357.05" />
+                <subelement type="DROP" x="499.7" y="77.45" match="5" />
+                <subelement type="DROP" x="630.85" y="77.45" match="2" />
+                <subelement type="DROP" x="755.05" y="77.45" match="1" />
+                <subelement type="CHECK" x="75" y="435" width="110" height="23" compId="ID_s2_CHECK" />
+                <subelement type="RESET" x="193" y="435" width="110" height="23" compId="ID_s2_RESET" />
+                <subelement type="FEEDBACK" x="350" y="156" width="300" height="200" correctTitleId="ID_s2_CORRECT_TITLE" correctBodyId="ID_s2_CORRECT_BODY" wrongTitleId="ID_s2_INCORRECT_TITLE" wrongBodyId="ID_s2_INCORRECT_BODY" />
+            </element>
+        </slide>
+        <slide>
+            <element type="TEXT" subType="TITLE" compId="ID_s3_title" color="#FFFFFF" />
+            <element type="TEXTBOX" titleId="ID_s3_instr_title" bodyId="ID_s3_instr_body" x="55" y="39" width="276.4" height="160" animated="0" subType="ROLLOVER" />
+            <element type="IMAGE" x="0" y="0" width="1000" height="490" src="media_3.3.4.4.png" />
+            <element type="TEXT" compId="ID_s3_txt01" x="510" y="177" width="336" expand="down" align="center" />
+            <element type="TEXT" compId="ID_s3_txt02" x="487" y="46" width="131" expand="down" align="center" />
+            <element type="TEXT" compId="ID_s3_txt03" x="604" y="46" width="131" expand="down" align="center" />
+            <element type="TEXT" compId="ID_s3_txt04" x="726" y="46" width="131" expand="down" align="center" />
+           <!--  <element type="TEXT" compId="ID_s3_txt05" x="15" y="149" width="104.5" expand="right" align="left" size="10" /> -->
+            <element type="ROUTER" textId="ID_router_txt3" x="500.7" y="200.25" width="344" height="275" />
+            <element type="ACTIVITY" subType="DRAGDROP" method="NORMAL" replicate="false" compWidth="85" compHeight="53.50" dragIcon="" dropIcon="" tickPosition="left" dragAlpha="0.3" size="10">
+                <subelement type="DRAG" compId="ID_s3_drag01" x="35.7" y="227.65" />
+                <subelement type="DRAG" compId="ID_s3_drag02" x="148.85" y="227.65" />
+                <subelement type="DRAG" compId="ID_s3_drag03" x="263.05" y="227.65" />
+                <subelement type="DRAG" compId="ID_s3_drag04" x="35.7" y="292.65" />
+                <subelement type="DRAG" compId="ID_s3_drag05" x="148.85" y="292.65" />
+                <subelement type="DRAG" compId="ID_s3_drag06" x="263.05" y="292.65" />
+                <subelement type="DRAG" compId="ID_s3_drag07" x="35.7" y="357.05" />
+                <subelement type="DRAG" compId="ID_s3_drag08" x="148.85" y="357.05" />
+                <subelement type="DRAG" compId="ID_s3_drag09" x="263.05" y="357.05" />
+                 <subelement type="DROP" x="499.7" y="77.45" match="3" />
+                <subelement type="DROP" x="630.85" y="77.45" match="4" />
+                <subelement type="DROP" x="755.05" y="77.45" match="8" />
+                <subelement type="CHECK" x="75" y="435" width="110" height="23" compId="ID_s3_CHECK" />
+                <subelement type="RESET" x="193" y="435" width="110" height="23" compId="ID_s3_RESET" />
+                <subelement type="FEEDBACK" x="350" y="156" width="300" height="200" correctTitleId="ID_s3_CORRECT_TITLE" correctBodyId="ID_s3_CORRECT_BODY" wrongTitleId="ID_s3_INCORRECT_TITLE" wrongBodyId="ID_s3_INCORRECT_BODY" />
+            </element>
+        </slide>
+    </slide>
+    <text id="ID_router_txt1">
+        <![CDATA[
+<pre>R1# <b>show ipv6 route</b>
+
+
+C   2001:DB8:CAFE:1::/64 [0/0]
+     via GigabitEthernet0/0, directly connected
+L   2001:DB8:CAFE:1::1/128 [0/0]
+     via GigabitEthernet0/0, receive
+D   2001:DB8:CAFE:2::/64 [90/3524096]
+     via FE80::3, Serial0/0/1
+D   2001:DB8:CAFE:3::/64 [90/2170112]
+     via FE80::3, Serial0/0/1
+C   2001:DB8:CAFE:A001::/64 [0/0]
+     via Serial0/0/0, directly connected
+L   2001:DB8:CAFE:A001::1/128 [0/0]
+     via Serial0/0/0, receive
+D   2001:DB8:CAFE:A002::/64 [90/3523840]
+     via FE80::3, Serial0/0/1
+R1#</pre>]]>
+    </text>
+    <text id="ID_router_txt2">
+        <![CDATA[
+<pre>R1# <b>show ipv6 route</b>
+
+
+C   2001:DB8:CAFE:1::/64 [0/0]
+     via GigabitEthernet0/0, directly connected
+L   2001:DB8:CAFE:1::1/128 [0/0]
+     via GigabitEthernet0/0, receive
+D   2001:DB8:CAFE:2::/64 [90/3524096]
+     via FE80::3, Serial0/0/1
+D   2001:DB8:CAFE:3::/64 [90/2170112]
+     via FE80::3, Serial0/0/1
+C   2001:DB8:CAFE:A001::/64 [0/0]
+     via Serial0/0/0, directly connected
+L   2001:DB8:CAFE:A001::1/128 [0/0]
+     via Serial0/0/0, receive
+D   2001:DB8:CAFE:A002::/64 [90/3523840]
+     via FE80::3, Serial0/0/1
+R1#</pre>]]>
+    </text>
+    <text id="ID_router_txt3">
+        <![CDATA[
+<pre>R1# <b>show ipv6 route</b>
+
+
+C   2001:DB8:CAFE:1::/64 [0/0]
+     via GigabitEthernet0/0, directly connected
+L   2001:DB8:CAFE:1::1/128 [0/0]
+     via GigabitEthernet0/0, receive
+D   2001:DB8:CAFE:2::/64 [90/3524096]
+     via FE80::3, Serial0/0/1
+D   2001:DB8:CAFE:3::/64 [90/2170112]
+     via FE80::3, Serial0/0/1
+C   2001:DB8:CAFE:A001::/64 [0/0]
+     via Serial0/0/0, directly connected
+L   2001:DB8:CAFE:A001::1/128 [0/0]
+     via Serial0/0/0, receive
+D   2001:DB8:CAFE:A002::/64 [90/3523840]
+     via FE80::3, Serial0/0/1
+R1#</pre>]]>
+    </text>
+</data>

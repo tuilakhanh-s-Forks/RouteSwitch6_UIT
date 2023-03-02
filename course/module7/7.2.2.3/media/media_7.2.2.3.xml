@@ -1,0 +1,10 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Adding a Line to a Named ACL</b>]]></text>
+	</component>
+	
+	<component id="ID_text01">
+		<text><![CDATA[<b>Note</b>: The <b>no</b> <font face="_typewriter"><i>sequence-number </i></font>named-ACL command is used to delete individual statements.]]></text>
+	</component>
+	
+</textcomponents>

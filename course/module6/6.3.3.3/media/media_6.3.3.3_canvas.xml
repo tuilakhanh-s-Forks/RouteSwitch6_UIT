@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+<slide>
+			<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+        <element type="IMAGE" src="media_6.3.3.2.png" width="680" height="490" x="0" y="0" />
+        <element type="TEXT" subType="TITLE" compId="ID_title" />
+        <element type="TEXT" id="ID_static_1" text="G0/0" x="306" y="104" align="center" width="26" />
+        <element type="TEXT" id="ID_static_6" text="F0/5" x="306" y="135" align="center" width="23" />
+        <element type="TEXT" compId="ID_txt01" x="149" y="84" width="106" expand="up" align="center" />
+        <element type="TEXT" id="ID_static_2" text="F0/11" x="302" y="196.5" align="center" width="28" />
+        <element type="TEXT" compId="ID_txt03" x="143" y="144" width="103" expand="up" align="center" class="orangeCallOut" />
+        <element type="TEXT" id="ID_static_4" text="172.17.10.21" x="217" y="277" align="center" width="67" bold="1" />
+        <element type="TEXT" id="ID_static_3" text="F0/6" x="344" y="196.5" align="center" width="23" />
+        <element type="TEXT" compId="ID_txt04" x="429" y="144" width="116" expand="up" align="center" class="purpleCallOut" />
+        <element type="TEXT" id="ID_static_5" text="172.17.30.23" x="380" y="277" align="center" width="68" bold="1" />
+        <element type="TEXT" compId="ID_txt02" x="458" y="55" width="190" expand="down" align="center" />
+<element type="ROUTER" textId="ID_router_txt1" x="40" y="303" width="600" height="170" />
+<text id="ID_router_txt1"><![CDATA[<pre><span class="col">R1(config)#</span> <b>interface g0/0.10</b>
+<span class="col">R1(config-subif)#</span> <b>encapsulation dot1q 10</b>
+<span class="col">R1(config-subif)#</span> <b>ip address 172.17.10.1 255.255.255.0</b>
+<span class="col">R1(config-subif)#</span> <b>interface g0/0.30</b>
+<span class="col">R1(config-subif)#</span> <b>encapsulation dot1q 30</b>
+<span class="col">R1(config-subif)#</span> <b>ip address 172.17.30.1 255.255.255.0</b>
+<span class="col">R1(config)#</span> <b>interface g0/0</b>
+<span class="col">R1(config-if)#</span> <b>no shutdown</b></span>
+*Mar 20 00:20:59.299: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, 
+ changed state to down
+*Mar 20 00:21:02.919: %LINK-3-UPDOWN: Interface GigabitEthernet0/0,
+ changed state to up
+*Mar 20 00:21:03.919: %LINEPROTO-5-UPDOWN: Line protocol on 
+ Interface GigabitEthernet0/0, changed state to up
+</pre>]]></text>
+
+
+</slide>
+
+</data>

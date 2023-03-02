@@ -1,0 +1,142 @@
+<textcomponents>
+
+<component id="ID_title">
+		<text><![CDATA[<b>Activity – ACL Operation</b>]]></text>
+	</component>
+	<component id="ID_instr_title">
+		<text><![CDATA[Instructions]]></text>
+	</component>
+<component id="ID_inst_body">
+	<text><![CDATA[Drag the appropriate word or phrase to complete the ACL operation statements. Not all answers will be used. The first statement requires two words or phrases to complete it.]]></text>
+</component>
+
+<!--Drag and Drop-->
+<component id='ID_header1'>
+		<text><![CDATA[Completion]]></text>
+	</component>
+	<component id='ID_header2'>
+		<text><![CDATA[ACL Operation]]></text>
+	</component>
+<component id='ID_drag01'>
+	<text><![CDATA[Discarded]]></text>
+</component>
+
+<component id='ID_drag02'>
+	<text><![CDATA[Before]]></text>
+</component>
+
+<component id='ID_drag03'>
+	<text><![CDATA[Four]]></text>
+</component>
+
+<component id='ID_drag04'>
+	<text><![CDATA[Interface]]></text>
+</component>
+
+<component id='ID_drag05'>
+	<text><![CDATA[Pathway]]></text>
+</component>
+
+<component id='ID_drag06'>
+	<text><![CDATA[Deny]]></text>
+</component>
+
+<component id='ID_drag07'>
+	<text><![CDATA[After]]></text>
+</component>
+
+<component id='ID_drag08'>
+	<text><![CDATA[Processing]]></text>
+</component>
+
+<component id='ID_drag09'>
+	<text><![CDATA[Six]]></text>
+</component>
+
+<component id='ID_drag10'>
+	<text><![CDATA[Protocol]]></text>
+</component>
+<component id='ID_drag11'>
+	<text><![CDATA[Firewall]]></text>
+</component>
+<component id='ID_drag12'>
+	<text><![CDATA[Twelve]]></text>
+</component>
+<component id='ID_drag13'>
+	<text><![CDATA[Forwarded]]></text>
+</component>
+<component id='ID_drag14'>
+	<text><![CDATA[Permit]]></text>
+</component>
+
+
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully completed the ACL operation statements.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully completed the ACL operation statements. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+
+
+<component id="ID_txt01">
+	<text><![CDATA[An Access Control List (ACL) controls whether the router will _____ or _____ packet traffic based on packet header criteria.]]></text>
+</component>
+
+<component id="ID_txt02">
+  <text><![CDATA[ACLs are often used in routers between internal and external networks to provide a _____.]]></text> 
+</component>
+
+<component id="ID_txt03">
+  <text><![CDATA[A router with three interfaces and two network protocols (IPv4 and IPv6) can have as many as _____ active ACLs.]]></text> 
+</component>
+
+<component id="ID_txt04">
+  <text><![CDATA[For inbound ACLs, incoming packets are processed _____ routing has been performed.]]></text> 
+</component>
+
+<component id="ID_txt05">
+  <text><![CDATA[For outbound ACLs, incoming packets are processed _____ routing has been performed.]]></text> 
+</component>
+
+<component id="ID_txt06">
+  <text><![CDATA[For every ACL, there is an implied deny statement. If a packet does not match any of the ACL criteria, it will be _____.]]></text> 
+</component>
+
+<component id="ID_txt07">
+  <text><![CDATA[ACLs can filter data traffic per protocol, per direction, and per _____.]]></text> 
+</component>
+
+<component id="ID_txt08">
+  <text><![CDATA[ACLs can filter traffic based on source/destination address, _____, and port numbers.]]></text> 
+</component>
+
+<component id="ID_txt09">
+  <text><![CDATA[<b>ACL Operation</b>]]></text> 
+</component>
+
+<component id="ID_txt10">
+  <text><![CDATA[<b>Completion</b>]]></text> 
+</component>
+   
+</textcomponents>

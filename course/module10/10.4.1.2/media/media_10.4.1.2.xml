@@ -1,0 +1,37 @@
+﻿<textcomponents>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[Congratulations! You are nearly done with this course. Before you go, have a look at all the ways that NetAcad can support your education and your career! Click each plus sign (+) for more information.]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt01">
+        <text>
+            <![CDATA[Cisco Cert Exams and Discount Vouchers]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt01">
+        <text>
+            <![CDATA[You have worked hard to complete this course. Now it is time to think about how your new skills and knowledge can help when taking <a href="https://www.netacad.com/careers/certifications" target="_blank"><u>industry-recognized certification exams</u></a>. Not only that, netacad.com might also be able to help <a href="http://bit.ly/nacourses2vd" target="_blank"><u>save you money</u></a> on the cost of exams!]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt02">
+        <text>
+            <![CDATA[Talent Bridge]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt02">
+        <text>
+            <![CDATA[Is it time to find a GREAT job? Talent Bridge can help. <a href="https://www.citplatform.com/netacad-matchit/matchIT/NetAcadRegistration" target="_blank"><u>Register today</u></a> and start your search! Talent Bridge can match your skills and experience with jobs at Cisco and Cisco Partners. They are always looking for NetAcad Alumni!]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt03">
+        <text>
+            <![CDATA[Career Resources]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt03">
+        <text>
+            <![CDATA[Is this your first job search? Maybe it’s been a long time since you’ve looked for a job. Click <b>Careers</b> at the top of netacad.com. You’ll find great information on employment opportunities, webinars, career advice, pathways, certifications and success stories. While you’re here, Click <b>Courses</b> at the top of the page. At the bottom of the drop down menu, click <b>All Courses</b> to see what else NetAcad has to offer.]]>
+        </text>
+    </component>
+</textcomponents>

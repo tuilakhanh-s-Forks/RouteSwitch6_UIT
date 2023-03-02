@@ -1,0 +1,42 @@
+
+          <p>Another common configuration of Cisco IOS routers is enabling a loopback interface.</p>
+          <p></p>
+          <p>The loopback interface is a logical interface internal to the router.  It is not assigned to a physical port and can therefore never be connected to any other device.  It is considered a software interface that is automatically placed in an “up” state, as long as the router is functioning. </p>
+          <p></p>
+          <p>The loopback interface is useful in testing and managing a Cisco IOS device because it ensures that at least one interface will always be available. For example, it can be used for testing purposes, such as testing internal routing processes, by emulating networks behind the router. </p>
+          <p></p>
+          <p>Additionally, the IPv4 address assigned to the loopback interface can be significant to processes on the router that use an interface IPv4 address for identification purposes, such as the Open Shortest Path First (OSPF) routing process. By enabling a loopback interface, the router will use the always available loopback interface address for identification, rather than an IP address assigned to a physical port that may go down. </p>
+          <p></p>
+          <p>Enabling and assigning a loopback address is simple:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config)# </span>
+            <span class="cmd">
+              <b>interface loopback </b>
+            </span>
+            <span class="cmd">
+              <i>number</i>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">Router(config-if)# </span>
+            <span class="cmd">
+              <b>ip address </b>
+            </span>
+            <span class="cmd">
+              <i>ip-address</i>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>subnet-mask</i>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">Router(config-if)# </span>
+            <span class="cmd">
+              <b>exit</b>
+            </span>
+          </p>
+          <p></p>
+          <p>Multiple loopback interfaces can be enabled on a router. The IPv4 address for each loopback interface must be unique and unused by any other interface. </p>
+        

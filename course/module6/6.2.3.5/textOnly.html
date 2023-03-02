@@ -1,0 +1,8 @@
+
+          <p>Trunk links are normally configured statically with the<b> switchport mode trunk </b>command. Cisco Catalyst switch trunk ports use DTP to negotiate the state of the link. When a port on a trunk link is configured with a trunk mode that is incompatible with the neighboring trunk port, a trunk link fails to form between the two switches. </p>
+          <p></p>
+          <p>In the scenario illustrated in Figure 1, PC4 cannot connect to the internal web server. The topology indicates a valid configuration. Why is there a problem? </p>
+          <p>Check the status of the trunk ports on switch S1 using the<b> show interfaces trunk </b>command. The output shown in Figure 2 reveals that interface Fa0/3 on switch S1 is not currently a trunk link. Examining the F0/3 interface reveals that the switch port is configured statically in trunk mode. An examination of the trunks on switch S3 reveals that there are no active trunk ports. Further checking reveals that the Fa0/3 interface is in static access mode. This is because the port was configured using the<b> switchport mode access </b>command. This explains why the trunk is down.</p>
+          <p></p>
+          <p>To resolve the issue, reconfigure the trunk mode of the F0/3 ports on switch S3, as shown in Figure 3. After the configuration change, the output of the<b> show interfaces </b>command indicates that the port on switch S3 is now in trunking. The output from PC4 indicates that it has regained connectivity to the Web/TFTP server found at IPv4 address 172.17.10.30.</p>
+        

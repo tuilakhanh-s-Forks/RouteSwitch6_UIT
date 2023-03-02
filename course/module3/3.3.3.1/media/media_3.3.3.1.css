@@ -1,0 +1,9 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+#ID_s2_header1,#ID_s2_header3,#ID_s2_txt10,#ID_s2_txt11,#ID_s2_txt12,#ID_s3_header1,#ID_s3_txt10,#ID_s3_txt11,#ID_s3_header3{
+    opacity: 0.5 !important;
+}

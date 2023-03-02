@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="9.2.4.1A.png" />
+            <element type="TEXT" compId="ID_s1_txt01" x="75" y="166" width="94" expand="down" align="center" />
+            <element type="TEXT" compId="ID_s1_txt02" x="75" y="281" width="94" expand="down" align="center" />
+            <element type="TEXT" compId="ID_s1_txt03" x="75" y="397" width="94" expand="down" align="center" />
+            <element type="TEXT" compId="ID_s1_txt04" x="286" y="145" width="121" expand="left+right" align="center" color="#9f5824" />
+            <element type="TEXT" compId="ID_s1_txt05" x="286" y="259" width="121" expand="left+right" align="center" color="#9f5824" />
+            <element type="TEXT" compId="ID_s1_txt06" x="286" y="349" width="121" expand="left+right" align="center" color="#9f5824" />
+            <element type="TEXT" compId="ID_s1_txt08" x="286" y="198" width="122" expand="left+right" align="center" size="13" />
+            <element type="TEXT" compId="ID_s1_txt07" x="552" y="276" width="83" expand="down" align="center" />
+            <element type="TEXT" subType="TITLE" compId="ID_s1_title" />
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="9.2.4.1B.png" />
+            <element type="BUBBLE" compId="ID_s2_txt07" x="207" y="245" width="296" height="73" align="left" tailPosition="12" tailFlip="0" />
+            <element type="TEXT" compId="ID_s2_txt01" x="55" y="252" width="94" expand="down" align="center" />
+            <element type="TEXT" compId="ID_s2_txt02" x="144" y="156" width="122" expand="up" align="left" />
+            <element type="TEXT" compId="ID_s2_txt03" x="154" y="214" width="103" expand="up+down" align="center" />
+            <element type="TEXT" compId="ID_s2_txt04" x="272" y="174" width="107" expand="up" align="center" />
+            <element type="TEXT" compId="ID_s2_txt06" x="391" y="214" width="103" expand="up+down" align="center" />
+            <element type="TEXT" compId="ID_s2_txt05" x="382" y="156" width="122" expand="up" align="left" />
+            <element type="TEXT" id="ID_static_1" text="192.168.1.99" x="57" y="171" align="center" width="68" />
+            <element type="TEXT" subType="TITLE" compId="ID_s2_title" />
+        </slide>
+    </slide>
+</data>

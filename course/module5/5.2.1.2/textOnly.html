@@ -1,0 +1,45 @@
+
+          <p>Before configuring SSH, the switch must be minimally configured with a unique hostname and the correct network connectivity settings.</p>
+          <p></p>
+          <p>
+            <b>Step 1. Verify SSH support.</b>
+          </p>
+          <p></p>
+          <p>Use the<b> show ip ssh </b>command to verify that the switch supports SSH. If the switch is not running an IOS that supports cryptographic features, this command is unrecognized. </p>
+          <p></p>
+          <p>
+            <b>Step 2. Configure the IP domain.</b>
+          </p>
+          <p></p>
+          <p>Configure the IP domain name of the network using the<b> ip domain-name </b><i>domain-name </i>global configuration mode command. In Figure 1, the<i> domain-name </i>value is<b> cisco.com</b>.</p>
+          <p></p>
+          <p>
+            <b>Step 3. Generate RSA key pairs.</b>
+          </p>
+          <p></p>
+          <p>Not all versions of the IOS default to SSH version 2, and SSH version 1 has known security flaws. To configure SSH version 2, issue the<b> ip ssh version 2 </b>global configuration mode command. Generating an RSA key pair automatically enables SSH. Use the<b> crypto key generate rsa </b>global configuration mode command to enable the SSH server on the switch and generate an RSA key pair. When generating RSA keys, the administrator is prompted to enter a modulus length. The sample configuration in Figure 1 uses a modulus size of 1,024 bits. A longer modulus length is more secure, but it takes longer to generate and to use.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: To delete the RSA key pair, use the<b> crypto key zeroize rsa </b>global configuration mode command. After the RSA key pair is deleted, the SSH server is automatically disabled.</p>
+          <p></p>
+          <p>
+            <b>Step 4. Configure user authentication.</b>
+          </p>
+          <p></p>
+          <p>The SSH server can authenticate users locally or using an authentication server. To use the local authentication method, create a username and password pair using the<b> username </b><i>username</i><b> secret </b><i>password </i>global configuration mode command. In the example, the user<b> admin </b>is assigned the password<b> ccna</b>.</p>
+          <p></p>
+          <p>
+            <b>Step 5. Configure the vty lines.</b>
+          </p>
+          <p></p>
+          <p>Enable the SSH protocol on the vty lines using the<b> transport input ssh </b>line configuration mode command. The Catalyst 2960 has vty lines ranging from 0 to 15. This configuration prevents non-SSH (such as Telnet) connections and limits the switch to accept only SSH connections. Use the<b> line vty </b>global configuration mode command and then the<b> login local </b>line configuration mode command to require local authentication for SSH connections from the local username database.</p>
+          <p></p>
+          <p>
+            <b>Step 6. Enable SSH version 2.</b>
+          </p>
+          <p></p>
+          <p>By default, SSH supports both versions 1 and 2. When supporting both versions, this is shown in the<b> show ip ssh </b>output as supporting version 1.99. Version 1 has known vulnerabilities. For this reason, it is recommended to enable only version 2. Enable SSH version using the<b> ip ssh version 2 </b>global configuration command.</p>
+          <p></p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 2 to configure SSH on switch S1.</p>
+        

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="media_2.2.5.4.png" />
+        <element type="TEXT" id="ID_static_1" text=":1" x="337" y="141" align="center" width="16" />
+        <element type="TEXT" id="ID_static_2" text=":1" x="397" y="224" align="center" width="8" />
+        <element type="TEXT" id="ID_static_3" text="2001:DB8:ACAD:2::/64" x="363" y="90" align="center" width="119" />
+        <element type="TEXT" id="ID_static_4" text="2001:DB8:ACAD:4::/64" x="145" y="205" align="center" width="119" />
+        <element type="TEXT" id="ID_static_5" text="2001:DB8:ACAD:5::/64" x="390" y="207" align="center" width="119" />
+        <element type="TEXT" id="ID_static_6" text="2001:DB8:ACAD:1::/64" x="84" y="278" align="center" width="119" />
+        <element type="TEXT" id="ID_static_7" text="2001:DB8:ACAD:3::/64" x="453" y="280" align="center" width="119" />
+        <element type="TEXT" id="ID_static_8" text="G0/0" x="304" y="142" align="center" width="26" />
+        <element type="TEXT" id="ID_static_9" text="S0/0/1 DCE" x="369" y="175" align="center" width="34" />
+        <element type="TEXT" id="ID_static_10" text="S0/0/0" x="267" y="188" align="center" width="36" />
+        <element type="TEXT" id="ID_static_11" text="G0/0" x="197" y="240" align="center" width="26" />
+        <element type="TEXT" id="ID_static_12" text="G0/0" x="447" y="240" align="center" width="26" />
+        <element type="TEXT" id="ID_static_13" text=":2" x="315" y="196" align="center" width="9" />
+        <element type="TEXT" id="ID_static_14" text=":2" x="345" y="196" align="center" width="9" />
+        <element type="TEXT" id="ID_static_15" text=":1" x="271" y="222" align="center" width="8" />
+        <element type="TEXT" id="ID_static_16" text=":1" x="211" y="259" align="center" width="8" />
+        <element type="TEXT" id="ID_static_17" text=":1" x="447" y="259" align="center" width="8" />
+        <element type="TEXT" id="ID_static_18" text="S0/0/1" x="290" y="266" align="center" width="34" />
+        <element type="TEXT" id="ID_static_19" text="S0/0/1" x="350" y="239" align="center" width="34" />
+        <element type="TEXT" id="ID_static_20" text="S0/0/0" x="350" y="256" align="center" width="36" />
+        <element type="TEXT" id="ID_static_21" text="S0/0/0 DCE" x="292" y="230" align="center" width="36" />
+        <element type="TEXT" id="ID_static_22" text="2001:DB8:ACAD:6::/64" x="273" y="299" align="center" width="119" />
+        <element type="TEXT" id="ID_static_23" text=":1" x="290" y="278" align="center" width="8" />
+        <element type="TEXT" id="ID_static_24" text=":2" x="364" y="269" align="center" width="9" />
+        <slide>
+            <element type="TEXT" subType="TITLE" compId="ID_s1_title" />
+            <element type="ROUTER" textId="ID_s1_txt01" x="40" y="330" width="600" height="145" />
+        </slide>
+        <slide>
+            <element type="TEXT" subType="TITLE" compId="ID_s2_title" />
+            <element type="ROUTER" textId="ID_s2_txt01" x="40" y="330" width="600" height="145" />
+        </slide>
+        <slide>
+            <element type="TEXT" subType="TITLE" compId="ID_s3_title" />
+            <element type="ROUTER" textId="ID_s3_txt01" x="40" y="330" width="600" height="145" />
+        </slide>
+        <text id="ID_s1_txt01">
+            <![CDATA[
+		R1(config)# <b>ipv6 route ::/0 2001:db8:acad:4::2</b><br />
+		R1(config)# <b>ipv6 route ::/0 2001:db8:acad:6::2 5</b><br /> 
+		R1(config)#<br />
+		]]></text>
+        <text id="ID_s2_txt01">
+            <![CDATA[
+		R1# <b>show run | include ipv6 route</b><br />
+		ipv6 route ::/0 2001:DB8:ACAD:6::2 5<br />
+		ipv6 route ::/0 2001:DB8:ACAD:4::2<br />
+		R1#<br />
+		]]></text>
+        <text id="ID_s3_txt01">
+            <![CDATA[
+			R1# <b>show ipv6 route static | begin S   :</b><br />
+			S   ::/0 [1/0]<br />
+				 via 2001:DB8:ACAD:4::2<br />
+			R1#<br />
+		]]></text>
+    </slide>
+</data>

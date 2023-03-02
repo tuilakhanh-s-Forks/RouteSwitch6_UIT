@@ -1,0 +1,17 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+html, body {
+	margin:0;
+	height:100%;
+}
+
+#ID_s1_txt03,#ID_s1_txt10,#ID_s1_txt13{line-height:9px;}
+#ID_s1_txt03,#ID_s1_txt10,#ID_s1_txt13{letter-spacing:-.2px;}
+
+ @media only screen and (device-width: 768px) {
+/* #ID_s1_txt04 {letter-spacing:-2px;}
+ #ID_s1_txt07 {letter-spacing:-2px;)*/
+}

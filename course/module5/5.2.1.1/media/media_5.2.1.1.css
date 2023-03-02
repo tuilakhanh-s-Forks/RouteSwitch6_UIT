@@ -1,0 +1,22 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+html, body {
+	margin:0;
+	height:100%;
+
+}
+#flashContent {
+	width:100%;
+	height:100%;
+}
+
+#ID_s5_txt01 span {background-color:#FACCA8;}
+#ID_s1_title,#ID_s2_title,#ID_s3_title,#ID_s4_title{
+	color:#fff !important;
+}
+#ID_static{
+	color:#f68026 !important;
+}

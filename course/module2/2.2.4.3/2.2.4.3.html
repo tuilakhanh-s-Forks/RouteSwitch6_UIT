@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.4.3 Verify a Default Static Route</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.4.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verify a Default Static Route</h1>
+        <div>
+          <p>In Figure 1, the<b> show ipv6 route static </b>command output displays the contents of the routing table. </p>
+          <p></p>
+          <p>Unlike IPv4, IPv6 does not explicitly state that the default IPv6 is the Gateway of Last Resort. </p>
+          <p></p>
+          <p>The key to this configuration is the ::/0 mask. Remember that the IPv6 prefix-length in a routing table determines how many bits must match between the destination IP address of the packet and the route in the routing table. The ::/0 mask indicates that none of the bits are required to match. As long as a more specific match does not exist, the default static IPv6 route matches all packets.</p>
+          <p></p>
+          <p>Figure 2 displays a successful ping to the R3 LAN interface.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">These figures are based on the standard lab diagram. Figure one shows the output of the "show i. p. v. 6 route static" command on router one. Figure two shows the result of a ping from router one to the lan interface on router three.  This ping is successful since the static routes have all been configured.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+
+          <p>
+            <b>Configuring PAT for a Single Public IPv4 Address</b>
+          </p>
+          <p></p>
+          <p>Figure 1 shows the topology of a PAT implementation for a single public IPv4 address translation. In the example, all hosts from network 192.168.0.0/16 (matching ACL 1) that send traffic through router R2 to the Internet will be translated to IPv4 address 209.165.200.225 (IPv4 address of interface S0/1/0). The traffic flows will be identified by port numbers in the NAT table because the <b>overload</b> keyword was used.</p>
+          <p></p>
+          <p>Figure 2 shows the steps to follow to configure PAT with a single IPv4 address. If only a single public IPv4 address is available, the overload configuration typically assigns the public address to the outside interface that connects to the ISP. All inside addresses are translated to the single IPv4 address when leaving the outside interface. </p>
+          <p></p>
+          <p>
+            <b>Step 1.</b> Define an ACL to permit the traffic to be translated.</p>
+          <p></p>
+          <p>
+            <b>Step 2. </b>Configure source translation using the <b>interface</b> and <b>overload</b> keywords. The <b>interface</b> keyword identifies which interface IPv4 address to use when translating inside addresses. The <b>overload</b> keyword directs the router to track port numbers with each NAT entry.</p>
+          <p></p>
+          <p>
+            <b>Step 3. </b>Identify which interfaces are inside in relation to NAT. That is any interface that connects to the inside network.</p>
+          <p></p>
+          <p>
+            <b>Step 4. </b>Identify which interface is outside in relation to NAT. This should be the same interface identified in the source translation statement from Step 2.</p>
+          <p></p>
+          <p>The configuration is similar to dynamic NAT, except that instead of a pool of addresses, the <b>interface</b> keyword is used to identify the outside IPv4 address. Therefore, no NAT pool is defined. </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to configure PAT using a single address on R2.</p>
+        

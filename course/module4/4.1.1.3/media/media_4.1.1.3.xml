@@ -1,0 +1,61 @@
+<textcomponents>
+
+<!--slide 1-->
+<component id="ID_s1_title">
+<text><![CDATA[<b>Cisco Borderless Networks</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>Large Campus</b>]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[Data Center]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+<text><![CDATA[Services Block]]></text>
+</component>
+
+<component id="ID_s1_txt04">
+<text><![CDATA[Internet Edge]]></text>
+</component>
+
+<component id="ID_s1_txt05">
+<text><![CDATA[WAN]]></text>
+</component>
+
+<component id="ID_s1_txt06">
+<text><![CDATA[PSTN]]></text>
+</component>
+
+<component id="ID_s1_txt07">
+<text><![CDATA[Internet]]></text>
+</component>
+
+<component id="ID_s1_txt08">
+<text><![CDATA[<b>Medium Campus</b>]]></text>
+</component>
+
+<component id="ID_s1_txt09">
+<text><![CDATA[Data Center]]></text>
+</component>
+
+<component id="ID_s1_txt10">
+<text><![CDATA[Services Block]]></text>
+</component>
+
+<component id="ID_s1_txt11">
+<text><![CDATA[<b>Small Campus</b>]]></text>
+</component>
+
+<component id="ID_s1_txt12">
+<text><![CDATA[Data Center]]></text>
+</component>
+
+<component id="ID_s1_txt13">
+<text><![CDATA[Services Block]]></text>
+</component>
+
+
+</textcomponents>

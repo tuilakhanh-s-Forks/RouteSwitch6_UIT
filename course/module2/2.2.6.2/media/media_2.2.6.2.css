@@ -1,0 +1,15 @@
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+#ID_router_txt1{line-height: 12.8px;}
+
+.text_color{color:#F68026 !important;}
+/*@media only screen and (device-width: 768px)
+
+{
+	#ID_s1_txt01
+	{
+		margin-top: 50px !important;
+	}
+}*/
+

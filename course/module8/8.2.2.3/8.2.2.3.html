@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.2.3 Verifying Stateless DHCPv6 </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verifying Stateless DHCPv6 </h1>
+        <div>
+          <p>
+            <b>Verifying the Stateless DHCPv6 Server</b>
+          </p>
+          <p></p>
+          <p>In Figure 1, the <b>show ipv6 dhcp pool</b> command verifies the name of the DHCPv6 pool and its parameters. The number of active clients is 0, because there is no state being maintained by the server.</p>
+          <p></p>
+          <p>The <b>show running-config </b>command can also be used to verify all the commands that were previously configured.</p>
+          <p></p>
+          <p>
+            <b>Verifying the Stateless DHCPv6 Client</b>
+          </p>
+          <p></p>
+          <p>In this example, a router is used as a stateless DHCPv6 client. In Figure 2, the output from the <b>show ipv6 interface </b>command shows that the router has ”Stateless address autoconfig enabled“ and has an IPv6 global unicast address. The IPv6 global unicast address was created using SLAAC, which includes the prefix contained in the RA message. The IID was generated using EUI-64. DHCPv6 was not used to assign the IPv6 address.</p>
+          <p></p>
+          <p>The default router information is also from the RA message. This was the source IPv6 address of the packet that contained the RA message and the link-local address of the router.</p>
+          <p></p>
+          <p>The Figure 3 output from the <b>debug ipv6 dhcp detail</b> command shows the DHCPv6 messages exchanged between the client and the server. In this example, the command has been entered on the client. The INFORMATION-REQUEST message is shown because it is sent from a stateless DHCPv6 client. Notice that the client, router R3, is sending the DHCPv6 messages from its link-local address to the All_DHCPv6_Relay_Agents_and_Servers address FF02::1:2.</p>
+          <p></p>
+          <p>The debug output displays all the DHCPv6 messages sent between the client and the server including the DNS server and domain name options that were configured on the server.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to configure and verify stateless DHCPv6 on the router.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output from the command, show i.p.v.6. d.h.c.p. pool.  This shows the d.h.c.p.v.6. configuration on the router. Figure two shows the output from the command, show i.p.v.6. interface g zero slash one.  The lines that state that the router has stateless address autoconfig enabled, the i.p.v.6. address, and the default router address configuration are highlighted in the figure. Figure three shows the output from the command, debug i.p.v.6. d.h.c.p. detail.  All of the d.h.c.p.v.6. messages sent between the client and the server including the d.n.s. server and domain name options that were configured on the server are highlighted in the figure. Figure four is an interactive activity that allows the learner to configure and verify stateless d.h.c.p.v.6. on a router.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

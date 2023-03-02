@@ -1,0 +1,96 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Switch LEDs</b>]]></text>
+</component>
+
+<component id='ID_table'>
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000'glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+	<tr>
+		<td bgcolor='#FFFFFF' colspan='2' class="title"><font size='15' color='#393536'><b>Catalyst 2960 Switch LEDs</b></font></td>
+	</tr>
+	<tr class="mtable_top">
+		<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='2' color='#4E4C4D'>.</font></td>
+	</tr>
+	<tr>
+		<td width='30' bgcolor='#E9E7E8' align='center'>1</td>
+		<td bgcolor='#E9E7E8' width="565">The system LED</td>
+	</tr>
+	<tr>
+		<td width='30' bgcolor='#F2F2F2'align='center'>2</td>
+		<td bgcolor='#F2F2F2'>The RPS LED (if RPS is supported on the switch)</td>
+	</tr>
+	<tr>
+		<td width='30' bgcolor='#E9E7E8'align='center'>3</td>
+		<td bgcolor='#E9E7E8'>The port status LED (This is the default mode.)</td>
+	</tr>
+	<tr>
+		<td width='30' bgcolor='#F2F2F2'align='center'>4</td>
+		<td bgcolor='#F2F2F2'>The port duplex mode LED</td>
+	</tr>
+		<tr>
+		<td width='30' bgcolor='#E9E7E8'align='center'>5</td>
+		<td bgcolor='#E9E7E8'>The port speed LED</td>
+	</tr>
+	<tr>
+		<td width='30' bgcolor='#F2F2F2'align='center'>6</td>
+		<td bgcolor='#F2F2F2'>The PoE status LED (if PoE is supported on the switch)</td>
+	</tr>
+	<tr>
+		<td width='30' bgcolor='#E9E7E8'align='center'>7</td>
+		<td bgcolor='#E9E7E8'>The Mode button</td>
+	</tr>
+	<tr>
+		<td width='30' bgcolor='#F2F2F2'align='center'>8</td>
+		<td bgcolor='#F2F2F2'>The port LEDs</td>
+	</tr>
+	
+</table>]]></text>
+</component>
+
+ <component id='ID_table_html'>
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000'glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+    <caption class="mtable_title" colspan="2" bgcolor='#FFFFFF'><font size='15' color='#393536'><b>Catalyst 2960 Switch LEDs</b></font></caption>
+
+
+	<tr class="mtable_top">
+		<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='2' color='#4E4C4D'>.</font></td>
+	</tr>
+	<tr>
+		<td width='30' bgcolor='#E9E7E8' align='center'>1</td>
+		<td bgcolor='#E9E7E8' width="565">The system LED</td>
+	</tr>
+	<tr>
+		<td width='30' bgcolor='#F2F2F2'align='center'>2</td>
+		<td bgcolor='#F2F2F2'>The RPS LED (if RPS is supported on the switch)</td>
+	</tr>
+	<tr>
+		<td width='30' bgcolor='#E9E7E8'align='center'>3</td>
+		<td bgcolor='#E9E7E8'>The port status LED (This is the default mode.)</td>
+	</tr>
+	<tr>
+		<td width='30' bgcolor='#F2F2F2'align='center'>4</td>
+		<td bgcolor='#F2F2F2'>The port duplex mode LED</td>
+	</tr>
+		<tr>
+		<td width='30' bgcolor='#E9E7E8'align='center'>5</td>
+		<td bgcolor='#E9E7E8'>The port speed LED</td>
+	</tr>
+	<tr>
+		<td width='30' bgcolor='#F2F2F2'align='center'>6</td>
+		<td bgcolor='#F2F2F2'>The PoE status LED (if PoE is supported on the switch)</td>
+	</tr>
+	<tr>
+		<td width='30' bgcolor='#E9E7E8'align='center'>7</td>
+		<td bgcolor='#E9E7E8'>The Mode button</td>
+	</tr>
+	<tr>
+		<td width='30' bgcolor='#F2F2F2'align='center'>8</td>
+		<td bgcolor='#F2F2F2'>The port LEDs</td>
+	</tr>
+	
+</table>]]></text>
+</component>
+
+
+</textcomponents>

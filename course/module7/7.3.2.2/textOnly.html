@@ -1,0 +1,11 @@
+
+          <p>
+            <b>Security Policy</b>: The 192.168.11.0/24 network should not be able to access the 192.168.10.0/24 network.</p>
+          <p></p>
+          <p>In Figure 1, PC2 cannot access PC1. Nor can it access the Internet through R2. When viewing the output of the <b>show access-list</b> command, you can see that PC2 is matching the deny statement. ACL 20 seems to be configured correctly. You suspect that it must be incorrectly applied and view the interface configurations for R1</p>
+          <p></p>
+          <p>In Figure 2, the <b>show run</b> command filtered to view the interface configurations reveals that ACL 20 was applied to the wrong interface and in the wrong direction. All traffic from the 192.168.11.0/24 is denied inbound access through the G0/1 interface.</p>
+          <p></p>
+          <p>
+            <b>Solution</b>: To correct this error, remove ACL 20 from the G0/1 interface and apply it outbound on the G0/0 interface, as shown in Figure 3. PC2 cannot access PC1, but can now access the Internet.</p>
+        

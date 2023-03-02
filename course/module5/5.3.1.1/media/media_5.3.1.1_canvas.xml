@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide>
+		<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_photo.jpg" />
+		<element type="IMAGE" x="115" y="30" width="449.95" height="338.05" subType="STD" src="5.3.1.1.jpg" />
+		<element type="TEXTBOX" titleId="" bodyId="ID_txt01" x="115" y="389" width="450" height="69.4" animated="0" subType="ROLLOVER" />		
+	</slide>
+		
+</data>

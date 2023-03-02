@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.1.6 Verifying VLAN Information</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.1.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verifying VLAN Information</h1>
+        <div>
+          <p>After a VLAN is configured, VLAN configurations can be validated using Cisco IOS show commands. </p>
+          <p></p>
+          <p>Figure 1 displays the<b> show vlan </b>and<b> show interfaces </b>command options. </p>
+          <p></p>
+          <p>In the example in Figure 2, the<b> show vlan name student </b>command produces output that is not easily interpreted. The<b> show vlan summary </b>command displays the count of all configured VLANs. The output in Figure 2 shows seven VLANs.</p>
+          <p></p>
+          <p>The<b> show interfaces vlan</b><i> vlan-id </i>command displays details that are beyond the scope of this course. The important information appears on the second line in Figure 3, indicating that VLAN 20 is up. </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to display the VLAN and switch port information, and to verify VLAN assignments and mode.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a table with the options for the "show v. lan" command, and a table with the options for the "show interfaces" command and their descriptions. Figure two shows the output from the "show v. lan name student" command and the "show v. lan summary" command. Figure three shows the output from the "show interfaces v. lan twenty" command. Figure four is an interactive activity that allows the learner to practice using show commands for working with v. lans.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.1.1.2 Why Use Static Routing?</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Why Use Static Routing?</h1>
+        <div>
+          <p>Static routing provides some advantages over dynamic routing, including:</p>
+          <p>
+            <ul>
+              <li>Static routes are not advertised over the network, resulting in better security. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Static routes use less bandwidth than dynamic routing protocols, no CPU cycles are used to calculate and communicate routes. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The path a static route uses to send data is known.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Static routing has the following disadvantages:</p>
+          <p>
+            <ul>
+              <li>Initial configuration and maintenance is time-consuming.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Configuration is error-prone, especially in large networks.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Administrator intervention is required to maintain changing route information.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Does not scale well with growing networks; maintenance becomes cumbersome. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Requires complete knowledge of the whole network for proper implementation.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>In the figure, dynamic and static routing features are compared. Notice that the advantages of one method are the disadvantages of the other.</p>
+          <p></p>
+          <p>Static routes are useful for smaller networks with only one path to an outside network. They also provide security in a larger network for certain types of traffic or links to other networks that need more control. It is important to understand that static and dynamic routing are not mutually exclusive. Rather, most networks use a combination of dynamic routing protocols and static routes. This may result in the router having multiple paths to a destination network via static routes and dynamically learned routes. However, recall that the administrative distance (AD) value is a measure of the preference of route sources. Route sources with low AD values are preferred over routes sources with higher AD values. The AD value for a static route is 1. Therefore, a static route will take precedence over all dynamically learned routes, which will have higher AD values. </p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a table comparing configuration complexity, topology changes, scaling, security, resource usage, and predictability between static routing and dynamic routing.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

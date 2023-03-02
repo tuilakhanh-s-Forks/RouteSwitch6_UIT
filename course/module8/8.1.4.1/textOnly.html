@@ -1,0 +1,41 @@
+
+          <p>DHCPv4 problems can arise for a multitude of reasons, such as software defects in operating systems, NIC drivers, or DHCP relay agents, but the most common are configuration issues. Because of the number of potentially problematic areas, a systematic approach to troubleshooting is required, as shown in Figure 1.</p>
+          <p></p>
+          <p>
+            <b>Troubleshooting Task 1: Resolve IPv4 Address Conflicts</b>
+          </p>
+          <p></p>
+          <p>An IPv4 address lease can expire on a client still connected to a network. If the client does not renew the lease, the DHCPv4 server can reassign that IPv4 address to another client. When the client reboots, it requests an IPv4 address. If the DHCPv4 server does not respond quickly, the client uses the last IPv4 address. The situation then arises where two clients are using the same IPv4 address, creating a conflict.</p>
+          <p></p>
+          <p>The<b> show ip dhcp conflict </b>command displays all address conflicts recorded by the DHCPv4 server, as shown in Figure 2. The server uses the<b> ping </b>command to detect clients. The client uses Address Resolution Protocol (ARP) to detect conflicts. If an address conflict is detected, the address is removed from the pool and not assigned until an administrator resolves the conflict. </p>
+          <p></p>
+          <p>This output displays IP addresses that have conflicts with the DHCP server.  It shows the detection method and detection time for conflicting IP addresses that the DHCP server has offered.</p>
+          <p></p>
+          <p></p>
+          <p>
+            <b>Troubleshooting Task 2: Verify Physical Connectivity</b>
+          </p>
+          <p></p>
+          <p>First, use the<b> show interfaces </b><i>interface </i>command to confirm that the router interface acting as the default gateway for the client is operational. If the state of the interface is anything other than up, the port does not pass traffic, including DHCP client requests. </p>
+          <p></p>
+          <p>
+            <b>Troubleshooting Task 3: Test Connectivity using a Static IP Address</b>
+          </p>
+          <p></p>
+          <p>When troubleshooting any DHCPv4 issue, verify network connectivity by configuring static IPv4 address information on a client workstation. If the workstation is unable to reach network resources with a statically configured IPv4 address, the root cause of the problem is not DHCPv4. At this point, network connectivity troubleshooting is required.</p>
+          <p></p>
+          <p>
+            <b>Troubleshooting Task 4: Verify Switch Port Configuration</b>
+          </p>
+          <p></p>
+          <p>If the DHCPv4 client is unable to obtain an IPv4 address from the DHCPv4 server on startup, attempt to obtain an IPv4 address from the DHCPv4 server by manually forcing the client to send a DHCPv4 request.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: If there is a switch between the client and the DHCPv4 server, and the client is unable to obtain the DHCP configuration, switch port configuration issues may be the cause. These causes may include issues from trunking and channeling, STP, and RSTP.  PortFast and edge port configurations resolve the most common DHCPv4 client issues that occur with an initial installation of a Cisco switch. </p>
+          <p></p>
+          <p>
+            <b>Troubleshooting Task 5: Test DHCPv4 Operation on the Same Subnet or VLAN</b>
+          </p>
+          <p></p>
+          <p>It is important to distinguish whether DHCPv4 is functioning correctly when the client is on the same subnet or VLAN as the DHCPv4 server. If DHCPv4 is working correctly when the client is on the same subnet or VLAN, the problem may be the DHCP relay agent. If the problem persists even with testing DHCPv4 on the same subnet or VLAN as the DHCPv4 server, the problem may actually be with the DHCPv4 server.</p>
+        

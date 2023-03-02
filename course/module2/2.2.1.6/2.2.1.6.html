@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.1.6 Verify a Static Route</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.1.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verify a Static Route</h1>
+        <div>
+          <p>Along with<span class="cmd"><b></b></span><b>ping</b><span class="cmd"><b></b></span>and<span class="cmd"><b></b></span><b>traceroute</b>, useful commands to verify static routes include:</p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip route</b>
+                <span class="cmd">
+                  <b></b>
+                </span>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip route static</b>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip route</b>
+                <span class="cmd">
+                  <b></b>
+                </span>
+                <i>network</i>
+              </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Figure 1 displays sample output of the<b> show ip route static </b>command. In the example, the output is filtered using the pipe and<b> begin </b>parameter. The output reflects the use of static routes using the next-hop address. </p>
+          <p></p>
+          <p>Figure 2 displays sample output of the<b> show ip route 192.168.2.1 </b>command.</p>
+          <p></p>
+          <p>Figure 3 verifies the<b> ip route </b>configuration in the running configuration. </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to verify the routing settings of R2.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 5 to verify the routing settings of R3.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">These figures are based on the standard lab diagram.  R. 1. with a lan connects to R. 2. with a lan which connects to R. 3. with a lan. Figure one shows the output of the command "show i. p. route pipe begin gateway" on router one. Figure two shows the output of the command "show i. p. route one ninety two dot one sixty eight dot two dot one" on router one. Figure three shows the output of the command "show running dash config pipe section i. p. route". Figure four is an interactive activity that allows the learner to practice verifying static routing settings on router two. Figure four is an interactive activity that allows the learner to practice verifying static routing settings on router three.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

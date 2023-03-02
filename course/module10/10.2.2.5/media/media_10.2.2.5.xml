@@ -1,0 +1,349 @@
+<textcomponents>
+    <!-- Slide 1-->
+    <component id='ID_s1_title'>
+        <text>
+            <![CDATA[<b>Activity – Part 1: Interpret Syslog Output</b>]]></text>
+    </component>
+    <component id='ID_s1_instr_title'>
+        <text>
+            <![CDATA[Instructions]]>
+        </text>
+    </component>
+    <component id='ID_s1_instr_body'>
+        <text>
+            <![CDATA[Read the syslog output shown. Drag the output to the field next to the appropriate identifier. Not all options will be used. Click Button 2 to continue.]]>
+        </text>
+    </component>
+    <!--Drag and Drop-->
+    <component id='ID_s1_drag01'>
+        <text>
+            <![CDATA[17:46:01.619]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag02'>
+        <text>
+            <![CDATA[IFMGR]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag03'>
+        <text>
+            <![CDATA[No entry listed]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag04'>
+        <text>
+            <![CDATA[7]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag05'>
+        <text>
+            <![CDATA[NO_IFINDEX_FILE]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag06'>
+        <text>
+            <![CDATA[June 12 17:46:01.619]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag07'>
+        <text>
+            <![CDATA[ifIndex-table]]>
+        </text>
+    </component>
+    <component id='ID_s1_CHECK'>
+        <text>
+            <![CDATA[Check]]></text>
+    </component>
+    <component id='ID_s1_RESET'>
+        <text>
+            <![CDATA[Reset]]></text>
+    </component>
+    <component id='ID_s1_CORRECT_TITLE'>
+        <text>
+            <![CDATA[Correct]]></text>
+    </component>
+    <component id='ID_s1_CORRECT_BODY'>
+        <text>
+            <![CDATA[You have successfully matched each syslog output to its identifier. Click Button 2 to continue.]]>
+        </text>
+    </component>
+    <component id='ID_s1_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[Incorrect]]></text>
+    </component>
+    <component id='ID_s1_INCORRECT_BODY'>
+        <text>
+            <![CDATA[You have not successfully matched each syslog output to its identifier. Please click Reset to try again.]]>
+        </text>
+    </component>
+    <component id='ID_s1_txt01'>
+        <text>
+            <![CDATA[*Jun 12 17:46:01.619: %IFMGR-7-NO_IFINDEX_FILE: Unable to open nvram:/ifIndex-table No such file or directory]]>
+        </text>
+    </component>
+    <component id='ID_s1_txt02'>
+        <text>
+            <![CDATA[Identifier]]></text>
+    </component>
+    <component id='ID_s1_txt03'>
+        <text>
+            <![CDATA[Output]]></text>
+    </component>
+    <component id='ID_s1_txt04'>
+        <text>
+            <![CDATA[Sequence number for this syslog entry]]>
+        </text>
+    </component>
+    <component id='ID_s1_txt05'>
+        <text>
+            <![CDATA[The severity level of this entry]]>
+        </text>
+    </component>
+    <component id='ID_s1_txt06'>
+        <text>
+            <![CDATA[The mnemonic for this syslog entry]]>
+        </text>
+    </component>
+    <component id='ID_s1_txt07'>
+        <text>
+            <![CDATA[The entry timestamp for this syslog]]>
+        </text>
+    </component>
+    <component id='ID_s1_txt08'>
+        <text>
+            <![CDATA[Syslog reporting facility]]>
+        </text>
+    </component>
+    <!-- Slide 2 -->
+
+    <component id='ID_s2_instr_title'>
+        <text>
+            <![CDATA[Instructions]]>
+        </text>
+    </component>
+    <component id='ID_s2_instr_body'>
+        <text>
+            <![CDATA[Read the syslog output shown. Drag the output to the field next to the appropriate identifier. Not all options will be used. Click Button 3 to continue.]]>
+        </text>
+    </component>
+    <component id='ID_s2_title'>
+        <text>
+            <![CDATA[<b>Activity – Part 2: Interpret Syslog Output</b>]]></text>
+    </component>
+    <!--Drag and Drop-->
+    <component id='ID_s2_drag01'>
+        <text>
+            <![CDATA[22:06:49.642]]>
+        </text>
+    </component>
+    <component id='ID_s2_drag02'>
+        <text>
+            <![CDATA[CHANGED]]>
+        </text>
+    </component>
+    <component id='ID_s2_drag03'>
+        <text>
+            <![CDATA[Interface Loopback0, changed state to administratively down.]]>
+        </text>
+    </component>
+    <component id='ID_s2_drag04'>
+        <text>
+            <![CDATA[5]]>
+        </text>
+    </component>
+    <component id='ID_s2_drag05'>
+        <text>
+            <![CDATA[LINK]]>
+        </text>
+    </component>
+    <component id='ID_s2_drag06'>
+        <text>
+            <![CDATA[Jun 12 22:06:49.642]]>
+        </text>
+    </component>
+    <component id='ID_s2_drag07'>
+        <text>
+            <![CDATA[LINK-5]]>
+        </text>
+    </component>
+    <component id='ID_s2_CHECK'>
+        <text>
+            <![CDATA[Check]]></text>
+    </component>
+    <component id='ID_s2_RESET'>
+        <text>
+            <![CDATA[Reset]]></text>
+    </component>
+    <component id='ID_s2_CORRECT_TITLE'>
+        <text>
+            <![CDATA[Correct]]></text>
+    </component>
+    <component id='ID_s2_CORRECT_BODY'>
+        <text>
+            <![CDATA[You have successfully matched each syslog output to its identifier. Click Button 3 to continue.]]>
+        </text>
+    </component>
+    <component id='ID_s2_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[Incorrect]]></text>
+    </component>
+    <component id='ID_s2_INCORRECT_BODY'>
+        <text>
+            <![CDATA[You have not successfully matched each syslog output to its identifier. Please click Reset to try again.]]>
+        </text>
+    </component>
+    <component id='ID_s2_txt01'>
+        <text>
+            <![CDATA[*Jun 12 22:06:49.642: %LINK-5-CHANGED: Interface Loopback0, changed state to administratively down]]>
+        </text>
+    </component>
+    <component id='ID_s2_txt02'>
+        <text>
+            <![CDATA[Identifier]]></text>
+    </component>
+    <component id='ID_s2_txt03'>
+        <text>
+            <![CDATA[Output]]></text>
+    </component>
+    <component id='ID_s2_txt04'>
+        <text>
+            <![CDATA[Description of syslog error]]>
+        </text>
+    </component>
+    <component id='ID_s2_txt05'>
+        <text>
+            <![CDATA[The severity level of this entry]]>
+        </text>
+    </component>
+    <component id='ID_s2_txt06'>
+        <text>
+            <![CDATA[The mnemonic for this syslog entry]]>
+        </text>
+    </component>
+    <component id='ID_s2_txt07'>
+        <text>
+            <![CDATA[The entry timestamp for this syslog]]>
+        </text>
+    </component>
+    <component id='ID_s2_txt08'>
+        <text>
+            <![CDATA[Syslog reporting facility]]>
+        </text>
+    </component>
+    <!-- Slide 3 -->
+    <component id='ID_s3_title'>
+        <text>
+            <![CDATA[<b>Activity – Part 3: Interpret Syslog Output</b>]]></text>
+    </component>
+
+     <component id='ID_s3_instr_title'>
+        <text>
+            <![CDATA[Instructions]]>
+        </text>
+    </component>
+    <component id='ID_s3_instr_body'>
+        <text>
+            <![CDATA[Read the syslog output shown. Drag the output to the field next to the appropriate identifier. Not all options will be used.]]>
+        </text>
+    </component>
+    <!--Drag and Drop-->
+    <component id='ID_s3_drag01'>
+        <text>
+            <![CDATA[No entry listed]]>
+        </text>
+    </component>
+    <component id='ID_s3_drag02'>
+        <text>
+            <![CDATA[SYS-5]]>
+        </text>
+    </component>
+    <component id='ID_s3_drag03'>
+        <text>
+            <![CDATA[000011]]>
+        </text>
+    </component>
+    <component id='ID_s3_drag04'>
+        <text>
+            <![CDATA[5]]>
+        </text>
+    </component>
+    <component id='ID_s3_drag05'>
+        <text>
+            <![CDATA[CONFIG_I]]>
+        </text>
+    </component>
+    <component id='ID_s3_drag06'>
+        <text>
+            <![CDATA[IFMGR-7]]>
+        </text>
+    </component>
+    <component id='ID_s3_drag07'>
+        <text>
+            <![CDATA[SYS]]>
+        </text>
+    </component>
+    <component id='ID_s3_CHECK'>
+        <text>
+            <![CDATA[Check]]></text>
+    </component>
+    <component id='ID_s3_RESET'>
+        <text>
+            <![CDATA[Reset]]></text>
+    </component>
+    <component id='ID_s3_CORRECT_TITLE'>
+        <text>
+            <![CDATA[Correct]]></text>
+    </component>
+    <component id='ID_s3_CORRECT_BODY'>
+        <text>
+            <![CDATA[You have successfully matched each syslog output to its identifier.]]>
+        </text>
+    </component>
+    <component id='ID_s3_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[Incorrect]]></text>
+    </component>
+    <component id='ID_s3_INCORRECT_BODY'>
+        <text>
+            <![CDATA[You have not successfully matched each syslog output to its identifier. Please click Reset to try again.]]>
+        </text>
+    </component>
+    <component id='ID_s3_txt01'>
+        <text>
+            <![CDATA[*000011: $SYS-5-CONFIG_I: Configured from console by console.]]>
+        </text>
+    </component>
+    <component id='ID_s3_txt02'>
+        <text>
+            <![CDATA[Identifier]]></text>
+    </component>
+    <component id='ID_s3_txt03'>
+        <text>
+            <![CDATA[Output]]></text>
+    </component>
+    <component id='ID_s3_txt04'>
+        <text>
+            <![CDATA[The severity level of this entry]]>
+        </text>
+    </component>
+    <component id='ID_s3_txt05'>
+        <text>
+            <![CDATA[Sequence number for this syslog entry]]>
+        </text>
+    </component>
+    <component id='ID_s3_txt06'>
+        <text>
+            <![CDATA[The mnemonic for this syslog entry]]>
+        </text>
+    </component>
+    <component id='ID_s3_txt07'>
+        <text>
+            <![CDATA[Syslog reporting facility]]>
+        </text>
+    </component>
+    <component id='ID_s3_txt08'>
+        <text>
+            <![CDATA[The entry timestamp for this syslog]]>
+        </text>
+    </component>
+</textcomponents>

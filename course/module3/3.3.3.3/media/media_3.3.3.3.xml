@@ -1,0 +1,70 @@
+<textcomponents>
+
+
+<!-- SCREEN 1 Drag and Drop -->  
+
+<component id='ID_s1_title'>
+	<text><![CDATA[<b>Activity: IPv4 Determine the Longest Match Route</b>]]></text>
+</component>
+
+<component id='ID_s1_instr_title'>
+	<text><![CDATA[Instruction]]></text>
+</component>
+
+<component id='ID_s1_instr_body'>
+	<text><![CDATA[Drag each destination IPv4 address to its best route choice. Some fields may be left blank.]]></text>
+</component>
+
+
+<component id='ID_s1_drag01'>
+	<text><![CDATA[172.17.90.83]]></text>
+</component>
+
+<component id='ID_s1_drag02'>
+	<text><![CDATA[172.17.165.91]]></text>
+</component>
+
+<component id='ID_s1_drag03'>
+	<text><![CDATA[172.17.124.36]]></text>
+</component>
+
+<component id='ID_s1_drag04'>
+	<text><![CDATA[172.17.169.20]]></text>
+</component>
+
+<component id='ID_s1_drag05'>
+	<text><![CDATA[172.17.155.116]]></text>
+</component>
+
+<component id='ID_s1_drag06'>
+	<text><![CDATA[172.17.193.140]]></text>
+</component>
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each destination IPv4 address to its best route choice.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each destination IPv4 address to its best route choice. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+
+</textcomponents>

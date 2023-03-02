@@ -1,0 +1,14 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_static_20,#ID_static_21,#ID_static_22,#ID_static_23,#ID_static_24,#ID_static_25
+{
+	color: #FFFFFF !important;
+}
+
+
+#ID_static_11{
+	letter-spacing: -0.4px !important;
+}

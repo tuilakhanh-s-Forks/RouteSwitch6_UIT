@@ -1,0 +1,23 @@
+
+          <p>A primary function of a router is to forward packets toward their destination. This is accomplished by using a switching function, which is the process used by a router to accept a packet on one interface and forward it out of another interface. A key responsibility of the switching function is to encapsulate packets in the appropriate data link frame type for the outgoing data link. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: In this context, the term “switching” literally means moving packets from source to destination and should not be confused with the function of a Layer 2 switch.</p>
+          <p></p>
+          <p>After the router has determined the exit interface using the path determination function, the router must encapsulate the packet into the data link frame of the outgoing interface.</p>
+          <p></p>
+          <p>What does a router do with a packet received from one network and destined for another network? The router performs the following three major steps:</p>
+          <p></p>
+          <p>
+            <b>Step 1.</b> De-encapsulates the Layer 2 frame header and trailer to expose the Layer 3 packet.</p>
+          <p>
+            <b>Step 2.</b> Examines the destination IP address of the IP packet to find the best path in the routing table.</p>
+          <p>
+            <b>Step 3.</b> If the router finds a path to the destination, it encapsulates the Layer 3 packet into a new Layer 2 frame and forwards the frame out the exit interface.</p>
+          <p></p>
+          <p>As shown in the figure, devices have Layer 3 IPv4 addresses and Ethernet interfaces have Layer 2 data link addresses. For example, PC1 is configured with IPv4 address 192.168.1.10 and an example MAC address of 0A-10. As a packet travels from the source device to the final destination device, the Layer 3 IP addresses do not change. This is because the Layer 3 PDU does not change. However, the Layer 2 data link addresses change at every hop as the packet is de-encapsulated and re-encapsulated in a new Layer 2 frame by each router. </p>
+          <p></p>
+          <p>It is common for packets to require encapsulation into a different type of Layer 2 frame than the one which was received. For example, a router might receive an Ethernet encapsulated frame on a FastEthernet interface, and then process that frame to be forwarded out of a serial interface. </p>
+          <p></p>
+          <p>Notice in the figure that the ports between R2 and R3 do not have associated MAC addresses. This is because this is a serial link. MAC addresses are only required on multi-access networks, such as Ethernet. A serial link is a point-to-point connection and uses a different Layer 2 frame that does not require the use of a MAC address. In this example, when Ethernet frames are received on R2 from the Fa0/0 interface, destined for PC2, it is de-encapsulated and then re-encapsulated for the serial interface, such as a Point-to-Point Protocol (PPP) encapsulated frame. When R3 receives the PPP frame, it is de-encapsulated again and then re-encapsulated into an Ethernet frame with a destination MAC address of 0B-20, prior to being forwarded out the Fa0/0 interface.  </p>
+        

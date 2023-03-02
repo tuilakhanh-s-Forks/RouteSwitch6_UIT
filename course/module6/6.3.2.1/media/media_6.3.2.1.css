@@ -1,0 +1,16 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_txt03{
+background-color: #FFFFFF;
+padding-top: 5px !important;
+padding-bottom: 5px !important;
+box-shadow: 1px 1px 1px 1px #888888;
+}
+
+#ID_txt09,#ID_txt09a,#ID_txt09b,#ID_txt10,#ID_txt11{
+	 text-shadow: 1px 0px 0px #ffffff , 0px 2px 0px #ffffff, 2px 0px 0px #ffffff, 
+  0px -1px 0px #ffffff, 1px 4px 5px #ffffff;
+}

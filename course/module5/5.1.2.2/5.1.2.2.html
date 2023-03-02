@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.2.2 Configure Switch Ports at the Physical Layer</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configure Switch Ports at the Physical Layer</h1>
+        <div>
+          <p>
+            <b>Duplex and Speed</b>
+          </p>
+          <p></p>
+          <p>Switch ports can be manually configured with specific duplex and speed settings. Use the<b> duplex </b>interface configuration mode command to manually specify the duplex mode for a switch port. Use the <b>speed</b> interface configuration mode command to manually specify the speed for a switch port. In Figure 1, port F0/1 on switch S1 and S2 are manually configured with the<b> full </b>keyword for the<b> duplex </b>command, and the<b> 100 </b>keyword for the<b> speed </b>command. </p>
+          <p></p>
+          <p>The default setting for both duplex and speed for switch ports on Cisco Catalyst 2960 and 3560 switches is auto. The 10/100/1000 ports operate in either half- or full-duplex mode when they are set to 10 or 100 Mb/s, but when they are set to 1000 Mb/s (1 Gb/s), they operate only in full-duplex mode. Auto-negotiation is useful when the speed and duplex settings of the device connecting to the port are unknown or may change. When connecting to known devices, such as servers, dedicated workstations, or network devices, best practice is to manually set the speed and duplex settings.</p>
+          <p></p>
+          <p>When troubleshooting switch port issues, the duplex and speed settings should be checked.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Mismatched settings for the duplex mode and speed of switch ports can cause connectivity issues. Auto-negotiation failure creates mismatched settings.</p>
+          <p></p>
+          <p>All fiber optic ports, such as 1000BASE-SX ports, operate only at one preset speed and are always full-duplex.   </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 2 to configure port F0/1 of switch S1.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a table listing the basic configuration commands for switch interfaces.  The C.L.I. begins in privilege exec mode and the first command is, configure terminal.  This will move to global configuration mode.  The next command is, interface fast Ethernet zero slash one, and the switch prompt becomes config hyphen i.f. inside the parentheses.  This moves to the configuration mode for the specified interface.  The next command is, duplex full. This command will set the duplex option to full.  The next command is, speed 100. This command will set the speed on the interface to 100 megabits per second.  The running configuration is copied to the startup configuration file with the command, copy running hyphen config startup hyphen config. Figure two is an interactive activity that allows the learner to configure a switch port interface.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

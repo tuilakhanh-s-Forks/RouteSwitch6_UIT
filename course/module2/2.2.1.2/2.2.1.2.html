@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en"  role="main">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.1.2 Next-Hop Options</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Next-Hop Options</h1>
+        <div>
+          <p>In this example, Figures 1 to 3 display the routing tables of R1, R2, and R3. Notice that each router has entries only for directly connected networks and their associated local addresses. None of the routers have any knowledge of any networks beyond their directly connected interfaces.</p>
+          <p></p>
+          <p>For example, R1 has no knowledge of networks:</p>
+          <p>
+            <ul>
+              <li>172.16.1.0/24 - LAN on R2</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>192.168.1.0/24 - Serial network between R2 and R3</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>192.168.2.0/24 - LAN on R3</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Figure 4 displays a successful ping from R1 to R2. Figure 5 displays an unsuccessful ping to the R3 LAN. This is because R1 does not have an entry in its routing table for the R3 LAN network.</p>
+          <p></p>
+          <p>The next hop can be identified by an IP address, exit interface, or both. How the destination is specified creates one of the three following route types: </p>
+          <p>
+            <ul>
+              <li>
+                <b>Next-hop route </b>- Only the next-hop IP address is specified</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Directly connected static route </b>- Only the router exit interface is specified</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Fully specified static route </b>- The next-hop IP address and exit interface are specified</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">These figures are based on the standard lab diagram.  R. 1. with a lan connects to R. 2. with a lan which connects to R. 3. with a lan.  Figures one through three show the routing tables of each router.  Each router only lists the directly connected networks in the routing table. Figure four shows router one pinging the other end of the serial link to router two.  This ping is successful because these are directly connected routers. Figure five shows router one trying to ping the lan interface on router three.  This ping is unsuccessful since the routers are only aware of their directly connected networks.  Router one has no path to the lan on router three.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

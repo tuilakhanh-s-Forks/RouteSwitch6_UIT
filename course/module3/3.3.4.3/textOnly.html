@@ -1,0 +1,45 @@
+
+          <p>Figure 1 highlights the routing table entries for the three remote networks (i.e., R2 LAN, R3 LAN, and the link between R2 and R3). The three entries were added by the EIGRP. </p>
+          <p></p>
+          <p>Figure 2 displays a routing table entry on R1 for the route to remote network 2001:DB8:CAFE:3::/64  on R3. The entry identifies the following information:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Route source </b>- Identifies how the route was learned. Common codes include O (OSPF), D (EIGRP), R (RIP), and S (Static route).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Destination network </b>- Identifies the address of the remote IPv6 network.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Administrative distance </b>- Identifies how trustworthiness of the route source. IPv6 uses the same distances as IPv4.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Metric </b>- Identifies the value assigned to reach the remote network. Lower values indicate preferred routes. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Next hop </b>- Identifies the IPv6 address of the next router to forward the packet to.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Outgoing interface </b>- Identifies the exit interface to use to forward a packet toward the final destination.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>When an IPv6 packet arrives on a router interface, the router examines the IPv6 header and identifies the destination IPv6 address. The router then proceeds through the following router lookup process.</p>
+          <p></p>
+          <p>The router examines level 1 network routes for the best match with the destination address of the IPv6 packet. Just like IPv4, the longest match is the best match. For example, if there are multiple matches in the routing table, the router chooses the route with the longest match.  A match is made by matching the far left bits of the packet’s destination IPv6 address with the IPv6 prefix and prefix-length in the IPv6 routing table.</p>
+        

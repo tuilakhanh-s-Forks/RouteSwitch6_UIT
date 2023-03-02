@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.1.2 DHCPv4 Operation</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>DHCPv4 Operation</h1>
+        <div>
+          <p>As shown in Figure 1, DHCPv4 works in a client/server mode. When a client communicates with a DHCPv4 server, the server assigns or leases an IPv4 address to that client. The client connects to the network with that leased IP address until the lease expires. The client must contact the DHCP server periodically to extend the lease. This lease mechanism ensures that clients that move or power off do not keep addresses that they no longer need. When a lease expires, the DHCP server returns the address to the pool where it can be reallocated as necessary.</p>
+          <p></p>
+          <p>
+            <b>Lease Origination</b>
+          </p>
+          <p></p>
+          <p>When the client boots (or otherwise wants to join a network), it begins a four step process to obtain a lease. As shown in Figure 2, a client starts the process with a broadcast DHCPDISCOVER message with its own MAC address to discover available DHCPv4 servers.</p>
+          <p></p>
+          <p>
+            <b>DHCP Discover (DHCPDISCOVER)</b>
+          </p>
+          <p>The DHCPDISCOVER message finds DHCPv4 servers on the network. Because the client has no valid IPv4 information at bootup, it uses Layer 2 and Layer 3 broadcast addresses to communicate with the server. </p>
+          <p></p>
+          <p>
+            <b>DHCP Offer (DHCPOFFER)</b>
+          </p>
+          <p>When the DHCPv4 server receives a DHCPDISCOVER message, it reserves an available IPv4 address to lease to the client. The server also creates an ARP entry consisting of the MAC address of the requesting client and the leased IPv4 address of the client. As shown in Figure 3, the DHCPv4 server sends the binding DHCPOFFER message to the requesting client. </p>
+          <p></p>
+          <p>
+            <b>DHCP Request (DHCPREQUEST)</b>
+          </p>
+          <p>When the client receives the DHCPOFFER from the server, it sends back a DHCPREQUEST message as shown in Figure 4. This message is used for both lease origination and lease renewal. When used for lease origination, the DHCPREQUEST serves as a binding acceptance notice to the selected server for the parameters it has offered and an implicit decline to any other servers that may have provided the client a binding offer.</p>
+          <p></p>
+          <p>Many enterprise networks use multiple DHCPv4 servers. The DHCPREQUEST message is sent in the form of a broadcast to inform this DHCPv4 server and any other DHCPv4 servers about the accepted offer. </p>
+          <p></p>
+          <p>
+            <b>DHCP Acknowledgment (DHCPACK)</b>
+          </p>
+          <p>On receiving the DHCPREQUEST message, the server verifies the lease information with an ICMP ping to that address to ensure it is not being used already, creates a new ARP entry for the client lease, and replies with a DHCPACK message as shown in Figure 5. The DHCPACK message is a duplicate of the DHCPOFFER, except for a change in the message type field. When the client receives the DHCPACK message, it logs the configuration information and performs an ARP lookup for the assigned address. If there is no reply to the ARP, the client knows that the IPv4 address is valid and starts using it as its own. </p>
+          <p></p>
+          <p>
+            <b>Lease Renewal</b>
+          </p>
+          <p></p>
+          <p>
+            <b>DHCP Request (DHCPREQUEST)</b>
+          </p>
+          <p>As shown in Figure 6, before the lease expires, the client sends a DHCPREQUEST message directly to the DHCPv4 server that originally offered the IPv4 address. If a DHCPACK is not received within a specified amount of time, the client broadcasts another DHCPREQUEST so that one of the other DHCPv4 servers can extend the lease. </p>
+          <p></p>
+          <p>
+            <b>DHCP Acknowledgment (DHCPACK)</b>
+          </p>
+          <p>On receiving the DHCPREQUEST message, the server verifies the lease information by returning a DHCPACK, as shown in Figure 7. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: These messages (primarily the DHCPOFFER and DHCPACK) can be sent as unicast or broadcast according to IETF RFC 2131.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one is showing the d.h.c.p. process, which consists of a client configured for d.h.c.p. looking for an address and a d.h.c.p. server is providing an address to the client.  Figure two shows step one of the process in which a client computer is sending out a broadcast message asking for an i.p. address.  This is the d.h.c.p. discover. Figure three shows step two of the process in which the server identified itself as a d.h.c.p. server and offers an i.p. address to the client. This is a unicast message and is the d.h.c.p. offer. Figure four shows step three in which the client sends a broadcast message accepting the offered i.p address. This is the d.h.c.p. request. Figure five shows the final step in which the server sends a unicast message to the client acknowledging the client accepting the address.  This is the d.h.c.p. ack. Figure six is showing the client sending a unicast message to the server requesting to renew the current lease. Figure seven shows the server acknowledge the lease renewal request.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>
